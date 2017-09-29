@@ -4,9 +4,6 @@ name: kiaweb_ciRepo
 type: ciRepo
 pointer:
   sourceName: SeamgenSD/kia.web
-
-#node_js: 
-  #- 8.1.4 //change to node version to use
   
 branches:
   only:
@@ -18,12 +15,7 @@ env:
     - AWS_ACCESS_KEY_ID=AKIAIO7ZC27Z54KNGWYQ
     - AWS_SECRET_ACCESS_KEY=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
     - AWS_DEFAULT_REGION=us-east-1
-    ##DEFAULT
-    - TEST_RESULTS_DIR=$SHIPPABLE_REPO_DIR/shippable/testresults
-    - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/shippable/codecoverage
-    - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
-    - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
-
+  
 #install:
 # npm mirrors can sometimes be flacky, better to use shippable_retry
     # http://docs.shippable.com/ci/advancedOptions/retry/
