@@ -26,9 +26,9 @@ build:
   #pre_ci:
   ci:
     - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then echo develop; fi
-    - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; echo qa; fi
+    - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; then echo qa; fi
   #post_ci:
   on_success:
-    - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/dist s3://kia.web-dev --region $AWS_DEFAULT_REGION; fi
-    - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/dist s3://kia.web-qa --region $AWS_DEFAULT_REGION; fi
+    - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/build s3://kia.web-dev --region $AWS_DEFAULT_REGION; fi
+    - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/build s3://kia.web-qa --region $AWS_DEFAULT_REGION; fi
     
