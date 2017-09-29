@@ -24,19 +24,17 @@ env:
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
 
-install:
+#install:
 # npm mirrors can sometimes be flacky, better to use shippable_retry
     # http://docs.shippable.com/ci/advancedOptions/retry/
   # install global dependencies
-    - shippable_retry npm install
+    #- shippable_retry npm install
     #- npm install -g @angular/cli@1.2.4 //Change to angular cli version to use
 build:
   #pre_ci:
   ci:
-    - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then ng build; fi
-    - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; then ng build; fi
-  #post_ci:
-  on_success:
     - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/dist s3://kia.web-dev --region $AWS_DEFAULT_REGION; fi
     - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/dist s3://kia.web-qa --region $AWS_DEFAULT_REGION; fi
- 
+  #post_ci:
+  #on_success:
+    
