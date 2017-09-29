@@ -1,11 +1,11 @@
 # Language setting http://docs.shippable.com/ci/languages/node/
-language: node_js
+#language: html
 name: kiaweb_ciRepo
 type: ciRepo
 pointer:
   sourceName: SeamgenSD/kia.web
 
-node_js: 
+#node_js: 
   #- 8.1.4 //change to node version to use
   
 branches:
@@ -33,8 +33,10 @@ env:
 build:
   #pre_ci:
   ci:
+    - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then echo develop; fi
+    - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; echo qa; fi
+  #post_ci:
+  on_success:
     - if [ "$BRANCH" == "develop" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/dist s3://kia.web-dev --region $AWS_DEFAULT_REGION; fi
     - if [ "$BRANCH" == "qa" ] && [ "$IS_PULL_REQUEST" == false ] ; then aws s3 sync $SHIPPABLE_REPO_DIR/dist s3://kia.web-qa --region $AWS_DEFAULT_REGION; fi
-  #post_ci:
-  #on_success:
     
