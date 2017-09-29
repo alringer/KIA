@@ -20,12 +20,6 @@
 		"oA": 0,
 		"oAP": "\/build\/index.html",
 		"oF": 0
-		},
-	"\/source\/shippable.yml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/shippable.yml",
-		"oF": 0
 		}
 	},
 "hooks": [
