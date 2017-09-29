@@ -16,12 +16,6 @@ env:
     - AWS_SECRET_ACCESS_KEY=nVdCA8T6t/S78RKtnpBHZb1hRjTgxuGNud3yy446
     - AWS_DEFAULT_REGION=us-east-1
   
-#install:
-# npm mirrors can sometimes be flacky, better to use shippable_retry
-    # http://docs.shippable.com/ci/advancedOptions/retry/
-  # install global dependencies
-    #- shippable_retry npm install
-    #- npm install -g @angular/cli@1.2.4 //Change to angular cli version to use
 build:
   #pre_ci:
   ci:
