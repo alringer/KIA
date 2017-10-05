@@ -15,6 +15,12 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
+	"\/shippable.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/shippable.yml",
+		"oF": 0
+		},
 	"\/source\/css\/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -80,6 +86,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/modules\/login.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/login.css",
+		"oF": 3,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
@@ -104,11 +123,35 @@
 		"oAP": "\/build\/partials\/header.html",
 		"oF": 0
 		},
-	"\/source\/shippable.yml": {
-		"ft": 8192,
+	"\/source\/scripts\/login.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/login.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/modals.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/modals.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/vendors\/jqlite.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
 		"oA": 2,
-		"oAP": "\/build\/shippable.yml",
-		"oF": 0
+		"oAP": "\/build\/vendors\/jqlite.min.js",
+		"oF": 3,
+		"sC": 0,
+		"tS": 0
 		}
 	},
 "hooks": [
@@ -120,7 +163,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-leo",
-	"lastBuiltDate": 528868646
+	"lastBuiltDate": 528876323
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -518,7 +561,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -581,7 +624,7 @@
 			"optionString": "{'exceptMethods': []}"
 			},
 		"comma-dangle": {
-			"active": 1,
+			"active": 0,
 			"optionString": "'never'"
 			},
 		"comma-spacing": {
@@ -825,7 +868,7 @@
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -1245,7 +1288,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
@@ -1926,9 +1969,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
-		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
-		"transpilerStyle": 0
+		"minifyOutput": 0,
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,

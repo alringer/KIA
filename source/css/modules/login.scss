@@ -1,0 +1,98 @@
+@import "../_variables.scss";
+
+
+.modal.login {
+  width: 100vw;
+  max-width: 335px;
+  .modal-overlay {
+    padding: 28px 40px;
+    white-space: nowrap;
+    form {
+      margin: 0 auto;
+    }
+    .back {
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 30px;
+      width: 10px;
+      height: 20px;
+      background: $black;
+      cursor: pointer;
+      transition: all 250ms $easeOutQuint;
+      z-index: 3;
+    }
+    .reset-password-flow {
+      position: relative;
+      left: 0;
+      transition: all 750ms $easeOutQuint;
+      width: calc(100% + 80px);
+      transform: translateX(-40px);
+      padding: 0 40px;
+      font-size: 0px;
+    }
+    .reset-password-first {
+      position: relative;
+      transition: all 750ms $easeOutQuint;
+      > strong {
+        display: block;
+        font-size: 16px;
+        font-family: $sans;
+        font-weight: normal;
+        letter-spacing: .4px;
+        line-height: 1em;
+        margin-bottom: 35px;
+      }
+      > p {
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+        text-align: left;
+        color: $grey_2;
+        margin: 0;
+        margin-bottom: 23px;
+      }
+    }
+    .reset-password-last {
+      padding-top: 125px;
+      transition: all 750ms $easeOutQuint;
+      opacity: 0;
+      p {
+        font: 14px/1.5em $sans;
+        color: $grey_2;
+        letter-spacing: .6px;
+        margin: 0 0 36px;
+      }
+    }
+    .reset-password-first,
+    .reset-password-last {
+      display: inline-block;
+      white-space: normal;
+      width: 100%;
+      margin-right: 80px;
+    }
+  }
+  &.reset-flow-finished {
+    .close,
+    .back {
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    .modal-overlay {
+      .reset-password-flow {
+        .reset-password-first {
+          opacity: 0;
+        }
+        .reset-password-last {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.back-to-sign-in {
+    .create-form,
+    .reset-password-first {
+      opacity: 0 !important;
+    }
+  }
+}

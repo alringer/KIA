@@ -16,7 +16,9 @@
   -webkit-appearance: none;
   border: none;
   border-radius: 2px;
+  font-family: $sans;
   cursor: pointer;
+  outline: none;
   &:hover {
     background: darken($red, 10%);
   }

@@ -1,46 +1,167 @@
 <!-- @import "partials/header.kit" -->
 
 <div style="height:100vh;line-height:100vh;text-align:center;">
-  <span class="button" data-action="modal-open" data-modal="login">Login</span>
+  <span class="button" data-action="modal-open" data-modal="login">
+    Login
+  </span>
 </div>
 
 <div class="modals open">
-  <div class="modal active" id="login">
+  <div class="modal login active">
     <span class="close"></span>
     <div class="modal-nav">
-      <span data-action="modal-nav" data-modal-nav="1" class="active">Sign In</span>
-      <span data-action="modal-nav" data-modal-nav="2">Create Account</span>
+      <span data-action="modal-nav" data-modal-nav="1" class="active">
+        Sign In
+      </span>
+      <span data-action="modal-nav" data-modal-nav="2">
+        Create Account
+      </span>
     </div><!-- /.modal-nav -->
-    <div class="modal-body">
-      <div class="modal-body-tab active">
-        <form>
-          <ul class="form-fields">
-            <li>
-              <label>
-                <strong>Email or Phone Number</strong>
-                <input type="text" />
-              </label>
-            </li>
-            <li>
-              <label>
-                <strong>Password</strong>
-                <input type="password" />
-              </label>
-            </li>
-            <li>
-              <label class="checkbox">
-                <input type="text" name="" value="">
-                <em>Remember Me</em>
-              </label>
-            </li>
-          </ul>
-          <div class="footer-action">
-            <input type="submit" value="Sign In"  class="button full" />
-            <span class="secondary" data-action="modal-nav" data-modal-nav="2">Forgot Password</span>
-          </div><!-- /.footer-action -->
-        </form>
-      </div><!-- /.modal-body-tab -->
-    </div><!-- /.modal-body -->
+    <div class="modal-body-wrap">
+      <div class="modal-body">
+        <div class="modal-body-tab active">
+          <form class="login-form" autocomplete="off">
+            <input type="text" style="display:none" />
+            <ul class="form-fields">
+              <li>
+                <label>
+                  <strong>
+                    Email or Phone Number
+                  </strong>
+                  <input type="text" class="login-email" />
+                  <p class="error-message">
+                    <span class="error-message-inner">
+                      There is no account with this email. Click
+                        <em data-action="modal-nav" data-modal-nav="2" class="use-email-to-craete">
+                          HERE
+                        </em>
+                      to create an account using this email
+                    </span>
+                  </p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <strong>
+                    Password
+                  </strong>
+                  <input type="password" />
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="" value="">
+                  <em>
+                    Remember Me
+                  </em>
+                </label>
+              </li>
+            </ul>
+            <div class="form-footer">
+              <input type="submit" value="Sign In" class="button full main" data-action="login.demo.error" />
+              <span class="secondary" data-action="modal-overlay-open">
+                Forgot Password
+              </span>
+            </div><!-- /.footer-action -->
+          </form>
+        </div><!-- /.modal-body-tab -->
+        <div class="modal-body-tab">
+          <form class="create-form" autocomplete="off">
+            <input type="text" style="display:none" />
+            <ul class="form-fields">
+              <li>
+                <label>
+                  <strong>
+                    Email or Phone Number
+                  </strong>
+                  <input type="text" class="create-email" />
+                  <p class="error-message">
+                    <span class="error-message-inner">
+                      This email address is already linked to an account. Did you
+                        <em data-action="modal-overlay-open" class="use-email-to-recover">
+                           Forget Your Password?
+                        </em>
+                    </span>
+                  </p>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <strong>
+                    Choose a password
+                  </strong>
+                  <input type="password" class="create-password" autocomplete="off" />
+                  <div class="inline-validator create-password-validator">
+                    <div class="inline-validator-rule">
+                      Have at least 8 characters
+                    </div>
+                    <div class="inline-validator-rule">
+                      Have at least one number
+                    </div>
+                    <div class="inline-validator-rule passed">
+                      Have at least one uppercase letter
+                    </div>
+                    <div class="inline-validator-rule passed">
+                      No special charasters ˆ &amp; * (
+                    </div>
+                  </div><!-- /.inline-validator -->
+                </label>
+              </li>
+              <li>
+                <label class="checkbox">
+                  <input type="checkbox" name="" value="" checked>
+                  <em class="smaller">
+                    I have read an agree to the <a href="#" target="_blank">Terms of Serivce</a> <br />
+                    and the <a href="#" target="_blank">Privay Policy</a>
+                  </em>
+                </label>
+              </li>
+            </ul>
+            <div class="form-footer">
+              <input type="submit" value="Create Account" class="button full main" data-action="login.demo.error_create" />
+            </div><!-- /.footer-action -->
+          </form>
+        </div><!-- /.modal-body-tab -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-body-wrap -->
+    <div class="modal-overlay login-reset-password-overlay">
+      <span class="back" data-action="modal-overlay-close"></span>
+      <div class="reset-password-flow">
+        <div class="reset-password-first">
+          <strong>
+            Forgot Password
+          </strong>
+          <p>
+            Enter the email address or phone number you used to set up your account.
+          </p>
+          <form class="recover-form" autocomplete="off">
+            <ul class="form-fields">
+              <li>
+                <label>
+                  <strong>
+                    Email or Phone Number
+                  </strong>
+                  <input type="text" class="reset-email" />
+                  <span class="helper">
+                    Standard SMS rates apply
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <div class="form-footer">
+              <input type="submit" value="Send Password Reset Link" class="button full main" data-action="login.reset_link" />
+            </div><!-- /.footer-action -->
+          </form>
+        </div><!-- /.reset-password-first -->
+        <div class="reset-password-last">
+          <p>
+            Success! A password reset link has been sent to <strong>andrewdavis@kiausa.com</strong>
+          </p>
+          <span class="button full" data-action="back-to-sign-in">Back To Sign In</span>
+        </div><!-- /.reset-password-last -->
+      </div><!-- /.reset-password-flow -->
+
+    </div><!-- /.modal-overlay -->
   </div><!-- /.modal #login -->
 </div><!-- /.modals -->
 
