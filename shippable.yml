@@ -9,6 +9,7 @@ branches:
   only:
     - develop
     - qa
+    - demo
 
 env:
   global:
