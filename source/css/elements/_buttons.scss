@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  user-select: none;
+  background: $red;
+  color: $white;
+  text-transform: uppercase;
+  padding: 0 45px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 250ms $easeOutQuint;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  &:hover {
+    background: darken($red, 10%);
+  }
+  &.full {
+    width: 100%;
+  }
+}
