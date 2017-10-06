@@ -48,8 +48,9 @@
         letter-spacing: .6px;
         text-align: left;
         color: $grey_2;
-        margin: 0;
+        margin: 0 auto;
         margin-bottom: 23px;
+        max-width: 275px;
       }
     }
     .reset-password-last {
@@ -116,6 +117,51 @@
     .create-form,
     .reset-password-first {
       opacity: 0 !important;
+    }
+  }
+  @media (max-width: 500px) {;
+    max-width: 100vw;
+    width: 100vw;
+    min-width: 100vw;
+    padding-top: 60px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: none !important;
+    .modal-nav {
+      top: -5px;
+    }
+    .modal-body {
+      height: auto !important;
+    }
+    .close {
+      top: 10px;
+    }
+    .back {
+      top: 15px !important;
+    }
+    .modal-overlay {
+      .reset-password-flow {
+        padding: 0;
+        > div {
+          margin: 0;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .reset-password-first {
+          > strong {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding-top: 30px;
+          }
+        }
+        .reset-password-last {
+          width: 100vw;
+          .completed-icon {
+            top: 50px;
+          }
+        }
+      }
     }
   }
 }

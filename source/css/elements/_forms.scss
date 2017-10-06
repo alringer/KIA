@@ -4,6 +4,7 @@
   form {
     width: 100%;
     max-width: 275px;
+    margin: 0 auto;
     .form-fields {
       padding: 0;
       margin: 0;
@@ -171,6 +172,8 @@
             font-size: 14px;
             letter-spacing: .6px;
             color: #2f2f2f;
+            -webkit-appearance: none;
+            box-shadow: none;
             &[type="password"] {
               font-size: 25px;
               font-family: sans-serif;
