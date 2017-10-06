@@ -103,6 +103,9 @@
                     background: $red;
                     border-color: $red;
                   }
+                  &:after {
+                    opacity: 1;
+                  }
                 }
               }
             }
@@ -139,6 +142,19 @@
                 transform: translateY(-50%);
                 border-radius: 2px;
                 transition: all 250ms $easeOutQuint;
+              }
+              &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                top: 50%;
+                transform: translate(4px,-50%);
+                left: 0;
+                background: url('/images/icon_checkmark_white.svg') center/contain no-repeat;
+                transition: all 250ms $easeOutQuint;
+                opacity: 0;
               }
             }
           }
@@ -203,10 +219,33 @@
               padding-left: 20px;
               line-height: 1em;
               font-size: 12px;
+              position: relative;
+              transition: all 250ms $easeOutQuint;
+              &:after,
+              &:before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                content: "";
+                background: url('/images/icon_x_red.svg') center/contain no-repeat;
+                transform: translateY(-50%);
+                transition: all 250ms $easeOutQuint;
+              }
+              &:after {
+                background: url('/images/icon_checkmark_green.svg') center/contain no-repeat;
+                opacity: 0;
+              }
             }
             .passed {
-              color: $white;
               color: #5b5b5b;
+              &:before {
+                opacity: 0;
+              }
+              &:after {
+                opacity: 1;
+              }
             }
           }
         }

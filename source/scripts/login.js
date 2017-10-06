@@ -37,6 +37,10 @@ $(document).ready(() => {
         }
       },
 
+      _password_validation_close : () => {
+        window.login.elements.create_password_validator.removeClass('show');
+      },
+
       _error : ($field) => {
         $field.addClass('error');
 
@@ -100,8 +104,12 @@ $(document).ready(() => {
   // EVENTS
   window.login.elements.use_email_to_create.on('click', window.login.methods._use_email_to_create);
   window.login.elements.use_email_to_recover.on('click', window.login.methods._use_email_to_recover);
+
   window.login.elements.create_password.on('change', window.login.methods._password_validation);
   window.login.elements.create_password.on('keyup', window.login.methods._password_validation);
+  window.login.elements.create_password.on('blur', window.login.methods._password_validation_close);
+  window.login.elements.create_password.on('focus', window.login.methods._password_validation);
+
   window.login.elements.reset_email_button.on('click', window.login.methods._reset_email);
   window.login.elements.back_to_signin.on('click', window.login.methods._back_to_signin);
 
