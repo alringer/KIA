@@ -15,6 +15,12 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
+	"\/shippable.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/shippable.yml",
+		"oF": 0
+		},
 	"\/source\/css\/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
