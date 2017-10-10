@@ -149,7 +149,6 @@
         left: 0px;
         width: calc(100% + 80px);
         overflow: hidden;
-        // padding-left: 40px;
         transform: translateX(-40px);
 
       }
@@ -186,7 +185,6 @@
       position: absolute;
       left: 100%;
       top: 0;
-      // opacity: 0;
       z-index: 1;
       width: 100%;
       transition: all 550ms $easeOutQuint;

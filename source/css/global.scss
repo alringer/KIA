@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
+// VENDORS
+@import '../vendors/boostrap/bootstrap.scss';
+
 @import 'variables.scss';
 
-// ELEMENTS
+// RESUABLE ELEMENTS
 @import 'elements/buttons.scss';
 @import 'elements/modals.scss';
 @import 'elements/forms.scss';
 
+// Global Elements
+@import 'elements/nav.scss';
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  background: #f7f7f7;
+  min-height: 100vh;
 }
