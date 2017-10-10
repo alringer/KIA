@@ -127,6 +127,7 @@
                 text-decoration: none;
                 font-weight: bold;
                 transition: all 250ms $easeOutQuint;
+                display: inline-block;
                 &:hover {
                   color: $black;
                 }

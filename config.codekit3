@@ -155,24 +155,6 @@
 		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
-	"\/source\/login.kit": {
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/login.html",
-		"oF": 0
-		},
-	"\/source\/partials\/footer.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/footer.html",
-		"oF": 0
-		},
-	"\/source\/partials\/header.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/build\/partials\/header.html",
-		"oF": 0
-		},
 	"\/source\/scripts\/login.js": {
 		"ft": 64,
 		"ma": 0,
@@ -202,6 +184,30 @@
 		"oF": 3,
 		"sC": 0,
 		"tS": 0
+		},
+	"\/source\/views\/login.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/login.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/footer.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/footer.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/header.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/header.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-1.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-1.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -212,7 +218,7 @@
 	"creationDate": 528359303,
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-leo",
+	"iconImageName": "brackets_purple",
 	"lastBuiltDate": 528964350
 	},
 "projectSettings": {
