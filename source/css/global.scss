@@ -1,23 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 // VENDORS
-@import '../vendors/boostrap/bootstrap.scss';
+@import '../vendors/bootstrap/bootstrap.scss';
+$fa-font-path : '../vendors/font-awesome/fonts';
+@import '../vendors/font-awesome/scss/font-awesome.scss';
 
+@import 'responsive.scss';
 @import 'variables.scss';
+@import 'mixins.scss';
 
 // RESUABLE ELEMENTS
 @import 'elements/buttons.scss';
 @import 'elements/modals.scss';
 @import 'elements/forms.scss';
 
-// Global Elements
+// Global ELEMENTS
 @import 'elements/nav.scss';
+@import 'elements/footer.scss';
 
-* {
-  box-sizing: border-box;
-}
-
+// GLOBAL STATEMENTS
 body {
   background: #f7f7f7;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $sans;
+  position: relative;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
 }

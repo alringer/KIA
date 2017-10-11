@@ -1,0 +1,100 @@
+body {
+  padding-bottom: 140px !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 15px;
+  height: 75px;
+  .footer {
+    &-menu-items {
+      font-size: 0;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      padding: 0 20px;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -25px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #dfdfdf;
+      }
+      li {
+        display: inline-block;
+        padding: 0 20px;
+        position: relative;
+        border-right: 1px solid #dfdfdf;
+        &:first-child {
+          margin-left: 0px !important;
+        }
+        &:last-child {
+          margin-right: 0px !important;
+          border-right: none;
+        }
+        a {
+          font-size: 10px;
+          text-decoration: none;
+          color: $grey;
+          letter-spacing: .6px;
+          transition: all 250ms $easeOutQuint;
+          position: relative;
+          line-height: 1em;
+          &:before {
+            @include underline;
+            transform: translate(-50%, 2px);
+          }
+          &:hover {
+            color: $red;
+            &:before {
+              opacity: 1;
+              transform: translate(-50%, 5px);
+            }
+          }
+        }
+      }
+    }
+    &-bottom {
+      padding-top: 10px;
+      p {
+        display: inline-block;
+        font: 10px/1em $sans;
+        color: $grey;
+        letter-spacing: 0.6px;
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+      ul.social-icons {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        margin: 0;
+        li {
+          display: inline-block;
+          margin: 0 7.5px;
+          &:first-child {
+            margin-left: 0px;
+          }
+          &:last-child {
+            margin-right: 0px;
+          }
+          a {
+            color: $grey_2;
+            transition: all 250ms $easeOutQuint;
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$below_desktop} {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+@mixin underline {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 14px);
+  height: 2px;
+  background: $red;
+  pointer-events: none;
+  transition: all 250ms $easeOutQuint;
+  opacity: 0;
+}

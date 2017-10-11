@@ -1,4 +1,8 @@
-// Colors
+// THIS FILE IS INCLUDED IN SEVERAL FILES
+
+@import "responsive.scss";
+
+// COLORS
 $black : #000;
 $black_2 : #111111;
 $grey : #8E8E8E;
@@ -7,10 +11,10 @@ $white : #FFF;
 $red : #C4172C;
 $green : #8EC439;
 
-// Fonts
+// FONTS
 $sans : 'Source Sans Pro', sans-serif;
 
-// Easing
+// EASING FUNCTIONS
 $linear         : cubic-bezier(0.250, 0.250, 0.750, 0.750);
 $ease           : cubic-bezier(0.250, 0.100, 0.250, 1.000);
 $ease-in        : cubic-bezier(0.420, 0.000, 1.000, 1.000);

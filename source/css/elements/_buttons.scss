@@ -17,12 +17,39 @@
   border: none;
   border-radius: 2px;
   font-family: $sans;
+  font-weight: bold;
   cursor: pointer;
   outline: none;
+  text-align: center;
+  text-decoration: none;
   &:hover {
     background: darken($red, 10%);
   }
+  &.black {
+    background: $black;
+    &:hover {
+      background: lighten($black, 20%);
+    }
+  }
   &.full {
     width: 100%;
+  }
+  &.large {
+    height: 50px;
+    line-height: 50px;
+  }
+  &.outline {
+    background: transparent;
+    border: solid 1px #979797;
+    color: $black;
+    &:hover {
+      background: $black;
+      color: $white;
+      border-color: $black;
+    }
+  }
+  &.disabled {
+    opacity: .5;
+    pointer-events: none;
   }
 }

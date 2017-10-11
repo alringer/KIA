@@ -1,0 +1,30 @@
+@import "../vendors/bootstrap/bootstrap/variables";
+
+// RESPONSIVE QUERIES
+$desktop: "(min-width: #{$screen-sm} )";
+$tablet: "(max-width: #{$screen-sm - 1} ) AND (min-width: #{$screen-xs})";
+$mobile: "(max-width: #{$screen-xs})";
+
+$below_desktop: "(max-width: #{$screen-sm} )";
+
+// QUICK CLASSES
+@media #{$desktop} {
+  .mobile,
+  .tablet {
+    display: none !important;
+  }
+}
+
+@media #{$tablet} {
+  .mobile,
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media #{$mobile} {
+  .desktop,
+  .tablet {
+    display: none !important;
+  }
+}

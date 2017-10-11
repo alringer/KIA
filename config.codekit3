@@ -21,6 +21,32 @@
 		"oAP": "\/build\/shippable.yml",
 		"oF": 0
 		},
+	"\/source\/css\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/_mixins.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/_responsive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/_responsive.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -31,7 +57,7 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/_variables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/elements\/_buttons.scss": {
@@ -44,7 +70,7 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/css\/_buttons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/elements\/_footer.scss": {
@@ -57,7 +83,7 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/css\/_footer.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/elements\/_forms.scss": {
@@ -70,7 +96,7 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/css\/_forms.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/elements\/_modals.scss": {
@@ -83,7 +109,7 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/css\/_modals.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/elements\/_nav.scss": {
@@ -96,7 +122,7 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/css\/_nav.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/global.scss": {
@@ -109,7 +135,7 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/global.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/css\/modules\/login.scss": {
@@ -122,7 +148,20 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/login.css",
 		"oF": 3,
-		"oS": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/views\/view-registration.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-registration.css",
+		"oF": 3,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/images\/icon_back_arrow.svg": {
@@ -165,6 +204,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_nav_service.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_nav_service.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_x_red.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -175,11 +224,152 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/image_car_niro.png": {
+		"ft": 32768,
+		"iS": 126578,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_car_niro.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_dashboard.jpg": {
+		"ft": 16384,
+		"iS": 93167,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_dashboard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_dashboard_2.jpg": {
+		"ft": 16384,
+		"iS": 84674,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_dashboard_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_phone.jpg": {
+		"ft": 16384,
+		"iS": 81090,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_phone.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_phone_eservices.jpg": {
+		"ft": 16384,
+		"iS": 87969,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_phone_eservices.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_phone_eservices_2.jpg": {
+		"ft": 16384,
+		"iS": 97229,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_phone_eservices_2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_start.jpg": {
+		"ft": 16384,
+		"iS": 92642,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_start.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_uvo.jpg": {
+		"ft": 16384,
+		"iS": 68294,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_uvo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_registration_step_uvo_eservices.jpg": {
+		"ft": 16384,
+		"iS": 67866,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_registration_step_uvo_eservices.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/logo_kia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/logo_kia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/photo_vin_on_dashboard.jpg": {
+		"ft": 16384,
+		"iS": 46305,
+		"oA": 0,
+		"oAP": "\/build\/images\/photo_vin_on_dashboard.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/photo_vin_on_document.jpg": {
+		"ft": 16384,
+		"iS": 37417,
+		"oA": 0,
+		"oAP": "\/build\/images\/photo_vin_on_document.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/photo_vin_on_side_door.jpg": {
+		"ft": 16384,
+		"iS": 46660,
+		"oA": 0,
+		"oAP": "\/build\/images\/photo_vin_on_side_door.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
 		"oF": 0
+		},
+	"\/source\/scripts\/forms.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/forms.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
 		},
 	"\/source\/scripts\/login.js": {
 		"ft": 64,
@@ -201,7 +391,27 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/source\/vendors\/boostrap\/_bootstrap-compass.scss": {
+	"\/source\/scripts\/registration.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/registration.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/template.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/template.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/vendors\/bootstrap\/_bootstrap-compass.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -211,10 +421,10 @@
 		"oA": 1,
 		"oAP": "\/build\/vendors\/css\/_bootstrap-compass.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/_bootstrap-mincer.scss": {
+	"\/source\/vendors\/bootstrap\/_bootstrap-mincer.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -224,10 +434,10 @@
 		"oA": 1,
 		"oAP": "\/build\/vendors\/css\/_bootstrap-mincer.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/_bootstrap-sprockets.scss": {
+	"\/source\/vendors\/bootstrap\/_bootstrap-sprockets.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -237,10 +447,10 @@
 		"oA": 1,
 		"oAP": "\/build\/vendors\/css\/_bootstrap-sprockets.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/_bootstrap.scss": {
+	"\/source\/vendors\/bootstrap\/_bootstrap.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -250,10 +460,10 @@
 		"oA": 1,
 		"oAP": "\/build\/vendors\/css\/_bootstrap.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_alerts.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_alerts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -261,12 +471,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_alerts.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_alerts.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_badges.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_badges.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -274,12 +484,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_badges.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_badges.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_breadcrumbs.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_breadcrumbs.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -287,12 +497,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_breadcrumbs.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_breadcrumbs.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_button-groups.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_button-groups.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -300,12 +510,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_button-groups.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_button-groups.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_buttons.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -313,12 +523,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_buttons.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_buttons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_carousel.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -326,12 +536,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_carousel.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_carousel.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_close.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_close.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -339,12 +549,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_close.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_close.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_code.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_code.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -352,12 +562,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_code.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_code.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_component-animations.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_component-animations.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -365,12 +575,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_component-animations.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_component-animations.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_dropdowns.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_dropdowns.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -378,12 +588,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_dropdowns.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_dropdowns.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_forms.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -391,12 +601,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_forms.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_forms.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_glyphicons.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_glyphicons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -404,12 +614,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_glyphicons.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_glyphicons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_grid.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -417,12 +627,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_grid.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_grid.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_input-groups.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_input-groups.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -430,12 +640,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_input-groups.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_input-groups.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_jumbotron.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_jumbotron.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -443,12 +653,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_jumbotron.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_jumbotron.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_labels.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_labels.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -456,12 +666,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_labels.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_labels.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_list-group.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_list-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -469,12 +679,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_list-group.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_list-group.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_media.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -482,12 +692,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_media.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_media.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_mixins.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -495,12 +705,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_mixins.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_mixins.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_modals.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_modals.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -508,12 +718,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_modals.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_modals.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_navbar.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_navbar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -521,12 +731,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_navbar.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_navbar.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_navs.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_navs.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -534,12 +744,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_navs.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_navs.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_normalize.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_normalize.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -547,12 +757,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_normalize.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_normalize.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_pager.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_pager.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -560,12 +770,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_pager.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_pager.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_pagination.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -573,12 +783,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_pagination.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_pagination.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_panels.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_panels.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -586,12 +796,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_panels.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_panels.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_popovers.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_popovers.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -599,12 +809,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_popovers.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_popovers.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_print.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_print.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -612,12 +822,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_print.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_print.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_progress-bars.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_progress-bars.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -625,12 +835,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_progress-bars.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_progress-bars.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_responsive-embed.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_responsive-embed.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -638,12 +848,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_responsive-embed.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_responsive-embed.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_responsive-utilities.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_responsive-utilities.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -651,12 +861,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_responsive-utilities.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_responsive-utilities.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_scaffolding.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_scaffolding.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -664,12 +874,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_scaffolding.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_scaffolding.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_tables.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_tables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -677,12 +887,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_tables.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_tables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_theme.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_theme.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -690,12 +900,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_theme.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_theme.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_thumbnails.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_thumbnails.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -703,12 +913,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_thumbnails.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_thumbnails.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_tooltip.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_tooltip.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -716,12 +926,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_tooltip.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_tooltip.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_type.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -729,12 +939,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_type.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_type.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_utilities.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_utilities.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -742,12 +952,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_utilities.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_utilities.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_variables.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -755,12 +965,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_variables.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_variables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/_wells.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/_wells.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -768,12 +978,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/css\/_wells.css",
+		"oAP": "\/build\/vendors\/bootstrap\/css\/_wells.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_alerts.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_alerts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -781,12 +991,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_alerts.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_alerts.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_background-variant.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_background-variant.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -794,12 +1004,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_background-variant.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_background-variant.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_border-radius.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_border-radius.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -807,12 +1017,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_border-radius.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_border-radius.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_buttons.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -820,12 +1030,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_buttons.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_buttons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_center-block.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_center-block.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -833,12 +1043,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_center-block.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_center-block.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_clearfix.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -846,12 +1056,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_clearfix.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_clearfix.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_forms.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -859,12 +1069,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_forms.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_forms.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_gradients.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_gradients.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -872,12 +1082,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_gradients.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_gradients.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_grid-framework.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_grid-framework.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -885,12 +1095,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_grid-framework.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_grid-framework.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_grid.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -898,12 +1108,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_grid.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_grid.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_hide-text.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_hide-text.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -911,12 +1121,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_hide-text.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_hide-text.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_image.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_image.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -924,12 +1134,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_image.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_image.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_labels.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_labels.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -937,12 +1147,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_labels.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_labels.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_list-group.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_list-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -950,12 +1160,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_list-group.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_list-group.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_nav-divider.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_nav-divider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -963,12 +1173,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_nav-divider.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_nav-divider.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_nav-vertical-align.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_nav-vertical-align.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -976,12 +1186,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_nav-vertical-align.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_nav-vertical-align.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_opacity.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_opacity.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -989,12 +1199,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_opacity.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_opacity.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_pagination.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1002,12 +1212,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_pagination.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_pagination.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_panels.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_panels.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1015,12 +1225,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_panels.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_panels.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_progress-bar.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_progress-bar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1028,12 +1238,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_progress-bar.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_progress-bar.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_reset-filter.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_reset-filter.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1041,12 +1251,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_reset-filter.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_reset-filter.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_reset-text.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_reset-text.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1054,12 +1264,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_reset-text.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_reset-text.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_resize.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_resize.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1067,12 +1277,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_resize.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_resize.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_responsive-visibility.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_responsive-visibility.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1080,12 +1290,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_responsive-visibility.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_responsive-visibility.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_size.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_size.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1093,12 +1303,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_size.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_size.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_tab-focus.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_tab-focus.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1106,12 +1316,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_tab-focus.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_tab-focus.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_table-row.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_table-row.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1119,12 +1329,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_table-row.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_table-row.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_text-emphasis.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_text-emphasis.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1132,12 +1342,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_text-emphasis.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_text-emphasis.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_text-overflow.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_text-overflow.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1145,12 +1355,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_text-overflow.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_text-overflow.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/vendors\/boostrap\/bootstrap\/mixins\/_vendor-prefixes.scss": {
+	"\/source\/vendors\/bootstrap\/bootstrap\/mixins\/_vendor-prefixes.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1158,20 +1368,282 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/boostrap\/bootstrap\/css\/_vendor-prefixes.css",
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/css\/_vendor-prefixes.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.eot",
+		"oF": 0
+		},
+	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.ttf",
+		"oF": 0
+		},
+	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff",
+		"oF": 0
+		},
+	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff2",
+		"oF": 0
+		},
+	"\/source\/vendors\/font-awesome\/fonts\/FontAwesome.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/font-awesome\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_animated.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_animated.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_bordered-pulled.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_bordered-pulled.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_core.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_core.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_fixed-width.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_fixed-width.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_icons.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_larger.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_larger.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_list.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_mixins.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_path.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_path.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_rotated-flipped.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_rotated-flipped.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_screen-reader.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_screen-reader.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_stacked.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_stacked.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/_variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/vendors\/font-awesome\/scss\/font-awesome.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/vendors\/font-awesome\/css\/font-awesome.css",
+		"oF": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/source\/vendors\/jqlite.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/jqlite.min.js",
-		"oF": 3,
+		"oF": 2,
 		"sC": 0,
 		"tS": 0
+		},
+	"\/source\/vendors\/selectize\/selectize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/selectize\/selectize.css",
+		"oF": 3,
+		"oS": 3
+		},
+	"\/source\/vendors\/selectize\/selectize.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/selectize\/selectize.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/vendors\/slick\/slick.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/vendors\/slick\/slick.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/source\/vendors\/slick\/slick.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/slick\/slick.min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 1
 		},
 	"\/source\/views\/login.kit": {
 		"ft": 2048,
@@ -1202,6 +1674,60 @@
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-1.html",
 		"oF": 0
+		},
+	"\/source\/views\/registration-10.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-10.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-2.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-2.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-3.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-3.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-4.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-4.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-5.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-5.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-6.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-6.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-7.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-7.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-8.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-8.html",
+		"oF": 0
+		},
+	"\/source\/views\/registration-9.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-9.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -1213,7 +1739,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 528964350
+	"lastBuiltDate": 529405867
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2969,7 +3495,7 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathFilenamePattern": "*.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
@@ -3013,11 +3539,11 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 0,
 		"syntaxCheckerStyle": 3,
@@ -3118,7 +3644,7 @@
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1

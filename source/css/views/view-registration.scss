@@ -1,0 +1,629 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.view-registration {
+  padding-top: 55px;
+  @media #{$mobile} {
+    padding-top: 25px;
+  }
+  .contain {
+    max-width: 855px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &-header {
+    text-align: center;
+    margin-bottom: 65px;
+    h2 {
+      font-size: 12px;
+      letter-spacing: .6px;
+      color: $grey;
+      text-transform: uppercase;
+      font-weight: normal;
+      margin: 0 0 10px;
+      line-height: 1em;
+    }
+    h1 {
+      font-size: 32px;
+      letter-spacing: 1.5px;
+      font-weight: normal;
+      margin: 0;
+    }
+    p {
+      padding-top: 25px;
+      max-width: 645px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.5em;
+      letter-spacing: .6px;
+      color: $grey_2;
+    }
+    @media #{$mobile} {
+      margin-bottom: 30px;
+      h2 {
+        font-size: 10px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        padding: 20px 5px;
+      }
+    }
+    &-context {
+      max-width: 675px;
+      margin: 0 auto 37px;
+      text-align: center;
+      max-width: 100%;
+      .slick-list {
+        padding: 0 !important;
+        width: 100%;
+        text-align: center;
+        .slick-track {
+          text-align: center;
+        }
+      }
+      .slick-dots {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        top: 15px;
+        li {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+          background: #969696;
+          margin: 0 2.5px;
+          &.slick-active {
+            background-color: $red;
+          }
+          button {
+            display: none;
+          }
+        }
+      }
+      * {
+        outline: none !important;
+      }
+      > strong {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .4px;
+        font-size: 10px;
+        line-height: 1em;
+        margin-bottom: 16px;
+      }
+      &-steps {
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        display: inline-block;
+        @media (min-width: 591px) {
+
+        }
+        @media (max-width: 590px) {
+          display: block;
+        }
+      }
+      &-step {
+        display: inline-block !important;
+        vertical-align: top;
+        margin: 0 13px;
+        width: 100%;
+        max-width: 170px;
+        float: none !important;
+        &:first-child {
+          margin-left: 0px;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+        &-inner {
+          width: 100%;
+          max-width: 170px;
+          margin: 0 auto;
+        }
+        img {
+          display: block;
+          width: 100%;
+          border-radius: 2px;
+          border: solid 1px #c5c5c5;
+        }
+        em {
+          font-size: 12px;
+          line-height: 1.75em;
+          letter-spacing: .5px;
+          font-style: normal;
+          color: $grey_2;
+          display: block;
+          padding-top: 5px;
+          @media (max-width: 590px) {
+            line-height: 1.25em;
+          }
+        }
+        @media (max-width: 590px) {
+          max-width: 100%;
+          width: calc(100vw - 30px);
+          margin: 0 !important;
+          float: left;
+        }
+      }
+    }
+  }
+  &-blocks {
+    .registration-block {
+      border-radius: 2px;
+      background: $white;
+      box-shadow: 0 1px 19px 0 rgba(68, 68, 68, 0.24);
+      padding: 50px 20px 20px;
+      max-width: 395px;
+      margin: 0 auto 40px;
+      &.large {
+        max-width: 675px;
+      }
+      &.with-car-header {
+        margin-top: 120px;
+        @media #{$mobile} {
+          margin-top: 65px;
+        }
+      }
+      &-car-header {
+        position: relative;
+        margin-bottom: 35px;
+        margin-top: -135px;
+        img {
+          display: block;
+          max-width: 275px;
+          width: 100%;
+          margin: 0 auto 15px;
+        }
+        strong {
+          display: block;
+          text-align: center;
+          font-size: 18px;
+          line-height: 1em;
+          letter-spacing: .8px;
+          color: $grey_2;
+          font-weight: bold;
+        }
+        @media #{$mobile} {
+          margin-top: -100px;
+          margin-bottom: 20px;
+          img {
+            max-width: 216px;
+          }
+        }
+      }
+      &-inner {
+        position: relative;
+        height: 200px;
+      }
+      &-title {
+        font-size: 18px;
+        letter-spacing: .5px;
+        color: $black;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      &-text {
+        font-size: 14px;
+        line-height: 1.5em;
+        letter-spacing: .6px;
+        color: $grey_2;
+        max-width: 295px;
+        margin: 0 auto;
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+      &-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @media #{$mobile} {
+          .button {
+            height: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+      @media #{$mobile} {
+        margin-bottom: 17px;
+        padding: 40px 16px 16px;
+        &-inner {
+          height: auto;
+        }
+        &-title {
+          font-size: 16px;
+        }
+        &-text {
+          margin-bottom: 30px;
+        }
+        &-footer {
+          position: relative;
+        }
+      }
+
+      &-vin-lookup,
+      &-vehicle-lookup,
+      &-activate,
+      &-confirmation {
+        .registration-block {
+          &-inner {
+            height: auto;
+          }
+          &-hidden-options {
+            text-align: center;
+            font-size: 0;
+            transition: all 550ms $easeOutQuint;
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            &.open {
+              opacity: 1;
+              height: 161px;
+              transition: height 550ms $easeOutQuint, opacity 550ms $easeOutQuint 100ms;
+              @media #{$mobile} {
+                height: 233px;
+              }
+            }
+            strong {
+              display: block;
+              text-align: center;
+              font-size: 10px;
+              letter-spacing: .4px;
+              text-transform: uppercase;
+              margin-bottom: 15px;
+              padding-top: 15px;
+            }
+            label {
+              display: inline-block;
+              vertical-align: middle;
+              width: 150px;
+              height: 98px;
+              position: relative;
+              margin: 0 12px 20px;
+              max-width: 40%;
+              cursor: pointer;
+              input {
+                display: none;
+              }
+              span {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                font-size: 12px;
+                line-height: 1em;
+                letter-spacing: .5px;
+                transition: all 250ms $easeOutQuint;
+                height: inherit;
+                width: inherit;
+                line-height: 98px;
+                transition: all 250ms $easeOutQuint;
+                border: 1px solid rgba($grey_2, .5);
+                color: rgba($grey_2, .5)
+              }
+              &:hover {
+                span {
+                  border-color: $red;
+                }
+              }
+              input:checked {
+                + span {
+                  border-color: $black;
+                  color: $black;
+                }
+              }
+            }
+            @media #{$mobile} {
+              width: 100%;
+              max-width: 200px;
+              margin: 0 auto;
+              label {
+                height: 85px;
+                margin-bottom: 10px;
+                max-width: 100%;
+                span {
+                  line-height: 85px;
+                }
+              }
+            }
+          }
+          &-new-path {
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: .7px;
+            font-weight: bold;
+            padding: 15px 0 25px;
+            a {
+              color: $red;
+              text-transform: uppercase;
+              text-decoration: none;
+              position: relative;
+              &:before {
+                @include underline();
+                transform: translate(-50%, 2px);
+              }
+              &:hover {
+                &:before {
+                  opacity: 1;
+                  transform: translate(-50%, 5px);
+                }
+              }
+            }
+          }
+          &-footer {
+            position: relative;
+            font-size: 0;
+            text-align: center;
+            .button + .button {
+              margin-left: 10px;
+            }
+          }
+        }
+        form {
+          height: inherit;
+          max-width: 370px;
+          margin: 0 auto;
+          &.vehicle-vin-form {
+            ul.form-fields {
+              li {
+                margin-bottom: 0px;
+                &:first-child {
+                  position: relative;
+                  left: -12.5%;
+                  width: 125%;
+                  @media (max-width: 530px) {
+                    left: 0;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          &.vehicle-activate-form {
+            max-width: 305px;
+            .form-fields {
+              li {
+                margin-bottom: 10px;
+                label {
+                  display: block;
+                  .psudeo-label {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 10px;
+                    letter-spacing: .5px;
+                    font-style: italic;
+                    color: #969696;
+                    display: block;
+                    padding-right: 12px;
+                    pointer-events: none;
+                    @media #{$mobile} {
+                      position: relative;
+                      text-align: center;
+                      width: 100%;
+                      padding-right: 0px;
+                      margin-bottom: -10px;
+                      left: -15px;
+                    }
+                  }
+                }
+              }
+            }
+            .registration-block-footer {
+              padding-left: 30px;
+              .button {
+                float: right;
+                &.half {
+                  width: calc(50% - 5px);
+                  padding: 0;
+                  height: 50px;
+                  line-height: 50px;
+                }
+                &:first-of-type {
+                  float: left;
+                }
+              }
+              @media #{$mobile} {
+                padding-left: 0px;
+              }
+            }
+          }
+          input[type="text"] {
+            height: 57px;
+            display: block;
+            position: relative;
+            padding: 0 16px;
+            font-size: 18px;
+            letter-spacing: .5px;
+            outline: none;
+            color: $black;
+            border-radius: 2px;
+            border: solid 1px #a9adb1;
+            box-shadow: none;
+            text-transform: uppercase;
+            &:-moz-placeholder {
+              font-style: italic;
+              color: #9da0a4;
+              font-weight: 100;
+              text-transform: none;
+            }
+            &::-ms-input-placeholder {
+              font-style: italic;
+              color: #9da0a4;
+              font-weight: 100;
+              text-transform: none;
+            }
+            &::-moz-placeholder {
+              font-style: italic;
+              color: #9da0a4;
+              font-weight: 100;
+              text-transform: none;
+            }
+            &::-webkit-input-placeholder {
+              font-style: italic;
+              color: #9da0a4;
+              font-weight: 100;
+              text-transform: none;
+            }
+            @media #{$mobile} {
+              height: 40px;
+              font-size: 14px;
+            }
+          }
+          .selectize {
+            margin-bottom: 11px;
+          }
+        }
+        .form-footer-note {
+          clear: both;
+          width: 100%;
+          position: relative;
+          font-size: 12px;
+          text-align: center;
+          letter-spacing: .5px;
+          color: #9da0a4;
+          padding: 18px 0 5px;
+          @media #{$mobile} {
+            width: 100%;
+            left: 0;
+            padding: 18px 20px 5px;
+          }
+        }
+      }
+    }
+  }
+  .registration-setup-steps {
+    .registration-setup-step {
+      max-width: 194px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 40px;
+      img {
+        display: block;
+        width: 100%;
+        margin-bottom: 26px;
+      }
+      > strong {
+        font-size: 13px;
+        letter-spacing: .6px;
+        color: $grey_2;
+        margin-bottom: 6px;
+        display: block;
+      }
+      p {
+        font-size: 12px;
+        line-height: 1.75em;
+        color: $grey_2;
+        letter-spacing: .5px;
+      }
+      .buttons {
+        white-space: nowrap;
+        font-size: 0;
+        text-align: center;
+        padding-top: 10px;
+        .store {
+          color: $grey_2;
+          background: darken(#f7f7f7, 5%);
+          padding: 0 10px;;
+          font-weight: 500;
+          letter-spacing: .2px;
+          text-transform: none;
+          font-size: 12px;
+          &:last-child {
+            margin-left: 8px;
+          }
+          i {
+            margin-right: 5px;
+            transform: scale(1.5);
+          }
+          &:hover {
+            background: $red;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .registation-next-step {
+    display: block;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $red;
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 1.45em;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: .7px;
+      transition: all 250ms $easeOutQuint;
+      position: relative;
+      &:before {
+        @include underline();
+        transform: translate(-50%, 2px);
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+          transform: translate(-50%, 5px);
+        }
+      }
+    }
+    @media #{$mobile} {
+      padding-top: 20px;
+      max-width: 175px;
+      margin: 0 auto;
+    }
+  }
+  .registration-completed {
+    max-width: 272px;
+    margin: 0 auto 20px;
+  }
+  &-7,
+  &-8,
+  &-9,
+  &-10 {
+    .registration-block {
+      max-width: 710px !important;
+    }
+  }
+  &-9 {
+    .registration-setup-steps {
+      .registration-setup-step {
+        > strong {
+          text-transform: uppercase;
+          font-size: 14px;
+          margin-bottom: 14px;
+        }
+        img {
+          margin-bottom: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+        .buttons {
+          padding-top: 0px;
+          + p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

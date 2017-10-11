@@ -1,0 +1,64 @@
+<!-- @import "partials/header.kit" -->
+<!-- @import "partials/nav.kit" -->
+<div class="view-registration view-registation-5">
+  <div class="contain">
+    <div class="view-registration-header">
+      <h2>
+        Message has been sent
+      </h2>
+      <h1>
+        Check your phone!
+      </h1>
+      <p>
+        We’ve sent a verification code and instructions to <strong>949-123-4567</strong> at 10:09am on Aug 22, 2017. It may take a few minutes to reach your inbox, please be patient. If you don’t receive the message, you can try to resend it below.
+      </p>
+    </div><!-- /.view-registration-header -->
+    <div class="view-registration-blocks">
+      <div class="registration-block large registration-block-confirmation">
+        <div class="registration-block-inner">
+          <form class="vehicle-activate-form">
+            <ul class="form-fields">
+              <li>
+                <label class="dual-inputs">
+                  <input type="radio" name="send-code-to" value="email" />
+                  <span class="radio"></span>
+                  <input type="email" name="email-code" value="john.doe@gmail.com" class="email-code" placeholder="Email Address" />
+                  <p class="error-message">
+                    <span class="error-message-inner">
+                      Invalid Email Address
+                    </span>
+                  </p>
+                </label>
+              </li>
+              <li>
+                <label class="dual-inputs text-message-field">
+                  <input type="radio" name="send-code-to" value="text" checked />
+                  <span class="radio"></span>
+                  <input type="tel" name="text-code" value="949-123-4567" class="text-code" placeholder="Phone Number" />
+                  <span class="psudeo-label">Standard SMS rates apply</span>
+                  <p class="error-message">
+                    <span class="error-message-inner">
+                      Invalid Email Address
+                    </span>
+                  </p>
+                </label>
+              </li>
+            </ul><!-- /.form-fields -->
+            <div class="registration-block-footer">
+              <input type="submit" class="button full large" value="Resend">
+            </div><!-- /.registration-block-footer -->
+          </form>
+          <div class="form-footer-note">
+            Changes are saved automatically. You may log out and resume at any time
+          </div><!-- /.form-footer-note -->
+        </div><!-- /.reistration-block-inner -->
+      </div><!-- /.reistration-block -->
+    </div><!-- /.view-registration-blocks -->
+    <div class="registation-next-step">
+      <a href="#">
+        I recieved the message! Take me to the dashboard
+      </a>
+    </div><!-- /.registration-next-step -->
+  </div><!-- /.contain -->
+</div><!-- /.registration -->
+<!-- @import "partials/footer.kit" -->
