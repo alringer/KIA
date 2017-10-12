@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <!-- VNEDOR CSS -->
+  <link rel="stylesheet" href="/vendors/selectize/selectize.css">
+  <link rel="stylesheet" href="/vendors/slick/slick.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/view-registration.css">
+  <link rel="stylesheet" href="/css/view-my-vehicles.css">
+
+  <!-- VENDOR JS -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="/vendors/selectize/selectize.js"></script>
+  <script type="text/javascript" src="/vendors/slick/slick.min.js"></script>
+
+  <!-- JS -->
+  <script type="text/javascript" src="/scripts/modals.js"></script>
+  <script type="text/javascript" src="/scripts/forms.js"></script>
+  <script type="text/javascript" src="/scripts/login.js"></script>
+  <script type="text/javascript" src="/scripts/registration.js"></script>
+
+  <title>KIA</title>
+</head>
+<body>
+
+<nav>
+  <div class="nav-main">
+    <a href="/" class="nav-service-text desktop">
+      <em>
+        Need to service your car?
+      </em>
+      <strong>
+        Make an appointment
+      </strong>
+    </a>
+    <a href="/" class="logo tablet">
+      KIA
+    </a>
+    <a href="/" class="logo mobile">
+      KIA
+    </a>
+  </div><!-- /.nav-main -->
+  <div class="nav-menu">
+    <strong>
+      Account
+    </strong>
+  </div><!-- /.nav-menu -->
+</nav>
+
+<div class="view-my-vehicles">
+  <div class="my-vehicles-subnav">
+  
+  </div><!-- /.my-vehicles-subnav -->
+  
+  <div class="my-vehicles-ulility-nav">
+      <div class="contain">
+        <h1>
+          My Vehicles
+        </h1>
+        <div class="my-vehicles-ulility-nav-tools">
+          <ul class="my-vehicles-switch-views">
+            <li>
+              <a href="#" class="switch-view-grid active">
+                <svg id="bcd48cbc-1ddc-4e55-89e8-6bfaadff11ae" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                  <title>icon_grid_view</title>
+                  <g id="9dcbf8d4-e18b-4143-9acb-5a863e72741a" data-name="b">
+                    <path id="32bc9909-2c44-4a68-900f-7f9c8e1a199c" data-name="a" d="M0,0H6V6H0ZM8,0h6V6H8ZM8,8h6v6H8ZM0,8H6v6H0Z" style="fill: #fff"/>
+                  </g>
+                  <path id="7f1daec2-06c5-47c4-9e28-d3cc008eff75" data-name="a" d="M0,0H6V6H0ZM8,0h6V6H8ZM8,8h6v6H8ZM0,8H6v6H0Z" style="fill: #27303b"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="switch-view-list">
+                <svg id="c14f171a-04d7-43bf-8d7f-f2dcf2ba9bc0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                  <g id="a94ae6e2-7fef-4944-b5b9-45dd346dc023" data-name="b">
+                    <path id="53e4637c-1ec9-43fe-aef8-0a7d62ab36a3" data-name="a" d="M0,1A1,1,0,0,1,1,0H4A1,1,0,0,1,4,2H1A1,1,0,0,1,0,1ZM0,6A1,1,0,0,1,1,5H4A1,1,0,0,1,4,7H1A1,1,0,0,1,0,6Zm0,5a1,1,0,0,1,1-1H4a1,1,0,0,1,0,2H1A1,1,0,0,1,0,11ZM7,1A1,1,0,0,1,8,0h9a1,1,0,0,1,0,2H8A1,1,0,0,1,7,1ZM7,6A1,1,0,0,1,8,5h9a1,1,0,0,1,0,2H8A1,1,0,0,1,7,6Zm0,5a1,1,0,0,1,1-1h9a1,1,0,0,1,0,2H8a1,1,0,0,1-1-1Z" style="fill: #fff"/>
+                  </g>
+                  <path id="4a77c735-164c-4160-a2d0-4def70f21b39" data-name="a" d="M0,1A1,1,0,0,1,1,0H4A1,1,0,0,1,4,2H1A1,1,0,0,1,0,1ZM0,6A1,1,0,0,1,1,5H4A1,1,0,0,1,4,7H1A1,1,0,0,1,0,6Zm0,5a1,1,0,0,1,1-1H4a1,1,0,0,1,0,2H1A1,1,0,0,1,0,11ZM7,1A1,1,0,0,1,8,0h9a1,1,0,0,1,0,2H8A1,1,0,0,1,7,1ZM7,6A1,1,0,0,1,8,5h9a1,1,0,0,1,0,2H8A1,1,0,0,1,7,6Zm0,5a1,1,0,0,1,1-1h9a1,1,0,0,1,0,2H8a1,1,0,0,1-1-1Z" style="fill: #c4172c"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="switch-view-map">
+                <svg id="69d21b1e-d1e0-4505-a0d6-b045068e0390" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="17.32" height="17.27" viewBox="0 0 17.32 17.27">
+                  <title>icon_map_view</title>
+                  <g id="19691fb7-d30e-4acc-b741-343094a5eed3" data-name="b">
+                    <path id="4d654d6d-5d6d-40a0-9904-03ee136be434" data-name="a" d="M18.14,16.84c.09.17-.09.43-.34.43H1.21c-.26,0-.43-.26-.35-.43l2.42-6.22c.09-.17.17-.26.35-.26H5.87a.45.45,0,0,1,.34.17c.69,1,2.33,3.11,3,4,.09.17.35.17.52,0,.61-.78,2.33-2.94,3-4,.09-.09.17-.17.26-.17h2.33a.48.48,0,0,1,.43.26l2.33,6.22ZM9.67,11.92a.26.26,0,0,1-.35,0C8.64,11,5.18,6.48,5.18,4.32a4.32,4.32,0,0,1,8.64,0C13.82,6.48,10.36,11,9.67,11.92ZM6.91,4.32a2.59,2.59,0,1,0,5.18,0,2.59,2.59,0,1,0-5.18,0Zm2.59.86a.86.86,0,1,1-.06-1.73H9.5a.86.86,0,0,1,0,1.73Z" transform="translate(-0.84)" style="fill: #fff"/>
+                  </g>
+                  <path id="3a403391-9ae0-4cc9-b756-9a5a6066b31f" data-name="a" d="M18.14,16.84c.09.17-.09.43-.34.43H1.21c-.26,0-.43-.26-.35-.43l2.42-6.22c.09-.17.17-.26.35-.26H5.87a.45.45,0,0,1,.34.17c.69,1,2.33,3.11,3,4,.09.17.35.17.52,0,.61-.78,2.33-2.94,3-4,.09-.09.17-.17.26-.17h2.33a.48.48,0,0,1,.43.26l2.33,6.22ZM9.67,11.92a.26.26,0,0,1-.35,0C8.64,11,5.18,6.48,5.18,4.32a4.32,4.32,0,0,1,8.64,0C13.82,6.48,10.36,11,9.67,11.92ZM6.91,4.32a2.59,2.59,0,1,0,5.18,0,2.59,2.59,0,1,0-5.18,0Zm2.59.86a.86.86,0,1,1-.06-1.73H9.5a.86.86,0,0,1,0,1.73Z" transform="translate(-0.84)"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="my-vehicles-search">
+            <form class="my-vehicles-search-form">
+              <input type="text" name="" value="" placeholder="Year, model, or nickname" class="desktop" />
+              <input type="text" name="" value="" placeholder="Search" class="tablet" />
+              <input type="text" name="" value="" placeholder="Search vehicles" class="mobile" />
+            </form>
+          </div><!-- /.my-vehicles-search -->
+          <div class="my-vehicles-ulility-buttons">
+            <span class="button dark-icon less-padding desktop">
+              <i class="fa fa-plus"></i>
+              Add Vehicle
+            </span>
+            <span class="button dark-icon less-padding tablet">
+              <i class="fa fa-plus"></i>
+              Add
+            </span>
+            <span class="button outline dark-icon less-padding tablet">
+              Edit
+            </span>
+          </div><!-- /.my-vehicles-ulility-buttons -->
+        </div><!-- /.my-vehicles-ulility-nav-tools -->
+      </div><!-- /.contain -->
+    </div><!-- /.my-vehicles-ulility-nav -->
+    
+  <div class="my-vehicles-car-listings grid-view">
+    <div class="contain">
+      <div class="my-vehicles-grid">
+        <div class="my-vehicles-grid-item">
+          <div class="my-vehicles-grid-item-header">
+            <em>
+              2017 Niro
+            </em>
+            <strong>
+              My Ride
+            </strong>
+            <div class="my-vehicles-grid-item-settings">
+              <a href="" class="my-vehicles-grid-item-settings-message">
+                Check for software update
+              </a>
+              <a href="#" class="my-vehicles-grid-item-settings-icon">
+                <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                  <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                </svg>
+              </a>
+            </div><!-- /.my-vehicles-gird-settings -->
+          </div><!-- /.my-vehicles-grid-item-header -->
+          <div class="my-vehicles-grid-item-image">
+            <img src="/images/image_car_grid_1.png" alt="My Ride" title="My Ride" height="90" />
+          </div><!-- /.my-vehicles-grid-item-image -->
+          <div class="my-vehicles-grid-item-meta-data">
+            <div class="my-vehicles-grid-item-meta-data-inner">
+              <div class="car-meta-data">
+                <strong>
+                  Mileage
+                </strong>
+                <em>
+                  15,919 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Next service in
+                </strong>
+                <em>
+                  6,234 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Diagnostic Issues
+                </strong>
+                <em>
+                  None
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Charge level
+                </strong>
+                <em>
+                  31%
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Battery status
+                </strong>
+                <em>
+                  Charging
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Driving range
+                </strong>
+                <em>
+                  71 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+            </div><!-- /.my-vehicles-grid-item-meta-data-inner -->
+          </div><!-- /.my-vehicles-grid-item-meta-data -->
+          <div class="my-vehicles-grid-item-footer">
+            <div class="status-uvo green">
+              <span class="logo-uvo">
+                UVO
+              </span>
+              <span class="status-uvo-message">
+                Connected
+              </span><!-- /.status-uvo-message -->
+              <span class="status-uvo-last-updated">
+                Last refreshed 18 hrs ago
+              </span><!-- /.status-uvo-last-updated -->
+            </div><!-- /.status-uvo -->
+          </div><!-- /.my-vehicles-grid-item-footer -->
+        </div><!-- /.my-vehicles-grid-item -->
+        <div class="my-vehicles-grid-item">
+          <div class="my-vehicles-grid-item-header">
+            <em>
+              2016 K900
+            </em>
+            <strong>
+              Andrew's Car
+            </strong>
+            <div class="my-vehicles-grid-item-settings">
+              <a href="" class="my-vehicles-grid-item-settings-message">
+                Check for software update
+              </a>
+              <a href="#" class="my-vehicles-grid-item-settings-icon">
+                <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                  <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                </svg>
+              </a>
+            </div><!-- /.my-vehicles-gird-settings -->
+          </div><!-- /.my-vehicles-grid-item-header -->
+          <div class="my-vehicles-grid-item-image">
+            <img src="/images/image_car_grid_2.png" alt="My Ride" title="My Ride" height="100" />
+          </div><!-- /.my-vehicles-grid-item-image -->
+          <div class="my-vehicles-grid-item-meta-data">
+            <div class="my-vehicles-grid-item-meta-data-inner">
+              <div class="car-meta-data">
+                <strong>
+                  Mileage
+                </strong>
+                <em>
+                  80,255 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Next service in
+                </strong>
+                <em>
+                  6,234 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Diagnostic Issues
+                </strong>
+                <em>
+                  3
+                </em>
+              </div><!-- /.car-meta-data -->
+            </div><!-- /.my-vehicles-grid-item-meta-data-inner -->
+          </div><!-- /.my-vehicles-grid-item-meta-data -->
+          <div class="my-vehicles-grid-item-footer">
+            <div class="status-uvo grey">
+              <span class="logo-uvo">
+                UVO
+              </span>
+              <span class="status-uvo-message">
+                End of life
+              </span><!-- /.status-uvo-message -->
+              <span class="status-uvo-last-updated">
+
+              </span><!-- /.status-uvo-last-updated -->
+            </div><!-- /.status-uvo -->
+          </div><!-- /.my-vehicles-grid-item-footer -->
+        </div><!-- /.my-vehicles-grid-item -->
+        <div class="my-vehicles-grid-item">
+          <div class="my-vehicles-grid-item-header">
+            <em>
+              2017 Niro
+            </em>
+            <strong>
+              The New Hotness
+            </strong>
+            <div class="my-vehicles-grid-item-settings">
+              <a href="" class="my-vehicles-grid-item-settings-message">
+                Check for software update
+              </a>
+              <a href="#" class="my-vehicles-grid-item-settings-icon">
+                <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                  <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                </svg>
+              </a>
+            </div><!-- /.my-vehicles-gird-settings -->
+          </div><!-- /.my-vehicles-grid-item-header -->
+          <div class="my-vehicles-grid-item-image">
+            <img src="/images/image_car_grid_3.png" alt="My Ride" title="My Ride" height="90" />
+          </div><!-- /.my-vehicles-grid-item-image -->
+          <div class="my-vehicles-grid-item-message">
+            <strong>
+              UVO is inactive
+            </strong>
+            <p>
+              Right now you’re missing out on remote climate control, vehicle health reports, and more
+            </p>
+            <span class="button outline red">
+              HOW DO I ACTIVATE UVO?
+            </span>
+          </div><!-- /.my-vehicles-grid-item-message -->
+          <div class="my-vehicles-grid-item-footer">
+            <div class="status-uvo red">
+              <span class="logo-uvo">
+                UVO
+              </span>
+              <span class="status-uvo-message">
+                Not Activated
+              </span><!-- /.status-uvo-message -->
+              <span class="status-uvo-last-updated">
+
+              </span><!-- /.status-uvo-last-updated -->
+            </div><!-- /.status-uvo -->
+          </div><!-- /.my-vehicles-grid-item-footer -->
+        </div><!-- /.my-vehicles-grid-item -->
+      </div><!-- /.my-vehicles-grid -->
+    </div><!-- /.contain -->
+  </div><!-- /.my-vehicles-car-listings -->
+</div><!-- /.view-my-vehicles -->
+  <footer>
+    <div class="contain">
+      <ul class="footer-menu-items">
+        <li>
+          <a href="#">
+            Privacy / Legal
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Kia.com
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Other Kia Sites
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            MPG
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Global Disclaimer
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Terms of Service
+          </a>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2017 Kia Motors America, Inc.</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest"></i>
+            </a>
+          </li>
+        </ul><!-- /.social-icons -->
+      </div><!-- /.footer-bottom -->
+    </div><!-- /.contain -->
+  </footer>
+</body>
+</html>
+
