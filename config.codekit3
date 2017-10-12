@@ -151,6 +151,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-my-vehicles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-my-vehicles.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-registration.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -160,7 +173,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/view-registration.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -204,11 +217,61 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_grid_view.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_grid_view.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_list_view.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_list_view.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_map_view.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_map_view.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_nav_service.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_nav_service.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_settings.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_settings.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -223,6 +286,49 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/image_car-no-vehicles.jpg": {
+		"ft": 16384,
+		"iS": 135347,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_car-no-vehicles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_car-no-vehicles.png": {
+		"ft": 32768,
+		"iS": 211068,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_car-no-vehicles.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_car_grid_1.png": {
+		"ft": 32768,
+		"iS": 99504,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_car_grid_1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_car_grid_2.png": {
+		"ft": 32768,
+		"iS": 118858,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_car_grid_2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/image_car_niro.png": {
 		"ft": 32768,
@@ -367,7 +473,7 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/forms.js",
-		"oF": 2,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -1651,6 +1757,18 @@
 		"oAP": "\/build\/views\/login.html",
 		"oF": 0
 		},
+	"\/source\/views\/my-vehicles-1.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/my-vehicles-1.html",
+		"oF": 0
+		},
+	"\/source\/views\/my-vehicles-2.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/my-vehicles-2.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/footer.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -1661,6 +1779,18 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/header.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/my-vehicles-subnav.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/my-vehicles-subnav.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/my-vehicles-utility-nav.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/my-vehicles-utility-nav.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/nav.kit": {
@@ -1739,7 +1869,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 529405867
+	"lastBuiltDate": 529460016
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3640,7 +3770,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,

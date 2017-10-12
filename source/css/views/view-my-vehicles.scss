@@ -1,0 +1,406 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.view-my-vehicles {
+  .my-vehicles {
+    &-subnav {
+      width: 100%;
+      height: 53px;
+      background: $white;
+      border-top: 2px solid #f7f7f7;
+    }
+  }
+  .my-vehicles-empty-state {
+    position: relative;
+    height: calc(100vh - 263px);
+    &-cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      max-width: 372px;
+      img {
+        display: block;
+        width: 100%;
+        max-width: 272px;
+        margin: 0 auto 30px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 29px;
+        font-weight: normal;
+        letter-spacing: 1.4px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5em;
+        letter-spacing: .6px;
+        color: $grey_2;
+        margin-bottom: 32px;
+      }
+    }
+    @media #{$mobile} {
+      height: calc(100vh - 175px);
+      &-cta {
+        max-width: 235px;
+        img {
+          max-width: 147px;
+          margin-bottom: 22px;
+        }
+        h1 {
+          font-size: 24px;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+  .my-vehicles-ulility-nav {
+    padding: 40px 0 50px;
+    overflow: hidden;
+    @media #{$mobile} {
+      padding: 15px 0;
+    }
+    .contain {
+      max-width: 1000px;
+      padding: 0 30px;
+      @media #{$mobile} {
+        padding: 0 10px;
+      }
+    }
+    h1 {
+      font-size: 32px;
+      letter-spacing: 1.5px;
+      color: $black;
+      margin: 0;
+      font-weight: normal;
+      float: left;
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    .my-vehicles-ulility-nav-tools {
+      float: right;
+      font-size: 0;
+      @media #{$mobile} {
+        float: none;
+        text-align: center;
+      }
+      .my-vehicles-switch-views {
+        display: inline-block;
+        font-size: 0;
+        vertical-align: middle;
+        margin-right: 20px;
+        padding: 0;
+        li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative;
+          vertical-align: middle;
+          &:first-child {
+            margin-left: 0px;
+          }
+          &:last-child {
+            margin-right: 0px;
+          }
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            svg {
+              max-width: 100%;
+              max-height: 100%;
+              width: 100%;
+              height: 100%;
+              margin: 0 auto;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              * {
+                fill: $grey !important;
+                transition: all 250ms $easeOutQuint;
+              }
+            }
+            &.switch-view-grid {
+              height: 14px;
+              width: 14px;
+            }
+            &.switch-view-list {
+              width: 18px;
+              height: 12px;
+            }
+            &.switch-view-map {
+              width: 19px;
+              height: 18px;
+            }
+            &:hover {
+              svg * {
+                fill: $grey_2 !important;
+              }
+            }
+            &.active {
+              svg * {
+                fill: $red !important;
+              }
+            }
+          }
+        }
+      }
+      .my-vehicles-search {
+        display: inline-block;
+        vertical-align: middle;
+        &-form {
+          position: relative;
+          height: 40px;
+          &:before {
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: url('/images/icon_search.svg') center/contain no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 14px;
+            transform: translateY(-50%);
+            pointer-events: none;
+          }
+        }
+        input[type="text"] {
+          -webkit-appearance: none;
+          height: 40px;
+          border: 1px solid #a9adb1;
+          border-radius: 2px;
+          background: $white;
+          padding-left: 40px;
+          display: block;
+          font-size: 11px;
+          font-weight: normal;
+          letter-spacing: 1.4px;
+          outline: none;
+          @media #{$desktop} {
+            width: 230px;
+          }
+          @media #{$mobile} {
+            width: 165px;
+          }
+        }
+      }
+      .my-vehicles-ulility-buttons {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1em;
+        height: 40px;
+        .button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .my-vehicles-car-listings {
+    &.grid-view {
+      .contain {
+        max-width: 875px;
+        padding: 0 5px;
+      }
+    }
+    .my-vehicles-grid {
+      font-size: 0;
+      &-item {
+        height: 340px;
+        background: $white;
+        width: calc(50% - 36px);
+        position: relative;
+        box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+        padding: 25px 25px 0;
+        display: inline-block;
+        margin: 9px;
+        @media #{$mobile} {
+          width: 100%;
+          margin: 0 0 10px;
+        }
+        &-header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: inherit;
+          em {
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: $grey;
+            font-style: normal;
+            display: block;
+            line-height: 1em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+          }
+          strong {
+            display: block;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            color: $black;
+            line-height: 1em;
+            font-weight: normal;
+          }
+        }
+        &-settings {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: inherit;
+          transform: translateY(-2px);
+          &-message {
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            white-space: nowrap;
+            line-height: 14px;
+            color: $red;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: .3px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 250ms $easeOutQuint;
+            &:before {
+              @include underline();
+              transform: translate(-50%, 0px);
+            }
+            &:hover {
+              &:before {
+                opacity: 1;
+                transform: translate(-50%, 3px);
+              }
+            }
+          }
+          &-icon {
+            display: block;
+            svg {
+              display: block;
+              * {
+                fill: $grey !important;
+                transition: all 250ms $easeOutQuint;
+              }
+            }
+            &:hover {
+              svg * {
+                fill: $black !important;
+              }
+            }
+          }
+        }
+        &-image {
+          position: absolute;
+          top: 85px;
+          left: 50%;
+          transform: translateX(-50%);
+          img {
+            max-height: 100px;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        &-meta-data {
+          position: absolute;
+          bottom: 28px;
+          width: 100%;
+          left: 0;
+          padding: inherit;
+          height: 100px;
+          padding-top: 0px;
+          &-inner {
+            font-size: 0;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-left: inherit;
+            padding-right: inherit;
+          }
+          .car-meta-data {
+            display: inline-block;
+            width: 33.3333%;
+            vertical-align: top;
+            margin-bottom: 20px;
+            strong {
+              display: block;
+              font-size: 10px;
+              text-transform: uppercase;
+              color: $grey;
+              letter-spacing: 1px;
+              line-height: 1em;
+              margin-bottom: 8px;
+            }
+            em {
+              font-size: 14px;
+              display: block;
+              letter-spacing: .4px;
+              line-height: 1em;
+              font-style: normal;
+            }
+            @media #{$mobile} {
+              strong {
+                font-size: 8px;
+                letter-spacing: .4px;
+              }
+              em {
+                font-size: 12px;
+                letter-spacing: .3px;
+              }
+            }
+          }
+        }
+        &-footer {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 28px;
+          background: $grey_2;
+          color: #848484;
+          line-height: 28px;
+          padding: 0 10px;
+          font-size: 11px;
+          letter-spacing: .3px;
+          .status-uvo {
+            &.green {
+              &:before {
+                background: $green;
+              }
+            }
+            &:before {
+              display: inline-block;
+              width: 6px;
+              height: 6px;
+              content: "";
+              background: #848484;
+              vertical-align: middle;
+              border-radius: 100%;
+              position: relative;
+              top: -2px;
+              margin-right: 9px;
+              margin-left: 3px;
+              transition: all 250ms $easeOutQuint;
+            }
+            .logo-uvo {
+              color: $white;
+              font-size: 14px;
+            }
+            &-message {
+              display: inline-block;
+              vertical-align: top;
+              margin-left: 7px;
+            }
+            &-last-updated {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

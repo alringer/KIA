@@ -119,6 +119,10 @@
       opacity: 0 !important;
     }
   }
+  .g-recaptcha {
+    transform-origin: top left;
+    transform: scale(.91);
+  }
   @media (max-width: 500px) {;
     max-width: 100vw;
     width: 100vw;

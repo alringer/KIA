@@ -27,7 +27,6 @@ $(document).ready(() => {
         var value = window.login.elements.create_email.val();
         window.login.elements.reset_email.val(value);
       },
-
       _password_validation : (e) => {
         var $this = $(e.currentTarget);
         if( $this.val() ) {
@@ -36,11 +35,9 @@ $(document).ready(() => {
           window.login.elements.create_password_validator.removeClass('show');
         }
       },
-
       _password_validation_close : () => {
         window.login.elements.create_password_validator.removeClass('show');
       },
-
       _error : ($field) => {
         $field.addClass('error');
 
@@ -54,11 +51,9 @@ $(document).ready(() => {
         $error_message_inner.addClass('show');
         setTimeout(window.modals.methods._reset_size, 250);
       },
-
       _error_resize : () => {
 
       },
-
       _reset_email : (e) => {
         e.preventDefault();
         var $active_modal = window.modals.elements.modal.filter('.active'),
@@ -66,7 +61,6 @@ $(document).ready(() => {
         window.login.elements.reset_password_flow.css('left', -modal_width);
         $active_modal.addClass('reset-flow-finished');
       },
-
       _back_to_signin : () => {
         var $active_modal = window.modals.elements.modal.filter('.active'),
             $errors = $active_modal.find('.error');
@@ -86,8 +80,6 @@ $(document).ready(() => {
           $active_modal.removeClass('back-to-sign-in');
         }, 550);
       },
-
-
       demo : {
         _error : (e) => {
           e.preventDefault();
