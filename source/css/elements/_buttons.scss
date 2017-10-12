@@ -55,6 +55,14 @@
       color: $white;
       border-color: $black;
     }
+    &.red {
+      border-color: $red;
+      color: $red;
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
+    }
   }
   &.disabled {
     opacity: .5;

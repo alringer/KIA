@@ -217,9 +217,12 @@
         padding: 25px 25px 0;
         display: inline-block;
         margin: 9px;
+        border-radius: 2px;
+        overflow: hidden;
         @media #{$mobile} {
           width: 100%;
           margin: 0 0 10px;
+          height: 310px;
         }
         &-header {
           position: absolute;
@@ -302,6 +305,12 @@
             display: block;
             margin: 0 auto;
           }
+          @media #{$mobile} {
+            top: 75px;
+            img {
+              max-height: 95px;
+            }
+          }
         }
         &-meta-data {
           position: absolute;
@@ -311,6 +320,9 @@
           padding: inherit;
           height: 100px;
           padding-top: 0px;
+          @media #{$mobile} {
+            height: 90px;
+          }
           &-inner {
             font-size: 0;
             position: absolute;
@@ -342,10 +354,17 @@
               line-height: 1em;
               font-style: normal;
             }
+            @media #{$tablet} {
+              strong {
+                font-size: 9px;
+              }
+            }
             @media #{$mobile} {
+              margin-bottom: 15px;
               strong {
                 font-size: 8px;
                 letter-spacing: .4px;
+                margin-bottom: 5px;
               }
               em {
                 font-size: 12px;
@@ -370,6 +389,16 @@
             &.green {
               &:before {
                 background: $green;
+              }
+            }
+            &.grey {
+              &:before {
+                background: $grey;
+              }
+            }
+            &.red {
+              &:before {
+                background: $red;
               }
             }
             &:before {
@@ -398,6 +427,35 @@
             &-last-updated {
               float: right;
             }
+          }
+        }
+        &-message {
+          text-align: center;
+          position: absolute;
+          bottom: 28px;
+          left: 0;
+          width: 100%;
+          padding-left: inherit;
+          padding-right: inherit;
+          padding-bottom: 20px;
+          strong {
+            font-size: 14px;
+            line-height: 1.5em;
+            letter-spacing: .6px;
+          }
+          p {
+            font-size: 12px;
+            max-width: 270px;
+            margin: 0 auto 12px;
+            color: $grey_2;
+            letter-spacing: .5px;
+            line-height: 1.75em;
+          }
+          .button {
+            height: 35px;
+            line-height: 33px;
+            font-size: 12px;
+            padding: 0 30px;
           }
         }
       }
