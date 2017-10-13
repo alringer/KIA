@@ -13,6 +13,9 @@ $(document).ready(function () {
       overlay_close: $('[data-action="modal-overlay-close"]')
     },
     methods: {
+      _stop_propgagation: function _stop_propgagation(e) {
+        e.stopPropagation();
+      },
       _open: function _open(e) {
         e.preventDefault();
         var $this = $(this),
@@ -112,4 +115,5 @@ $(document).ready(function () {
   window.modals.elements.modal_nav.on('click', window.modals.methods._nav);
   window.modals.elements.overlay_open.on('click', window.modals.methods._overlay_open);
   window.modals.elements.overlay_close.on('click', window.modals.methods._overlay_close);
+  window.modals.elements.modal.on('click', window.modals.methods._stop_propgagation);
 });
