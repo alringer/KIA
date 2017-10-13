@@ -429,6 +429,9 @@
         margin: 9px;
         border-radius: 2px;
         overflow: hidden;
+        &.hide {
+          display: none;
+        }
         @media #{$mobile} {
           width: 100%;
           margin: 0 0 10px;

@@ -12,7 +12,9 @@ $(document).ready(function () {
       edit_select_all: $('.my-vehicles-ulility-nav-edit .select-all'),
       edit_deselect_all: $('.my-vehicles-ulility-nav-edit .deselect-all'),
       edit_toggle_select_all: $('.view-my-vehicles .toggle-select-all'),
-      mixitup_sortby: $('[data-mixsort]')
+      mixitup_sortby: $('[data-mixsort]'),
+      search_boxes: $('input[name="my-vehicles-text-filter"]'),
+      search_items: $('.my-vehicles-grid-item, my-vehicles-list-item')
     },
     methods: {
       _switch_views: function _switch_views(e) {
@@ -73,6 +75,28 @@ $(document).ready(function () {
           window.myVehicles.elements.mixitup_sortby.removeClass('active');
           $this.addClass('active');
         }
+      },
+      _text_search: function _text_search() {
+        var $this = $(this),
+            value = $this.val().toLowerCase().replace("'", '');
+
+        window.myVehicles.elements.search_boxes.val(value);
+
+        window.myVehicles.elements.search_items.each(function () {
+          var $item = $(this),
+              hide = true,
+              nickname = $item.data('nickname').toString().toLowerCase(),
+              model = $item.data('model').toString().toLowerCase(),
+              year = $item.data('year').toString().toLowerCase();
+          if (nickname.indexOf(value) >= 0 || model.indexOf(value) >= 0 || year.indexOf(value) >= 0 || ('' + year + model).indexOf(value.replace(' ', '')) >= 0 || ('' + model + year).indexOf(value.replace(' ', '')) >= 0) {
+            hide = false;
+          }
+          if (hide) {
+            $item.addClass('hide');
+          } else {
+            $item.removeClass('hide');
+          }
+        });
       }
     }
   };
@@ -85,6 +109,7 @@ $(document).ready(function () {
   window.myVehicles.elements.edit_deselect_all.on('click', window.myVehicles.methods.editing._deselect_all);
   window.myVehicles.elements.edit_cancel.on('click', window.myVehicles.methods.editing._stop);
   window.myVehicles.elements.edit_toggle_select_all.on('change._select_all', window.myVehicles.methods.editing._toggle_select_all);
-  window.myVehicles.elements.mixitup_sortby.on('click', window.myVehicles.methods.sorting._sort);
+  window.myVehicles.elements.mixitup_sortby.on('click.fire', window.myVehicles.methods.sorting._sort);
+  window.myVehicles.elements.search_boxes.on('keyup', window.myVehicles.methods._text_search);
   window.myVehicles.elements.switch_view.on('click', window.myVehicles.methods._switch_views);
 });
