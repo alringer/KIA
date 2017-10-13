@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-  window.NAME = {
+  window.template = {
     elements: {
       'element': $('.element')
     },
@@ -10,5 +10,5 @@ $(document).ready(function () {
     }
   };
   // EVENTS
-  window.login.elements.element.on('click', window.NAME.methods._method);
+  window.template.elements.element.on('click', window.template.methods._method);
 });
