@@ -1880,7 +1880,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 529572254
+	"lastBuiltDate": 529572323
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3271,7 +3271,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
