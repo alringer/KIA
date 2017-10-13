@@ -19,12 +19,14 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <script type="text/javascript" src="/vendors/selectize/selectize.js"></script>
   <script type="text/javascript" src="/vendors/slick/slick.min.js"></script>
+  <script type="text/javascript" src="/vendors/mixitup/mixitup.min.js"></script>
 
   <!-- JS -->
   <script type="text/javascript" src="/scripts/modals.js"></script>
   <script type="text/javascript" src="/scripts/forms.js"></script>
   <script type="text/javascript" src="/scripts/login.js"></script>
   <script type="text/javascript" src="/scripts/registration.js"></script>
+  <script type="text/javascript" src="/scripts/my-vehicles.js"></script>
 
   <title>KIA</title>
 </head>
@@ -56,7 +58,18 @@
 
 <div class="view-my-vehicles">
   <div class="my-vehicles-subnav">
-  
+    <ul class="my-vehicles-subnav-items">
+      <li>
+        <a href="#" class="active">
+          My Vehicles
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Awards
+        </a>
+      </li>
+    </ul><!-- /.my-vehicles-subnav-items -->
   </div><!-- /.my-vehicles-subnav -->
   
   <div class="my-vehicles-ulility-nav">
@@ -69,7 +82,6 @@
             <li>
               <a href="#" class="switch-view-grid active">
                 <svg id="bcd48cbc-1ddc-4e55-89e8-6bfaadff11ae" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                  <title>icon_grid_view</title>
                   <g id="9dcbf8d4-e18b-4143-9acb-5a863e72741a" data-name="b">
                     <path id="32bc9909-2c44-4a68-900f-7f9c8e1a199c" data-name="a" d="M0,0H6V6H0ZM8,0h6V6H8ZM8,8h6v6H8ZM0,8H6v6H0Z" style="fill: #fff"/>
                   </g>
@@ -90,7 +102,6 @@
             <li>
               <a href="#" class="switch-view-map">
                 <svg id="69d21b1e-d1e0-4505-a0d6-b045068e0390" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="17.32" height="17.27" viewBox="0 0 17.32 17.27">
-                  <title>icon_map_view</title>
                   <g id="19691fb7-d30e-4acc-b741-343094a5eed3" data-name="b">
                     <path id="4d654d6d-5d6d-40a0-9904-03ee136be434" data-name="a" d="M18.14,16.84c.09.17-.09.43-.34.43H1.21c-.26,0-.43-.26-.35-.43l2.42-6.22c.09-.17.17-.26.35-.26H5.87a.45.45,0,0,1,.34.17c.69,1,2.33,3.11,3,4,.09.17.35.17.52,0,.61-.78,2.33-2.94,3-4,.09-.09.17-.17.26-.17h2.33a.48.48,0,0,1,.43.26l2.33,6.22ZM9.67,11.92a.26.26,0,0,1-.35,0C8.64,11,5.18,6.48,5.18,4.32a4.32,4.32,0,0,1,8.64,0C13.82,6.48,10.36,11,9.67,11.92ZM6.91,4.32a2.59,2.59,0,1,0,5.18,0,2.59,2.59,0,1,0-5.18,0Zm2.59.86a.86.86,0,1,1-.06-1.73H9.5a.86.86,0,0,1,0,1.73Z" transform="translate(-0.84)" style="fill: #fff"/>
                   </g>
@@ -101,9 +112,9 @@
           </ul>
           <div class="my-vehicles-search">
             <form class="my-vehicles-search-form">
-              <input type="text" name="" value="" placeholder="Year, model, or nickname" class="desktop" />
-              <input type="text" name="" value="" placeholder="Search" class="tablet" />
-              <input type="text" name="" value="" placeholder="Search vehicles" class="mobile" />
+              <input type="text" name="my-vehicles-text-filter" value="" placeholder="Year, model, or nickname" class="desktop" />
+              <input type="text" name="my-vehicles-text-filter" value="" placeholder="Search" class="tablet" />
+              <input type="text" name="my-vehicles-text-filter" value="" placeholder="Search vehicles" class="mobile" />
             </form>
           </div><!-- /.my-vehicles-search -->
           <div class="my-vehicles-ulility-buttons">
@@ -120,13 +131,61 @@
             </span>
           </div><!-- /.my-vehicles-ulility-buttons -->
         </div><!-- /.my-vehicles-ulility-nav-tools -->
+        <ul class="my-vehicles-ulility-nav-edit">
+          <li>
+            <span class="select-all">
+              <svg id="67a12eff-8b2a-4248-b0fd-f0700a2d4f7d" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="10.56" height="9.38" viewBox="0 0 10.56 9.38">
+                <polyline id="507e9d9c-8a7a-4e81-a2f2-d9c547b0ca50" data-name="Path-2" points="9.75 0.58 4.41 8 0.56 5.38" style="fill: none;stroke: #fff;stroke-width: 2px"/>
+              </svg>
+              Select all
+            </span>
+          </li>
+          <li>
+            <span class="deselect-all">
+              <svg id="8ab12c7e-0390-4a7d-888c-7c764dceb441" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="11" height="2" viewBox="0 0 11 2">
+                <rect width="11" height="2" style="fill: #c4172c"/>
+              </svg>
+              Deselect all
+            </span>
+          </li>
+          <li>
+            <span class="delete-selected">
+              <svg id="228f8ef6-c798-4f2c-bfe5-23841bb21bff" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15">
+                <path id="6129b869-ea0c-400d-95f7-8658d7ff74a6" data-name="Combined-Shape" d="M0,2A1,1,0,0,1,1,1h9a1,1,0,0,1,1,1V3H0ZM4,0H7V1H4ZM1,4h9V14a1,1,0,0,1-1,1H2a1,1,0,0,1-1-1Z" style="fill: #c4172c"/>
+              </svg>
+              Delete <em>Selected</em>
+            </span>
+          </li>
+          <li>
+            <span class="cancel">
+              <svg id="83423d78-0e91-4301-a1e9-92d10df4f68d" xmlns="http://www.w3.org/2000/svg" width="14.99" height="15" viewBox="0 0 14.99 15">
+                <path id="80148eb1-3817-49e4-8928-d5cb855e2703" data-name="cancel" d="M12.82,12.8a7.5,7.5,0,1,0-10.6,0,7.49,7.49,0,0,0,10.6,0ZM4.34,9.62,6.47,7.49,4.34,5.37,5.39,4.32,7.52,6.44,9.65,4.32,10.7,5.37,8.57,7.49,10.7,9.62,9.65,10.67,7.52,8.55,5.39,10.67Z" transform="translate(-0.03 0)" style="fill: #c4172c"/>
+              </svg>
+              Cancel
+            </span>
+          </li>
+        </ul><!-- /.my-vehicles-ulility-nav-edit -->
       </div><!-- /.contain -->
     </div><!-- /.my-vehicles-ulility-nav -->
     
-  <div class="my-vehicles-car-listings grid-view">
-    <div class="contain">
-      <div class="my-vehicles-grid">
-        <div class="my-vehicles-grid-item">
+  <div class="my-vehicles-car-listings">
+    <div class="my-vehicles-grid active">
+      <div class="contain">
+        <div
+          class="my-vehicles-grid-item"
+          data-model="niro"
+          data-year="2017"
+          data-nickname="my ride"
+          data-mileage="15919"
+          data-next-service="6234"
+          data-issues="0"
+        >
+          <div class="my-vehicles-item-edit">
+            <label class="checkbox solo">
+              <input type="checkbox" name="edit" value="" />
+              <em></em>
+            </label>
+          </div><!-- /.my-vehicles-item-edit -->
           <div class="my-vehicles-grid-item-header">
             <em>
               2017 Niro
@@ -214,7 +273,21 @@
             </div><!-- /.status-uvo -->
           </div><!-- /.my-vehicles-grid-item-footer -->
         </div><!-- /.my-vehicles-grid-item -->
-        <div class="my-vehicles-grid-item">
+        <div
+          class="my-vehicles-grid-item"
+          data-model="k900"
+          data-year="2016"
+          data-nickname="andrews ride"
+          data-mileage="80255"
+          data-next-service="6234"
+          data-issues="3"
+        >
+          <div class="my-vehicles-item-edit">
+            <label class="checkbox solo">
+              <input type="checkbox" name="edit" value="" />
+              <em></em>
+            </label>
+          </div><!-- /.my-vehicles-item-edit -->
           <div class="my-vehicles-grid-item-header">
             <em>
               2016 K900
@@ -278,7 +351,21 @@
             </div><!-- /.status-uvo -->
           </div><!-- /.my-vehicles-grid-item-footer -->
         </div><!-- /.my-vehicles-grid-item -->
-        <div class="my-vehicles-grid-item">
+        <div
+          class="my-vehicles-grid-item"
+          data-model="niro"
+          data-year="2017"
+          data-nickname="the new hotness"
+          data-mileage="0"
+          data-next-service="0"
+          data-issues="0"
+        >
+          <div class="my-vehicles-item-edit">
+            <label class="checkbox solo">
+              <input type="checkbox" name="edit" value="" />
+              <em></em>
+            </label>
+          </div><!-- /.my-vehicles-item-edit -->
           <div class="my-vehicles-grid-item-header">
             <em>
               2017 Niro
@@ -325,8 +412,320 @@
             </div><!-- /.status-uvo -->
           </div><!-- /.my-vehicles-grid-item-footer -->
         </div><!-- /.my-vehicles-grid-item -->
-      </div><!-- /.my-vehicles-grid -->
-    </div><!-- /.contain -->
+        <div
+          class="my-vehicles-grid-item"
+          data-model="soul"
+          data-year="2014"
+          data-nickname="og soul"
+          data-mileage="15919"
+          data-next-service="6234"
+          data-issues="3"
+        >
+          <div class="my-vehicles-item-edit">
+            <label class="checkbox solo">
+              <input type="checkbox" name="edit" value="" />
+              <em></em>
+            </label>
+          </div><!-- /.my-vehicles-item-edit -->
+          <div class="my-vehicles-grid-item-header">
+            <em>
+              2014 Soul
+            </em>
+            <strong>
+              OG Soul
+            </strong>
+            <div class="my-vehicles-grid-item-settings">
+              <a href="#" class="my-vehicles-grid-item-settings-icon">
+                <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                  <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                </svg>
+              </a>
+            </div><!-- /.my-vehicles-gird-settings -->
+          </div><!-- /.my-vehicles-grid-item-header -->
+          <div class="my-vehicles-grid-item-image">
+            <img src="/images/image_car_grid_4.png" alt="My Ride" title="My Ride" height="100" />
+          </div><!-- /.my-vehicles-grid-item-image -->
+          <div class="my-vehicles-grid-item-meta-data large layout-2">
+            <div class="my-vehicles-grid-item-meta-data-inner">
+              <div class="car-meta-data">
+                <strong>
+                  Mileage
+                </strong>
+                <em>
+                  80,255 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Next service in
+                </strong>
+                <em>
+                  6,234 mi.
+                </em>
+              </div><!-- /.car-meta-data -->
+            </div><!-- /.my-vehicles-grid-item-meta-data-inner -->
+          </div><!-- /.my-vehicles-grid-item-meta-data -->
+        </div><!-- /.my-vehicles-grid-item -->
+      </div><!-- /.contain -->
+    </div><!-- /.my-vehicles-grid -->
+    <div class="my-vehicles-list-view">
+      <div class="contain">
+        <div class="my-vehicles-list-header">
+          <div class="checkbox-toggle">
+            <label class="checkbox solo">
+              <input type="checkbox" class="toggle-select-all" name="edit" value="" />
+              <em></em>
+            </label>
+          </div><!-- /.checkbox-toggle -->
+          <div class="header-model" data-mixsort="model">
+            Model
+          </div><!-- /.header-model -->
+          <div class="header-year"  data-mixsort="year">
+            Year
+          </div><!-- /.header-model -->
+          <div class="header-nickname"  data-mixsort="nickname">
+            Nickname
+          </div><!-- /.header-nickname -->
+          <div class="header-mileage" data-mixsort="mileage">
+            Mileage
+          </div><!-- /.header-mileage -->
+          <div class="header-next-service" data-mixsort="next-service">
+            <span>Next</span> Service In
+          </div><!-- /.header-next-service -->
+          <div class="header-issues" data-mixsort="issues">
+            <span>Diagnostic</span> Issues
+          </div><!-- /.header-issues-->
+          <div class="header-additional-features">
+            <span>Addtional</span> Features
+          </div><!-- /.header-issues-->
+        </div><!-- /.my-vehicles-list-header -->
+        <div class="my-vehicles-list" id="mixitup">
+          <div
+            class="my-vehicles-list-item"
+            data-model="niro"
+            data-year="2017"
+            data-nickname="my ride"
+            data-mileage="15912"
+            data-next-service="6102"
+            data-issues="3" >
+            <div class="my-vehicles-item-edit">
+              <label class="checkbox solo">
+                <input type="checkbox" name="edit" value="" />
+                <em></em>
+              </label>
+            </div><!-- /.my-vehicles-item-edit -->
+            <div class="my-vehicles-list-item-image">
+              <img src="/images/image_car_grid_1.png" alt="My Ride" title="My Ride" height="32" />
+            </div><!-- /.my-vehicles-list-item-image -->
+            <div class="my-vehicles-list-item-model">
+              Niro
+            </div><!-- /.my-vehicles-list-item-model -->
+            <div class="my-vehicles-list-item-year">
+              2017
+            </div><!-- /.my-vehicles-list-item-year -->
+            <div class="my-vehicles-list-item-nickname">
+              My Ride
+            </div><!-- /.my-vehicles-list-item-nickname -->
+            <div class="my-vehicles-list-item-mileage">
+              15,912 mi.
+            </div><!-- /.my-vehicles-list-item-mileage -->
+            <div class="my-vehicles-list-item-next-service">
+              6,102 mi.
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-issues">
+              3
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-meta-data">
+              <div class="car-meta-data">
+                <strong>
+                  Charge:
+                </strong>
+                <em>
+                   31%
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Driving Rage:
+                </strong>
+                <em>
+                   71mi
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Battery Status:
+                </strong>
+                <em>
+                   Plugged in
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  UVO Status:
+                </strong>
+                <em>
+                   Connected
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Last Refreshed:
+                </strong>
+                <em>
+                   18 mins ago.
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="my-vehicles-list-item-meta-data-actions">
+                <a href="#">Check for software update</a>
+              </div><!-- /.my-vehicles-list-meta-data-actions -->
+            </div><!-- /.my-vehicles-list-meta-data -->
+          </div><!-- /.my-vehicles-list-item -->
+          <div
+            class="my-vehicles-list-item"
+            data-model="K900"
+            data-year="2016"
+            data-nickname="andrews car"
+            data-mileage="814"
+            data-next-service="6102"
+            data-issues="0">
+            <div class="my-vehicles-item-edit">
+              <label class="checkbox solo">
+                <input type="checkbox" name="edit" value="" />
+                <em></em>
+              </label>
+            </div><!-- /.my-vehicles-item-edit -->
+            <div class="my-vehicles-list-item-image">
+              <img src="/images/image_car_grid_2.png" alt="My Ride" title="My Ride" height="32" />
+            </div><!-- /.my-vehicles-list-item-image -->
+            <div class="my-vehicles-list-item-model">
+              K900
+            </div><!-- /.my-vehicles-list-item-model -->
+            <div class="my-vehicles-list-item-year">
+              2016
+            </div><!-- /.my-vehicles-list-item-year -->
+            <div class="my-vehicles-list-item-nickname">
+              Andrew's Car
+            </div><!-- /.my-vehicles-list-item-nickname -->
+            <div class="my-vehicles-list-item-mileage">
+              814 mi.
+            </div><!-- /.my-vehicles-list-item-mileage -->
+            <div class="my-vehicles-list-item-next-service">
+              6,102 mi.
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-issues">
+              0
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-meta-data">
+              <div class="car-meta-data">
+                <strong>
+                  UVO Status:
+                </strong>
+                <em>
+                   Connected
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="car-meta-data">
+                <strong>
+                  Last Refreshed:
+                </strong>
+                <em>
+                   18 hrs ago.
+                </em>
+              </div><!-- /.car-meta-data -->
+            </div><!-- /.my-vehicles-list-meta-data -->
+          </div><!-- /.my-vehicles-list-item -->
+          <div
+            class="my-vehicles-list-item"
+            data-model="niro"
+            data-year="2017"
+            data-nickname="the new hotness"
+            data-mileage="0"
+            data-next-service="0"
+            data-issues="0" >
+            <div class="my-vehicles-item-edit">
+              <label class="checkbox solo">
+                <input type="checkbox" name="edit" value="" />
+                <em></em>
+              </label>
+            </div><!-- /.my-vehicles-item-edit -->
+            <div class="my-vehicles-list-item-image">
+              <img src="/images/image_car_grid_3.png" alt="My Ride" title="My Ride" height="32" />
+            </div><!-- /.my-vehicles-list-item-image -->
+            <div class="my-vehicles-list-item-model">
+              Niro
+            </div><!-- /.my-vehicles-list-item-model -->
+            <div class="my-vehicles-list-item-year">
+              2017
+            </div><!-- /.my-vehicles-list-item-year -->
+            <div class="my-vehicles-list-item-nickname">
+              The New Hotness
+            </div><!-- /.my-vehicles-list-item-nickname -->
+            <div class="my-vehicles-list-item-mileage">
+              814 mi.
+            </div><!-- /.my-vehicles-list-item-mileage -->
+            <div class="my-vehicles-list-item-next-service">
+              6,102 mi.
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-issues">
+
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-meta-data">
+              <div class="car-meta-data">
+                <strong>
+                  UVO Status:
+                </strong>
+                <em>
+                   Not Activated
+                </em>
+              </div><!-- /.car-meta-data -->
+              <div class="my-vehicles-list-item-meta-data-actions">
+                <span class="button outline red less-padding">How do I activate UVO?</span>
+              </div><!-- /.my-vehicles-list-meta-data-actions -->
+            </div><!-- /.my-vehicles-list-meta-data -->
+          </div><!-- /.my-vehicles-list-item -->
+          <div
+            class="my-vehicles-list-item"
+            data-model="soul"
+            data-year="2014"
+            data-nickname="og soul"
+            data-mileage="10225"
+            data-next-service="6102"
+            data-issues="0" >
+            <div class="my-vehicles-item-edit">
+              <label class="checkbox solo">
+                <input type="checkbox" name="edit" value="" />
+                <em></em>
+              </label>
+            </div><!-- /.my-vehicles-item-edit -->
+            <div class="my-vehicles-list-item-image">
+              <img src="/images/image_car_grid_4.png" alt="My Ride" title="My Ride" height="32" />
+            </div><!-- /.my-vehicles-list-item-image -->
+            <div class="my-vehicles-list-item-model">
+              Soul
+            </div><!-- /.my-vehicles-list-item-model -->
+            <div class="my-vehicles-list-item-year">
+              2014
+            </div><!-- /.my-vehicles-list-item-year -->
+            <div class="my-vehicles-list-item-nickname">
+              OG Soul
+            </div><!-- /.my-vehicles-list-item-nickname -->
+            <div class="my-vehicles-list-item-mileage">
+              102,225 mi.
+            </div><!-- /.my-vehicles-list-item-mileage -->
+            <div class="my-vehicles-list-item-next-service">
+              6,102 mi.
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-issues">
+
+            </div><!-- /.my-vehicles-list-item-service -->
+            <div class="my-vehicles-list-item-meta-data">
+
+            </div><!-- /.my-vehicles-list-meta-data -->
+          </div><!-- /.my-vehicles-list-item -->
+        </div><!-- /.my-vehicles-list -->
+      </div><!-- /.contain -->
+    </div><!-- /.my-vehicles-list-view -->
   </div><!-- /.my-vehicles-car-listings -->
 </div><!-- /.view-my-vehicles -->
   <footer>

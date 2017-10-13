@@ -128,77 +128,6 @@ form {
         &.checkbox {
           width: auto;
           margin-top: 5px;
-          &:hover {
-            > em {
-              color: $black;
-              &:before {
-                border-color: $black;
-              }
-            }
-          }
-          input[type="checkbox"] {
-            display: none;
-            &:checked {
-              + em {
-                &:before {
-                  background: $red;
-                  border-color: $red;
-                }
-                &:after {
-                  opacity: 1;
-                }
-              }
-            }
-          }
-          > em {
-            position: relative;
-            padding-left: 35px;
-            transition: all 250ms $easeOutQuint;
-            color: #2f2f2f;
-            user-select: none;
-            &.smaller {
-              font-size: 11px;
-              line-height: 1.36em;
-              padding-top: 5px;
-              letter-spacing: .5px;
-            }
-            a {
-              color: #bb1a30;
-              text-decoration: none;
-              font-weight: bold;
-              transition: all 250ms $easeOutQuint;
-              display: inline-block;
-              &:hover {
-                color: $black;
-              }
-            }
-            &:before {
-              content: "";
-              display: block;
-              border: solid 1px #b1b5b8;
-              width: 19px;
-              height: 19px;
-              position: absolute;
-              top: 50%;
-              left: 0;
-              transform: translateY(-50%);
-              border-radius: 2px;
-              transition: all 250ms $easeOutQuint;
-            }
-            &:after {
-              content: "";
-              display: block;
-              position: absolute;
-              width: 12px;
-              height: 12px;
-              top: 50%;
-              transform: translate(4px,-50%);
-              left: 0;
-              background: url('/images/icon_checkmark_white.svg') center/contain no-repeat;
-              transition: all 250ms $easeOutQuint;
-              opacity: 0;
-            }
-          }
         }
         > input[type="text"],
         > input[type="email"],
@@ -361,6 +290,89 @@ form {
     }
     .item {
       color: $black;
+    }
+  }
+}
+
+.checkbox {
+  cursor: pointer;
+  &.solo {
+    > em {
+      padding-left: 21px;
+      height: 21px;
+      display: block;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+    &:checked {
+      + em {
+        &:before {
+          background: $red !important;
+          border-color: $red !important;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &:hover {
+    > em {
+      color: $black;
+      &:before {
+        border-color: $black;
+      }
+    }
+  }
+  > em {
+    position: relative;
+    padding-left: 35px;
+    transition: all 250ms $easeOutQuint;
+    color: #2f2f2f;
+    user-select: none;
+    &.smaller {
+      font-size: 11px;
+      line-height: 1.36em;
+      padding-top: 5px;
+      letter-spacing: .5px;
+    }
+    a {
+      color: #bb1a30;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 250ms $easeOutQuint;
+      display: inline-block;
+      &:hover {
+        color: $black;
+      }
+    }
+    &:before {
+      content: "";
+      display: block;
+      border: solid 1px #b1b5b8;
+      width: 19px;
+      height: 19px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border-radius: 2px;
+      transition: all 250ms $easeOutQuint;
+      background: $white;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 50%;
+      transform: translate(4px,-50%);
+      left: 0;
+      background: url('/images/icon_checkmark_white.svg') center/contain no-repeat;
+      transition: all 250ms $easeOutQuint;
+      opacity: 0;
     }
   }
 }

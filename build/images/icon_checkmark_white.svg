@@ -1,14 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>Path 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Input-/-Checkbox-/-Checked" transform="translate(-4.000000, -4.000000)" stroke-width="2" stroke="#FFFFFF">
-            <g id="Inpuch-/-Checkbox-/-Checked">
-                <polyline id="Path-2" points="13.9506836 5.19628906 8.61328125 12.6132812 4.765625 9.99609375"></polyline>
-            </g>
-        </g>
-    </g>
+<svg id="67a12eff-8b2a-4248-b0fd-f0700a2d4f7d" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="10.56" height="9.38" viewBox="0 0 10.56 9.38">
+  <polyline id="507e9d9c-8a7a-4e81-a2f2-d9c547b0ca50" data-name="Path-2" points="9.75 0.58 4.41 8 0.56 5.38" style="fill: none;stroke: #fff;stroke-width: 2px"/>
 </svg>
