@@ -1,0 +1,76 @@
+<div class="modals" data-action="modal-close">
+  <div class="modal delete">
+    <span class="close" data-action="modal-close"></span>
+    <div class="modal-body-wrap">
+      <div class="modal-body">
+        <div class="modal-body-tab active">
+          <div class="modal-delete">
+            <strong>Delete This Vehicle?</strong>
+            <p>Are you sure you want to delete this vehicle? This action cannot be undone.</p>
+            <div class="modal-delete-actions">
+              <span class="button" data-action="modal-close">Yes, Delete</span>
+              <span class="button outline" data-action="modal-close">No</span>
+            </div><!-- /.modal-delete-actions -->
+          </div><!-- /.modal-delete -->
+        </div><!-- /.modal-body-tab -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-body-wrap -->
+  </div><!-- /.modal .delete -->
+  <div class="modal add">
+    <span class="close" data-action="modal-close"></span>
+    <div class="modal-body-wrap">
+      <div class="modal-body">
+        <div class="modal-body-tab active">
+          <div class="modal-add-vehicle">
+            <strong>Add my Kia</strong>
+            <p>Great! Now you can unlock all the great features available to Kia owners! All we need is your VIN number</p>
+            <div class="modal-add-vehicle-actions">
+              <span class="button less-padding" data-action="modal-overlay-open">Add Your Vehilcle</span>
+            </div><!-- /.modal-add-actions -->
+          </div><!-- /.modal-add-vehicle -->
+        </div><!-- /.modal-body-tab -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-body-wrap -->
+    <div class="modal-overlay">
+      <span class="back" data-action="modal-overlay-close"></span>
+      <div class="modal-add-vehicle-form">
+        <strong>
+          Add Your Vehcile
+        </strong>
+        <form class="add-vehicle-form" autocomplete="off">
+          <ul class="form-fields">
+            <li>
+              <label>
+                <strong>
+                  Nickname (optional)
+                </strong>
+                <input type="text" name="nickname" class="nickname" />
+                <span class="helper">
+                  <strong>Tip:</strong> Use your custom name, your VIN, or License #
+                </span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <strong>
+                  VIN
+                  <span class="label-helper" data-action="modal-overlay-next">
+                    Where can I find my VIN?
+                  </span><!-- /.label-helper -->
+                </strong>
+                <input type="text" name="vin" class="vin" />
+              </label>
+            </li>
+          </ul>
+          <div class="form-footer">
+            <input type="submit" value="Save and close" class="button main" data-action="modal-close" />
+            <span class="button outline dark-icon less-padding" data-action="modal-overlay-open">
+              <i class="fa fa-plus"></i>
+              Add Another
+            </span>
+          </div><!-- /.footer-action -->
+        </form>
+      </div><!-- /.modal-add-vehicle-form -->
+    </div><!-- /.modal-overlay -->
+  </div><!-- /.modal .add -->
+</div><!-- /.modals -->

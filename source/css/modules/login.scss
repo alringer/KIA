@@ -10,18 +10,6 @@
     form {
       margin: 0 auto;
     }
-    .back {
-      display: block;
-      position: absolute;
-      top: 26px;
-      left: 30px;
-      width: 10px;
-      height: 20px;
-      cursor: pointer;
-      transition: all 250ms $easeOutQuint;
-      z-index: 3;
-      background: url('/images/icon_back_arrow.svg') center/contain no-repeat;
-    }
     .reset-password-flow {
       position: relative;
       left: 0;

@@ -1863,6 +1863,12 @@
 		"oAP": "\/build\/views\/partials\/header.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/my-vehicles-modals.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/my-vehicles-modals.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/my-vehicles-subnav.kit": {
 		"ft": 2048,
 		"oA": 1,

@@ -76,6 +76,20 @@ form {
           font-family: $sans;
           text-transform: uppercase;
           margin-bottom: 10px;
+          .label-helper {
+            float: right;
+            font-weight: normal;
+            text-transform: none;
+            font-size: 12px;
+            letter-spacing: .3px;
+            display: block;
+            border-bottom: 1px solid $black;
+            transition: all 250ms $easeOutQuint;
+            &:hover {
+              color: $red;
+              border-bottom-color: $red;
+            }
+          }
         }
         > em {
           font-style: normal;

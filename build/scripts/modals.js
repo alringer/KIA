@@ -62,15 +62,20 @@ $(document).ready(function () {
             $modal_body = $active_modal.find('.modal-body'),
             $modal_tabs = $modal_body.find('.modal-body-tab'),
             $active_tab = $modal_tabs.filter('.active'),
+            $modal_nav = $active_modal.find('.modal-nav'),
             $open_overlay = $active_modal.find('.modal-overlay.active'),
             height = false;
 
         if ($active_tab.length || $open_overlay.length) {
           if ($open_overlay.length) {
-            height = $open_overlay.outerHeight() - $active_modal.find('.modal-nav').outerHeight() - parseInt($active_modal.css('paddingTop'), 10) - parseInt($active_modal.css('paddingBottom'), 10) - 30;
+            height = $open_overlay.outerHeight() - parseInt($active_modal.css('paddingTop'), 10) - parseInt($active_modal.css('paddingBottom'), 10);
+            if ($modal_nav.length) {
+              height -= parseInt($modal_nav.outerHeight(), 10);
+            }
           } else {
             height = $active_tab.outerHeight();
           }
+
           if (height) {
             $modal_body.css({
               'height': height
