@@ -549,6 +549,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/map.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/map.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/modals.js": {
 		"ft": 64,
 		"ma": 0,

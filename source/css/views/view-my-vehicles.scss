@@ -857,5 +857,22 @@
         }
       }
     }
+    .my-vehicles-map {
+      &-view {
+        opacity: 0;
+        transition: all 650ms $easeOutQuint;
+        transform: scale(1.25);
+        transform-origin: top center;
+        &.active {
+          opacity: 1;
+          transition-delay: 100ms;
+          transform: none;
+        }
+        #map {
+          height: calc(100vh - 340px);
+          width: 100vw;
+        }
+      }
+    }
   }
 }
