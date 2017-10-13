@@ -13,6 +13,7 @@ $(document).ready(() => {
       mixitup_sortby : $('[data-mixsort]'),
       search_boxes : $('input[name="my-vehicles-text-filter"]'),
       search_items : $('.my-vehicles-grid-item, my-vehicles-list-item'),
+      mixitup : $('#mixitup'),
     },
     methods : {
       _switch_views : function(e) {
@@ -58,11 +59,13 @@ $(document).ready(() => {
       },
       sorting : {
         _setup : () => {
-          window.myVehiclesList = window.mixitup('#mixitup', {
-            selectors : {
-              target : '.my-vehicles-list-item'
-            }
-          });
+          if(window.myVehicles.elements.mixitup.length) {
+            window.myVehiclesList = window.mixitup('#mixitup', {
+              selectors : {
+                target : '.my-vehicles-list-item'
+              }
+            });
+          }
         },
         _sort : function() {
           var $this = $(this),
