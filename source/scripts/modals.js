@@ -11,11 +11,20 @@ $(document).ready(function() {
       overlay_close : $('[data-action="modal-overlay-close"]'),
     },
     methods : {
-      _open : () => {
-
+      _open : function(e) {
+          e.preventDefault();
+          var $this = $(this),
+              $modal = window.modals.elements.modal.filter(`.${$this.data('modal')}`);
+          if( $modal.length ) {
+            setTimeout(function(){
+              $modal.addClass('active');
+            }, 100);
+            window.modals.elements.modals.addClass('open');
+          }
       },
       _close : () => {
-
+        window.modals.elements.modals.removeClass('open');
+        window.modals.elements.modal.removeClass('active');
       },
       _nav : (e) => {
         var $this = $(e.currentTarget),
