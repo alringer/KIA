@@ -27,6 +27,8 @@ body {
   font-family: $sans;
   position: relative;
   box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
   * {
     box-sizing: border-box;
   }
