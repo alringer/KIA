@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 1001;
   pointer-events: none;
   opacity: 0;
   transition: all 250ms $easeOutQuint 150ms;
@@ -83,6 +83,9 @@
     border-radius: 3px;
     padding: 30px 40px 35px;
     cursor: default;
+    max-height: 95vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     &-nav {
       font-size: 0;
       text-align: center;
@@ -207,6 +210,7 @@
       }
     }
     @media (max-width: 500px) {
+      max-height: 100vh !important;
       max-width: 100vw !important;
       width: 100vw !important;
       min-width: 100vw !important;
@@ -226,7 +230,7 @@
         top: 10px;
       }
       .back {
-        top: 15px !important;
+        top: 13px !important;
       }
     }
   }
@@ -349,5 +353,38 @@
         }
       }
     }
+  }
+}
+
+.modal-find-vin {
+  padding-top: 28px;
+  padding-bottom: 25px;
+  > strong {
+    font-size: 16px;
+    letter-spacing: .4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 28px;
+    line-height: 1em;
+  }
+  &-image {
+    height: 165px;
+    width: 100%;
+    background: lighten($grey, 20%);
+  }
+  &-text {
+    max-width: 245px;
+    padding-left: 40px;
+    text-align: left;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    font-size: 14px;
+    letter-spacing: .6px;
+    color: $grey_2;
+    line-height: 1.5em;
+  }
+  @media (max-width: 500px) {
+    padding-top: 15px;
   }
 }

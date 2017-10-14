@@ -26,6 +26,8 @@ $(document).ready(function() {
           }
       },
       _close : () => {
+        window.modals.methods._overlay_close();
+        window.modals.methods._nav_to(1);
         window.modals.elements.modals.removeClass('open');
         window.modals.elements.modal.removeClass('active');
       },
