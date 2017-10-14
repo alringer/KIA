@@ -6,9 +6,12 @@ $(document).ready(function() {
       modal_open : $('[data-action="modal-open"]'),
       modal_close : $('[data-action="modal-close"]'),
       modal_nav : $('[data-action="modal-nav"]'),
+      modal_nav_next : $('[data-action="modal-nav-next"]'),
+      modal_nav_prev : $('[data-action="modal-nav-prev"]'),
       modal_body : $('.modal .modal-body'),
       overlay_open : $('[data-action="modal-overlay-open"]'),
       overlay_close : $('[data-action="modal-overlay-close"]'),
+      modal_slider : $('.modal .slider'),
     },
     methods : {
       _stop_propgagation : (e) => {
@@ -56,6 +59,23 @@ $(document).ready(function() {
           'left' : -(((modal_width * nav_to) - modal_width)),
         });
         window.modals.methods._reset_size();
+      },
+      _nav_to_adjacent : (direction) => {
+        var $active_modal = window.modals.elements.modal.filter('.active'),
+            $modal_tabs = $active_modal.find('.modal-body-tab'),
+            $active_tab = $modal_tabs.filter('.active'),
+            $next_tab = $active_tab.next('.modal-body-tab'),
+            $prev_tab = $active_tab.prev('.modal-body-tab'),
+            $request_tab = direction === 'next' ? $next_tab : $prev_tab;
+        if( $request_tab.length ) {
+          window.modals.methods._nav_to( $modal_tabs.index($request_tab) + 1);
+        }
+      },
+      _nav_to_next : () => {
+        window.modals.methods._nav_to_adjacent('next');
+      },
+      _nav_to_prev : () => {
+        window.modals.methods._nav_to_adjacent('prev');
       },
       _reset_size : () => {
         var $active_modal = window.modals.elements.modal.filter('.active'),
@@ -116,13 +136,27 @@ $(document).ready(function() {
       _overlay_close : () => {
         window.modals.methods._overlay_toggle('close');
       },
+      _modal_slider : () => {
+        window.modals.elements.modal_slider.slick({
+          infinite : false,
+          slidesToShow: 1,
+          dots: true,
+          prevArrow : '<button type="button" class="slick-prev">Back</button>'
+        });
+      }
     }
   };
+
   // EVENTS
   window.modals.elements.modal_open.on('click', window.modals.methods._open);
   window.modals.elements.modal_close.on('click', window.modals.methods._close);
   window.modals.elements.modal_nav.on('click', window.modals.methods._nav);
+  window.modals.elements.modal_nav_next.on('click', window.modals.methods._nav_to_next);
+  window.modals.elements.modal_nav_prev.on('click', window.modals.methods._nav_to_prev);
   window.modals.elements.overlay_open.on('click', window.modals.methods._overlay_open);
   window.modals.elements.overlay_close.on('click', window.modals.methods._overlay_close);
   window.modals.elements.modal.on('click', window.modals.methods._stop_propgagation);
+
+  // SETUP
+  window.modals.methods._modal_slider();
 });
