@@ -3,7 +3,7 @@
 // RESPONSIVE QUERIES
 $desktop: "(min-width: #{$screen-sm} )";
 $tablet: "(max-width: #{$screen-sm - 1} ) AND (min-width: #{$screen-xs})";
-$mobile: "(max-width: #{$screen-xs})";
+$mobile: "(max-width: #{$screen-xs - 1})";
 
 $below_desktop: "(max-width: #{$screen-sm} )";
 

@@ -12,8 +12,9 @@ $(document).ready(() => {
       edit_toggle_select_all : $('.view-my-vehicles .toggle-select-all'),
       mixitup_sortby : $('[data-mixsort]'),
       search_boxes : $('input[name="my-vehicles-text-filter"]'),
-      search_items : $('.my-vehicles-grid-item, my-vehicles-list-item'),
+      search_items : $('.my-vehicles-grid-item, .my-vehicles-list-item'),
       mixitup : $('#mixitup'),
+      no_results_found : $('.no-results-found'),
     },
     methods : {
       _switch_views : function(e) {
@@ -79,9 +80,11 @@ $(document).ready(() => {
       },
       _text_search : function() {
         var $this = $(this),
-            value = $this.val().toLowerCase().replace("'", '');
+            value = $this.val(),
+            item_found = false;
 
         window.myVehicles.elements.search_boxes.val(value);
+        value = value.toLowerCase().replace("'", '');
 
         window.myVehicles.elements.search_items.each(function(){
           var $item = $(this),
@@ -100,10 +103,16 @@ $(document).ready(() => {
           }
           if( hide ) {
             $item.addClass('hide');
-          }else {
+          } else {
+            item_found = true;
             $item.removeClass('hide');
           }
         });
+        if( !item_found ) {
+          window.myVehicles.elements.no_results_found.addClass('show');
+        } else {
+          window.myVehicles.elements.no_results_found.removeClass('show');
+        }
       }
     }
   };

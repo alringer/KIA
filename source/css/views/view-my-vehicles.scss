@@ -112,6 +112,7 @@
     padding: 40px 0 50px;
     overflow: hidden;
     position: relative;
+    white-space: nowrap;
     @media #{$mobile} {
       padding: 15px 0;
     }
@@ -119,7 +120,7 @@
       max-width: 1000px;
       padding: 0 30px;
       position: relative;
-      @media #{$mobile} {
+      @media (max-width: 500px) {
         padding: 0 10px;
       }
     }
@@ -361,6 +362,38 @@
   }
   .my-vehicles-car-listings {
     transition: all 250ms $easeOutQuint;
+    position: relative;
+    min-height: calc(100vh - 370px);
+    > * {
+      min-height: inherit;
+      overflow: hidden;
+    }
+    .active {
+      .no-results-found.show {
+        opacity: 1;
+      }
+    }
+    .no-results-found {
+      position: absolute;
+      font-size: 29px;
+      top: 300px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      text-align: center;
+      color: #9da0a4;
+      font-weight: 300;
+      letter-spacing: 1.4px;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 250ms $easeOutQuint;
+      @media (max-width: 650px) {
+        font-size: 20px;
+        letter-spacing: .5px;
+        max-width: 210px;
+        top: 130px;
+      }
+    }
     .my-vehicles-item-edit {
       position: absolute;
       top: 12px;
@@ -432,10 +465,12 @@
         &.hide {
           display: none;
         }
-        @media #{$mobile} {
+        @media (max-width: 700px){
           width: 100%;
-          margin: 0 0 10px;
+          margin: 0 auto 10px;
+          display: block;
           height: 310px;
+          max-width: 500px;
         }
         &:hover {
           .my-vehicles-item-edit {
@@ -519,14 +554,11 @@
           left: 50%;
           transform: translateX(-50%);
           width: 100%;
+          text-align: center;
           img {
-            // max-height: 100px;
-            width: 100%;
-            object-fit: contain;
-            // display: block;
-            // margin: 0 auto;
+            max-width: 100%;
           }
-          @media #{$mobile} {
+          @media (max-width: 700px) {
             top: 75px;
             img {
               max-height: 95px;
@@ -537,11 +569,13 @@
           position: absolute;
           bottom: 28px;
           width: 100%;
-          left: 0;
+          left: 50%;
           padding: inherit;
           height: 100px;
           padding-top: 0px;
-          @media #{$mobile} {
+          max-width: 500px;
+          transform: translateX(-50%);
+          @media (max-width: 700px) {
             height: 90px;
           }
           &.layout-2 {
@@ -649,19 +683,25 @@
               vertical-align: middle;
               border-radius: 100%;
               position: relative;
-              top: -2px;
-              margin-right: 9px;
+              top: -1px;
+              margin-right: 7px;
               margin-left: 3px;
               transition: all 250ms $easeOutQuint;
             }
             .logo-uvo {
-              color: $white;
-              font-size: 14px;
+              color: rgba($white, 0);
+              vertical-align: middle;
+              width: 36px;
+              height: 20px;
+              display: inline-block;
+              background: url('/images/logo_uvo_white.svg') center/contain no-repeat;
+              position: relative;
+              top: -2px;
             }
             &-message {
               display: inline-block;
               vertical-align: top;
-              margin-left: 7px;
+              margin-left: 3px;
             }
             &-last-updated {
               float: right;
@@ -677,6 +717,17 @@
           padding-left: inherit;
           padding-right: inherit;
           padding-bottom: 20px;
+          @media (max-width: 700px) {
+            padding-left: 10px;
+            padding-right: 10px;
+            + .my-vehicles-grid-item-image {
+              img {
+                max-height: 75px;
+                position: relative;
+                top: -10px;
+              }
+            }
+          }
           strong {
             font-size: 14px;
             line-height: 1.5em;
@@ -702,8 +753,101 @@
     .my-vehicles-list {
       &-view {
         .contain {
-          max-width: 985px;
+          max-width: 1015px;
           padding: 0 14px;
+        }
+        [class*="cell-"] {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding-right: 5px;
+        }
+        .cell {
+          &-checkbox {
+            &:not(.my-vehicles-item-edit) {
+              width: 53px;
+            }
+          }
+          &-image {
+            width: 80px;
+          }
+          &-model {
+            width: 70px;
+          }
+          &-year {
+            width: 65px;
+          }
+          &-nickname {
+            width: 130px;
+          }
+          &-mileage {
+            width: 105px;
+          }
+          &-service {
+            width: 100px;
+          }
+          &-issues {
+            width: 90px;
+          }
+          &-meta-data {
+            width: 195px;
+          }
+          @media (max-width: 1000px) {
+            &-checkbox {
+              &:not(.my-vehicles-item-edit) {
+                width: 4.4%;
+                min-width: 32px;
+              }
+            }
+            &-image {
+              width: 8.9%;
+              min-width: 65px;
+              &:not(.my-vehicles-list-item-image) {
+                width: 5.5%;
+                min-width: 40px;
+              }
+            }
+            &-model {
+              width: 7%;
+              min-width: 50px;
+            }
+            &-year {
+              width: 5%;
+              min-width: 40px;
+            }
+            &-nickname {
+              width: 15%;
+              min-width: 100px;
+            }
+            &-mileage {
+              width: 9%;
+              min-width: 80px;
+              @media (max-width: 610px) {
+                display: none !important;
+              }
+            }
+            &-service {
+              width: 10%;
+              min-width: 70px;
+              @media (max-width: 680px) {
+                display: none !important;
+              }
+            }
+            &-issues {
+              width: 10%;
+              min-width: 75px;
+              @media (max-width: 760px) {
+                display: none !important;
+              }
+            }
+            &-meta-data {
+              width: 22%;
+              min-width: 160px;
+            }
+            &-settings {
+
+            }
+          }
         }
       }
       &-header {
@@ -713,34 +857,53 @@
         transition: all 250ms $easeOutQuint;
         opacity: 0;
         transform: translateY(-100%);
+        @media (max-width: 1000px) {
+          margin-bottom: 15px;
+        }
         > * {
           display: inline-block;
           vertical-align: top;
+          overflow: visible !important;
           &:not(.checkbox-toggle) {
-            padding-right: 24px;
             font-size: 10px;
             letter-spacing: 1px;
             color: #969696;
             text-transform: uppercase;
             font-weight: bold;
             position: relative;
-            margin-right: 30px;
             transition: all 250ms $easeOutQuint;
             &[data-mixsort] {
               cursor: pointer;
-              &::before {
-                display: block;
-                content: "";
-                position: absolute;
-                top: 3px;
-                right: 0;
-                width: 25px;
-                height: 4px;
-                background: url('/images/icon_sort.svg') top center/contain no-repeat;
-                transition: all 250ms $easeOutQuint;
-                opacity: 0;
-                transform: scale(.5);
+              em {
+                padding-right: 24px;
+                display: inline-block;
+                position: relative;
+                &:before {
+                  display: block;
+                  content: "";
+                  position: absolute;
+                  top: 3px;
+                  right: 0;
+                  width: 24px;
+                  height: 4px;
+                  background: url('/images/icon_sort.svg') top center/contain no-repeat;
+                  transition: all 250ms $easeOutQuint;
+                  opacity: 0;
+                  transform: scale(.5);
+                }
               }
+            }
+            @media (max-width: 1000px) {
+              font-size: 9px;
+              em {
+                padding-right: 15px !important;
+                &:before {
+                  width: 15px !important;
+                }
+              }
+            }
+            em {
+              font-style: normal;
             }
             span {
               display: block;
@@ -749,7 +912,7 @@
               color: $black;
             }
             &:hover {
-              &:before {
+              em:before {
                 opacity: 1;
                 transform: none;
               }
@@ -781,9 +944,13 @@
         box-shadow: 0 1px 2px 0 rgba(39, 48, 59, 0.15);
         min-height: 80px;
         position: relative;
+        width: 100%;
         padding-left: 60px;
         white-space: nowrap;
         overflow: hidden;
+        &.hide {
+          display: none;
+        }
         &:hover {
           .my-vehicles-item-edit {
             opacity: 1;
@@ -797,7 +964,13 @@
           font-size: 14px;
           letter-spacing: .6px;
           color: $grey_2;
-          margin-right: 32px;
+          .no-cut-off {
+            line-height: 1.25em;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: visible;
+            white-space: normal;
+          }
         }
         .my-vehicles-item-edit {
           position: absolute;
@@ -805,7 +978,7 @@
           transform: translateY(-50%);
         }
         &-image {
-          width: 100px;
+          width: 80px;
           display: inline-block;
           vertical-align: middle;
           height: 100%;
@@ -828,10 +1001,25 @@
             em {
               font-style: normal;
             }
+            @media (max-width: 1000px) {
+              font-size: 11px;
+              margin-bottom: 7px;
+            }
           }
           &-actions {
             line-height: 1em;
             padding: 5px 0;
+            .button {
+              max-width: 100%;
+              @media (max-width: 1000px) {
+                height: 27px;
+                line-height: 25px;
+                font-size: 10px;
+                max-width: 100%;
+                padding: 0 10px;
+                letter-spacing: .3px;
+              }
+            }
             a:not(.button) {
               display: inline-block;
               color: $red;
@@ -853,6 +1041,36 @@
                 }
               }
             }
+          }
+        }
+        &-settings {
+          position: absolute;
+          top: 50%;
+          right: 35px;
+          padding-right: 0px !important;
+          display: block;
+          transform: translateY(-50%);
+          &-icon {
+            svg {
+              * {
+                fill: $grey !important;
+                transition: all 250ms $easeOutQuint;
+              }
+            }
+            &:hover {
+              svg * {
+                fill: $black !important;
+              }
+            }
+          }
+        }
+        @media (max-width: 1000px) {
+          padding-left: 20px;
+          &-settings {
+            right: 20px;
+          }
+          > *:not(.my-vehicles-item-edit) {
+            font-size: 11px;
           }
         }
       }
