@@ -28,7 +28,13 @@
     .modal.active {
       opacity: 1;
       transform: translate(-50%, -50%);
+      .close {
+        pointer-events: all;
+      }
     }
+  }
+  &:not(.open) {
+    pointer-events: none !important;
   }
   .close {
     display: block;
@@ -39,7 +45,6 @@
     width: 25px;
     height: 25px;
     cursor: pointer;
-    pointer-events: all;
     z-index: 3;
     &:before,
     &:after {
@@ -86,6 +91,9 @@
     max-height: 95vh;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    &:not(.active) {
+      pointer-events: none !important;
+    }
     &-nav {
       font-size: 0;
       text-align: center;

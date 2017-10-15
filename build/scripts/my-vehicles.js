@@ -151,7 +151,6 @@ $(document).ready(function () {
   $(window).on('resize', function () {
     clearTimeout(window.myVehicles_tab_size);
     window.myVehicles_tab_size = setTimeout(function () {
-      console.log('run');
       window.myVehicles.methods._resize_view();
     }, 500);
   });

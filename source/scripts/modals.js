@@ -24,6 +24,7 @@ $(document).ready(function() {
           if( $modal.length ) {
             setTimeout(function(){
               $modal.addClass('active');
+              window.modals.methods._reset_size();
             }, 100);
             window.modals.elements.modals.addClass('open');
           }
@@ -159,4 +160,5 @@ $(document).ready(function() {
 
   // SETUP
   window.modals.methods._modal_slider();
+  window.modals.methods._reset_size();
 });

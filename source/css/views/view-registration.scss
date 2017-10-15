@@ -464,7 +464,7 @@
                 font-weight: 100;
                 text-transform: none;
               }
-              &::-ms-input-placeholder {
+              &:-ms-input-placeholder {
                 font-style: italic;
                 color: #9da0a4;
                 font-weight: 100;
@@ -477,6 +477,12 @@
                 text-transform: none;
               }
               &::-webkit-input-placeholder {
+                font-style: italic;
+                color: #9da0a4;
+                font-weight: 100;
+                text-transform: none;
+              }
+              &::placeholder {
                 font-style: italic;
                 color: #9da0a4;
                 font-weight: 100;
