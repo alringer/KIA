@@ -457,29 +457,31 @@
             border: solid 1px #a9adb1;
             box-shadow: none;
             text-transform: uppercase;
-            &:-moz-placeholder {
-              font-style: italic;
-              color: #9da0a4;
-              font-weight: 100;
-              text-transform: none;
-            }
-            &::-ms-input-placeholder {
-              font-style: italic;
-              color: #9da0a4;
-              font-weight: 100;
-              text-transform: none;
-            }
-            &::-moz-placeholder {
-              font-style: italic;
-              color: #9da0a4;
-              font-weight: 100;
-              text-transform: none;
-            }
-            &::-webkit-input-placeholder {
-              font-style: italic;
-              color: #9da0a4;
-              font-weight: 100;
-              text-transform: none;
+            &.fancy-placeholder {
+              &:-moz-placeholder {
+                font-style: italic;
+                color: #9da0a4;
+                font-weight: 100;
+                text-transform: none;
+              }
+              &::-ms-input-placeholder {
+                font-style: italic;
+                color: #9da0a4;
+                font-weight: 100;
+                text-transform: none;
+              }
+              &::-moz-placeholder {
+                font-style: italic;
+                color: #9da0a4;
+                font-weight: 100;
+                text-transform: none;
+              }
+              &::-webkit-input-placeholder {
+                font-style: italic;
+                color: #9da0a4;
+                font-weight: 100;
+                text-transform: none;
+              }
             }
             @media #{$mobile} {
               height: 40px;
@@ -488,6 +490,24 @@
           }
           .selectize {
             margin-bottom: 11px;
+            .selectize-input {
+              input[type="text"] {
+                font-size: 14px !important;
+                text-transform: none !important;
+                &:-moz-placeholder {
+                  color: #c7c7c7;
+                }
+                &::-ms-input-placeholder {
+                  color: #c7c7c7;
+                }
+                &::-moz-placeholder {
+                  color: #c7c7c7;
+                }
+                &::-webkit-input-placeholder {
+                  color: #c7c7c7;
+                }
+              }
+            }
           }
         }
         .form-footer-note {
