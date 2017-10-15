@@ -286,6 +286,10 @@
           color: $red;
           transition: all 250ms $easeOutQuint;
           cursor: pointer;
+          &.disabled {
+            pointer-events: none;
+            opacity: .3;
+          }
           em {
             font-style: normal;
           }
