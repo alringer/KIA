@@ -29,7 +29,11 @@ $(document).ready(function () {
         $this.addClass('active');
         window.myVehicles.elements.vehicle_listings_views.removeClass('active');
         $requested_view.addClass('active');
-        window.myVehicles.elements.vehicle_listings_views_wrap.css('height', $requested_view.outerHeight());
+        window.myVehicles.methods._resize_view();
+      },
+      _resize_view: function _resize_view() {
+        var tab_height = window.myVehicles.elements.vehicle_listings_views.filter('.active').outerHeight();
+        window.myVehicles.elements.vehicle_listings_views_wrap.css('height', tab_height);
       },
       editing: {
         _start: function _start() {
@@ -109,11 +113,13 @@ $(document).ready(function () {
         } else {
           window.myVehicles.elements.no_results_found.removeClass('show');
         }
+        window.myVehicles.methods._resize_view();
       }
     }
   };
 
   window.myVehicles.methods.sorting._setup();
+  window.myVehicles.methods._resize_view();
 
   // EVENTS
   window.myVehicles.elements.edit_checkbox.on('change.edit', window.myVehicles.methods.editing._checkbox_change);
@@ -124,4 +130,11 @@ $(document).ready(function () {
   window.myVehicles.elements.mixitup_sortby.on('click.fire', window.myVehicles.methods.sorting._sort);
   window.myVehicles.elements.search_boxes.on('keyup', window.myVehicles.methods._text_search);
   window.myVehicles.elements.switch_view.on('click', window.myVehicles.methods._switch_views);
+  $(window).on('resize', function () {
+    clearTimeout(window.myVehicles_tab_size);
+    window.myVehicles_tab_size = setTimeout(function () {
+      console.log('run');
+      window.myVehicles.methods._resize_view();
+    }, 500);
+  });
 });
