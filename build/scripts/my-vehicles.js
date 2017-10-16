@@ -222,8 +222,6 @@ $(document).ready(function () {
   window.myVehicles.methods.sorting._setup();
   window.myVehicles.methods._resize_view();
 
-  console.log(window.myVehicles.elements.list_item_toggle.length);
-
   // EVENTS
   window.myVehicles.elements.edit_checkbox.on('change.edit', window.myVehicles.methods.editing._checkbox_change);
   window.myVehicles.elements.edit_select_all.on('click', window.myVehicles.methods.editing._select_all);
