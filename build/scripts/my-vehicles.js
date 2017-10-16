@@ -18,7 +18,8 @@ $(document).ready(function () {
       search_boxes: $('input[name="my-vehicles-text-filter"]'),
       search_items: $('.my-vehicles-grid-item, .my-vehicles-list-item'),
       mixitup: $('#mixitup'),
-      no_results_found: $('.no-results-found')
+      no_results_found: $('.no-results-found'),
+      list_item_toggle: $('.my-vehicles-list-item-toggle')
     },
     methods: {
       _switch_views: function _switch_views(e) {
@@ -131,12 +132,37 @@ $(document).ready(function () {
           window.myVehicles.elements.no_results_found.removeClass('show');
         }
         window.myVehicles.methods._resize_view();
+      },
+      _list_item_toggle: function _list_item_toggle() {
+        var $this = $(this),
+            $list_item = $this.parents('.my-vehicles-list-item'),
+            $meta_data = $list_item.find('.cell-meta-data'),
+            $meta_data_inner = $meta_data.find('.meta-data-inner'),
+            $view = window.myVehicles.elements.view,
+            $list_view = window.myVehicles.elements.vehicle_listings_views_wrap,
+            view_height = parseInt($view.css('height'), 10),
+            list_view_height = parseInt($list_view.css('height'), 10),
+            meta_height = $meta_data_inner.outerHeight();
+
+        $this.toggleClass('flip');
+
+        if (!$meta_data.hasClass('show')) {
+          $meta_data.addClass('show').css('height', meta_height);
+          $view.css('height', view_height + meta_height);
+          $list_view.css('height', list_view_height + meta_height);
+        } else {
+          $meta_data.removeClass('show').css('height', 0);
+          $view.css('height', view_height - meta_height);
+          $list_view.css('height', list_view_height - meta_height);
+        }
       }
     }
   };
 
   window.myVehicles.methods.sorting._setup();
   window.myVehicles.methods._resize_view();
+
+  console.log(window.myVehicles.elements.list_item_toggle.length);
 
   // EVENTS
   window.myVehicles.elements.edit_checkbox.on('change.edit', window.myVehicles.methods.editing._checkbox_change);
@@ -148,6 +174,8 @@ $(document).ready(function () {
   window.myVehicles.elements.mixitup_sortby.on('click.fire', window.myVehicles.methods.sorting._sort);
   window.myVehicles.elements.search_boxes.on('keyup', window.myVehicles.methods._text_search);
   window.myVehicles.elements.switch_view.on('click', window.myVehicles.methods._switch_views);
+  window.myVehicles.elements.list_item_toggle.on('click', window.myVehicles.methods._list_item_toggle);
+
   $(window).on('resize', function () {
     clearTimeout(window.myVehicles_tab_size);
     window.myVehicles_tab_size = setTimeout(function () {
