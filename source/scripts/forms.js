@@ -1,38 +1,48 @@
 $(document).ready(() => {
   window.forms = {
+    // Form elements
     elements : {
       selectize : $('.selectize'),
       dual_inputs : $('form .dual-inputs input'),
     },
     methods : {
+      // Setups the selectize plugin
       _selectize : () => {
         if( window.forms.elements.selectize.length ) {
           window.forms.elements.selectize.selectize({
-            // placeholder : 'Testing',
             allowEmptyOption : true,
             items : false,
           });
         }
       },
+      // Dsiplay an error message
       _error : ($field) => {
+        // Add the error class
         $field.addClass('error');
 
+        // Grab error fields
         var $error_message = $field.find('.error-message'),
             $error_message_inner = $error_message.find('.error-message-inner');
 
+        // Set the height of the error message -- this uses a css3 transtion to animate in
         $error_message.css({
           'height' : `${$error_message_inner[0].clientHeight}px`
         });
 
+        // Diplay error message ( transitions opacity, etc )
         $error_message_inner.addClass('show');
       },
+      // There are some form fields that have dual inputs (for example: both text / radio buttons)
+      // Selecting one selects them both
       _dual_inputs : function() {
         var $this = $(this),
             $parent = $this.parents('.dual-inputs'),
             $inputs = $parent.find('input'),
             $radio = $inputs.filter('[type="checkbox"], [type="radio"]');
-        $(`[name="${$radio.attr('name')}"]`).removeAttr('checked');
-        $radio.attr('checked', 'checked');
+        // Make sure the radio/checkbox gets checked
+        $(`[name="${$radio.attr('name')}"]`).prop('checked', false);
+        $radio.prop('checked', true);
+        // Trigger the default change event
         $radio.trigger('change');
       }
     },
