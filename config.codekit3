@@ -125,6 +125,121 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/fonts\/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/fonts\/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/fonts\/kia\/KIAB.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAB.eot",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAB.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAB.otf",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAB.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAB.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAB.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAB.ttf",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAB.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAB.woff",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAL.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAL.eot",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAL.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAL.otf",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAL.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAL.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAL.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAL.ttf",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAL.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAL.woff",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAM.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAM.eot",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAM.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAM.otf",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAM.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAM.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAM.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAM.ttf",
+		"oF": 0
+		},
+	"\/source\/css\/fonts\/kia\/KIAM.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts\/kia\/KIAM.woff",
+		"oF": 0
+		},
 	"\/source\/css\/global.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2009,6 +2124,12 @@
 		"oAP": "\/build\/views\/registration-10.html",
 		"oF": 0
 		},
+	"\/source\/views\/registration-11.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/registration-11.html",
+		"oF": 0
+		},
 	"\/source\/views\/registration-2.kit": {
 		"ft": 2048,
 		"oA": 0,
@@ -2067,7 +2188,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 529723163
+	"lastBuiltDate": 529808129
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

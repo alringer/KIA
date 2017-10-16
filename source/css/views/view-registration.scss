@@ -680,4 +680,31 @@
       }
     }
   }
+  .create-new-password {
+    max-width: 370px;
+    margin: 0 auto;
+    ul.form-fields {
+      overflow: hidden;
+      li {
+        margin-bottom: 25px;
+        input[type="password"],
+        input[type="text"] {
+          height: 56px;
+          @media #{$mobile} {
+            height: 40px;
+          }
+        }
+        @media #{$mobile} {
+          margin-bottom: 15px;
+          &:last-child {
+            padding-top: 10px;
+            input[type="submit"] {
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

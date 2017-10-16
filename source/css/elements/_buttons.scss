@@ -16,8 +16,8 @@
   -webkit-appearance: none;
   border: none;
   border-radius: 2px;
-  font-family: $sans;
-  font-weight: bold;
+  font-family: $kia;
+  font-weight: normal;
   cursor: pointer;
   outline: none;
   text-align: center;
@@ -41,6 +41,8 @@
   }
   &.full {
     width: 100%;
+    padding: 0;
+    text-align: center;
   }
   &.large {
     height: 50px;
