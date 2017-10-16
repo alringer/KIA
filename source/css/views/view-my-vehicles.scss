@@ -44,6 +44,7 @@
           font-weight: bold;
           transition: all 250ms $easeOutQuint;
           position: relative;
+          font-family: $kia;
           &:before {
             @include underline();
             transform: translate(-50%, 18px);
@@ -82,9 +83,10 @@
       h1 {
         margin: 0;
         font-size: 29px;
-        font-weight: normal;
         letter-spacing: 1.4px;
         margin-bottom: 18px;
+        font-family: $kia;
+        font-weight: 500;
       }
       p {
         font-size: 14px;
@@ -132,6 +134,7 @@
       margin: 0;
       font-weight: normal;
       float: left;
+      font-family: $kia;
       @media (max-width: 700px) {
         display: none;
       }
@@ -286,6 +289,7 @@
           font-weight: bold;
           color: $red;
           transition: all 250ms $easeOutQuint;
+          font-family: $kia;
           cursor: pointer;
           &.disabled {
             pointer-events: none;
@@ -387,11 +391,12 @@
       width: 100%;
       text-align: center;
       color: #9da0a4;
-      font-weight: 300;
+      font-weight: 100;
       letter-spacing: 1.4px;
       pointer-events: none;
       opacity: 0;
       transition: all 250ms $easeOutQuint;
+      font-family: $kia;
       @media (max-width: 650px) {
         font-size: 20px;
         letter-spacing: .5px;
@@ -497,6 +502,7 @@
             line-height: 1em;
             text-transform: uppercase;
             margin-bottom: 5px;
+            font-family: $kia;
           }
           strong {
             display: block;
@@ -504,7 +510,8 @@
             letter-spacing: 0.5px;
             color: $black;
             line-height: 1em;
-            font-weight: normal;
+            font-weight: 500;
+            font-family: $kia;
           }
         }
         &-settings {
@@ -526,6 +533,7 @@
             font-weight: bold;
             text-decoration: none;
             transition: all 250ms $easeOutQuint;
+            font-family: $kia;
             &:before {
               @include underline();
               transform: translate(-50%, 0px);
@@ -624,6 +632,7 @@
               letter-spacing: 1px;
               line-height: 1em;
               margin-bottom: 8px;
+              font-family: $kia;
             }
             em {
               font-size: 14px;
@@ -910,12 +919,13 @@
           display: inline-block;
           vertical-align: top;
           overflow: visible !important;
+          font-family: $kia;
           &:not(.checkbox-toggle) {
             font-size: 10px;
             letter-spacing: 1px;
             color: #969696;
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: 500;
             position: relative;
             transition: all 250ms $easeOutQuint;
             &[data-mixsort] {
@@ -1057,6 +1067,10 @@
             padding: 5px 0;
             .button {
               max-width: 100%;
+              text-transform: none;
+              font-family: $sans;
+              font-weight: normal;
+              font-size: 11px !important;
               @media (max-width: 1000px) {
                 height: 27px;
                 line-height: 25px;
@@ -1076,6 +1090,7 @@
               text-decoration: none;
               transition: all 250ms $easeOutQuint;
               position: relative;
+              font-family: $kia;
               &:before {
                 @include underline();
                 transform: translate(-50%, 0px);

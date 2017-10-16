@@ -261,6 +261,8 @@
       font-weight: 400;
       margin-bottom: 22px;
       display: block;
+      font-family: $kia;
+      font-weight: 500;
     }
     p {
       font-size: 14px;
@@ -311,8 +313,6 @@
       padding-top: 30px;
     }
     &-form {
-      padding-top: 20px;
-      padding-bottom: 40px;
       > strong {
         display: block;
         font-size: 16px;
@@ -322,7 +322,8 @@
         margin-bottom: 35px;
         text-transform: uppercase;
         font-weight: 400;
-        padding-top: 9px;
+        font-family: $kia;
+        font-weight: 500;
       }
       form {
         max-width: 318px;
@@ -375,6 +376,8 @@
     display: block;
     margin-bottom: 28px;
     line-height: 1em;
+    font-family: $kia;
+    font-weight: 500;
   }
   &-image {
     height: 165px;
@@ -382,7 +385,7 @@
     background: lighten($grey, 20%);
   }
   &-text {
-    max-width: 245px;
+    max-width: 255px;
     padding-left: 40px;
     text-align: left;
     margin-bottom: 40px;

@@ -22,12 +22,15 @@
       font-weight: normal;
       margin: 0 0 10px;
       line-height: 1em;
+      font-family: $kia;
+      font-weight: 500;
     }
     h1 {
       font-size: 32px;
       letter-spacing: 1.5px;
       font-weight: normal;
       margin: 0;
+      font-family: $kia;
     }
     p {
       padding-top: 25px;
@@ -95,6 +98,8 @@
         font-size: 10px;
         line-height: 1em;
         margin-bottom: 16px;
+        font-family: $kia;
+        font-weight: bold;
       }
       &-steps {
         width: 100%;
@@ -210,6 +215,7 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 25px;
+        font-family: $kia;
       }
       &-text {
         font-size: 14px;
@@ -352,6 +358,8 @@
               text-transform: uppercase;
               text-decoration: none;
               position: relative;
+              font-family: $kia;
+              font-weight: bold;
               &:before {
                 @include underline();
                 transform: translate(-50%, 2px);
@@ -551,6 +559,7 @@
         color: $grey_2;
         margin-bottom: 6px;
         display: block;
+        font-family: $kia;
       }
       p {
         font-size: 12px;
@@ -628,6 +637,7 @@
       letter-spacing: .7px;
       transition: all 250ms $easeOutQuint;
       position: relative;
+      font-family: $kia;
       &:before {
         @include underline();
         transform: translate(-50%, 2px);
