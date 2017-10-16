@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  if(!$('#map').length) {
+    return;
+  }
   var vm = this;
   //Step 1: initialize communication with the platform
   var platform = new window.H.service.Platform({

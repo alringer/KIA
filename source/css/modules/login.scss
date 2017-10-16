@@ -111,7 +111,56 @@
     transform-origin: top left;
     transform: scale(.91);
   }
-  @media (max-width: 500px) {;
+  .toggle-show-password {
+    display: none;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: calc(50% + 11px);
+    right: 47px;
+    transform: translateY(-50%);
+    background: url('/images/icon_show_password.svg') center/contain no-repeat;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 3;
+    &-rules {
+      display: none;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: calc(50% + 12px);
+      right: 0px;
+      transform: translateY(-50%);
+      background: url('/images/icon_help.svg') center/contain no-repeat;
+      pointer-events: none;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 500px) {
+    .create-password {
+      width: 245px;
+      padding-right: 45px;
+    }
+    .toggle-show-password {
+      display: block;
+      pointer-events: all;
+      &-rules {
+        display: block;
+        pointer-events: all;
+      }
+    }
+    .create-password-validator {
+      left: auto;
+      right: -4px;
+      &:before {
+        left: auto;
+        right: 5px;
+      }
+      &.toggle-show {
+        opacity: 0 !important;
+        transform: translateY(-10px) !important;
+      }
+    }
     .modal-overlay {
       .reset-password-flow {
         padding: 0;

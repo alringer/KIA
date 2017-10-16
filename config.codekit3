@@ -267,6 +267,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_help.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_help.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_list_view.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -332,6 +342,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_settings.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_show_password.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_show_password.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

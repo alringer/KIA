@@ -129,7 +129,8 @@ $(document).ready(function () {
         }
         window.modals.methods._reset_size();
       },
-      _overlay_open: function _overlay_open() {
+      _overlay_open: function _overlay_open(e) {
+        e.preventDefault();
         window.modals.methods._overlay_toggle('open');
       },
       _overlay_close: function _overlay_close() {
