@@ -17,6 +17,7 @@
         pointer-events: none !important;
       }
     }
+
     .overview-remote-commands {
       &-header,
       .overview-remote-command:not(.communicating) {
@@ -37,10 +38,14 @@
       }
     }
     .overview-remote-commands {
+      pointer-events: none !important;
       &-header > strong,
       .overview-remote-command {
         opacity: .3;
-        pointer-events: none;
+        pointer-events: none !important;
+        .action-button {
+          pointer-events: none !important;
+        }
       }
       &-header {
         .messages {
