@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Status Refresh</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Overview*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-/-Remote-Commands-/-Flagship-MASTER" transform="translate(-790.000000, -47.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="Overly-Designed-Cards" transform="translate(1.000000, 42.000000)">
+                <g id="Widget-Header">
+                    <g id="Status-Refresh" transform="translate(653.000000, 0.000000)">
+                        <g id="Icons-/-Status-Refresh" transform="translate(136.000000, 5.000000)">
+                            <path d="M4.81402439,8.02743902 C4.81402439,5.14634146 7.11890244,2.84146341 10,2.84146341 C10.6914634,2.84146341 11.3829268,2.95670732 11.9591463,3.18719512 L13.6878049,1.45853659 C12.5353659,0.882317073 11.3829268,0.536585366 10,0.536585366 C5.85121951,0.536585366 2.50914634,3.87865854 2.50914634,8.02743902 L0.780487805,8.02743902 L3.66158537,10.9085366 L6.54268293,8.02743902 L4.81402439,8.02743902 Z M16.3384146,5.14634146 L13.4573171,8.02743902 L15.1859756,8.02743902 C15.1859756,10.9085366 12.8810976,13.2134146 10,13.2134146 C9.30853659,13.2134146 8.61707317,13.0981707 8.04085366,12.8676829 L6.31219512,14.5963415 C7.46463415,15.172561 8.61707317,15.5182927 10,15.5182927 C14.1487805,15.5182927 17.4908537,12.1762195 17.4908537,8.02743902 L19.2195122,8.02743902 L16.3384146,5.14634146 Z" id="refresh-black"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

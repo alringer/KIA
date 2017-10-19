@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.9791198,5.10666667 L5.02931361,16.0564728 C4.38822444,15.3498156 4,14.3970237 4,13.32 L4,5.10666667 L6,5.10666667 L6,2.02666667 C6,1.46666667 6.45454545,1 7,1 C7.54545455,1 8,1.46666667 8,2.02666667 L8,5.10666667 L12,5.10666667 L12,2.02666667 C12,1.46666667 12.4545455,1 13,1 C13.5454545,1 14,1.46666667 14,2.02666667 L14,5.10666667 L15.9791198,5.10666667 Z M16,7.91421356 L16,13.3433333 C16,15.6066667 14.25,17.3333333 12.0454545,17.3333333 L12.0454545,22 L7.95454545,22 L7.95454545,17.3333333 C7.53675884,17.3333333 7.13529704,17.2713208 6.75897721,17.1552363 L16,7.91421356 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Remote-Commands-/-Not-Plugged-In-Solid" transform="translate(-5.000000, -5.000000)">
+            <g id="Group" transform="translate(5.000000, 4.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#C4172C" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <rect id="Rectangle-13" fill="#C4172C" transform="translate(10.000000, 10.500000) rotate(45.000000) translate(-10.000000, -10.500000) " x="9" y="-2" width="2" height="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

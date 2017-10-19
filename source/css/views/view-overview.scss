@@ -1,0 +1,215 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.view-overview {
+  .overview-header {
+    background-image: radial-gradient(circle at 49% 65%, #707070, #3b3b3b);
+    position: relative;
+    min-height: 400px;
+    color: $white;
+    margin-bottom: 115px;
+    &-title {
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      .icon-info {
+        font-size: 12px;
+        display: block;
+        font-style: normal;
+        height: 19px;
+        font-weight: bold;
+        line-height: 17px;
+        width: 19px;
+        vertical-align: bottom;
+        border-radius: 100%;
+        border: 1px solid $white;
+        text-align: center;
+        transition: all 250ms $easeOutQuint;
+        position: absolute;
+        right: 0;
+        top: calc(50% + 5px);
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:hover {
+          background: $white;
+          color: $black;
+        }
+      }
+      strong {
+        display: block;
+        font: normal 38px/1em $kia;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 10px;
+        height: 35px;
+        position: relative;
+        padding-right: 33px;
+        margin-left: 17px;
+      }
+      em {
+        color: $grey;
+        font-style: normal;
+        text-transform: uppercase;
+        display: block;
+        font: bold 10px/1em $kia;
+        letter-spacing: 1px;
+      }
+    }
+    &-info {
+      position: absolute;
+      left: 36px;
+      top: 63px;
+      &.right {
+        text-align: right;
+        left: auto;
+        right: 63px;
+        strong {
+          margin-right: -15px;
+        }
+      }
+      .icon-arrow-right {
+        display: block;
+        width: 7px;
+        height: 12px;
+        background: url('/images/icon_arrow_right_white.svg') center no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      strong {
+        display: block;
+        font: normal 24px/1em $kia;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        height: 28px;
+        position: relative;
+        padding-right: 15px;
+        span {
+          font-size: 14px;
+        }
+      }
+      em {
+        display: block;
+        font: bold 10px/1em $kia;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $grey;
+      }
+    }
+    &-vehicle-image {
+      position: absolute;
+      left: 50%;
+      bottom: -100px;
+      transform: translateX(-50%);
+      max-width: 530px;
+      width: 100%;
+      img {
+        max-width: 100%;
+        display: block;
+      }
+    }
+    @media #{$tablet} {
+      min-height: 325px;
+      &-info {
+        strong {
+          max-width: 175px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+      &-vehicle-image {
+        max-width: 450px;
+        bottom: -60px;
+      }
+    }
+    @media (max-width: 700px) {
+      &-title {
+        top: 25px;
+      }
+      &-info {
+        strong {
+          font-size: 14px;
+          letter-spacing: .4px;
+          height: 20px;
+          max-width: 120px;
+          .icon-arrow-right {
+            margin-top: -2px;
+          }
+        }
+        em {
+          font-size: 9px;
+          letter-spacing: .6px;
+        }
+      }
+    }
+    @media #{$mobile} {
+      min-height: 135px;
+      &-title {
+        padding-top: 10px;
+        top: 15px;
+        strong {
+          font-size: 22px;
+          height: 15px;
+          font-weight: 500;
+          padding-right: 25px;
+          margin-left: -16px;
+          letter-spacing: .6px;
+          .icon-info {
+            width: 16px;
+            height: 16px;
+            line-height: 14px;
+            font-size: 10px;
+            letter-spacing: -1px;
+          }
+        }
+        em {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          color: $white;
+          white-space: nowrap;
+          text-transform: none;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+      }
+      &-vehicle-image {
+        bottom: -30px;
+        max-width: 240px;
+      }
+      &-info {
+        left: 20px;
+        padding-top: 14px;
+        &.right {
+          left: auto;
+          right: 35px;
+          em {
+            left: auto;
+            right: 0;
+          }
+        }
+        top: auto;
+        bottom: -75px;
+        .icon-arrow-right {
+          background-image: url('/images/icon_arrow_right_dark.svg');
+        }
+        strong {
+          text-shadow: none;
+          color: #27303b;
+          font-weight: 500;
+        }
+        em {
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          left: 0;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -66,6 +66,18 @@
         color: $white;
       }
     }
+    &.white {
+      border-color: $white;
+      color: $white;
+      line-height: 39px;
+      &.transparent {
+        background-color: rgba($white, 0.23);
+        &:hover {
+          background: $white;
+          color: $black;
+        }
+      }
+    }
   }
   &.disabled {
     opacity: .5;

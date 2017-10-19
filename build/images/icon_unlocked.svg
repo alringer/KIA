@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="22px" viewBox="0 0 17 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="17" height="15"></rect>
+        <path d="M10,14 L17,14 L17,0 L0,0 L0,14 L4,14 L4,14.6999998 L10,14.6999998 L10,14 Z" id="path-3"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Remote-Commands-/-Security-Unlocked-Solid" transform="translate(-6.000000, -4.000000)">
+            <g id="Icons-/-Unlocked" transform="translate(0.000000, -2.000000)">
+                <g id="Group-3" transform="translate(6.000000, 0.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 14.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Rectangle-3"></g>
+                        <path d="M14.3,-4.7 L14.3,-5.00898803 C14.3,-6.65885664 12.9542582,-8 11.2942017,-8 L6.30579834,-8 C4.64881592,-8 3.3,-6.66087833 3.3,-5.00898803 L3.3,-0.3 L2.00010618,-0.3 C0.890058413,-0.3 0,0.59695758 0,1.70341083 L0,11.9965892 C0,13.105471 0.895478039,14 2.00010618,14 L14.9998938,14 C16.1099416,14 17,13.1030424 17,11.9965892 L17,1.70341083 C17,0.594529045 16.104522,-0.3 14.9998938,-0.3 L14.3,-0.3 L14.3,-0.305770049 L11,-0.3 L11,-4.7 L12.1,-4.7 C12.1,-4.09248678 12.5924868,-3.6 13.2,-3.6 C13.8075132,-3.6 14.3,-4.09248678 14.3,-4.7 Z" id="Ico" fill="#BB1A30" mask="url(#mask-2)"></path>
+                    </g>
+                    <g id="Group">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Combined-Shape"></g>
+                        <path d="M13.9899981,9.3 L14,9.3 L14,8.99101197 C14,7.34114336 12.6542582,6 10.9942017,6 L6.00579834,6 C4.34881592,6 3,7.33912167 3,8.99101197 L3,13.7 L2.00010618,13.7 C0.890058413,13.7 0,14.5969576 0,15.7034108 L0,25.9965892 C0,27.105471 0.895478039,28 2.00010618,28 L14.9998938,28 C16.1099416,28 17,27.1030424 17,25.9965892 L17,15.7034108 C17,14.594529 16.104522,13.7 14.9998938,13.7 L14,13.7 L14,13.6947545 L13,13.696503 L13,13.7 L4,13.7 L4,9 L4,9 C4,7.8954305 4.8954305,7 6,7 L11,7 C12.1045695,7 13,7.8954305 13,9 L13,9.3 L13.0100019,9.3 C13.056329,9.52822394 13.2581043,9.69999981 13.5,9.69999981 C13.7418957,9.69999981 13.943671,9.52822394 13.9899981,9.3 Z" id="Ico" fill="#BB1A30" mask="url(#mask-4)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

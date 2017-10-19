@@ -1,0 +1,253 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.overview-maintenance {
+  background: #ebebeb;
+  margin-top: 35px;
+  font-size: 0;
+  padding-bottom: 40px;
+  text-align: center;
+  .contain {
+    max-width: 870px;
+    padding: 0 20px;
+  }
+  &-header {
+    text-align: left;
+    margin-bottom: 22px;
+    padding: 26px 5px 0;
+    > strong {
+      display: block;
+      font: bold 12px/1em $kia;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+    }
+  }
+  @media (max-width: 700px) {
+    padding-bottom: 30px;
+    &-header {
+      padding: 18px 5px 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.maintenance-card {
+  background: $white;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  border-radius: 2px;
+  width: calc(33.3333% - 10px);
+  margin: 0 5px;
+  font-size: 10px;
+  height: 160px;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  &-title {
+    font: bold 10px/1em $kia;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $grey;
+    display: block;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+  }
+  &-content {
+    padding: 0 25px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    &.service {
+      padding-bottom: 45px;
+      strong {
+        font: 500 16px $kia;
+        letter-spacing: .9px;
+        margin-bottom: 16px;
+        display: block;
+      }
+      .progress-bar {
+        max-width: 195px;
+      }
+    }
+    &.with-icon {
+      padding-left: 120px;
+      padding-bottom: 0px;
+      margin-bottom: 40px;
+      .maintenance-card-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25px;
+        height: 60px;
+        width: 90px;
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &-info {
+          strong {
+            display: block;
+            height: 35px;
+            font: 500 28px $kia;
+            letter-spacing: 3.6px;
+          }
+          em {
+            display: block;
+            max-width: 75px;
+            font: bold 10px $kia;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+            font-style: normal;
+            height: 25px;
+          }
+        }
+      }
+      @media (max-width: 850px) {
+        padding-left: 100px;
+        .maintenance-card-icon {
+          width: 70px;
+        }
+      }
+    }
+  }
+  .icon-arrow-right {
+    position: absolute;
+    bottom: 67px;
+    right: 16px;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .desktop-and-tablet {
+    display: block !important;
+  }
+  @media (max-width: 700px) {
+    height: 62px;
+    width: 100%;
+    margin-bottom: 6px;
+    max-width: 505px;
+    .icon-arrow-right {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .mobile {
+      display: block !important;
+      padding-left: 75px;
+      &-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 75px;
+        text-align: center;
+        transform: translateY(-50%);
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 32px;
+        }
+      }
+      &-content {
+        position: absolute;
+        left: 75px;
+        top: 50%;
+        transform: translateY(-50%);
+        strong {
+          display: block;
+          font: 500 18px/1em $kia;
+          letter-spacing: 2.3px;
+          &.large {
+            font-size: 22px;
+            margin-top: -2px;
+          }
+          span {
+            font-size: 12px;
+            display: inline-block;
+            position: relative;
+            margin-left: -5px;
+          }
+        }
+        em {
+          display: block;
+          font: bold 10px/1em $kia;
+          font-style: normal;
+          letter-spacing: .4px;
+          text-transform: uppercase;
+          padding-top: 3px;
+        }
+      }
+    }
+    .desktop-and-tablet {
+      display: none !important;
+    }
+  }
+}
+
+.icon-arrow-right {
+  display: block;
+  width: 12px;
+  height: 18px;
+  background: url('/images/icon_arrow_right_dark.svg') center/contain no-repeat;
+}
+
+.icon-warning {
+  display: block;
+  width: 48px;
+  height: 40px;
+  background: url('/images/icon_warning.svg') center/contain no-repeat;
+}
+
+.icon-recalls {
+  display: block;
+  width: 40px;
+  height: 48px;
+  background: url('/images/icon_recalls.svg') center/contain no-repeat;
+}
+.icon-next-service {
+  display: block;
+  width: 29px;
+  height: 29px;
+  background: url('/images/icon_next_service.svg') center/contain no-repeat;
+}
+
+.progress-bar {
+  height: 7px;
+  border-radius: 7px;
+  background: #c4c8cd;
+  width: 100%;
+  position: relative;
+  .bar {
+    height: inherit;
+    border-radius: inherit;
+    min-width: 5%;
+    max-width: 100%;
+    background: $green;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 250ms $easeOutQuint;
+  }
+  em {
+    position: absolute;
+    top: 100%;
+    display: block;
+    left: 0;
+    text-align: left;
+    color: $grey;
+    font-size: 12px;
+    letter-spacing: .3px;
+    font-style: normal;
+    line-height: 1em;
+    transform: translateY(7px);
+    &:last-child {
+      left: auto;
+      right: 0;
+      text-align: right;
+    }
+  }
+}

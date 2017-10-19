@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="21px" viewBox="0 0 12 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Plugged In</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,9.10666667 L19,6.02666667 C19,5.46666667 18.5454545,5 18,5 C17.4545455,5 17,5.46666667 17,6.02666667 L17,9.10666667 L13,9.10666667 L13,6.02666667 C13,5.46666667 12.5454545,5 12,5 C11.4545455,5 11,5.46666667 11,6.02666667 L11,9.10666667 L9,9.10666667 L9,17.32 C9,19.6066667 10.75,21.3333333 12.9545455,21.3333333 L12.9545455,26 L17.0454545,26 L17.0454545,21.3333333 C19.25,21.3333333 21,19.6066667 21,17.3433333 L21,9.10666667 L19,9.10666667 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/--Remote-Commands-/-Plugged-In-Solid" transform="translate(-9.000000, -5.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Icons-/-Plugged-In" fill="#C4172C" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
