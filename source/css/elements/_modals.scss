@@ -82,13 +82,13 @@
     opacity: 0;
     z-index: 2;
     text-align: center;
-    overflow-x: hidden;
     background: $white;
     box-shadow: 0 2px 34px 0 rgba(47, 47, 47, 0.44);
     border-radius: 3px;
     padding: 30px 40px 35px;
     cursor: default;
     max-height: 95vh;
+    overflow-x: hidden;
     overflow-y: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
@@ -201,6 +201,9 @@
       width: 100%;
       transition: all 550ms $easeOutQuint;
       opacity: 0;
+      &.hidden {
+        display: none;
+      }
       &.active {
         opacity: 1;
         transform: translateX(-100%);

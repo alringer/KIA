@@ -172,12 +172,17 @@ $(document).ready(function () {
         // Open the overlay
         if (action === 'open') {
           // Set the overlay to active
-          $overlay.addClass('active');
-          $active_modal.addClass('overlay-open');
+          $overlay.removeClass('hidden');
 
-          // Use CSS3 to slide out the nav and the tabs
-          $nav.css('left', -modal_width);
-          $body_wrap.css('left', -modal_width);
+          setTimeout(function () {
+            $overlay.addClass('active');
+            $active_modal.addClass('overlay-open');
+            // Use CSS3 to slide out the nav and the tabs
+            $nav.css('left', -modal_width);
+            $body_wrap.css('left', -modal_width);
+            // Reset the hieght of the modal
+            window.modals.methods._reset_size();
+          }, 50);
         } else {
           // or reset all elements
           $overlay.removeClass('active');
@@ -185,9 +190,12 @@ $(document).ready(function () {
 
           $nav.css('left', 0);
           $body_wrap.css('left', 0);
+          setTimeout(function () {
+            $overlay.addClass('hidden');
+          }, 50);
+          // Reset the hieght of the modal
+          window.modals.methods._reset_size();
         }
-        // Reset the hieght of the modal
-        window.modals.methods._reset_size();
       },
       // Quick open an overla
       _overlay_open: function _overlay_open(e) {
