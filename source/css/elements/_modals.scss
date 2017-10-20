@@ -89,7 +89,8 @@
     padding: 30px 40px 35px;
     cursor: default;
     max-height: 95vh;
-    overflow-y: scroll;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
     &:not(.active) {
       pointer-events: none !important;
