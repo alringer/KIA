@@ -82,7 +82,7 @@
     opacity: 0;
     z-index: 2;
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
     background: $white;
     box-shadow: 0 2px 34px 0 rgba(47, 47, 47, 0.44);
     border-radius: 3px;
@@ -280,6 +280,9 @@
       margin: 0 auto;
       padding-top: 30px;
       .button {
+        width: 170px;
+        padding: 0;
+        text-align: center;
         &:last-child {
           padding: 0;
           width: 80px;
@@ -335,6 +338,8 @@
           .button {
             vertical-align: middle;
             float: right;
+            width: 141px;
+            padding: 0;
             &[type="submit"] {
               width: 172px;
               padding: 0;
