@@ -108,6 +108,7 @@ form {
           letter-spacing: .5px;
         }
         .error-message {
+          display: block;
           color: #f23f3f;
           font-family: $sans;
           font-weight: 500;
@@ -210,6 +211,7 @@ form {
           }
         }
         .inline-validator {
+          display: block;
           position: absolute;
           top: calc(100% + 3px);
           background: $black;
@@ -242,7 +244,8 @@ form {
             border-width: 0 7.5px 10px 7.5px;
             border-color: transparent transparent $black transparent;
           }
-          > div {
+          > span {
+            display: block;
             margin-bottom: 5px;
             padding-left: 20px;
             line-height: 1em;

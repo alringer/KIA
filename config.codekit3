@@ -1039,6 +1039,12 @@
 		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
+	"\/source\/library-manifest.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/library-manifest.html",
+		"oF": 0
+		},
 	"\/source\/scripts\/forms.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1165,9 +1171,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/vendors\/css\/_bootstrap.css",
-		"oF": 0,
+		"oA": 0,
+		"oAP": "\/build\/vendors\/bootstrap\/bootstrap.css",
+		"oF": 3,
 		"oS": 3,
 		"uL": 1
 		},
@@ -2297,21 +2303,11 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/font-awesome\/css\/font-awesome.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3,
 		"uL": 1
-		},
-	"\/source\/vendors\/jqlite.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/jqlite.min.js",
-		"oF": 2,
-		"sC": 0,
-		"tS": 0
 		},
 	"\/source\/vendors\/mixitup\/mixitup.min.js": {
 		"ft": 64,
@@ -2499,7 +2495,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 530133368
+	"lastBuiltDate": 530442470
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
