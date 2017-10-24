@@ -1,0 +1,92 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.view-poc {
+  .modal {
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    &.login {
+      max-width: 100%;
+      width: 100%;
+      .modal-dialog {
+        max-width: 335px;
+      }
+    }
+    &.hide-nav {
+      .nav-tabs {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    .modal-content {
+      box-shadow: none;
+      border-radius: 3px;
+      border: none;
+    }
+  }
+  .nav-tabs {
+    font-size: 0;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: -5px;
+    margin-bottom: 40px;
+    user-select: none;
+    transition: all 550ms $easeOutQuint;
+    position: relative;
+    left: 0;
+    border: none;
+    li {
+      float: none;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: .3px;
+      font-family: $kia;
+      font-weight: bold;
+      margin: 0 3px;
+      transition: all 250ms $easeOutQuint;
+      color: $grey;
+      position: relative;
+      padding: 5px 13px;
+      cursor: pointer;
+      border: none !important;
+      &:first-child {
+        margin-left: 0px !important;
+      }
+      &:last-child {
+        margin-right: 0px !important;
+      }
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 14px);
+        height: 2px;
+        background: $red;
+        pointer-events: none;
+        transition: all 250ms $easeOutQuint;
+        opacity: 0;
+      }
+      &:hover {
+        color: $black;
+      }
+      &.active {
+        color: $black;
+        &:before {
+          opacity: 1;
+        }
+      }
+      a {
+        border: none !important;
+        background: none !important;
+        color: inherit !important;
+        padding: 0;
+      }
+    }
+  }
+}

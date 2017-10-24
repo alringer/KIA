@@ -15,6 +15,24 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
+	"\/changes.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/build\/changes.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/shippable.yml": {
 		"ft": 8192,
 		"oA": 2,
@@ -301,6 +319,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/overview-remote-commands.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/views\/poc.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/poc.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
@@ -2417,6 +2448,12 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav.html",
+		"oF": 0
+		},
+	"\/source\/views\/poc.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/poc.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-1.kit": {
