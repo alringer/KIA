@@ -28,7 +28,7 @@ $(document).ready(() => {
         }
       },
       // Toggle the disabled state for form buttons based on required critera when the form is interactied with
-      _toggle_disable1 : function() {
+      _toggle_disable : function() {
         var $this = $(this);
         // For the vehicle lookup form
         if( window.registration.elements.registration_form.is('.vehicle-lookup-form') ) {
