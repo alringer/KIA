@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "25900",
 "files": {
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/changes.md": {
 		"cS": 0,
 		"eF": 1,
@@ -1132,7 +1126,7 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/registration.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -2532,7 +2526,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 530442470
+	"lastBuiltDate": 530738309
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

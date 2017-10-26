@@ -20,8 +20,8 @@ $(document).ready(function () {
       mixitup: $('#mixitup'),
       no_results_found: $('.no-results-found'),
       list_item_toggle: $('.my-vehicles-list-item-toggle'),
-      add_vehicle_button : $('.add-vehicle-button'),
-      add_vin : $('input.vin'),
+      add_vehicle_button: $('.add-vehicle-button'),
+      add_vin: $('input.vin')
     },
     methods: {
       // Switches between the different views
@@ -218,7 +218,7 @@ $(document).ready(function () {
           $list_view.css('height', list_view_height - meta_height);
         }
       },
-      _toggle_disable : function() {
+      _toggle_disable: function _toggle_disable() {
         // VIN must be 17 chars
         if (window.myVehicles.elements.add_vin.val().length === 17) {
           window.myVehicles.elements.add_vehicle_button.removeClass('disabled');
