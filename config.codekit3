@@ -143,12 +143,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/css\/fonts.zip": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts.zip",
-		"oF": 0
-		},
 	"\/source\/css\/fonts\/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -364,19 +358,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/view-overview.css",
-		"oF": 2,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/source\/css\/views\/view-registration.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/css\/view-registration.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1

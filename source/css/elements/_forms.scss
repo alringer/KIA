@@ -284,8 +284,13 @@ form {
   }
 }
 
-.selectize {
-  &-input {
+.bootstrap-select {
+  width: 100% !important;
+  outline: none !important;
+  * {
+    outline: none !important;
+  }
+  button {
     height: 56px;
     line-height: 56px;
     padding: 0;
@@ -296,18 +301,20 @@ form {
     overflow: hidden;
     border-color: #b1b5b8;
     border-radius: 4px;
-    &:after {
-      border-color: $black transparent transparent transparent !important;
-    }
-    .item,
-    input {
-      height: inherit;
-      padding: 0 16px !important;
-      color: #c7c7c7;
-      letter-spacing: .4px;
-    }
-    .item {
-      color: $black;
+    padding-left: 16px;
+    background: transparent !important;
+  }
+  input {
+    height: inherit;
+    padding: 0 16px !important;
+    color: #c7c7c7;
+    letter-spacing: .4px;
+    height: 40px !important;
+  }
+  @media #{$mobile} {
+    button {
+      height: 40px;
+      line-height: 40px;
     }
   }
 }
