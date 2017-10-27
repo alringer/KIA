@@ -143,6 +143,12 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/fonts.zip": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/css\/fonts.zip",
+		"oF": 0
+		},
 	"\/source\/css\/fonts\/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
