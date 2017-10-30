@@ -3,7 +3,7 @@ $(document).ready(() => {
     // Form elements
     elements : {
       selectize : $('.selectize'),
-      selectpicker : $('.selectpicker')
+      selectpicker : $('.selectpicker'),
       dual_inputs : $('form .dual-inputs input'),
     },
     methods : {
@@ -17,6 +17,9 @@ $(document).ready(() => {
         }
       },
       _select_picker : () => {
+        if(!window.forms.elements.selectize.length) {
+          return;
+        }
         window.forms.elements.selectize.selectpicker({
           style: 'btn-info',
           size: 4
@@ -60,5 +63,5 @@ $(document).ready(() => {
 
   // RUN METHODS
   window.forms.methods._select_picker();
-  window.forms.methods._selectize()
+  // window.forms.methods._selectize();
 });
