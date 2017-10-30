@@ -3,17 +3,16 @@
 $(document).ready(function () {
   window.modals = {
     elements: {
-      modals: $('.modals'),
-      modal: $('.modals .modal'),
+      modals: $('.bb-modals'),
+      modal: $('.bb-modals .bb-modal'),
       modal_open: $('[data-action="modal-open"]'),
       modal_close: $('[data-action="modal-close"]'),
       modal_nav: $('[data-action="modal-nav"]'),
       modal_nav_next: $('[data-action="modal-nav-next"]'),
       modal_nav_prev: $('[data-action="modal-nav-prev"]'),
-      modal_body: $('.modal .modal-body'),
       overlay_open: $('[data-action="modal-overlay-open"]'),
       overlay_close: $('[data-action="modal-overlay-close"]'),
-      modal_slider: $('.modal .slider')
+      modal_slider: $('.bb-modal .slider')
     },
     methods: {
       // Stops events from bubbling up
@@ -32,6 +31,7 @@ $(document).ready(function () {
           setTimeout(function () {
             $modal.addClass('active');
             window.modals.methods._reset_size();
+            $('body').addClass('modal-open');
           }, 100);
           // Add the open class to display the modal warpper
           window.modals.elements.modals.addClass('open');
@@ -46,6 +46,7 @@ $(document).ready(function () {
         // Remove classes to animate the close of a modal
         window.modals.elements.modals.removeClass('open');
         window.modals.elements.modal.removeClass('active');
+        $('body').removeClass('modal-open');
       },
       // Auto-detect the modal tab navigation
       _nav: function _nav(e) {
@@ -208,6 +209,9 @@ $(document).ready(function () {
       },
       // Setup a modal slideshow (different than modal tabs)
       _modal_slider: function _modal_slider() {
+        if (!window.modals.elements.modal_slider.length) {
+          return;
+        }
         window.modals.elements.modal_slider.slick({
           infinite: false,
           slidesToShow: 1,

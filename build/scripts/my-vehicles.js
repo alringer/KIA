@@ -4,7 +4,7 @@ $(document).ready(function () {
   window.myVehicles = {
     elements: {
       view: $('.view-my-vehicles'),
-      switch_view: $('.my-vehicles-switch-views li a'),
+      switch_view: $('.my-vehicles-switch-views a'),
       vehicle_listings_views_wrap: $('.my-vehicles-car-listings'),
       vehicle_listings_views: $('.my-vehicles-car-listings > *'),
       edit_checkbox: $('input[name="edit"]'),
@@ -32,11 +32,14 @@ $(document).ready(function () {
         // Auto detect the requested view based on indexs
         requested_view_index = window.myVehicles.elements.switch_view.index($this),
             $requested_view = window.myVehicles.elements.vehicle_listings_views.eq(requested_view_index);
-
         // Remove active class from all nav items
         window.myVehicles.elements.switch_view.removeClass('active');
         // Set the active class on this nav item
         $this.addClass('active');
+
+        if ($this) {
+          return;
+        }
         // Remove the active class from all views
         window.myVehicles.elements.vehicle_listings_views.removeClass('active');
         // Add the active class to the requested view
@@ -89,6 +92,12 @@ $(document).ready(function () {
             // Block user from using "delete"
             window.myVehicles.elements.edit_delete.addClass('disabled');
           }
+          // If all checkboxes are checked
+          if (window.myVehicles.elements.edit_checkbox.filter(':checked').length === window.myVehicles.elements.edit_checkbox.length) {
+            window.myVehicles.elements.edit_select_all.addClass('disabled');
+          } else {
+            window.myVehicles.elements.edit_select_all.removeClass('disabled');
+          }
         },
         // Toggles all checkboxes
         _toggle_select_all: function _toggle_select_all() {
@@ -118,7 +127,8 @@ $(document).ready(function () {
           if (window.myVehicles.elements.mixitup.length) {
             window.myVehiclesList = window.mixitup('#mixitup', {
               selectors: {
-                target: '.my-vehicles-list-item'
+                target: '.my-vehicles-list-item',
+                control: '[data-mixitup-control]'
               }
             });
           }
