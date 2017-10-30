@@ -21,7 +21,7 @@
   cursor: pointer;
   outline: none;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none !important;
   i {
     font-size: 14px;
     line-height: 1em;
@@ -32,6 +32,7 @@
   }
   &:hover {
     background: darken($red, 10%);
+    color: $white;
   }
   &.black {
     background: $black;

@@ -10,6 +10,8 @@ $(document).ready(() => {
       registration_block_hidden_options : $('.vehicle-lookup-form .registration-block-hidden-options'),
       registration_submit_button : $('.registration-block form input[type="submit"]'),
       registration_slider : $('.view-registration-header-context-steps'),
+      create_password : $('.create-password'),
+      create_password_validator: $('.reset-password-form .create-password-validator'),
     },
     methods : {
       // Shows or hidhes the extra form fields if critera is met
@@ -68,6 +70,9 @@ $(document).ready(() => {
       },
       // Sets up a responsive slider to be used on mobile for some views
       _slick : () => {
+        if(!window.registration.elements.registration_slider.length) {
+          return;
+        }
         window.registration.elements.registration_slider.slick({
           arrows : false,
           infinite : false,
@@ -85,6 +90,19 @@ $(document).ready(() => {
             },
           ]
         });
+      },
+      _password_validation: function _password_validation(e) {
+        var $this = $(e.currentTarget);
+        // If there is a value, add the "show" class to transition in the validation elemenbt
+        if ($this.val()) {
+          window.registration.elements.create_password_validator.addClass('show');
+        } else {
+          window.registration.elements.create_password_validator.removeClass('show');
+        }
+      },
+      // Globally closes the validation element
+      _password_validation_close : () => {
+        window.registration.elements.create_password_validator.removeClass('show');
       },
       // Fake display a VIN error
       error : {
@@ -111,6 +129,11 @@ $(document).ready(() => {
 
   window.registration.elements.registration_form.on('submit', window.registration.methods.error._vin_submit);
   window.registration.elements.registration_submit_button.on('click', window.registration.methods.error._vin_submit);
+
+  window.registration.elements.create_password.on('change', window.registration.methods._password_validation);
+  window.registration.elements.create_password.on('keyup', window.registration.methods._password_validation);
+  window.registration.elements.create_password.on('blur', window.registration.methods._password_validation_close);
+  window.registration.elements.create_password.on('focus', window.registration.methods._password_validation);
 
   window.registration.methods._slick();
 });

@@ -5,6 +5,7 @@ $(document).ready(function () {
     // Form elements
     elements: {
       selectize: $('.selectize'),
+      selectpicker: $('.selectpicker'),
       dual_inputs: $('form .dual-inputs input')
     },
     methods: {
@@ -16,6 +17,15 @@ $(document).ready(function () {
             items: false
           });
         }
+      },
+      _select_picker: function _select_picker() {
+        if (!window.forms.elements.selectize.length) {
+          return;
+        }
+        window.forms.elements.selectize.selectpicker({
+          style: 'btn-info',
+          size: 4
+        });
       },
       // Dsiplay an error message
       _error: function _error($field) {
@@ -53,5 +63,6 @@ $(document).ready(function () {
   window.forms.elements.dual_inputs.on('focus', window.forms.methods._dual_inputs);
 
   // RUN METHODS
-  window.forms.methods._selectize();
+  window.forms.methods._select_picker();
+  // window.forms.methods._selectize();
 });

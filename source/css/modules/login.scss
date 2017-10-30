@@ -1,9 +1,14 @@
 @import "../_variables.scss";
 
 
-.modal.login {
+.bb-modal.login {
   width: 100vw;
   max-width: 335px;
+  .login-form {
+    .toggle-show-password {
+      right: 14px;
+    }
+  }
   .modal-overlay {
     padding: 28px 40px;
     white-space: nowrap;

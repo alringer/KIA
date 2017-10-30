@@ -1,4 +1,4 @@
-.modals {
+.bb-modals {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,10 +25,10 @@
     opacity: 1;
     pointer-events: all;
     transition-delay: 0;
-    .modal.active {
+    .bb-modal.active {
       opacity: 1;
       transform: translate(-50%, -50%);
-      .close {
+      .bb-close {
         pointer-events: all;
       }
     }
@@ -36,7 +36,7 @@
   &:not(.open) {
     pointer-events: none !important;
   }
-  .close {
+  .bb-close {
     display: block;
     font-size: 32px;
     position: absolute;
@@ -71,7 +71,7 @@
       }
     }
   }
-  .modal {
+  .bb-modal {
     position: absolute;
     overflow: hidden;
     top: 50%;
@@ -95,7 +95,7 @@
     &:not(.active) {
       pointer-events: none !important;
     }
-    &-nav {
+    .modal-nav {
       font-size: 0;
       text-align: center;
       padding-bottom: 20px;
@@ -149,12 +149,13 @@
         }
       }
     }
-    &-body {
+    .modal-body {
       position: relative;
       font-size: 0;
       white-space: nowrap;
       left: 0;
       transition: all 550ms $easeOutQuint;
+      padding: 0;
       &-wrap {
         position: relative;
         transition: all 550ms $easeOutQuint;
@@ -191,7 +192,7 @@
         opacity: 0;
       }
     }
-    &-overlay {
+    .modal-overlay {
       width: 100%;
       white-space: normal;
       position: absolute;
@@ -248,7 +249,7 @@
   }
 }
 
-.modal.delete {
+.bb-modal.delete {
   .close {
     display: none;
     @media (max-width: 500px) {
@@ -297,7 +298,7 @@
   }
 }
 
-.modal.add {
+.bb-modal.add {
   min-width: 400px;
   .modal-add-vehicle {
     max-width: 260px;
@@ -409,7 +410,7 @@
   }
 }
 
-.modal.activate-uvo {
+.bb-modal.activate-uvo {
   padding-left: 0;
   padding-right: 0;
   max-width: 640px;
@@ -631,4 +632,8 @@
       }
     }
   }
+}
+
+body.modal-open {
+  overflow: hidden;
 }
