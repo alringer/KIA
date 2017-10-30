@@ -362,6 +362,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-registration.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/views\/view-registration.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/images\/icon_arrow_right_dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2405,6 +2418,48 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/footer.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/global-css.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/global-css.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/global-js.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/global-js.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/head-end.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/head-end.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/head-start.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/head-start.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/map-files.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/partials\/head\/map-files.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/vendors\/select.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/vendors\/select.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/vendors\/slick.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/vendors\/slick.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/header.kit": {

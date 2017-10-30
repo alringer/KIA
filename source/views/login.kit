@@ -1,4 +1,15 @@
-<!-- @import "partials/header.kit" -->
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/login.css">
+  <!-- @import "partials/head/global-js.kit" -->
+
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/login.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- @import "partials/head/head-end.kit" -->
 
 <div style="height:100vh;line-height:100vh;text-align:center;">
   <span class="button" data-action="modal-open" data-modal="login">
@@ -6,9 +17,9 @@
   </span>
 </div>
 
-<div class="modals" data-action="modal-close">
-  <div class="modal login active">
-    <span class="close" data-action="modal-close"></span>
+<div class="bb-modals" data-action="modal-close">
+  <div class="bb-modal login active">
+    <span class="bb-close" data-action="modal-close"></span>
     <div class="modal-nav">
       <span data-action="modal-nav" data-modal-nav="1" class="active">
         Sign In
@@ -46,6 +57,7 @@
                     Password
                   </strong>
                   <input type="password" />
+                  <span class="toggle-show-password"></span>
                 </label>
               </li>
               <li>

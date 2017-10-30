@@ -1,5 +1,5 @@
 // MODAL FORMS
-.modal {
+.bb-modal {
   min-width: 355px;
   form {
     width: 100%;
@@ -194,6 +194,8 @@ form {
             top: 12px;
             border-radius: 100%;
             transition: all 250ms $easeOutQuint;
+            margin-top: 0px;
+            margin-bottom: 0px;
             &:before {
               content: "";
               display: block;
@@ -321,6 +323,8 @@ form {
 
 .checkbox {
   cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 0px;
   &.solo {
     > em {
       padding-left: 21px;

@@ -1,4 +1,18 @@
-<!-- @import "partials/header.kit" -->
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-my-vehicles.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/slick.kit" -->
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/my-vehicles.js"></script>
+
+<!-- @import "partials/head/head-end.kit" -->
+<script type="text/javascript" src="/vendors/mixitup/mixitup.min.js"></script>
+<script type="text/javascript" src="/scripts/my-vehicles.js"></script>
+
 <div class="view-my-vehicles">
   <!-- @import "partials/nav.kit" -->
   <div class="my-vehicles-nav">
@@ -23,8 +37,8 @@
   </div><!-- /.my-vehicles-nav -->
   <!-- @import "partials/my-vehicles-subnav.kit" -->
   <!-- @import "partials/my-vehicles-utility-nav.kit" -->
-  <div class="my-vehicles-car-listings">
-    <div class="my-vehicles-grid active">
+  <div class="my-vehicles-car-listings tab-content">
+    <div class="my-vehicles-grid active tab-pane fade in" id="grid-view">
       <div class="contain">
         <div
           class="my-vehicles-grid-item"
@@ -334,7 +348,7 @@
         No vehicles matched this search
       </div><!-- /.no-results-found -->
     </div><!-- /.my-vehicles-grid -->
-    <div class="my-vehicles-list-view">
+    <div class="my-vehicles-list-view tab-pane fade in" id="list-view">
       <div class="contain">
         <div class="my-vehicles-list-header">
           <div class="checkbox-toggle cell-checkbox">
@@ -771,7 +785,7 @@
         No vehicles matched this search
       </div><!-- /.no-results-found -->
     </div><!-- /.my-vehicles-list-view -->
-    <div class="my-vehicles-map-view">
+    <div class="my-vehicles-map-view tab-pane fade in" id="map-view">
       <div class="my-vehicles-map-view-note">
         <strong>
           Note:
