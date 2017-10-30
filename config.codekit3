@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25900",
 "files": {
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/changes.md": {
 		"cS": 0,
 		"eF": 1,
@@ -2414,6 +2420,48 @@
 		"oAP": "\/build\/views\/partials\/footer.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/head\/global-css.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/global-css.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/global-js.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/global-js.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/head-end.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/head-end.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/head-start.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/head-start.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/vendors\/map-files.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/vendors\/map-files.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/vendors\/select.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/vendors\/select.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/head\/vendors\/slick.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/head\/vendors\/slick.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/header.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -2526,7 +2574,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 531093108
+	"lastBuiltDate": 531093359
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

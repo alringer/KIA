@@ -86,7 +86,6 @@ $(document).ready(function () {
       },
       _password_validation: function _password_validation(e) {
         var $this = $(e.currentTarget);
-        console.log('run');
         // If there is a value, add the "show" class to transition in the validation elemenbt
         if ($this.val()) {
           window.registration.elements.create_password_validator.addClass('show');

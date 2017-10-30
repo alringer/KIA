@@ -36,7 +36,6 @@ $(document).ready(function () {
         window.myVehicles.elements.switch_view.removeClass('active');
         // Set the active class on this nav item
         $this.addClass('active');
-        console.log('run');
 
         if ($this) {
           return;
