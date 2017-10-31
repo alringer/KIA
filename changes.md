@@ -1,4 +1,4 @@
-V - 1.1.2
+V - 1.1.1
 KK-198 Swapped selectize for bootstrap-select
 KK-209 Added password rules to reset password page
 KK-207 Added reveal password to sign in modal
