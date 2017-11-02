@@ -1,3 +1,8 @@
+V - 1.1.2
+KK-217 Adjusts the the login to use the login modal
+KK-213 Fixes the duplicate events bound for the "My Vehicles" list view header sorting
+KK-212 Fixes the vehicle meta data from being cut off after an accordion interaction is fired
+
 V - 1.1.1
 KK-198 Swapped selectize for bootstrap-select
 KK-209 Added password rules to reset password page
