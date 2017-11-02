@@ -1,5 +1,5 @@
 // MODAL FORMS
-.bb-modal {
+.modal {
   min-width: 355px;
   form {
     width: 100%;
@@ -7,7 +7,8 @@
     margin: 0 auto;
     .form-footer {
       padding-top: 25px;
-      padding-bottom: 10px;
+      padding-bottom: 25px;
+      text-align: center;
       .secondary {
         display: inline-block;
         color: $red;
@@ -20,6 +21,7 @@
         margin-top: 45px;
         cursor: pointer;
         position: relative;
+        text-decoration: none;
         &:before {
           content: "";
           display: block;

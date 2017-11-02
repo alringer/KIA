@@ -1059,6 +1059,11 @@
             transform: rotate(-180deg);
           }
         }
+        @media (min-width: 540px) {
+          .my-vehicles-list-item-meta-data {
+            height: auto !important;
+          }
+        }
         @media (max-width: 540px) {
           &-toggle {
             display: block !important;

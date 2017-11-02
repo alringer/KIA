@@ -7,7 +7,7 @@
 		"uuidString": "35F6608E-6DA5-45F2-87E1-7BF9B91317FF"
 		}
 	],
-"creatorBuild": "25900",
+"creatorBuild": "26097",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -16,10 +16,10 @@
 		"oF": 0
 		},
 	"\/changes.md": {
+		"cB": 0,
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
@@ -34,6 +34,7 @@
 		"uCM": 0
 		},
 	"\/shippable.yml": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/shippable.yml",
@@ -157,12 +158,14 @@
 		"uL": 1
 		},
 	"\/source\/css\/fonts\/kia\/KIAB.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAB.eot",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAB.otf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAB.otf",
@@ -179,24 +182,28 @@
 		"prP": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAB.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAB.ttf",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAB.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAB.woff",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAL.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAL.eot",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAL.otf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAL.otf",
@@ -213,24 +220,28 @@
 		"prP": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAL.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAL.ttf",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAL.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAL.woff",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAM.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAM.eot",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAM.otf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAM.otf",
@@ -247,12 +258,14 @@
 		"prP": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAM.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAM.ttf",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAM.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAM.woff",
@@ -1065,12 +1078,14 @@
 		"prP": 0
 		},
 	"\/source\/index.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
 	"\/source\/library-manifest.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/library-manifest.html",
@@ -2119,6 +2134,7 @@
 		"uL": 1
 		},
 	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.eot",
@@ -2135,24 +2151,28 @@
 		"prP": 0
 		},
 	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.ttf",
 		"oF": 0
 		},
 	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff",
 		"oF": 0
 		},
 	"\/source\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff2": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff2",
 		"oF": 0
 		},
 	"\/source\/vendors\/font-awesome\/fonts\/FontAwesome.otf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/vendors\/font-awesome\/fonts\/FontAwesome.otf",
@@ -2391,174 +2411,203 @@
 		"tS": 1
 		},
 	"\/source\/views\/login.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/login.html",
 		"oF": 0
 		},
 	"\/source\/views\/my-vehicles-1.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/my-vehicles-1.html",
 		"oF": 0
 		},
 	"\/source\/views\/my-vehicles-2.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/my-vehicles-2.html",
 		"oF": 0
 		},
 	"\/source\/views\/overview-1.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/overview-1.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/footer.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/footer.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/global-css.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/global-css.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/global-js.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/global-js.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/head-end.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/head-end.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/head-start.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/head-start.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/vendors\/map-files.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/vendors\/map-files.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/vendors\/select.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/vendors\/select.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/head\/vendors\/slick.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/head\/vendors\/slick.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/header.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/header.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/my-vehicles-modals.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/my-vehicles-modals.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/my-vehicles-subnav.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/my-vehicles-subnav.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/my-vehicles-utility-nav.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/my-vehicles-utility-nav.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/nav.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav.html",
 		"oF": 0
 		},
 	"\/source\/views\/poc.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/poc.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-1.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-1.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-10.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-10.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-11.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-11.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-2.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-2.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-3.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-3.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-4.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-4.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-5.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-5.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-6.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-6.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-7.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-7.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-8.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-8.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-9.kit": {
+		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-9.html",
@@ -2574,7 +2623,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 531093359
+	"lastBuiltDate": 531355852
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3110,6 +3159,10 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
@@ -3174,9 +3227,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -3206,6 +3259,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -3215,14 +3272,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -4326,7 +4375,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -4359,6 +4409,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -4400,7 +4451,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -4432,13 +4484,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -4447,7 +4499,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -4467,7 +4520,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -4495,7 +4549,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
