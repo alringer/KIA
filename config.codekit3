@@ -2410,13 +2410,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/source\/views\/login-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/views\/login-2.html",
-		"oF": 0
-		},
 	"\/source\/views\/login.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2630,7 +2623,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 531093359
+	"lastBuiltDate": 531355852
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
