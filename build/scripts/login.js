@@ -81,11 +81,14 @@ $(document).ready(function () {
         $error_message.css({
           'height': $error_message_inner[0].clientHeight + 'px'
         });
+        setTimeout(function () {
+          $error_message.css({
+            'height': 'auto'
+          });
+        }, 250);
 
         // Toggles opacity, etc.
         $error_message_inner.addClass('show');
-        // Resize the modal so no content get's cut off ( note: because of toggling between tabs with different heights, this is needed )
-        setTimeout(window.modals.methods._reset_size, 250);
       },
       // The reset email overlay has a progression ( possible future buildout of overlay progression if this functionaltiy is found in other places )
       _reset_email: function _reset_email(e) {
