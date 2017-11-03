@@ -135,7 +135,7 @@
       font-weight: normal;
       float: left;
       font-family: $kia;
-      @media (max-width: 700px) {
+      @media #{$mobile} {
         display: none;
       }
     }
@@ -209,6 +209,10 @@
           &:last-child {
             margin-right: 0px;
           }
+        }
+        @media #{$mobile} {
+          margin-left: -15px;
+          margin-right: 5px;
         }
       }
       .my-vehicles-search {
@@ -450,46 +454,51 @@
       .contain {
         max-width: 845px;
         padding: 0 5px;
+        .row {
+          padding: 0 15px;
+        }
       }
       &.active {
         .my-vehicles-grid-item {
-          opacity: 1;
-          transform: scale(1);
           @for $i from 1 through 100 {
     				&:nth-child(#{$i}) {
-    					transition-delay: 50ms * $i;
+              &-card {
+                opacity: 1;
+                transform: scale(1);
+      					transition-delay: 50ms * $i;
+              }
     				}
     			}
         }
       }
       &-item {
-        opacity: 0;
-        transform: scale(.75);
-        transition: all 250ms $easeOutQuint;
-        height: 340px;
-        background: $white;
-        width: calc(50% - 18px);
-        position: relative;
-        box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
-        padding: 25px 25px 0;
-        display: inline-block;
-        margin: 9px;
-        border-radius: 2px;
-        overflow: hidden;
+        padding: 9px;
         &.hide {
           display: none;
         }
-        @media (max-width: 700px){
-          width: 100%;
-          margin: 0 auto 10px;
-          display: block;
-          height: 310px;
-          max-width: 500px;
+        @media #{$mobile} {
+          padding: 0 5px 10px;
+          &-card {
+            height: 310px;
+            max-width: 500px;
+          }
         }
         &:hover {
           .my-vehicles-item-edit {
             opacity: 1;
           }
+        }
+        &-card {
+          height: 340px;
+          background: $white;
+          position: relative;
+          box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+          padding: 25px 25px 0;
+          margin: 0 auto;
+          border-radius: 2px;
+          overflow: hidden;
+          position: relative;
+          width: 100%;
         }
         &-header {
           position: absolute;
@@ -584,7 +593,7 @@
           img {
             max-width: 100%;
           }
-          @media (max-width: 700px) {
+          @media #{$mobile} {
             top: 75px;
             img {
               max-height: 95px;
@@ -601,7 +610,7 @@
           padding-top: 0px;
           max-width: 500px;
           transform: translateX(-50%);
-          @media (max-width: 700px) {
+          @media #{$mobile} {
             height: 90px;
           }
           &.layout-2 {
@@ -785,7 +794,7 @@
           padding-left: inherit;
           padding-right: inherit;
           padding-bottom: 20px;
-          @media (max-width: 700px) {
+          @media #{$mobile} {
             padding-left: 10px;
             padding-right: 10px;
             + .my-vehicles-grid-item-image {

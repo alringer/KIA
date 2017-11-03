@@ -1,9 +1,9 @@
 @import "../vendors/bootstrap/bootstrap/variables";
 
 // RESPONSIVE QUERIES
-$desktop: "(min-width: #{$screen-sm} )";
-$tablet: "(max-width: #{$screen-sm - 1} ) AND (min-width: #{$screen-xs})";
-$mobile: "(max-width: #{$screen-xs - 1})";
+$desktop: "(min-width: #{$screen-md} )";
+$tablet: "(max-width: #{$screen-md - 1} ) AND (min-width: #{$screen-xs-max})";
+$mobile: "(max-width: #{$screen-xs-max})";
 
 $below_desktop: "(max-width: #{$screen-sm} )";
 
