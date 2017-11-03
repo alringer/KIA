@@ -1,275 +1,276 @@
-<div class="bb-modals" data-action="modal-close">
-  <div class="bb-modal delete">
-    <span class="bb-close" data-action="modal-close"></span>
-    <div class="modal-body-wrap">
+<div class="modal fade add" id="add" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <span class="back" data-target="#add-vehicle-slider" data-slide-to="0"></span>
       <div class="modal-body">
-        <div class="modal-body-tab active">
-          <div class="modal-delete">
-            <strong>Delete This Vehicle?</strong>
-            <p>Are you sure you want to delete this vehicle? This action cannot be undone.</p>
-            <div class="modal-delete-actions">
-              <span class="button" data-action="modal-close">Yes, Delete</span>
-              <span class="button outline" data-action="modal-close">No</span>
-            </div><!-- /.modal-delete-actions -->
-          </div><!-- /.modal-delete -->
-        </div><!-- /.modal-body-tab -->
-      </div><!-- /.modal-body -->
-    </div><!-- /.modal-body-wrap -->
-  </div><!-- /.modal .delete -->
-  <div class="bb-modal add">
-    <span class="bb-close" data-action="modal-close"></span>
-    <div class="modal-body-wrap">
-      <div class="modal-body">
-        <div class="modal-body-tab active">
-          <div class="modal-add-vehicle-form">
-            <strong>
-              Add Your Vehicle
-            </strong>
-            <form class="add-vehicle-form" autocomplete="off">
-              <ul class="form-fields">
-                <li>
-                  <label>
-                    <strong>
-                      Nickname (optional)
-                    </strong>
-                    <input type="text" name="nickname" class="nickname" />
-                    <span class="helper">
-                      <strong>Tip:</strong> Use custom name, your VIN, or License #
+        <div id="add-vehicle-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active remember-back">
+              <div class="modal-add-vehicle-form">
+                <strong>
+                  Add Your Vehicle
+                </strong>
+                <form class="add-vehicle-form" autocomplete="off">
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>
+                          Nickname (optional)
+                        </strong>
+                        <input type="text" name="nickname" class="nickname" />
+                        <span class="helper">
+                          <strong>Tip:</strong> Use custom name, your VIN, or License #
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          VIN
+                          <span class="label-helper" data-target="#add-vehicle-slider" data-slide-to="1">
+                            Where can I find my VIN?
+                          </span><!-- /.label-helper -->
+                        </strong>
+                        <input type="text" name="vin" class="vin" />
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="form-footer">
+                    <input type="submit" value="Save and close" class="button main add-vehicle-button disabled" data-action="modal-close" />
+                    <span class="button outline dark-icon less-padding">
+                      <i class="fa fa-plus"></i>
+                      Add Another
                     </span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <strong>
-                      VIN
-                      <span class="label-helper" data-action="modal-overlay-open">
-                        Where can I find my VIN?
-                      </span><!-- /.label-helper -->
-                    </strong>
-                    <input type="text" name="vin" class="vin" />
-                  </label>
-                </li>
-              </ul>
-              <div class="form-footer">
-                <input type="submit" value="Save and close" class="button main add-vehicle-button disabled" data-action="modal-close" />
-                <span class="button outline dark-icon less-padding">
-                  <i class="fa fa-plus"></i>
-                  Add Another
-                </span>
-              </div><!-- /.footer-action -->
-            </form>
-          </div><!-- /.modal-add-vehicle-form -->
-        </div><!-- /.modal-body-tab -->
+                  </div><!-- /.footer-action -->
+                </form>
+              </div><!-- /.modal-add-vehicle-form -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-find-vin">
+                <strong>Where can I find my vin?</strong>
+                <div class="modal-find-vin-image">
+
+                </div><!-- /.modal-find-vin-image -->
+                <div class="modal-find-vin-text">
+                  On your drivers side door frame.
+                </div><!-- /.modal-find-vin-text -->
+                <div class="modal-find-vin-image">
+
+                </div><!-- /.modal-find-vin-image -->
+                <div class="modal-find-vin-text">
+                  Visible through the windshield on the driver’s side dashboard
+                </div><!-- /.modal-find-vin-text -->
+                <div class="modal-find-vin-image">
+
+                </div><!-- /.modal-find-vin-image -->
+                <div class="modal-find-vin-text">
+                  Your vehicle documents like your title, registration, etc.
+                </div><!-- /.modal-find-vin-text -->
+              </div><!-- /.modal-find-vi -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.caorusel -->
       </div><!-- /.modal-body -->
-    </div><!-- /.modal-body-wrap -->
-    <div class="modal-overlay hidden">
-      <span class="back" data-action="modal-overlay-close"></span>
-      <div class="modal-find-vin">
-        <strong>Where can I find my vin?</strong>
-        <div class="modal-find-vin-image">
+    </div><!-- /.modal-content -->
+  </div><!-- /.div class="modal-dialog" -->
+</div><!-- /.modal#add -->
 
-        </div><!-- /.modal-find-vin-image -->
-        <div class="modal-find-vin-text">
-          On your drivers side door frame.
-        </div><!-- /.modal-find-vin-text -->
-        <div class="modal-find-vin-image">
-
-        </div><!-- /.modal-find-vin-image -->
-        <div class="modal-find-vin-text">
-          Visible through the windshield on the driver’s side dashboard
-        </div><!-- /.modal-find-vin-text -->
-        <div class="modal-find-vin-image">
-
-        </div><!-- /.modal-find-vin-image -->
-        <div class="modal-find-vin-text">
-          Your vehicle documents like your title, registration, etc.
-        </div><!-- /.modal-find-vin-text -->
-      </div><!-- /.modal-find-vi -->
-    </div><!-- /.modal-overlay -->
-  </div><!-- /.modal .add -->
-  <div class="bb-modal activate-uvo">
-    <span class="bb-close" data-action="modal-close"></span>
-    <strong>
-      How to activate UVO
-    </strong>
-    <div class="modal-body-wrap">
+<div class="modal fade delete" id="delete" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
       <div class="modal-body">
-        <div class="modal-body-tab active">
-          <div class="modal-activate-uvo with-slider">
-
-            <div class="slider">
-              <div class="slide">
-                <div class="activate-uvo-panel">
-                  <div class="activate-uvo-panel-image">
-
-                  </div><!-- /.activate-uvo-panel-image -->
-                  <div class="activate-uvo-panel-text">
-                    <em>
-                      Step 1
-                    </em>
-                    <strong>
-                      Dapibus Pellentesque Sit Nibh
-                    </strong>
-                    <p>
-                      Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                    </p>
-                  </div><!-- /.activate-uvo-panel-text -->
-                </div><!-- /.activate-uvo-panel -->
-              </div><!-- /.slide -->
-              <div class="slide">
-                <div class="activate-uvo-panel">
-                  <div class="activate-uvo-panel-image">
-
-                  </div><!-- /.activate-uvo-panel-image -->
-                  <div class="activate-uvo-panel-text">
-                    <em>
-                      Step 2
-                    </em>
-                    <strong>
-                      Dapibus Pellentesque Sit Nibh
-                    </strong>
-                    <p>
-                      Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                    </p>
-                  </div><!-- /.activate-uvo-panel-text -->
-                </div><!-- /.activate-uvo-panel -->
-              </div><!-- /.slide -->
-              <div class="slide">
-                <div class="activate-uvo-panel">
-                  <div class="activate-uvo-panel-image">
-
-                  </div><!-- /.activate-uvo-panel-image -->
-                  <div class="activate-uvo-panel-text">
-                    <em>
-                      Step 3
-                    </em>
-                    <strong>
-                      Dapibus Pellentesque Sit Nibh
-                    </strong>
-                    <p>
-                      Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                    </p>
-                  </div><!-- /.activate-uvo-panel-text -->
-                </div><!-- /.activate-uvo-panel -->
-              </div><!-- /.slide -->
-              <div class="slide">
-                <div class="activate-uvo-panel">
-                  <div class="activate-uvo-panel-image">
-
-                  </div><!-- /.activate-uvo-panel-image -->
-                  <div class="activate-uvo-panel-text">
-                    <em>
-                      Step 4
-                    </em>
-                    <strong>
-                      Dapibus Pellentesque Sit Nibh
-                    </strong>
-                    <p>
-                      Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                    </p>
-                  </div><!-- /.activate-uvo-panel-text -->
-                </div><!-- /.activate-uvo-panel -->
-              </div><!-- /.slide -->
-            </div><!-- /.slider -->
-            <div class="toggle-footer">
-              <span data-action="modal-nav-next">
-                View All Steps
-              </span>
-            </div><!-- /.toggle-footer -->
-          </div><!-- /.modal-activate-uvo.with-slider -->
-        </div><!-- /.modal-body-tab -->
-        <div class="modal-body-tab">
-          <div class="modal-activate-uvo no-slider">
-            <div class="activate-uvo-panel-wrap">
-              <div class="activate-uvo-panel">
-                <div class="activate-uvo-panel-image">
-
-                </div><!-- /.activate-uvo-panel-image -->
-                <div class="activate-uvo-panel-text">
-                  <em>
-                    Step 1
-                  </em>
-                  <strong>
-                    Dapibus Pellentesque Sit Nibh
-                  </strong>
-                  <p>
-                    Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                  </p>
-                </div><!-- /.activate-uvo-panel-text -->
-              </div><!-- /.activate-uvo-panel -->
-              <div class="activate-uvo-panel">
-                <div class="activate-uvo-panel-image">
-
-                </div><!-- /.activate-uvo-panel-image -->
-                <div class="activate-uvo-panel-text">
-                  <em>
-                    Step 2
-                  </em>
-                  <strong>
-                    Dapibus Pellentesque Sit Nibh
-                  </strong>
-                  <p>
-                    Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                  </p>
-                </div><!-- /.activate-uvo-panel-text -->
-              </div><!-- /.activate-uvo-panel -->
-              <div class="activate-uvo-panel">
-                <div class="activate-uvo-panel-image">
-
-                </div><!-- /.activate-uvo-panel-image -->
-                <div class="activate-uvo-panel-text">
-                  <em>
-                    Step 3
-                  </em>
-                  <strong>
-                    Dapibus Pellentesque Sit Nibh
-                  </strong>
-                  <p>
-                    Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                  </p>
-                </div><!-- /.activate-uvo-panel-text -->
-              </div><!-- /.activate-uvo-panel -->
-              <div class="activate-uvo-panel">
-                <div class="activate-uvo-panel-image">
-
-                </div><!-- /.activate-uvo-panel-image -->
-                <div class="activate-uvo-panel-text">
-                  <em>
-                    Step 4
-                  </em>
-                  <strong>
-                    Dapibus Pellentesque Sit Nibh
-                  </strong>
-                  <p>
-                    Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                  </p>
-                </div><!-- /.activate-uvo-panel-text -->
-              </div><!-- /.activate-uvo-panel -->
-            </div><!-- /.activate-uvo-panel-wrap -->
-            <div class="toggle-footer">
-              <span data-action="modal-nav-prev">
-                View Step-By-Step
-              </span>
-            </div><!-- /.toggle-footer -->
-          </div><!-- /.modal-activate-uvo.without-slider -->
-        </div><!-- /.modal-body-tab -->
+        <div class="modal-delete">
+          <strong>Delete This Vehicle?</strong>
+          <p>Are you sure you want to delete this vehicle? This action cannot be undone.</p>
+          <div class="modal-delete-actions">
+            <span class="button" data-dismiss="modal">Yes, Delete</span>
+            <span class="button outline" data-dismiss="modal">No</span>
+          </div><!-- /.modal-delete-actions -->
+        </div><!-- /.modal-delete -->
       </div><!-- /.modal-body -->
-    </div><!-- /.modal-body-wrap -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#delete -->
+
+<div class="modal fade activate-uvo" id="activate-uvo" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <strong>
+          How to activate UVO
+        </strong>
+        <div id="activate-uvo-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-activate-uvo with-slider">
+
+                <div class="slider">
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 1
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 2
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 3
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 4
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                </div><!-- /.slider -->
+                <div class="toggle-footer">
+                  <span data-action="modal-nav-next">
+                    View All Steps
+                  </span>
+                </div><!-- /.toggle-footer -->
+              </div><!-- /.modal-activate-uvo.with-slider -->
+            </div><!-- /.item -->
+            <div class="item">
+              <div class="modal-activate-uvo no-slider">
+                <div class="activate-uvo-panel-wrap">
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 1
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 2
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 3
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 4
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                </div><!-- /.activate-uvo-panel-wrap -->
+                <div class="toggle-footer">
+                  <span data-action="modal-nav-prev">
+                    View Step-By-Step
+                  </span>
+                </div><!-- /.toggle-footer -->
+              </div><!-- /.modal-activate-uvo.without-slider -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
     <div class="mobile-modal-footer">
       <span class="button full" data-action="modal-close">
         Ok, got it!
       </span>
     </div>
-  </div><!-- /.modal .add -->
-</div><!-- /.modals -->
-<!--
-// REMOVED PER REQUEST - SAVING HTML JUST IN CASE
-<div class="modal-add-vehicle">
-  <strong>Add my Kia</strong>
-  <p>Great! Now you can unlock all the great features available to Kia owners! All we need is your VIN number</p>
-  <div class="modal-add-vehicle-actions">
-    <span class="button less-padding" data-action="modal-overlay-open">Add Your Vehilcle</span>
-  </div>
-</div>
-</div>
--->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
