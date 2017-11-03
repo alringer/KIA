@@ -3,7 +3,8 @@
 $(document).ready(function () {
   window.modals = {
     elements: {
-      carousel: $('.modal .carousel')
+      carousel: $('.modal .carousel'),
+      modal_slider: $('.modal .slider')
     },
     methods: {
       _carousel_slide: function _carousel_slide(data) {
@@ -22,7 +23,7 @@ $(document).ready(function () {
         }
 
         // Update the UI to hide the nav
-        if ($target.hasClass('no-nav')) {
+        if ($target.hasClass('hide-nav')) {
           $modal.addClass('hide-nav');
         } else {
           $modal.removeClass('hide-nav');
@@ -33,6 +34,13 @@ $(document).ready(function () {
           $modal.addClass('show-back');
         } else {
           $modal.removeClass('show-back');
+        }
+
+        // Update the nav to show the back button
+        if ($target.hasClass('hide-close')) {
+          $modal.addClass('hide-close');
+        } else {
+          $modal.removeClass('hide-close');
         }
 
         // Update the back button's slide to property
@@ -52,6 +60,18 @@ $(document).ready(function () {
       },
       _carousel_slid: function _carousel_slid() {
         $('.modal.in .carousel-inner').css('height', 'auto');
+      },
+      // Setup a modal slideshow (different than modal tabs)
+      _modal_slider: function _modal_slider() {
+        if (!window.modals.elements.modal_slider.length) {
+          return;
+        }
+        window.modals.elements.modal_slider.slick({
+          infinite: false,
+          slidesToShow: 1,
+          dots: true,
+          prevArrow: '<button type="button" class="slick-prev">Back</button>'
+        });
       }
     }
   };
@@ -59,4 +79,7 @@ $(document).ready(function () {
   // EVENTS
   window.modals.elements.carousel.on('slide.bs.carousel', window.modals.methods._carousel_slide);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
+
+  // SETUP
+  window.modals.methods._modal_slider();
 });
