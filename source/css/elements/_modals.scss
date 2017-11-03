@@ -78,7 +78,7 @@ body .modal {
         padding: 0;
         .carousel {
           &-inner {
-            transition: all 250ms $easeOutQuint;
+            transition: all 550ms $easeOutQuint;
           }
           .item {
             padding: 15px;
@@ -101,6 +101,12 @@ body .modal {
       opacity: 0;
       pointer-events: none;
       margin-bottom: -90px;
+    }
+  }
+  &.hide-close {
+    .icon-close {
+      opacity: 0;
+      pointer-events: none;
     }
   }
   .nav-tabs {
@@ -212,15 +218,20 @@ body .modal {
 }
 
 .modal.delete {
+  .modal-dialog {
+    max-width: 400px;
+  }
   .icon-close {
     display: none;
-    @media (max-width: 500px) {
+    @media (max-width: $screen-xs-max) {
       display: block;
     }
   }
   .modal-delete {
     max-width: 270px;
     margin: 0 auto;
+    padding: 28px 0 40px;
+    text-align: center;
     strong {
       font-size: 16px;
       text-transform: uppercase;
@@ -230,6 +241,7 @@ body .modal {
       display: block;
       font-family: $kia;
       font-weight: 500;
+      text-align: center;
     }
     p {
       font-size: 14px;
@@ -261,29 +273,20 @@ body .modal {
 }
 
 .modal.add {
-  min-width: 400px;
+  .modal-dialog {
+    max-width: 400px;
+    .carousel {
+      .item:last-child {
+        padding: 0 !important;
+      }
+    }
+  }
   .modal-add-vehicle {
-    max-width: 260px;
-    margin: 0 auto;
-    strong {
-      font-size: 15px;
-      letter-spacing: .4px;
-      font-weight: 400;
-      text-transform: uppercase;
-      display: block;
-      margin-bottom: 25px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.5em;
-      letter-spacing: .6px;
-      color: $grey_2;
-      margin: 0;
-    }
     &-actions {
       padding-top: 30px;
     }
     &-form {
+      padding-bottom: 40px;
       > strong {
         display: block;
         font-size: 16px;
@@ -295,6 +298,8 @@ body .modal {
         font-weight: 400;
         font-family: $kia;
         font-weight: 500;
+        text-align: center;
+        padding-top: 28px;
       }
       form {
         max-width: 318px;
@@ -316,10 +321,10 @@ body .modal {
         }
       }
     }
-    @media (max-width: 500px) {
+    @media (max-width: $screen-xs-max) {
       &-form {
         > strong {
-          padding-top: 0px;
+          padding-top: 15px;
           margin-bottom: 100px;
         }
         form {
@@ -350,6 +355,7 @@ body .modal {
     line-height: 1em;
     font-family: $kia;
     font-weight: 500;
+    text-align: center;
   }
   &-image {
     height: 165px;
