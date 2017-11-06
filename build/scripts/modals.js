@@ -76,6 +76,9 @@ $(document).ready(function () {
       },
       // Issue with bootstrap + slick -- this rebuilds the slider
       _modal_slider_fix: function _modal_slider_fix() {
+        if (!window.modals.elements.modal_slider.length) {
+          return;
+        }
         window.modals.elements.modal_slider.slick('unslick');
         window.modals.methods._modal_slider();
         window.modals.elements.modal_slider.resize();
