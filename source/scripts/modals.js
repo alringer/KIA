@@ -1,6 +1,7 @@
 $(document).ready(function() {
   window.modals = {
     elements : {
+      modal : $('.modal'),
       carousel : $('.modal .carousel'),
       modal_slider : $('.modal .slider'),
     },
@@ -59,7 +60,7 @@ $(document).ready(function() {
       _carousel_slid : () => {
         $('.modal.in .carousel-inner').css('height', 'auto');
       },
-      // Setup a modal slideshow (different than modal tabs)
+      // Setup a modal slidershow
       _modal_slider : () => {
         if(!window.modals.elements.modal_slider.length) {
           return;
@@ -70,13 +71,23 @@ $(document).ready(function() {
           dots: true,
           prevArrow : '<button type="button" class="slick-prev">Back</button>'
         });
+
+      },
+      // Issue with bootstrap + slick -- this rebuilds the slider
+      _modal_slider_fix : () => {
+        window.modals.elements.modal_slider.slick('unslick');
+        window.modals.methods._modal_slider();
+        window.modals.elements.modal_slider.resize();
       },
     }
   };
 
   // EVENTS
   window.modals.elements.carousel.on('slide.bs.carousel', window.modals.methods._carousel_slide);
+  window.modals.elements.carousel.on('slide.bs.carousel', window.modals.methods._modal_slider_fix);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
+  window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._modal_slider_fix);
+  window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._modal_slider_fix);
 
   // SETUP
   window.modals.methods._modal_slider();

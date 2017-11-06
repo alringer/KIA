@@ -74,7 +74,7 @@ $(document).ready(function () {
         $field.addClass('error');
 
         // Get the error fields
-        var $error_message = $field.find('.error-message'),
+        var $error_message = $field.is('form') ? $field.children('.error-message') : $field.find('.error-message'),
             $error_message_inner = $error_message.find('.error-message-inner');
 
         // Use css3 transition to slide down error message
@@ -140,6 +140,9 @@ $(document).ready(function () {
         _error_create: function _error_create(e) {
           e.preventDefault();
           window.login.methods._error($('.create-form li').first());
+          window.login.methods._error($('.create-form'));
+          window.login.methods._error($('.create-form li:nth-child(3)'));
+          window.login.methods._error($('.create-form li:nth-child(4)'));
         }
       }
     }
