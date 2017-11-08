@@ -79,6 +79,9 @@
                   Add Your Vehicle
                 </strong>
                 <form class="add-vehicle-form" autocomplete="off">
+                  <span class="error-message error-message-main">
+                    <span class="error-message-inner">{{ REPLACE ERROR MESSAGE }}</span>
+                  </span><!-- /.error-message -->
                   <ul class="form-fields">
                     <li>
                       <label>
@@ -88,6 +91,11 @@
                         <input type="text" name="nickname" class="nickname" />
                         <span class="helper">
                           <strong>Tip:</strong> Use custom name, your VIN, or License #
+                        </span>
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            {{ REPLACE ERROR MESSAGE }}
+                          </span>
                         </span>
                       </label>
                     </li>
@@ -100,6 +108,11 @@
                           </span><!-- /.label-helper -->
                         </strong>
                         <input type="text" name="vin" class="vin" />
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            {{ REPLACE ERROR MESSAGE }}
+                          </span>
+                        </span>
                       </label>
                     </li>
                   </ul>
