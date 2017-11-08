@@ -183,6 +183,7 @@
   margin: 0 5px;
   max-width: 250px;
   transition: all 250ms $easeOutQuint;
+  height: 142px;
   &.communicating {
     .overview-remote-command {
       &-header {
@@ -426,9 +427,10 @@
       }
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: $screen-xs-max) {
     width: calc(50% - 10px);
     margin-bottom: 10px;
+    height: 125px;
     &-header {
       height: 75px;
       &-extra-info {
@@ -476,6 +478,63 @@
   }
 }
 
+.overview-locked {
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center !important;
+  @media (min-width: $screen-xs-max) {
+    &:hover {
+      .overview-locked {
+        &-main {
+          transform: translate(-50%, calc(-50% - 15px));
+        }
+        &-button {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  &-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    transition: all 250ms $easeOutQuint;
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    strong {
+      display: block;
+      padding-top: 10px;
+      font: bold 11px/1em $kia;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+    }
+  }
+  &-button {
+    padding: 0 10px 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 300ms $easeOutQuint;
+    transform: translateY(100%);
+  }
+  @media (max-width: $screen-xs-max) {
+    &-main {
+      strong {
+        font-size: 9px;
+        letter-spacing: .2px;
+      }
+    }
+  }
+}
+
 .icon-motor {
   width: 30px;
   height: 30px;
@@ -488,12 +547,19 @@
 
 .icon-lock {
   width: 18px;
-  height: 25px;
+  height: 26px;
   display: inline-block;
   background: url('/images/icon_unlocked.svg') center/contain no-repeat;
   &.state-2 {
     background-image: url('/images/icon_locked.svg');
   }
+}
+
+.icon-locked {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url('/images/icon_lock_red.svg') center/contain no-repeat;
 }
 
 .icon-fan {

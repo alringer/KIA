@@ -22,7 +22,7 @@
       text-transform: uppercase;
     }
   }
-  @media (max-width: 700px) {
+  @media (max-width: $screen-xs-max) {
     padding-bottom: 30px;
     &-header {
       padding: 18px 5px 0;
@@ -42,6 +42,16 @@
   display: inline-block;
   position: relative;
   text-align: left;
+  &.locked {
+    cursor: pointer;
+    .mobile {
+      em {
+        padding-top: 0px;
+        font-size: 9px;
+        letter-spacing: .2px;
+      }
+    }
+  }
   &-title {
     font: bold 10px/1em $kia;
     font-style: normal;
@@ -124,7 +134,7 @@
   .desktop-and-tablet {
     display: block !important;
   }
-  @media (max-width: 700px) {
+  @media (max-width: $screen-xs-max) {
     height: 62px;
     width: 100%;
     margin-bottom: 6px;
@@ -184,6 +194,11 @@
     }
     .desktop-and-tablet {
       display: none !important;
+    }
+  }
+  .overview-locked {
+    @media (max-width: $screen-xs-max) {
+      display: none;
     }
   }
 }
