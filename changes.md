@@ -17,6 +17,15 @@
 * KK-212 Fixes the vehicle meta data from being cut off after an accordion interaction is fired
 * KK-214 Updates to the viewports, and more closely following bootstrap viewports
 * KK-218 Updating the "My Vehicles" section to use the bootstrap grid
+* KK-214 Viewports being used by Seamgen are different from the default bootstrap viewports / KOPE -77
+* KK-215 Add TOS and PP validation error messaging / KOPE-55
+* KK-216 Captcha validation error message / KOPE- 53
+* KK-217 Bootstrap: Login Modal
+* KK-218 Bootstrap: My Vehicles - Grid View
+* KK-219 Bootstrap: Enter Vin (carousel for mobile)
+* KK-220 Bootstrap: How to activate UVO modal (double carousel / rework mobile view)
+* KK-225 KIA: Add Car Step 2, Car step 3, Add Vehicle Error
+* Last minute Error validation request by Kia.
 ===
 # V - 1.1.2
 * KK-217 Adjusts the the login to use the login modal
