@@ -235,6 +235,13 @@ $(document).ready(function () {
         } else {
           window.myVehicles.elements.add_vehicle_button.addClass('disabled');
         }
+      },
+      demo: {
+        _add_vehicle_error: function _add_vehicle_error(e) {
+          e.preventDefault();
+          window.forms.methods._error($('.add-vehicle-form'));
+          window.forms.methods._error($('.add-vehicle-form .form-fields li'));
+        }
       }
     }
   };
@@ -254,6 +261,7 @@ $(document).ready(function () {
   window.myVehicles.elements.switch_view.on('click', window.myVehicles.methods._switch_views);
   window.myVehicles.elements.list_item_toggle.on('click', window.myVehicles.methods._list_item_toggle);
   window.myVehicles.elements.add_vin.on('keyup', window.myVehicles.methods._toggle_disable);
+  window.myVehicles.elements.add_vehicle_button.on('click', window.myVehicles.methods.demo._add_vehicle_error);
 
   $(window).on('resize', function () {
     clearTimeout(window.myVehicles_tab_size);
