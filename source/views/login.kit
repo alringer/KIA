@@ -79,6 +79,9 @@
             <div class="item remember-back">
               <form class="create-form" autocomplete="off">
                 <input type="text" style="display:none" />
+                <span class="error-message error-message-main">
+                  <span class="error-message-inner">Oops! Looks like you missed a few things. Please review the form below and see what you missed.</span>
+                </span><!-- /.error-message -->
                 <ul class="form-fields">
                   <li>
                     <label>
@@ -122,6 +125,11 @@
                   </li>
                   <li>
                     <div class="g-recaptcha" data-sitekey="6LdmFTQUAAAAAJGKzEG-S4t0OrfT3HIjQjN5BRGp"></div>
+                    <span class="error-message">
+                      <span class="error-message-inner">
+                          You must verify that you are not a robot.
+                      </span>
+                    </span>
                   </li>
                   <li>
                     <label class="checkbox">
@@ -130,6 +138,11 @@
                         I have read and agree to the <a href="#" target="_blank">Terms of Service</a>
                         and the <a href="#" target="_blank">Privacy Policy</a>
                       </em>
+                      <span class="error-message">
+                        <span class="error-message-inner">
+                          You must agree to the Terms of Service and Privacy Policy to create your account.
+                        </span>
+                      </span>
                     </label>
                   </li>
                 </ul>

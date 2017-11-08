@@ -119,6 +119,11 @@
   .g-recaptcha {
     transform-origin: top left;
     transform: scale(.91);
+    + .error-message {
+      .error-message-inner {
+        padding-top: 0px;
+      }
+    }
   }
   .toggle-show-password {
     display: none;

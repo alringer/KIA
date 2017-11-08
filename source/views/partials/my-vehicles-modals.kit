@@ -12,6 +12,9 @@
                   Add Your Vehicle
                 </strong>
                 <form class="add-vehicle-form" autocomplete="off">
+                  <span class="error-message error-message-main">
+                    <span class="error-message-inner">{{ REPLACE ERROR MESSAGE }}</span>
+                  </span><!-- /.error-message -->
                   <ul class="form-fields">
                     <li>
                       <label>
@@ -21,6 +24,11 @@
                         <input type="text" name="nickname" class="nickname" />
                         <span class="helper">
                           <strong>Tip:</strong> Use custom name, your VIN, or License #
+                        </span>
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            {{ REPLACE ERROR MESSAGE }}
+                          </span>
                         </span>
                       </label>
                     </li>
@@ -33,6 +41,11 @@
                           </span><!-- /.label-helper -->
                         </strong>
                         <input type="text" name="vin" class="vin" />
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            {{ REPLACE ERROR MESSAGE }}
+                          </span>
+                        </span>
                       </label>
                     </li>
                   </ul>
@@ -182,7 +195,7 @@
                   </div><!-- /.slide -->
                 </div><!-- /.slider -->
                 <div class="toggle-footer">
-                  <span data-action="modal-nav-next">
+                  <span data-target="#activate-uvo-slider" data-slide-to="1">
                     View All Steps
                   </span>
                 </div><!-- /.toggle-footer -->
@@ -257,7 +270,7 @@
                   </div><!-- /.activate-uvo-panel -->
                 </div><!-- /.activate-uvo-panel-wrap -->
                 <div class="toggle-footer">
-                  <span data-action="modal-nav-prev">
+                  <span data-target="#activate-uvo-slider" data-slide-to="0">
                     View Step-By-Step
                   </span>
                 </div><!-- /.toggle-footer -->
@@ -266,11 +279,11 @@
           </div><!-- /.carousel-inner -->
         </div><!-- /.carousel -->
       </div><!-- /.modal-body -->
+      <div class="mobile-modal-footer">
+        <span class="button full" data-action="modal-close">
+          Ok, got it!
+        </span>
+      </div>
     </div><!-- /.modal-content -->
-    <div class="mobile-modal-footer">
-      <span class="button full" data-action="modal-close">
-        Ok, got it!
-      </span>
-    </div>
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
