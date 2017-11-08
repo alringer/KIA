@@ -12,16 +12,15 @@
   }
 </style>
 
-# V - 1.1.2
-#### Notes:
-_This version of the build is a partial delivery, and all the other views will be readjusted to use the bootstrap modal / breakpoints_
-* KK-217 Adjusts the the login to use the login modal
-====
-#### In progress / Pending Internal QA (Seamgen):
+# V - 1.1.3
 * KK-213 Fixes the duplicate events bound for the "My Vehicles" list view header sorting
 * KK-212 Fixes the vehicle meta data from being cut off after an accordion interaction is fired
 * KK-214 Updates to the viewports, and more closely following bootstrap viewports
 * KK-218 Updating the "My Vehicles" section to use the bootstrap grid
+===
+# V - 1.1.2
+* KK-217 Adjusts the the login to use the login modal
+
 ====
 # V - 1.1.1
 * KK-198 Swapped selectize for bootstrap-select
