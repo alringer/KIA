@@ -28,19 +28,23 @@ $(document).ready(() => {
       },
       // Dsiplay an error message
       _error : ($field) => {
-        // Add the error class
         $field.addClass('error');
 
-        // Grab error fields
-        var $error_message = $field.find('.error-message'),
+        // Get the error fields
+        var $error_message = $field.is('form') ? $field.children('.error-message') : $field.find('.error-message'),
             $error_message_inner = $error_message.find('.error-message-inner');
 
-        // Set the height of the error message -- this uses a css3 transtion to animate in
+        // Use css3 transition to slide down error message
         $error_message.css({
           'height' : `${$error_message_inner[0].clientHeight}px`
         });
+        setTimeout(() => {
+          $error_message.css({
+            'height' : 'auto',
+          });
+        }, 250);
 
-        // Diplay error message ( transitions opacity, etc )
+        // Toggles opacity, etc.
         $error_message_inner.addClass('show');
       },
       // There are some form fields that have dual inputs (for example: both text / radio buttons)

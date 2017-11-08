@@ -70,10 +70,13 @@ body .modal {
     top: 50%;
     transform: translateY(-50%) scale(.5) !important;
     transition: all 150ms $easeOutQuint !important;
+    max-height: calc(100vh - 40px);
+    margin: 0 auto;
     .modal-content {
       border-radius: 3px;
       box-shadow: 0 2px 34px 0 rgba(47, 47, 47, 0.44);
       border: none;
+      margin: 0 auto 20px;
       .modal-body {
         padding: 0;
         .carousel {
@@ -451,7 +454,7 @@ body .modal {
     }
     .slider {
       position: relative;
-      padding-bottom: 60px;
+      padding-bottom: 67px;
       max-width: 100%;
       width: 640px;
       .slide {

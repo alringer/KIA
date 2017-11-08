@@ -67,27 +67,6 @@ $(document).ready(() => {
           window.login.elements.create_password.attr('type', 'password');
         }
       },
-      // Display an error ( similar methodology as form, but this also resets the height of the modal )
-      _error : ($field) => {
-        $field.addClass('error');
-
-        // Get the error fields
-        var $error_message = $field.is('form') ? $field.children('.error-message') : $field.find('.error-message'),
-            $error_message_inner = $error_message.find('.error-message-inner');
-
-        // Use css3 transition to slide down error message
-        $error_message.css({
-          'height' : `${$error_message_inner[0].clientHeight}px`
-        });
-        setTimeout(() => {
-          $error_message.css({
-            'height' : 'auto',
-          });
-        }, 250)
-
-        // Toggles opacity, etc.
-        $error_message_inner.addClass('show');
-      },
       // The reset email overlay has a progression ( possible future buildout of overlay progression if this functionaltiy is found in other places )
       _reset_email : (e) => {
         e.preventDefault();
@@ -133,14 +112,14 @@ $(document).ready(() => {
       demo : {
         _error : (e) => {
           e.preventDefault();
-          window.login.methods._error($('.login-form li').first());
+          window.forms.methods._error($('.login-form li').first());
         },
         _error_create : (e) => {
           e.preventDefault();
-          window.login.methods._error($('.create-form li').first());
-          window.login.methods._error($('.create-form'));
-          window.login.methods._error($('.create-form li:nth-child(3)'));
-          window.login.methods._error($('.create-form li:nth-child(4)'));
+          window.forms.methods._error($('.create-form li').first());
+          window.forms.methods._error($('.create-form'));
+          window.forms.methods._error($('.create-form li:nth-child(3)'));
+          window.forms.methods._error($('.create-form li:nth-child(4)'));
         },
       }
     }
