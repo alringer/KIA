@@ -169,6 +169,13 @@
       display: none;
     }
   }
+  @media (max-width: $screen-xs-max) {
+    .commands {
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
 }
 
 .overview-remote-command {

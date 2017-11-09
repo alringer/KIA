@@ -60,6 +60,20 @@
       position: absolute;
       left: 36px;
       top: 63px;
+      &.locked {
+        strong {
+          color: rgba($white, .5);
+          position: relative;
+          top: -3px;
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url('/images/icon_lock_red.svg') center/contain no-repeat;
+          }
+        }
+      }
       &.right {
         text-align: right;
         left: auto;

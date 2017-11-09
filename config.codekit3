@@ -899,6 +899,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/image_overview_car_3.png": {
+		"ft": 32768,
+		"iS": 103229,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_overview_car_3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/image_reference_card_1.jpg": {
 		"ft": 16384,
 		"iS": 258918,
@@ -2478,6 +2489,20 @@
 		"oAP": "\/build\/views\/overview-2.html",
 		"oF": 0
 		},
+	"\/source\/views\/overview-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/overview-3.html",
+		"oF": 0
+		},
+	"\/source\/views\/overview-4.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/overview-4.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2574,13 +2599,6 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav.html",
-		"oF": 0
-		},
-	"\/source\/views\/poc.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/views\/poc.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-1.kit": {
