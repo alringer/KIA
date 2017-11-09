@@ -1,0 +1,54 @@
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  24% {
+    width: 100%;
+    left: 0;
+  }
+  25% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  74% {
+    width: 0%;
+    left: auto;
+    right: 0;
+  }
+  75% {
+    left: 0;
+    right: auto;
+  }
+}
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  pointer-events: none;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $red;
+  }
+  &.loading {
+    &:before {
+      animation-name: loading-bar;
+      animation-duration: 750ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      @media (min-width: $screen-md) {
+        animation-duration: 1000ms;
+      }
+    }
+  }
+}

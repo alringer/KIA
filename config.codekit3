@@ -33,24 +33,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/changes.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/build\/changes.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"\/shippable.yml": {
 		"cB": 0,
 		"ft": 8192,
@@ -132,6 +114,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/css\/css\/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/elements\/_loading.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/elements\/_loading.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1125,6 +1120,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/forms.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/loading.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/loading.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2534,6 +2539,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/header.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/loading.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/loading.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/my-vehicles-modals.kit": {

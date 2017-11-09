@@ -21,23 +21,27 @@ $(document).ready(function () {
 
         $this_command.addClass('communicating');
         window.remoteCommands.elements.view.addClass('communicating');
+        window.loading.methods._loading_start();
 
         setTimeout(function () {
           $this_command.find('.state-' + first_state).removeClass('active');
           $this_command.find('.state-' + new_state).addClass('active');
           $this_command.removeClass('communicating');
           window.remoteCommands.elements.view.removeClass('communicating');
-        }, 1000);
+          window.loading.methods._loading_stop();
+        }, 3000);
       },
       _refresh: function _refresh() {
         if (window.remoteCommands.elements.view.hasClass('refreshing')) {
           return;
         }
         window.remoteCommands.elements.view.addClass('refreshing');
+        window.loading.methods._loading_start();
         setTimeout(function () {
           $('.last-refreshed .time').text('just now');
           window.remoteCommands.elements.view.removeClass('refreshing');
-        }, 1500);
+          window.loading.methods._loading_stop();
+        }, 3000);
       }
     }
   };
