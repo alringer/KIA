@@ -17,14 +17,20 @@
         pointer-events: none !important;
       }
     }
-
     .overview-remote-commands {
       &-header,
-      .overview-remote-command:not(.communicating) {
-        opacity: .3;
+      .overview-remote-command {
         pointer-events: none !important;
+        cursor: default !important;
         * {
+          cursor: default !important;
           pointer-events: none !important;
+          &.action-button {
+            pointer-events: none !important;
+          }
+        }
+        &:not(.communicating) {
+          opacity: .3;
         }
       }
     }
