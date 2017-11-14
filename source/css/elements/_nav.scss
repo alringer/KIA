@@ -112,15 +112,6 @@ nav.nav-main {
       height: 70px;
       display: block;
       padding: 0 17px;
-      img {
-        display: inline-block;
-        margin-right: 12px;
-      }
-      .title {
-        color: $grey_2;
-        font: 500 14px/1em $kia;
-        letter-spacing: .4px;
-      }
     }
     .dropdown-menu {
       margin: 0;
@@ -252,6 +243,7 @@ nav.nav-app {
       }
       &-inner {
         padding: 0;
+        transform: none !important;
       }
       &-menu {
         padding: 0;
@@ -296,7 +288,7 @@ nav.nav-app {
         transition: transform 250ms $easeOutQuint;
         background: $white;
         position: fixed;
-        top: calc(100% - 70px);
+        top: calc(100vh - 70px);
         height: 185px;
         overflow: hidden;
         width: 100vw;
@@ -304,6 +296,9 @@ nav.nav-app {
         &.open {
           transform: translateY(-100%);
           box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
+        }
+        &-vehicle-selector {
+          display: none;
         }
         &-header {
           display: none;
@@ -452,6 +447,26 @@ nav.nav-app {
           width: 234px;
           height: 71px;
           border-bottom: 1px solid #d5d5d5;
+          cursor: pointer;
+          .vehicle-selector-current {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 18px;
+            .title {
+              display: inline-block;
+              min-width: 75px;
+            }
+            .next {
+              display: inline-block;
+              height: 14px;
+              width: 10px;
+              background: url('/images/icon_back_arrow.svg') center/contain no-repeat;
+              transform: rotate(180deg);
+              vertical-align: middle;
+              margin-left: 10px;
+            }
+          }
         }
         &-footer {
           display: block;
@@ -461,9 +476,11 @@ nav.nav-app {
           width: 234px;
           height: 47px;
           border-top: 1px solid #d5d5d5;
+          z-index: 3;
+          background: $white;
         }
         &-body {
-          height: calc(100% - 117px);
+          height: calc(100vh - 117px);
           position: absolute;
           width: 234px;
           top: 71px;
@@ -551,9 +568,43 @@ nav.nav-app {
           }
           .nav-list-footer {
             text-align: left;
+            padding-bottom: 20px;
             p {
               margin-bottom: 20px;
             }
+          }
+        }
+        &-inner {
+          transition: all 350ms $easeOutQuint;
+          .nav-app-mobile-menu-default {
+            transition: all 350ms $easeOutQuint;
+            // > * {
+            //   border-right: solid 1px #d4d4d4;
+            // }
+          }
+          &.selector {
+            transform: translateX(-234px);
+            .nav-app-mobile-menu-default {
+              opacity: 0;
+            }
+          }
+        }
+        &-vehicle-selector {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          height: auto;
+          width: 234px;
+          .back {
+            display: inline-block;
+            padding-left: 15px;
+            background: url('/images/icon_back_arrow.svg') left center no-repeat;
+            font: bold 12px/1em $kia;
+            text-transform: uppercase;
+            letter-spacing: .3px;
+            margin: 20px 0 5px 15px;
+            cursor: pointer;
           }
         }
       }
@@ -561,7 +612,23 @@ nav.nav-app {
   }
 }
 
+.vehicle-selector-current {
+  img {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  .title {
+    color: $grey_2;
+    font: 500 14px/1em $kia;
+    letter-spacing: .4px;
+  }
+}
+
 .vehicle-selector-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
   li {
     position: relative;
     height: 70px;
@@ -582,6 +649,7 @@ nav.nav-app {
       height: 70px;
       line-height: 70px;
       background-color: transparent !important;
+      text-decoration: none;
       &:last-child:not(.last-link) {
         height: auto;
         padding: 0;
@@ -621,6 +689,7 @@ nav.nav-app {
         text-transform: uppercase;
         color: $red;
         letter-spacing: .7px;
+        padding: 0;
       }
     }
   }

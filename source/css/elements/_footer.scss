@@ -97,4 +97,7 @@ footer {
   @media #{$mobile} {
     display: none;
   }
+  @media #{$tablet} {
+    display: none;
+  }
 }
