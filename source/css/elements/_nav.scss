@@ -69,7 +69,6 @@ nav.nav-main {
     top: 50%;
     transform: translate(0%, -50%);
     .dropdown {
-      // border-color: lighten($grey, 35%) !important;
       button {
         font: 500 12px/70px $kia;
         letter-spacing: .8px;
@@ -80,13 +79,29 @@ nav.nav-main {
         right: 0;
         width: 140px;
         min-width: 140px;
+        padding: 5px 0 10px;
         li {
-          height: 45px;
-          line-height: 45px;
+          height: 40px;
+          line-height: 40px;
           a {
-            line-height: 45px;
+            line-height: 40px;
             background: transparent;
             padding: 0;
+            font: 14px/40px $sans;
+            letter-spacing: .7px;
+            padding: 0 3px;
+            i {
+              display: inline-block;
+              vertical-align: middle;
+              line-height: 1em;
+              margin: 0 12px;
+              position: relative;
+              top: 1px;
+            }
+            span {
+              display: inline-block;
+              vertical-align: middle;
+            }
           }
         }
       }
@@ -133,6 +148,9 @@ nav.nav-app {
     left: 111px;
     + .page-view {
       padding-left: 111px;
+      + footer {
+        padding-left: 111px;
+      }
     }
   }
   .nav-app {
@@ -350,6 +368,10 @@ nav.nav-app {
             }
             i {
               display: block;
+              svg {
+                position: relative;
+                top: -2px;
+              }
             }
             span {
               display: block;

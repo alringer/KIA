@@ -421,6 +421,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_award.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_award.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_back_arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -486,6 +496,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_checkmark_white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_cog.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_cog.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -777,6 +797,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_plus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_power.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_power.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
