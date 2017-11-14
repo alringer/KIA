@@ -7,7 +7,7 @@
 		"uuidString": "35F6608E-6DA5-45F2-87E1-7BF9B91317FF"
 		}
 	],
-"creatorBuild": "26097",
+"creatorBuild": "26148",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -622,6 +622,96 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_menu_dashboard.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_dashboard.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_locations.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_locations.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_maintenance.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_maintenance.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_more.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_more.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_mycarzone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_mycarzone.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_reference.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_reference.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_remote.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_remote.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_schedules.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_schedules.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_menu_stats.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_menu_stats.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_minus.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1052,6 +1142,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/source\/images\/image_selector_1.png": {
+		"ft": 32768,
+		"iS": 3876,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_selector_1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/logo_google_play.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1067,6 +1168,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/logo_kia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/logo_kia_white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/logo_kia_white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1192,6 +1303,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/my-vehicles.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/nav.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/nav.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2612,6 +2733,20 @@
 		"oAP": "\/build\/views\/partials\/my-vehicles-utility-nav.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/nav-app.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-app.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/nav-dual.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-dual.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/nav.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2706,7 +2841,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 531355852
+	"lastBuiltDate": 532299428
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
