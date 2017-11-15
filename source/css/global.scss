@@ -59,7 +59,8 @@ body {
 
 .logo {
   background: url('/images/logo_kia.svg') center/contain no-repeat;
-  color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0) !important;
+  text-decoration: none;
   width: 47px;
   height: 24px;
   display: inline-block;

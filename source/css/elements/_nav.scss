@@ -39,6 +39,7 @@ nav.nav-main {
     transform: translateY(-50%);
     padding-left: 35px;
     background: none;
+    display: inline-block;
     &:before {
       content: "";
       display: block;
@@ -56,6 +57,7 @@ nav.nav-main {
     top: 50%;
     position: absolute;
     left: 25px;
+    display: none;
   }
   .vehicle-selector {
     position: absolute;
@@ -713,6 +715,24 @@ nav.nav-app {
         letter-spacing: .7px;
         padding: 0;
       }
+    }
+  }
+}
+
+.nav-no-selector {
+  nav {
+    .vehicle-selector {
+      display: none;
+    }
+  }
+}
+.nav-no-service {
+  nav {
+    .nav-service-text {
+      display: none;
+    }
+    .logo {
+      display: block;
     }
   }
 }
