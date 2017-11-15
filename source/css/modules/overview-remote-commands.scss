@@ -408,9 +408,17 @@
           opacity: 1;
           pointer-events: all;
         }
-        &:hover {
-          background: $red;
-          cursor: pointer;
+        @media (min-width: $screen-sm-max) {
+          &:hover {
+            background: $red;
+            cursor: pointer;
+          }
+        }
+        @media (max-width: $screen-sm-max) {
+          &:active {
+            background: $red;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -501,7 +509,7 @@
     &:hover {
       .overview-locked {
         &-main {
-          transform: translate(-50%, calc(-50% - 15px));
+          margin-top: -15px;
         }
         &-button {
           transform: translateY(0);
