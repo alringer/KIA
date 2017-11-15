@@ -22,12 +22,15 @@ $(document).ready(() => {
         window.loading.methods._loading_start();
 
         setTimeout(() => {
-          $this_command.find(`.state-${first_state}`).removeClass('active');
-          $this_command.find(`.state-${new_state}`).addClass('active');
-          $this_command.removeClass('communicating');
-          window.remoteCommands.elements.view.removeClass('communicating');
-          window.loading.methods._loading_stop();
+          window.remoteCommands.methods._commiunicate_stop($this_command, first_state, new_state);
         }, 3000);
+      },
+      _commiunicate_stop : ($command, first_state, new_state) => {
+        $command.find(`.state-${first_state}`).removeClass('active');
+        $command.find(`.state-${new_state}`).addClass('active');
+        $command.removeClass('communicating');
+        window.remoteCommands.elements.view.removeClass('communicating');
+        window.loading.methods._loading_stop();
       },
       _refresh : () => {
         if( window.remoteCommands.elements.view.hasClass('refreshing') ) {
