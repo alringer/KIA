@@ -349,6 +349,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/modules\/reference-cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/reference-cards.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/views\/poc.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2871,7 +2884,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 532299428
+	"lastBuiltDate": 532471756
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
