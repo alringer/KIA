@@ -74,6 +74,7 @@
           color: rgba($white, .5);
           position: relative;
           top: -3px;
+          &:after,
           &:before {
             content: "";
             display: inline-block;
@@ -81,6 +82,22 @@
             height: 24px;
             background: url('/images/icon_lock_red.svg') center/contain no-repeat;
             vertical-align: middle;
+            position: relative;
+            top: -4px;
+          }
+        }
+        &.left {
+          strong {
+            &:after {
+              display: none;
+            }
+          }
+        }
+        &.right {
+          strong {
+            &:before {
+              display: none;
+            }
           }
         }
       }
@@ -233,6 +250,9 @@
           span {
             display: none;
           }
+        }
+        &.locked {
+          padding-top: 20px;
         }
       }
     }
