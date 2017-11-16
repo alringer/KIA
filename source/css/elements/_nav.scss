@@ -479,6 +479,7 @@ nav.nav-app {
         width: 234px;
         bottom: 46px;
         height: auto;
+        z-index: 999;
         &.open {
           transform: translateX(-100%);
         }
@@ -516,26 +517,29 @@ nav.nav-app {
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 234px;
+          right: 0;
           height: 47px;
           border-top: 1px solid #d5d5d5;
-          z-index: 3;
+          z-index: 10;
           background: $white;
+          opacity: .5;
         }
         &-body {
-          height: calc(100vh - 117px);
+          bottom: 47px;
           position: absolute;
           width: 234px;
           top: 71px;
           overflow: auto;
           -webkit-overflow-scrolling: touch;
           padding: 0 15px;
+          z-index: 1;
           .nav-list {
             margin: 0;
             padding: 13.5px 0 12px;
             text-align: left;
             border-bottom: solid 1px #d4d4d4;
             list-style: none;
+            z-index: 1;
             &.main-nav {
               max-width: 100%;
               margin-bottom: 0px;
@@ -611,7 +615,7 @@ nav.nav-app {
           }
           .nav-list-footer {
             text-align: left;
-            padding-bottom: 75px;
+            padding-bottom: 25px;
             p {
               margin-bottom: 20px;
             }
