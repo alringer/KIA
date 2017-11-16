@@ -1,10 +1,11 @@
 $(document).ready(() => {
   window.remoteCommands = {
     elements : {
+      body : $('body'),
       view : $('.view-overview'),
       remote_command : $('.overview-remote-command'),
       remote_command_buttons : $('.overview-remote-command-actions .action-button'),
-      refresh_buttons : $('.view-overview [data-action="refresh-page"]'),
+      refresh_buttons : $('[data-action="refresh-page"]'),
     },
     methods : {
       _communicate : function() {
@@ -33,14 +34,14 @@ $(document).ready(() => {
         window.loading.methods._loading_stop();
       },
       _refresh : () => {
-        if( window.remoteCommands.elements.view.hasClass('refreshing') ) {
+        if( window.remoteCommands.elements.body.hasClass('refreshing') ) {
           return;
         }
-        window.remoteCommands.elements.view.addClass('refreshing');
+        window.remoteCommands.elements.body.addClass('refreshing');
         window.loading.methods._loading_start();
         setTimeout(() => {
           $('.last-refreshed .time').text('just now');
-          window.remoteCommands.elements.view.removeClass('refreshing');
+          window.remoteCommands.elements.body.removeClass('refreshing');
           window.loading.methods._loading_stop();
         }, 3000);
       },

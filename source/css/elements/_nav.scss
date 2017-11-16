@@ -108,6 +108,16 @@ nav.nav-main {
         }
       }
     }
+    @media (max-width: $screen-md - 1) {
+      .dropdown {
+        border: none !important;
+      }
+      button {
+        color: rgba(0, 0, 0, 0);
+        background: url('/images/icon_cog.svg') center no-repeat !important;
+        width: 20px;
+      }
+    }
   }
   .dropdown {
     border-left: 1px solid transparent;
@@ -148,8 +158,12 @@ nav.nav-app {
   + nav.nav-main {
     width: calc(100vw - 111px);
     left: 111px;
+    position: fixed;
+    top: 0;
+    + .nav-mobile + .page-view,
     + .page-view {
       padding-left: 111px;
+      margin-top: 70px;
       + footer {
         padding-left: 111px;
       }
@@ -251,6 +265,7 @@ nav.nav-app {
     + nav.nav-main {
       width: 100%;
       left: 0;
+      + .nav-mobile + .page-view,
       + .page-view {
         padding-left: 0px;
       }
@@ -428,7 +443,10 @@ nav.nav-app {
   }
   @media (max-width: $screen-xs-max) {
     + nav.nav-main {
-      display: none;
+      + .nav-mobile + .page-view,
+      + .page-view {
+        margin-top: 60px;
+      }
     }
     .nav-app {
       &-main {
@@ -732,6 +750,56 @@ nav.nav-app {
       display: none;
     }
     .logo {
+      display: block;
+    }
+  }
+}
+
+.nav-mobile {
+  display: none;
+  padding-top: 31px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $white;
+  z-index: 1000;
+  h1 {
+    font: 500 14px/1em $kia;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  .contain {
+    padding: 0 15px;
+  }
+  .mobile-nav-options {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: -5px;
+    li {
+      display: inline-block;
+      > * {
+        margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .has-mobile-nav {
+    + .nav-mobile + .page-view,
+    + .page-view {
+      margin-top: 60px;
+    }
+    nav.nav-main {
+      display: none;
+    }
+    .nav-mobile {
       display: block;
     }
   }
