@@ -623,14 +623,20 @@ nav.nav-app {
         }
         &-inner {
           transition: all 350ms $easeOutQuint;
+          height: 100%;
           .nav-app-mobile-menu-default {
             transition: all 350ms $easeOutQuint;
             // > * {
             //   border-right: solid 1px #d4d4d4;
             // }
           }
+          .nav-app-mobile-menu-default {
+            height: 100%;
+            position: relative;
+          }
           &.selector {
             transform: translateX(-234px);
+            height: 100%;
             .nav-app-mobile-menu-default {
               opacity: 0;
             }
