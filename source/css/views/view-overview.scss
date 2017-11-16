@@ -80,6 +80,7 @@
             width: 24px;
             height: 24px;
             background: url('/images/icon_lock_red.svg') center/contain no-repeat;
+            vertical-align: middle;
           }
         }
       }
@@ -200,7 +201,8 @@
       }
       &-vehicle-image {
         bottom: -30px;
-        max-width: 240px;
+        max-height: 100px;
+        width: auto;
       }
       &-info {
         left: 20px;
@@ -220,7 +222,7 @@
         }
         strong {
           text-shadow: none;
-          color: #27303b;
+          color: #27303b !important;
           font-weight: 500;
         }
         em {
