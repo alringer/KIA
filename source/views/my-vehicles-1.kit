@@ -10,16 +10,22 @@
   <script type="text/javascript" src="/scripts/my-vehicles.js"></script>
 
 <!-- @import "partials/head/head-end.kit" -->
-<div class="view-my-vehicles nav-no-service nav-no-selector">
-  <!-- @import "partials/nav.kit" -->
-  <div class="my-vehicles-empty-state">
-    <div class="my-vehicles-empty-state-cta">
-      <img src="/images/image_car-no-vehicles.png" alt="No Vehicles Found" title="No Vehicles Found" />
-      <h1>Add a Vehicle</h1>
-      <p>Get a custom experience tailored specifically to your car. Just enter your VIN and you’re all set!</p>
-      <span class="button dark-icon less-padding" data-toggle="modal" data-target="#add"><i class="fa fa-plus"></i> Add a Vehicle</span>
+<div class="view-my-vehicles nav-no-service nav-no-selector view-my-vehicles-empty-state">
+  <div class="has-mobile-nav">
+    <!-- @import "partials/nav.kit" -->
+    <!-- @import "partials/nav-mobile-my-vehicles.kit" -->
+  </div><!-- /.has-mobile-nav -->
+  <div class="page-view">
+    <!-- @import "partials/my-vehicles-subnav.kit" -->
+    <div class="my-vehicles-empty-state">
+      <div class="my-vehicles-empty-state-cta">
+        <img src="/images/image_car-no-vehicles.png" alt="No Vehicles Found" title="No Vehicles Found" />
+        <h1>Add a Vehicle</h1>
+        <p>Get a custom experience tailored specifically to your car. Just enter your VIN and you’re all set!</p>
+        <span class="button dark-icon less-padding" data-toggle="modal" data-target="#add"><i class="fa fa-plus"></i> Add a Vehicle</span>
+      </div><!-- /.my-vehicles-empty-state -->
     </div><!-- /.my-vehicles-empty-state -->
-  </div><!-- /.my-vehicles-empty-state -->
+  </div><!-- /.page-view -->
 </div><!-- /.view-my-vehicles -->
 <!-- @import "partials/my-vehicles-modals.kit" -->
 <!-- @import "partials/footer.kit" -->

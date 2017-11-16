@@ -13,9 +13,11 @@
   position: relative;
   text-align: left;
   cursor: pointer;
-  &:hover {
-    .icon-arrow-right {
-      transform: translateX(5px);
+  @media (min-width: $screen-md) {
+    &:hover {
+      .icon-arrow-right {
+        transform: translateX(5px);
+      }
     }
   }
   &.locked {

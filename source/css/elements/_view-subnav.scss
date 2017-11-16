@@ -1,0 +1,45 @@
+.page-view-subnav {
+  width: 100%;
+  height: 53px;
+  background: $white;
+  border-top: 2px solid #f7f7f7;
+  &-items {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    line-height: 53px;
+    height: inherit;
+    li {
+      display: inline-block;
+      margin: 0 25px;
+      height: inherit;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 12px;
+        color: rgba($black, .3);
+        letter-spacing: .3px;
+        font-weight: bold;
+        transition: all 250ms $easeOutQuint;
+        position: relative;
+        font-family: $kia;
+        &:before {
+          @include underline();
+          transform: translate(-50%, 18px);
+          width: calc(100% + 10px);
+        }
+        &:hover {
+          color: $black;
+        }
+        &.active {
+          color: $black;
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -474,10 +474,11 @@ nav.nav-app {
         }
       }
       &-mobile-menu {
-        height: calc(100vh - 46px);
-        top: 0;
+        top: 60px;
         left: 100%;
         width: 234px;
+        bottom: 46px;
+        height: auto;
         &.open {
           transform: translateX(-100%);
         }
@@ -692,7 +693,7 @@ nav.nav-app {
       line-height: 70px;
       background-color: transparent !important;
       text-decoration: none;
-      &:last-child:not(.last-link) {
+      &.settings-icon {
         height: auto;
         padding: 0;
         position: absolute;
