@@ -474,12 +474,12 @@ nav.nav-app {
         }
       }
       &-mobile-menu {
-        top: 60px;
+        top: 0;
         left: 100%;
         width: 234px;
         bottom: 46px;
         height: auto;
-        z-index: 999;
+        z-index: 10000;
         &.open {
           transform: translateX(-100%);
         }
