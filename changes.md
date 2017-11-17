@@ -12,6 +12,24 @@
   }
 </style>
 
+# V - 2.0.0
+* KK-56 As a user I need to send remote commands from dashboard
+* KK-57 As a user I need to know when the system is processing a remote command
+* KK-58 As a UVO user I need to see maintenance cards on my dashboard
+* KK-62 As a user I need a global navigation bar
+* KK-63 As a user I need a primary navigation bar
+* KK-64 As a user I need a footer
+* KK-65 As a UVO user I need to know when I have not yet activated UVO
+* KK-67 As a UVO user I need to see my dashboard
+* KK-68 As a non-UVO user I need to see my dashboard
+* KK-97 As a user I need to see the vehicle selector
+* KK-99 As a user I need to see the account menu
+* KK-171 As a non-UVO user I need to see reference tiles
+* KOPE-90 Sub Nav Tabs should be generic
+* KOPE-43 Mobile - Vehicle Name (nickname) Model and Year off-centered
+* KOPE-60 Mobile - My Vehicles: Missing Header
+##### _notes: Without the use of page logic, primary nav (white bar) has class modifiers on the a parent element, rather than classes appended to the nav element itself_
+===
 # V - 1.1.3
 * KK-213 Fixes the duplicate events bound for the "My Vehicles" list view header sorting
 * KK-212 Fixes the vehicle meta data from being cut off after an accordion interaction is fired
