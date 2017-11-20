@@ -190,13 +190,6 @@
 		"oAP": "\/build\/css\/fonts\/kia\/KIAB.eot",
 		"oF": 0
 		},
-	"\/source\/css\/fonts\/kia\/KIAB.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts\/kia\/KIAB.otf",
-		"oF": 0
-		},
 	"\/source\/css\/fonts\/kia\/KIAB.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -228,13 +221,6 @@
 		"oAP": "\/build\/css\/fonts\/kia\/KIAL.eot",
 		"oF": 0
 		},
-	"\/source\/css\/fonts\/kia\/KIAL.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts\/kia\/KIAL.otf",
-		"oF": 0
-		},
 	"\/source\/css\/fonts\/kia\/KIAL.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -264,13 +250,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAM.eot",
-		"oF": 0
-		},
-	"\/source\/css\/fonts\/kia\/KIAM.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts\/kia\/KIAM.otf",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAM.svg": {
@@ -2922,7 +2901,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 532471756
+	"lastBuiltDate": 532903405
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
