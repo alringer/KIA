@@ -1085,3 +1085,175 @@ body.modal-open {
     }
   }
 }
+
+.modal.vehicle-settings {
+  .modal-dialog {
+    width: 455px;
+  }
+  form {
+    width: 100%;
+    max-width: 100%;
+    &.vehicle-settings-main {
+      padding: 70px 25px 0;
+      .form-fields {
+        padding-top: 29px;
+        margin-bottom: 35px;
+        li {
+          height: auto;
+          margin-bottom: 5px;
+          clear: both;
+          &.extra-space {
+            padding-top: 10px;
+          }
+          label {
+            margin-bottom: 0;
+          }
+          strong {
+            float: left;
+            display: inline-block;
+            line-height: 40px;
+            margin-bottom: 0;
+            font-size: 10px;
+            letter-spacing: 0.4px;
+            font-family: $kia;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          input {
+            float: right;
+            width: 230px;
+          }
+          .link {
+            float: right;
+            font: bold 11px/40px $kia;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+            color: $red;
+            position: relative;
+            padding-right: 17px;
+            &:after {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 6px;
+              height: 10px;
+              transform: translateY(-50%) rotate(180deg);
+              background: url('/images/icon_back_arrow.svg') center/contain no-repeat;
+            }
+          }
+          .helper {
+            position: relative;
+            float: right;
+            width: 230px;
+            font-style: normal;
+            padding-left: 2px;
+          }
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 60px 5px 0;
+        .form-fields {
+          li {
+            strong {
+              float: none;
+            }
+            .helper,
+            input {
+              width: 100%;
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .vehicle-settings-main {
+    .form-actions {
+      font-size: 0;
+      overflow: hidden;
+      padding: 30px 0 25px;
+      width: 100%;
+      .button {
+        width: calc(50% - 5px);
+        padding: 0;
+        text-align: center;
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+    &-header {
+      border-bottom: solid 1px #e5e9ef;
+      height: 45px;
+      line-height: 45px;
+      margin-bottom: 26px;
+      strong {
+        font: 500 24px/45px $kia;
+        letter-spacing: .5px;
+      }
+      .print {
+        float: right;
+        color: #bb1a30;
+        font: bold 11px/45px $kia;
+        text-transform: uppercase;
+        letter-spacing: .7px;
+        transition: all 250ms $easeOutQuint;
+        cursor: pointer;
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          svg {
+            * {
+              fill: #bb1a30 !important;
+              transition: all 250ms $easeOutQuint;
+            }
+          }
+        }
+        &:hover {
+          color: darken(#bb1a30, 10%);
+          svg {
+            * {
+              fill: darken(#bb1a30, 10%) !important;
+            }
+          }
+        }
+      }
+    }
+    &-meta {
+      &-item {
+        margin-bottom: 10px;
+        strong {
+          display: block;
+          font: bold 10px/1em $kia;
+          letter-spacing: .4px;
+          color: #000;
+          text-transform: uppercase;
+          margin-bottom: 3px;
+        }
+        em {
+          display: block;
+          font: 16px/1em $sans;
+          letter-spacing: .4px;
+        }
+      }
+    }
+    &-image {
+      text-align: center;
+      padding-top: 10px;
+      img {
+        max-width: 100%;
+        width: 136px;
+        margin-bottom: 23px;
+      }
+      a {
+        font: bold 11px/2.09em $kia;
+        letter-spacing: .7px;
+        text-transform: uppercase;
+        color: $red;
+      }
+    }
+  }
+}

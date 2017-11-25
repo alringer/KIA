@@ -1081,6 +1081,139 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<div class="modal fade vehicle-settings" id="vehicle-settings" tabindex="-1" role="dialog" aria-labelledby="add-card" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <span class="back" data-target="#add-card-slider" data-slide-to="0"></span>
+        <div id="add-card-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-vehicle-settings">
+                <form class="vehicle-settings-main" action="" method="post">
+                  <div class="vehicle-settings-main-header">
+                    <strong>2017 Niro</strong>
+                    <span class="print">
+                      <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                          <path fill="#C4172C" fill-rule="nonzero" d="M15.375 12H15V9H3v3H0V5c0-1 1.125-2 2.25-2H3v3h12V3h.75C16.875 3 18 4 18 5v7h-2.625zM4 12v-2h10v5H4v-3zm10-9v2H4V0h10v3z"/>
+                        </svg>
+                      </i>
+                      Print
+                    </span>
+                  </div><!-- /.modal-vehicle-settings-header -->
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <div class="vehicle-settings-main-meta">
+                        <div class="vehicle-settings-main-meta-item">
+                          <strong>
+                            Vin
+                          </strong>
+                          <em>
+                            12345678901234567
+                          </em>
+                        </div><!-- /.vehicle-settings-main-meta-item -->
+                        <div class="vehicle-settings-main-meta-item">
+                          <strong>
+                            My Car Zone PIN
+                          </strong>
+                          <em>
+                            1832
+                          </em>
+                        </div><!-- /.vehicle-settings-main-meta-item -->
+                        <div class="vehicle-settings-main-meta-item">
+                          <strong>
+                            UVO Expiration Date
+                          </strong>
+                          <em>
+                            01/12/17
+                          </em>
+                        </div><!-- /.vehicle-settings-main-meta-item -->
+                      </div><!-- /.vehicle-settings-main-meta -->
+                    </div><!-- /.col -->
+                    <div class="col-xs-7">
+                      <div class="vehicle-settings-main-image">
+                        <img src="/images/image_vehicle_settings_car.png" alt="My Niro" title="My Niro" />
+                        <div><a href="">View Latest UVO Software</a></div>
+                      </div><!-- /.vehicle-settings-main-image -->
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>Nickname</strong>
+                        <input type="text" name="" value="My Niro">
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>License Plate</strong>
+                        <input type="text" name="" value="PE257H">
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>Recommended PSI</strong>
+                        <input type="text" name="" value="32">
+                        <span class="helper">
+                          Find your recommended PSI in your vehicles owners manual
+                        </span>
+                      </label>
+                    </li>
+                    <li class="extra-space">
+                      <strong>Preferred Dealer</strong>
+                      <span class="link">Choose a dealer</span>
+                    </li>
+                    <li>
+                      <strong>Custom Field</strong>
+                      <span class="link">Create a custom field</span>
+                    </li>
+                  </ul>
+                  <div class="form-actions">
+                    <span class="button" data-dismiss="modal">
+                      Save
+                    </span>
+                    <span class="button outline" data-dismiss="modal" data-toggle="modal" data-target="#delete">
+                      Delete
+                    </span>
+                  </div><!-- /.form-actions -->
+                </form>
+              </div><!-- /.modal-vehicle-settings -->
+            </div><!-- /.item -->
+            <div class="item">
+              <div class="modal-add-card">
+
+              </div><!-- /.modal-add-card -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade delete" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-delete">
+          <strong>Delete This Vehicle?</strong>
+          <p>Are you sure you want to delete this vehicle? This action cannot be undone.</p>
+          <div class="modal-delete-actions">
+            <span class="button" data-dismiss="modal">Yes, Delete</span>
+            <span class="button outline" data-dismiss="modal" data-toggle="modal" data-target="#vehicle-settings">No</span>
+          </div><!-- /.modal-delete-actions -->
+        </div><!-- /.modal-delete -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#delete -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#vehicle-settings').modal('show');
+    });
+</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">
