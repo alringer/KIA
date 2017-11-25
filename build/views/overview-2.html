@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/css/overview-maintenance.css">
   <link rel="stylesheet" href="/css/reference-cards.css">
   <link rel="stylesheet" href="/css/maintenance-cards.css">
+  <link rel="stylesheet" href="/css/recommended-cards.css">
 
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,15 +30,18 @@
   <script type="text/javascript" src="/scripts/loading.js"></script>
   <script type="text/javascript" src="/scripts/nav.js"></script>
   
+  <link rel="stylesheet" href="/vendors/slick/slick.css">
+    <script type="text/javascript" src="/vendors/slick/slick.min.js"></script>
+    
   <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
-    
-    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
-    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
-    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
-    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
-    
-    <script type="text/javascript" src="/scripts/map.js"></script>
-    
+      
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+      
+      <script type="text/javascript" src="/scripts/map.js"></script>
+      
 
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/remote-commands.js"></script>
@@ -469,14 +473,14 @@
               </a>
             </li>
             <li>
-              <!-- <a href="#">
+              <a href="#">
                 <i class="icon-power">
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                       <path fill="#9BA1A9" fill-rule="nonzero" d="M8.5 16.98c-4.687 0-8.5-3.771-8.5-8.406a8.267 8.267 0 0 1 1.76-5.12 1.207 1.207 0 0 1 1.679-.218 1.176 1.176 0 0 1 .22 1.661 5.935 5.935 0 0 0-1.264 3.676 6.105 6.105 0 1 0 12.21 0 5.935 5.935 0 0 0-1.264-3.676 1.176 1.176 0 0 1 .22-1.66 1.207 1.207 0 0 1 1.68.217A8.269 8.269 0 0 1 17 8.574c0 4.635-3.813 8.405-8.5 8.405zm-.233-6.848a1.19 1.19 0 0 1-1.19-1.19V1.169a1.194 1.194 0 1 1 2.388 0v7.778a1.19 1.19 0 0 1-1.198 1.185z"/>
                   </svg>
                 </i>
                 <span>Log Out</span>
-              </a> -->
+              </a>
             </li>
           </ul>
         </div>
@@ -504,7 +508,7 @@
 
     </div><!-- /.alert -->
     <div class="overview-header">
-      <div id="map">
+      <div class="map">
 
         </div><!-- /#map -->
       <div class="overview-header-info left locked">
@@ -548,7 +552,7 @@
             Remote Commands
           </strong>
         </div><!-- /.overview-remote-commands-header -->
-        <div class="overview-remote-command locked">
+        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
           <div class="overview-locked">
             <div class="overview-locked-main">
               <i class="icon-locked"></i>
@@ -561,7 +565,7 @@
             </div><!-- /.overview-locked-button -->
           </div><!-- /.overview-locked -->
         </div><!-- /.overview-remote-command -->
-        <div class="overview-remote-command locked">
+        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
           <div class="overview-locked">
             <div class="overview-locked-main">
               <i class="icon-locked"></i>
@@ -574,7 +578,7 @@
             </div><!-- /.overview-locked-button -->
           </div><!-- /.overview-locked -->
         </div><!-- /.overview-remote-command -->
-        <div class="overview-remote-command locked">
+        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
           <div class="overview-locked">
             <div class="overview-locked-main">
               <i class="icon-locked"></i>
@@ -587,7 +591,7 @@
             </div><!-- /.overview-locked-button -->
           </div><!-- /.overview-locked -->
         </div><!-- /.overview-remote-command -->
-        <div class="overview-remote-command locked">
+        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
           <div class="overview-locked">
             <div class="overview-locked-main">
               <i class="icon-locked"></i>
@@ -609,7 +613,7 @@
             Maintenance
           </strong>
         </div><!-- /.overview-maintenance-header -->
-        <div class="maintenance-card locked">
+        <div class="maintenance-card locked" data-toggle="modal" data-target="#activate-uvo">
           <div class="overview-locked">
             <div class="overview-locked-main">
               <i class="icon-locked"></i>
@@ -630,7 +634,7 @@
             </div><!-- /.mobile-content -->
           </div><!-- /.mobile -->
         </div><!-- /.maintenance-card -->
-        <div class="maintenance-card locked">
+        <div class="maintenance-card locked" data-toggle="modal" data-target="#activate-uvo">
           <div class="overview-locked">
             <div class="overview-locked-main">
               <i class="icon-locked"></i>
@@ -678,11 +682,336 @@
             </div><!-- /.mobile-content -->
           </div><!-- /.mobile -->
           <i class="icon-arrow-right"></i>
-        </div><!-- /.maintenance-card -->
-      </div><!-- /.overview-maintenance -->
+        </div><!-- /.overview-maintenance -->
+      </div><!-- /.maintenance-card -->
     </div><!-- /.contain -->
+    <div class="recommended-cards">
+      <div class="contain">
+        <div class="recommended-cards-header">
+          <strong>
+            Recommended
+          </strong>
+        </div><!-- /.recommended-cards-header -->
+        <div class="recommended-card locked" data-toggle="modal" data-target="#activate-uvo">
+          <div class="overview-locked">
+            <div class="overview-locked-main">
+              <i class="icon-locked"></i>
+              <strong>Vehicle Location</strong>
+            </div><!-- /.overview-locked-main -->
+            <div class="overview-locked-button">
+              <span class="button full small bright-red">
+                Learn how to activate
+              </span>
+            </div><!-- /.overview-locked-button -->
+          </div><!-- /.overview-locked -->
+        </div><!-- /.recommended-card -->
+
+
+        <div class="recommended-card locked" data-toggle="modal" data-target="#activate-uvo">
+          <div class="overview-locked">
+            <div class="overview-locked-main">
+              <i class="icon-locked"></i>
+              <strong>Preferred Dealer</strong>
+            </div><!-- /.overview-locked-main -->
+            <div class="overview-locked-button">
+              <span class="button full small bright-red">
+                Learn how to activate
+              </span>
+            </div><!-- /.overview-locked-button -->
+          </div><!-- /.overview-locked -->
+        </div><!-- /.recommended-card -->
+
+        <div class="recommended-card locked" data-toggle="modal" data-target="#activate-uvo">
+          <div class="overview-locked">
+            <div class="overview-locked-main">
+              <i class="icon-locked"></i>
+              <strong>Climate</strong>
+            </div><!-- /.overview-locked-main -->
+            <div class="overview-locked-button">
+              <span class="button full small bright-red">
+                Learn how to activate
+              </span>
+            </div><!-- /.overview-locked-button -->
+          </div><!-- /.overview-locked -->
+        </div><!-- /.recommended-card -->
+
+
+        <div class="recommended-card has-action">
+          <em class="recommended-card-title">
+            Financing
+          </em>
+          <div class="recommended-card-content">
+            <strong>
+              Your car payment is coming up!
+            </strong>
+            <div class="text-content">
+              <strong>
+                $194.65
+              </strong>
+              <em>
+                Due on Mar 03, 2017
+              </em>
+            </div><!-- /.text-content -->
+          </div><!-- /.recommended-card-content -->
+          <div class="recommended-card-action">
+            <span class="button">
+              Make A Payment
+            </span>
+          </div><!-- /.recommended-card-action -->
+        </div><!-- /.recommended-card -->
+
+        <div class="recommended-card has-action colored colored-blue">
+          <div class="recommended-card-content">
+            <div class="text-content">
+              <i class="icon-bluetooth"></i>
+              <strong>
+                Learn about Bluetooth®
+              </strong>
+              <em>
+                Learn how your Bluetooth® system can enhance your driving experience.
+              </em>
+            </div><!-- /.text-content -->
+          </div><!-- /.recommended-card-content -->
+          <div class="recommended-card-action">
+            <span class="button">
+              Learn More
+            </span>
+          </div><!-- /.recommended-card-action -->
+        </div><!-- /.recommended-card -->
+
+        <div class="recommended-card has-action colored colored-red">
+          <div class="recommended-card-content">
+            <div class="text-content">
+              <i class="icon-play-square"></i>
+              <strong>
+                Informational Videos
+              </strong>
+              <em>
+                Watch informational videos about your vehicle.
+              </em>
+            </div><!-- /.text-content -->
+          </div><!-- /.recommended-card-content -->
+          <div class="recommended-card-action">
+            <span class="button">
+              Start Watching
+            </span>
+          </div><!-- /.recommended-card-action -->
+        </div><!-- /.recommended-card -->
+
+
+      </div><!-- /.contain -->
+    </div><!-- /.recommended-cards -->
   </div><!-- /.view-overview -->
 </div><!-- /.has-mobile-nav -->
+<div class="modal fade activate-uvo" id="activate-uvo" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <strong>
+          How to activate UVO
+        </strong>
+        <div id="activate-uvo-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-activate-uvo with-slider">
+
+                <div class="slider">
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 1
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 2
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 3
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                  <div class="slide">
+                    <div class="activate-uvo-panel">
+                      <div class="activate-uvo-panel-image">
+
+                      </div><!-- /.activate-uvo-panel-image -->
+                      <div class="activate-uvo-panel-text">
+                        <em>
+                          Step 4
+                        </em>
+                        <strong>
+                          Dapibus Pellentesque Sit Nibh
+                        </strong>
+                        <p>
+                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                        </p>
+                      </div><!-- /.activate-uvo-panel-text -->
+                    </div><!-- /.activate-uvo-panel -->
+                  </div><!-- /.slide -->
+                </div><!-- /.slider -->
+                <div class="toggle-footer">
+                  <span data-target="#activate-uvo-slider" data-slide-to="1">
+                    View All Steps
+                  </span>
+                </div><!-- /.toggle-footer -->
+              </div><!-- /.modal-activate-uvo.with-slider -->
+            </div><!-- /.item -->
+            <div class="item">
+              <div class="modal-activate-uvo no-slider">
+                <div class="activate-uvo-panel-wrap">
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 1
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 2
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 3
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                  <div class="activate-uvo-panel">
+                    <div class="activate-uvo-panel-image">
+
+                    </div><!-- /.activate-uvo-panel-image -->
+                    <div class="activate-uvo-panel-text">
+                      <em>
+                        Step 4
+                      </em>
+                      <strong>
+                        Dapibus Pellentesque Sit Nibh
+                      </strong>
+                      <p>
+                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                      </p>
+                    </div><!-- /.activate-uvo-panel-text -->
+                  </div><!-- /.activate-uvo-panel -->
+                </div><!-- /.activate-uvo-panel-wrap -->
+                <div class="toggle-footer">
+                  <span data-target="#activate-uvo-slider" data-slide-to="0">
+                    View Step-By-Step
+                  </span>
+                </div><!-- /.toggle-footer -->
+              </div><!-- /.modal-activate-uvo.without-slider -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+      <div class="mobile-modal-footer">
+        <span class="button full" data-action="modal-close">
+          Ok, got it!
+        </span>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade how-to-activate-uvo" id="how-to-activate-uvo" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-how-to-activate-uvo">
+          <strong>Activate UVO Today!</strong>
+          <p>We noticed you haven’t activated UVO yet. You’re missing out on great features like:</p>
+          <ul>
+            <li>UVO Feature 1</li>
+            <li>UVO Feature 2</li>
+            <li>UVO Feature 3</li>
+            <li>UVO Feature 4</li>
+            <li>...and more!</li>
+          </ul>
+          <div class="modal-how-to-activate-uvo-actions">
+            <span class="button" data-dismiss="modal"  data-toggle="modal" data-target="#activate-uvo">Show me how to activate UVO</span>
+            <span class="button outline" data-dismiss="modal">Not Now</span>
+          </div><!-- /.modal-delete-actions -->
+        </div><!-- /.modal-delete -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#delete -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#how-to-activate-uvo').modal('show');
+    });
+</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">

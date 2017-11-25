@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>informational-videos</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Overview*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-/-Dashboard-Widgets-/-Desktop" transform="translate(-226.000000, -372.000000)" fill="#FFFFFF">
+            <g id="Dashhboard-Items" transform="translate(0.000000, -7.000000)">
+                <g id="Informational-Videos-CTA" transform="translate(206.000000, 353.000000)">
+                    <g id="Video-Icon" transform="translate(20.000000, 26.000000)">
+                        <path d="M0,2.99420208 C0,1.34054993 1.34559019,0 3.00878799,0 L17.991212,0 C19.6529197,0 21,1.34331197 21,2.99420208 L21,17.0057979 C21,18.6594501 19.6544098,20 17.991212,20 L3.00878799,20 C1.34708027,20 0,18.656688 0,17.0057979 L0,2.99420208 Z M13.3888889,9.91666667 L8.16666667,6 L8.16666667,13.8333333 L13.3888889,9.91666667 Z" id="informational-videos"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

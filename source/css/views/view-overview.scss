@@ -8,7 +8,7 @@
     min-height: 400px;
     color: $white;
     margin-bottom: 115px;
-    #map {
+    .map {
       position: absolute;
       top: 0;
       left: 0;
@@ -128,6 +128,23 @@
         padding-right: 15px;
         span {
           font-size: 14px;
+        }
+        .icon-cog {
+          display: inline-block;
+          margin-left: 10px;
+          cursor: pointer;
+          svg > * {
+            transition: all 250ms $easeOutQuint;
+            fill: $white;
+          }
+          @media (max-width: $screen-xs-max) {
+            margin-left: 0px;
+            position: relative;
+            top: 2px;
+            svg > * {
+              fill: $black !important;
+            }
+          }
         }
       }
       em {

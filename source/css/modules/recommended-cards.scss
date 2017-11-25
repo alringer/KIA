@@ -1,0 +1,314 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.recommended-cards {
+  font-size: 0;
+  .contain {
+    max-width: 870px;
+    padding: 0 20px;
+  }
+  &-header {
+    text-align: left;
+    margin-bottom: 22px;
+    padding: 26px 5px 0;
+    position: relative;
+    overflow: hidden;
+    > strong {
+      display: inline-block;
+      font: bold 12px/1em "KIA",sans-serif;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+    }
+    > span {
+      color: $red;
+      float: right;
+      display: block;
+      font: bold 11px/1em $kia;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+      position: relative;
+      top: -1px;
+      cursor: pointer;
+      transition: all 250ms $easeOutQuint;
+      i {
+        margin-right: 3px;
+        font-size: 1.25em;
+        position: relative;
+        top: 1px;
+      }
+      &:hover {
+
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .contain {
+      padding: 0 10px;
+    }
+  }
+}
+
+.recommended-card {
+  height: 300px;
+  width: calc(25% - 10px);
+  background: $white;
+  display: inline-block;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  position: relative;
+  margin: 0 5px 15px;
+  vertical-align: top;
+  transition: transform 250ms $easeOutQuint;
+  &.ui-sortable-helper {
+    transform: rotate(-10deg);
+  }
+  &.has-action {
+    padding-bottom: 75px;
+    .recommended-card {
+      &-content {
+        strong {
+          max-width: 130px;
+        }
+      }
+    }
+  }
+  &.colored {
+    color: $white;
+    padding-top: 26px;
+    .text-content {
+      strong,
+      em {
+        color: $white;
+      }
+      strong {
+        text-transform: uppercase;
+        letter-spacing: .4px;
+        font: bold 15px/1.53 $kia;
+        margin-bottom: 7px;
+      }
+      em {
+        font: 13px/1.5em $kia;
+        letter-spacing: .6px;
+        max-width: 135px;
+      }
+    }
+    .recommended-card {
+      &-action {
+        border-top: none;
+        .button {
+          background: rgba($black, .2);
+          color: $white;
+          &:hover {
+            background: rgba($black, .4);
+          }
+        }
+      }
+    }
+    &.colored-blue {
+      background: $blue;
+    }
+    &.colored-red {
+      background: #cc181e;
+    }
+  }
+  &-title {
+    font: bold 10px/1em "KIA",sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8E8E8E;
+    display: block;
+    padding: 35px 25px 0;
+    margin-bottom: 14px;
+  }
+  &-content {
+    padding-left: 25px;
+    width: 100%;
+    position: relative;
+    strong {
+      font: 500 16px/1.44em $kia;
+      width: 137px;
+      display: block;
+      margin-bottom: 25px;
+      span {
+        display: block;
+      }
+    }
+    .icon-arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      display: block;
+      transform: translateY(-50%);
+      transition: all 250ms $easeOutQuint;
+      + strong {
+        max-width: calc(100% - 50px);
+      }
+    }
+    .text-content {
+      i {
+        margin-bottom: 10px;
+      }
+      strong {
+        display: block;
+        font: 500 28px/1em $kia;
+        letter-spacing: .7px;
+        margin-bottom: 6px;
+      }
+      em {
+        display: block;
+        font: 500 12px/1em $kia;
+        letter-spacing: .3px;
+        color: #a1aab4;
+      }
+    }
+  }
+  &-map {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 143px;
+    .map {
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+      .H_ui {
+        display: none;
+      }
+    }
+  }
+  &-temps {
+    font-size: 14px;
+    span {
+      display: block;
+      color: #2f2f2f;
+      line-height: 1.5em;
+      position: relative;
+      padding-left: 20px;
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 7px 5px;
+        border-color: transparent transparent $red transparent;
+
+      }
+      &.low-arrow {
+        &:before {
+          border-width: 7px 5px 0 5px;
+          border-color: $blue transparent transparent transparent;
+        }
+      }
+    }
+  }
+  &-action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: solid 1px #e6eaef;
+    .button {
+      height: 70px;
+      line-height: 70px;
+      width: 100%;
+      padding: 0;
+      border-radius: 0px;
+      background: $white;
+      color: $red;
+      text-align: left;
+      padding: 0 10px 0 25px;
+      &:hover {
+        background: $red;
+        color: $white;
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    display: block;
+    width: 100%;
+    margin: 0 auto 6px;
+    max-width: 505px;
+    height: auto;
+    &.has-action {
+      padding-bottom: 42px;
+      &.colored {
+        .text-content {
+          strong {
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 21px;
+          }
+          em {
+            max-width: calc(100% - 40px);
+          }
+        }
+      }
+    }
+    &-title {
+      padding: 25px 29px 0;
+      margin-bottom: 16px;
+    }
+    &-content {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0 29px;
+      margin-bottom: 22px;
+      strong {
+        width: 140px;
+        font-size: 14px;
+        line-height: 1.36em;
+        letter-spacing: .4px;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .icon-arrow-right {
+        + strong {
+          max-width: calc(100% - 40px) !important;
+        }
+      }
+    }
+    &-map {
+      position: relative;
+      height: 100px;
+    }
+
+    &-action {
+      .button {
+        height: 42px;
+        line-height: 42px;
+      }
+    }
+  }
+  @media (min-width: $screen-xs-max) {
+    cursor: pointer;
+    &.has-action {
+      cursor: default;
+    }
+    &:hover {
+      .icon-arrow-right {
+        transform: translate(5px, -50%);
+      }
+    }
+  }
+}
+
+.icon-bluetooth {
+  display: inline-block;
+  height: 23px;
+  width: 17px;
+  background: url('/images/icon-bluetooth.svg') center/contain no-repeat;
+}
+
+.icon-play-square {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  background: url('/images/icon-play-square.svg') center/contain no-repeat;
+}

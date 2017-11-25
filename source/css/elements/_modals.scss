@@ -6,6 +6,7 @@
 }
 
 body .modal {
+  z-index: 100000;
   &.in {
     .modal-dialog {
       transform: translateY(-50%) scale(1) !important;
@@ -276,6 +277,42 @@ body .modal {
           width: 80px;
           float: right;
         }
+      }
+    }
+  }
+}
+
+.modal.edit-mileage {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-edit-mileage {
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 28px 0 40px;
+    text-align: center;
+    > strong {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      font-weight: 400;
+      margin-bottom: 22px;
+      display: block;
+      font-family: $kia;
+      font-weight: 500;
+      text-align: center;
+    }
+    &-actions {
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: left;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 0px;
+      .button {
+        width: 100%;
+        padding: 0;
+        text-align: center;
       }
     }
   }
@@ -642,4 +679,409 @@ body .modal {
 
 body.modal-open {
   overflow: hidden;
+}
+
+.modal.how-to-activate-uvo {
+  .modal-dialog {
+    max-width: 420px;
+  }
+  .modal-how-to-activate-uvo {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 28px 40px 40px;
+    text-align: center;
+    strong {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      font-weight: 400;
+      margin-bottom: 22px;
+      display: block;
+      font-family: $kia;
+      font-weight: 500;
+      text-align: center;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5em;
+      letter-spacing: 0.6px;
+      color: $grey_2;
+      margin: 0 0 16px;
+      text-align: left;
+    }
+    ul {
+      text-align: left;
+      li {
+        padding-left: 10px;
+      }
+    }
+    &-actions {
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: left;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 30px;
+      .button {
+        width: 240px;
+        padding: 0;
+        text-align: center;
+        float: left;
+        &:last-child {
+          padding: 0;
+          width: 90px;
+          float: right;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        white-space: normal;
+        text-align: center;
+        .button {
+          text-align: center;
+          width: 100%;
+          float: none;
+          &:last-child {
+            float: none;
+            border: none;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal.add-card {
+  .modal-title {
+    font: 500 16px/1em $kia;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    padding-top: 11px;
+    margin-bottom: 22px;
+  }
+  .modal-dialog {
+    width: 645px;
+    max-width: 100%;
+  }
+  .category-selector {
+    padding-left: 25px;
+    margin-bottom: 25px;
+    em {
+      font: bold 10px/1em $kia;
+      letter-spacing: 1px;
+      color: #969696;
+      text-transform: uppercase;
+    }
+    .dropdown {
+      display: inline-block;
+    }
+  }
+  .dropdown {
+    button {
+      background: none;
+      border: none;
+      height: auto;
+      display: inline-block;
+      padding: 0;
+      font: bold 10px/1em $kia;
+      letter-spacing: 1px;
+      color: $grey_2;
+      text-transform: uppercase;
+      margin-left: 10px;
+    }
+    &-menu {
+      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
+      border: none;
+      min-width: 114px;
+      left: auto;
+      right: -25px;
+      overflow: visible;
+      margin-top: 5px;
+      border-radius: 2px;
+      &:before {
+        position: absolute;
+        right: 24.5px;
+        bottom: 100%;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent $white transparent;
+      }
+      li {
+        padding: 0 20px;
+        height: 45px;
+        line-height: 45px;
+        cursor: pointer;
+        transition: all 250ms $easeOutQuint;
+        &:hover {
+          background: rgba($grey_2, .1);
+        }
+      }
+    }
+  }
+  .modal-add-card {
+    .modal-footer {
+      position: relative;
+      padding-bottom: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-right: 40px;
+      @media (max-width: $screen-xs-max) {
+        padding: 15px 15px 0;
+        .button {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+    .dynamic-card {
+      box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+      width: 100%;
+      height: 205px;
+      position: relative;
+      margin-bottom: 12px;
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        right: 10px;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        background: #8ec439 url('/images/icon_checkmark_white.svg') center no-repeat;
+        border-radius: 100%;
+        pointer-events: none;
+        opacity: 0;
+        transform: scale(0);
+        transition: all 250ms $easeOutBack;
+      }
+      &.active {
+        &:before {
+          pointer-events: all;
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #a9b2bd;
+        font: bold 12px/1em $kia;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .add-card-list {
+      height: 515px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 25px 30px;
+      .row {
+        margin-left: -6px;
+        margin-right: -6px;
+        > div {
+          padding: 0 6px;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        height: calc(100vh - 180px);
+      }
+    }
+    .dynamic-card-detail {
+      padding: 72px 25px 40px;
+      overflow: hidden;
+      &-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .dynamic-card {
+        max-width: 130px;
+        float: left;
+        margin-right: 30px;
+        &-description {
+          float: left;
+          max-width: calc(100% - 165px);
+          .dnyamic-card-titles {
+            display: block;
+          }
+        }
+      }
+      .dnyamic-card-titles {
+        display: none;
+        h2 {
+          font: 500 20px/1em $kia;
+          color: #000;
+          margin: 0 0 8px;
+        }
+        h3 {
+          font: bold 10px/1em $kia;
+          color: #969696;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin: 0 0 13px;
+        }
+      }
+      p {
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+        color: #2f2f2f;
+        margin-bottom: 0;
+        max-width: 345px;
+      }
+      &-actions {
+        margin-top: 30px;
+        position: relative;
+        height: 40px;
+        .button {
+          padding: 0 13px;
+          position: absolute;
+          top: 0;
+          pointer-events: none;
+          opacity: 0;
+          transition: all 250ms $easeOutQuint, opacity 550ms $easeOutQuint 250ms, z-index none;
+          z-index: 1;
+          &.active {
+            opacity: 1;
+            pointer-events: all;
+            z-index: 2;
+          }
+          &:not(.active) {
+            // transition-delay: 150ms;
+          }
+          &:not(.outline) {
+            i {
+              color: $black;
+            }
+          }
+          &.outline {
+            i {
+              color: #000;
+              transition: all 250ms $easeOutQuint;
+            }
+            &:hover {
+              i {
+                color: $white;
+              }
+            }
+          }
+          i {
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  .dynamic-card-detail-list {
+    .modal-title {
+      display: none;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .dynamic-card-detail-list {
+      .modal-title {
+        display: block;
+      }
+    }
+    .modal-content {
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+      .icon-close {
+        top: 15px;
+      }
+      .back {
+        top: 18px !important;
+      }
+      .modal-title {
+        padding-top: 5px;
+      }
+      .add-card-list {
+        padding: 0 5px;
+        .row {
+          > div {
+            padding: 0 5px;
+          }
+        }
+        .dynamic-card {
+          height: 185px;
+        }
+      }
+      .dynamic-card {
+        &-detail {
+          position: relative;
+          height: calc(100vh - 57px);
+          padding-bottom: 60px;
+          overflow: scroll;
+          &-actions {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: $white;
+            .button {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .modal-add-card {
+        .dynamic-card-detail {
+          font-size: 0;
+          padding-top: 10px;
+          clear: both;
+          .dnyamic-card-titles {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 50%;
+            padding-left: 20px;
+            h2 {
+              font-size: 16px;
+              letter-spacing: .6px;
+              margin-bottom: 6px;;
+            }
+            h3 {
+              font-size: 10px;
+              letter-spacing: .3px;
+              margin-bottom: 0;
+            }
+          }
+          .dynamic-card {
+            display: inline-block;
+            float: none;
+            vertical-align: bottom;
+            width: 50%;
+            margin: 0;
+            &-description {
+              padding-top: 20px;
+              width: 100%;
+              max-width: 100%;
+              .dnyamic-card-titles {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .carousel {
+        &-inner {
+          height: auto !important;
+          min-height: 100vh;
+        }
+        .item {
+          padding-bottom: 0px !important;
+          height: auto !important;
+        }
+      }
+    }
+  }
 }

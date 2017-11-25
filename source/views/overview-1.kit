@@ -7,12 +7,16 @@
   <link rel="stylesheet" href="/css/overview-maintenance.css">
   <link rel="stylesheet" href="/css/reference-cards.css">
   <link rel="stylesheet" href="/css/maintenance-cards.css">
+  <link rel="stylesheet" href="/css/recommended-cards.css">
 
   <!-- @import "partials/head/global-js.kit" -->
   <!-- @import "partials/head/vendors/map-files.kit" -->
+  <script type="text/javascript" src="/vendors/mixitup/mixitup.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/remote-commands.js"></script>
+  <script type="text/javascript" src="/scripts/add-card.js"></script>
 
 <!-- @import "partials/head/head-end.kit" -->
 <!-- @import "partials/loading.kit" -->
@@ -21,9 +25,7 @@
   <!-- @import "partials/nav-mobile-overview.kit" -->
   <div class="view-overview page-view">
     <div class="overview-header">
-      <div id="map">
-
-        </div><!-- /#map -->
+      <div class="map"></div>
       <div class="overview-header-info left">
         <strong>
           28,585
@@ -372,6 +374,231 @@
         </div><!-- /.maintenance-card -->
       </div><!-- /.contain -->
     </div><!-- /.overview-maintenance -->
+    <div class="recommended-cards">
+      <div class="contain">
+        <div class="recommended-cards-header">
+          <strong>
+            Recommended
+          </strong>
+          <span data-toggle="modal" data-target="#add-card"><i class="fa fa-plus"></i> Add Cards</span>
+        </div><!-- /.recommended-cards-header -->
+        <div class="draggable">
+          <div class="recommended-card">
+            <em class="recommended-card-title">
+              Service Minder
+            </em>
+            <div class="recommended-card-content">
+              <i class="icon-arrow-right"></i>
+              <strong>
+                <span>919 Market St.</span>
+                <span>San Diego, CA 92101</span>
+              </strong>
+            </div><!-- /.recommended-card-content -->
+            <div class="recommended-card-map">
+              <div class="map"></div>
+            </div><!-- /.recommended-card-map -->
+          </div><!-- /.recommended-card -->
+          <div class="recommended-card">
+            <em class="recommended-card-title">
+              Preferred Dealer
+            </em>
+            <div class="recommended-card-content">
+              <i class="icon-arrow-right"></i>
+              <strong>
+                Kearny Pearson Kia
+              </strong>
+            </div><!-- /.recommended-card-content -->
+            <div class="recommended-card-map">
+              <div class="map"></div>
+            </div><!-- /.recommended-card-map -->
+          </div><!-- /.recommended-card -->
+          <div class="recommended-card has-action">
+            <em class="recommended-card-title">
+              Climate
+            </em>
+            <div class="recommended-card-content">
+              <strong>
+                It's cold Today! Want to warm up your car?
+              </strong>
+              <div class="recommended-card-temps">
+                <span class="high-arrow">
+                  High 31°
+                </span>
+                <span class="low-arrow">
+                  Low 31°
+                </span>
+              </div><!-- /.recommended-card-temps -->
+            </div><!-- /.recommended-card-content -->
+            <div class="recommended-card-action">
+              <span class="button">
+                Set Climate to 70°
+              </span>
+            </div><!-- /.recommended-card-action -->
+          </div><!-- /.recommended-card -->
+          <div class="recommended-card has-action">
+            <em class="recommended-card-title">
+              Financing
+            </em>
+            <div class="recommended-card-content">
+              <strong>
+                Your car payment is coming up!
+              </strong>
+              <div class="text-content">
+                <strong>
+                  $194.65
+                </strong>
+                <em>
+                  Due on Mar 03, 2017
+                </em>
+              </div><!-- /.text-content -->
+            </div><!-- /.recommended-card-content -->
+            <div class="recommended-card-action">
+              <span class="button">
+                Make A Payment
+              </span>
+            </div><!-- /.recommended-card-action -->
+          </div><!-- /.recommended-card -->
+          <div class="recommended-card has-action colored colored-blue">
+            <div class="recommended-card-content">
+              <div class="text-content">
+                <i class="icon-bluetooth"></i>
+                <strong>
+                  Learn about Bluetooth®
+                </strong>
+                <em>
+                  Learn how your Bluetooth® system can enhance your driving experience.
+                </em>
+              </div><!-- /.text-content -->
+            </div><!-- /.recommended-card-content -->
+            <div class="recommended-card-action">
+              <span class="button">
+                Learn More
+              </span>
+            </div><!-- /.recommended-card-action -->
+          </div><!-- /.recommended-card -->
+          <div class="recommended-card has-action colored colored-red">
+            <div class="recommended-card-content">
+              <div class="text-content">
+                <i class="icon-play-square"></i>
+                <strong>
+                  Informational Videos
+                </strong>
+                <em>
+                  Watch informational videos about your vehicle.
+                </em>
+              </div><!-- /.text-content -->
+            </div><!-- /.recommended-card-content -->
+            <div class="recommended-card-action">
+              <span class="button">
+                Start Watching
+              </span>
+            </div><!-- /.recommended-card-action -->
+          </div><!-- /.recommended-card -->
+        </div><!-- /.draggable -->
+      </div><!-- /.contain -->
+    </div><!-- /.recommended-cards -->
   </div><!-- /.view-overview -->
 </div><!-- /.has-mobile-nav -->
+<div class="modal fade add-card" id="add-card" tabindex="-1" role="dialog" aria-labelledby="add-card" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <span class="back" data-target="#add-card-slider" data-slide-to="0"></span>
+        <div id="add-card-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-add-card">
+                <strong class="modal-title">
+                  Add A Card
+                </strong>
+                <div class="category-selector">
+                  <em>Category</em>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                      <span class="active-filter">All</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li data-mix-filter=".all">
+                        All
+                      </li>
+                      <li data-mix-filter=".option-1">
+                        Option 1
+                      </li>
+                      <li data-mix-filter=".option-2">
+                        Option 2
+                      </li>
+                      <li data-mix-filter=".option-3">
+                        Option 3
+                      </li>
+                    </ul>
+                  </div><!-- /.dropdown -->
+                </div><!-- /.category-selector -->
+                <div class="add-card-list">
+                  <div class="row" id="add-card-list">
+                    <div class="col-sm-3 col-xs-6 all card-item option-1" data-target="#add-card-slider" data-slide-to="1"><div class="dynamic-card" data-dynamic-card="dnyamic-card-1"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-3"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-3"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-2"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                    <div class="col-sm-3 col-xs-6 all card-item option-1"><div class="dynamic-card"><span>&lt;Dynamic Card&gt;</span></div><!-- /.dynamic-card --></div><!-- /.col -->
+                  </div><!-- /.row -->
+                </div><!-- /.add-card-list -->
+                <div class="modal-footer">
+                  <span class="button" data-dismiss="modal">
+                    Done
+                  </span>
+                </div>
+              </div><!-- /.modal-add-card -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-add-card">
+                <ul class="dynamic-card-detail-list">
+                  <li>
+                    <strong class="modal-title">Card Name</strong>
+                    <div class="dynamic-card-detail">
+                      <div class="dynamic-card" data-dynamic-card="dnyamic-card-1"><span>&lt;Dynamic Card&gt;</span></div>
+                      <div class="dnyamic-card-titles">
+                        <h2>Card Name</h2>
+                        <h3>Categry Goes Here</h3>
+                      </div>
+                      <div class="dynamic-card-description">
+                        <div class="dnyamic-card-titles">
+                          <h2>Card Name</h2>
+                          <h3>Categry Goes Here</h3>
+                        </div>
+                        <p>
+                          &lt;Card Description&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo vitae nibh ac maximus. Vivamus pharetra et diam eu accumsan. Proin auctor in risus in venenatis. Proin at libero sed tellus venenatis tristique ut sed nisi.
+                        </p>
+                        <div class="dynamic-card-detail-actions">
+                          <span class="button outline active" data-dynamic-card-action="add" data-dynamic-card="dnyamic-card-1"><i class="fa fa-plus"></i> Add to dashboard</span>
+                          <span class="button" data-dynamic-card-action="remove" data-dynamic-card="dnyamic-card-1"><i class="fa fa-close"></i> Remove from dashboard</span>
+                        </div><!-- /.dynamic-card-detail-actions -->
+                      </div><!-- /.dynamic-card-description -->
+                    </div><!-- /.dynamic-card-detail -->
+                  </li>
+                </ul><!-- /.dynamic-card-detail-list -->
+              </div><!-- /.modal-add-card -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- @import "partials/footer.kit" -->

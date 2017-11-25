@@ -341,6 +341,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/modules\/recommended-cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/recommended-cards.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/modules\/reference-cards.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -405,6 +418,26 @@
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/source\/images\/icon-bluetooth.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon-bluetooth.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon-play-square.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon-play-square.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/source\/images\/icon_arrow_right_dark.svg": {
 		"ft": 2097152,
@@ -1293,6 +1326,16 @@
 		"oAP": "\/build\/library-manifest.html",
 		"oF": 0
 		},
+	"\/source\/scripts\/add-card.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/add-card.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/forms.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1359,6 +1402,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/nav.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/overview.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/overview.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2688,6 +2741,13 @@
 		"oAP": "\/build\/views\/overview-5.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/add-card-modal.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/partials\/add-card-modal.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2901,7 +2961,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 532903405
+	"lastBuiltDate": 533284280
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

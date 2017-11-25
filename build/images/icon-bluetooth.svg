@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="23px" viewBox="0 0 17 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>bluetooth-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Overview*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components-/-Dashboard-Widgets-/-Desktop" transform="translate(-21.000000, -374.000000)" fill="#FFFFFF">
+            <g id="Dashhboard-Items" transform="translate(0.000000, -7.000000)">
+                <g id="Bluetooth-CTA" transform="translate(1.000000, 353.000000)">
+                    <g id="bluetooth-logo" transform="translate(20.000000, 28.000000)">
+                        <g id="logo">
+                            <g id="bluetooth-icon">
+                                <path d="M9.41374538,5.67567568 L11.3073149,7.56756757 L9.41374538,9.45945946 L9.41374538,5.67567568 L9.41374538,5.67567568 Z M9.41374538,17.3243243 L11.3073149,15.4324324 L9.41374538,13.5405405 L9.41374538,17.3243243 L9.41374538,17.3243243 Z M7.38492094,11.5135135 L3.27317009,7.37837838 L4.46341376,6.18918919 L7.73658385,9.45945946 L7.73658385,1.62162162 L13.6878022,7.56756757 L9.76540828,11.5135135 L13.7148532,15.4594595 L7.76363484,21.4054054 L7.76363484,13.5405405 L4.46341376,16.8108108 L3.27317009,15.6216216 L7.38492094,11.5135135 L7.38492094,11.5135135 Z M8.49401164,23 C13.5254962,23 16.9880233,20.6216216 16.9880233,11.4864865 C16.9880233,2.37837838 13.5254962,0 8.49401164,0 C3.46252704,0 0,2.37837838 0,11.5135135 C0,20.6216216 3.46252704,23 8.49401164,23 L8.49401164,23 Z" id="Bug"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
