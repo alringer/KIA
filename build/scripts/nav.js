@@ -38,7 +38,7 @@ $(document).ready(function () {
         window.nav.methods._vehicle_selector_close();
       },
       _stop_propagation: function _stop_propagation(e) {
-        e.preventDefault();
+        // e.preventDefault();
         e.stopPropagation();
       },
       _vehicle_selector_open: function _vehicle_selector_open() {
@@ -52,10 +52,11 @@ $(document).ready(function () {
   // EVENTS
   window.nav.elements.nav_toggle.on('click', window.nav.methods._toggle);
   window.nav.elements.nav_open.on('click', window.nav.methods._open);
-  window.nav.elements.body.on('click', window.nav.methods._close);
-  window.nav.elements.nav_menu.on('click', window.nav.methods._stop_propagation);
-  window.nav.elements.nav_open.on('click', window.nav.methods._stop_propagation);
-  window.nav.elements.nav_toggle.on('click', window.nav.methods._stop_propagation);
+  window.nav.elements.body.on('click touchstart', window.nav.methods._close);
+  $('.has-mobile-nav').on('click touchstart', window.nav.methods._close);
+  window.nav.elements.nav_menu.on('click touchstart', window.nav.methods._stop_propagation);
+  window.nav.elements.nav_open.on('click touchstart', window.nav.methods._stop_propagation);
+  window.nav.elements.nav_toggle.on('click touchstart', window.nav.methods._stop_propagation);
   window.nav.elements.nav_vehicle_selector_open.on('click', window.nav.methods._vehicle_selector_open);
   window.nav.elements.nav_vehicle_selector_close.on('click', window.nav.methods._vehicle_selector_close);
 });

@@ -8,6 +8,15 @@
     min-height: 400px;
     color: $white;
     margin-bottom: 115px;
+    #map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .15;
+      pointer-events: none;
+    }
     &-title {
       position: absolute;
       top: 45px;
@@ -65,12 +74,30 @@
           color: rgba($white, .5);
           position: relative;
           top: -3px;
+          &:after,
           &:before {
             content: "";
             display: inline-block;
             width: 24px;
             height: 24px;
             background: url('/images/icon_lock_red.svg') center/contain no-repeat;
+            vertical-align: middle;
+            position: relative;
+            top: -4px;
+          }
+        }
+        &.left {
+          strong {
+            &:after {
+              display: none;
+            }
+          }
+        }
+        &.right {
+          strong {
+            &:before {
+              display: none;
+            }
           }
         }
       }
@@ -168,7 +195,7 @@
           height: 15px;
           font-weight: 500;
           padding-right: 25px;
-          margin-left: -16px;
+          margin-left: 0px;
           letter-spacing: .6px;
           .icon-info {
             width: 16px;
@@ -191,7 +218,8 @@
       }
       &-vehicle-image {
         bottom: -30px;
-        max-width: 240px;
+        max-height: 100px;
+        width: auto;
       }
       &-info {
         left: 20px;
@@ -211,7 +239,7 @@
         }
         strong {
           text-shadow: none;
-          color: #27303b;
+          color: #27303b !important;
           font-weight: 500;
         }
         em {
@@ -222,6 +250,9 @@
           span {
             display: none;
           }
+        }
+        &.locked {
+          padding-top: 20px;
         }
       }
     }

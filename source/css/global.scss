@@ -14,6 +14,7 @@
 @import 'elements/modals.scss';
 @import 'elements/forms.scss';
 @import 'elements/loading.scss';
+@import 'elements/view-subnav.scss';
 
 // Global ELEMENTS
 @import 'elements/nav.scss';
@@ -59,7 +60,8 @@ body {
 
 .logo {
   background: url('/images/logo_kia.svg') center/contain no-repeat;
-  color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0) !important;
+  text-decoration: none;
   width: 47px;
   height: 24px;
   display: inline-block;

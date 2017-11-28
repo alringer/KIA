@@ -5,364 +5,373 @@
   <link rel="stylesheet" href="/css/view-overview.css">
   <link rel="stylesheet" href="/css/overview-remote-commands.css">
   <link rel="stylesheet" href="/css/overview-maintenance.css">
+  <link rel="stylesheet" href="/css/reference-cards.css">
   <link rel="stylesheet" href="/css/maintenance-cards.css">
 
   <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/map-files.kit" -->
+
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/remote-commands.js"></script>
 
 <!-- @import "partials/head/head-end.kit" -->
 <!-- @import "partials/loading.kit" -->
-<!-- @import "partials/nav-dual.kit" -->
-<div class="view-overview  page-view">
-  <div class="overview-header">
-    <div class="overview-header-info left">
-      <strong>
-        28,585
-        <span>
-          mi.
-        </span>
-      </strong>
-      <em>
-        <span>Current</span> Mileage
-      </em>
-    </div><!-- /.overview-header-info -->
-    <div class="overview-header-title">
-      <strong>
-        My Niro
-        <i class="icon-info">
-          i
-        </i>
-      </strong>
-      <em>
-        2017 Niro
-      </em>
-    </div><!-- /.overview-header-title -->
-    <div class="overview-header-info right">
-      <strong>
-        Irvine, Ca
-        <i class="icon-arrow-right"></i>
-      </strong>
-      <em>
-        Current Location
-      </em>
-    </div><!-- /.overview-header-info -->
-    <div class="overview-header-vehicle-image">
-      <img src="/images/image_overview_car_2.png" alt="My Niro" title="My Niro" />
-    </div><!-- /.overview-header-vehicle-image -->
-  </div><!-- /.overview-header -->
-  <div class="overview-remote-commands">
-    <div class="contain">
-      <div class="overview-remote-commands-header">
+<div class="has-mobile-nav">
+  <!-- @import "partials/nav-dual.kit" -->
+  <!-- @import "partials/nav-mobile-overview.kit" -->
+  <div class="view-overview page-view">
+    <div class="overview-header">
+      <div id="map">
+
+        </div><!-- /#map -->
+      <div class="overview-header-info left">
         <strong>
-          Remote Commands
+          28,585
+          <span>
+            mi.
+          </span>
         </strong>
-        <span class="remote-commands-refresh" data-action="refresh-page">
-          <span class="messages">
-            <span class="last-refreshed">
-              Last refreshed
-              <span class="time">4 hrs ago</span>
-            </span><!-- /.last-refreshed -->
-            <span class="refreshing">
-              Refreshing Status. Please Wait...
-            </span>
-          </span><!-- /.messages -->
-          <span class="updating-icon-status">
-            <span class="refresh-ready active"><i class="icon-refresh"></i></span>
-            <span class="refreshing"><i class="icon-communicating"></i></span>
-          </span><!-- /.updating-icon-status -->
-        </span><!-- /.remote-commands-refresh -->
-      </div><!-- /.overview-remote-commands-header -->
-      <div class="overview-remote-command">
-        <div class="overview-remote-command-header">
-          <div class="overview-remote-command-header-state">
-            <span class="state-1 active">
-              Engine is on
-            </span><!-- /.current-state -->
-            <span class="state-2">
-              Engine is off
-            </span>
-          </div><!-- /.overview-remote-command-header-state -->
-          <div class="transitioning-messages">
-            <span class="state-1-2 active">
-              Turning engine off...
-            </span><!-- /.state-1-2 -->
-            <span class="state-2-1">
-              Turning on engine…
-            </span><!-- /.state-2-1 -->
-          </div><!-- /.transitioning-messages -->
-        </div><!-- /.overview-remote-command-header -->
-        <div class="overview-remote-command-icon">
-          <span class="icon-remote">
-            <i class="icon-motor state-1 active"></i>
-            <i class="icon-motor state-2"></i>
-          </span><!-- /.icon-remote -->
-          <span class="spinner">
-            <i class="icon-communicating"></i>
-          </span>
-        </div><!-- /.overview-remote-command-icon -->
-        <div class="overview-remote-command-actions">
-          <div class="action-buttons">
-            <span class="action-button state-1 active" data-action="state-1-2">
-              Turn off engine
-            </span><!-- /.action-button -->
-            <span class="action-button state-2" data-action="state-2-1">
-              Turn on engine
-            </span><!-- /.action-button -->
-          </div><!-- /.overview-remtote-command-actions-buttons -->
-          <div class="action-transitioning-message">
-            <span class="desktop">Communicating with your vehicle. Please wait!</span>
-            <span class="tablet">Communicating with your car. Please wait...</span>
-            <span class="mobile">Please wait…</span>
-          </div><!-- /.action-transitioning-message -->
-        </div><!-- /.overview-remote-command-actions -->
-      </div><!-- /.overview-remote-command -->
-      <div class="overview-remote-command">
-        <div class="overview-remote-command-header">
-          <div class="overview-remote-command-header-state">
-            <span class="state-1 active">
-              Doors are unlocked
-            </span><!-- /.current-state -->
-            <span class="state-2">
-              Doors are locked
-            </span>
-          </div><!-- /.overview-remote-command-header-state -->
-          <div class="transitioning-messages">
-            <span class="state-1-2 active">
-              Locking doors...
-            </span><!-- /.state-1-2 -->
-            <span class="state-2-1">
-              Unlocking doors...
-            </span><!-- /.state-2-1 -->
-          </div><!-- /.transitioning-messages -->
-        </div><!-- /.overview-remote-command-header -->
-        <div class="overview-remote-command-icon">
-          <span class="icon-remote">
-            <i class="icon-lock state-1 active"></i>
-            <i class="icon-lock state-2"></i>
-          </span><!-- /.icon-remote -->
-          <span class="spinner">
-            <i class="icon-communicating"></i>
-          </span>
-        </div><!-- /.overview-remote-command-icon -->
-        <div class="overview-remote-command-actions">
-          <div class="action-buttons split">
-            <span class="action-button state-1 active" data-action="state-2-1">
-              Unlock
-            </span><!-- /.action-button -->
-            <span class="action-button state-2" data-action="state-1-2">
-              Lock
-            </span><!-- /.action-button -->
-          </div><!-- /.overview-remtote-command-actions-buttons -->
-          <div class="action-transitioning-message">
-            <span class="desktop">Communicating with your vehicle. Please wait!</span>
-            <span class="tablet">Communicating with your car. Please wait...</span>
-            <span class="mobile">Please wait…</span>
-          </div><!-- /.action-transitioning-message -->
-        </div><!-- /.overview-remote-command-actions -->
-      </div><!-- /.overview-remote-command -->
-      <div class="overview-remote-command">
-        <div class="overview-remote-command-header">
-          <div class="overview-remote-command-header-state">
-            <span class="state-1">
-              Climate is on
-            </span><!-- /.current-state -->
-            <span class="state-2 active">
-              Climate is off
-            </span>
-          </div><!-- /.overview-remote-command-header-state -->
-          <div class="transitioning-messages">
-            <span class="state-1-2 active">
-              Turning climate on...
-            </span><!-- /.state-1-2 -->
-            <span class="state-2-1">
-              Turning climate off
-            </span><!-- /.state-2-1 -->
-          </div><!-- /.transitioning-messages -->
-        </div><!-- /.overview-remote-command-header -->
-        <div class="overview-remote-command-icon">
-          <span class="icon-remote">
-            <i class="icon-fan state-1"></i>
-            <i class="icon-fan state-2 active"></i>
-          </span><!-- /.icon-remote -->
-          <span class="spinner">
-            <i class="icon-communicating"></i>
-          </span>
-        </div><!-- /.overview-remote-command-icon -->
-        <div class="overview-remote-command-actions">
-          <div class="action-buttons">
-            <span class="action-button state-1" data-action="state-1-2">
-              Set Your Climate
-            </span><!-- /.action-button -->
-            <span class="action-button state-2 active" data-action="state-2-1">
-              Set Your Climate
-            </span><!-- /.action-button -->
-          </div><!-- /.overview-remtote-command-actions-buttons -->
-          <div class="action-transitioning-message">
-            <span class="desktop">Communicating with your vehicle. Please wait!</span>
-            <span class="tablet">Communicating with your car. Please wait...</span>
-            <span class="mobile">Please wait…</span>
-          </div><!-- /.action-transitioning-message -->
-        </div><!-- /.overview-remote-command-actions -->
-      </div><!-- /.overview-remote-command -->
-      <div class="overview-remote-command">
-        <div class="overview-remote-command-header-extra-info">
-          <div class="extra-info left">
-            <strong>
-              32 <span>%</span>
-            </strong>
-            <em>Charge</em>
-          </div><!-- /.extra-info -->
-          <div class="extra-info right">
-            <strong>
-              72 <span>mi</span>
-            </strong>
-            <em>Range</em>
-          </div><!-- /.extra-info -->
-        </div><!-- /.overview-remote-command-header-extra-info -->
-        <div class="overview-remote-command-header">
-          <div class="overview-remote-command-header-state">
-            <span class="state-1 active">
-              Battery is charging
-            </span><!-- /.current-state -->
-            <span class="state-2">
-              Charge stopped
-            </span>
-          </div><!-- /.overview-remote-command-header-state -->
-          <div class="transitioning-messages">
-            <span class="state-1-2 active">
-              Stopping charge...
-            </span><!-- /.state-1-2 -->
-            <span class="state-2-1">
-              Starting charge...
-            </span><!-- /.state-2-1 -->
-          </div><!-- /.transitioning-messages -->
-        </div><!-- /.overview-remote-command-header -->
-        <div class="overview-remote-command-icon">
-          <span class="icon-remote">
-            <i class="icon-charging state-1 active"></i>
-            <i class="icon-charging state-2"></i>
-          </span><!-- /.icon-remote -->
-          <span class="spinner">
-            <i class="icon-communicating"></i>
-          </span>
-        </div><!-- /.overview-remote-command-icon -->
-        <div class="overview-remote-command-actions">
-          <div class="action-buttons split">
-            <span class="action-button state-1 active" data-action="state-2-1">
-              Charge
-            </span><!-- /.action-button -->
-            <span class="action-button state-2" data-action="state-1-2">
-              Stop
-            </span><!-- /.action-button -->
-          </div><!-- /.overview-remtote-command-actions-buttons -->
-          <div class="action-transitioning-message">
-            <span class="desktop">Communicating with your vehicle. Please wait!</span>
-            <span class="tablet">Communicating with your car. Please wait...</span>
-            <span class="mobile">Please wait…</span>
-          </div><!-- /.action-transitioning-message -->
-        </div><!-- /.overview-remote-command-actions -->
-      </div><!-- /.overview-remote-command -->
-    </div><!-- /.contain -->
-  </div><!-- /.overview-remote-commands -->
-  <div class="overview-maintenance">
-    <div class="contain">
-      <div class="overview-maintenance-header">
+        <em>
+          <span>Current</span> Mileage
+        </em>
+      </div><!-- /.overview-header-info -->
+      <div class="overview-header-title">
         <strong>
-          Maintenance
+          My Niro
+          <i class="icon-info">
+            i
+          </i>
         </strong>
-      </div><!-- /.overview-maintenance-header -->
-      <div class="maintenance-card">
-        <div class="desktop-and-tablet">
-          <em class="maintenance-card-title">
-            Service Minder
-          </em>
-          <div class="maintenance-card-content service">
-            <strong>
-              1,415 miles until your next service
-            </strong>
-            <div class="progress-bar">
-              <span class="bar" style="width:80%"></span>
-              <em>
-                28,585 mi
-              </em>
-              <em>
-                30,000 mi
-              </em>
-            </div><!-- /.progress-bar -->
-          </div><!-- /.maintenance-card-content -->
-        </div><!-- /.desktop-and-tablet -->
-        <div class="mobile">
-          <div class="mobile-icon">
-            <i class="icon-next-service"></i>
-          </div><!-- /.mobile-icon -->
-          <div class="mobile-content">
-            <strong>
-              1,415
-              <span>mi.</span>
-            </strong>
-            <em>until next service</em>
-          </div><!-- /.mobile-content -->
-        </div><!-- /.mobile -->
-        <i class="icon-arrow-right"></i>
-      </div><!-- /.maintenance-card -->
-      <div class="maintenance-card">
-        <div class="desktop-and-tablet">
-          <em class="maintenance-card-title">
-            Vehicle Health Report
-          </em>
-          <div class="maintenance-card-content with-icon">
-            <div class="maintenance-card-icon">
+        <em>
+          2017 Niro
+        </em>
+      </div><!-- /.overview-header-title -->
+      <div class="overview-header-info right">
+        <strong>
+          Irvine, Ca
+          <i class="icon-arrow-right"></i>
+        </strong>
+        <em>
+          Current Location
+        </em>
+      </div><!-- /.overview-header-info -->
+      <div class="overview-header-vehicle-image">
+        <img src="/images/image_overview_car_2.png" alt="My Niro" title="My Niro" />
+      </div><!-- /.overview-header-vehicle-image -->
+    </div><!-- /.overview-header -->
+    <div class="overview-remote-commands">
+      <div class="contain">
+        <div class="overview-remote-commands-header">
+          <strong>
+            Remote Commands
+          </strong>
+          <span class="remote-commands-refresh" data-action="refresh-page">
+            <span class="messages">
+              <span class="last-refreshed">
+                Last refreshed
+                <span class="time">4 hrs ago</span>
+              </span><!-- /.last-refreshed -->
+              <span class="refreshing">
+                Refreshing Status. Please Wait...
+              </span>
+            </span><!-- /.messages -->
+            <span class="updating-icon-status">
+              <span class="refresh-ready active"><i class="icon-refresh"></i></span>
+              <span class="refreshing"><i class="icon-communicating"></i></span>
+            </span><!-- /.updating-icon-status -->
+          </span><!-- /.remote-commands-refresh -->
+        </div><!-- /.overview-remote-commands-header -->
+        <div class="overview-remote-command">
+          <div class="overview-remote-command-header">
+            <div class="overview-remote-command-header-state">
+              <span class="state-1 active">
+                Engine is on
+              </span><!-- /.current-state -->
+              <span class="state-2">
+                Engine is off
+              </span>
+            </div><!-- /.overview-remote-command-header-state -->
+            <div class="transitioning-messages">
+              <span class="state-1-2 active">
+                Turning engine off...
+              </span><!-- /.state-1-2 -->
+              <span class="state-2-1">
+                Turning on engine…
+              </span><!-- /.state-2-1 -->
+            </div><!-- /.transitioning-messages -->
+          </div><!-- /.overview-remote-command-header -->
+          <div class="overview-remote-command-icon">
+            <span class="icon-remote">
+              <i class="icon-motor state-1 active"></i>
+              <i class="icon-motor state-2"></i>
+            </span><!-- /.icon-remote -->
+            <span class="spinner">
+              <i class="icon-communicating"></i>
+            </span>
+          </div><!-- /.overview-remote-command-icon -->
+          <div class="overview-remote-command-actions">
+            <div ontouchstart="" class="action-buttons">
+              <span ontouchstart="" class="action-button state-1 active" data-action="state-1-2">
+                Turn off engine
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-2" data-action="state-2-1">
+                Turn on engine
+              </span><!-- /.action-button -->
+            </div><!-- /.overview-remtote-command-actions-buttons -->
+            <div class="action-transitioning-message">
+              <span class="desktop">Communicating with your vehicle. Please wait!</span>
+              <span class="tablet">Communicating with your car. Please wait...</span>
+              <span class="mobile">Please wait…</span>
+            </div><!-- /.action-transitioning-message -->
+          </div><!-- /.overview-remote-command-actions -->
+        </div><!-- /.overview-remote-command -->
+        <div class="overview-remote-command">
+          <div class="overview-remote-command-header">
+            <div class="overview-remote-command-header-state">
+              <span class="state-1 active">
+                Doors are unlocked
+              </span><!-- /.current-state -->
+              <span class="state-2">
+                Doors are locked
+              </span>
+            </div><!-- /.overview-remote-command-header-state -->
+            <div class="transitioning-messages">
+              <span class="state-1-2 active">
+                Locking doors...
+              </span><!-- /.state-1-2 -->
+              <span class="state-2-1">
+                Unlocking doors...
+              </span><!-- /.state-2-1 -->
+            </div><!-- /.transitioning-messages -->
+          </div><!-- /.overview-remote-command-header -->
+          <div class="overview-remote-command-icon">
+            <span class="icon-remote">
+              <i class="icon-lock state-1 active"></i>
+              <i class="icon-lock state-2"></i>
+            </span><!-- /.icon-remote -->
+            <span class="spinner">
+              <i class="icon-communicating"></i>
+            </span>
+          </div><!-- /.overview-remote-command-icon -->
+          <div class="overview-remote-command-actions">
+            <div ontouchstart="" class="action-buttons split">
+              <span ontouchstart="" class="action-button state-1 active" data-action="state-2-1">
+                Unlock
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-2" data-action="state-1-2">
+                Lock
+              </span><!-- /.action-button -->
+            </div><!-- /.overview-remtote-command-actions-buttons -->
+            <div class="action-transitioning-message">
+              <span class="desktop">Communicating with your vehicle. Please wait!</span>
+              <span class="tablet">Communicating with your car. Please wait...</span>
+              <span class="mobile">Please wait…</span>
+            </div><!-- /.action-transitioning-message -->
+          </div><!-- /.overview-remote-command-actions -->
+        </div><!-- /.overview-remote-command -->
+        <div class="overview-remote-command">
+          <div class="overview-remote-command-header">
+            <div class="overview-remote-command-header-state">
+              <span class="state-1">
+                Climate is on
+              </span><!-- /.current-state -->
+              <span class="state-2 active">
+                Climate is off
+              </span>
+            </div><!-- /.overview-remote-command-header-state -->
+            <div class="transitioning-messages">
+              <span class="state-1-2 active">
+                Turning climate on...
+              </span><!-- /.state-1-2 -->
+              <span class="state-2-1">
+                Turning climate off
+              </span><!-- /.state-2-1 -->
+            </div><!-- /.transitioning-messages -->
+          </div><!-- /.overview-remote-command-header -->
+          <div class="overview-remote-command-icon">
+            <span class="icon-remote">
+              <i class="icon-fan state-1"></i>
+              <i class="icon-fan state-2 active"></i>
+            </span><!-- /.icon-remote -->
+            <span class="spinner">
+              <i class="icon-communicating"></i>
+            </span>
+          </div><!-- /.overview-remote-command-icon -->
+          <div class="overview-remote-command-actions">
+            <div ontouchstart="" class="action-buttons">
+              <span ontouchstart="" class="action-button state-1" data-action="state-1-2">
+                Set Your Climate
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-2 active" data-action="state-2-1">
+                Set Your Climate
+              </span><!-- /.action-button -->
+            </div><!-- /.overview-remtote-command-actions-buttons -->
+            <div class="action-transitioning-message">
+              <span class="desktop">Communicating with your vehicle. Please wait!</span>
+              <span class="tablet">Communicating with your car. Please wait...</span>
+              <span class="mobile">Please wait…</span>
+            </div><!-- /.action-transitioning-message -->
+          </div><!-- /.overview-remote-command-actions -->
+        </div><!-- /.overview-remote-command -->
+        <div class="overview-remote-command">
+          <div class="overview-remote-command-header-extra-info">
+            <div class="extra-info left">
+              <strong>
+                32 <span>%</span>
+              </strong>
+              <em>Charge</em>
+            </div><!-- /.extra-info -->
+            <div class="extra-info right">
+              <strong>
+                72 <span>mi</span>
+              </strong>
+              <em>Range</em>
+            </div><!-- /.extra-info -->
+          </div><!-- /.overview-remote-command-header-extra-info -->
+          <div class="overview-remote-command-header">
+            <div class="overview-remote-command-header-state">
+              <span class="state-1 active">
+                Battery is charging
+              </span><!-- /.current-state -->
+              <span class="state-2">
+                Charge stopped
+              </span>
+            </div><!-- /.overview-remote-command-header-state -->
+            <div class="transitioning-messages">
+              <span class="state-1-2 active">
+                Stopping charge...
+              </span><!-- /.state-1-2 -->
+              <span class="state-2-1">
+                Starting charge...
+              </span><!-- /.state-2-1 -->
+            </div><!-- /.transitioning-messages -->
+          </div><!-- /.overview-remote-command-header -->
+          <div class="overview-remote-command-icon">
+            <span class="icon-remote">
+              <i class="icon-charging state-1 active"></i>
+              <i class="icon-charging state-2"></i>
+            </span><!-- /.icon-remote -->
+            <span class="spinner">
+              <i class="icon-communicating"></i>
+            </span>
+          </div><!-- /.overview-remote-command-icon -->
+          <div class="overview-remote-command-actions">
+            <div ontouchstart="" class="action-buttons split">
+              <span ontouchstart="" class="action-button state-1 active" data-action="state-2-1">
+                Charge
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-2" data-action="state-1-2">
+                Stop
+              </span><!-- /.action-button -->
+            </div><!-- /.overview-remtote-command-actions-buttons -->
+            <div class="action-transitioning-message">
+              <span class="desktop">Communicating with your vehicle. Please wait!</span>
+              <span class="tablet">Communicating with your car. Please wait...</span>
+              <span class="mobile">Please wait…</span>
+            </div><!-- /.action-transitioning-message -->
+          </div><!-- /.overview-remote-command-actions -->
+        </div><!-- /.overview-remote-command -->
+      </div><!-- /.contain -->
+    </div><!-- /.overview-remote-commands -->
+    <div class="overview-maintenance">
+      <div class="contain">
+        <div class="overview-maintenance-header">
+          <strong>
+            Maintenance
+          </strong>
+        </div><!-- /.overview-maintenance-header -->
+        <div class="maintenance-card">
+          <div class="desktop-and-tablet">
+            <em class="maintenance-card-title">
+              Service Minder
+            </em>
+            <div class="maintenance-card-content service">
+              <strong>
+                1,415 miles until your next service
+              </strong>
+              <div class="progress-bar">
+                <span class="bar" style="width:80%"></span>
+                <em>
+                  28,585 mi
+                </em>
+                <em>
+                  30,000 mi
+                </em>
+              </div><!-- /.progress-bar -->
+            </div><!-- /.maintenance-card-content -->
+          </div><!-- /.desktop-and-tablet -->
+          <div class="mobile">
+            <div class="mobile-icon">
+              <i class="icon-next-service"></i>
+            </div><!-- /.mobile-icon -->
+            <div class="mobile-content">
+              <strong>
+                1,415
+                <span>mi.</span>
+              </strong>
+              <em>until next service</em>
+            </div><!-- /.mobile-content -->
+          </div><!-- /.mobile -->
+          <i class="icon-arrow-right"></i>
+        </div><!-- /.maintenance-card -->
+        <div class="maintenance-card">
+          <div class="desktop-and-tablet">
+            <em class="maintenance-card-title">
+              Vehicle Health Report
+            </em>
+            <div class="maintenance-card-content with-icon">
+              <div class="maintenance-card-icon">
+                <i class="icon-warning"></i>
+              </div><!-- /.maintenance-card-icon -->
+              <div class="maintenance-card-icon-info">
+                <strong>2</strong>
+                <em>Diagnostic issues found</em>
+              </div><!-- /.maintenance-card-icon-info -->
+            </div><!-- /.maintenance-card-content -->
+          </div><!-- /.desktop-and-tablet -->
+          <div class="mobile">
+            <div class="mobile-icon">
               <i class="icon-warning"></i>
-            </div><!-- /.maintenance-card-icon -->
-            <div class="maintenance-card-icon-info">
-              <strong>2</strong>
+            </div><!-- /.mobile-icon -->
+            <div class="mobile-content">
+              <strong class="large">
+                2
+              </strong>
               <em>Diagnostic issues found</em>
-            </div><!-- /.maintenance-card-icon-info -->
-          </div><!-- /.maintenance-card-content -->
-        </div><!-- /.desktop-and-tablet -->
-        <div class="mobile">
-          <div class="mobile-icon">
-            <i class="icon-warning"></i>
-          </div><!-- /.mobile-icon -->
-          <div class="mobile-content">
-            <strong class="large">
-              2
-            </strong>
-            <em>Diagnostic issues found</em>
-          </div><!-- /.mobile-content -->
-        </div><!-- /.mobile -->
-        <i class="icon-arrow-right"></i>
-      </div><!-- /.maintenance-card -->
-      <div class="maintenance-card">
-        <div class="desktop-and-tablet">
-          <em class="maintenance-card-title">
-            Active Recalls
-          </em>
-          <div class="maintenance-card-content with-icon">
-            <div class="maintenance-card-icon">
+            </div><!-- /.mobile-content -->
+          </div><!-- /.mobile -->
+          <i class="icon-arrow-right"></i>
+        </div><!-- /.maintenance-card -->
+        <div class="maintenance-card">
+          <div class="desktop-and-tablet">
+            <em class="maintenance-card-title">
+              Active Recalls
+            </em>
+            <div class="maintenance-card-content with-icon">
+              <div class="maintenance-card-icon">
+                <i class="icon-recalls"></i>
+              </div><!-- /.maintenance-card-icon -->
+              <div class="maintenance-card-icon-info">
+                <strong>3</strong>
+                <em>Recalls for your vehicle</em>
+              </div><!-- /.maintenance-card-icon-info -->
+            </div><!-- /.maintenance-card-content -->
+          </div><!-- /.desktop-and-tablet -->
+          <div class="mobile">
+            <div class="mobile-icon">
               <i class="icon-recalls"></i>
-            </div><!-- /.maintenance-card-icon -->
-            <div class="maintenance-card-icon-info">
-              <strong>3</strong>
-              <em>Recalls for your vehicle</em>
-            </div><!-- /.maintenance-card-icon-info -->
-          </div><!-- /.maintenance-card-content -->
-        </div><!-- /.desktop-and-tablet -->
-        <div class="mobile">
-          <div class="mobile-icon">
-            <i class="icon-recalls"></i>
-          </div><!-- /.mobile-icon -->
-          <div class="mobile-content">
-            <strong class="large">
-              3
-            </strong>
-            <em>Active recalls</em>
-          </div><!-- /.mobile-content -->
-        </div><!-- /.mobile -->
-        <i class="icon-arrow-right"></i>
-      </div><!-- /.maintenance-card -->
-    </div><!-- /.contain -->
-  </div><!-- /.overview-maintenance -->
-</div><!-- /.view-overview -->
+            </div><!-- /.mobile-icon -->
+            <div class="mobile-content">
+              <strong class="large">
+                3
+              </strong>
+              <em>Active recalls</em>
+            </div><!-- /.mobile-content -->
+          </div><!-- /.mobile -->
+          <i class="icon-arrow-right"></i>
+        </div><!-- /.maintenance-card -->
+      </div><!-- /.contain -->
+    </div><!-- /.overview-maintenance -->
+  </div><!-- /.view-overview -->
+</div><!-- /.has-mobile-nav -->
 <!-- @import "partials/footer.kit" -->

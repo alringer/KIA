@@ -1,27 +1,29 @@
 @keyframes loading-bar {
   0% {
-    width: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 1;
   }
   24% {
-    width: 100%;
-    left: 0;
+    transform: scaleX(1);
+    transform-origin: left;
   }
   25% {
-    width: 100%;
-    left: auto;
-    right: 0;
+    transform-origin: right;
   }
   50% {
-    width: 100%;
+    transform: scaleX(1);
+    transform-origin: right;
   }
   74% {
-    width: 0%;
-    left: auto;
-    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 1;
   }
-  75% {
-    left: 0;
-    right: auto;
+  99% {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
   }
 }
 .loading-bar {
@@ -36,9 +38,11 @@
     display: block;
     position: absolute;
     left: 0;
-    width: 0;
+    width: 100%;
     height: 2px;
     background: $red;
+    transform-origin: left;
+    opacity: 0;
   }
   &.loading {
     &:before {

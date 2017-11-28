@@ -3,10 +3,11 @@
 $(document).ready(function () {
   window.remoteCommands = {
     elements: {
+      body: $('body'),
       view: $('.view-overview'),
       remote_command: $('.overview-remote-command'),
       remote_command_buttons: $('.overview-remote-command-actions .action-button'),
-      refresh_buttons: $('.view-overview [data-action="refresh-page"]')
+      refresh_buttons: $('[data-action="refresh-page"]')
     },
     methods: {
       _communicate: function _communicate() {
@@ -24,22 +25,25 @@ $(document).ready(function () {
         window.loading.methods._loading_start();
 
         setTimeout(function () {
-          $this_command.find('.state-' + first_state).removeClass('active');
-          $this_command.find('.state-' + new_state).addClass('active');
-          $this_command.removeClass('communicating');
-          window.remoteCommands.elements.view.removeClass('communicating');
-          window.loading.methods._loading_stop();
+          window.remoteCommands.methods._commiunicate_stop($this_command, first_state, new_state);
         }, 3000);
       },
+      _commiunicate_stop: function _commiunicate_stop($command, first_state, new_state) {
+        $command.find('.state-' + first_state).removeClass('active');
+        $command.find('.state-' + new_state).addClass('active');
+        $command.removeClass('communicating');
+        window.remoteCommands.elements.view.removeClass('communicating');
+        window.loading.methods._loading_stop();
+      },
       _refresh: function _refresh() {
-        if (window.remoteCommands.elements.view.hasClass('refreshing')) {
+        if (window.remoteCommands.elements.body.hasClass('refreshing')) {
           return;
         }
-        window.remoteCommands.elements.view.addClass('refreshing');
+        window.remoteCommands.elements.body.addClass('refreshing');
         window.loading.methods._loading_start();
         setTimeout(function () {
           $('.last-refreshed .time').text('just now');
-          window.remoteCommands.elements.view.removeClass('refreshing');
+          window.remoteCommands.elements.body.removeClass('refreshing');
           window.loading.methods._loading_stop();
         }, 3000);
       }
