@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "26148",
 "files": {
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/changes.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2681,6 +2675,13 @@
 		"oAP": "\/build\/views\/overview-1.html",
 		"oF": 0
 		},
+	"\/source\/views\/overview-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/overview-2.html",
+		"oF": 0
+		},
 	"\/source\/views\/overview-3.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2915,7 +2916,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 533600088
+	"lastBuiltDate": 533603538
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
