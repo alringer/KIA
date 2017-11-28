@@ -64,19 +64,6 @@ nav.nav-main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    .dropdown-menu.vehicle-selector-list {
-      max-height: 250px;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      // padding-bottom: 40px !important;
-      li:last-child {
-        // position: absolute;
-        // top: 100%;
-        // left: 0;
-        // right: 0;
-        // background: $white;
-      }
-    }
   }
   .account-menu {
     position: absolute;
