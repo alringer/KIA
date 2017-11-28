@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Lock Icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Overview*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UVO-Not-Activated-|-Desktop" transform="translate(-180.000000, -101.000000)">
+            <g id="CONTENT" transform="translate(112.000000, 90.000000)">
+                <g id="Informative-Static-Banner" transform="translate(46.000000, 0.000000)">
+                    <g id="locked-feature-uvo" transform="translate(22.000000, 11.000000)">
+                        <g id="Lock-Icon-Copy" transform="translate(0.000000, 0.007508)">
+                            <ellipse id="Oval-6" fill="#FFFFFF" cx="13.2302405" cy="13.1381381" rx="13.2302405" ry="13.1381381"></ellipse>
+                            <path d="M17.3028169,11.7053526 L18,11.7053526 L18,18.6785612 L9,18.6785612 L9,11.7053526 L9.6971831,11.7053526 L9.6971831,9.80356837 C9.6971831,7.70628077 11.4031268,6 13.5,6 C15.5968732,6 17.3028169,7.70628077 17.3028169,9.80356837 L17.3028169,11.7053526 Z M10.7112676,9.80356837 L10.7112676,11.7053526 L16.2887324,11.7053526 L16.2887324,9.80356837 C16.2887324,8.26553211 15.0377324,7.0142849 13.5,7.0142849 C11.9622676,7.0142849 10.7112676,8.26553211 10.7112676,9.80356837 Z" id="Combined-Shape" fill="#F23F3F"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

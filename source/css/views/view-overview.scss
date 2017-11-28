@@ -2,6 +2,38 @@
 @import "../mixins.scss";
 
 .view-overview {
+  @media (min-width: $screen-xs-max) {
+    .alerts {
+      + .overview-header {
+        min-height: 430px;
+        .overview-header-info {
+          top: 100px;
+        }
+        .overview-header-title {
+          top: 86px;
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .alerts {
+      + .overview-header {
+        min-height: 200px;
+        .overview-header-title {
+          top: 70px;
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-xs-min) {
+    .alerts {
+      + .overview-header {
+        .overview-header-title {
+          top: 90px;
+        }
+      }
+    }
+  }
   .overview-header {
     background-image: radial-gradient(circle at 49% 65%, #707070, #3b3b3b);
     position: relative;
@@ -104,7 +136,7 @@
       &.right {
         text-align: right;
         left: auto;
-        right: 63px;
+        right: 36px;
         strong {
           margin-right: -15px;
         }

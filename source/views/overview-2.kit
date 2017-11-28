@@ -22,9 +22,16 @@
   <!-- @import "partials/nav-dual.kit" -->
   <!-- @import "partials/nav-mobile-overview.kit" -->
   <div class="view-overview page-view">
-    <div class="alert bar">
-
-    </div><!-- /.alert -->
+    <div class="alerts locked">
+      <div class="alert alert-failed in">
+        <p>Some features are locked because you need to activate UVO.</p>
+        <div class="alert-actions">
+          <button type="button" data-toggle="modal" data-target="#activate-uvo">
+            How to activate UVO
+          </button>
+        </div><!-- /.alert-actions -->
+      </div><!-- /.alert -->
+    </div><!-- /.alerts -->
     <div class="overview-header">
       <div class="map">
 
@@ -527,7 +534,7 @@
 </div><!-- /.modal#delete -->
 <script type="text/javascript">
     $(window).on('load',function(){
-        $('#how-to-activate-uvo').modal('show');
+      // $('#how-to-activate-uvo').modal('show');
     });
 </script>
 <!-- @import "partials/footer.kit" -->
