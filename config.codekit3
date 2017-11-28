@@ -79,6 +79,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/elements\/_alerts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/elements\/_alerts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/elements\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -157,6 +170,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/elements\/_view-subnav.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/elements\/_view-subnav.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/fonts\/_fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -175,13 +201,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAB.eot",
-		"oF": 0
-		},
-	"\/source\/css\/fonts\/kia\/KIAB.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts\/kia\/KIAB.otf",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAB.svg": {
@@ -215,13 +234,6 @@
 		"oAP": "\/build\/css\/fonts\/kia\/KIAL.eot",
 		"oF": 0
 		},
-	"\/source\/css\/fonts\/kia\/KIAL.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts\/kia\/KIAL.otf",
-		"oF": 0
-		},
 	"\/source\/css\/fonts\/kia\/KIAL.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -251,13 +263,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/css\/fonts\/kia\/KIAM.eot",
-		"oF": 0
-		},
-	"\/source\/css\/fonts\/kia\/KIAM.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/css\/fonts\/kia\/KIAM.otf",
 		"oF": 0
 		},
 	"\/source\/css\/fonts\/kia\/KIAM.svg": {
@@ -349,6 +354,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/modules\/recommended-cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/recommended-cards.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/modules\/reference-cards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/reference-cards.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/source\/css\/views\/poc.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -401,6 +432,46 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/images\/icon-bluetooth.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon-bluetooth.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon-play-square.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon-play-square.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_alert_check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_alert_check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_alert_error.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_alert_error.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_arrow_right_dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -416,6 +487,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_arrow_right_white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_award.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_award.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -486,6 +567,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_checkmark_white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_cog.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_cog.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -597,6 +688,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_lock_red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_lock_white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_lock_white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -782,6 +883,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_power.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_power.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_print.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_print.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_recalls.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -881,6 +1002,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/icon_uvo_locked.png": {
+		"ft": 32768,
+		"iS": 1485,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_uvo_locked.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/icon_warning.svg": {
 		"ft": 2097152,
@@ -1005,6 +1137,17 @@
 		"iS": 204279,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_overview_car_4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/image_overview_car_5.png": {
+		"ft": 32768,
+		"iS": 169976,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_overview_car_5.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1153,6 +1296,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/image_vehicle_settings_car.png": {
+		"ft": 32768,
+		"iS": 13680,
+		"oA": 0,
+		"oAP": "\/build\/images\/image_vehicle_settings_car.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/logo_google_play.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1247,6 +1401,26 @@
 		"oAP": "\/build\/library-manifest.html",
 		"oF": 0
 		},
+	"\/source\/scripts\/add-card.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/add-card.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/alerts.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/alerts.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/forms.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1307,12 +1481,12 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/source\/scripts\/nav.js": {
+	"\/source\/scripts\/overview.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/nav.js",
+		"oAP": "\/build\/scripts\/overview.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2642,6 +2816,20 @@
 		"oAP": "\/build\/views\/overview-5.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/add-card-modal.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/partials\/add-card-modal.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/alerts.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/partials\/alerts.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/footer.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2747,6 +2935,20 @@
 		"oAP": "\/build\/views\/partials\/nav-dual.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/nav-mobile-my-vehicles.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/partials\/nav-mobile-my-vehicles.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/nav-mobile-overview.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/partials\/nav-mobile-overview.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/nav.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -2841,7 +3043,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 532299428
+	"lastBuiltDate": 533524472
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

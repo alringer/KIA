@@ -284,6 +284,15 @@ nav.nav-app {
         }
       }
       &-mobile-menu {
+        &-close {
+          position: absolute;
+          top: 0;
+          width: 100vw;
+          bottom: 0;
+          right: 0;
+          z-index: 998;
+          display: none;
+        }
         z-index: 999;
         transition: transform 250ms $easeOutQuint;
         background: $white;
@@ -296,6 +305,9 @@ nav.nav-app {
         &.open {
           transform: translateY(-100%);
           box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.5);
+          + .nav-app-mobile-menu-close {
+            display: block;
+          }
         }
         &-vehicle-selector {
           display: none;
