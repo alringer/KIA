@@ -1010,7 +1010,7 @@
 		"oAP": "\/build\/images\/icon_uvo_locked.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -3053,7 +3053,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 533284280
+	"lastBuiltDate": 533524472
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

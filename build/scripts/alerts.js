@@ -3,7 +3,8 @@
 $(document).ready(function () {
   window.alerts = {
     elements: {
-      alerts: $('.alerts .alert:not(.locked)')
+      alerts: $('.alerts .alert:not(.locked)'),
+      alerts_close: $('.alerts .alert .close')
     },
     methods: {
       _reset: function _reset() {
@@ -30,7 +31,7 @@ $(document).ready(function () {
       },
       close: {
         _all: function _all() {
-          window.alerts.elements.alerts.removeClass('in');
+          window.alerts.methods._reset();
         },
         _error: function _error() {
           window.alerts.elements.alerts.filter('.alert-failed').removeClass('in');
@@ -42,5 +43,5 @@ $(document).ready(function () {
     }
   };
   // EVENTS
-  // window.alert.elements.element.on('click', window.template.methods._method);
+  window.alerts.elements.alerts_close.on('click', window.alerts.methods.close._all);
 });

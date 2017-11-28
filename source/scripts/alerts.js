@@ -2,6 +2,7 @@ $(document).ready(() => {
   window.alerts = {
     elements : {
       alerts : $('.alerts .alert:not(.locked)'),
+      alerts_close : $('.alerts .alert .close'),
     },
     methods : {
       _reset : () => {
@@ -28,7 +29,7 @@ $(document).ready(() => {
       },
       close : {
         _all : () => {
-          window.alerts.elements.alerts.removeClass('in');
+          window.alerts.methods._reset();
         },
         _error : () => {
           window.alerts.elements.alerts.filter('.alert-failed').removeClass('in');
@@ -40,5 +41,5 @@ $(document).ready(() => {
     }
   };
   // EVENTS
-  // window.alert.elements.element.on('click', window.template.methods._method);
+  window.alerts.elements.alerts_close.on('click', window.alerts.methods.close._all);
 });
