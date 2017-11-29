@@ -12,6 +12,12 @@
   }
 </style>
 
+# V - 2.1.0
+* KK-97 [Mobile, Tablet] Clicking outside of menu does not work properly
+* KK-124 Mobile view Tool tip is not Coming
+* KK-127 Extra line coming below header on overview pages
+* Added Activate UVO Modal on non-activated UVO overview (previously part of v3)
+===
 # V - 2.0.0
 * KK-56 As a user I need to send remote commands from dashboard
 * KK-57 As a user I need to know when the system is processing a remote command
