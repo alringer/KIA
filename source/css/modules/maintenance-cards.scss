@@ -114,7 +114,8 @@
     display: block !important;
   }
   @media (max-width: $screen-xs-max) {
-    height: 62px;
+    height: auto;
+    min-height: 62px;
     width: 100%;
     margin: 0 0 6px;
     max-width: 505px;
@@ -142,10 +143,11 @@
         }
       }
       &-content {
-        position: absolute;
+        // position: absolute;
+        padding: 14px 60px 14px 0;
         left: 75px;
-        top: 50%;
-        transform: translateY(-50%);
+        // top: 50%;
+        // transform: translateY(-50%);
         strong {
           display: block;
           font: 500 18px/1em $kia;
