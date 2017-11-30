@@ -4,6 +4,8 @@
 .view-remote {
   .page-view-subnav-items {
     @media (max-width: $screen-sm-max) {
+      max-width: 700px;
+      margin: 0 auto;
       font-size: 0;
       li {
         width: 33.333%;
