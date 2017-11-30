@@ -383,6 +383,193 @@
   }
 }
 
+.remote-footer-cards {
+  width: 700px;
+  max-width: calc(100% - 100px);
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-top: 50px;;
+  @media (max-width: $screen-xs-max) {
+    padding-top: 9px;
+    max-width: calc(100% - 20px);
+  }
+  .remote-footer-card {
+    height: 190px;
+    box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background: $white;
+    position: relative;
+    @media (max-width: $screen-xs-max) {
+      height: 72px;
+      overflow: hidden;
+      text-align: left;
+      margin-bottom: 6px;
+    }
+    i.icon-arrow-right {
+      position: absolute !important;
+      right: 15px !important;
+      left: auto !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+      display: none !important;
+      @media (max-width: $screen-xs-max) {
+        display: block !important;
+      }
+    }
+    &.charging-etiquette,
+    &.find-charge-station {
+      text-align: center;
+      background: url('/images/bkg_find-charge-station-card.png') center/cover no-repeat;
+      color: $white;
+      padding-top: 14px;
+      i {
+        display: block;
+        margin:  0 auto;
+        margin-bottom: 10px;
+      }
+      strong {
+        display: block;
+        max-width: 190px;
+        margin: 0 auto 19px;
+        font: 500 18px $kia;
+        letter-spacing: .5px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 70px;
+        text-align: left;
+        i {
+          position: absolute;
+          width: 19px;
+          height: 29px;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        strong {
+          margin: 0;
+          font-size: 13px;
+          letter-spacing: .3px;
+          max-width: 150px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .button {
+          display: none;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+    &.charging-etiquette {
+      padding-top: 36px;
+      background-image: url('/images/bkg_charging_etiquette.png');
+      strong {
+        max-width: 100%;
+        margin-bottom: 9px;
+      }
+      p {
+        max-width: 277px;
+        margin: 0 auto 18px;
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 20px;
+        strong {
+          font-size: 16px;
+          letter-spacing: .4px;
+          max-width: 300px;
+        }
+      }
+    }
+    &.charge-schedule {
+      padding-left: 97px;
+      padding-top: 43px;
+      > i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(calc(-50% + 10px));
+      }
+      p {
+        font: 16px/1.44em $sans;
+        letter-spacing: .4px;
+        margin-bottom: 24px;
+        strong {
+          display: block;
+        }
+      }
+      a {
+        color: $red;
+        font: bold 11px/1em $kia;
+        text-transform: uppercase;
+        letter-spacing: .7px;
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          top: -2px;
+          margin-right: 10px;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-top: 0;
+        height: 80px;
+        > i {
+          transform: translateY(calc(-50% + 2px));
+        }
+        p {
+          position: absolute;
+          left: 72px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 13px;
+          letter-spacing: .3px;
+          line-height: normal;
+          max-width: 173px;
+        }
+        a {
+          display: none;
+        }
+      }
+    }
+    &.no-charge-schedule {
+      i {
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      strong {
+        top: 50%;
+        left: 137px;
+        position: absolute;
+        transform: translateY(-50%);
+        width: 142px;
+        font: 500 16px $kia;
+        letter-spacing: .4px;
+        color: #a9a9a9;
+      }
+      @media (max-width: $screen-xs-max) {
+        i {
+          left: 11px;
+        }
+        strong {
+          left: 66px;
+          font-size: 13px;
+          letter-spacing: .3px;
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
 .icon-gas-battery {
   background: url('/images/icon_gas_battery.svg') center no-repeat;
 }
@@ -409,4 +596,40 @@
   background: url('/images/icon_cog_white.svg') center/contain no-repeat;
   height: 14px;
   width: 14px;
+}
+.icon-card-charge-station-pin {
+  background: url('/images/icon_charging_pin_card.svg') center/contain no-repeat;
+  height: 40px;
+  width: 27px;
+}
+.icon-3d-battery {
+  background: url('/images/icon_3d_battery_small.svg') center/contain no-repeat;
+  width: 70px;
+  height: 115px;
+  @media (max-width: $screen-xs-max) {
+    width: 40px;
+    height: 55px;
+  }
+}
+.icon-calendar-small {
+  background: url('/images/icon_calendar_red_small.svg') center/contain no-repeat;
+  width: 14px;
+  height: 15px;
+}
+.icon-no-charge-schedule {
+  background: url('/images/icon_no_charge_schedule.svg') center/contain no-repeat;
+  width: 83px;
+  height: 83px;
+  @media (max-width: $screen-xs-max) {
+    width: 42px;
+    height: 42px;
+  }
+}
+.icon-arrow-right {
+  background: url('/images/icon_arrow_right_dark.svg') center/contain no-repeat;
+  width: 11px !important;
+  height: 15px !important;
+  &.white {
+    background: url('/images/icon_arrow_right_white.svg') center/contain no-repeat;
+  }
 }
