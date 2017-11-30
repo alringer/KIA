@@ -1,6 +1,18 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+.view-remote {
+  .page-view-subnav-items {
+    @media (max-width: $screen-sm-max) {
+      font-size: 0;
+      li {
+        width: 33.333%;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+
 .remote-module {
   width: 100%;
   background: $white;
@@ -346,6 +358,73 @@
     background: url('/images/battery_shell.svg') center/contain no-repeat;
     margin: 0 auto;
     position: relative;
+    @for $i from 1 through 100 {
+      &.percentage-#{$i}) {
+        @if $i < 5 {
+          background-image: url('/images/battery_shell.svg')
+        }
+        @if $i > 4 {
+          background-image: url('/images/battery-states/5.svg')
+        }
+        @if $i > 9 {
+          background-image: url('/images/battery-states/10.svg')
+        }
+        @if $i > 14 {
+          background-image: url('/images/battery-states/15.svg')
+        }
+        @if $i > 19 {
+          background-image: url('/images/battery-states/20.svg')
+        }
+        @if $i > 24 {
+          background-image: url('/images/battery-states/25.svg')
+        }
+        @if $i > 29 {
+          background-image: url('/images/battery-states/30.svg')
+        }
+        @if $i > 34 {
+          background-image: url('/images/battery-states/35.svg')
+        }
+        @if $i > 39 {
+          background-image: url('/images/battery-states/40.svg')
+        }
+        @if $i > 44 {
+          background-image: url('/images/battery-states/45.svg')
+        }
+        @if $i > 49 {
+          background-image: url('/images/battery-states/50.svg')
+        }
+        @if $i > 54 {
+          background-image: url('/images/battery-states/55.svg')
+        }
+        @if $i > 59 {
+          background-image: url('/images/battery-states/60.svg')
+        }
+        @if $i > 64 {
+          background-image: url('/images/battery-states/65.svg')
+        }
+        @if $i > 69 {
+          background-image: url('/images/battery-states/70.svg')
+        }
+        @if $i > 74 {
+          background-image: url('/images/battery-states/75.svg')
+        }
+        @if $i > 79 {
+          background-image: url('/images/battery-states/80.svg')
+        }
+        @if $i > 84 {
+          background-image: url('/images/battery-states/85.svg')
+        }
+        @if $i > 89 {
+          background-image: url('/images/battery-states/90.svg')
+        }
+        @if $i > 94 {
+          background-image: url('/images/battery-states/95.svg')
+        }
+        @if $i > 95 {
+          background-image: url('/images/battery-states/100.svg')
+        }
+      }
+    }
     .percentage {
       position: absolute;
       display: block;
