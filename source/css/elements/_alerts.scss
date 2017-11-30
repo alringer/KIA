@@ -48,10 +48,12 @@
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.36);
     border: none;
     padding: 18px 115px 18px 65px;
-    transform: translateX(calc(100% + 30px));
+    transform: translateX(100%);
+    right: -30px;
     transition: all 350ms $easeOutQuint;
     &.in {
       transform: none !important;
+      right: 0;
     }
     button {
       width: 85px;

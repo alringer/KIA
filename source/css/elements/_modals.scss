@@ -1126,6 +1126,7 @@ body.modal-open {
             color: $red;
             position: relative;
             padding-right: 17px;
+            cursor: pointer;
             &:after {
               content: "";
               display: block;
