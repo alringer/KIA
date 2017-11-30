@@ -19,6 +19,8 @@ $(document).ready(() => {
         $this_transitioning_messages.filter(`.${action}`).addClass('active');
 
         $this_command.addClass('communicating');
+        $this_command.removeClass('state-1 state-2 state-3');
+        $this_command.addClass(`state-${new_state}-communicating`);
         window.remoteCommands.elements.view.addClass('communicating');
         window.loading.methods._loading_start();
 
@@ -32,6 +34,8 @@ $(document).ready(() => {
         $command.removeClass('communicating');
         window.remoteCommands.elements.view.removeClass('communicating');
         window.loading.methods._loading_stop();
+        $command.addClass(`state-${new_state}`);
+        $command.removeClass(`state-${new_state}-communicating`);
       },
       _refresh : () => {
         if( window.remoteCommands.elements.body.hasClass('refreshing') ) {

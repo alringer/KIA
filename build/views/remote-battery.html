@@ -12,12 +12,9 @@
   <link rel="stylesheet" href="/css/global.css">
   
   <!-- VIEW CSS -->
-  <link rel="stylesheet" href="/css/view-overview.css">
   <link rel="stylesheet" href="/css/overview-remote-commands.css">
-  <link rel="stylesheet" href="/css/overview-maintenance.css">
   <link rel="stylesheet" href="/css/reference-cards.css">
-  <link rel="stylesheet" href="/css/maintenance-cards.css">
-  <link rel="stylesheet" href="/css/recommended-cards.css">
+  <link rel="stylesheet" href="/css/remote-battery.css">
 
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -31,27 +28,50 @@
   <script type="text/javascript" src="/scripts/nav.js"></script>
   <script type="text/javascript" src="/scripts/alerts.js"></script>
   
-  <link rel="stylesheet" href="/vendors/slick/slick.css">
-    <script type="text/javascript" src="/vendors/slick/slick.min.js"></script>
-    
   <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
-      
-      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
-      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
-      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
-      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
-      
-      <script type="text/javascript" src="/scripts/map.js"></script>
-      
+    
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+    
+    <script type="text/javascript" src="/scripts/map.js"></script>
+    
+  <script type="text/javascript" src="/vendors/mixitup/mixitup.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/overview.js"></script>
   <script type="text/javascript" src="/scripts/remote-commands.js"></script>
+  <script type="text/javascript" src="/scripts/add-card.js"></script>
 
   <title>KIA</title>
   </head>
 <body ontouchstart="">
 
 <span class="loading-bar"></span>
+
+<div class="alerts">
+  <div class="alert alert-success alert-dismissible">
+    <p>Your remote command was sent successfully!</p>
+    <div class="alert-actions">
+      <button type="button" class="close">
+        Close
+      </button>
+    </div><!-- /.alert-actions -->
+  </div><!-- /.alert -->
+  <div class="alert alert-failed alert-dismissible">
+    <p>Battery failed to stop charging. Make sure &lt;precondition 1&gt;, &lt;precondition 3&gt;, &lt;precondition 3&gt;</p>
+    <div class="alert-actions double-actions">
+      <button type="button" class="close">
+        Retry
+      </button>
+      <button type="button" class="close">
+        Close
+      </button>
+    </div><!-- /.alert-actions -->
+  </div><!-- /.alert -->
+</div><!-- /.alerts -->
 
 <div class="has-mobile-nav">
   <nav class="nav-app">
@@ -528,522 +548,165 @@
       </div><!-- /.contain -->
     </div><!-- /.nav-mobile -->
     
-  <div class="view-overview page-view">
-    <div class="alerts locked">
-      <div class="alert alert-failed in">
-        <p>Some features are locked because you need to activate UVO.</p>
-        <div class="alert-actions">
-          <button type="button" data-toggle="modal" data-target="#activate-uvo">
-            How to activate UVO
-          </button>
-        </div><!-- /.alert-actions -->
-      </div><!-- /.alert -->
-    </div><!-- /.alerts -->
-    <div class="overview-header">
-      <div class="map">
-
-        </div><!-- /#map -->
-      <div class="overview-header-info left locked">
-        <strong>
-          --
-          <span>
-            mi.
-          </span>
-        </strong>
-        <em>
-          <span>Current</span> Mileage
-        </em>
-      </div><!-- /.overview-header-info -->
-      <div class="overview-header-title">
-        <strong>
-          My Niro
-          <i class="icon-info">
-            i
-          </i>
-        </strong>
-        <em>
-          2017 Niro
-        </em>
-      </div><!-- /.overview-header-title -->
-      <div class="overview-header-info right locked">
-        <strong>
-          ---
-        </strong>
-        <em>
-          Current Location
-        </em>
-      </div><!-- /.overview-header-info -->
-      <div class="overview-header-vehicle-image">
-        <img src="/images/image_overview_car_2.png" alt="My Niro" title="My Niro" />
-      </div><!-- /.overview-header-vehicle-image -->
-    </div><!-- /.overview-header -->
-    <div class="overview-remote-commands">
-      <div class="contain">
-        <div class="overview-remote-commands-header">
-          <strong>
-            Remote Commands
-          </strong>
-        </div><!-- /.overview-remote-commands-header -->
-        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Remote Engine Start</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.overview-remote-command -->
-        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Lock / Unlock Doors</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.overview-remote-command -->
-        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Climate Control</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.overview-remote-command -->
-        <div class="overview-remote-command locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Battery Status</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.overview-remote-command -->
-      </div><!-- /.contain -->
-    </div><!-- /.overview-remote-commands -->
-    <div class="overview-maintenance">
-      <div class="contain">
-        <div class="overview-maintenance-header">
-          <strong>
-            Maintenance
-          </strong>
-        </div><!-- /.overview-maintenance-header -->
-        <div class="maintenance-card locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Maintenance Milestones</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-          <div class="mobile">
-            <div class="mobile-icon">
-              <i class="icon-locked"></i>
-            </div><!-- /.mobile-icon -->
-            <div class="mobile-content">
-              <em>Maintenance Milestones</em>
-            </div><!-- /.mobile-content -->
-          </div><!-- /.mobile -->
-        </div><!-- /.maintenance-card -->
-        <div class="maintenance-card locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Vehicle Health Report</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-          <div class="mobile">
-            <div class="mobile-icon">
-              <i class="icon-locked"></i>
-            </div><!-- /.mobile-icon -->
-            <div class="mobile-content">
-              <em>Vehicle Health Report</em>
-            </div><!-- /.mobile-content -->
-          </div><!-- /.mobile -->
-        </div><!-- /.maintenance-card -->
-        <div class="maintenance-card">
-          <div class="desktop-and-tablet">
-            <em class="maintenance-card-title">
-              Active Recalls
-            </em>
-            <div class="maintenance-card-content with-icon">
-              <div class="maintenance-card-icon">
-                <i class="icon-recalls"></i>
-              </div><!-- /.maintenance-card-icon -->
-              <div class="maintenance-card-icon-info">
-                <strong>3</strong>
-                <em>Recalls for your vehicle</em>
-              </div><!-- /.maintenance-card-icon-info -->
-            </div><!-- /.maintenance-card-content -->
-          </div><!-- /.desktop-and-tablet -->
-          <div class="mobile">
-            <div class="mobile-icon">
-              <i class="icon-recalls"></i>
-            </div><!-- /.mobile-icon -->
-            <div class="mobile-content">
-              <strong class="large">
-                3
-              </strong>
-              <em>Active recalls</em>
-            </div><!-- /.mobile-content -->
-          </div><!-- /.mobile -->
-          <i class="icon-arrow-right"></i>
-        </div><!-- /.overview-maintenance -->
-      </div><!-- /.maintenance-card -->
-    </div><!-- /.contain -->
-    <div class="recommended-cards">
-      <div class="contain">
-        <div class="recommended-cards-header">
-          <strong>
-            Recommended
-          </strong>
-        </div><!-- /.recommended-cards-header -->
-        <div class="recommended-card locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Vehicle Location</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.recommended-card -->
-
-
-        <div class="recommended-card locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Preferred Dealer</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.recommended-card -->
-
-        <div class="recommended-card locked" data-toggle="modal" data-target="#activate-uvo">
-          <div class="overview-locked">
-            <div class="overview-locked-main">
-              <i class="icon-locked"></i>
-              <strong>Climate</strong>
-            </div><!-- /.overview-locked-main -->
-            <div class="overview-locked-button">
-              <span class="button full small bright-red">
-                Learn how to activate
-              </span>
-            </div><!-- /.overview-locked-button -->
-          </div><!-- /.overview-locked -->
-        </div><!-- /.recommended-card -->
-
-
-        <div class="recommended-card has-action">
-          <em class="recommended-card-title">
-            Financing
-          </em>
-          <div class="recommended-card-content">
-            <strong>
-              Your car payment is coming up!
-            </strong>
-            <div class="text-content">
-              <strong>
-                $194.65
-              </strong>
-              <em>
-                Due on Mar 03, 2017
-              </em>
-            </div><!-- /.text-content -->
-          </div><!-- /.recommended-card-content -->
-          <div class="recommended-card-action">
-            <span class="button">
-              Make A Payment
+  <div class="page-view view-remote">
+    <div class="page-view-subnav transparent">
+      <ul class="page-view-subnav-items">
+        <li>
+          <a href="#">
+            Security
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Climate
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            Battery
+          </a>
+        </li>
+      </ul><!-- /.page-view-subnav-items -->
+    </div><!-- /.page-view-subnav -->
+    <div class="remote-module">
+      <div class="overview-remote-commands-header">
+        <i class="open-info" data-toggle="modal" data-target="#about-battery">
+          i
+        </i><!-- /.open-info -->
+        <span class="remote-commands-refresh" data-action="refresh-page">
+          <span class="messages">
+            <span class="last-refreshed">
+              Last refreshed
+              <span class="time">4 hrs ago</span>
+            </span><!-- /.last-refreshed -->
+            <span class="refreshing">
+              Refreshing Status. Please Wait...
             </span>
-          </div><!-- /.recommended-card-action -->
-        </div><!-- /.recommended-card -->
-
-        <div class="recommended-card has-action colored colored-blue">
-          <div class="recommended-card-content">
-            <div class="text-content">
-              <i class="icon-bluetooth"></i>
-              <strong>
-                Learn about Bluetooth®
-              </strong>
-              <em>
-                Learn how your Bluetooth® system can enhance your driving experience.
-              </em>
-            </div><!-- /.text-content -->
-          </div><!-- /.recommended-card-content -->
-          <div class="recommended-card-action">
-            <span class="button">
-              Learn More
+          </span><!-- /.messages -->
+          <span class="updating-icon-status">
+            <span class="refresh-ready active"><i class="icon-refresh"></i></span>
+            <span class="refreshing"><i class="icon-communicating"></i></span>
+          </span><!-- /.updating-icon-status -->
+        </span><!-- /.remote-commands-refresh -->
+      </div><!-- /.remote-header -->
+      <div class="remote-body">
+        <div class="remote-meta-column left">
+          <strong>Total Ranges</strong>
+          <div class="remote-meta">
+            <i class="icon-gas-battery"></i>
+            <strong>316 mi</strong>
+            <em>Max Combined Range</em>
+          </div><!-- /.remote-meta -->
+          <div class="remote-meta">
+            <i class="icon-battery-small"></i>
+            <strong>18 mi</strong>
+            <em>Max Battery Range</em>
+          </div><!-- /.remote-meta -->
+        </div><!-- /.remote-meta -->
+        <div class="remote-meta-column right">
+          <strong>Estimated Charge Time</strong>
+          <div class="remote-meta">
+            <i class="icon-clock"></i>
+            <strong>1 hr. 30min</strong>
+            <em>Until Full charger</em>
+          </div><!-- /.remote-meta -->
+          <div class="remote-meta">
+            <i class="icon-charge-bolt-small"></i>
+            <strong>120V AC</strong>
+            <em>Level 1 Charging Station</em>
+          </div><!-- /.remote-meta -->
+        </div><!-- /.remote-meta -->
+        <div class="remote-battery">
+          <div class="battery">
+            <span class="percentage">32<sub>%</sub></span>
+          </div>
+        </div><!-- /.remote-battery -->
+      </div><!-- /.remote-body -->
+      <div class="remote-footer">
+        <div class="overview-remote-command state-1">
+          <div class="overview-remote-command-header">
+            <div class="overview-remote-command-header-state">
+              <span class="state-1 active">
+                Battery is charging
+              </span><!-- /.current-state -->
+              <span class="state-2">
+                Charge stopped
+              </span>
+            </div><!-- /.overview-remote-command-header-state -->
+            <div class="transitioning-messages">
+              <span class="state-1-2 active">
+                Stopping charge...
+              </span><!-- /.state-1-2 -->
+              <span class="state-2-1">
+                Starting charge...
+              </span><!-- /.state-2-1 -->
+            </div><!-- /.transitioning-messages -->
+          </div><!-- /.overview-remote-command-header -->
+          <div class="overview-remote-command-icon">
+            <span class="icon-remote">
+              <i class="icon-charging state-1 active"></i>
+              <i class="icon-charging state-2"></i>
+            </span><!-- /.icon-remote -->
+            <span class="spinner">
+              <i class="icon-communicating"></i>
             </span>
-          </div><!-- /.recommended-card-action -->
-        </div><!-- /.recommended-card -->
-
-        <div class="recommended-card has-action colored colored-red">
-          <div class="recommended-card-content">
-            <div class="text-content">
-              <i class="icon-play-square"></i>
-              <strong>
-                Informational Videos
-              </strong>
-              <em>
-                Watch informational videos about your vehicle.
-              </em>
-            </div><!-- /.text-content -->
-          </div><!-- /.recommended-card-content -->
-          <div class="recommended-card-action">
-            <span class="button">
-              Start Watching
-            </span>
-          </div><!-- /.recommended-card-action -->
-        </div><!-- /.recommended-card -->
-
-
-      </div><!-- /.contain -->
-    </div><!-- /.recommended-cards -->
-  </div><!-- /.view-overview -->
-</div><!-- /.has-mobile-nav -->
-<div class="modal fade activate-uvo" id="activate-uvo" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+          </div><!-- /.overview-remote-command-icon -->
+          <div class="overview-remote-command-actions">
+            <div ontouchstart="" class="action-buttons split">
+              <span ontouchstart="" class="action-button state-1 active" data-action="state-2-1">
+                <i class="icon-bolt"></i>
+                Start
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-2" data-action="state-1-2">
+                <i class="icon-stop"></i>
+                Stop
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+            </div><!-- /.overview-remtote-command-actions-buttons -->
+          </div><!-- /.overview-remote-command-actions -->
+        </div><!-- /.overview-remote-command -->
+        <div class="remote-footer-caption">
+          <strong>NOTIFY ME WHEN:</strong>  Begin Charging, Stop Charging, Battery is at 100% <i class="icon-cog-white"></i>
+        </div><!-- /.remote-footer-caption -->
+      </div><!-- /.remote-footer -->
+    </div><!-- /.remote-battery -->
+  </div><!-- /.view-securiry -->
+</div><!-- /.has-mobile-view -->
+<div class="modal fade about-battery" id="about-battery" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
       <div class="modal-body">
-        <strong>
-          How to activate UVO
-        </strong>
-        <div id="activate-uvo-slider" class="carousel slide" data-ride="carousel" data-interval="false">
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="modal-activate-uvo with-slider">
-
-                <div class="slider">
-                  <div class="slide">
-                    <div class="activate-uvo-panel">
-                      <div class="activate-uvo-panel-image">
-
-                      </div><!-- /.activate-uvo-panel-image -->
-                      <div class="activate-uvo-panel-text">
-                        <em>
-                          Step 1
-                        </em>
-                        <strong>
-                          Dapibus Pellentesque Sit Nibh
-                        </strong>
-                        <p>
-                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        </p>
-                      </div><!-- /.activate-uvo-panel-text -->
-                    </div><!-- /.activate-uvo-panel -->
-                  </div><!-- /.slide -->
-                  <div class="slide">
-                    <div class="activate-uvo-panel">
-                      <div class="activate-uvo-panel-image">
-
-                      </div><!-- /.activate-uvo-panel-image -->
-                      <div class="activate-uvo-panel-text">
-                        <em>
-                          Step 2
-                        </em>
-                        <strong>
-                          Dapibus Pellentesque Sit Nibh
-                        </strong>
-                        <p>
-                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        </p>
-                      </div><!-- /.activate-uvo-panel-text -->
-                    </div><!-- /.activate-uvo-panel -->
-                  </div><!-- /.slide -->
-                  <div class="slide">
-                    <div class="activate-uvo-panel">
-                      <div class="activate-uvo-panel-image">
-
-                      </div><!-- /.activate-uvo-panel-image -->
-                      <div class="activate-uvo-panel-text">
-                        <em>
-                          Step 3
-                        </em>
-                        <strong>
-                          Dapibus Pellentesque Sit Nibh
-                        </strong>
-                        <p>
-                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        </p>
-                      </div><!-- /.activate-uvo-panel-text -->
-                    </div><!-- /.activate-uvo-panel -->
-                  </div><!-- /.slide -->
-                  <div class="slide">
-                    <div class="activate-uvo-panel">
-                      <div class="activate-uvo-panel-image">
-
-                      </div><!-- /.activate-uvo-panel-image -->
-                      <div class="activate-uvo-panel-text">
-                        <em>
-                          Step 4
-                        </em>
-                        <strong>
-                          Dapibus Pellentesque Sit Nibh
-                        </strong>
-                        <p>
-                          Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        </p>
-                      </div><!-- /.activate-uvo-panel-text -->
-                    </div><!-- /.activate-uvo-panel -->
-                  </div><!-- /.slide -->
-                </div><!-- /.slider -->
-                <div class="toggle-footer">
-                  <span data-target="#activate-uvo-slider" data-slide-to="1">
-                    View All Steps
-                  </span>
-                </div><!-- /.toggle-footer -->
-              </div><!-- /.modal-activate-uvo.with-slider -->
-            </div><!-- /.item -->
-            <div class="item">
-              <div class="modal-activate-uvo no-slider">
-                <div class="activate-uvo-panel-wrap">
-                  <div class="activate-uvo-panel">
-                    <div class="activate-uvo-panel-image">
-
-                    </div><!-- /.activate-uvo-panel-image -->
-                    <div class="activate-uvo-panel-text">
-                      <em>
-                        Step 1
-                      </em>
-                      <strong>
-                        Dapibus Pellentesque Sit Nibh
-                      </strong>
-                      <p>
-                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                      </p>
-                    </div><!-- /.activate-uvo-panel-text -->
-                  </div><!-- /.activate-uvo-panel -->
-                  <div class="activate-uvo-panel">
-                    <div class="activate-uvo-panel-image">
-
-                    </div><!-- /.activate-uvo-panel-image -->
-                    <div class="activate-uvo-panel-text">
-                      <em>
-                        Step 2
-                      </em>
-                      <strong>
-                        Dapibus Pellentesque Sit Nibh
-                      </strong>
-                      <p>
-                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                      </p>
-                    </div><!-- /.activate-uvo-panel-text -->
-                  </div><!-- /.activate-uvo-panel -->
-                  <div class="activate-uvo-panel">
-                    <div class="activate-uvo-panel-image">
-
-                    </div><!-- /.activate-uvo-panel-image -->
-                    <div class="activate-uvo-panel-text">
-                      <em>
-                        Step 3
-                      </em>
-                      <strong>
-                        Dapibus Pellentesque Sit Nibh
-                      </strong>
-                      <p>
-                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                      </p>
-                    </div><!-- /.activate-uvo-panel-text -->
-                  </div><!-- /.activate-uvo-panel -->
-                  <div class="activate-uvo-panel">
-                    <div class="activate-uvo-panel-image">
-
-                    </div><!-- /.activate-uvo-panel-image -->
-                    <div class="activate-uvo-panel-text">
-                      <em>
-                        Step 4
-                      </em>
-                      <strong>
-                        Dapibus Pellentesque Sit Nibh
-                      </strong>
-                      <p>
-                        Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                      </p>
-                    </div><!-- /.activate-uvo-panel-text -->
-                  </div><!-- /.activate-uvo-panel -->
-                </div><!-- /.activate-uvo-panel-wrap -->
-                <div class="toggle-footer">
-                  <span data-target="#activate-uvo-slider" data-slide-to="0">
-                    View Step-By-Step
-                  </span>
-                </div><!-- /.toggle-footer -->
-              </div><!-- /.modal-activate-uvo.without-slider -->
-            </div><!-- /.item -->
-          </div><!-- /.carousel-inner -->
-        </div><!-- /.carousel -->
-      </div><!-- /.modal-body -->
-      <div class="mobile-modal-footer">
-        <span class="button full" data-action="modal-close">
-          Ok, got it!
-        </span>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<div class="modal fade how-to-activate-uvo" id="how-to-activate-uvo" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <span class="icon-close" data-dismiss="modal"></span>
-      <div class="modal-body">
-        <div class="modal-how-to-activate-uvo">
-          <strong>Activate UVO Today!</strong>
-          <p>We noticed you haven’t activated UVO yet. You’re missing out on great features like:</p>
+        <div class="modal-about-battery">
+          <strong>About your Battery</strong>
+          <h2>Supported Charging Ports</h2>
           <ul>
-            <li>UVO Feature 1</li>
-            <li>UVO Feature 2</li>
-            <li>UVO Feature 3</li>
-            <li>UVO Feature 4</li>
-            <li>...and more!</li>
+            <li>Level 1: 120V AC</li>
+            <li>Level 2: 240V AC DC Fast Charge</li>
           </ul>
-          <div class="modal-how-to-activate-uvo-actions">
-            <span class="button" data-dismiss="modal"  data-toggle="modal" data-target="#activate-uvo">Show me how to activate UVO</span>
-            <span class="button outline" data-dismiss="modal">Not Now</span>
-          </div><!-- /.modal-delete-actions -->
+          <h2>Battery Care Tips</h2>
+          <ul>
+            <li>Level 2 charge is recommended to keep the high voltage battery in optimal condition.</li>
+            <li>If the high voltage battery charge is below 20% you can keep the it’s performance in optimal condition by charging it to 100%.</li>
+            <li>Charging to 100% at least once a month is good for your high voltage battery.</li>
+            <li>Make sure you use a designated charger when charing the high voltage battery.</li>
+            <li>Make sure that the high voltage battery charger gauge does not read E (Empty). If the vehicle is kept at E (Empty)  for a long period. It may damage the high voltage battery.</li>
+            <li>Use of the quick charge in hot weather conditions should be minimized in order to help prolong high voltage battery life.</li>
+          </ul>
+          <h2>Charging Requirements</h2>
+          <ol>
+            <li>Pre-condition 1</li>
+            <li>Pre-condition 2</li>
+            <li>Pre-condition 3</li>
+            <li>Pre-condition 4</li>
+            <li>Pre-condition 5</li>
+          </ol>
         </div><!-- /.modal-delete -->
       </div><!-- /.modal-body -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#how-to-activate-uvo -->
-<script type="text/javascript">
-    $(window).on('load',function(){
-      $('#how-to-activate-uvo').modal('show');
-    });
-</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">

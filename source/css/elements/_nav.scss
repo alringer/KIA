@@ -163,7 +163,7 @@ nav.nav-app {
     + .nav-mobile + .page-view,
     + .page-view {
       padding-left: 111px;
-      margin-top: 70px;
+      padding-top: 70px;
       + footer {
         padding-left: 111px;
       }
@@ -457,7 +457,7 @@ nav.nav-app {
     + nav.nav-main {
       + .nav-mobile + .page-view,
       + .page-view {
-        margin-top: 60px;
+        padding-top: 60px;
       }
     }
     .nav-app {
@@ -878,7 +878,7 @@ body.refreshing {
   .has-mobile-nav {
     + .nav-mobile + .page-view,
     + .page-view {
-      margin-top: 60px;
+      padding-top: 60px;
     }
     nav.nav-main {
       display: none;

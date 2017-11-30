@@ -42,4 +42,14 @@
       }
     }
   }
+  &.transparent {
+    background: none;
+    .page-view-subnav {
+      &-items {
+        li {
+          margin: 0 40px;
+        }
+      }
+    }
+  }
 }

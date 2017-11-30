@@ -362,8 +362,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/recommended-cards.css",
-		"oF": 2,
+		"oAP": "\/build\/css\/modules\/recommended-cards.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -376,6 +376,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/reference-cards.css",
+		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/modules\/remote-battery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/remote-battery.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
@@ -431,6 +444,16 @@
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/source\/images\/battery_shell.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/battery_shell.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/source\/images\/icon-bluetooth.svg": {
 		"ft": 2097152,
@@ -522,11 +545,41 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_battery_small.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_battery_small.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_cancel_circle.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_cancel_circle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_charge_bolt_small.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_charge_bolt_small.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_charge_white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_charge_white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -572,11 +625,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_clock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_clock.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_cog.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_cog.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_cog_white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_cog_white.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -602,6 +675,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/icon_communicating_white.png": {
+		"ft": 32768,
+		"iS": 500,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_communicating_white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/icon_down_arrow.svg": {
 		"ft": 2097152,
@@ -638,6 +722,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_fan_on.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_gas_battery.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_gas_battery.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -958,6 +1052,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_sort.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_stop.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_stop.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1376,6 +1480,16 @@
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"\/source\/images\/spinner_white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/spinner_white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/source\/images\/uvo-logo-black.svg": {
 		"ft": 2097152,
@@ -3041,6 +3155,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/registration-9.html",
+		"oF": 0
+		},
+	"\/source\/views\/remote-battery.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/remote-battery.html",
 		"oF": 0
 		}
 	},

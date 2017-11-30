@@ -60,41 +60,6 @@
       text-align: left;
       transition: all 250ms $easeOutQuint;
     }
-    .remote-commands-refresh {
-      display: block;
-      position: absolute;
-      font-size: 12px;
-      line-height: 1em;
-      right: 5px;
-      color: rgba($black,.7);
-      letter-spacing: .3px;
-      text-align: right;
-      top: 0;
-      cursor: pointer;
-      transition: all 250ms $easeOutQuint;
-      .messages {
-        position: absolute;
-        right: 32px;
-        white-space: nowrap;
-        top: 50%;
-        transform: translateY(-50%);
-        > span {
-          position: absolute;
-          top: 50%;
-          right: 0;
-          transform: translate(0, -50%);
-          transition: all 250ms $easeOutQuint;
-          display: block;
-          opacity: 0;
-          margin-top: -10px;
-          &.last-refreshed {
-            margin-top: 0px;
-            opacity: 1;
-            transform: translate(0, -50%);
-          }
-        }
-      }
-    }
     @media (max-width: 700px) {
       display: none;
     }
@@ -533,6 +498,11 @@
   display: inline-block;
   background: url('/images/icon_communicating.png') center/contain no-repeat;
   animation: spin 1s infinite linear;
+  &.white {
+    background-image: url('/images/icon_communicating_white.png');
+    width: 17px;
+    height: 17px;
+  }
 }
 
 .icon-refresh  {
@@ -617,6 +587,43 @@
     .refreshing {
       transform: translate(-50%, -50%) scale(1);
       opacity: 1;
+    }
+  }
+}
+
+
+.remote-commands-refresh {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  line-height: 1em;
+  right: 5px;
+  color: rgba($black,.7);
+  letter-spacing: .3px;
+  text-align: right;
+  top: 0;
+  cursor: pointer;
+  transition: all 250ms $easeOutQuint;
+  .messages {
+    position: absolute;
+    right: 32px;
+    white-space: nowrap;
+    top: 50%;
+    transform: translateY(-50%);
+    > span {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      transition: all 250ms $easeOutQuint;
+      display: block;
+      opacity: 0;
+      margin-top: -10px;
+      &.last-refreshed {
+        margin-top: 0px;
+        opacity: 1;
+        transform: translate(0, -50%);
+      }
     }
   }
 }

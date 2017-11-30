@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Battery*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hybrid-Battery-is-Plugged-In-|-Desktop" transform="translate(-611.000000, -663.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="CTA-Area" transform="translate(162.000000, 554.000000)">
+                <g id="CTA-Buttons" transform="translate(275.000000, 97.000000)">
+                    <g id="Stop-Button" transform="translate(141.000000, 0.000000)">
+                        <g id="Group-8" transform="translate(33.000000, 12.000000)">
+                            <path d="M7.5,0 C3.36666667,0 0,3.36666667 0,7.5 C0,11.6333333 3.36666667,15 7.5,15 C11.6333333,15 15,11.6333333 15,7.5 C15,3.36666667 11.6333333,0 7.5,0 Z M7.5,13.45 C4.21666667,13.45 1.55,10.7833333 1.55,7.5 C1.55,6.18333333 1.98333333,4.96666667 2.71666667,3.96666667 L11.0333333,12.2833333 C10.0333333,13.0166667 8.81666667,13.45 7.5,13.45 Z M12.2833333,11.0333333 L3.96666667,2.71666667 C4.95,1.98333333 6.16666667,1.55 7.5,1.55 C10.7833333,1.55 13.45,4.21666667 13.45,7.5 C13.45,8.81666667 13.0166667,10.0333333 12.2833333,11.0333333 Z" id="Shape" transform="translate(7.500000, 7.500000) scale(-1, 1) translate(-7.500000, -7.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
