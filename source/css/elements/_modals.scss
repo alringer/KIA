@@ -201,14 +201,17 @@ body .modal {
         height: auto !important;
         min-height: 0 !important;
         max-height: none !important;
+        overflow: auto;
         .modal-content {
           min-height: 100%;
+          overflow: auto;
           .modal-body {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
+            overflow: auto;
             .carousel {
               position: absolute;
               top: 0;
@@ -224,6 +227,7 @@ body .modal {
                 .item {
                   min-height: 100%;
                   max-height: 100%;
+                  overflow: auto;
                 }
               }
             }
@@ -937,8 +941,10 @@ body.modal-open {
     .dynamic-card-detail {
       padding: 72px 25px 40px;
       overflow: hidden;
-      max-width: 360px;
       margin: 0 auto;
+      @media (max-width: $screen-xs-max) {
+        max-width: 360px;
+      }
       &-list {
         padding: 0;
         margin: 0;
@@ -949,8 +955,10 @@ body.modal-open {
         float: left;
         margin-right: 30px;
         &-description {
-          float: left;
-          max-width: calc(100% - 165px);
+          @media (max-width: $screen-xs-max) {
+            float: left;
+            max-width: calc(100% - 165px);
+          }
           .dnyamic-card-titles {
             display: block;
           }
@@ -1243,6 +1251,14 @@ body.modal-open {
                 }
                 .phone {
                   background: url('/images/icon_phone.svg') left center no-repeat;
+                  color: $black;
+                  span {
+                    color: $black;
+                    -webkit-appearance: none;
+                    a {
+                      color: $black;
+                    }
+                  }
                 }
               }
             }
