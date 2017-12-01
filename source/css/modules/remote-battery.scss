@@ -70,14 +70,14 @@
   .remote-meta-column {
     position: absolute;
     left: 50%;
-    transform: translateX(calc(-150% - 3vw));
+    transform: translateX(-150%) translateX(-3vw);
     padding-top: 50px;
     width: 190px;
     white-space: nowrap;
     &.right {
       left: auto;
       right: 50%;
-      transform: translateX(calc(150% + 3vw));
+      transform: translateX(150%) translateX(3vw);
       .remote-meta {
         padding-left: 40px;
         i {
@@ -122,7 +122,7 @@
       }
       em {
         display: block;
-        font: bold 10px $kia;
+        font: bold 10px $kia !important;
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #969696;
@@ -574,7 +574,7 @@
         position: absolute;
         top: 50%;
         left: 15px;
-        transform: translateY(calc(-50% + 10px));
+        transform: translateY(-50%) translateY(10px);
       }
       p {
         font: 16px/1.44em $sans;
@@ -601,7 +601,7 @@
         padding-top: 0;
         height: 80px;
         > i {
-          transform: translateY(calc(-50% + 2px));
+          transform: translateY(-50%) translateY(2px);
         }
         p {
           position: absolute;

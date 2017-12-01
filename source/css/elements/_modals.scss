@@ -62,12 +62,12 @@ body .modal {
     position: absolute;
     top: 28px;
     left: 30px;
-    width: 10px;
-    height: 20px;
+    width: 30px;
+    height: 17px;
     cursor: pointer;
     transition: all 250ms $easeOutQuint;
     z-index: 3;
-    background: url('/images/icon_back_arrow.svg') center/contain no-repeat;
+    background: url('/images/icon_back_arrow.svg') left center/contain no-repeat;
     opacity: 0;
     pointer-events: none;
   }
