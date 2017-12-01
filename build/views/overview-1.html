@@ -1196,18 +1196,33 @@
                       <label>
                         <strong>Nickname</strong>
                         <input type="text" name="" value="My Niro">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
                       </label>
                     </li>
                     <li>
                       <label>
                         <strong>License Plate</strong>
                         <input type="text" name="" value="PE257H">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
                       </label>
                     </li>
                     <li>
                       <label>
                         <strong>Recommended PSI</strong>
                         <input type="text" name="" value="32">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
                         <span class="helper">
                           Find your recommended PSI in your vehicles owners manual
                         </span>
@@ -1375,11 +1390,19 @@
                   Create Custom Field
                 </strong>
                 <form action="" class="custom-meta-form">
+                  <span class="error-message error-message-main">
+                    <span class="error-message-inner show">Oops! Looks like you missed a few things. Please review the form below and see what you missed.</span>
+                  </span>
                   <ul class="form-fields">
                     <li>
                       <label>
                         <strong>Field Label</strong>
                         <input type="text" name="" value="" class="add-meta-field-input">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
                         <span class="helper">
                           Create a label for your custom field
                         </span>
@@ -1389,6 +1412,11 @@
                       <label>
                         <strong>Helper Text</strong>
                         <input type="text" name="" value="">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
                       </label>
                     </li>
                   </ul><!-- /.form-fields -->

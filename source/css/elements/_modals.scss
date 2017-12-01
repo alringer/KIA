@@ -1180,6 +1180,7 @@ body.modal-open {
           height: auto;
           margin-bottom: 5px;
           clear: both;
+          overflow: hidden;
           &.extra-space {
             padding-top: 10px;
           }
@@ -1200,6 +1201,14 @@ body.modal-open {
           input {
             float: right;
             width: 230px;
+          }
+          .error-message {
+            float: right;
+            width: 230px;
+            @media (max-width: $screen-xs-max) {
+              width: 100%;
+              float: none;
+            }
           }
           &.has-dealer-choice.no-input {
             @media (max-width: $screen-xs-max) {
