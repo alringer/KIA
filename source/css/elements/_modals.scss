@@ -1193,6 +1193,60 @@ body.modal-open {
             float: right;
             width: 230px;
           }
+          &.has-dealer-choice.no-input {
+            @media (max-width: $screen-xs-max) {
+              > strong {
+                display: inline-block;
+                float: left;
+              }
+              .link {
+                float: right;
+              }
+              .preferred-dealer-choice {
+                float: none;
+                clear: both;
+                width: calc(100% + 20px);
+                display: block;
+                padding-left: 30px;
+                margin-bottom: 20px;
+                a {
+                  display: none;
+                }
+                strong {
+                  display: block;
+                  margin-bottom: 4px;
+                  position: relative;
+                  left: -30px;
+                }
+                .address,
+                .phone {
+                  border-bottom: 1px solid #d5d5d5;
+                  padding-top: 15px;
+                  padding-bottom: 15px;
+                  padding-left: 40px;
+                  position: relative;
+                  width: 100%;
+                  &:after {
+                    content: "";
+                    display: block;
+                    right: 22px;
+                    width: 11px;
+                    height: 13px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    background: url('/images/icon_arrow_right_dark.svg') right center/contain no-repeat;
+                  }
+                }
+                .address {
+                  background: url('/images/icon_location_circle.svg') left center no-repeat;
+                }
+                .phone {
+                  background: url('/images/icon_phone.svg') left center no-repeat;
+                }
+              }
+            }
+          }
           .link {
             float: right;
             font: bold 11px/40px $kia;
@@ -1212,6 +1266,32 @@ body.modal-open {
               height: 10px;
               transform: translateY(-50%) rotate(180deg);
               background: url('/images/icon_back_arrow.svg') center/contain no-repeat;
+            }
+          }
+          .preferred-dealer-choice {
+            float: right;
+            width: 131px;
+            display: inline-block;
+            font: 14px/1.5em $sans;
+            padding-top: 10px;
+            letter-spacing: .6px;
+            margin-right: 36px;
+            margin-bottom: 10px;
+            strong {
+              text-transform: none;
+              font: inherit;
+              font-weight: bold;
+            }
+            span {
+              display: block;
+            }
+            a {
+              display: inline-block;
+              color: $red;
+              font: bold 11px/1em $kia;
+              text-transform: uppercase;
+              letter-spacing: .7px;
+              margin-bottom: 17px;
             }
           }
           .helper {
