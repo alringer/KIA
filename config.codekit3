@@ -362,8 +362,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/modules\/recommended-cards.css",
-		"oF": 0,
+		"oAP": "\/build\/css\/recommended-cards.css",
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -3364,6 +3364,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav-mobile-overview.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/nav-mobile-remote.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-mobile-remote.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/nav.kit": {
