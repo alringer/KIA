@@ -13,10 +13,27 @@
 </style>
 
 # V - 3.0.0
-* KK-97 [Mobile, Tablet] Clicking outside of menu does not work properly
-* KK-124 Mobile view Tool tip is not Coming
-* KK-127 Extra line coming below header on overview pages
-* Added Activate UVO Modal on non-activated UVO overview (previously part of v3)
+* KOPE-87 IE edge Rendering Issue
+* KOPE-58 IE - Font is Stripped
+* KK-59 As a user I need to see recommended card templates
+* KK- 60 As a user, I need to be able to browse, add and remove dynamic cards
+* KK-173 As a user I need a Preferred Dealer card
+* KK-175 As a user I need a Climate card template
+* KK-176 As a user I need a Financing card template
+* KK-177 As a user I need a Learn About Bluetooth card
+* KK-178 As a user I need a Informational Videos card
+* KK-80 As a user I need to choose my preferred dealer
+* KK-69 As a user I need to see the vehicle settings modal
+* KK-93 As user I need to delete a vehicle
+* KK-81 As a user I need to create a custom field
+* KK-172 As a user I need a Vehicle Location card
+* KK-265 As a user I need to be able to edit my mileage
+* KK-66 As a user I need to see global error and success notifications
+* KK-157 As a user I need to refresh the page
+* KK-158 As a user I need to send a start / stop charge command
+* KK-159 As a user I need to see a Find Charging Station card
+* KK-160 As a user I need to see a Charge Schedule card
+* KK-161 As a user I need to see the About Your Battery modal
 ===
 # V - 2.1.0
 * KK-97 [Mobile, Tablet] Clicking outside of menu does not work properly
