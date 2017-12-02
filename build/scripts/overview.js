@@ -6,7 +6,7 @@ $(document).ready(function () {
       add_meta_submit: $('.add-meta-field-submit'),
       add_meta_input: $('.add-meta-field-input'),
       set_dealer_radio: $('[name="preferred-dealer"]'),
-      dealer_submit: $('.preferred-dealer-submit'),
+      dealer_submit: $('.preferred-dealer-submit')
     },
     methods: {
       _meta_form_validation: function _meta_form_validation() {
@@ -23,14 +23,10 @@ $(document).ready(function () {
         } else {
           window.overview.elements.dealer_submit.addClass('disabled');
         }
-      },
-      _custom_meta_success : () => {
-        alerts.methods.open._success();
       }
     }
   };
   // EVENTS
-  window.overview.elements.add_meta_submit.on('click', window.overview.methods._custom_meta_success);
   window.overview.elements.add_meta_input.on('keyup', window.overview.methods._meta_form_validation);
   window.overview.elements.set_dealer_radio.on('change', window.overview.methods._dealer_validation);
 });
