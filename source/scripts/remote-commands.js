@@ -6,6 +6,7 @@ $(document).ready(() => {
       remote_command : $('.overview-remote-command'),
       remote_command_buttons : $('.overview-remote-command-actions .action-button'),
       refresh_buttons : $('[data-action="refresh-page"]'),
+      trigger_error : $('.trigger-remote-error'),
     },
     methods : {
       _communicate : function() {
@@ -49,9 +50,15 @@ $(document).ready(() => {
           window.loading.methods._loading_stop();
         }, 3000);
       },
+      _trigger_error : () => {
+        setTimeout(() => {
+          window.alerts.methods.open._error();
+        }, 3000)
+      }
     }
   };
   // EVENTS
   window.remoteCommands.elements.remote_command_buttons.on('click', window.remoteCommands.methods._communicate);
   window.remoteCommands.elements.refresh_buttons.on('click', window.remoteCommands.methods._refresh);
+  window.remoteCommands.elements.trigger_error.on('click', window.remoteCommands.methods._trigger_error);
 });

@@ -132,10 +132,13 @@
     .alert {
       width: 100%;
       padding-left: 60px;
-      transform: translateY(calc(-100% - 70px));
+      transform: translateY(-100%) translateY(-70px) !important;
       opacity: 0;
+      left: 0;
+      right: 0;
       &.in {
         opacity: 1;
+        transform: translateY(0) !important;
       }
       &-success {
         background-position: 19px center;
