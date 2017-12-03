@@ -1027,7 +1027,7 @@
     </div><!-- /.recommended-cards -->
   </div><!-- /.view-overview -->
 </div><!-- /.has-mobile-nav -->
-<div class="modal fade add-card" id="add-card" tabindex="-1" role="dialog" aria-labelledby="add-card" aria-hidden="true">
+<div class="modal fade add-card has-fixed-footer" id="add-card" tabindex="-1" role="dialog" aria-labelledby="add-card" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
@@ -1112,13 +1112,19 @@
                         </div>
                         <p>
                           &lt;Card Description&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo vitae nibh ac maximus. Vivamus pharetra et diam eu accumsan. Proin auctor in risus in venenatis. Proin at libero sed tellus venenatis tristique ut sed nisi.
+                          &lt;Card Description&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo vitae nibh ac maximus. Vivamus pharetra et diam eu accumsan. Proin auctor in risus in venenatis. Proin at libero sed tellus venenatis tristique ut sed nisi.
+                          &lt;Card Description&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo vitae nibh ac maximus. Vivamus pharetra et diam eu accumsan. Proin auctor in risus in venenatis. Proin at libero sed tellus venenatis tristique ut sed nisi.
                         </p>
-                        <div class="dynamic-card-detail-actions">
+                        <div class="dynamic-card-detail-actions desktop">
                           <span class="button outline active" data-dynamic-card-action="add" data-dynamic-card="dnyamic-card-1"><i class="fa fa-plus"></i> Add to dashboard</span>
                           <span class="button" data-dynamic-card-action="remove" data-dynamic-card="dnyamic-card-1"><i class="fa fa-close"></i> Remove from dashboard</span>
                         </div><!-- /.dynamic-card-detail-actions -->
                       </div><!-- /.dynamic-card-description -->
                     </div><!-- /.dynamic-card-detail -->
+                    <div class="dynamic-card-detail-actions mobile">
+                      <span class="button outline active" data-dynamic-card-action="add" data-dynamic-card="dnyamic-card-1"><i class="fa fa-plus"></i> Add to dashboard</span>
+                      <span class="button" data-dynamic-card-action="remove" data-dynamic-card="dnyamic-card-1"><i class="fa fa-close"></i> Remove from dashboard</span>
+                    </div><!-- /.dynamic-card-detail-actions -->
                   </li>
                 </ul><!-- /.dynamic-card-detail-list -->
               </div><!-- /.modal-add-card -->
@@ -1260,8 +1266,7 @@
               </div><!-- /.modal-vehicle-settings -->
             </div><!-- /.item -->
             <div class="item show-back">
-              <div class="secondary-modal-options">
-                <div class="secondary-modal-option modal-preferred-dealer">
+                <div class="modal-preferred-dealer">
                   <strong class="modal-title">Choose a dealer</strong>
                   <div class="map-wrap">
                     <div class="map">
@@ -1381,8 +1386,7 @@
                     Use this dealer
                   </span>
                 </div>
-                </div><!-- /.secondary-modal-option -->
-              </div><!-- /.secondary-modal-options -->
+              </div><!-- /.secondary-modal-option -->
             </div><!-- /.item -->
             <div class="item show-back">
               <div class="modal-custom-field">

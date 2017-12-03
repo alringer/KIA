@@ -4,8 +4,14 @@ $(document).ready(function() {
       modal : $('.modal'),
       carousel : $('.modal .carousel'),
       modal_slider : $('.modal .slider'),
+      body : $('body'),
     },
     methods : {
+      _stop_scroll : (e) => {
+        if(window.modals.body.hasClass('modal-open')) {
+          e.preventDefault();
+        }
+      },
       _carousel_slide : function(data) {
         var $this = $(this),
             $target = $(data.relatedTarget),
@@ -91,6 +97,7 @@ $(document).ready(function() {
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._modal_slider_fix);
   window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._modal_slider_fix);
+  window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
 
   // SETUP
   window.modals.methods._modal_slider();

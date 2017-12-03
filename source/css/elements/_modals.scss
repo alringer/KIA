@@ -950,8 +950,13 @@ body.modal-open {
         }
       }
       @media (max-width: $screen-xs-max) {
-        padding-bottom: 200px !important;
-        max-height: 100vh;
+        padding-bottom: 100px !important;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
       }
     }
     .dynamic-card-detail {
@@ -1054,14 +1059,14 @@ body.modal-open {
   @media (max-width: $screen-xs-max) {
     .modal-add-card {
       position: absolute;
-      top: 0;
+      top: 15px;
       left: 0;
       right: 0;
       bottom: 0;
     }
     .dynamic-card-detail-list {
       position: absolute;
-      top: 15px;
+      top: 0;
       left: 0;
       right: 0;
       bottom: 0;
@@ -1072,7 +1077,6 @@ body.modal-open {
         right: 0;
         bottom: 0;
         overflow: auto;
-        padding-bottom: 100px;
       }
       .modal-title {
         display: block;
@@ -1103,12 +1107,15 @@ body.modal-open {
       }
       .dynamic-card {
         &-detail {
-          position: relative;
-          height: 100%;
-          padding-bottom: 0px;
-          overflow: scroll;
+          position: absolute;
+          top: 50px;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding-bottom: 100px;
+          overflow: auto;
           &-actions {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             left: 15px;
             right: 15px;
@@ -1564,6 +1571,11 @@ body.modal-open {
     }
   }
   @media (max-width: $screen-xs-max) {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
     .map-wrap {
       .map {
         height: 210px;
@@ -1571,6 +1583,7 @@ body.modal-open {
     }
     .radio-choices {
       max-height: calc(100vh - 425px);
+      padding-bottom: 50px;
       li {
         .radio {
           > em {
@@ -1582,6 +1595,15 @@ body.modal-open {
           }
         }
       }
+    }
+    .modal-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      // right: 0;
+      background: $white;
+      z-index: 1;
+      width: 100%;
     }
   }
 }
