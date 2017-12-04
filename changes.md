@@ -34,6 +34,7 @@
 * KK-159 As a user I need to see a Find Charging Station card
 * KK-160 As a user I need to see a Charge Schedule card
 * KK-161 As a user I need to see the About Your Battery modal
+##### _notes: Fire global alerts using: window.alerts.methods.open._success() or window.alerts.methods.open._error();_
 ===
 # V - 2.1.0
 * KK-97 [Mobile, Tablet] Clicking outside of menu does not work properly
