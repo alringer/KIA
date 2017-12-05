@@ -12,6 +12,9 @@
   }
 </style>
 
+# V - 3.5.0
+
+===
 # V - 3.0.0
 * KOPE-87 IE edge Rendering Issue
 * KOPE-58 IE - Font is Stripped
