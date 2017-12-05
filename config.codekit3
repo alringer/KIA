@@ -3463,6 +3463,13 @@
 		"oA": 0,
 		"oAP": "\/build\/views\/remote-battery.html",
 		"oF": 0
+		},
+	"\/source\/views\/remote-security.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/remote-security.html",
+		"oF": 0
 		}
 	},
 "hooks": [
