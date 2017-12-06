@@ -591,6 +591,7 @@
         }
       }
     }
+    &.climate-schedule,
     &.charge-schedule {
       padding-left: 97px;
       padding-top: 43px;
@@ -643,6 +644,27 @@
         }
       }
     }
+
+    &.climate-schedule {
+      p {
+        padding-right: 35px;
+        strong {
+          display: inline-block;
+        }
+      }
+      > i {
+        text-align: center;
+        padding-left: 5px;
+        font: bold 18px/57px $kia;
+        transform: translateY(-50%);
+        sup {
+          position: relative;
+          font-size: 12px;
+          top: -5px;
+        }
+      }
+    }
+    &.no-climate-schedule,
     &.no-charge-schedule {
       i {
         display: block;
@@ -783,6 +805,15 @@
   height: 40px;
   width: 27px;
 }
+.icon-climate-schedule {
+  background: url('/images/icon_climate_schedule.png') center/contain no-repeat;
+  width: 57px;
+  height: 57px;
+  @media (max-width: $screen-xs-max) {
+    width: 40px;
+    height: 55px;
+  }
+}
 .icon-3d-battery {
   background: url('/images/icon_3d_battery_small.svg') center/contain no-repeat;
   width: 70px;
@@ -832,6 +863,11 @@
   background: url('/images/icon_locked_white.svg') center/contain no-repeat;
   width: 12px;
   height: 14px;
+}
+.icon-fan-white {
+  background: url('/images/icon_remote_fan_white.svg') center/contain no-repeat;
+  width: 15px;
+  height: 15px;
 }
 .icon-fan-dark {
   background: url('/images/icon_remote_fan.svg') center/contain no-repeat;
