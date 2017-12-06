@@ -1340,6 +1340,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_remote_fan.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_remote_fan.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_search.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3549,7 +3559,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534208333
+	"lastBuiltDate": 534289524
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
