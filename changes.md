@@ -16,6 +16,9 @@
 ##### _notes: Fire global alerts using: window.alerts.methods.open.\_success() or window.alerts.methods.open.\_error()_
 ===
 
+# V - 3.5.0
+
+===
 # V - 3.0.0
 * KOPE-87 IE edge Rendering Issue
 * KOPE-58 IE - Font is Stripped

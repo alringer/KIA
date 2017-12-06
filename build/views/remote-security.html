@@ -568,9 +568,9 @@
         </li>
       </ul><!-- /.page-view-subnav-items -->
     </div><!-- /.page-view-subnav -->
-    <div class="remote-module">
+    <div class="remote-module remote-security">
       <div class="overview-remote-commands-header">
-        <i class="open-info" data-toggle="modal" data-target="#about-battery">
+        <i class="open-info" data-toggle="modal" data-target="#about-security">
           i
         </i><!-- /.open-info -->
         <span class="remote-commands-refresh" data-action="refresh-page">
@@ -590,62 +590,35 @@
         </span><!-- /.remote-commands-refresh -->
       </div><!-- /.remote-header -->
       <div class="remote-body">
-        <div class="remote-meta-column left">
-          <strong>Total Ranges</strong>
-          <div class="remote-meta">
-            <i class="icon-gas-battery"></i>
-            <strong>316 mi</strong>
-            <em>Max Combined Range</em>
-          </div><!-- /.remote-meta -->
-          <div class="remote-meta">
-            <i class="icon-battery-small"></i>
-            <strong>18 mi</strong>
-            <em>Max Battery Range</em>
-          </div><!-- /.remote-meta -->
-        </div><!-- /.remote-meta -->
-        <div class="remote-meta-column right">
-          <strong>Estimated Charge Time</strong>
-          <div class="remote-meta">
-            <i class="icon-clock"></i>
-            <strong>1 hr. 30min</strong>
-            <em>Until Full charger</em>
-          </div><!-- /.remote-meta -->
-          <div class="remote-meta">
-            <i class="icon-charge-bolt-small"></i>
-            <strong>120V AC</strong>
-            <em>Level 1 Charging Station</em>
-          </div><!-- /.remote-meta -->
-        </div><!-- /.remote-meta -->
-        <div class="remote-battery">
-          <div class="battery percentage-32">
-            <span class="percentage">32<sub>%</sub></span>
-          </div>
-        </div><!-- /.remote-battery -->
+        <img src="/images/image_door_open.png" alt="Driver Door Open" />
       </div><!-- /.remote-body -->
       <div class="remote-footer">
-        <div class="overview-remote-command state-1">
+        <div class="overview-remote-command remote-command-security state-1">
           <div class="overview-remote-command-header">
             <div class="overview-remote-command-header-state">
               <span class="state-1 active">
-                Battery is charging
+                Vehicle is unlocked
               </span><!-- /.current-state -->
               <span class="state-2">
-                Charge stopped
+                Vehicle is locked
               </span>
             </div><!-- /.overview-remote-command-header-state -->
             <div class="transitioning-messages">
               <span class="state-1-2 active">
-                Stopping charge...
+                Locking doors...
               </span><!-- /.state-1-2 -->
               <span class="state-2-1">
-                Starting charge...
+                Unlocking doors...
+              </span><!-- /.state-2-1 -->
+              <span class="state-x-3">
+                Activating horn & lights...
               </span><!-- /.state-2-1 -->
             </div><!-- /.transitioning-messages -->
           </div><!-- /.overview-remote-command-header -->
           <div class="overview-remote-command-icon">
             <span class="icon-remote">
-              <i class="icon-charging state-1 active"></i>
-              <i class="icon-charging state-2"></i>
+              <i class="icon-lock-dark state-1 active"></i>
+              <i class="icon-lock-dark state-2"></i>
             </span><!-- /.icon-remote -->
             <span class="spinner">
               <i class="icon-communicating"></i>
@@ -654,13 +627,17 @@
           <div class="overview-remote-command-actions">
             <div ontouchstart="" class="action-buttons split">
               <span ontouchstart="" class="action-button state-1 active" data-action="state-2-1">
-                <i class="icon-bolt"></i>
-                Start
+                <i class="icon-unlock-white"></i>
+                Unlock
                 <span class="spinner"><i class="icon-communicating white"></i></span>
               </span><!-- /.action-button -->
               <span ontouchstart="" class="action-button state-2 trigger-remote-error" data-action="state-1-2">
-                <i class="icon-stop"></i>
-                Stop
+                <i class="icon-lock-white"></i>
+                Lock
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button confirm-action state-3" data-action="state-x-3">
+                <i class="icon-horn"></i>
                 <span class="spinner"><i class="icon-communicating white"></i></span>
               </span><!-- /.action-button -->
             </div><!-- /.overview-remtote-command-actions-buttons -->
@@ -670,86 +647,22 @@
           <strong>
             NOTIFY ME WHEN:
           </strong>
-          Begin Charging, Stop Charging, Battery is at 100%
+          Vehicle is locked, vehicle is unlocked
           <i class="icon-cog-white"></i>
         </div><!-- /.remote-footer-caption -->
       </div><!-- /.remote-footer -->
     </div><!-- /.remote-battery -->
-    <div class="remote-footer-cards">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="remote-footer-card find-charge-station">
-            <i class="icon-card-charge-station-pin"></i>
-            <strong>
-              Find your nearest charging station
-            </strong>
-            <a href="#" class="button outline white transparent less-padding">Locate A Station</a>
-            <i class="icon-arrow-right white"></i>
-          </div><!-- /.remote-footer-card -->
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <div class="remote-footer-card charge-schedule">
-            <i class="icon-3d-battery"></i>
-            <p>
-              Your car will start charging tomorrow morning from:
-              <strong>
-                1:10am to 6:30am
-              </strong>
-            </p>
-            <a href="#">
-              <i class="icon-calendar-small"></i>
-              Manage Schedules
-            </a>
-            <i class="icon-arrow-right"></i>
-          </div><!-- /.remote-footer-card -->
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <div class="remote-footer-card charging-etiquette">
-            <strong>
-              Charge station etiquette
-            </strong>
-            <p>
-              A few simple tips to help make the charge station experience postive for everyone.
-            </p>
-            <a href="#" class="button outline white transparent less-padding">Read More...</a>
-            <i class="icon-arrow-right white"></i>
-          </div><!-- /.remote-footer-card -->
-        </div><!-- /.col -->
-        <div class="col-sm-6">
-          <div class="remote-footer-card no-charge-schedule">
-            <i class="icon-no-charge-schedule"></i>
-            <strong>
-              No upcoming charge schedules
-            </strong>
-            <i class="icon-arrow-right"></i>
-          </div><!-- /.remote-footer-card -->
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.remote-cards -->
   </div><!-- /.view-securiry -->
 </div><!-- /.has-mobile-view -->
-<div class="modal fade about-battery" id="about-battery" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal fade about-security" id="about-security" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
       <div class="modal-body">
-        <div class="modal-about-battery">
-          <strong>About your Battery</strong>
-          <h2>Supported Charging Ports</h2>
-          <ul>
-            <li>Level 1: 120V AC</li>
-            <li>Level 2: 240V AC DC Fast Charge</li>
-          </ul>
-          <h2>Battery Care Tips</h2>
-          <ul>
-            <li>Level 2 charge is recommended to keep the high voltage battery in optimal condition.</li>
-            <li>If the high voltage battery charge is below 20% you can keep its performance in optimal condition by charging it to 100%.</li>
-            <li>Charging to 100% at least once a month is good for your high voltage battery.</li>
-            <li>Make sure you use a designated charger when charging the high voltage battery.</li>
-            <li>Make sure that the high voltage battery charger gauge does not read E (Empty). If the vehicle is kept at E (Empty) for a long period, it may damage the high voltage battery.</li>
-            <li>Use of the quick charge in hot weather conditions should be minimized in order to help prolong high voltage battery life.</li>
-          </ul>
-          <h2>Charging Requirements</h2>
+        <div class="modal-about-security">
+          <strong>Securing your vehicle</strong>
+          <p>Any helpful body copy can goe here including pre-conditions for locking and unlocking your vehicle</p>
+          <h2>REQUIREMENTS FOR LOCKING AND UNLOCKING YOUR VEHICLE:</h2>
           <ol>
             <li>Pre-condition 1</li>
             <li>Pre-condition 2</li>
@@ -761,7 +674,7 @@
       </div><!-- /.modal-body -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div><!-- /.modal#how-to-activate-uvo -->
+</div><!-- /.modal#about-battery -->
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">

@@ -1,0 +1,152 @@
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/overview-remote-commands.css">
+  <link rel="stylesheet" href="/css/reference-cards.css">
+  <link rel="stylesheet" href="/css/remote.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/map-files.kit" -->
+  <script type="text/javascript" src="/vendors/mixitup/mixitup.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/overview.js"></script>
+  <script type="text/javascript" src="/scripts/remote-commands.js"></script>
+  <script type="text/javascript" src="/scripts/add-card.js"></script>
+
+<!-- @import "partials/head/head-end.kit" -->
+<!-- @import "partials/loading.kit" -->
+<!-- @import "partials/alerts.kit" -->
+<div class="has-mobile-nav">
+  <!-- @import "partials/nav-dual.kit" -->
+  <!-- @import "partials/nav-mobile-remote.kit" -->
+  <div class="page-view view-remote">
+    <div class="page-view-subnav transparent">
+      <ul class="page-view-subnav-items">
+        <li>
+          <a href="#">
+            Security
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Climate
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            Battery
+          </a>
+        </li>
+      </ul><!-- /.page-view-subnav-items -->
+    </div><!-- /.page-view-subnav -->
+    <div class="remote-module remote-security">
+      <div class="overview-remote-commands-header">
+        <i class="open-info" data-toggle="modal" data-target="#about-security">
+          i
+        </i><!-- /.open-info -->
+        <span class="remote-commands-refresh" data-action="refresh-page">
+          <span class="messages">
+            <span class="last-refreshed">
+              Last refreshed
+              <span class="time">4 hrs ago</span>
+            </span><!-- /.last-refreshed -->
+            <span class="refreshing">
+              Refreshing Status. Please Wait...
+            </span>
+          </span><!-- /.messages -->
+          <span class="updating-icon-status">
+            <span class="refresh-ready active"><i class="icon-refresh"></i></span>
+            <span class="refreshing"><i class="icon-communicating"></i></span>
+          </span><!-- /.updating-icon-status -->
+        </span><!-- /.remote-commands-refresh -->
+      </div><!-- /.remote-header -->
+      <div class="remote-body">
+        <img src="/images/image_door_open.png" alt="Driver Door Open" />
+      </div><!-- /.remote-body -->
+      <div class="remote-footer">
+        <div class="overview-remote-command remote-command-security state-1">
+          <div class="overview-remote-command-header">
+            <div class="overview-remote-command-header-state">
+              <span class="state-1 active">
+                Vehicle is unlocked
+              </span><!-- /.current-state -->
+              <span class="state-2">
+                Vehicle is locked
+              </span>
+            </div><!-- /.overview-remote-command-header-state -->
+            <div class="transitioning-messages">
+              <span class="state-1-2 active">
+                Locking doors...
+              </span><!-- /.state-1-2 -->
+              <span class="state-2-1">
+                Unlocking doors...
+              </span><!-- /.state-2-1 -->
+              <span class="state-x-3">
+                Activating horn & lights...
+              </span><!-- /.state-2-1 -->
+            </div><!-- /.transitioning-messages -->
+          </div><!-- /.overview-remote-command-header -->
+          <div class="overview-remote-command-icon">
+            <span class="icon-remote">
+              <i class="icon-lock-dark state-1 active"></i>
+              <i class="icon-lock-dark state-2"></i>
+            </span><!-- /.icon-remote -->
+            <span class="spinner">
+              <i class="icon-communicating"></i>
+            </span>
+          </div><!-- /.overview-remote-command-icon -->
+          <div class="overview-remote-command-actions">
+            <div ontouchstart="" class="action-buttons split">
+              <span ontouchstart="" class="action-button state-1 active" data-action="state-2-1">
+                <i class="icon-unlock-white"></i>
+                Unlock
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-2 trigger-remote-error" data-action="state-1-2">
+                <i class="icon-lock-white"></i>
+                Lock
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button confirm-action state-3" data-action="state-x-3">
+                <i class="icon-horn"></i>
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+            </div><!-- /.overview-remtote-command-actions-buttons -->
+          </div><!-- /.overview-remote-command-actions -->
+        </div><!-- /.overview-remote-command -->
+        <div class="remote-footer-caption">
+          <strong>
+            NOTIFY ME WHEN:
+          </strong>
+          Vehicle is locked, vehicle is unlocked
+          <i class="icon-cog-white"></i>
+        </div><!-- /.remote-footer-caption -->
+      </div><!-- /.remote-footer -->
+    </div><!-- /.remote-battery -->
+  </div><!-- /.view-securiry -->
+</div><!-- /.has-mobile-view -->
+<div class="modal fade about-security" id="about-security" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-about-security">
+          <strong>Securing your vehicle</strong>
+          <p>Any helpful body copy can goe here including pre-conditions for locking and unlocking your vehicle</p>
+          <h2>REQUIREMENTS FOR LOCKING AND UNLOCKING YOUR VEHICLE:</h2>
+          <ol>
+            <li>Pre-condition 1</li>
+            <li>Pre-condition 2</li>
+            <li>Pre-condition 3</li>
+            <li>Pre-condition 4</li>
+            <li>Pre-condition 5</li>
+          </ol>
+        </div><!-- /.modal-delete -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#about-battery -->
+<!-- @import "partials/footer.kit" -->

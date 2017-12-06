@@ -216,6 +216,7 @@
     }
     &.state-1-communicating {
       .action-buttons {
+        .state-3,
         .state-2 {
           opacity: .5 !important;
         }
@@ -223,6 +224,15 @@
     }
     &.state-2-communicating {
       .action-buttons {
+        .state-3,
+        .state-1 {
+          opacity: .5 !important;
+        }
+      }
+    }
+    &.state-3-communicating {
+      .action-buttons {
+        .state-2,
         .state-1 {
           opacity: .5 !important;
         }
@@ -276,6 +286,19 @@
         }
       }
     }
+    &.state-3-communicating {
+      .action-buttons {
+        .action-button.state-3 {
+          color: rgba(0, 0, 0, 0);
+          > i {
+            opacity: 0;
+          }
+          .spinner {
+            opacity: 1;
+          }
+        }
+      }
+    }
     &-icon {
       top: 0;
       transform: translate(-50%, -50%);
@@ -317,6 +340,7 @@
           line-height: 40px !important;
           background: #272727;
           margin: 0 9px;
+          border-radius: 2px;
           > i {
             display: inline-block;
             vertical-align: middle;
@@ -652,6 +676,81 @@
   }
 }
 
+.remote-security {
+  .remote-body {
+    text-align: center;
+    img {
+      max-width: calc(100% - 10px);
+    }
+  }
+}
+
+.overview-remote-command.remote-command-security {
+  &.state-2-communicating,
+  &.state-1 {
+    .action-buttons {
+      .state-2 {
+        background: #8ec439 !important;
+        &:hover {
+          background: darken(#8ec439, 10%) !important;
+        }
+      }
+      .state-3,
+      .state-1 {
+         background: #272727 !important;
+         &:hover {
+           background: darken(#272727, 10%) !important;
+         }
+      }
+    }
+  }
+  &.state-1-communicating,
+  &.state-2 {
+    .action-buttons {
+      .state-1 {
+        background: #8ec439 !important;
+        &:hover {
+          background: darken(#8ec439, 10%) !important;
+        }
+      }
+      .state-3,
+      .state-2 {
+         background: #272727 !important;
+
+         &:hover {
+           background: darken(#272727, 10%) !important;
+         }
+      }
+    }
+  }
+  .action-buttons {
+    .state-3 {
+      padding: 0;
+      width: 64px;
+      i {
+        margin: 0;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      .action-button {
+        margin: 0 2.5px;
+        &:first-child {
+          margin-left: 0px !important
+        }
+        &:last-child {
+          margin-left: 0px !important
+        }
+      }
+    }
+    @media (max-width: 375px) {
+      white-space: nowrap;
+      .action-button:not(.state-3) {
+        width: 100px;
+      }
+    }
+  }
+}
+
 .icon-gas-battery {
   background: url('/images/icon_gas_battery.svg') center no-repeat;
 }
@@ -714,4 +813,28 @@
   &.white {
     background: url('/images/icon_arrow_right_white.svg') center/contain no-repeat;
   }
+}
+
+.icon-lock-dark {
+  background: url('/images/icon_locked_dark.svg') center/contain no-repeat;
+  width: 18px;
+  height: 23px;
+  &.state-1 {
+    background-image: url('/images/icon_unlocked_dark.svg');
+  }
+}
+.icon-horn {
+  background: url('/images/icon_horn.svg') center/contain no-repeat;
+  width: 35px;
+  height: 18px;
+}
+.icon-lock-white {
+  background: url('/images/icon_locked_white.svg') center/contain no-repeat;
+  width: 12px;
+  height: 14px;
+}
+.icon-unlock-white {
+  background: url('/images/icon_unlock_white.svg') center/contain no-repeat;
+  width: 12px;
+  height: 14px;
 }
