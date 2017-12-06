@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Ico</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.75,2.25 L9.75,1.99709487 C9.75,0.898599532 8.85015397,0 7.74013764,0 L4.25986236,0 C3.13980049,0 2.25,0.894129829 2.25,1.99709487 L2.25,5.25 L1.00247329,5.25 C0.455760956,5.25 0,5.70071415 0,6.25669822 L0,13.9933018 C0,14.5557272 0.448822582,15 1.00247329,15 L10.9975267,15 C11.544239,15 12,14.5492859 12,13.9933018 L12,6.25669822 C12,5.69427279 11.5511774,5.25 10.9975267,5.25 L9.75,5.25 L9.75,5.24606588 L8.25,5.24868863 L8.25,5.25 L3.75,5.25 L3.75,2.49598575 C3.75,1.94591801 4.19792891,1.5 4.74869585,1.5 L7.25130415,1.5 C7.7181038,1.5 8.11010256,1.81722013 8.21956312,2.25 L8.25,2.25 C8.25,2.66421356 8.58578644,3 9,3 C9.41421356,3 9.75,2.66421356 9.75,2.25 Z" id="path-1"></path>
+    </defs>
+    <g id="Security*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Remote-Unlocked-|-Desktop" transform="translate(-459.000000, -664.000000)">
+            <g id="CTA-Area" transform="translate(162.000000, 162.000000)">
+                <g id="CTA-Buttons" transform="translate(273.000000, 488.000000)">
+                    <g id="Unlock-Button" transform="translate(0.000000, 1.000000)">
+                        <g id="Label" transform="translate(24.000000, 13.000000)">
+                            <g id="Icons-/-Unlocked">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Ico" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

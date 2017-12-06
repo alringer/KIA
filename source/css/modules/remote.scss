@@ -652,6 +652,43 @@
   }
 }
 
+.overview-remote-command.remote-command-security {
+  &.state-2-communicating,
+  &.state-1 {
+    .action-buttons {
+      .state-2 {
+        background: #8ec439 !important;
+        &:hover {
+          background: darken(#8ec439, 10%) !important;
+        }
+      }
+      .state-1 {
+         background: #272727 !important;
+         &:hover {
+           background: darken(#272727, 10%) !important;
+         }
+      }
+    }
+  }
+  &.state-1-communicating,
+  &.state-2 {
+    .action-buttons {
+      .state-1 {
+        background: #8ec439 !important;
+        &:hover {
+          background: darken(#8ec439, 10%) !important;
+        }
+      }
+      .state-2 {
+         background: #272727 !important;
+         &:hover {
+           background: darken(#272727, 10%) !important;
+         }
+      }
+    }
+  }
+}
+
 .icon-gas-battery {
   background: url('/images/icon_gas_battery.svg') center no-repeat;
 }
@@ -713,5 +750,14 @@
   height: 15px !important;
   &.white {
     background: url('/images/icon_arrow_right_white.svg') center/contain no-repeat;
+  }
+}
+
+.icon-lock-dark {
+  background: url('/images/icon_locked_dark.svg') center/contain no-repeat;
+  width: 18px;
+  height: 23px;
+  &.state-1 {
+    background-image: url('/images/icon_unlocked_dark.svg');
   }
 }

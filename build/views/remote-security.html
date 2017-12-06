@@ -14,7 +14,7 @@
   <!-- VIEW CSS -->
   <link rel="stylesheet" href="/css/overview-remote-commands.css">
   <link rel="stylesheet" href="/css/reference-cards.css">
-  <link rel="stylesheet" href="/css/remote-battery.css">
+  <link rel="stylesheet" href="/css/remote.css">
 
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -593,7 +593,7 @@
 
       </div><!-- /.remote-body -->
       <div class="remote-footer">
-        <div class="overview-remote-command state-1">
+        <div class="overview-remote-command remote-command-security state-1">
           <div class="overview-remote-command-header">
             <div class="overview-remote-command-header-state">
               <span class="state-1 active">
@@ -605,17 +605,17 @@
             </div><!-- /.overview-remote-command-header-state -->
             <div class="transitioning-messages">
               <span class="state-1-2 active">
-                Stopping charge...
+                Locking doors...
               </span><!-- /.state-1-2 -->
               <span class="state-2-1">
-                Starting charge...
+                Unlocking doors...
               </span><!-- /.state-2-1 -->
             </div><!-- /.transitioning-messages -->
           </div><!-- /.overview-remote-command-header -->
           <div class="overview-remote-command-icon">
             <span class="icon-remote">
-              <i class="icon-charging state-1 active"></i>
-              <i class="icon-charging state-2"></i>
+              <i class="icon-lock-dark state-1 active"></i>
+              <i class="icon-lock-dark state-2"></i>
             </span><!-- /.icon-remote -->
             <span class="spinner">
               <i class="icon-communicating"></i>
@@ -624,13 +624,17 @@
           <div class="overview-remote-command-actions">
             <div ontouchstart="" class="action-buttons split">
               <span ontouchstart="" class="action-button state-1 active" data-action="state-2-1">
-                <i class="icon-bolt"></i>
+                <i class="icon-unlock-white"></i>
                 Unlock
                 <span class="spinner"><i class="icon-communicating white"></i></span>
               </span><!-- /.action-button -->
               <span ontouchstart="" class="action-button state-2 trigger-remote-error" data-action="state-1-2">
-                <i class="icon-stop"></i>
+                <i class="icon-lock-white"></i>
                 Lock
+                <span class="spinner"><i class="icon-communicating white"></i></span>
+              </span><!-- /.action-button -->
+              <span ontouchstart="" class="action-button state-3 trigger-remote-error" data-action="state-3">
+                <i class="icon-lock-white"></i>
                 <span class="spinner"><i class="icon-communicating white"></i></span>
               </span><!-- /.action-button -->
             </div><!-- /.overview-remtote-command-actions-buttons -->
