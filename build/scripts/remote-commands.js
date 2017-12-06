@@ -17,16 +17,27 @@ $(document).ready(function () {
             $this_transitioning_messages = $this_command.find('.transitioning-messages span'),
             action = $this.data('action'),
             first_state = action.replace('state-', '').substr(0, 1),
-            new_state = action.substr(-1);
+            new_state = action.substr(-1),
+            current_state = null;
+        if ($this_command.hasClass('state-1')) {
+          current_state = '1';
+        }
+        if ($this_command.hasClass('state-2')) {
+          current_state = '2';
+        }
+        if ($this_command.hasClass('state-3')) {
+          current_state = '3';
+        }
         $this_transitioning_messages.removeClass('active');
         $this_transitioning_messages.filter('.' + action).addClass('active');
-
         $this_command.addClass('communicating');
         $this_command.removeClass('state-1 state-2 state-3');
         $this_command.addClass('state-' + new_state + '-communicating');
         window.remoteCommands.elements.view.addClass('communicating');
         window.loading.methods._loading_start();
-
+        if (first_state === 'x') {
+          new_state = current_state;
+        }
         setTimeout(function () {
           window.remoteCommands.methods._commiunicate_stop($this_command, first_state, new_state);
         }, 3000);
@@ -38,7 +49,7 @@ $(document).ready(function () {
         window.remoteCommands.elements.view.removeClass('communicating');
         window.loading.methods._loading_stop();
         $command.addClass('state-' + new_state);
-        $command.removeClass('state-' + new_state + '-communicating');
+        $command.removeClass('state-1-communicating state-2-communicating state-3-communicating');
       },
       _refresh: function _refresh() {
         if (window.remoteCommands.elements.body.hasClass('refreshing')) {
