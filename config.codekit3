@@ -79,19 +79,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/source\/css\/elements\/_alerts.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_alerts.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/source\/css\/elements\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -180,6 +167,19 @@
 		"oA": 1,
 		"oAP": "\/build\/css\/elements\/_view-subnav.css",
 		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/elements\/alerts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/alerts.css",
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -388,8 +388,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/remote-battery.css",
-		"oF": 2,
+		"oAP": "\/build\/css\/modules\/remote-battery.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -3463,13 +3463,6 @@
 		"oA": 0,
 		"oAP": "\/build\/views\/remote-battery.html",
 		"oF": 0
-		},
-	"\/source\/views\/remote-security.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/views\/remote-security.html",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -3481,7 +3474,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534103390
+	"lastBuiltDate": 534293749
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
