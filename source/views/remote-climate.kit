@@ -97,7 +97,7 @@
           </div><!-- /.overview-remote-command-icon -->
           <div class="overview-remote-command-actions">
             <div ontouchstart="" class="action-buttons split">
-              <span ontouchstart="" class="action-button state-1" data-action="state-2-1">
+              <span ontouchstart="" class="action-button state-1 show-warning" data-action="state-2-1" data-toggle="modal" data-target="#command-warning">
                 <i class="icon-fan-white"></i>
                 Start
                 <span class="spinner"><i class="icon-communicating white"></i></span>
@@ -109,6 +109,22 @@
               </span><!-- /.action-button -->
             </div><!-- /.overview-remtote-command-actions-buttons -->
           </div><!-- /.overview-remote-command-actions -->
+          <div class="modal fade command-warning" id="command-warning" tabindex="-1" role="dialog" aria-labelledby="warning" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-command-warning">
+                    <strong class="modal-title">Ventilation Warning</strong>
+                    <p>Your engine and climate system will be running for 10 minutes. Please ensure your vehicle is parked in a well ventilated area.</p>
+                    <div class="modal-actions">
+                      <span class="button remote-command-action-button" data-action="state-2-1" data-dismiss="modal">Ok</span>
+                      <span class="button outline" data-dismiss="modal">Cancel</span>
+                    </div><!-- /.modal-actions -->
+                  </div><!-- /.modal-command-warning -->
+                </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal#command-warning -->
         </div><!-- /.overview-remote-command -->
         <div class="remote-footer-caption">
           <strong>
@@ -163,7 +179,7 @@
     </div><!-- /.remote-cards -->
   </div><!-- /.view-securiry -->
 </div><!-- /.has-mobile-view -->
-<div class="modal fade about-security" id="about-climate" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal fade about-security" id="about-climate" tabindex="-1" role="dialog" aria-labelledby="about" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
@@ -183,5 +199,5 @@
       </div><!-- /.modal-body -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div><!-- /.modal#about-battery -->
+</div><!-- /.modal#about-climate -->
 <!-- @import "partials/footer.kit" -->

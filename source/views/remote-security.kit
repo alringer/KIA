@@ -110,12 +110,33 @@
                 Lock
                 <span class="spinner"><i class="icon-communicating white"></i></span>
               </span><!-- /.action-button -->
-              <span ontouchstart="" class="action-button confirm-action state-3" data-action="state-x-3">
+              <span ontouchstart="" class="action-button confirm-action state-3 show-warning" data-action="state-x-3" data-toggle="modal" data-target="#command-warning">
                 <i class="icon-horn"></i>
                 <span class="spinner"><i class="icon-communicating white"></i></span>
               </span><!-- /.action-button -->
             </div><!-- /.overview-remtote-command-actions-buttons -->
           </div><!-- /.overview-remote-command-actions -->
+          <div class="modal fade command-warning" id="command-warning" tabindex="-1" role="dialog" aria-labelledby="warning" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-command-warning text-left">
+                    <strong class="modal-title">Horn &amp; Lights</strong>
+                    <p>Your vehicle’s horn will sound and the headlights will flash</p>
+                    <p>Tip: You can stop Horn & Lights by:</p>
+                    <ul>
+                      <li>Pressing the <strong>Horn & Lights</strong> button</li>
+	                    <li>Pressing the <strong>Lock</strong> or <strong>Unlock</strong> buttons</li>
+                    </ul>
+                    <div class="modal-actions">
+                      <span class="button remote-command-action-button" data-action="state-x-3" data-dismiss="modal">Continue</span>
+                      <span class="button outline" data-dismiss="modal">Cancel</span>
+                    </div><!-- /.modal-actions -->
+                  </div><!-- /.modal-command-warning -->
+                </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal#command-warning -->
         </div><!-- /.overview-remote-command -->
         <div class="remote-footer-caption">
           <strong>

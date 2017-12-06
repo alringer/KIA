@@ -4,7 +4,7 @@ $(document).ready(() => {
       body : $('body'),
       view : $('.view-overview'),
       remote_command : $('.overview-remote-command'),
-      remote_command_buttons : $('.overview-remote-command-actions .action-button'),
+      remote_command_buttons : $('.overview-remote-command-actions .action-button, .remote-command-action-button'),
       refresh_buttons : $('[data-action="refresh-page"]'),
       trigger_error : $('.trigger-remote-error'),
     },
@@ -17,6 +17,9 @@ $(document).ready(() => {
             first_state = action.replace('state-', '').substr(0, 1),
             new_state = action.substr(-1),
             current_state = null;
+        if($this.hasClass('show-warning')) {
+          return;
+        }
         if($this_command.hasClass('state-1')) {
           current_state = '1';
         }
