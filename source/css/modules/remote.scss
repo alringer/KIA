@@ -663,6 +663,23 @@
           top: -5px;
         }
       }
+      @media (max-width: $screen-xs-max) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        padding-left: 80px;
+        > i {
+          line-height: 47px;
+          padding-left: 2.5px;
+        }
+        p {
+          position: relative;
+          transform: none;
+          left: 0;
+          margin-bottom: 0;
+          padding-right: 10px;
+        }
+      }
     }
     &.no-climate-schedule,
     &.no-charge-schedule {
@@ -692,6 +709,71 @@
           font-size: 13px;
           letter-spacing: .3px;
           width: 120px;
+        }
+      }
+    }
+    &.weather-card {
+      padding-left: 164px;
+      padding-top: 23px;
+      > i {
+        display: block;
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      strong {
+        display: block;
+        font: 500 51px $kia;
+        letter-spacing: 1.3px;
+        sup {
+          font-size: 25px;
+          position: relative;
+          display: inline-block;
+          transform: translateY(-5px);
+        }
+      }
+      em {
+        display: block;
+        padding-right: 10px;
+        font: 500 normal 16px $kia;
+        letter-spacing: .4px;
+        margin-bottom: 26px;
+      }
+      span {
+        display: block;
+        max-width: 115px;
+        font: 14px $sans;
+        letter-spacing: .4px;
+        color: #a2a9ad;
+        padding-top: 18px;
+        border-top: solid 2px #e2e2e2;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 162px;
+        padding-top: 20px;
+        > i {
+          left: 11px;
+        }
+        strong {
+          position: absolute;
+          left: 80px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 41px;
+          letter-spacing: 1.1px;
+          line-height: 1em;
+        }
+        em {
+          margin-bottom: 0;
+          font-size: 14px;
+          letter-spacing: .4px;
+          margin-bottom: 5px;
+        }
+        span {
+          padding-top: 3px;
+          font-size: 12px;
+          letter-spacing: .3px;
         }
       }
     }
@@ -810,8 +892,8 @@
   width: 57px;
   height: 57px;
   @media (max-width: $screen-xs-max) {
-    width: 40px;
-    height: 55px;
+    width: 47px;
+    height: 47px;
   }
 }
 .icon-3d-battery {
@@ -873,4 +955,16 @@
   background: url('/images/icon_remote_fan.svg') center/contain no-repeat;
   width: 22px;
   height: 22px;
+}
+
+.icon-weather {
+  width: 75px;
+  height: 75px;
+  &.sun {
+    background: url('/images/icon_sun.svg') center/contain no-repeat;
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 46px;
+    width: 46px;
+  }
 }
