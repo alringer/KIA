@@ -771,8 +771,9 @@
             letter-spacing: .6px;
           }
           p {
-            font-size: 12px;
-            max-width: 270px;
+            font-size: 12px !important;
+            width: 100%;
+            max-width: 280px;
             margin: 0 auto 12px;
             color: $grey_2;
             letter-spacing: .5px;
