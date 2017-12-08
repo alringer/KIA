@@ -1794,6 +1794,11 @@
   width: 35px;
   height: 18px; }
 
+.icon-unlock-white {
+  background: url("/images/icon_locked_white.svg") center/contain no-repeat;
+  width: 12px;
+  height: 14px; }
+
 .icon-lock-white {
   background: url("/images/icon_locked_white.svg") center/contain no-repeat;
   width: 12px;
