@@ -3267,9 +3267,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/build\/vendors\/selectize\/selectize.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -3604,7 +3604,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534456593
+	"lastBuiltDate": 534457288
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
