@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){window.dial={elements:{dial_canvas:$(".ui-dial-canvas")},methods:{_setup:function n(){window.dial.elements.dial_canvas.knob({step:10,angleArc:250,angleOffset:-125,min:0,max:50,change:function n(e){console.log(e)}})}}},window.dial.methods._setup()});

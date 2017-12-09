@@ -6,11 +6,13 @@ $(document).ready(function () {
       modal: $('.modal'),
       carousel: $('.modal .carousel'),
       modal_slider: $('.modal .slider'),
-      body: $('body')
+      body: $('body'),
+      html: $('html')
     },
     methods: {
       _stop_scroll: function _stop_scroll(e) {
-        if (window.modals.body.hasClass('modal-open')) {
+        if (window.modals.elements.body.hasClass('stop-scroll')) {
+          console.log('open');
           e.preventDefault();
         }
       },
@@ -48,6 +50,11 @@ $(document).ready(function () {
           $modal.addClass('hide-close');
         } else {
           $modal.removeClass('hide-close');
+        }
+        if ($target.hasClass('stop-scroll')) {
+          window.modals.elements.body.addClass('stop-scroll');
+        } else {
+          window.modals.elements.body.removeClass('stop-scroll');
         }
 
         // Update the back button's slide to property
@@ -98,7 +105,8 @@ $(document).ready(function () {
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._modal_slider_fix);
   window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._modal_slider_fix);
-  window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
+  // window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
+  // window.modals.elements.html.on('touchmove', window.modals.methods._stop_scroll);
 
   // SETUP
   window.modals.methods._modal_slider();

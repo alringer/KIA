@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="jqueryknob">jQuery Knob</h1>
+
+<ul>
+<li>canvas based ; no png or jpg sprites.</li>
+<li>touch, mouse and mousewheel, keyboard events implemented.</li>
+<li>downward compatible ; overloads an input element.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<pre><code class="html">&lt;input type=&quot;text&quot; value=&quot;75&quot; class=&quot;dial&quot;&gt;
+
+&lt;script&gt;
+    $(function() {
+        $(&quot;.dial&quot;).knob();
+    });
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="options">Options</h2>
+
+<p>Options are provided as attributes &#8216;data-option&#8217;:</p>
+
+<pre><code class="html">&lt;input type=&quot;text&quot; class=&quot;dial&quot; data-min=&quot;-50&quot; data-max=&quot;50&quot;&gt;
+</code></pre>
+
+<p>&#8230; or in the &#8220;knob()&#8221; call :</p>
+
+<pre><code class="javascript">$(&quot;.dial&quot;).knob({
+    'min':-50,
+    'max':50
+});
+</code></pre>
+
+<p>The following options are supported :</p>
+
+<p>Behaviors :</p>
+
+<ul>
+<li>min : min value | default=0.</li>
+<li>max : max value | default=100.</li>
+<li>step : step size | default=1.</li>
+<li>angleOffset : starting angle in degrees | default=0.</li>
+<li>angleArc : arc size in degrees | default=360.</li>
+<li>stopper : stop at min &amp; max on keydown/mousewheel | default=true.</li>
+<li>readOnly : disable input and events | default=false.</li>
+<li>rotation : direction of progression | default=clockwise.</li>
+</ul>
+
+<p>UI :</p>
+
+<ul>
+<li>cursor : display mode &#8220;cursor&#8221;, cursor size could be changed passing a numeric value to the option, default width is used when passing boolean value &#8220;true&#8221; | default=gauge.</li>
+<li>thickness : gauge thickness.</li>
+<li>lineCap : gauge stroke endings. | default=butt, round=rounded line endings</li>
+<li>width : dial width.</li>
+<li>height : dial height.</li>
+<li>displayInput : default=true | false=hide input.</li>
+<li>displayPrevious : default=false | true=displays the previous value with transparency.</li>
+<li>fgColor : foreground color.</li>
+<li>inputColor : input value (number) color.</li>
+<li>font : font family.</li>
+<li>fontWeight : font weight.</li>
+<li>bgColor : background color.</li>
+</ul>
+
+<h2 id="hooks">Hooks</h2>
+
+<pre><code class="html">&lt;script&gt;
+    $(&quot;.dial&quot;).knob({
+        'release' : function (v) { /*make something*/ }
+    });
+&lt;/script&gt;
+</code></pre>
+
+<ul>
+<li><p>&#8216;release&#8217; : executed on release</p>
+
+<p>Parameters :</p>
+
+<ul>
+<li>value : int, current value</li>
+</ul></li>
+<li><p>&#8216;change&#8217; : executed at each change of the value</p>
+
+<p>Parameters :</p>
+
+<ul>
+<li>value : int, current value</li>
+</ul></li>
+<li><p>&#8216;draw&#8217; : when drawing the canvas</p>
+
+<p>Context :</p>
+
+<ul>
+<li>this.g : canvas context 2D (see Canvas documentation)</li>
+<li>this.$ : jQuery wrapped element</li>
+<li>this.o : options</li>
+<li>this.i : input</li>
+<li>&#8230; console.log(this);</li>
+</ul></li>
+<li><p>&#8216;cancel&#8217; : triggered on [esc] keydown</p></li>
+<li><p>&#8216;format&#8217; : allows to format output (add unit %, ms &#8230;)</p></li>
+</ul>
+
+<p>The scope (this) of each hook function is the current Knob instance (refer to the demo code).</p>
+
+<h2 id="example">Example</h2>
+
+<pre><code class="html">&lt;input type=&quot;text&quot; value=&quot;75&quot; class=&quot;dial&quot;&gt;
+
+&lt;script&gt;
+    $(&quot;.dial&quot;).knob({
+        'change' : function (v) { console.log(v); }
+    });
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="dynamicallyconfigure">Dynamically configure</h2>
+
+<pre><code class="html">&lt;script&gt;
+    $('.dial').trigger(
+        'configure',
+        {
+            &quot;min&quot;:10,
+            &quot;max&quot;:40,
+            &quot;fgColor&quot;:&quot;#FF0000&quot;,
+            &quot;skin&quot;:&quot;tron&quot;,
+            &quot;cursor&quot;:true
+        }
+    );
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="setthevalue">Set the value</h2>
+
+<pre><code class="html">&lt;script&gt;
+    $('.dial')
+        .val(27)
+        .trigger('change');
+&lt;/script&gt;
+</code></pre>
+
+<h2 id="supportedbrowser">Supported browser</h2>
+
+<p>Tested on Chrome, Safari, Firefox, IE&gt;=8.0 (IE8.0 with excanvas).</p>
+
+<figure>
+<img src="https://raw.github.com/aterrien/jQuery-Knob/master/secretplan.jpg" alt="secretplan" />
+<figcaption>secretplan</figcaption>
+</figure>
+
+</body>
+</html>
+
