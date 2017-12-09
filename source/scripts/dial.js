@@ -2,17 +2,23 @@ $(document).ready(() => {
   window.dial = {
     elements : {
       dial_canvas : $('.ui-dial-canvas'),
+      dial_handle : $('.ui-dial-handle'),
     },
     methods : {
       _setup : () => {
         window.dial.elements.dial_canvas.knob({
-            step : 10,
-            angleArc : 250,
-            angleOffset : -125,
+            step : 1,
+            angleArc : 265,
+            angleOffset : -132.5,
             min: 0,
-            max: 50,
+            max: 265,
+            width: 295,
+            height: 295,
             change : function(v) {
-              console.log(v)
+              var degree = v - 43;
+              window.dial.elements.dial_handle.css({
+                transform : `rotate(${degree}deg) translate(-140px) rotate(${-degree}deg)`
+              });
             },
         });
       },

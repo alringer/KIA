@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="326px" height="299px" viewBox="0 0 326 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Dial</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#4BBEF0" offset="0%"></stop>
+            <stop stop-color="#F23F3F" offset="100%"></stop>
+        </linearGradient>
+        <path d="M147.333333,279.149166 C219.928095,279.149166 278.777778,220.221084 278.777778,147.529611 C278.777778,74.8381382 219.928095,15.9100561 147.333333,15.9100561 C74.7385712,15.9100561 15.8888889,74.8381382 15.8888889,147.529611 C15.8888889,220.221084 74.7385712,279.149166 147.333333,279.149166 Z M147.333333,295.059222 C65.9633802,295.059222 0,229.007966 0,147.529611 C0,66.0512568 65.9633802,0 147.333333,0 C228.703286,0 294.666667,66.0512568 294.666667,147.529611 C294.666667,229.007966 228.703286,295.059222 147.333333,295.059222 Z" id="path-2"></path>
+        <ellipse id="path-4" cx="147.767045" cy="147.325647" rx="121.475794" ry="121.637625"></ellipse>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="242.951588" height="243.275249" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+    </defs>
+    <g id="Flagship-Climate-Off-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-411.000000, -191.000000)">
+        <g id="Temperature-Dial" transform="translate(257.000000, 191.000000)">
+            <g id="Dial" transform="translate(154.000000, 0.000000)">
+                <g id="Group-12" transform="translate(16.000000, 0.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Oval" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    <rect id="Cold" fill="#56B5E4" mask="url(#mask-3)" x="0" y="-2.89273748" width="147.333333" height="242.989948"></rect>
+                    <rect id="Hot" fill="#EC4446" mask="url(#mask-3)" x="147.333333" y="-2.89273748" width="147.333333" height="242.989948"></rect>
+                    <use id="Notches" stroke-opacity="0.174903759" stroke="#979797" mask="url(#mask-5)" stroke-width="20" stroke-dasharray="2,6" xlink:href="#path-4"></use>
+                </g>
+                <polygon id="Rectangle" fill="#FFFFFF" points="91.3186793 215.09134 236.588338 214.154509 325.669997 292.127972 163.169997 298.34375 0.669996972 292.127972"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
