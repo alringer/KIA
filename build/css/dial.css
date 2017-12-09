@@ -20,3 +20,5 @@
   .ui-dial > div {
     opacity: 0;
     position: relative; }
+    .ui-dial > div canvas {
+      border-radius: 100%; }
