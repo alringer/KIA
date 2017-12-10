@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/changes.md": {
 		"cB": 0,
 		"cS": 0,
@@ -3665,7 +3671,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534494881
+	"lastBuiltDate": 534457824
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

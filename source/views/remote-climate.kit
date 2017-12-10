@@ -65,9 +65,18 @@
         </span><!-- /.remote-commands-refresh -->
       </div><!-- /.remote-header -->
       <div class="remote-body">
-        <div class="ui-dial">
+        <div class="ui-dial" data-min="50" data-max="90">
+          <span class="ui-dial-temperateure">
+            <span class="ui-dial-temperateure-text"></span>
+            <span class="degree">°</span>
+          </span>
           <span class="ui-dial-handle"></span>
-          <div class="ui-dial-canvas"></div>
+          <input type="text" class="ui-dial-canvas" />
+          <input type="hidden" class="ui-dial-value" value="58"  />
+          <span class="ui-dial-controls">
+            <span class="down">-</span>
+            <span class="up">+</span>
+          </span>
         </div>
       </div><!-- /.remote-body -->
       <div class="remote-footer">

@@ -1,3 +1,6 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
 .ui-dial {
   margin: 0 auto;
   background: url('/images/dial.png') top center no-repeat;
@@ -17,7 +20,57 @@
     top: 50%;
     margin: -15.5px 0 0 -15.5px;
     transform: rotate(-43deg) translate(-140px) rotate(43deg);
-
+  }
+  &-value {
+    display: none;
+  }
+  &.hot {
+    .ui-dial-temperateure {
+      color: #de4e54;
+    }
+  }
+  &.setting {
+    .ui-dial-handle {
+      transition: all 550ms $easeOutQuint;
+    }
+  }
+  &-temperateure {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(-10px) translateX(-10px);
+    font: 500 70px/1em $kia;
+    display: block;
+    color: #56b5e4;
+    transition: all 550ms $easeOutQuint;
+    pointer-events: none;
+    .degree {
+      position: absolute;
+      font-size: 30px;
+      left: 100%;
+      top: -10px;
+    }
+  }
+  &-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    transform: translateY(-40px);
+    > * {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 0 20px;
+      background: red;
+      cursor: pointer;
+      user-select: none;
+      &.down {
+        background: #56b5e4;
+      }
+    }
   }
   > div {
     // width: 100px !important;
