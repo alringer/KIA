@@ -820,6 +820,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/heated_seat_2_cold.png": {
+		"ft": 32768,
+		"iS": 15846,
+		"oA": 0,
+		"oAP": "\/build\/images\/heated_seat_2_cold.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/heated_seat_2_hot.png": {
+		"ft": 32768,
+		"iS": 15903,
+		"oA": 0,
+		"oAP": "\/build\/images\/heated_seat_2_hot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/heated_seat_2_off.png": {
 		"ft": 32768,
 		"iS": 13556,
@@ -831,6 +853,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/heated_seat_3_cold.png": {
+		"ft": 32768,
+		"iS": 14980,
+		"oA": 0,
+		"oAP": "\/build\/images\/heated_seat_3_cold.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/heated_seat_3_hot.png": {
+		"ft": 32768,
+		"iS": 14987,
+		"oA": 0,
+		"oAP": "\/build\/images\/heated_seat_3_hot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/heated_seat_3_off.png": {
 		"ft": 32768,
 		"iS": 12653,
@@ -839,6 +883,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/heated_seat_4_cold.png": {
+		"ft": 32768,
+		"iS": 15192,
+		"oA": 0,
+		"oAP": "\/build\/images\/heated_seat_4_cold.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/heated_seat_4_hot.png": {
+		"ft": 32768,
+		"iS": 15227,
+		"oA": 0,
+		"oAP": "\/build\/images\/heated_seat_4_hot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

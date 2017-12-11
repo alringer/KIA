@@ -1528,6 +1528,8 @@ body.modal-open {
   .modal.heated-seats .modal-heated-seats {
     height: 728px;
     overflow: hidden; }
+    .modal.heated-seats .modal-heated-seats.seat-open .heated-seats-vehicle em {
+      opacity: 0; }
     .modal.heated-seats .modal-heated-seats.seat-open.top .heated-seats-vehicle {
       transform: translateY(265px); }
     .modal.heated-seats .modal-heated-seats.seat-open.bottom .modal-title {
@@ -1584,6 +1586,7 @@ body.modal-open {
         position: relative; }
       .modal.heated-seats .modal-heated-seats .heated-seats-vehicle em {
         display: block;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
         font: 500 20px/1em "KIA", sans-serif;
         letter-spacing: .5;
         color: #000;

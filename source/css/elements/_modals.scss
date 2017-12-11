@@ -1707,6 +1707,11 @@ body.modal-open {
     height: 728px;
     overflow: hidden;
     &.seat-open {
+      .heated-seats-vehicle {
+        em {
+          opacity: 0;
+        }
+      }
       &.top {
         .heated-seats-vehicle {
           transform: translateY(265px);
@@ -1784,6 +1789,7 @@ body.modal-open {
         }
         em {
           display: block;
+          transition: all 250ms $easeOutQuint;
           font: 500 20px/1em $kia;
           letter-spacing: .5;
           color: #000;

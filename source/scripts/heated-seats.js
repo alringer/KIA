@@ -38,7 +38,7 @@ $(document).ready(() => {
         $seat.removeClass('hot cold off')
           .addClass(seat_class);
         window.heatedSeats.methods._reset();
-        console.log(seat);
+
       },
     }
   };
