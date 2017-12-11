@@ -858,6 +858,16 @@
   }
 }
 
+.state-1-communicating,
+.state-2-communicating,
+.state-1 {
+  .accessory-group {
+    .toggle {
+      opacity: 0;
+    }
+  }
+}
+
 .accessory-group {
   border: solid 1px #e2e2e2;
   position: absolute;
@@ -906,6 +916,7 @@
     top: 100%;
     left: 50%;
     transform: translate(-50%, 25px);
+    transition: all 250ms $easeOutQuint;
   }
 }
 
