@@ -858,6 +858,55 @@
   }
 }
 
+.accessory-group {
+  border: solid 1px #e2e2e2;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  height: 87px;
+  border-radius: 87px;
+  line-height: 87px;
+  min-width: 87px;
+  text-align: center;
+  white-space: nowrap;
+  padding-bottom: 30px;
+  &.left {
+    margin-right: 175px;
+  }
+  &.right {
+    right: auto;
+    left: 50%;
+    margin-left: 275px;
+    padding: 0 15px;
+  }
+  .accessory {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 1em;
+    position: relative;
+    padding-bottom: 15px;
+    i {
+      display: block;
+      margin: 0 auto 5px;
+    }
+    em {
+      text-align: center;
+      font: 500 9px/1.4em $kia;
+      letter-spacing: .2px;
+      white-space: normal;
+      display: block;
+      width: 60px;
+      text-transform: uppercase;
+      color: #9ba1a9;
+      // position: absolute;
+      // left: 50%;
+      // transform: translateX(-50%);
+      // bottom: 0;
+    }
+  }
+}
+
 .icon-gas-battery {
   background: url('/images/icon_gas_battery.svg') center no-repeat;
 }
@@ -975,4 +1024,25 @@
     height: 46px;
     width: 46px;
   }
+}
+
+.icon-defrost {
+  background: url('/images/icon_defrost.svg') center/contain no-repeat;
+  width: 33px;
+  height: 24px;
+}
+.icon-defrost-rear {
+  background: url('/images/icon_defrost_rear.svg') center/contain no-repeat;
+  width: 28px;
+  height: 25px;
+}
+.icon-defrost-mirror {
+  background: url('/images/icon_defrost_mirror.svg') center/contain no-repeat;
+  width: 35px;
+  height: 25px;
+}
+.icon-defrost-steering {
+  background: url('/images/icon_defrost_steering.svg') center/contain no-repeat;
+  width: 24px;
+  height: 32px;
 }

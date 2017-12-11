@@ -17,7 +17,6 @@ $(document).ready(() => {
             min = 0,
             max = 265,
             step = Math.floor(max / (value_diff + 1));
-            // step = 1;
         window.dial.properties = {
           value_max,
           value_min,
@@ -57,7 +56,6 @@ $(document).ready(() => {
         window.dial.elements.dial_handle.css({
           transform : `rotate(${degree}deg) translate(-140px) rotate(${-degree}deg)`
         });
-        console.log(value);
         window.dial.elements.dial_value.val(value);
       },
       _get : () => {
