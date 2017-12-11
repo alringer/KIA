@@ -81,13 +81,14 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     display: block;
     width: 18px;
     height: 18px;
-    line-height: 16px;
+    line-height: 18px;
     border: solid 1px #4bbef0;
     border-radius: 100%;
     color: #4bbef0;
     text-align: center;
     font: 600 13px "Source Sans Pro", sans-serif;
     font-style: normal;
+    letter-spacing: normal;
     padding-left: 1px;
     transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
