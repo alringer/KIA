@@ -1740,6 +1740,7 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
   top: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
+  margin-top: -30px;
   height: 87px;
   border-radius: 87px;
   line-height: 87px;
