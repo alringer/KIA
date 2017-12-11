@@ -1749,6 +1749,11 @@
       width: 60px;
       text-transform: uppercase;
       color: #9ba1a9; }
+  .accessory-group .toggle {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 25px); }
 
 .icon-gas-battery {
   background: url("/images/icon_gas_battery.svg") center no-repeat; }

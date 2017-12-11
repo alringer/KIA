@@ -899,11 +899,13 @@
       width: 60px;
       text-transform: uppercase;
       color: #9ba1a9;
-      // position: absolute;
-      // left: 50%;
-      // transform: translateX(-50%);
-      // bottom: 0;
     }
+  }
+  .toggle {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 25px);
   }
 }
 
