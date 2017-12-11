@@ -8,7 +8,8 @@ $(document).ready(function () {
       remote_command: $('.overview-remote-command'),
       remote_command_buttons: $('.overview-remote-command-actions .action-button, .remote-command-action-button'),
       refresh_buttons: $('[data-action="refresh-page"]'),
-      trigger_error: $('.trigger-remote-error')
+      trigger_error: $('.trigger-remote-error'),
+      remote_body: $('.remote-body')
     },
     methods: {
       _communicate: function _communicate() {
@@ -41,6 +42,10 @@ $(document).ready(function () {
         if (first_state === 'x') {
           new_state = current_state;
         }
+        if (window.remoteCommands.elements.remote_body.length) {
+          window.remoteCommands.elements.remote_body.removeClass('state-1 state-2 state-3 state-1-communicating state-2-communicating state-3-communicating');
+          window.remoteCommands.elements.remote_body.addClass('state-' + new_state + '-communicating');
+        }
         setTimeout(function () {
           window.remoteCommands.methods._commiunicate_stop($this_command, first_state, new_state);
         }, 3000);
@@ -53,6 +58,10 @@ $(document).ready(function () {
         window.loading.methods._loading_stop();
         $command.addClass('state-' + new_state);
         $command.removeClass('state-1-communicating state-2-communicating state-3-communicating');
+        if (window.remoteCommands.elements.remote_body.length) {
+          window.remoteCommands.elements.remote_body.removeClass('state-1 state-2 state-3 state-1-communicating state-2-communicating state-3-communicating');
+          window.remoteCommands.elements.remote_body.addClass('state-' + new_state);
+        }
       },
       _refresh: function _refresh() {
         if (window.remoteCommands.elements.body.hasClass('refreshing')) {

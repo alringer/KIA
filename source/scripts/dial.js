@@ -17,7 +17,6 @@ $(document).ready(() => {
             min = 0,
             max = 265,
             step = Math.floor(max / (value_diff + 1));
-            // step = 1;
         window.dial.properties = {
           value_max,
           value_min,
@@ -91,7 +90,6 @@ $(document).ready(() => {
         if($this.hasClass('down')) {
           set = current -= 1;
         }
-        console.log(set);
         window.dial.methods._set(set);
       },
     }

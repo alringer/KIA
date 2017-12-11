@@ -700,6 +700,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/climate_dial_communicating.png": {
+		"ft": 32768,
+		"iS": 20071,
+		"oA": 0,
+		"oAP": "\/build\/images\/climate_dial_communicating.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/climate_dial_communicating_hot.png": {
+		"ft": 32768,
+		"iS": 20668,
+		"oA": 0,
+		"oAP": "\/build\/images\/climate_dial_communicating_hot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/climate_dial_locked.png": {
+		"ft": 32768,
+		"iS": 28203,
+		"oA": 0,
+		"oAP": "\/build\/images\/climate_dial_locked.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/climate_dial_locked_hot.png": {
+		"ft": 32768,
+		"iS": 28044,
+		"oA": 0,
+		"oAP": "\/build\/images\/climate_dial_locked_hot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/dial.png": {
 		"ft": 32768,
 		"iS": 31506,
@@ -741,6 +785,28 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/icon-climate-minus.png": {
+		"ft": 32768,
+		"iS": 156,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon-climate-minus.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon-climate-plus.png": {
+		"ft": 32768,
+		"iS": 393,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon-climate-plus.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/icon-play-square.svg": {
 		"ft": 2097152,
