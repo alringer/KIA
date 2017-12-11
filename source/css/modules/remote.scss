@@ -1,6 +1,31 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+body.refreshing {
+  .view-remote {
+    .remote-body {
+      .ui-dial {
+        pointer-events: none;
+        * {
+          pointer-events: none !important;
+        }
+      }
+      .toggle {
+        opacity: .5;
+        pointer-events: none;
+      }
+    }
+    .overview-remote-command {
+      .action-buttons {
+        .action-button {
+          pointer-events: none !important;
+          opacity: .5 !important;
+        }
+      }
+    }
+  }
+}
+
 .view-remote {
   .page-view-subnav-items {
     @media (max-width: $screen-sm-max) {
@@ -211,7 +236,7 @@
     background: transparent;
     overflow: visible;
     position: relative;
-    z-index: 11;
+
     &.communicating {
       pointer-events: none;
       .action-buttons,
@@ -308,6 +333,7 @@
     &-icon {
       top: 0;
       transform: translate(-50%, -50%);
+      z-index: 11;
       .icon-remote {
         transform: translate(-50%, -50%) !important;
         opacity: 1 !important;

@@ -60,10 +60,15 @@ $(document).ready(function () {
             value_diff = props.value_max - props.value_min,
             value = Math.round(props.value_min + value_diff * percentage);
         props.tempText.text(value);
-        if (percentage > .5) {
+        if ((value - 1) / value_diff === .5) {
+          props.element.addClass('nuetral');
+          props.element.removeClass('hot');
+        } else if (percentage > .5) {
           props.element.addClass('hot');
+          props.element.removeClass('nuetral');
         } else {
           props.element.removeClass('hot');
+          props.element.removeClass('nuetral');
         }
         degree -= 43;
         props.handle.css({

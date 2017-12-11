@@ -31,6 +31,19 @@
   to {
     transform: rotate(360deg); } }
 
+body.refreshing .view-remote .remote-body .ui-dial {
+  pointer-events: none; }
+  body.refreshing .view-remote .remote-body .ui-dial * {
+    pointer-events: none !important; }
+
+body.refreshing .view-remote .remote-body .toggle {
+  opacity: .5;
+  pointer-events: none; }
+
+body.refreshing .view-remote .overview-remote-command .action-buttons .action-button {
+  pointer-events: none !important;
+  opacity: .5 !important; }
+
 @media (max-width: 991px) {
   .view-remote .page-view-subnav-items {
     max-width: 700px;
@@ -203,8 +216,7 @@
     box-shadow: none;
     background: transparent;
     overflow: visible;
-    position: relative;
-    z-index: 11; }
+    position: relative; }
     .remote-footer .overview-remote-command.communicating {
       pointer-events: none; }
       .remote-footer .overview-remote-command.communicating .action-buttons,
@@ -248,7 +260,8 @@
         opacity: 1; }
     .remote-footer .overview-remote-command-icon {
       top: 0;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      z-index: 11; }
       .remote-footer .overview-remote-command-icon .icon-remote {
         transform: translate(-50%, -50%) !important;
         opacity: 1 !important; }

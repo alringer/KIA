@@ -1,7 +1,21 @@
 @import "../variables.scss";
 @import "../mixins.scss";
-.state-1-communicating,
 .state-2-communicating {
+  .ui-dial {
+    pointer-events: none;
+    &:before {
+      opacity: 1;
+    }
+    .ui-dial {
+      &-controls,
+      &-handle {
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+  }
+}
+.state-1-communicating {
   .ui-dial {
     pointer-events: none;
     &:after {

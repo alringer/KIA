@@ -31,15 +31,19 @@
   to {
     transform: rotate(360deg); } }
 
-.state-1-communicating .ui-dial,
 .state-2-communicating .ui-dial {
   pointer-events: none; }
-  .state-1-communicating .ui-dial:after,
-  .state-2-communicating .ui-dial:after {
+  .state-2-communicating .ui-dial:before {
     opacity: 1; }
-  .state-1-communicating .ui-dial .ui-dial-controls, .state-1-communicating .ui-dial .ui-dial-handle,
-  .state-2-communicating .ui-dial .ui-dial-controls,
-  .state-2-communicating .ui-dial .ui-dial-handle {
+  .state-2-communicating .ui-dial .ui-dial-controls, .state-2-communicating .ui-dial .ui-dial-handle {
+    pointer-events: none;
+    opacity: 0; }
+
+.state-1-communicating .ui-dial {
+  pointer-events: none; }
+  .state-1-communicating .ui-dial:after {
+    opacity: 1; }
+  .state-1-communicating .ui-dial .ui-dial-controls, .state-1-communicating .ui-dial .ui-dial-handle {
     pointer-events: none;
     opacity: 0; }
 
