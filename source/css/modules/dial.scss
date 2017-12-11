@@ -54,6 +54,9 @@
   @media (max-width: $screen-xs-max) {
     margin-bottom: 75px;
   }
+  &.steps {
+    background: url('/images/dial_heated_seats.png') top center/contain no-repeat;
+  }
   &:after,
   &:before {
     content: "";
@@ -134,7 +137,8 @@
     transform: translateY(-20px);
     transition: opacity 350ms $easeOutQuint;
     pointer-events: none;
-    > * {
+    z-index: 3;
+    > span:not(.button) {
       display: inline-block;
       width: 40px;
       height: 40px;
@@ -153,6 +157,60 @@
     position: relative;
     canvas {
       border-radius: 100%;
+    }
+  }
+  &.nuetral {
+    .seat-status {
+      > span {
+        opacity: 0 !important;
+        transition-delay: 250ms !important;
+        &.seat-status-off {
+          opacity: 1 !important;
+          transition-delay: 0ms !important;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  &.hot {
+    .seat-status {
+      > span {
+        opacity: 0 !important;
+        transition-delay: 250ms !important;
+        &.seat-status-on.hot {
+          opacity: 1 !important;
+          transition-delay: 0ms !important;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .seat-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 71px;
+    height: 145px;
+    display: block;
+    > span {
+      transition: all 250ms $easeOutQuint 250ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #FFF url('/images/seat_off.png') center no-repeat;
+      display: block;
+      opacity: 0;
+      &.seat-status-on.cold {
+        opacity: 1;
+        background-image: url('/images/seat_on_cold.png');
+        transition-delay: 0ms;
+      }
+      &.seat-status-on.hot {
+        background-image: url('/images/seat_on_hot.png')
+      }
     }
   }
 }

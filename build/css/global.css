@@ -1521,6 +1521,127 @@ body.modal-open {
       .modal.command-warning .modal-command-warning .modal-actions .button:last-child {
         margin-right: 0px; }
 
+.modal.heated-seats {
+  text-align: center; }
+  .modal.heated-seats .modal-dialog {
+    max-width: 425px; }
+  .modal.heated-seats .modal-heated-seats {
+    height: 728px;
+    overflow: hidden; }
+    .modal.heated-seats .modal-heated-seats.seat-open.top .heated-seats-vehicle {
+      transform: translateY(265px); }
+    .modal.heated-seats .modal-heated-seats.seat-open.bottom .modal-title {
+      opacity: 0; }
+    .modal.heated-seats .modal-heated-seats.seat-open.bottom .heated-seats-vehicle {
+      transform: translateY(-225px); }
+    .modal.heated-seats .modal-heated-seats .modal-title {
+      padding-top: 27px;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .modal.heated-seats .modal-heated-seats .ui-dial {
+      margin-bottom: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 70px;
+      opacity: 0 !important;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      pointer-events: none !important; }
+      .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) * {
+        pointer-events: none !important; }
+      .modal.heated-seats .modal-heated-seats .ui-dial.active {
+        opacity: 1 !important;
+        pointer-events: all !important; }
+      .modal.heated-seats .modal-heated-seats .ui-dial.bottom {
+        top: auto;
+        bottom: 30px; }
+      .modal.heated-seats .modal-heated-seats .ui-dial-controls {
+        bottom: -25px; }
+        .modal.heated-seats .modal-heated-seats .ui-dial-controls > span:not(.button) {
+          float: left;
+          margin: 0; }
+          .modal.heated-seats .modal-heated-seats .ui-dial-controls > span:not(.button).up {
+            float: right; }
+        .modal.heated-seats .modal-heated-seats .ui-dial-controls .button {
+          width: 107px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0;
+          position: relative;
+          top: 5px;
+          pointer-events: all; }
+    .modal.heated-seats .modal-heated-seats .heated-seats-vehicle {
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      position: relative;
+      z-index: 5;
+      top: 50px;
+      transition: all 350ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .modal.heated-seats .modal-heated-seats .heated-seats-vehicle img {
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+        position: relative; }
+      .modal.heated-seats .modal-heated-seats .heated-seats-vehicle em {
+        display: block;
+        font: 500 20px/1em "KIA", sans-serif;
+        letter-spacing: .5;
+        color: #000;
+        font-style: normal;
+        padding-top: 15px; }
+      .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span {
+        position: absolute;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: .75;
+        cursor: pointer; }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span:before, .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span:after {
+          content: "";
+          display: block;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+          opacity: 0;
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          background-position: center;
+          background-repeat: no-repeat;
+          pointer-events: none; }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.cold:before {
+          opacity: 1; }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.hot:after {
+          opacity: 1; }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span:hover {
+          opacity: 1; }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-1 {
+          top: 164px;
+          left: 34px; }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-1:before {
+            background: url("/images/heated_seat_1_cold.png"); }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-1:after {
+            background: url("/images/heated_seat_1_hot.png"); }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-2 {
+          top: 164px;
+          right: 42px; }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-2:before {
+            background: url("/images/heated_seat_2_cold.png"); }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-2:after {
+            background: url("/images/heated_seat_2_hot.png"); }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-3 {
+          top: 262px;
+          left: 37px; }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-3:before {
+            background: url("/images/heated_seat_3_cold.png"); }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-3:after {
+            background: url("/images/heated_seat_3_hot.png"); }
+        .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-4 {
+          top: 262px;
+          right: 42px; }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-4:before {
+            background: url("/images/heated_seat_4_cold.png"); }
+          .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-4:after {
+            background: url("/images/heated_seat_4_hot.png"); }
+
 .category-selector {
   padding-left: 25px;
   margin-bottom: 25px; }

@@ -8,7 +8,7 @@ $(document).ready(function () {
       dial_value: $('.ui-dial-value'),
       dial_value_text: $('.ui-dial-temperateure-text'),
       dial_handle: $('.ui-dial-handle'),
-      dial_control: $('.ui-dial-controls > *')
+      dial_control: $('.ui-dial-controls > span:not(.button)')
     },
     properties: {
       dials: []

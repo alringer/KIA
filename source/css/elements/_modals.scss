@@ -1698,6 +1698,176 @@ body.modal-open {
     }
   }
 }
+.modal.heated-seats {
+  text-align: center;
+  .modal-dialog {
+    max-width: 425px;
+  }
+  .modal-heated-seats {
+    height: 728px;
+    overflow: hidden;
+    &.seat-open {
+      &.top {
+        .heated-seats-vehicle {
+          transform: translateY(265px);
+        }
+      }
+      &.bottom {
+        .modal-title {
+          opacity: 0;
+        }
+        .heated-seats-vehicle {
+          transform: translateY(-225px);
+        }
+      }
+    }
+    .modal-title {
+      padding-top: 27px;
+      transition: all 250ms $easeOutQuint;
+    }
+    .ui-dial {
+      margin-bottom: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 70px;
+      opacity: 0 !important;
+      transition: all 250ms $easeOutQuint;
+      pointer-events: none !important;
+      &:not(.active) {
+        * {
+          pointer-events: none !important;
+        }
+      }
+      &.active {
+        opacity: 1 !important;
+        pointer-events: all !important;
+      }
+      &.bottom {
+        top: auto;
+        bottom: 30px;
+      }
+      &-controls {
+        bottom: -25px;
+        > span:not(.button) {
+          float: left;
+          margin: 0;
+          &.up {
+            float: right;
+          }
+        }
+        .button {
+          width: 107px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0;
+          position: relative;
+          top: 5px;
+          pointer-events: all;
+        }
+      }
+    }
+    .heated-seats {
+      &-vehicle {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+        top: 50px;
+        transition: all 350ms $easeOutQuint;
+        img {
+          display: block;
+          margin: 0 auto;
+          cursor: pointer;
+          position: relative;
+        }
+        em {
+          display: block;
+          font: 500 20px/1em $kia;
+          letter-spacing: .5;
+          color: #000;
+          font-style: normal;
+          padding-top: 15px;
+        }
+        span {
+          position: absolute;
+          transition: all 250ms $easeOutQuint;
+          opacity: .75;
+          cursor: pointer;
+          &:before,
+          &:after {
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            opacity: 0;
+            transition: all 250ms $easeOutQuint;
+            background-position: center;
+            background-repeat: no-repeat;
+            pointer-events: none;
+          }
+          &.cold {
+            &:before {
+              opacity: 1;
+            }
+          }
+          &.hot {
+            &:after {
+              opacity: 1;
+            }
+          }
+          &:hover {
+            opacity: 1;
+          }
+          &.heated-seat-1 {
+            top: 164px;
+            left: 34px;
+            &:before {
+              background: url('/images/heated_seat_1_cold.png');
+            }
+            &:after {
+              background: url('/images/heated_seat_1_hot.png');
+            }
+          }
+          &.heated-seat-2 {
+            top: 164px;
+            right: 42px;
+            &:before {
+              background: url('/images/heated_seat_2_cold.png');
+            }
+            &:after {
+              background: url('/images/heated_seat_2_hot.png');
+            }
+          }
+          &.heated-seat-3 {
+            top: 262px;
+            left: 37px;
+            &:before {
+              background: url('/images/heated_seat_3_cold.png');
+            }
+            &:after {
+              background: url('/images/heated_seat_3_hot.png');
+            }
+          }
+          &.heated-seat-4 {
+            top: 262px;
+            right: 42px;
+            &:before {
+              background: url('/images/heated_seat_4_cold.png');
+            }
+            &:after {
+              background: url('/images/heated_seat_4_hot.png');
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .category-selector {
   padding-left: 25px;

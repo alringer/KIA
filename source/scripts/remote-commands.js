@@ -77,7 +77,7 @@ $(document).ready(() => {
         setTimeout(() => {
           window.alerts.methods.open._error();
         }, 3000)
-      }
+      },
     }
   };
   // EVENTS
