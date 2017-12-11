@@ -57,6 +57,7 @@ $(document).ready(() => {
         window.dial.elements.dial_handle.css({
           transform : `rotate(${degree}deg) translate(-140px) rotate(${-degree}deg)`
         });
+        console.log(value);
         window.dial.elements.dial_value.val(value);
       },
       _get : () => {
@@ -91,7 +92,6 @@ $(document).ready(() => {
         if($this.hasClass('down')) {
           set = current -= 1;
         }
-        console.log(set);
         window.dial.methods._set(set);
       },
     }
