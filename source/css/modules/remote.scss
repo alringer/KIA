@@ -70,6 +70,7 @@
 
 .remote-body {
   position: relative;
+  overflow: hidden;
   .remote-meta-column {
     position: absolute;
     left: 50%;
@@ -176,6 +177,8 @@
 
 .remote-footer {
   background: #444444;
+  position: relative;
+  z-index: 11;
   @media (max-width: $screen-xs-max) {
     padding-bottom: 10px;
   }
@@ -881,6 +884,7 @@
   text-align: center;
   white-space: nowrap;
   padding-bottom: 30px;
+  z-index: 10;
   &.left {
     margin-right: 175px;
   }
@@ -917,6 +921,86 @@
     left: 50%;
     transform: translate(-50%, 25px);
     transition: all 250ms $easeOutQuint;
+  }
+  @media (max-width: $screen-sm-max) {
+    height: 66px;
+    line-height: 66px;
+    border-radius: 66px;
+    min-width: 66px;
+    &.left {
+      margin-right: 210px;
+      width: 66px;
+    }
+    &.right {
+      padding: 0 10px;
+      .accessory {
+        margin: 0 -2.5px;
+      }
+    }
+    .accessory {
+      transform:scale(.80);
+      padding-bottom: 5px;
+    }
+  }
+  @media (max-width: 860px) {
+    transform: translateY(-50%);
+    left: 50px;
+    &.right {
+      left: auto;
+      right: 10px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    &.left {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      margin-top: 10px;
+      margin-left: -20px;
+      em {
+        display: none;
+      }
+      .toggle {
+        position: relative;
+        top: 12px;
+        transform: none;
+        left: 20px;
+      }
+    }
+    &.right {
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      transform: none;
+      margin: 0;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      text-align: left;
+      height: 66px;
+      background: $white;
+      padding-top: 0px;
+      .toggle {
+        top: 50%;
+        margin-top: 0;
+        right: 10px;
+        left: auto;
+        transform: translateY(-50%);
+      }
+      .accessory {
+        &:first-child {
+          margin-left: -5px;
+        }
+        transform: scale(.9);
+        margin: 0 5px;
+      }
+    }
+    .accessory {
+      transform: none;
+      margin: 0;
+    }
   }
 }
 
