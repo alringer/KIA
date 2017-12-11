@@ -173,8 +173,7 @@
 
 .remote-footer {
   background: #444444;
-  position: relative;
-  z-index: 11; }
+  position: relative; }
   @media (max-width: 767px) {
     .remote-footer {
       padding-bottom: 10px; } }
@@ -203,7 +202,9 @@
     margin: 0;
     box-shadow: none;
     background: transparent;
-    overflow: visible; }
+    overflow: visible;
+    position: relative;
+    z-index: 11; }
     .remote-footer .overview-remote-command.communicating {
       pointer-events: none; }
       .remote-footer .overview-remote-command.communicating .action-buttons,
@@ -1732,7 +1733,8 @@
   text-align: center;
   white-space: nowrap;
   padding-bottom: 30px;
-  z-index: 10; }
+  z-index: 10;
+  background: #FFF; }
   .accessory-group.left {
     margin-right: 175px; }
   .accessory-group.right {
@@ -1793,7 +1795,8 @@
       transform: translate(-50%, -50%);
       border: none;
       margin-top: 10px;
-      margin-left: -20px; }
+      margin-left: -20px;
+      background: none; }
       .accessory-group.left em {
         display: none; }
       .accessory-group.left .toggle {

@@ -8,81 +8,94 @@ $(document).ready(() => {
       dial_handle : $('.ui-dial-handle'),
       dial_control : $('.ui-dial-controls > *'),
     },
-    properties : {},
+    properties : {
+      dials : [],
+    },
     methods : {
       _setup : () => {
-        var value_max = window.dial.elements.dial.data('max'),
-            value_min = window.dial.elements.dial.data('min'),
-            value_diff = value_max - value_min,
-            min = 0,
-            max = 265,
-            step = Math.floor(max / (value_diff + 1));
-        window.dial.properties = {
-          value_max,
-          value_min,
-          value_diff,
-          min,
-          max,
-          step,
-        };
-        window.dial.elements.dial_canvas.knob({
-            step,
-            angleArc : max,
-            angleOffset : `-${max/2}`,
+        var c = 0;
+        window.dial.elements.dial.each(function(){
+          var $this = $(this),
+              value_max = $this.data('max'),
+              value_min = $this.data('min'),
+              value_diff = value_max - value_min,
+              min = 0,
+              max = 265,
+              step = Math.floor(max / (value_diff));
+          window.dial.properties.dials.push({
+            value_max,
+            value_min,
+            value_diff,
             min,
             max,
-            width: 295,
-            height: 295,
-            change : (v) => {
-              window.dial.methods._adjust_ui(v);
-            },
+            step,
+            element : $this,
+            input : $this.find('.ui-dial-value'),
+            tempText : $this.find('.ui-dial-temperateure-text'),
+            handle : $this.find('.ui-dial-handle'),
+          });
+          $this.find('.ui-dial-canvas').knob({
+              step,
+              angleArc : max,
+              angleOffset : `-${max/2}`,
+              min,
+              max,
+              width: 295,
+              height: 295,
+              change : (v) => {
+                window.dial.methods._adjust_ui(window.dial.elements.dial.index($this), v);
+              },
+          });
+          window.dial.methods._set(c, window.dial.methods._get(c));
+          c++;
         });
-        window.dial.elements.dial_canvas = $('.ui-dial-canvas');
-        window.dial.methods._set(window.dial.methods._get());
       },
-      _adjust_ui : (v) => {
-        var degree = v - (window.dial.properties.step / 2);
-        degree = Math.ceil(degree / window.dial.properties.step) * window.dial.properties.step;
-        var percentage = degree / window.dial.properties.max,
-            value_diff = window.dial.properties.value_max - window.dial.properties.value_min,
-            value = Math.round(window.dial.properties.value_min + (value_diff * percentage));
-        window.dial.elements.dial_value_text.text(value);
+      _adjust_ui : (c, v) => {
+        var props = window.dial.properties.dials[c],
+            degree = v - (props.step / 2);
+        degree = Math.ceil(degree / props.step) * props.step;
+        var percentage = degree / props.max,
+            value_diff = props.value_max - props.value_min,
+            value = Math.round(props.value_min + (value_diff * percentage));
+        props.tempText.text(value);
         if(percentage > .5) {
-          window.dial.elements.dial.addClass('hot');
+          props.element.addClass('hot');
         }else{
-          window.dial.elements.dial.removeClass('hot')
+          props.element.removeClass('hot')
         }
         degree -= 43;
-        window.dial.elements.dial_handle.css({
+        props.handle.css({
           transform : `rotate(${degree}deg) translate(-140px) rotate(${-degree}deg)`
         });
-        window.dial.elements.dial_value.val(value);
+        props.input.val(value);
       },
-      _get : () => {
-        return parseInt(window.dial.elements.dial_value.val(), 10);
+      _get : (c) => {
+        return parseInt(window.dial.properties.dials[c].input.val(), 10);
       },
-      _set : (v) => {
-        if(v < window.dial.properties.value_min) {
-          v = window.dial.properties.value_min;
+      _set : (c, v) => {
+        var props = window.dial.properties.dials[c];
+        if(v < props.value_min) {
+          v = props.value_min;
         }
-        if(v > window.dial.properties.value_max ) {
-          v = window.dial.properties.value_max;
+        if(v > props.value_max ) {
+          v = props.value_max;
         }
-        window.dial.elements.dial_canvas.val(v);
-        var adjust_v = (v - window.dial.properties.value_min) / window.dial.properties.value_diff;
-        adjust_v = Math.round(adjust_v * window.dial.properties.max);
-        window.dial.elements.dial_canvas.val(adjust_v)
+        props.element.val(v);
+        var adjust_v = (v - props.value_min) / props.value_diff;
+        adjust_v = Math.round(adjust_v * props.max);
+        props.element.val(adjust_v)
           .trigger('change');
-        clearTimeout(window.settingDialClass);
-        window.dial.elements.dial.addClass('setting');
-        window.dial.methods._adjust_ui(adjust_v);
-        window.settingDialClass = setTimeout(() => {
-          window.dial.elements.dial.removeClass('setting');
+        clearTimeout(window[`settingDialClass${c}`]);
+        props.element.addClass('setting');
+        window.dial.methods._adjust_ui(c, adjust_v);
+        window[`settingDialClass${c}`] = setTimeout(() => {
+          props.element.removeClass('setting');
         }, 550);
       },
       _increment : function() {
         var $this = $(this),
-            current = window.dial.methods._get(),
+            c = window.dial.elements.dial.index($this.parents('.ui-dial')),
+            current = window.dial.methods._get(c),
             set = 0;
         if($this.hasClass('up')) {
           set = current += 1;
@@ -90,7 +103,7 @@ $(document).ready(() => {
         if($this.hasClass('down')) {
           set = current -= 1;
         }
-        window.dial.methods._set(set);
+        window.dial.methods._set(c, set);
       },
     }
   };

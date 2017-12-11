@@ -178,7 +178,6 @@
 .remote-footer {
   background: #444444;
   position: relative;
-  z-index: 11;
   @media (max-width: $screen-xs-max) {
     padding-bottom: 10px;
   }
@@ -211,6 +210,8 @@
     box-shadow: none;
     background: transparent;
     overflow: visible;
+    position: relative;
+    z-index: 11;
     &.communicating {
       pointer-events: none;
       .action-buttons,
@@ -885,6 +886,7 @@
   white-space: nowrap;
   padding-bottom: 30px;
   z-index: 10;
+  background: $white;
   &.left {
     margin-right: 175px;
   }
@@ -957,6 +959,7 @@
       border: none;
       margin-top: 10px;
       margin-left: -20px;
+      background: none;
       em {
         display: none;
       }

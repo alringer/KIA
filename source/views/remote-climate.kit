@@ -154,22 +154,6 @@
               </span><!-- /.action-button -->
             </div><!-- /.overview-remtote-command-actions-buttons -->
           </div><!-- /.overview-remote-command-actions -->
-          <div class="modal fade command-warning" id="command-warning" tabindex="-1" role="dialog" aria-labelledby="warning" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <div class="modal-command-warning">
-                    <strong class="modal-title">Ventilation Warning</strong>
-                    <p>Your engine and climate system will be running for 10 minutes. Please ensure your vehicle is parked in a well ventilated area.</p>
-                    <div class="modal-actions">
-                      <span class="button remote-command-action-button" data-action="state-2-1" data-dismiss="modal">Ok</span>
-                      <span class="button outline" data-dismiss="modal">Cancel</span>
-                    </div><!-- /.modal-actions -->
-                  </div><!-- /.modal-command-warning -->
-                </div><!-- /.modal-body -->
-              </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-          </div><!-- /.modal#command-warning -->
         </div><!-- /.overview-remote-command -->
         <div class="remote-footer-caption">
           <strong>
@@ -178,6 +162,22 @@
           Climate Turns off, climate turns on
           <i class="icon-cog-white"></i>
         </div><!-- /.remote-footer-caption -->
+        <div class="modal fade command-warning" id="command-warning" tabindex="-1" role="dialog" aria-labelledby="warning" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="modal-command-warning">
+                  <strong class="modal-title">Ventilation Warning</strong>
+                  <p>Your engine and climate system will be running for 10 minutes. Please ensure your vehicle is parked in a well ventilated area.</p>
+                  <div class="modal-actions">
+                    <span class="button remote-command-action-button" data-action="state-2-1" data-dismiss="modal">Ok</span>
+                    <span class="button outline" data-dismiss="modal">Cancel</span>
+                  </div><!-- /.modal-actions -->
+                </div><!-- /.modal-command-warning -->
+              </div><!-- /.modal-body -->
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal#command-warning -->
       </div><!-- /.remote-footer -->
     </div><!-- /.remote-climate -->
     <div class="remote-footer-cards">
@@ -246,3 +246,33 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#about-climate -->
 <!-- @import "partials/footer.kit" -->
+<div class="modal fade heated-seats" id="heated-seats" tabindex="-1" role="dialog" aria-labelledby="warning" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-heated-steats">
+          <strong class="modal-title">Heated and Cooled Seats</strong>
+          <div class="ui-dial" data-min="1" data-max="7">
+            <span class="ui-dial-temperateure">
+              <span class="ui-dial-temperateure-text"></span>
+              <span class="degree">°</span>
+            </span>
+            <span class="ui-dial-handle"></span>
+            <input type="text" class="ui-dial-canvas" />
+            <input type="hidden" class="ui-dial-value" value="4"  />
+            <span class="ui-dial-controls">
+              <span class="down"></span>
+              <span class="up"></span>
+            </span>
+          </div>
+        </div><!-- /.modal-command-warning -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#command-warning -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+        // $('#heated-seats').modal('show');
+    });
+</script>

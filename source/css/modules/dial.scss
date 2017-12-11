@@ -119,6 +119,7 @@
     width: 100%;
     transform: translateY(-20px);
     transition: opacity 350ms $easeOutQuint;
+    pointer-events: none;
     > * {
       display: inline-block;
       width: 40px;
@@ -127,6 +128,7 @@
       background: url('/images/icon-climate-plus.png') center no-repeat;
       cursor: pointer;
       user-select: none;
+      pointer-events: all;
       &.down {
         background-image: url('/images/icon-climate-minus.png');
       }
