@@ -11,6 +11,30 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 3.5.0
+Seamgen User stories -
+* KK-209 As a user I need to be able to refresh my vehicles status
+* KK-291 As a user I need to see when my doors or trunk are open
+* KK-287 As a user I need to lock and unlock my car
+* KK-288 As a user I need activate Horn & Lights (Panic Mode)
+* KK-289 As a user I need to be able to access the security info modal
+* KK-347 As a user I need a to refresh the status of my vehicles climate
+* KK-375 As a user I need to be able to access the Climate Info Modal
+* KK-351 As a user I need a Current Weather card
+* KK-370 As a user, I need to know that my climate remote request has failed.
+* KK-352 As a user I need a Climate Schedules card
+* KK-353 As a user I need to turn my climate on
+* KK-350 As a user I need a dial to adjust my vehicles temperature
+* KK-354 As a user I need to turn my climate off
+* KK-348 As a user I need to turn on my defroster and heated accessories
+* KK-349 As a user I need to activate heated seats
+
+KIA JIRA Issues -
+* KOPE-147 Separate css for Alerts
+* KOPE-146 Bar is Overlapping with Account and vehicle drop downs
+* KOPE-136 Overview - HOW TO ACTIVATE - Screen slider index navigation color reversed
+##### _notes: Green icons on climate will be updated by KIA & team to support logic_
+===
 # V - 3.1.0
 * Misc Bug fixes
 ##### _notes: Fire global alerts using: window.alerts.methods.open.\_success() or window.alerts.methods.open.\_error()_
