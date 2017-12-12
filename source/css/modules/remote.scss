@@ -898,6 +898,19 @@ body.refreshing {
     }
   }
 }
+.has-heated-seats {
+  @media (max-width: $screen-xs-max) {
+    .ui-dial {
+      margin-bottom: 155px;
+    }
+    .accessory-group {
+      &.left {
+        margin-top: -30px;
+      }
+    }
+  }
+}
+
 @media (min-width: $screen-xs-max) {
   .has-heated-seats {
     .ui-dial {
@@ -1017,6 +1030,9 @@ body.refreshing {
     @media (max-width: $screen-sm-max) {
       width: 285px;
     }
+    @media (max-width: $screen-xs-max) {
+      bottom: 60px;
+    }
   }
   .accessory {
     display: inline-block;
@@ -1092,10 +1108,11 @@ body.refreshing {
         left: 20px;
       }
     }
+    &.accessory-group-heated-seats,
     &.right {
       top: auto;
       left: 0;
-      right: 0;
+      right: 0 !important;
       bottom: 20px;
       transform: none;
       margin: 0;
@@ -1107,6 +1124,7 @@ body.refreshing {
       height: 66px;
       background: $white;
       padding-top: 0px;
+      width: 100%;
       .toggle {
         top: 50%;
         margin-top: 0;
@@ -1125,6 +1143,19 @@ body.refreshing {
     .accessory {
       transform: none;
       margin: 0;
+    }
+    &.accessory-group-heated-seats {
+      bottom: 86px;
+      .accessory {
+        padding: 0;
+        transform: translateY(-50%) scale(.9);
+        i.icon-arrow-right {
+          right: -20px;
+        }
+        strong {
+          right: 5px;
+        }
+      }
     }
   }
 }

@@ -1734,6 +1734,12 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
 .state-1 .accessory-group .toggle {
   opacity: 0; }
 
+@media (max-width: 767px) {
+  .has-heated-seats .ui-dial {
+    margin-bottom: 155px; }
+  .has-heated-seats .accessory-group.left {
+    margin-top: -30px; } }
+
 @media (min-width: 767px) {
   .has-heated-seats .ui-dial {
     margin-left: 85px;
@@ -1842,6 +1848,9 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     @media (max-width: 991px) {
       .accessory-group.accessory-group-heated-seats {
         width: 285px; } }
+    @media (max-width: 767px) {
+      .accessory-group.accessory-group-heated-seats {
+        bottom: 60px; } }
   .accessory-group .accessory {
     display: inline-block;
     vertical-align: bottom;
@@ -1904,10 +1913,10 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
         top: 12px;
         transform: none;
         left: 20px; }
-    .accessory-group.right {
+    .accessory-group.accessory-group-heated-seats, .accessory-group.right {
       top: auto;
       left: 0;
-      right: 0;
+      right: 0 !important;
       bottom: 20px;
       transform: none;
       margin: 0;
@@ -1918,21 +1927,31 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
       text-align: left;
       height: 66px;
       background: #FFF;
-      padding-top: 0px; }
-      .accessory-group.right .toggle {
+      padding-top: 0px;
+      width: 100%; }
+      .accessory-group.accessory-group-heated-seats .toggle, .accessory-group.right .toggle {
         top: 50%;
         margin-top: 0;
         right: 10px;
         left: auto;
         transform: translateY(-50%); }
-      .accessory-group.right .accessory {
+      .accessory-group.accessory-group-heated-seats .accessory, .accessory-group.right .accessory {
         transform: scale(0.9);
         margin: 0 5px; }
-        .accessory-group.right .accessory:first-child {
+        .accessory-group.accessory-group-heated-seats .accessory:first-child, .accessory-group.right .accessory:first-child {
           margin-left: -5px; }
     .accessory-group .accessory {
       transform: none;
-      margin: 0; } }
+      margin: 0; }
+    .accessory-group.accessory-group-heated-seats {
+      bottom: 86px; }
+      .accessory-group.accessory-group-heated-seats .accessory {
+        padding: 0;
+        transform: translateY(-50%) scale(0.9); }
+        .accessory-group.accessory-group-heated-seats .accessory i.icon-arrow-right {
+          right: -20px; }
+        .accessory-group.accessory-group-heated-seats .accessory strong {
+          right: 5px; } }
 
 .icon-gas-battery {
   background: url("/images/icon_gas_battery.svg") center no-repeat; }
