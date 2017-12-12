@@ -64,7 +64,7 @@
           </span><!-- /.updating-icon-status -->
         </span><!-- /.remote-commands-refresh -->
       </div><!-- /.remote-header -->
-      <div class="remote-body">
+      <div class="remote-body has-heated-seats">
         <div class="accessory-group left">
           <div class="accessory">
             <i class="icon-defrost"></i>
@@ -76,6 +76,14 @@
               <span></span>
             </label>
           </span><!-- /.toggle -->
+        </div><!-- /.accessory-group -->
+        <div class="accessory-group right accessory-group-heated-seats" data-toggle="modal" data-target="#heated-seats">
+          <div class="accessory">
+            <i class="icon-heated-seats"></i>
+            <em>Heated And Cooled Seats</em>
+            <strong>ON</strong>
+            <i class="icon-arrow-right"></i>
+          </div><!-- /.accessory -->
         </div><!-- /.accessory-group -->
         <div class="accessory-group right">
           <div class="accessory">
@@ -336,8 +344,3 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#heated-seats -->
-<script type="text/javascript">
-    $(window).on('load',function(){
-        $('#heated-seats').modal('show');
-    });
-</script>

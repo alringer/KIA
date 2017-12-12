@@ -1734,6 +1734,26 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
 .state-1 .accessory-group .toggle {
   opacity: 0; }
 
+@media (min-width: 767px) {
+  .has-heated-seats .ui-dial {
+    margin-left: 85px;
+    margin-right: 0; }
+  .has-heated-seats .accessory-group {
+    transform: translateY(-25px) !important;
+    top: 175px; }
+    .has-heated-seats .accessory-group.left {
+      left: auto;
+      right: 283px;
+      margin: 0; }
+    .has-heated-seats .accessory-group.right:not(.accessory-group-heated-seats) {
+      margin-left: 0;
+      left: auto;
+      right: 50px;
+      top: 175px;
+      margin: 0; }
+    .has-heated-seats .accessory-group .toggle {
+      margin-top: -10px; } }
+
 .accessory-group {
   border: solid 1px #e2e2e2;
   position: absolute;
@@ -1757,6 +1777,49 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     left: 50%;
     margin-left: 275px;
     padding: 0 15px; }
+  .accessory-group.accessory-group-heated-seats {
+    cursor: pointer;
+    width: 320px;
+    top: 92px;
+    text-align: left;
+    left: auto;
+    right: 50px;
+    margin-left: 0;
+    transform: none; }
+    .accessory-group.accessory-group-heated-seats .accessory {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-bottom: 0;
+      width: 100%;
+      left: 0;
+      padding-left: 40px;
+      padding-right: 25px; }
+      .accessory-group.accessory-group-heated-seats .accessory i {
+        display: inline-block;
+        vertical-align: middle; }
+      .accessory-group.accessory-group-heated-seats .accessory em {
+        display: inline-block;
+        text-align: left;
+        width: 75px;
+        vertical-align: middle;
+        margin-left: 14px; }
+      .accessory-group.accessory-group-heated-seats .accessory i.icon-arrow-right {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        margin: 0 !important; }
+      .accessory-group.accessory-group-heated-seats .accessory strong {
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        font: 500 17px/1em "KIA", sans-serif;
+        letter-spacing: .4px;
+        color: #9ba1a9; }
   .accessory-group .accessory {
     display: inline-block;
     vertical-align: bottom;
@@ -1981,3 +2044,8 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
   background: url("/images/icon_defrost_steering.svg") center/contain no-repeat;
   width: 24px;
   height: 32px; }
+
+.icon-heated-seats {
+  width: 26px;
+  height: 21px;
+  background: url("/images/icon_heated_seats.svg") center/contain no-repeat; }

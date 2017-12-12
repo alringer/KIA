@@ -898,6 +898,35 @@ body.refreshing {
     }
   }
 }
+@media (min-width: $screen-xs-max) {
+  .has-heated-seats {
+    .ui-dial {
+      margin-left: 85px;
+      margin-right: 0;
+    }
+    .accessory-group {
+      transform: translateY(-25px) !important;
+      top: 175px;
+      &.left {
+        left: auto;
+        right: 283px;
+        margin: 0;
+      }
+      &.right {
+        &:not(.accessory-group-heated-seats) {
+          margin-left: 0;
+          left: auto;
+          right: 50px;
+          top: 175px;
+          margin: 0;
+        }
+      }
+      .toggle {
+        margin-top: -10px;
+      }
+    }
+  }
+}
 
 .accessory-group {
   border: solid 1px #e2e2e2;
@@ -923,6 +952,55 @@ body.refreshing {
     left: 50%;
     margin-left: 275px;
     padding: 0 15px;
+  }
+  &.accessory-group-heated-seats {
+    cursor: pointer;
+    width: 320px;
+    top: 92px;
+    text-align: left;
+    left: auto;
+    right: 50px;
+    margin-left: 0;
+    transform: none;
+    .accessory {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-bottom: 0;
+      width: 100%;
+      left: 0;
+      padding-left: 40px;
+      padding-right: 25px;
+      i {
+        display: inline-block;
+        vertical-align: middle;;
+      }
+      em {
+        display: inline-block;
+        text-align: left;
+        width: 75px;
+        vertical-align: middle;
+        margin-left: 14px
+      }
+      i.icon-arrow-right {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        margin: 0 !important;
+      }
+      strong {
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        font: 500 17px/1em $kia;
+        letter-spacing: .4px;
+        color: #9ba1a9;
+      }
+    }
   }
   .accessory {
     display: inline-block;
@@ -1173,4 +1251,10 @@ body.refreshing {
   background: url('/images/icon_defrost_steering.svg') center/contain no-repeat;
   width: 24px;
   height: 32px;
+}
+
+.icon-heated-seats {
+  width: 26px;
+  height: 21px;
+  background: url('/images/icon_heated_seats.svg') center/contain no-repeat;
 }
