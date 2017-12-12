@@ -65,6 +65,76 @@ nav.nav-main {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .notifications-menu {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    &.unread {
+      .icon-notifications {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+    .icon-notifications {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        background-color: #c4172c;
+        border: solid 2px #ffffff;
+        top: -5px;
+        right: -5px;
+        opacity: 0;
+      }
+    }
+    .dropdown-menu {
+      float: right;
+      left: auto !important;
+      right: 0;
+      width: 370px;
+      ul.notification-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          padding: 12px 45px 12px 57px;
+          border-bottom: 1px solid rgba($black, .1);
+          &:last-child {
+            border-bottom: 0px;
+          }
+          > strong {
+            font: bold 10px/1em $kia;
+            color: #969696;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+          }
+          > em {
+            font: 12px $sans;
+            color: #4e4e4e;
+            margin-bottom: 5px;
+            strong {
+              display: inline;
+              text-transform: none;
+              color: inherit;
+              font: bold 12px $sans;
+              letter-spacing: inherit;
+            }
+          }
+          > span {
+            display: block;
+            font: 10px $sans;
+            letter-spacing: .5px;
+            color: #969696;
+          }
+        }
+      }
+    }
+  }
   .account-menu {
     position: absolute;
     right: 10px;

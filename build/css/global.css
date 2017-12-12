@@ -2295,6 +2295,60 @@ nav.nav-main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+  nav.nav-main .notifications-menu {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%); }
+    nav.nav-main .notifications-menu.unread .icon-notifications:before {
+      opacity: 1; }
+    nav.nav-main .notifications-menu .icon-notifications {
+      position: relative; }
+      nav.nav-main .notifications-menu .icon-notifications:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        background-color: #c4172c;
+        border: solid 2px #ffffff;
+        top: -5px;
+        right: -5px;
+        opacity: 0; }
+    nav.nav-main .notifications-menu .dropdown-menu {
+      float: right;
+      left: auto !important;
+      right: 0;
+      width: 370px; }
+      nav.nav-main .notifications-menu .dropdown-menu ul.notification-list {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+        nav.nav-main .notifications-menu .dropdown-menu ul.notification-list li {
+          padding: 12px 45px 12px 57px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+          nav.nav-main .notifications-menu .dropdown-menu ul.notification-list li:last-child {
+            border-bottom: 0px; }
+          nav.nav-main .notifications-menu .dropdown-menu ul.notification-list li > strong {
+            font: bold 10px/1em "KIA", sans-serif;
+            color: #969696;
+            letter-spacing: 1px;
+            margin-bottom: 5px; }
+          nav.nav-main .notifications-menu .dropdown-menu ul.notification-list li > em {
+            font: 12px "Source Sans Pro", sans-serif;
+            color: #4e4e4e;
+            margin-bottom: 5px; }
+            nav.nav-main .notifications-menu .dropdown-menu ul.notification-list li > em strong {
+              display: inline;
+              text-transform: none;
+              color: inherit;
+              font: bold 12px "Source Sans Pro", sans-serif;
+              letter-spacing: inherit; }
+          nav.nav-main .notifications-menu .dropdown-menu ul.notification-list li > span {
+            display: block;
+            font: 10px "Source Sans Pro", sans-serif;
+            letter-spacing: .5px;
+            color: #969696; }
   nav.nav-main .account-menu {
     position: absolute;
     right: 10px;
