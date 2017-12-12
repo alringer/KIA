@@ -1304,4 +1304,39 @@ body.refreshing {
   width: 26px;
   height: 21px;
   background: url('/images/icon_heated_seats.svg') center/contain no-repeat;
+  position: relative;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 3px;
+    display: block;
+    height: 3px;
+    background: #ec4446;
+    pointer-events: none;
+    transition: all 250ms $easeOutQuint;
+    opacity: 0;
+  }
+  &:after {
+    background: #56b5e4;
+    margin-top: 8px;
+  }
+  &.hot {
+    &:before {
+      opacity: 1;
+    }
+  }
+  &.cold {
+    &:after {
+      margin-top: 3px;
+      opacity: 1;
+    }
+  }
+  &.hot.cold {
+    &:after {
+      margin-top: 8px;
+    }
+  }
 }

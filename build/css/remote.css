@@ -2089,4 +2089,27 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
 .icon-heated-seats {
   width: 26px;
   height: 21px;
-  background: url("/images/icon_heated_seats.svg") center/contain no-repeat; }
+  background: url("/images/icon_heated_seats.svg") center/contain no-repeat;
+  position: relative; }
+  .icon-heated-seats:before, .icon-heated-seats:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 3px;
+    display: block;
+    height: 3px;
+    background: #ec4446;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0; }
+  .icon-heated-seats:after {
+    background: #56b5e4;
+    margin-top: 8px; }
+  .icon-heated-seats.hot:before {
+    opacity: 1; }
+  .icon-heated-seats.cold:after {
+    margin-top: 3px;
+    opacity: 1; }
+  .icon-heated-seats.hot.cold:after {
+    margin-top: 8px; }
