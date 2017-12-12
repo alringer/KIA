@@ -604,11 +604,11 @@ body .modal {
           margin: 0 2.5px;
           &.slick-active {
             button {
-              background: #e4e5e8;
+              background: $red;
             }
           }
           button {
-            background: $red;
+            background: #e4e5e8;
             -webkit-appearance: none;
             border: none;
             display: block;

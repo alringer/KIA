@@ -646,9 +646,9 @@ body .modal {
           display: inline-block;
           margin: 0 2.5px; }
           .modal.activate-uvo .modal-activate-uvo .slider .slick-dots li.slick-active button {
-            background: #e4e5e8; }
+            background: #C4172C; }
           .modal.activate-uvo .modal-activate-uvo .slider .slick-dots li button {
-            background: #C4172C;
+            background: #e4e5e8;
             -webkit-appearance: none;
             border: none;
             display: block;
