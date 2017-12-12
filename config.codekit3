@@ -794,7 +794,7 @@
 		"oAP": "\/build\/images\/heated_seat_1_cold.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -805,7 +805,7 @@
 		"oAP": "\/build\/images\/heated_seat_1_hot.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -816,7 +816,7 @@
 		"oAP": "\/build\/images\/heated_seat_1_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -849,7 +849,7 @@
 		"oAP": "\/build\/images\/heated_seat_2_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -882,7 +882,7 @@
 		"oAP": "\/build\/images\/heated_seat_3_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -915,7 +915,7 @@
 		"oAP": "\/build\/images\/heated_seat_4_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2207,7 +2207,7 @@
 		"oAP": "\/build\/images\/seat_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2218,7 +2218,7 @@
 		"oAP": "\/build\/images\/seat_on_cold.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2229,7 +2229,7 @@
 		"oAP": "\/build\/images\/seat_on_hot.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
