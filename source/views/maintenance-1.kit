@@ -1,0 +1,42 @@
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- VIEW JS -->
+
+<!-- @import "partials/head/head-end.kit" -->
+<!-- @import "partials/loading.kit" -->
+<!-- @import "partials/alerts.kit" -->
+<div class="view-maintenance">
+  <div class="has-mobile-nav">
+    <!-- @import "partials/nav-dual.kit" -->
+    <!-- @import "partials/nav-mobile-notifications.kit" -->
+    <div class="page-view">
+      <div class="page-view-subnav">
+        <ul class="page-view-subnav-items">
+          <li>
+            <a href="#" class="active">
+              Maintenance
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Histroy
+            </a>
+          </li>
+        </ul><!-- /.page-view-subnav-items -->
+      </div><!-- /.page-view-subnav -->
+      <div class="contain">
+        <h2>Vehicle Maintenance</h2>
+      </div><!-- /.contain -->
+    </div><!-- /.page-view -->
+  </div><!-- /.has-mobile-nav -->
+</div><!-- /.view-notifications -->
+<!-- @import "partials/footer.kit" -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    window.alerts.methods.open._notification();
+  });
+</script>
