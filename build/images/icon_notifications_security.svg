@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="26px" viewBox="0 0 23 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>notifications_security</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Notifications-Dropdown-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-554.000000, -830.000000)">
+        <g id="global-notifications" fill="#2F2F2F">
+            <g id="Icons-/-Notifications" transform="translate(537.000000, 0.000000)">
+                <g id="Notifications-Dropdown" transform="translate(0.000000, 71.000000)">
+                    <g id="Cell-Copy-9" transform="translate(0.000000, 736.000000)">
+                        <g id="Group-7" transform="translate(17.000000, 12.000000)">
+                            <g id="notifications_security" transform="translate(0.000000, 11.000000)">
+                                <path d="M14.8285155,22 L8.17170463,22 C8.58518826,23.1637343 9.69950521,24 11.0092545,24 L11.9907455,24 C13.2991165,24 14.4148663,23.1651924 14.8285155,22 Z M6,11.0001062 C6,9.89547804 6.90017617,9 7.99201702,9 L15.007983,9 C16.1081436,9 17,9.89005841 17,11.0001062 L17,23.9998938 C17,25.104522 16.0998238,26 15.007983,26 L7.99201702,26 C6.8918564,26 6,25.1099416 6,23.9998938 L6,11.0001062 Z M8,12 L8,14 L15,14 L15,12 L8,12 Z M8,15 L8,17 L15,17 L15,15 L8,15 Z" id="Combined-Shape"></path>
+                                <g id="Group-4" fill-rule="nonzero">
+                                    <path d="M3.24269226,6.30148535 C5.58434793,4.54524781 8.49369198,3.50479074 11.6460478,3.50479074 C14.8857361,3.50479074 17.8687614,4.60369576 20.2427082,6.44909031 L19.2303609,7.28877063 C17.1115322,5.71612443 14.4874334,4.78580957 11.6460478,4.78580957 C8.88695178,4.78580957 6.33273899,5.66301892 4.24708966,7.15375739 L3.24269226,6.30148535 Z" id="Combined-Shape"></path>
+                                    <path d="M0.515990625,3.98776812 C3.54271476,1.49617796 7.41965574,0 11.6460478,0 C15.9737008,0 19.934957,1.56873125 22.9921875,4.16856491 L21.9700128,5.01639643 C19.1654893,2.69885799 15.5683806,1.30640824 11.6460478,1.30640824 C7.81976836,1.30640824 4.30297931,2.63149413 1.52954032,4.84780625 L0.515990625,3.98776812 Z" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

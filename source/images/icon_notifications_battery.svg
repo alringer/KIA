@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="21px" viewBox="0 0 11 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>notifications_battery</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Notifications-Dropdown-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-560.000000, -982.000000)">
+        <g id="global-notifications" fill="#2F2F2F">
+            <g id="Icons-/-Notifications" transform="translate(537.000000, 0.000000)">
+                <g id="Notifications-Dropdown" transform="translate(0.000000, 71.000000)">
+                    <g id="Cell-Copy-11" transform="translate(0.000000, 884.000000)">
+                        <path d="M31.3797325,27.491939 L23.5008118,37.3405899 C22.844235,37.9971667 22.6253761,38.6537434 24.1573885,38.6537434 L26.3459776,38.6537434 L23.9385296,46.0949463 C23.5008118,47.1892409 24.6539794,47.6304604 25.251683,46.9703819 L33.1306038,36.9028721 C33.677751,36.3557249 33.677751,35.4802892 32.5834565,35.4802892 L30.1760085,35.4802892 L32.8023154,28.0390863 C33.0211743,27.1636507 32.1457387,26.507074 31.3797325,27.491939 Z" id="notifications_battery"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

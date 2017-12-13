@@ -8,6 +8,7 @@ $(document).ready(() => {
       _reset : () => {
         window.alerts.methods.close._error();
         window.alerts.methods.close._sccuess();
+        window.alerts.methods.close._notification();
         clearTimeout(window.closeAlertError);
         clearTimeout(window.closeAlertSuccess);
       },
@@ -26,6 +27,13 @@ $(document).ready(() => {
             window.alerts.methods.close._sccuess();
           }, 6000);
         },
+        _notification : () => {
+          window.alerts.methods._reset();
+          window.alerts.elements.alerts.filter('.alert-notification').addClass('in');
+          window.closeAlertSuccess = setTimeout(function(){
+            window.alerts.methods.close._notification();
+          }, 6000);
+        },
       },
       close : {
         _all : () => {
@@ -36,6 +44,9 @@ $(document).ready(() => {
         },
         _sccuess : () => {
           window.alerts.elements.alerts.filter('.alert-success').removeClass('in');
+        },
+        _notification : () => {
+          window.alerts.elements.alerts.filter('.alert-notification').removeClass('in');
         },
       },
     }

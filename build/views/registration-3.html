@@ -115,7 +115,7 @@
       <div class="notifications-menu unread">
         <div class="dropdown">
           <button class="dropdown-toggle" type="button" data-toggle="dropdown">
-            <i class="icon-notifications">
+            <i class="icon-notifications unread">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
                   <path fill="#9BA1A9" fill-rule="nonzero" d="M11.499 8.098L0 2.83V.479A.48.48 0 0 1 .48 0h22.04a.48.48 0 0 1 .48.48v2.315L11.499 8.098zm.201.961L23 3.852v11.002a.48.48 0 0 1-.48.48H.48a.479.479 0 0 1-.48-.48V3.885l11.3 5.176a.487.487 0 0 0 .4-.002z"/>
               </svg>
@@ -123,31 +123,180 @@
           </button>
           <div class="dropdown-menu">
             <ul class="notification-list">
-              <li class="unread">
-                <i></i>
-                <strong>
-                  Geo Fence Alert
-                </strong>
-                <em>
-                  <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
-                </em>
-                <span>
-                  2 minutes ago
-                </span>
-              </li>
-              <li class="unread">
-                <i></i>
-                <strong>
-                  MAINTENANCE
-                </strong>
-                <em>
-                  <strong>OG Soul</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
-                </em>
-                <span>
-                  2 minutes ago
-                </span>
-              </li>
+              <ul class="notification-list">
+                <li class="unread">
+                  <i class="notification-geofence"></i>
+                  <strong>
+                    Geo Fence Alert
+                  </strong>
+                  <em>
+                    <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
+                  </em>
+                  <span>
+                    2 minutes ago
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-maintenance"></i>
+                  <strong>
+                    Maintenance
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
+                  </em>
+                  <span>
+                    4 hours ago
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-unlocked"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> was <strong>unlocked</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-climate"></i>
+                  <strong>
+                    Climate
+                  </strong>
+                  <em>
+                    <strong>My Niro’s climate</strong> was set to <strong>71˚</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-valet"></i>
+                  <strong>
+                    Valet Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> driven outside allowed area. <strong>View Vehicles Location.</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-locked"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> was <strong>locked</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-maintenance"></i>
+                  <strong>
+                    Maintenance
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-schedules-climate"></i>
+                  <strong>
+                    Schedules
+                  </strong>
+                  <em>
+                    A <strong>Climate Schedule</strong> will start in <strong>My Niro</strong> in 30 minutes.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-schedules-charge"></i>
+                  <strong>
+                    Schedules
+                  </strong>
+                  <em>
+                    <strong>My Niro’s charge schedule</strong> set to start in <strong>30 minutes</strong> has been <strong>canceled</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-remote"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> has been <strong>started remotely</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-panic"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>My Niro’s</strong> alarm has been <strong>activated</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-battery"></i>
+                  <strong>
+                    Battery
+                  </strong>
+                  <em>
+                    <strong>OG Soul’s</strong> battery <strong>started charging</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-curfew"></i>
+                  <strong>
+                    Curfew Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> is being driven past <strong>Tim’s Curfew</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-speed"></i>
+                  <strong>
+                    Speed Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> exceeded the <strong>speed threshold</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+              </ul>
             </ul>
+            <div class="menu-anchor">
+              <a href="#">See All Notifications</a>
+            </div><!-- /.menu-anchor -->
           </div><!-- /.dropdown-menu -->
         </div>
       </div><!-- /.notifications-menu -->

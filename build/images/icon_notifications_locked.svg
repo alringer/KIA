@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="19px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>notifications_locked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Notifications-Dropdown-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-558.000000, -496.000000)">
+        <g id="global-notifications" fill="#2F2F2F">
+            <g id="Icons-/-Notifications" transform="translate(537.000000, 0.000000)">
+                <g id="Notifications-Dropdown" transform="translate(0.000000, 71.000000)">
+                    <g id="Cell-Copy-5" transform="translate(0.000000, 398.000000)">
+                        <path d="M33.1875,33.5625 L34.992516,33.5625 C35.5489341,33.5625 36,34.0107136 36,34.5598543 L36,44.7526457 C36,45.3034693 35.5510798,45.75 34.992516,45.75 L22.007484,45.75 C21.4510659,45.75 21,45.3017864 21,44.7526457 L21,34.5598543 C21,34.0090307 21.4489202,33.5625 22.007484,33.5625 L23.8125,33.5625 L23.8125,29.0005814 C23.8125,27.8956908 24.7114144,27 25.8121737,27 L31.1878263,27 C32.2922156,27 33.1875,27.8971266 33.1875,29.0005814 L33.1875,33.5625 Z M25.6875,33.5625 L31.3125,33.5625 L31.3125,29.8760256 C31.3125,29.3286366 30.8622609,28.875 30.3068627,28.875 L26.6931373,28.875 C26.1288843,28.875 25.6875,29.3231744 25.6875,29.8760256 L25.6875,33.5625 Z" id="notifications_locked"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
