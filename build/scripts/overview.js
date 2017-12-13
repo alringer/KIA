@@ -6,7 +6,8 @@ $(document).ready(function () {
       add_meta_submit: $('.add-meta-field-submit'),
       add_meta_input: $('.add-meta-field-input'),
       set_dealer_radio: $('[name="preferred-dealer"]'),
-      dealer_submit: $('.preferred-dealer-submit')
+      dealer_submit: $('.preferred-dealer-submit'),
+      close_popup_open_modal: $('.close-popup-open-modal')
     },
     methods: {
       _meta_form_validation: function _meta_form_validation() {
@@ -26,6 +27,13 @@ $(document).ready(function () {
         } else {
           window.overview.elements.dealer_submit.addClass('disabled');
         }
+      },
+      _close_popup_open_modal: function _close_popup_open_modal() {
+        console.log('run');
+        $('#how-to-activate-uvo').modal('hide');
+        setTimeout(function () {
+          $('#activate-uvo').modal('show');
+        }, 400);
       }
     }
   };
@@ -33,4 +41,5 @@ $(document).ready(function () {
   window.overview.elements.add_meta_input.on('keyup', window.overview.methods._meta_form_validation);
   window.overview.elements.set_dealer_radio.on('change', window.overview.methods._dealer_validation);
   window.overview.elements.add_meta_submit.on('click', window.overview.methods._meta_form_error);
+  window.overview.elements.close_popup_open_modal.on('click', window.overview.methods._close_popup_open_modal);
 });
