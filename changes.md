@@ -11,6 +11,9 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 3.5.1
+* KK-484 Dynamic Cards - Missing drop down triangle
+===
 # V - 3.5.0
 Seamgen User stories -
 * KK-209 As a user I need to be able to refresh my vehicles status
