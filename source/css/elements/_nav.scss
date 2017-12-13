@@ -65,6 +65,48 @@ nav.nav-main {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .notifications-menu {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%);
+    .dropdown-menu {
+      float: right;
+      left: auto !important;
+      right: 0;
+      width: 370px;
+      .notification-list {
+        max-height: calc(100vh - 200px);
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .menu-anchor {
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        border-top: 1px solid rgba($black, .1);
+        a {
+          display: block;
+          width: 100%;
+          color: $red;
+          font: bold 11px/45px $kia;
+          letter-spacing: .7px;
+          text-transform: uppercase;
+          transition: all 250ms $easeOutQuint;
+          &:hover {
+            background: $red;
+            color: $white;
+          }
+        }
+      }
+    }
+    @media (max-width: $screen-sm-max) {
+      right: 62px;
+    }
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
   .account-menu {
     position: absolute;
     right: 10px;
@@ -295,6 +337,25 @@ nav.nav-app {
           }
           &.more {
             display: inline-block !important;
+            &.unread {
+              position: relative;
+              &:before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                background: $red;
+                content: "";
+                transform: translate(-50%, -50%);
+                @media (max-width: $screen-xs-max) {
+                  width: 4px;
+                  height: 4px;
+                }
+              }
+            }
           }
           a {
             display: block;
@@ -534,7 +595,11 @@ nav.nav-app {
           border-top: 1px solid #d5d5d5;
           z-index: 10;
           background: $white;
-          opacity: .5;
+          line-height: 47px;
+          text-align: center;
+          i {
+            cursor: pointer;
+          }
         }
         &-body {
           bottom: 47px;

@@ -91,6 +91,46 @@
       background: #f23f3f url('/images/icon_alert_error.svg') 19px center no-repeat;
       width: 418px;
     }
+    &-notification {
+      border-left: 2px solid $red;
+      width: 353px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), inset 3px 0 0 0 #c4172c;
+      padding: 8px 0;
+      .close {
+        position: absolute;
+        display: block;
+        top: 14px;
+        right: 14px;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        z-index: 3;
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          width: 12px;
+          background: $black_2;
+          height: 2px;
+          transition: all 250ms $easeOutQuint;
+        }
+        &:after {
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+        &:hover {
+          &:before,
+          &:after {
+            background: $black;
+            height: 3px;
+            width: 14px;
+          }
+        }
+      }
+    }
     p {
       color: $white;
       font: 600 13px/1.46em $sans;

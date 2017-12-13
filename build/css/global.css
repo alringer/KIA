@@ -2295,6 +2295,42 @@ nav.nav-main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+  nav.nav-main .notifications-menu {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%); }
+    nav.nav-main .notifications-menu .dropdown-menu {
+      float: right;
+      left: auto !important;
+      right: 0;
+      width: 370px; }
+      nav.nav-main .notifications-menu .dropdown-menu .notification-list {
+        max-height: calc(100vh - 200px);
+        overflow: auto;
+        -webkit-overflow-scrolling: touch; }
+      nav.nav-main .notifications-menu .dropdown-menu .menu-anchor {
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        nav.nav-main .notifications-menu .dropdown-menu .menu-anchor a {
+          display: block;
+          width: 100%;
+          color: #C4172C;
+          font: bold 11px/45px "KIA", sans-serif;
+          letter-spacing: .7px;
+          text-transform: uppercase;
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+          nav.nav-main .notifications-menu .dropdown-menu .menu-anchor a:hover {
+            background: #C4172C;
+            color: #FFF; }
+    @media (max-width: 991px) {
+      nav.nav-main .notifications-menu {
+        right: 62px; } }
+    @media (max-width: 767px) {
+      nav.nav-main .notifications-menu {
+        display: none; } }
   nav.nav-main .account-menu {
     position: absolute;
     right: 10px;
@@ -2469,6 +2505,25 @@ nav.nav-app .logo {
         display: none; }
       nav.nav-app .nav-app-menu li.more {
         display: inline-block !important; }
+        nav.nav-app .nav-app-menu li.more.unread {
+          position: relative; }
+          nav.nav-app .nav-app-menu li.more.unread:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background: #C4172C;
+            content: "";
+            transform: translate(-50%, -50%); } }
+          @media (max-width: 991px) and (max-width: 767px) {
+            nav.nav-app .nav-app-menu li.more.unread:before {
+              width: 4px;
+              height: 4px; } }
+
+@media (max-width: 991px) {
       nav.nav-app .nav-app-menu li a {
         display: block;
         height: inherit;
@@ -2652,7 +2707,10 @@ nav.nav-app .logo {
       border-top: 1px solid #d5d5d5;
       z-index: 10;
       background: #FFF;
-      opacity: .5; }
+      line-height: 47px;
+      text-align: center; }
+      nav.nav-app .nav-app-mobile-menu-footer i {
+        cursor: pointer; }
     nav.nav-app .nav-app-mobile-menu-body {
       bottom: 47px;
       position: absolute;
