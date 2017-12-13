@@ -1799,7 +1799,7 @@ body.modal-open {
         span {
           position: absolute;
           transition: all 250ms $easeOutQuint;
-          opacity: .75;
+          opacity: 1;
           cursor: pointer;
           &:before,
           &:after {

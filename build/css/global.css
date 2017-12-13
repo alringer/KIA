@@ -1595,7 +1595,7 @@ body.modal-open {
       .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span {
         position: absolute;
         transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
-        opacity: .75;
+        opacity: 1;
         cursor: pointer; }
         .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span:before, .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span:after {
           content: "";
@@ -2295,6 +2295,52 @@ nav.nav-main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+  nav.nav-main .notifications-menu {
+    position: absolute;
+    right: 140px;
+    top: 50%;
+    transform: translateY(-50%); }
+    nav.nav-main .notifications-menu .dropdown-menu {
+      float: right;
+      left: auto !important;
+      right: 0;
+      width: 370px; }
+      nav.nav-main .notifications-menu .dropdown-menu .notification-list {
+        max-height: calc(100vh - 200px);
+        overflow: auto;
+        -webkit-overflow-scrolling: touch; }
+      nav.nav-main .notifications-menu .dropdown-menu .no-notifications {
+        height: 110px;
+        text-align: center;
+        line-height: 110px; }
+        nav.nav-main .notifications-menu .dropdown-menu .no-notifications strong {
+          line-height: inherit;
+          font: 500 16px/110px "KIA", sans-serif;
+          color: #c0c0c0;
+          text-transform: none !important;
+          letter-spacing: .7px !important; }
+      nav.nav-main .notifications-menu .dropdown-menu .menu-anchor {
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        nav.nav-main .notifications-menu .dropdown-menu .menu-anchor a {
+          display: block;
+          width: 100%;
+          color: #C4172C;
+          font: bold 11px/45px "KIA", sans-serif;
+          letter-spacing: .7px;
+          text-transform: uppercase;
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+          nav.nav-main .notifications-menu .dropdown-menu .menu-anchor a:hover {
+            background: #C4172C;
+            color: #FFF; }
+    @media (max-width: 991px) {
+      nav.nav-main .notifications-menu {
+        right: 62px; } }
+    @media (max-width: 767px) {
+      nav.nav-main .notifications-menu {
+        display: none; } }
   nav.nav-main .account-menu {
     position: absolute;
     right: 10px;
@@ -2469,6 +2515,25 @@ nav.nav-app .logo {
         display: none; }
       nav.nav-app .nav-app-menu li.more {
         display: inline-block !important; }
+        nav.nav-app .nav-app-menu li.more.unread {
+          position: relative; }
+          nav.nav-app .nav-app-menu li.more.unread:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background: #C4172C;
+            content: "";
+            transform: translate(-50%, -50%); } }
+          @media (max-width: 991px) and (max-width: 767px) {
+            nav.nav-app .nav-app-menu li.more.unread:before {
+              width: 4px;
+              height: 4px; } }
+
+@media (max-width: 991px) {
       nav.nav-app .nav-app-menu li a {
         display: block;
         height: inherit;
@@ -2652,7 +2717,10 @@ nav.nav-app .logo {
       border-top: 1px solid #d5d5d5;
       z-index: 10;
       background: #FFF;
-      opacity: .5; }
+      line-height: 47px;
+      text-align: center; }
+      nav.nav-app .nav-app-mobile-menu-footer i {
+        cursor: pointer; }
     nav.nav-app .nav-app-mobile-menu-body {
       bottom: 47px;
       position: absolute;
@@ -2923,6 +2991,111 @@ body.refreshing .nav-mobile .mobile-nav-options .messages > span {
     display: none; }
   .has-mobile-nav .nav-mobile {
     display: block; } }
+
+.icon-notifications.unread:before {
+  opacity: 1; }
+
+.icon-notifications {
+  position: relative; }
+  .icon-notifications:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #c4172c;
+    border: solid 2px #ffffff;
+    top: -5px;
+    right: -5px;
+    opacity: 0; }
+
+ul.notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  ul.notification-list li {
+    padding: 12px 45px 12px 57px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative; }
+    ul.notification-list li.unread {
+      background: #f6f6f6; }
+    ul.notification-list li:last-child {
+      border-bottom: 0px; }
+    ul.notification-list li i {
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 57px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: auto; }
+    ul.notification-list li > strong {
+      font: bold 10px/1em "KIA", sans-serif;
+      color: #969696;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      display: block;
+      text-transform: uppercase; }
+    ul.notification-list li > em {
+      font: 12px "Source Sans Pro", sans-serif;
+      color: #4e4e4e;
+      margin-bottom: 5px;
+      display: block; }
+      ul.notification-list li > em strong {
+        display: inline;
+        text-transform: none;
+        color: inherit;
+        font: bold 12px "Source Sans Pro", sans-serif;
+        letter-spacing: inherit; }
+    ul.notification-list li > span {
+      display: block;
+      font: 10px "Source Sans Pro", sans-serif;
+      letter-spacing: .5px;
+      color: #969696; }
+
+.notification-category-selector {
+  display: block; }
+
+.notification-geofence {
+  background-image: url("/images/icon_notification_geo.png"); }
+
+.notification-maintenance {
+  background-image: url("/images/icon_notification_tool.svg"); }
+
+.notification-security-unlocked {
+  background-image: url("/images/icon_notifications_unlock.png"); }
+
+.notification-security-locked {
+  background-image: url("/images/icon_notifications_locked.svg"); }
+
+.notification-climate {
+  background-image: url("/images/icon_notifications_climate.png"); }
+
+.notification-valet {
+  background-image: url("/images/icon_notifications_valet_alert.svg"); }
+
+.notification-schedules-climate {
+  background-image: url("/images/icon_notifications_climate_schedule.svg"); }
+
+.notification-schedules-charge {
+  background-image: url("/images/icon_notifications_charge_schedule.svg"); }
+
+.notification-security-remote {
+  background-image: url("/images/icon_notifications_security.svg"); }
+
+.notification-security-panic {
+  background-image: url("/images/icon_notifications_panic.svg"); }
+
+.notification-battery {
+  background-image: url("/images/icon_notifications_battery.svg"); }
+
+.notification-curfew {
+  background-image: url("/images/icon_notifications_curfew.png"); }
+
+.notification-speed {
+  background-image: url("/images/icon_notifications_speed.png"); }
 
 body {
   padding-bottom: 140px !important; }

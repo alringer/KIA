@@ -823,6 +823,19 @@ body.refreshing {
   }
 }
 
+.remote-climate {
+  .remote-body {
+    .ui-dial {
+      @media (max-width: 860px) AND (min-width: $screen-xs-max){
+        transform: scale(.85)
+      }
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
 .overview-remote-command.remote-command-security {
   &.state-2-communicating,
   &.state-1 {
@@ -896,16 +909,29 @@ body.refreshing {
     .toggle {
       opacity: 0;
     }
+    @media (max-width: $screen-xs-max) {
+      &.left {
+        margin-left: 15px;
+      }
+      &.right:not(.accessory-group-heated-seats) {
+        text-align: center;
+        .accessory {
+          &:first-child {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
   }
 }
 .has-heated-seats {
   @media (max-width: $screen-xs-max) {
     .ui-dial {
-      margin-bottom: 155px;
+      margin-bottom: 165px !important;
     }
     .accessory-group {
       &.left {
-        margin-top: -30px;
+        margin-top: -40px;
       }
     }
   }
@@ -970,6 +996,7 @@ body.refreshing {
   padding-bottom: 30px;
   z-index: 10;
   background: $white;
+  transition: all 250ms $easeOutQuint;
   &.left {
     margin-right: 175px;
   }
@@ -1095,7 +1122,7 @@ body.refreshing {
       left: 50%;
       transform: translate(-50%, -50%);
       border: none;
-      margin-top: 10px;
+      margin-top: -5px;
       margin-left: -20px;
       background: none;
       em {

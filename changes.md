@@ -12,7 +12,8 @@
   }
 </style>
 # V - 3.5.1
-* KK-484 Dynamic Cards - Missing drop down triangle
+* KOPE-141 Modal Popup Scroll issue
+* KOPE-153 Dynamic Cards - Missing drop down triangle
 ===
 # V - 3.5.0
 Seamgen User stories -

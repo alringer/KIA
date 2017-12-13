@@ -1,0 +1,66 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-maintenance .contain {
+  max-width: 812px; }
+
+.view-maintenance .page-view-header {
+  padding-top: 40px;
+  overflow: hidden; }
+  .view-maintenance .page-view-header h2 {
+    font: 32px/1em "KIA", sans-serif;
+    letter-spacing: 1.5px;
+    color: #000;
+    margin: 0;
+    float: left; }
+  .view-maintenance .page-view-header .header-preferred-dealer {
+    float: right;
+    padding-right: 30px;
+    position: relative; }
+    .view-maintenance .page-view-header .header-preferred-dealer h3 {
+      font: 500 17px/1.24em "KIA", sans-serif;
+      letter-spacing: .7px;
+      margin: 0 0 3px; }
+    .view-maintenance .page-view-header .header-preferred-dealer strong {
+      display: block;
+      font: bold 10px/1em "KIA", sans-serif;
+      color: #969696;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: right; }
+    .view-maintenance .page-view-header .header-preferred-dealer i {
+      position: absolute;
+      right: 0;
+      display: block;
+      top: 2px;
+      transform: translateX(-50%); }

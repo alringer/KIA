@@ -10,6 +10,7 @@ $(document).ready(function () {
       _reset: function _reset() {
         window.alerts.methods.close._error();
         window.alerts.methods.close._sccuess();
+        window.alerts.methods.close._notification();
         clearTimeout(window.closeAlertError);
         clearTimeout(window.closeAlertSuccess);
       },
@@ -27,6 +28,13 @@ $(document).ready(function () {
           window.closeAlertSuccess = setTimeout(function () {
             window.alerts.methods.close._sccuess();
           }, 6000);
+        },
+        _notification: function _notification() {
+          window.alerts.methods._reset();
+          window.alerts.elements.alerts.filter('.alert-notification').addClass('in');
+          window.closeAlertSuccess = setTimeout(function () {
+            window.alerts.methods.close._notification();
+          }, 6000);
         }
       },
       close: {
@@ -38,6 +46,9 @@ $(document).ready(function () {
         },
         _sccuess: function _sccuess() {
           window.alerts.elements.alerts.filter('.alert-success').removeClass('in');
+        },
+        _notification: function _notification() {
+          window.alerts.elements.alerts.filter('.alert-notification').removeClass('in');
         }
       }
     }
