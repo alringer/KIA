@@ -927,11 +927,11 @@ body.refreshing {
 .has-heated-seats {
   @media (max-width: $screen-xs-max) {
     .ui-dial {
-      margin-bottom: 155px;
+      margin-bottom: 165px !important;
     }
     .accessory-group {
       &.left {
-        margin-top: -30px;
+        margin-top: -40px;
       }
     }
   }

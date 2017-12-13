@@ -1758,9 +1758,9 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
 
 @media (max-width: 767px) {
   .has-heated-seats .ui-dial {
-    margin-bottom: 155px; }
+    margin-bottom: 165px !important; }
   .has-heated-seats .accessory-group.left {
-    margin-top: -30px; } }
+    margin-top: -40px; } }
 
 @media (min-width: 767px) {
   .has-heated-seats .ui-dial {
