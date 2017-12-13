@@ -49,7 +49,7 @@ $(document).ready(() => {
         // Toggles the sort by asc/desc based on the header clicked
         _sort : function() {
           var $this = $(this);
-          window.addCards.elements.category_selector.find('button').text($this.text());
+          window.addCards.elements.category_selector.find('button .active-filter').text($this.text());
           window.addCardsList.filter($this.data('mix-filter'));
         }
       },
