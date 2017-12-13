@@ -295,7 +295,7 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/global.css",
+		"oAP": "\/build\/css\/global-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -334,7 +334,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/login.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -440,6 +440,19 @@
 		"oAP": "\/build\/css\/view-my-vehicles.css",
 		"oF": 2,
 		"oS": 3,
+		"uL": 1
+		},
+	"\/source\/css\/views\/view-notifications.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/css\/view-notifications.css",
+		"oF": 0,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/source\/css\/views\/view-overview.scss": {
@@ -794,7 +807,7 @@
 		"oAP": "\/build\/images\/heated_seat_1_cold.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -805,7 +818,7 @@
 		"oAP": "\/build\/images\/heated_seat_1_hot.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -816,7 +829,7 @@
 		"oAP": "\/build\/images\/heated_seat_1_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -849,7 +862,7 @@
 		"oAP": "\/build\/images\/heated_seat_2_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -882,7 +895,7 @@
 		"oAP": "\/build\/images\/heated_seat_3_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -915,7 +928,7 @@
 		"oAP": "\/build\/images\/heated_seat_4_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1594,6 +1607,171 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_notification_geo.png": {
+		"ft": 32768,
+		"iS": 1342,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_notification_geo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_notification_tag.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notification_tag.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notification_tool.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notification_tool.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_battery.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_battery.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_charge_schedule.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_charge_schedule.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_climate.png": {
+		"ft": 32768,
+		"iS": 657,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_notifications_climate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_notifications_climate_schedule.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_climate_schedule.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_curfew.png": {
+		"ft": 32768,
+		"iS": 986,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_notifications_curfew.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_notifications_curfew.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_curfew.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_locked.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_locked.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_panic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_panic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_security.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_security.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notifications_speed.png": {
+		"ft": 32768,
+		"iS": 768,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_notifications_speed.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_notifications_unlock.png": {
+		"ft": 32768,
+		"iS": 417,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_notifications_unlock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_notifications_valet_alert.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notifications_valet_alert.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_phone.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2170,6 +2348,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/notifications_climate.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/notifications_climate.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/photo_vin_on_dashboard.jpg": {
 		"ft": 16384,
 		"iS": 46305,
@@ -2207,7 +2395,7 @@
 		"oAP": "\/build\/images\/seat_off.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2218,7 +2406,7 @@
 		"oAP": "\/build\/images\/seat_on_cold.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2229,7 +2417,7 @@
 		"oAP": "\/build\/images\/seat_on_hot.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2292,7 +2480,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/dial.js",
+		"oAP": "\/build\/scripts\/min\/dial-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2312,7 +2500,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/heated-seats.js",
+		"oAP": "\/build\/scripts\/min\/heated-seats-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2463,9 +2651,9 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap.css",
-		"oF": 3,
+		"oA": 1,
+		"oAP": "\/build\/css\/_bootstrap.css",
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -3602,7 +3790,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/vendors\/font-awesome\/css\/font-awesome.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
@@ -3611,7 +3799,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/vendors\/jquery-knob\/jquery.knob.min.js",
+		"oAP": "\/build\/vendors\/jquery-knob\/min\/jquery.knob.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -3621,7 +3809,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/vendors\/mixitup\/mixitup.min.js",
+		"oAP": "\/build\/vendors\/mixitup\/min\/mixitup.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -3632,7 +3820,7 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/vendors\/selectize\/selectize.css",
+		"oAP": "\/build\/css\/selectize.css",
 		"oF": 2,
 		"oS": 3
 		},
@@ -3641,7 +3829,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/vendors\/selectize\/selectize.js",
+		"oAP": "\/build\/vendors\/selectize\/min\/selectize-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -3653,7 +3841,7 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/build\/vendors\/slick\/slick.css",
-		"oF": 1,
+		"oF": 3,
 		"oS": 3
 		},
 	"\/source\/vendors\/slick\/slick.min.js": {
@@ -3661,7 +3849,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/vendors\/slick\/slick.min.js",
+		"oAP": "\/build\/vendors\/slick\/min\/slick.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -3685,6 +3873,20 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/my-vehicles-2.html",
+		"oF": 0
+		},
+	"\/source\/views\/notifications-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/notifications-2.html",
+		"oF": 0
+		},
+	"\/source\/views\/notifications.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/notifications.html",
 		"oF": 0
 		},
 	"\/source\/views\/overview-1.kit": {
@@ -3855,6 +4057,13 @@
 		"oAP": "\/build\/views\/partials\/nav-mobile-my-vehicles.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/nav-mobile-notifications.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-mobile-notifications.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/nav-mobile-overview.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -3991,7 +4200,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534710624
+	"lastBuiltDate": 534819779
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -4389,7 +4598,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8209,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -4416,7 +4625,7 @@
 			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
 			},
 		"arrow-parens": {
-			"active": 1,
+			"active": 0,
 			"optionString": "'always'"
 			},
 		"arrow-spacing": {
@@ -4452,7 +4661,7 @@
 			"optionString": "{'exceptMethods': []}"
 			},
 		"comma-dangle": {
-			"active": 0,
+			"active": 1,
 			"optionString": "'never'"
 			},
 		"comma-spacing": {
@@ -4696,7 +4905,7 @@
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -5116,7 +5325,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
@@ -5382,7 +5591,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 0,
+	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -5748,7 +5957,7 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathFilenamePattern": "*-min.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
@@ -5793,15 +6002,15 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathFilenamePattern": "*-min.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
