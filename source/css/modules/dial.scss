@@ -51,6 +51,7 @@
   width: 295px;
   height: 295px;
   position: relative;
+  user-select: none;
   @media (max-width: $screen-xs-max) {
     margin-bottom: 75px;
   }

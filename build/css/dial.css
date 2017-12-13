@@ -60,7 +60,8 @@
   background: url("/images/dial.png") top center no-repeat;
   width: 295px;
   height: 295px;
-  position: relative; }
+  position: relative;
+  user-select: none; }
   @media (max-width: 767px) {
     .ui-dial {
       margin-bottom: 75px; } }
