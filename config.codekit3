@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "26148",
 "files": {
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/changes.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2480,8 +2474,8 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/min\/dial-min.js",
-		"oF": 0,
+		"oAP": "\/build\/scripts\/dial.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 1
 		},
@@ -2500,7 +2494,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/min\/heated-seats-min.js",
+		"oAP": "\/build\/scripts\/heated-seats.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -3798,9 +3792,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/jquery-knob\/min\/jquery.knob.min-min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/jquery-knob\/jquery.knob.min.js",
+		"oF": 3,
 		"sC": 3,
 		"tS": 1
 		},
@@ -3808,9 +3802,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/mixitup\/min\/mixitup.min-min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/mixitup\/mixitup.min.js",
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -3828,9 +3822,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/selectize\/min\/selectize-min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/selectize\/selectize.js",
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -3848,9 +3842,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/slick\/min\/slick.min-min.js",
-		"oF": 0,
+		"oA": 2,
+		"oAP": "\/build\/vendors\/slick\/slick.min.js",
+		"oF": 1,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4207,7 +4201,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534819779
+	"lastBuiltDate": 534898896
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -6009,11 +6003,11 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 1,
