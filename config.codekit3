@@ -2538,6 +2538,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/maintenance.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/maintenance.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/map.js": {
 		"ft": 64,
 		"ma": 0,
@@ -3881,6 +3891,13 @@
 		"oAP": "\/build\/views\/maintenance-1.html",
 		"oF": 0
 		},
+	"\/source\/views\/maintenance-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/maintenance-2.html",
+		"oF": 0
+		},
 	"\/source\/views\/my-vehicles-1.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -4625,7 +4642,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8193,
+	"esLintEnvironmentsMask": 8209,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -6036,7 +6053,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {

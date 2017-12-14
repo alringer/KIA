@@ -205,53 +205,83 @@
   @media (max-width: $screen-xs-max) {
     padding: 65px 22px 30px;
   }
-  .milestone-detail {
-    &-header {
-      display: block;
-      font: bold 10px $kia;
-      letter-spacing: .4px;
-      text-transform: uppercase;
-      color: #000;
-      margin-bottom: 12px;
-    }
-    &-list {
-      font: 14px/1.5em $sans;
-      margin: 0 0 20px;
-      padding: 0 0 0 30px;
-      li {
-        margin-bottom: 1px;
-      }
-    }
-  }
-  .milestone-status {
-    &-detail {
-      &-form {
-        padding-top: 10px;
-        .form-fields {
-          li {
-            margin-bottom: 10px;
-            label {
-              margin-bottom: 0;
-            }
-            textarea,
-            input[type="text"] {
-              border-radius: 2px;
-              border: solid 1px #b1b5b8;
-              resize: none;
-              width: 100%;
-              padding-left: 37px;
-              font: 500 14px $sans;
-              letter-spacing: .4px;
-            }
-            textarea {
-              padding-top: 11px;
-              height: 118px;
-              outline: none;
-              padding-right: 15px;
-            }
+}
+.milestone-status {
+  &-detail {
+    &-form {
+      padding-top: 10px;
+      .form-fields {
+        li {
+          margin-bottom: 10px;
+          label {
+            margin-bottom: 0;
+          }
+          textarea,
+          input[type="text"] {
+            border-radius: 2px;
+            border: solid 1px #b1b5b8;
+            resize: none;
+            width: 100%;
+            padding-left: 37px;
+            font: 500 14px $sans;
+            letter-spacing: .4px;
+          }
+          textarea {
+            padding-top: 11px;
+            height: 118px;
+            outline: none;
+            padding-right: 15px;
           }
         }
       }
+    }
+    &-text {
+      ul.text-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 24px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          strong {
+            display: block;
+            font: bold 10px $kia;
+            letter-spacing: .4px;
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+          }
+          div {
+            font: 14px/1.5em $sans;
+            letter-spacing: .6px;
+            color: #2f2f2f;
+          }
+        }
+      }
+    }
+  }
+}
+
+.milestone-detail {
+  &-header {
+    display: block;
+    font: bold 10px $kia;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  &-list {
+    font: 14px/1.5em $sans;
+    margin: 0 0 20px;
+    padding: 0 0 0 30px;
+    li {
+      margin-bottom: 1px;
+      list-style: disc;
     }
   }
 }
@@ -356,5 +386,104 @@
     font: bold 11px/2em $kia;
     text-transform: uppercase;
     letter-spacing: .7px;
+  }
+}
+
+.view-maintenance-history {
+  .page-view {
+    &-header {
+      margin-bottom: 18px;
+      overflow: visible;
+      h2 {
+        float: none;
+      }
+    }
+  }
+  .collapse-all {
+    display: inline-block;
+    color: $red;
+    font: bold 11px/2em $kia;
+    letter-spacing: .7px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+  }
+  .maintenance-timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    > li {
+      margin-bottom: 30px;
+    }
+    .timeline-header {
+      padding-left: 67px;
+      min-height: 77px;
+      padding-top: 22px;
+      position: relative;
+      cursor: pointer;
+      &[aria-expanded="true"] {
+        .icon-arrow-right {
+          transform: translateY(-50%) rotate(-90deg);
+        }
+      }
+      .icon-arrow-right {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        transition: all 350ms $easeOutBack;
+      }
+      strong {
+        display: block;
+        font: bold 18px/1em $kia;
+        letter-spacing: .9px;
+        color: #000;
+        margin-bottom: 4px;
+      }
+      em {
+        display: block;
+        font: bold 10px/1em $kia;
+        color: #969696;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .tag {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 2px;
+      	background-color: #8ec439;
+        color: $white;
+        height: 31px;
+        font: bold 12px/31px $sans;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        padding: 0 21px 0 38px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+    .timeline-content {
+      .milestone-detail {
+        padding: 30px 35px 55px;
+        position: relative;
+        &:not(.no-line) {
+          &:before {
+            content: "";
+            display: block;
+            left: 34%;
+            width: 2px;
+            bottom: 50px;
+            position: absolute;
+            background: $black;
+            top: 32px;
+            opacity: .1;
+            @media (max-width: $screen-xs-max) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }

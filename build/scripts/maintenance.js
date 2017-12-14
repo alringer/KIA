@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){window.maintenance={elements:{collapse_all:$(".collapse-all")},methods:{_collapse_all:function l(){console.log("run"),$(".collapse").collapse("hide")}}},window.maintenance.elements.collapse_all.on("click",window.maintenance.methods._collapse_all)});
