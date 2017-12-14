@@ -31,12 +31,14 @@
   to {
     transform: rotate(360deg); } }
 
-.view-maintenance .contain {
-  max-width: 812px; }
+.view-maintenance .page-view .contain {
+  max-width: 852px;
+  padding: 0 20px; }
 
 .view-maintenance .page-view-header {
   padding-top: 40px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px; }
   .view-maintenance .page-view-header h2 {
     font: 32px/1em "KIA", sans-serif;
     letter-spacing: 1.5px;
@@ -64,3 +66,247 @@
       display: block;
       top: 2px;
       transform: translateX(-50%); }
+  @media (max-width: 767px) {
+    .view-maintenance .page-view-header {
+      padding-top: 20px;
+      text-align: center; }
+      .view-maintenance .page-view-header h2 {
+        display: none; }
+      .view-maintenance .page-view-header .header-preferred-dealer {
+        float: none;
+        display: inline-block; }
+        .view-maintenance .page-view-header .header-preferred-dealer strong {
+          text-align: center; } }
+
+.view-maintenance .maintenance-block {
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24); }
+  .view-maintenance .maintenance-block .progress-bar {
+    box-shadow: none; }
+
+.view-maintenance .overview-references {
+  padding-top: 0; }
+  .view-maintenance .overview-references .reference-card {
+    height: 200px;
+    padding-top: 60px;
+    border-radius: 2px; }
+    .view-maintenance .overview-references .reference-card strong {
+      font-size: 24px;
+      margin-bottom: 0px; }
+    @media (max-width: 767px) {
+      .view-maintenance .overview-references .reference-card .button {
+        bottom: 55px; } }
+
+.maintenance-main {
+  overflow: hidden;
+  padding: 32px 40px 50px;
+  position: relative; }
+  .maintenance-main-milestones {
+    overflow: hidden;
+    padding-bottom: 25px;
+    margin-bottom: 40px; }
+    .maintenance-main-milestones .milestone-block {
+      position: relative; }
+      .maintenance-main-milestones .milestone-block strong {
+        font: 500 18px/1em "KIA", sans-serif;
+        display: block;
+        letter-spacing: .9px;
+        color: #000;
+        margin-bottom: 4px; }
+      .maintenance-main-milestones .milestone-block em {
+        display: block;
+        font: bold 10px/1em "KIA", sans-serif;
+        color: #969696;
+        letter-spacing: 1px;
+        text-transform: uppercase; }
+      .maintenance-main-milestones .milestone-block span {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        white-space: nowrap;
+        font: italic normal 12px/1.75em "Source Sans Pro", sans-serif;
+        color: #969696;
+        display: block;
+        margin-top: 2px; }
+      .maintenance-main-milestones .milestone-block.milestone-current {
+        float: left; }
+      .maintenance-main-milestones .milestone-block.milestone-next {
+        float: left; }
+      .maintenance-main-milestones .milestone-block.milestone-until {
+        text-align: center;
+        display: none; }
+        @media (max-width: 767px) {
+          .maintenance-main-milestones .milestone-block.milestone-until {
+            display: block; } }
+    .maintenance-main-milestones-arrows {
+      float: right; }
+      .maintenance-main-milestones-arrows > span {
+        margin: 0 10px;
+        display: inline-block; }
+        .maintenance-main-milestones-arrows > span:first-of-type {
+          margin-left: 0px; }
+        .maintenance-main-milestones-arrows > span:last-of-type {
+          margin-right: 0px; }
+      @media (max-width: 767px) {
+        .maintenance-main-milestones-arrows {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          padding: 16px 22px 0; }
+          .maintenance-main-milestones-arrows > span {
+            float: none;
+            position: absolute;
+            left: 22px;
+            top: 22px; }
+            .maintenance-main-milestones-arrows > span:last-of-type {
+              left: auto;
+              right: 22px;
+              top: 22px; } }
+    .maintenance-main-milestones .progress-bar {
+      width: 354px;
+      max-width: calc(100% - 375px);
+      position: relative;
+      top: 5px;
+      margin-right: 13px;
+      margin-left: 7px; }
+    @media (max-width: 767px) {
+      .maintenance-main-milestones .milestone-block.milestone-current, .maintenance-main-milestones .milestone-block.milestone-next {
+        position: absolute;
+        top: 80px;
+        left: 22px; }
+        .maintenance-main-milestones .milestone-block.milestone-current strong, .maintenance-main-milestones .milestone-block.milestone-next strong {
+          font: 13px/1.62em "Source Sans Pro", sans-serif; }
+        .maintenance-main-milestones .milestone-block.milestone-current span, .maintenance-main-milestones .milestone-block.milestone-next span {
+          display: none; }
+        .maintenance-main-milestones .milestone-block.milestone-current em, .maintenance-main-milestones .milestone-block.milestone-next em {
+          display: none; }
+      .maintenance-main-milestones .milestone-block.milestone-next {
+        left: auto;
+        right: 22px; }
+      .maintenance-main-milestones .progress-bar {
+        width: 100%;
+        max-width: 100%;
+        margin: 0; } }
+  @media (max-width: 767px) {
+    .maintenance-main {
+      padding: 65px 22px 30px; } }
+  .maintenance-main .milestone-detail-header {
+    display: block;
+    font: bold 10px "KIA", sans-serif;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 12px; }
+  .maintenance-main .milestone-detail-list {
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    margin: 0 0 20px;
+    padding: 0 0 0 30px; }
+    .maintenance-main .milestone-detail-list li {
+      margin-bottom: 1px; }
+  .maintenance-main .milestone-status-detail-form {
+    padding-top: 10px; }
+    .maintenance-main .milestone-status-detail-form .form-fields li {
+      margin-bottom: 10px; }
+      .maintenance-main .milestone-status-detail-form .form-fields li label {
+        margin-bottom: 0; }
+      .maintenance-main .milestone-status-detail-form .form-fields li textarea,
+      .maintenance-main .milestone-status-detail-form .form-fields li input[type="text"] {
+        border-radius: 2px;
+        border: solid 1px #b1b5b8;
+        resize: none;
+        width: 100%;
+        padding-left: 37px;
+        font: 500 14px "Source Sans Pro", sans-serif;
+        letter-spacing: .4px; }
+      .maintenance-main .milestone-status-detail-form .form-fields li textarea {
+        padding-top: 11px;
+        height: 118px;
+        outline: none;
+        padding-right: 15px; }
+
+.maintenance-cards {
+  padding-top: 11px; }
+  .maintenance-cards .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+    .maintenance-cards .row > div {
+      padding: 0 5px;
+      margin-bottom: 10px; }
+  .maintenance-cards .card {
+    height: 160px;
+    position: relative;
+    cursor: pointer; }
+    .maintenance-cards .card:hover i {
+      margin-right: -5px; }
+    .maintenance-cards .card i {
+      position: absolute;
+      right: 21px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .maintenance-cards .card strong {
+      display: block;
+      position: absolute;
+      top: 78px;
+      left: 50%;
+      transform: translateX(-50%);
+      font: 500 20px/1em "KIA", sans-serif;
+      letter-spacing: 1.2px;
+      width: 100%;
+      text-align: center; }
+      .maintenance-cards .card strong span {
+        font-size: 16px; }
+    .maintenance-cards .card em {
+      display: block;
+      top: 111px;
+      width: 115px;
+      font: bold 10px/1.2em "KIA", sans-serif;
+      color: #000;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      text-transform: uppercase;
+      letter-spacing: .4px; }
+      .maintenance-cards .card em span {
+        display: block; }
+    .maintenance-cards .card a {
+      display: inline-block;
+      position: absolute;
+      bottom: 9px;
+      font: bold 11px/2em "KIA", sans-serif;
+      color: #C4172C;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      left: 50%;
+      transform: translateX(-50%); }
+
+.icon-arrow-left,
+.icon-arrow-right {
+  display: inline-block;
+  width: 12px;
+  height: 18px;
+  background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat; }
+
+.icon-arrow-left {
+  transform: scaleX(-1); }
+
+.maintenance-dealer-appointment {
+  background: #ebebeb;
+  margin: 40px 0; }
+  .maintenance-dealer-appointment-inner {
+    max-width: 433px;
+    margin: 0 auto;
+    padding: 51px 16px;
+    text-align: center; }
+  .maintenance-dealer-appointment .button {
+    margin-bottom: 26px; }
+  .maintenance-dealer-appointment a {
+    display: inline-block;
+    color: #C4172C;
+    font: bold 11px/2em "KIA", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .7px; }

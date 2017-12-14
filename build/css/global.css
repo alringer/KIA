@@ -1645,6 +1645,125 @@ body.modal-open {
           .modal.heated-seats .modal-heated-seats .heated-seats-vehicle span.heated-seat-4:after {
             background: url("/images/heated_seat_4_hot.png"); }
 
+.modal.service-minder .modal-dialog {
+  width: 327px; }
+  .modal.service-minder .modal-dialog .modal-content {
+    padding-top: 17px; }
+    .modal.service-minder .modal-dialog .modal-content .service-minder {
+      max-width: 246px;
+      margin: 0 auto;
+      padding-bottom: 40px; }
+    .modal.service-minder .modal-dialog .modal-content p {
+      text-align: center;
+      font: 14px/1.5em "Source Sans Pro", sans-serif; }
+    .modal.service-minder .modal-dialog .modal-content .bootstrap-select {
+      outline: none !important;
+      margin-bottom: 20px; }
+      .modal.service-minder .modal-dialog .modal-content .bootstrap-select button {
+        height: 40px;
+        line-height: 40px;
+        outline: none; }
+      .modal.service-minder .modal-dialog .modal-content .bootstrap-select .dropdown-menu {
+        margin-top: -1px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-top: none; }
+
+.modal.indicator-lights .modal-dialog {
+  width: 558px; }
+  .modal.indicator-lights .modal-dialog .modal-content {
+    padding-top: 17px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+    @media (min-width: 767px) {
+      .modal.indicator-lights .modal-dialog .modal-content {
+        max-height: 534px; } }
+    .modal.indicator-lights .modal-dialog .modal-content .indicator-lights {
+      padding: 0 40px; }
+      .modal.indicator-lights .modal-dialog .modal-content .indicator-lights .modal-title {
+        margin-bottom: 54px; }
+        @media (max-width: 767px) {
+          .modal.indicator-lights .modal-dialog .modal-content .indicator-lights .modal-title {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto; } }
+    .modal.indicator-lights .modal-dialog .modal-content ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .modal.indicator-lights .modal-dialog .modal-content ul li {
+        margin-bottom: 36px;
+        position: relative;
+        padding-left: 88px;
+        font: 14px/1.5em "Source Sans Pro", sans-serif;
+        letter-spacing: .4px;
+        color: #2f2f2f; }
+        .modal.indicator-lights .modal-dialog .modal-content ul li span {
+          display: block;
+          width: 69px;
+          height: 69px;
+          background: #ededed;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .modal.indicator-lights .modal-dialog .modal-content ul li strong {
+          display: block;
+          font-weight: bold; }
+
+.modal.upcoming-appointments .modal-dialog {
+  width: 416px; }
+  .modal.upcoming-appointments .modal-dialog .modal-content {
+    padding-top: 17px; }
+    .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments {
+      padding: 0 39px 20px; }
+      @media (max-width: 767px) {
+        .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments {
+          padding: 0 15px; } }
+      .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li {
+          position: relative;
+          padding-left: 60px;
+          min-height: 70px;
+          margin-bottom: 15px;
+          border-bottom: solid 1px #d5d5d5; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li:last-child {
+            margin-bottom: 0;
+            border: none; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .date {
+            position: absolute;
+            top: 0;
+            left: 5px;
+            display: block;
+            width: 28px;
+            text-align: center; }
+            .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .date em {
+              display: block;
+              font: bold 10px/1em "KIA", sans-serif;
+              letter-spacing: 1px;
+              color: #969696;
+              margin-bottom: 1px; }
+            .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .date strong {
+              display: block;
+              font: bold 19px/1.11em "KIA", sans-serif;
+              letter-spacing: .8px;
+              color: #2f2f2f; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details strong {
+            display: block;
+            font: bold 14px/1em "Source Sans Pro", sans-serif;
+            margin-bottom: 5px; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details span {
+            display: block;
+            font: 14px/1em "Source Sans Pro", sans-serif;
+            margin-bottom: 8px; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details em {
+            display: block;
+            font: bold 10px "KIA", sans-serif;
+            letter-spacing: 1px;
+            color: #969696; }
+
 .category-selector {
   padding-left: 25px;
   margin-bottom: 25px; }
@@ -2135,6 +2254,37 @@ form .form-fields {
       top: 50%;
       left: 0;
       transform: translateY(-50%); }
+
+.radio-toggle {
+  font-size: 0;
+  white-space: nowrap;
+  user-select: none; }
+  .radio-toggle label {
+    width: calc(50% - .5px);
+    display: inline-block; }
+    .radio-toggle label:last-child {
+      margin-left: 1px; }
+    .radio-toggle label input {
+      display: none; }
+      .radio-toggle label input:checked + span {
+        background: #8ec439;
+        color: #FFF; }
+    .radio-toggle label span {
+      display: block;
+      width: 100%;
+      height: 36px;
+      font: bold 11px/36px "KIA", sans-serif;
+      letter-spacing: 1.4px;
+      color: #707070;
+      text-align: center;
+      text-transform: uppercase;
+      background: #dadada;
+      border-radius: 2px;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: pointer; }
+      .radio-toggle label span:hover {
+        background: #a7a7a7;
+        color: #3d3d3d; }
 
 @keyframes loading-bar {
   0% {
@@ -3232,3 +3382,36 @@ body {
   display: inline-block; }
   .logo.white {
     background-image: url("/images/logo_kia_white.svg"); }
+
+.progress-bar {
+  height: 7px;
+  border-radius: 7px;
+  background: #c4c8cd;
+  width: 100%;
+  position: relative; }
+  .progress-bar .bar {
+    height: inherit;
+    border-radius: inherit;
+    min-width: 5%;
+    max-width: 100%;
+    background: #8EC439;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .progress-bar em {
+    position: absolute;
+    top: 100%;
+    display: block;
+    left: 0;
+    text-align: left;
+    color: #8E8E8E;
+    font-size: 12px;
+    letter-spacing: .3px;
+    font-style: normal;
+    line-height: 1em;
+    transform: translateY(7px); }
+    .progress-bar em:last-child {
+      left: auto;
+      right: 0;
+      text-align: right; }

@@ -1875,6 +1875,160 @@ body.modal-open {
   }
 }
 
+.modal.service-minder {
+  .modal-dialog {
+    width: 327px;
+    .modal-content {
+      padding-top: 17px;
+      .service-minder {
+        max-width: 246px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
+      p {
+        text-align: center;
+        font: 14px/1.5em $sans;
+      }
+      .bootstrap-select {
+        outline: none !important;
+        margin-bottom: 20px;
+        button {
+          height: 40px;
+          line-height: 40px;
+          outline: none;
+        }
+        .dropdown-menu {
+          margin-top: -1px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+.modal.indicator-lights {
+  .modal-dialog {
+    width: 558px;
+    .modal-content {
+      padding-top: 17px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      @media (min-width: $screen-xs-max) {
+        max-height: 534px;
+      }
+      .indicator-lights {
+        padding: 0 40px;
+        .modal-title {
+          margin-bottom: 54px;
+          @media (max-width: $screen-xs-max) {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-bottom: 36px;
+          position: relative;
+          padding-left: 88px;
+          font: 14px/1.5em $sans;
+          letter-spacing: .4px;
+          color: #2f2f2f;
+          span {
+            display: block;
+            width: 69px;
+            height: 69px;
+            background: #ededed;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          strong {
+            display: block;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal.upcoming-appointments {
+  .modal-dialog {
+    width: 416px;
+    .modal-content {
+      padding-top: 17px;
+      .upcoming-appointments {
+        padding: 0 39px 20px;
+        @media (max-width: $screen-xs-max) {
+          padding: 0 15px;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            position: relative;
+            padding-left: 60px;
+            min-height: 70px;
+            margin-bottom: 15px;
+            border-bottom: solid 1px #d5d5d5;
+            &:last-child {
+              margin-bottom: 0;
+              border: none;
+            }
+            .date {
+              position: absolute;
+              top: 0;
+              left: 5px;
+              display: block;
+              width: 28px;
+              text-align: center;
+              em {
+                display: block;
+                font: bold 10px/1em $kia;
+                letter-spacing: 1px;
+                color: #969696;
+                margin-bottom: 1px;
+              }
+              strong {
+                display: block;
+                font: bold 19px/1.11em $kia;
+                letter-spacing: .8px;
+                color: #2f2f2f;
+              }
+            }
+            .details {
+              strong {
+                display: block;
+                font: bold 14px/1em $sans;
+                margin-bottom: 5px;
+              }
+              span {
+                display: block;
+                font: 14px/1em $sans;
+                margin-bottom: 8px;
+              }
+              em {
+                display: block;
+                font: bold 10px $kia;
+                letter-spacing: 1px;
+                color: #969696;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .category-selector {
   padding-left: 25px;
   margin-bottom: 25px;

@@ -14,6 +14,8 @@
   
   <!-- VIEW CSS -->
   <link rel="stylesheet" href="/css/view-maintenance.css">
+  <link rel="stylesheet" href="/css/reference-cards.css">
+  <link rel="stylesheet" href="/css/maintenance-cards.css">
 
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,6 +29,9 @@
   <script type="text/javascript" src="/scripts/nav.js"></script>
   <script type="text/javascript" src="/scripts/alerts.js"></script>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    
   <!-- VIEW JS -->
 
   <title>KIA</title>
@@ -719,7 +724,7 @@
     
     <div class="nav-mobile">
           <div class="contain">
-            <h1>My Car Zone</h1>
+            <h1>Maintenance</h1>
           </div><!-- /.contain -->
         </div><!-- /.nav-mobile -->
         
@@ -740,10 +745,16 @@
       </div><!-- /.page-view-subnav -->
       <div class="contain">
         <div class="page-view-header">
-          <h2>Vehicle Maintenance</h2>
+          <h2>
+            Vehicle Maintenance
+          </h2>
           <div class="header-preferred-dealer">
-            <h3>Kearny Pearson Kia</h3>
-            <strong>Preferred Dealer</strong>
+            <h3>
+              Kearny Pearson Kia
+            </h3>
+            <strong>
+              Preferred Dealer
+            </strong>
             <i class="settings-icon">
               <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
@@ -751,10 +762,399 @@
             </i>
           </div><!-- /.header-preferred-dealer -->
         </div><!-- /.page-view-header -->
+        <div class="maintenance-main maintenance-block">
+          <div class="maintenance-main-milestones">
+            <div class="milestone-block milestone-current">
+              <strong>
+                28,585 mi
+              </strong>
+              <em>
+                Current Mileage
+              </em>
+              <span>
+                (Refreshed 4 days ago)
+              </span>
+            </div><!-- /.milestone-block -->
+            <div class="progress-bar">
+              <span class="bar" style="width:80%"></span>
+            </div>
+            <div class="milestone-block milestone-next">
+              <strong>
+                30,000 mi. or 6 mo.
+              </strong>
+              <em>
+                Maintenance Milestone
+              </em>
+            </div><!-- /.milestone-block -->
+            <div class="maintenance-main-milestones-arrows">
+              <span class="milestone-arrow-left">
+                <i class="icon-arrow-left"></i>
+              </span>
+              <span class="milestone-arrow-right">
+                <i class="icon-arrow-right"></i>
+              </span>
+              <div class="milestone-block milestone-until">
+                <strong>1,415 mi.</strong>
+                <em>until Maintenance Milestone</em>
+              </div><!-- /.milestone-until -->
+            </div><!-- /.maintenance-main-milestones-arrows -->
+          </div><!-- /.maintenance-main-milestones -->
+          <div class="milestone-detail">
+            <div class="row">
+              <div class="col-sm-4">
+                <span class="milestone-detail-header">
+                  Replace
+                </span>
+                <ul class="milestone-detail-list">
+                  <li>Climate control air filter</li>
+                  <li>Add fuel additives</li>
+                  <li>Engine  oil and filter</li>
+                  <li>Rotate tires (including tire pressure and tread wear)</li>
+                </ul>
+              </div><!-- /.col -->
+              <div class="col-sm-4">
+                <span class="milestone-detail-header">
+                  Inspect
+                </span>
+                <ul class="milestone-detail-list">
+                  <li>Fuel tank air filter (CCV filter)</li>
+                  <li>Vacuum hoses</li>
+                  <li>Front brakes disc/pads calipers</li>
+                  <li>Propeller shaft</li>
+                  <li>Air clean filter</li>
+                  <li>Exhaust pipes and muffler</li>
+                  <li>Drive shafts and boots</li>
+                  <li>Suspension mounting bolts</li>
+                  <li>Power steering fluid</li>
+                  <li>EHPS motor pump and hoses</li>
+                  <li>Vapor hose and fuel filler cap</li>
+                  <li>Air conditioning refrigerant</li>
+                  <li>Fuel lines, fuel hoses and connections</li>
+                  <li>Steering gear, linkage and boots</li>
+                  <li>Brake hoses and lines</li>
+                  <li>Rear brake disc/pads</li>
+                </ul>
+              </div><!-- /.col -->
+              <div class="col-sm-4">
+                <div class="radio-toggle milestone-status">
+                  <label>
+                    <input type="radio" name="complete" value="0" checked />
+                    <span>
+                      Incomplete
+                    </span>
+                  </label>
+                  <label>
+                    <input type="radio" name="complete" value="0" />
+                    <span>
+                      Complete
+                    </span>
+                  </label>
+                </div><!-- /.radio-toggle -->
+                <div class="milestone-status-detail">
+                  <div class="milestone-status-detail-form">
+                    <form action="">
+                      <ul class="form-fields">
+                        <li>
+                          <label>
+                            <input type="text" name="" value="" placeholder="Date Completed">
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="text" name="" value="" placeholder="Service Location">
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="text" name="" value="" placeholder="Mileage">
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <textarea name="" placeholder="Notes"></textarea>
+                          </label>
+                        </li>
+                      </ul>
+                      <input type="submit" name="" class="button full" value="Save">
+                    </form>
+                  </div><!-- /.milestone-status-detail-form -->
+                </div><!-- /.milestone-status-detail -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.maintenance-main-milestone-details -->
+        </div><!-- /.maintenance-main -->
+        <div class="maintenance-cards">
+          <div class="row">
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card">
+                <strong>
+                  2
+                </strong>
+                <em>
+                  Diagnostic
+                  <span>
+                    Issues Found
+                  </span>
+                </em>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card">
+                <strong>
+                  3
+                </strong>
+                <em>
+                  Active
+                  <span>
+                    Recalls
+                  </span>
+                </em>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card" data-toggle="modal" data-target="#service-minder">
+                <strong>
+                  1,415 <span>mi.</span>
+                </strong>
+                <em>
+                  Until Next Service
+                </em>
+                <a href="#">
+                  Reset
+                </a>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card" data-toggle="modal" data-target="#upcoming-appointments">
+                <strong>
+                  2
+                </strong>
+                <em>
+                  Upcoming Apppointments
+                </em>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.maintenance-cards -->
       </div><!-- /.contain -->
+      <div class="maintenance-dealer-appointment">
+        <div class="maintenance-dealer-appointment-inner">
+          <span class="button full large">
+            Request Dealer Appointment
+          </span>
+          <a href="#">View Available Coupons</a>
+        </div><!-- /.maintenance-dealer-appointment-inner -->
+      </div><!-- /.maintenance-dealer-appointment -->
+      <div class="overview-references">
+        <div class="contain">
+          <div class="reference-card maintenance">
+            <strong>
+              Indicator Lights
+            </strong>
+            <span class="button outline white transparent less-padding" data-toggle="modal" data-target="#indicator-lights">
+              See what they mean
+            </span>
+          </div><!-- /.reference-card -->
+          <div class="reference-card manuals">
+            <strong>
+              Tires
+            </strong>
+            <a href="#" class="button outline white transparent less-padding">
+              Start Shopping
+            </a>
+          </div><!-- /.reference-card -->
+        </div><!-- /.contain -->
+      </div><!-- /.overview-references -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-notifications -->
+<div class="modal fade service-minder" id="service-minder" tabindex="-1" role="dialog" aria-labelledby="service-minder" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="service-minder">
+          <strong class="modal-title">Service Minder</strong>
+          <p>Remind me to service my vehicle every</p>
+          <select class="selectpicker">
+            <option value="7000" selected>7000 miles</option>
+            <option value="9000">9000 miles</option>
+            <option value="10000">10000 miles</option>
+            <option value="50000">50000 miles</option>
+          </select>
+          <span class="button full"  data-dismiss="modal">Save</span>
+        </div><!-- /.service-minder -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
+<div class="modal fade indicator-lights" id="indicator-lights" tabindex="-1" role="dialog" aria-labelledby="indicator-lights" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="indicator-lights">
+          <strong class="modal-title">MALFUNTION INDICATOR LIGHT GUIDE</strong>
+          <ul>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+          </ul>
+        </div><!-- /.service-minder -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
+<div class="modal fade upcoming-appointments" id="upcoming-appointments" tabindex="-1" role="dialog" aria-labelledby="service-minder" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="upcoming-appointments">
+          <strong class="modal-title">Upcoming Apppointments</strong>
+          <ul>
+            <li>
+              <span class="date">
+                <em>
+                  SEP
+                </em>
+                <strong>
+                  04
+                </strong>
+              </span><!-- /.date -->
+              <div class="details">
+                <strong>
+                  Buerge Kia
+                </strong>
+                <span>
+                  Vehicle Repair
+                </span>
+                <em>
+                  1:52PM
+                </em>
+              </div><!-- /.details -->
+            </li>
+            <li>
+              <span class="date">
+                <em>
+                  SEP
+                </em>
+                <strong>
+                  04
+                </strong>
+              </span><!-- /.date -->
+              <div class="details">
+                <strong>
+                  Buerge Kia
+                </strong>
+                <span>
+                  Vehicle Repair
+                </span>
+                <em>
+                  1:52PM
+                </em>
+              </div><!-- /.details -->
+            </li>
+          </ul>
+        </div><!-- /.service-minder -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+        // $('#upcoming-appointments').modal('show');
+    });
+</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">
