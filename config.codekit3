@@ -2361,6 +2361,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/img_background_indicator_lights.png": {
+		"ft": 32768,
+		"iS": 79966,
+		"oA": 0,
+		"oAP": "\/build\/images\/img_background_indicator_lights.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/img_background_tires.png": {
+		"ft": 32768,
+		"iS": 122501,
+		"oA": 0,
+		"oAP": "\/build\/images\/img_background_tires.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/logo_google_play.svg": {
 		"ft": 2097152,
 		"miP": 0,
