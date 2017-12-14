@@ -1423,34 +1423,6 @@ body.modal-open {
         font: 500 24px/45px $kia;
         letter-spacing: .5px;
       }
-      .print {
-        float: right;
-        color: #bb1a30;
-        font: bold 11px/45px $kia;
-        text-transform: uppercase;
-        letter-spacing: .7px;
-        transition: all 250ms $easeOutQuint;
-        cursor: pointer;
-        i {
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          svg {
-            * {
-              fill: #bb1a30 !important;
-              transition: all 250ms $easeOutQuint;
-            }
-          }
-        }
-        &:hover {
-          color: darken(#bb1a30, 10%);
-          svg {
-            * {
-              fill: darken(#bb1a30, 10%) !important;
-            }
-          }
-        }
-      }
     }
     &-meta {
       &-item {

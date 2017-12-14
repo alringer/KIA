@@ -1147,6 +1147,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_check_green.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_check_green.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_checkmark_green.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1440,6 +1450,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_location_target_red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_location_target_red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_lock_red.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1590,6 +1610,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_mileage_red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_mileage_red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon_minus.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1645,6 +1675,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_no_charge_schedule.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_notes_red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_notes_red.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

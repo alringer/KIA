@@ -247,6 +247,12 @@
           &:last-child {
             margin-bottom: 0;
           }
+          i {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
           strong {
             display: block;
             font: bold 10px $kia;
@@ -418,8 +424,20 @@
     &-header {
       margin-bottom: 18px;
       overflow: visible;
+      position: relative;
       h2 {
         float: none;
+      }
+      .print {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        @media (max-width: $screen-xs-max) {
+          display: none;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        display: none;
       }
     }
   }
@@ -430,13 +448,67 @@
     letter-spacing: .7px;
     margin-bottom: 17px;
     text-transform: uppercase;
+    @media (max-width: $screen-xs-max) {
+      margin: 15px auto 15px;
+      text-align: center;
+      display: block;
+    }
   }
   .maintenance-timeline {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      background: #bdbdbd;
+      width: 2px;
+      position: absolute;
+      left: -25px;
+      top: 38.5px;
+      bottom: 38.5px;
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
     > li {
       margin-bottom: 30px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        background: #bdbdbd;
+        position: absolute;
+        left: -24px;
+        top: 38.5px;
+        transform: translate(-50%, -50%);
+        border: 2px solid #f7f7f7;
+        @media (max-width: $screen-sm-max) {
+          display: none;
+        }
+      }
+      &:last-child {
+        &:after {
+          content: "";
+          display: block;
+          width: 4px;
+          background: #f7f7f7;
+          position: absolute;
+          top: 45px;
+          bottom: 15px;
+          left: -26px;
+          @media (max-width: $screen-sm-max) {
+            display: none;
+          }
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 10px;
+      }
     }
     .timeline-header {
       padding-left: 67px;
@@ -485,10 +557,18 @@
         padding: 0 21px 0 38px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+        i {
+          display: block;
+          position: absolute;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
     .timeline-content {
       .milestone-detail {
+        border-top: solid 1px #d5d5d5;
         padding: 30px 35px 55px;
         position: relative;
         &:not(.no-line) {
@@ -510,4 +590,36 @@
       }
     }
   }
+}
+
+.text-list {
+  i {
+    display: block;
+  }
+  .icon-calendar {
+    width: 13px;
+    height: 14px;
+    background: url('/images/icon_calendar_red_small.svg') center/contain no-repeat;
+  }
+  .icon-location {
+    width: 14px;
+    height: 14px;
+    background: url('/images/icon_location_target_red.svg') center/contain no-repeat;
+  }
+  .icon-mileage {
+    width: 22px;
+    height: 9px;
+    background: url('/images/icon_mileage_red.svg') center/contain no-repeat;
+  }
+  .icon-notes {
+    width: 10px;
+    height: 12px;
+    background: url('/images/icon_notes_red.svg') center/contain no-repeat;
+  }
+}
+
+.icon-check {
+  width: 15px;
+  height: 11px;
+  background: url('/images/icon_check_green.svg') center/contain no-repeat;
 }
