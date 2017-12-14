@@ -32,6 +32,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     
+  <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
+      
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+      <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+      
+      <script type="text/javascript" src="/scripts/map.js"></script>
+      
   <!-- VIEW JS -->
 
   <title>KIA</title>
@@ -755,7 +764,7 @@
             <strong>
               Preferred Dealer
             </strong>
-            <i class="settings-icon">
+            <i class="settings-icon" data-toggle="modal" data-target="#preferred-dealer">
               <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
               </svg>
@@ -1162,9 +1171,139 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#service-minder -->
+<div class="modal fade preferred-dealer has-fixed-footer" id="preferred-dealer" tabindex="-1" role="dialog" aria-labelledby="preferred-dealer" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-preferred-dealer">
+          <strong class="modal-title">Choose a dealer</strong>
+          <div class="map-wrap">
+            <div class="map">
+
+            </div><!-- /.map -->
+            <div class="map-search">
+              <input type="text" name="" value="" placeholder="Search by city, address or zipcode" />
+            </div><!-- /.ma-search -->
+          </div><!-- /.map-wrap -->
+          <div class="category-selector special-dropdown">
+            <em>Dealer Certification</em>
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="active-filter">Any</span>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li data-mix-filter=".all">
+                  Any
+                </li>
+                <li data-mix-filter=".option-1">
+                  Option 1
+                </li>
+                <li data-mix-filter=".option-2">
+                  Option 2
+                </li>
+                <li data-mix-filter=".option-3">
+                  Option 3
+                </li>
+              </ul>
+            </div><!-- /.dropdown -->
+          </div><!-- /.category-selector -->
+          <ul class="radio-choices">
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="" checked>
+                <em>
+                  <span class="address">
+                    <strong>1. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>2. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>3. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>4. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>5. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+          </ul><!-- /.radio-choices -->
+          <div class="modal-footer">
+          <span class="button preferred-dealer-submit" data-target="#vehicle-settings-slider" data-slide-to="0">
+            Use this dealer
+          </span>
+        </div>
+      </div>
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
 <script type="text/javascript">
     $(window).on('load',function(){
-        // $('#upcoming-appointments').modal('show');
+        // $('#preferred-dealer').modal('show');
     });
 </script>
   <footer>

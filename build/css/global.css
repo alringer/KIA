@@ -1353,6 +1353,16 @@ body.modal-open {
     .modal.vehicle-settings .modal-content .item.active {
       padding-bottom: 0px !important; } }
 
+.modal.preferred-dealer .modal-dialog {
+  max-width: 455px; }
+  .modal.preferred-dealer .modal-dialog .modal-preferred-dealer {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    padding-top: 16px; }
+    .modal.preferred-dealer .modal-dialog .modal-preferred-dealer .modal-footer {
+      padding-bottom: 10px; }
+
 .modal-preferred-dealer {
   position: relative;
   width: calc(100% + 30px);

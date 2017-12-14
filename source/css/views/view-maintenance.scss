@@ -40,6 +40,19 @@
           display: block;
           top: 2px;
           transform: translateX(-50%);
+          cursor: pointer;
+          svg {
+            * {
+              transition: all 250ms $easeOutQuint;
+            }
+          }
+          &:hover {
+            svg {
+              * {
+                fill: darken(#898989, 20%) !important;
+              }
+            }
+          }
         }
       }
       @media (max-width: $screen-xs-max) {

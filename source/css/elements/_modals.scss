@@ -1475,7 +1475,20 @@ body.modal-open {
     }
   }
 }
-
+.modal.preferred-dealer {
+  .modal-dialog {
+    max-width: 455px;
+    .modal-preferred-dealer {
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+      padding-top: 16px;
+      .modal-footer {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
 .modal-preferred-dealer {
   position: relative;
   width: calc(100% + 30px);
