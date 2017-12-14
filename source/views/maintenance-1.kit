@@ -176,6 +176,7 @@
           <div class="row">
             <div class="col-sm-3 col-xs-6">
               <div class="maintenance-block card">
+                <i class="icon-warning"></i>
                 <strong>
                   2
                 </strong>
@@ -190,6 +191,7 @@
             </div><!-- /.col -->
             <div class="col-sm-3 col-xs-6">
               <div class="maintenance-block card">
+                <i class="icon-recalls"></i>
                 <strong>
                   3
                 </strong>
@@ -204,6 +206,7 @@
             </div><!-- /.col -->
             <div class="col-sm-3 col-xs-6">
               <div class="maintenance-block card" data-toggle="modal" data-target="#service-minder">
+                <i class="icon-next-service"></i>
                 <strong>
                   1,415 <span>mi.</span>
                 </strong>
@@ -218,6 +221,7 @@
             </div><!-- /.col -->
             <div class="col-sm-3 col-xs-6">
               <div class="maintenance-block card" data-toggle="modal" data-target="#upcoming-appointments">
+                <i class="icon-upcoming-appointments"></i>
                 <strong>
                   2
                 </strong>
@@ -411,6 +415,10 @@
                   1:52PM
                 </em>
               </div><!-- /.details -->
+              <div class="actions">
+                <i class="icon-calendar"></i>
+                <i class="icon-location"></i>
+              </div>
             </li>
             <li>
               <span class="date">
@@ -432,6 +440,10 @@
                   1:52PM
                 </em>
               </div><!-- /.details -->
+              <div class="actions">
+                <i class="icon-calendar"></i>
+                <i class="icon-location"></i>
+              </div>
             </li>
           </ul>
         </div><!-- /.service-minder -->
@@ -441,7 +453,7 @@
 </div><!-- /.modal#service-minder -->
 <script type="text/javascript">
     $(window).on('load',function(){
-        // $('#upcoming-appointments').modal('show');
+        $('#upcoming-appointments').modal('show');
     });
 </script>
 <!-- @import "partials/footer.kit" -->

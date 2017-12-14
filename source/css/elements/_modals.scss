@@ -1973,6 +1973,9 @@ body.modal-open {
           margin: 0;
           padding: 0;
           list-style: none;
+          @media (max-width: $screen-xs-max) {
+            padding-top: 40px;
+          }
           li {
             position: relative;
             padding-left: 60px;
@@ -2005,6 +2008,7 @@ body.modal-open {
               }
             }
             .details {
+              float: left;
               strong {
                 display: block;
                 font: bold 14px/1em $sans;
@@ -2020,6 +2024,35 @@ body.modal-open {
                 font: bold 10px $kia;
                 letter-spacing: 1px;
                 color: #969696;
+              }
+            }
+            .actions {
+              float: right;
+              padding-right: 25px;
+              padding-top: 14px;
+              @media (max-width: $screen-xs-max) {
+                padding-right: 0;
+              }
+              i {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 13.5px;
+                &:first-child {
+                  margin-left: 0px;
+                }
+                &:last-child {
+                  margin-right: 0px;
+                }
+                &.icon-calendar {
+                  width: 17px;
+                  height: 18px;
+                  background: url('/images/icon_calendar_red_medium.svg') center/contain no-repeat;
+                }
+                &.icon-location {
+                  width: 14px;
+                  height: 20px;
+                  background: url('/images/icon_location_red.svg') center/contain no-repeat;
+                }
               }
             }
           }

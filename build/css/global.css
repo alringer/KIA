@@ -1723,6 +1723,9 @@ body.modal-open {
         margin: 0;
         padding: 0;
         list-style: none; }
+        @media (max-width: 767px) {
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul {
+            padding-top: 40px; } }
         .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li {
           position: relative;
           padding-left: 60px;
@@ -1750,19 +1753,44 @@ body.modal-open {
               font: bold 19px/1.11em "KIA", sans-serif;
               letter-spacing: .8px;
               color: #2f2f2f; }
-          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details strong {
-            display: block;
-            font: bold 14px/1em "Source Sans Pro", sans-serif;
-            margin-bottom: 5px; }
-          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details span {
-            display: block;
-            font: 14px/1em "Source Sans Pro", sans-serif;
-            margin-bottom: 8px; }
-          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details em {
-            display: block;
-            font: bold 10px "KIA", sans-serif;
-            letter-spacing: 1px;
-            color: #969696; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details {
+            float: left; }
+            .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details strong {
+              display: block;
+              font: bold 14px/1em "Source Sans Pro", sans-serif;
+              margin-bottom: 5px; }
+            .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details span {
+              display: block;
+              font: 14px/1em "Source Sans Pro", sans-serif;
+              margin-bottom: 8px; }
+            .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .details em {
+              display: block;
+              font: bold 10px "KIA", sans-serif;
+              letter-spacing: 1px;
+              color: #969696; }
+          .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions {
+            float: right;
+            padding-right: 25px;
+            padding-top: 14px; }
+            @media (max-width: 767px) {
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions {
+                padding-right: 0; } }
+            .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 0 13.5px; }
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i:first-child {
+                margin-left: 0px; }
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i:last-child {
+                margin-right: 0px; }
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i.icon-calendar {
+                width: 17px;
+                height: 18px;
+                background: url("/images/icon_calendar_red_medium.svg") center/contain no-repeat; }
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i.icon-location {
+                width: 14px;
+                height: 20px;
+                background: url("/images/icon_location_red.svg") center/contain no-repeat; }
 
 .category-selector {
   padding-left: 25px;
