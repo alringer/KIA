@@ -448,6 +448,7 @@
     letter-spacing: .7px;
     margin-bottom: 17px;
     text-transform: uppercase;
+    cursor: pointer;
     @media (max-width: $screen-xs-max) {
       margin: 15px auto 15px;
       text-align: center;
@@ -565,6 +566,30 @@
           transform: translateY(-50%);
         }
       }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 50px;
+        .icon-arrow-right {
+          left: 20px;
+        }
+        strong {
+          font-size: 15px;
+          letter-spacing: .7px;
+        }
+        em {
+          font-size: 9px;
+          letter-spacing: .6px;
+        }
+        .tag {
+          width: 15px;
+          height: 11px;
+          color: rgba(0, 0, 0, 0);
+          overflow: hidden;
+          background: url('/images/icon_check_green_light.svg') center/contain no-repeat;
+          i {
+            display: none;
+          }
+        }
+      }
     }
     .timeline-content {
       .milestone-detail {
@@ -572,6 +597,13 @@
         padding: 30px 35px 55px;
         position: relative;
         &:not(.no-line) {
+          @media (max-width: $screen-xs-max) {
+            .text-list {
+              border-bottom: solid 1px #d5d5d5;
+              padding-bottom: 30px;
+              margin-bottom: 30px;
+            }
+          }
           &:before {
             content: "";
             display: block;
@@ -586,6 +618,9 @@
               display: none;
             }
           }
+        }
+        @media (max-width: $screen-xs-max) {
+          padding-bottom: 20px;
         }
       }
     }

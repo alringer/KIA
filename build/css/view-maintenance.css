@@ -384,7 +384,8 @@
   font: bold 11px/2em "KIA", sans-serif;
   letter-spacing: .7px;
   margin-bottom: 17px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   @media (max-width: 767px) {
     .view-maintenance-history .collapse-all {
       margin: 15px auto 15px;
@@ -488,10 +489,34 @@
         left: 15px;
         top: 50%;
         transform: translateY(-50%); }
+    @media (max-width: 767px) {
+      .view-maintenance-history .maintenance-timeline .timeline-header {
+        padding-left: 50px; }
+        .view-maintenance-history .maintenance-timeline .timeline-header .icon-arrow-right {
+          left: 20px; }
+        .view-maintenance-history .maintenance-timeline .timeline-header strong {
+          font-size: 15px;
+          letter-spacing: .7px; }
+        .view-maintenance-history .maintenance-timeline .timeline-header em {
+          font-size: 9px;
+          letter-spacing: .6px; }
+        .view-maintenance-history .maintenance-timeline .timeline-header .tag {
+          width: 15px;
+          height: 11px;
+          color: transparent;
+          overflow: hidden;
+          background: url("/images/icon_check_green_light.svg") center/contain no-repeat; }
+          .view-maintenance-history .maintenance-timeline .timeline-header .tag i {
+            display: none; } }
   .view-maintenance-history .maintenance-timeline .timeline-content .milestone-detail {
     border-top: solid 1px #d5d5d5;
     padding: 30px 35px 55px;
     position: relative; }
+    @media (max-width: 767px) {
+      .view-maintenance-history .maintenance-timeline .timeline-content .milestone-detail:not(.no-line) .text-list {
+        border-bottom: solid 1px #d5d5d5;
+        padding-bottom: 30px;
+        margin-bottom: 30px; } }
     .view-maintenance-history .maintenance-timeline .timeline-content .milestone-detail:not(.no-line):before {
       content: "";
       display: block;
@@ -505,6 +530,9 @@
       @media (max-width: 767px) {
         .view-maintenance-history .maintenance-timeline .timeline-content .milestone-detail:not(.no-line):before {
           display: none; } }
+    @media (max-width: 767px) {
+      .view-maintenance-history .maintenance-timeline .timeline-content .milestone-detail {
+        padding-bottom: 20px; } }
 
 .text-list i {
   display: block; }
