@@ -430,7 +430,7 @@
     .view-maintenance-history .page-view-header {
       display: none; } }
 
-.view-maintenance-history .collapse-all {
+.view-maintenance-history .toggle-collapse {
   display: inline-block;
   color: #C4172C;
   font: bold 11px/2em "KIA", sans-serif;
@@ -439,7 +439,7 @@
   text-transform: uppercase;
   cursor: pointer; }
   @media (max-width: 767px) {
-    .view-maintenance-history .collapse-all {
+    .view-maintenance-history .toggle-collapse {
       margin: 15px auto 15px;
       text-align: center;
       display: block; } }
