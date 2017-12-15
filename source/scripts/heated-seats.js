@@ -12,9 +12,9 @@ $(document).ready(() => {
             index = window.heatedSeats.elements.seats.index($this);
         window.heatedSeats.elements.modal.addClass('seat-open');
         window.heatedSeats.elements.modal.removeClass('top bottom');
-        window.heatedSeats.elements.dials.removeClass('active');
-        window.heatedSeats.elements.modal.removeClass('seat-1 seat-2-seat-3 seat-4');
+        window.heatedSeats.elements.modal.removeClass('seat-1 seat-2 seat-3 seat-4');
         window.heatedSeats.elements.modal.addClass(`seat-${index + 1}`);
+        window.heatedSeats.elements.dials.removeClass('active');
         if(index < 2) {
           window.heatedSeats.elements.modal.addClass('top');
         }else{
