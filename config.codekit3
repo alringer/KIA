@@ -802,6 +802,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/dial_heated_seats1.png": {
+		"ft": 32768,
+		"iS": 11236,
+		"oA": 0,
+		"oAP": "\/build\/images\/dial_heated_seats1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/group.png": {
 		"ft": 32768,
 		"iS": 92374,
@@ -4406,7 +4417,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 534899155
+	"lastBuiltDate": 535069316
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

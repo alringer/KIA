@@ -7,8 +7,7 @@ $(document).ready(function () {
       carousel: $('.modal .carousel'),
       modal_slider: $('.modal .slider'),
       body: $('body'),
-      html: $('html'),
-      switch_modals: $('.switch-modals'),
+      html: $('html')
     },
     methods: {
       _stop_scroll: function _stop_scroll(e) {
@@ -96,16 +95,7 @@ $(document).ready(function () {
         window.modals.elements.modal_slider.slick('unslick');
         window.modals.methods._modal_slider();
         window.modals.elements.modal_slider.resize();
-      },
-      _switch_modals : function() {
-        var $this = $(this),
-            $this_modal = $this.parents('.modal'),
-            next_modal = $this.data('next-modal');
-        $this_modal.modal('hide');
-        setTimeout(() => {
-          $(next_modal).modal('show');
-        }, 400);
-      },
+      }
     }
   };
 
@@ -115,7 +105,6 @@ $(document).ready(function () {
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._modal_slider_fix);
   window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._modal_slider_fix);
-  window.modals.elements.switch_modals.on('click', window.modals.methods._switch_modals);
   // window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
   // window.modals.elements.html.on('touchmove', window.modals.methods._stop_scroll);
 
