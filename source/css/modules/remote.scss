@@ -531,6 +531,7 @@ body.refreshing {
   @media (max-width: $screen-xs-max) {
     padding-top: 9px;
     max-width: calc(100% - 20px);
+    margin-bottom: -33px;
   }
   .remote-footer-card {
     height: 190px;
