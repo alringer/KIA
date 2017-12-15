@@ -1787,28 +1787,6 @@ body.modal-open {
   width: 420px; }
   .modal.active-recalls .modal-dialog .modal-active-recalls {
     padding: 16px 40px 40px; }
-    .modal.active-recalls .modal-dialog .modal-active-recalls ul {
-      padding: 0;
-      margin: 0;
-      list-style: none; }
-      .modal.active-recalls .modal-dialog .modal-active-recalls ul li {
-        margin-bottom: 12px;
-        padding-bottom: 18px;
-        border-bottom: solid 1px #d5d5d5; }
-        .modal.active-recalls .modal-dialog .modal-active-recalls ul li:last-child {
-          border-bottom: none;
-          padding-bottom: 0;
-          margin-bottom: 30px; }
-        .modal.active-recalls .modal-dialog .modal-active-recalls ul li em {
-          display: block;
-          font: 14px "Source Sans Pro", sans-serif;
-          letter-spacing: .6px;
-          color: #2f2f2f; }
-        .modal.active-recalls .modal-dialog .modal-active-recalls ul li strong {
-          display: block;
-          font: bold 14px "Source Sans Pro", sans-serif;
-          letter-spacing: .6px;
-          color: #2f2f2f; }
     @media (max-width: 767px) {
       .modal.active-recalls .modal-dialog .modal-active-recalls {
         padding-left: 16px;
@@ -1886,6 +1864,73 @@ body.modal-open {
       font: 14px/1.5em "Source Sans Pro", sans-serif;
       letter-spacing: .6px;
       margin-bottom: 25px; }
+
+.modal.diagnostic-issues .modal-dialog {
+  width: 570px; }
+  .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues {
+    padding: 16px 40px 40px; }
+    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .modal-title + em {
+      display: block;
+      text-align: center;
+      font: 12px/1.75em "Source Sans Pro", sans-serif;
+      letter-spacing: .5px;
+      margin-bottom: 26px;
+      margin-top: -5px; }
+    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues > img {
+      display: block;
+      margin: 0 auto; }
+    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues > .row {
+      margin-top: 44px; }
+    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .issues-list li {
+      margin-bottom: 28px; }
+      .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .issues-list li strong,
+      .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .issues-list li em,
+      .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .issues-list li p {
+        margin-bottom: 5px; }
+    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .button.full {
+      max-width: 340px;
+      display: block;
+      margin: 30px auto 0; }
+    @media (max-width: 767px) {
+      .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues {
+        padding: 26px 16px 0; }
+        .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .diagnostic-category-selector {
+          margin-bottom: 17px; }
+          .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .diagnostic-category-selector strong {
+            display: block;
+            font: bold 10px/1em "KIA", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            margin-bottom: 10px; }
+        .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .issues-list li {
+          padding-left: 25px;
+          padding-right: 25px; } }
+
+ul.issues-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  ul.issues-list li {
+    margin-bottom: 12px;
+    padding-bottom: 18px;
+    border-bottom: solid 1px #d5d5d5; }
+    ul.issues-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 30px; }
+    ul.issues-list li em {
+      display: block;
+      font: 14px "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      color: #2f2f2f; }
+    ul.issues-list li strong {
+      display: block;
+      font: bold 14px "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      color: #2f2f2f; }
+    ul.issues-list li p {
+      font: 14px/1.5em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px; }
 
 .modal {
   min-width: 355px; }
@@ -2750,11 +2795,13 @@ nav.nav-app .logo {
             border-radius: 100%;
             background: #C4172C;
             content: "";
-            transform: translate(-50%, -50%); } }
+            transform: translate(-50%, -50%);
+            display: none; } }
           @media (max-width: 991px) and (max-width: 767px) {
             nav.nav-app .nav-app-menu li.more.unread:before {
               width: 4px;
-              height: 4px; } }
+              height: 4px;
+              display: block; } }
 
 @media (max-width: 991px) {
       nav.nav-app .nav-app-menu li a {
@@ -3322,6 +3369,12 @@ ul.notification-list {
 
 body {
   padding-bottom: 140px !important; }
+  @media (max-width: 991px) {
+    body {
+      padding-bottom: 105px !important; } }
+  @media (max-width: 767px) {
+    body {
+      padding-bottom: 80px !important; } }
 
 footer {
   position: absolute;
@@ -3558,3 +3611,39 @@ body {
         transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
         .category-selector .dropdown-menu li:hover {
           background: rgba(47, 47, 47, 0.1); }
+
+.category-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .category-filter-list li {
+    margin-bottom: 19px;
+    font: bold 13px "KIA", sans-serif;
+    color: #929292;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer; }
+    .category-filter-list li span {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      background: #929292;
+      color: #FFF;
+      text-align: center;
+      font: bold 12px/18px "Source Sans Pro", sans-serif;
+      letter-spacing: 0;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      margin-right: 15px;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .category-filter-list li:hover {
+      color: #5f5f5f; }
+      .category-filter-list li:hover span {
+        background: #5f5f5f; }
+    .category-filter-list li.active {
+      color: #2f2f2f; }
+      .category-filter-list li.active span {
+        background: #C4172C; }

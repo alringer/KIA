@@ -2473,6 +2473,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/img_diagnostic_issue.jpg": {
+		"ft": 16384,
+		"iS": 13041,
+		"oA": 0,
+		"oAP": "\/build\/images\/img_diagnostic_issue.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/images\/logo_google_play.svg": {
 		"ft": 2097152,
 		"miP": 0,

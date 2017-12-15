@@ -2052,33 +2052,6 @@ body.modal-open {
     width: 420px;
     .modal-active-recalls {
       padding: 16px 40px 40px;
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        li {
-          margin-bottom: 12px;
-          padding-bottom: 18px;
-          border-bottom: solid 1px #d5d5d5;
-          &:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-            margin-bottom: 30px;
-          }
-          em {
-            display: block;
-            font: 14px $sans;
-            letter-spacing: .6px;
-            color: #2f2f2f;
-          }
-          strong {
-            display: block;
-            font: bold 14px $sans;
-            letter-spacing: .6px;
-            color: #2f2f2f;
-          }
-        }
-      }
       @media (max-width: $screen-xs-max) {
         padding-left: 16px;
         padding-right: 16px;
@@ -2180,6 +2153,98 @@ body.modal-open {
         letter-spacing: .6px;
         margin-bottom: 25px;
       }
+    }
+  }
+}
+
+.modal.diagnostic-issues {
+  .modal-dialog {
+    width: 570px;
+    .modal-diagnostic-issues {
+      padding: 16px 40px 40px;
+      .modal-title {
+        + em {
+          display: block;
+          text-align: center;
+          font: 12px/1.75em $sans;
+          letter-spacing: .5px;
+          margin-bottom: 26px;
+          margin-top: -5px;
+        }
+      }
+      > img {
+        display: block;
+        margin: 0 auto;
+      }
+      > .row {
+        margin-top: 44px;
+      }
+      .issues-list {
+        li {
+          margin-bottom: 28px;
+          strong,
+          em,
+          p {
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .button.full {
+        max-width: 340px;
+        display: block;
+        margin: 30px auto 0;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 26px 16px 0;
+        .diagnostic-category-selector {
+          margin-bottom: 17px;
+          strong {
+            display: block;
+            font: bold 10px/1em $kia;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            margin-bottom: 10px;
+          }
+        }
+        .issues-list {
+          li {
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.issues-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    margin-bottom: 12px;
+    padding-bottom: 18px;
+    border-bottom: solid 1px #d5d5d5;
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+    em {
+      display: block;
+      font: 14px $sans;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+    }
+    strong {
+      display: block;
+      font: bold 14px $sans;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+    }
+    p {
+      font: 14px/1.5em $sans;
+      letter-spacing: .6px;
     }
   }
 }

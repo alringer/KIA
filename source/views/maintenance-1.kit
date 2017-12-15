@@ -655,7 +655,7 @@
       <div class="modal-body">
         <div class="modal-active-recalls">
           <strong class="modal-title">Recalls</strong>
-          <ul>
+          <ul class="issues-list">
             <li>
               <em>
                 SC123
@@ -898,9 +898,93 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#active-recalls -->
+<div class="modal fade diagnostic-issues" id="diagnostic-issues" tabindex="-1" role="dialog" aria-labelledby="diagnostic-issues" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-diagnostic-issues">
+          <strong class="modal-title">Vehicle Health Report</strong>
+          <em>
+            Septemper 12, 2017
+          </em>
+          <img src="/images/img_diagnostic_issue.jpg" alt="Diagnostic Issue">
+          <div class="row">
+            <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
+              <div class="diagnostic-category-selector">
+                <strong>Category</strong>
+                <select class="selectpicker">
+                  <option value="safety" selected>(3) Safety</option>
+                  <option value="powertrain">(0) Powertrain</option>
+                  <option value="chassis">(0) Chassis</option>
+                  <option value="electrical">(0) Electrical</option>
+                </select>
+              </div><!-- /.category-selector -->
+            </div><!-- /.col -->
+            <div class="col-sm-4 hidden-xs">
+              <ul class="category-filter-list">
+                <li class="active">
+                  <span>
+                    3
+                  </span>
+                  Safety
+                </li>
+                <li>
+                  <span>
+                    0
+                  </span>
+                  Powertrain
+                </li>
+                <li>
+                  <span>
+                    0
+                  </span>
+                  Chassis
+                </li>
+                <li>
+                  <span>
+                    0
+                  </span>
+                  Electircal
+                </li>
+              </ul>
+            </div><!-- /.col -->
+            <div class="col-sm-8">
+              <ul class="issues-list">
+                <li>
+                  <em>
+                    C112400
+                  </em>
+                  <strong>
+                    WU Sensor Battery Low RR
+                  </strong>
+                  <p>
+                    Possible condition(s) with your Tire Pressure Monitoring System has been detected. KIA recommends a full system check when convenient.
+                  </p>
+                </li>
+                <li>
+                  <em>
+                    C112400
+                  </em>
+                  <strong>
+                    Rear Right Sensor Faul
+                  </strong>
+                  <p>
+                    A routine system check complete
+                  </p>
+                </li>
+              </ul>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+          <span class="button full switch-modals" data-next-modal="#request-appointment">Request Appointment</span>
+        </div><!-- /.active-recalls -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
 <script type="text/javascript">
 $(window).on('load',function(){
-    // $('#appointment-requested').modal('show');
+    // $('#diagnostic-issues').modal('show');
     $('.radio-toggle span').bind('click', function(){
       var $this = $(this);
       $this.parents('label').find('input').trigger('click');
