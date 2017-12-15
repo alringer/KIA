@@ -147,9 +147,14 @@
   padding: 32px 40px 50px;
   position: relative;
   &-milestones {
-    overflow: hidden;
     padding-bottom: 25px;
     margin-bottom: 40px;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      clear: both;
+    }
     .milestone-block {
       position: relative;
       strong {
@@ -195,11 +200,32 @@
       > span {
         margin: 0 10px;
         display: inline-block;
+        width: 12px;
+        height: 18px;
+        cursor: pointer;
+        position: relative;
+        i {
+          pointer-events: none;
+          transition: all 250ms $easeOutQuint;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
         &:first-of-type {
           margin-left: 0px;
+          &:hover {
+            i {
+              margin-left: -5px;
+            }
+          }
         }
         &:last-of-type {
           margin-right: 0px;
+          &:hover {
+            i {
+              margin-left: 5px;
+            }
+          }
         }
       }
       @media (max-width: $screen-xs-max) {
@@ -270,6 +296,9 @@
       }
     }
   }
+}
+.milestone-detail {
+  clear: both;
 }
 .milestone-status {
   &-detail {
