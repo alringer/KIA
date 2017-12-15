@@ -1687,10 +1687,18 @@ body.modal-open {
   text-align: center;
   .modal-dialog {
     max-width: 425px;
+    @media (max-width: $screen-xs-max) {
+      .modal-content {
+        padding-bottom: 0;
+      }
+    }
   }
   .modal-heated-seats {
     height: 728px;
     overflow: hidden;
+    @media (max-width: $screen-xs-max) {
+      height: 650px;
+    }
     &.seat-open {
       .heated-seats-vehicle {
         em {
@@ -1711,6 +1719,9 @@ body.modal-open {
         }
         .heated-seats-vehicle {
           transform: translateY(-225px);
+          @media (max-width: $screen-xs-max) {
+            transform: translateY(-325px);
+          }
         }
       }
     }
@@ -1767,6 +1778,9 @@ body.modal-open {
       &.bottom {
         top: auto;
         bottom: 30px;
+        @media (max-width: $screen-xs-max) {
+          // transform: translate(-50%, -50%);
+        }
       }
       &-controls {
         bottom: -25px;
