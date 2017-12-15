@@ -1177,6 +1177,11 @@ body.refreshing {
         transform: scale(.9);
         margin: 0 5px;
       }
+      &:not(.accessory-group-heated-seats) {
+        .accessory {
+          top: 4px;
+        }
+      }
     }
     .accessory {
       transform: none;

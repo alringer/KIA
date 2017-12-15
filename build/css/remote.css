@@ -1968,6 +1968,8 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
         margin: 0 5px; }
         .accessory-group.accessory-group-heated-seats .accessory:first-child, .accessory-group.right .accessory:first-child {
           margin-left: -5px; }
+      .accessory-group.accessory-group-heated-seats:not(.accessory-group-heated-seats) .accessory, .accessory-group.right:not(.accessory-group-heated-seats) .accessory {
+        top: 4px; }
     .accessory-group .accessory {
       transform: none;
       margin: 0; }
