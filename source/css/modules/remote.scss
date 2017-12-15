@@ -831,6 +831,17 @@ body.refreshing {
       }
       @media (max-width: $screen-xs-max) {
         margin-bottom: 100px;
+        transform: scale(.9);
+        &-controls {
+          > span {
+            &.down {
+              transform: translateX(-100px);
+            }
+            &.up {
+              transform: translateX(100px);
+            }
+          }
+        }
       }
     }
   }

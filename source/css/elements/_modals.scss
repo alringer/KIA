@@ -1696,6 +1696,9 @@ body.modal-open {
         em {
           opacity: 0;
         }
+        > span {
+          opacity: 0;
+        }
       }
       &.top {
         .heated-seats-vehicle {
@@ -1708,6 +1711,34 @@ body.modal-open {
         }
         .heated-seats-vehicle {
           transform: translateY(-225px);
+        }
+      }
+    }
+    &.seat-1 {
+      .heated-seats-vehicle {
+        > span.heated-seat-1 {
+          opacity: 1;
+        }
+      }
+    }
+    &.seat-2 {
+      .heated-seats-vehicle {
+        > span.heated-seat-2 {
+          opacity: 1;
+        }
+      }
+    }
+    &.seat-3 {
+      .heated-seats-vehicle {
+        > span.heated-seat-3 {
+          opacity: 1;
+        }
+      }
+    }
+    &.seat-4 {
+      .heated-seats-vehicle {
+        > span.heated-seat-4 {
+          opacity: 1;
         }
       }
     }
