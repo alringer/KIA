@@ -2067,6 +2067,20 @@ body.modal-open {
                 display: inline-block;
                 vertical-align: middle;
                 margin: 0 13.5px;
+                cursor: pointer;
+                svg {
+                  * {
+                    fill: $red !important;
+                    transition: fill 250ms $easeOutQuint;
+                  }
+                }
+                &:hover {
+                  svg {
+                    * {
+                      fill: darken($red, 20%) !important;
+                    }
+                  }
+                }
                 &:first-child {
                   margin-left: 0px;
                 }
@@ -2076,12 +2090,12 @@ body.modal-open {
                 &.icon-calendar {
                   width: 17px;
                   height: 18px;
-                  background: url('/images/icon_calendar_red_medium.svg') center/contain no-repeat;
+                  // background: url('/images/icon_calendar_red_medium.svg') center/contain no-repeat;
                 }
                 &.icon-location {
                   width: 14px;
                   height: 20px;
-                  background: url('/images/icon_location_red.svg') center/contain no-repeat;
+                  // background: url('/images/icon_location_red.svg') center/contain no-repeat;
                 }
               }
             }

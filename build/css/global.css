@@ -1788,19 +1788,23 @@ body.modal-open {
             .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i {
               display: inline-block;
               vertical-align: middle;
-              margin: 0 13.5px; }
+              margin: 0 13.5px;
+              cursor: pointer; }
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i svg * {
+                fill: #C4172C !important;
+                transition: fill 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+              .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i:hover svg * {
+                fill: #690c18 !important; }
               .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i:first-child {
                 margin-left: 0px; }
               .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i:last-child {
                 margin-right: 0px; }
               .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i.icon-calendar {
                 width: 17px;
-                height: 18px;
-                background: url("/images/icon_calendar_red_medium.svg") center/contain no-repeat; }
+                height: 18px; }
               .modal.upcoming-appointments .modal-dialog .modal-content .upcoming-appointments ul li .actions i.icon-location {
                 width: 14px;
-                height: 20px;
-                background: url("/images/icon_location_red.svg") center/contain no-repeat; }
+                height: 20px; }
 
 .modal.active-recalls .modal-dialog {
   width: 420px; }
