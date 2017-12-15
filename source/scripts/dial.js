@@ -21,7 +21,7 @@ $(document).ready(() => {
               value_diff = value_max - value_min,
               min = 0,
               max = 265,
-              step = Math.floor(max / (value_diff));
+              step = Math.floor(max / (value_diff) + 1);
           window.dial.properties.dials.push({
             value_max,
             value_min,
@@ -57,6 +57,7 @@ $(document).ready(() => {
         var percentage = degree / props.max,
             value_diff = props.value_max - props.value_min,
             value = Math.round(props.value_min + (value_diff * percentage));
+
         props.tempText.text(value);
         if((value - 1) / value_diff === .5) {
           props.element.addClass('nuetral');
