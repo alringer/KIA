@@ -1691,9 +1691,9 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     margin-bottom: 100px;
     transform: scale(0.9); }
     .remote-climate .remote-body .ui-dial-controls > span.down {
-      transform: translateX(-100px); }
+      transform: translateX(-100px) scale(1.5); }
     .remote-climate .remote-body .ui-dial-controls > span.up {
-      transform: translateX(100px); } }
+      transform: translateX(100px) scale(1.5); } }
 
 .overview-remote-command.remote-command-security.state-2-communicating .action-buttons .state-2, .overview-remote-command.remote-command-security.state-1 .action-buttons .state-2 {
   background: #8ec439 !important; }

@@ -836,10 +836,10 @@ body.refreshing {
         &-controls {
           > span {
             &.down {
-              transform: translateX(-100px);
+              transform: translateX(-100px) scale(1.5);
             }
             &.up {
-              transform: translateX(100px);
+              transform: translateX(100px) scale(1.5);
             }
           }
         }
