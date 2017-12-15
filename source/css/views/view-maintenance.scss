@@ -551,7 +551,8 @@
       margin-right: 13px;
       svg {
         * {
-          transition: all 250ms $easeOutQuint !important;
+          transition: all 250ms $easeOutQuint;
+          fill: $red;
         }
       }
     }

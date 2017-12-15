@@ -464,7 +464,8 @@
       vertical-align: middle;
       margin-right: 13px; }
       .maintenance-dealer-appointment a i svg * {
-        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) !important; }
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        fill: #C4172C; }
     .maintenance-dealer-appointment a:hover {
       color: #690c18; }
       .maintenance-dealer-appointment a:hover i svg * {
