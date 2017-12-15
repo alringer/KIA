@@ -2047,59 +2047,138 @@ body.modal-open {
   }
 }
 
-.category-selector {
-  padding-left: 25px;
-  margin-bottom: 25px;
-  em {
-    font: bold 10px/1em $kia;
-    letter-spacing: 1px;
-    color: #969696;
-    text-transform: uppercase;
-  }
-  .dropdown {
-    display: inline-block;
-    button {
-      background: none;
-      border: none;
-      height: auto;
-      display: inline-block;
-      padding: 0;
-      font: bold 10px/1em $kia;
-      letter-spacing: 1px;
-      color: $grey_2;
-      text-transform: uppercase;
-      margin-left: 10px;
-    }
-    &-menu {
-      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
-      border: none;
-      min-width: 114px;
-      left: auto;
-      right: -25px;
-      overflow: visible;
-      margin-top: 5px;
-      border-radius: 2px;
-      &:before {
-        position: absolute;
-        right: 24.5px;
-        bottom: 100%;
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 5px 5px 5px;
-        border-color: transparent transparent $white transparent;
-      }
-      li {
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-        cursor: pointer;
-        transition: all 250ms $easeOutQuint;
-        &:hover {
-          background: rgba($grey_2, .1);
+.modal.active-recalls {
+  .modal-dialog {
+    width: 420px;
+    .modal-active-recalls {
+      padding: 16px 40px 40px;
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+          margin-bottom: 12px;
+          padding-bottom: 18px;
+          border-bottom: solid 1px #d5d5d5;
+          &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 30px;
+          }
+          em {
+            display: block;
+            font: 14px $sans;
+            letter-spacing: .6px;
+            color: #2f2f2f;
+          }
+          strong {
+            display: block;
+            font: bold 14px $sans;
+            letter-spacing: .6px;
+            color: #2f2f2f;
+          }
         }
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 16px;
+        padding-right: 16px;
+        ul {
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+}
+
+.modal.request-appointment {
+  .modal-dialog {
+    width: 450px;
+    .modal-request-appointment {
+      padding: 0 25px 20px;
+      .selected-dealer {
+        padding-bottom: 23px;
+        border-bottom: solid 1px #d5d5d5;
+        margin-bottom: 22px;
+        em {
+          padding-top: 20px;
+          display: block;
+          font: bold 10px/1em $kia;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #969696;
+          margin-bottom: 10px;
+        }
+        strong {
+          display: block;
+          font: bold 16px/1em $sans;
+          color: #2f2f2f;
+          letter-spacing: .4px;
+          margin-bottom: 7px;
+        }
+        span {
+          display: block;
+          font: 14px/1em $sans;
+          letter-spacing: .3px;
+          color: #2f2f2f;
+          margin-bottom: 7px;
+        }
+        a {
+          display: inline-block;
+          color: $red;
+          font: bold 11px/2em $kia;
+          letter-spacing: .7px;
+          text-transform: uppercase;
+          transition: all 250ms $easeOutQuint;
+          cursor: pointer;
+          &:hover {
+            color: darken($red, 20%);
+          }
+        }
+      }
+      .appointment-type {
+        margin: 0 0 50px 15px;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-bottom: 18px;;
+          label {
+            em {
+              display: block;
+              strong {
+                display: block;
+                font: bold 14px/1.5em $sans;
+                letter-spacing: .4px;
+                color: #2f2f2f;
+              }
+              span {
+                display: block;
+                font: 12px/1.75em $sans;
+                letter-spacing: .4px;
+                color: #919191;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 0;
+        .appointment-type {
+          margin: 0 0 50px;
+        }
+      }
+    }
+  }
+}
+
+.modal.appointment-requested {
+  .modal-dialog {
+    width: 389px;
+    .modal-appointment-requested {
+      padding: 20px 40px 40px;
+      p {
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+        margin-bottom: 25px;
       }
     }
   }

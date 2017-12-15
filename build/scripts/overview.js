@@ -29,7 +29,6 @@ $(document).ready(function () {
         }
       },
       _close_popup_open_modal: function _close_popup_open_modal() {
-        console.log('run');
         $('#how-to-activate-uvo').modal('hide');
         setTimeout(function () {
           $('#activate-uvo').modal('show');

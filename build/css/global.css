@@ -1783,55 +1783,109 @@ body.modal-open {
                 height: 20px;
                 background: url("/images/icon_location_red.svg") center/contain no-repeat; }
 
-.category-selector {
-  padding-left: 25px;
-  margin-bottom: 25px; }
-  .category-selector em {
-    font: bold 10px/1em "KIA", sans-serif;
-    letter-spacing: 1px;
-    color: #969696;
-    text-transform: uppercase; }
-  .category-selector .dropdown {
-    display: inline-block; }
-    .category-selector .dropdown button {
-      background: none;
-      border: none;
-      height: auto;
-      display: inline-block;
+.modal.active-recalls .modal-dialog {
+  width: 420px; }
+  .modal.active-recalls .modal-dialog .modal-active-recalls {
+    padding: 16px 40px 40px; }
+    .modal.active-recalls .modal-dialog .modal-active-recalls ul {
       padding: 0;
-      font: bold 10px/1em "KIA", sans-serif;
-      letter-spacing: 1px;
-      color: #2f2f2f;
-      text-transform: uppercase;
-      margin-left: 10px; }
-    .category-selector .dropdown-menu {
-      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
-      border: none;
-      min-width: 114px;
-      left: auto;
-      right: -25px;
-      overflow: visible;
-      margin-top: 5px;
-      border-radius: 2px; }
-      .category-selector .dropdown-menu:before {
-        position: absolute;
-        right: 24.5px;
-        bottom: 100%;
-        content: '';
+      margin: 0;
+      list-style: none; }
+      .modal.active-recalls .modal-dialog .modal-active-recalls ul li {
+        margin-bottom: 12px;
+        padding-bottom: 18px;
+        border-bottom: solid 1px #d5d5d5; }
+        .modal.active-recalls .modal-dialog .modal-active-recalls ul li:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+          margin-bottom: 30px; }
+        .modal.active-recalls .modal-dialog .modal-active-recalls ul li em {
+          display: block;
+          font: 14px "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          color: #2f2f2f; }
+        .modal.active-recalls .modal-dialog .modal-active-recalls ul li strong {
+          display: block;
+          font: bold 14px "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          color: #2f2f2f; }
+    @media (max-width: 767px) {
+      .modal.active-recalls .modal-dialog .modal-active-recalls {
+        padding-left: 16px;
+        padding-right: 16px; }
+        .modal.active-recalls .modal-dialog .modal-active-recalls ul {
+          margin-bottom: 100px; } }
+
+.modal.request-appointment .modal-dialog {
+  width: 450px; }
+  .modal.request-appointment .modal-dialog .modal-request-appointment {
+    padding: 0 25px 20px; }
+    .modal.request-appointment .modal-dialog .modal-request-appointment .selected-dealer {
+      padding-bottom: 23px;
+      border-bottom: solid 1px #d5d5d5;
+      margin-bottom: 22px; }
+      .modal.request-appointment .modal-dialog .modal-request-appointment .selected-dealer em {
+        padding-top: 20px;
         display: block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 5px 5px 5px;
-        border-color: transparent transparent #FFF transparent; }
-      .category-selector .dropdown-menu li {
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-        cursor: pointer;
-        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
-        .category-selector .dropdown-menu li:hover {
-          background: rgba(47, 47, 47, 0.1); }
+        font: bold 10px/1em "KIA", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #969696;
+        margin-bottom: 10px; }
+      .modal.request-appointment .modal-dialog .modal-request-appointment .selected-dealer strong {
+        display: block;
+        font: bold 16px/1em "Source Sans Pro", sans-serif;
+        color: #2f2f2f;
+        letter-spacing: .4px;
+        margin-bottom: 7px; }
+      .modal.request-appointment .modal-dialog .modal-request-appointment .selected-dealer span {
+        display: block;
+        font: 14px/1em "Source Sans Pro", sans-serif;
+        letter-spacing: .3px;
+        color: #2f2f2f;
+        margin-bottom: 7px; }
+      .modal.request-appointment .modal-dialog .modal-request-appointment .selected-dealer a {
+        display: inline-block;
+        color: #C4172C;
+        font: bold 11px/2em "KIA", sans-serif;
+        letter-spacing: .7px;
+        text-transform: uppercase;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        cursor: pointer; }
+        .modal.request-appointment .modal-dialog .modal-request-appointment .selected-dealer a:hover {
+          color: #690c18; }
+    .modal.request-appointment .modal-dialog .modal-request-appointment .appointment-type {
+      margin: 0 0 50px 15px;
+      padding: 0;
+      list-style: none; }
+      .modal.request-appointment .modal-dialog .modal-request-appointment .appointment-type li {
+        margin-bottom: 18px; }
+        .modal.request-appointment .modal-dialog .modal-request-appointment .appointment-type li label em {
+          display: block; }
+          .modal.request-appointment .modal-dialog .modal-request-appointment .appointment-type li label em strong {
+            display: block;
+            font: bold 14px/1.5em "Source Sans Pro", sans-serif;
+            letter-spacing: .4px;
+            color: #2f2f2f; }
+          .modal.request-appointment .modal-dialog .modal-request-appointment .appointment-type li label em span {
+            display: block;
+            font: 12px/1.75em "Source Sans Pro", sans-serif;
+            letter-spacing: .4px;
+            color: #919191; }
+    @media (max-width: 767px) {
+      .modal.request-appointment .modal-dialog .modal-request-appointment {
+        padding: 0; }
+        .modal.request-appointment .modal-dialog .modal-request-appointment .appointment-type {
+          margin: 0 0 50px; } }
+
+.modal.appointment-requested .modal-dialog {
+  width: 389px; }
+  .modal.appointment-requested .modal-dialog .modal-appointment-requested {
+    padding: 20px 40px 40px; }
+    .modal.appointment-requested .modal-dialog .modal-appointment-requested p {
+      font: 14px/1.5em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      margin-bottom: 25px; }
 
 .modal {
   min-width: 355px; }
@@ -3454,3 +3508,53 @@ body {
     color: #8e1425; }
     .print:hover svg * {
       fill: #8e1425 !important; }
+
+.category-selector {
+  padding-left: 25px;
+  margin-bottom: 25px; }
+  .category-selector em {
+    font: bold 10px/1em "KIA", sans-serif;
+    letter-spacing: 1px;
+    color: #969696;
+    text-transform: uppercase; }
+  .category-selector .dropdown {
+    display: inline-block; }
+    .category-selector .dropdown button {
+      background: none;
+      border: none;
+      height: auto;
+      display: inline-block;
+      padding: 0;
+      font: bold 10px/1em "KIA", sans-serif;
+      letter-spacing: 1px;
+      color: #2f2f2f;
+      text-transform: uppercase;
+      margin-left: 10px; }
+    .category-selector .dropdown-menu {
+      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
+      border: none;
+      min-width: 114px;
+      left: auto;
+      right: -25px;
+      overflow: visible;
+      margin-top: 5px;
+      border-radius: 2px; }
+      .category-selector .dropdown-menu:before {
+        position: absolute;
+        right: 24.5px;
+        bottom: 100%;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent #FFF transparent; }
+      .category-selector .dropdown-menu li {
+        padding: 0 20px;
+        height: 45px;
+        line-height: 45px;
+        cursor: pointer;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .category-selector .dropdown-menu li:hover {
+          background: rgba(47, 47, 47, 0.1); }

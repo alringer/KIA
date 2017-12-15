@@ -962,7 +962,7 @@
               </div><!-- /.maintenance-card -->
             </div><!-- /.col -->
             <div class="col-sm-3 col-xs-6">
-              <div class="maintenance-block card">
+              <div class="maintenance-block card" data-toggle="modal" data-target="#active-recalls">
                 <i class="icon-recalls"></i>
                 <strong>
                   3
@@ -1008,7 +1008,7 @@
       </div><!-- /.contain -->
       <div class="maintenance-dealer-appointment">
         <div class="maintenance-dealer-appointment-inner">
-          <span class="button full large">
+          <span class="button full large" data-toggle="modal" data-target="#request-appointment">
             Request Dealer Appointment
           </span>
           <a href="#">
@@ -1077,7 +1077,7 @@
       <span class="icon-close" data-dismiss="modal"></span>
       <div class="modal-body">
         <div class="indicator-lights">
-          <strong class="modal-title">MALFUNTION INDICATOR LIGHT GUIDE</strong>
+          <strong class="modal-title">MALFUNCTION INDICATOR LIGHT GUIDE</strong>
           <ul>
             <li>
               <span></span>
@@ -1232,11 +1232,11 @@
               </div>
             </li>
           </ul>
-        </div><!-- /.service-minder -->
+        </div><!-- /.upcoming-appointments -->
       </div><!-- /.modal-body -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div><!-- /.modal#service-minder -->
+</div><!-- /.modal#upcoming-appointments -->
 <div class="modal fade preferred-dealer has-fixed-footer" id="preferred-dealer" tabindex="-1" role="dialog" aria-labelledby="preferred-dealer" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -1367,14 +1367,264 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#service-minder -->
+<div class="modal fade active-recalls" id="active-recalls" tabindex="-1" role="dialog" aria-labelledby="active-recalls" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-active-recalls">
+          <strong class="modal-title">Recalls</strong>
+          <ul>
+            <li>
+              <em>
+                SC123
+              </em>
+              <strong>
+                Transmission Gear Shift Lever
+              </strong>
+            </li>
+            <li>
+              <em>
+                SC123
+              </em>
+              <strong>
+                Transmission Gear Shift Lever
+              </strong>
+            </li>
+            <li>
+              <em>
+                SC123
+              </em>
+              <strong>
+                Transmission Gear Shift Lever
+              </strong>
+            </li>
+          </ul>
+          <span class="button full switch-modals" data-next-modal="#request-appointment">Request an Appointment</span>
+        </div><!-- /.active-recalls -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
+<div class="modal fade request-appointment has-fixed-footer" id="request-appointment" tabindex="-1" role="dialog" aria-labelledby="active-recalls" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <span class="back" data-target="#request-appointment-slider" data-slide-to="0"></span>
+        <div id="request-appointment-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-request-appointment">
+                <strong class="modal-title">Make an Appointment</strong>
+                <div class="selected-dealer">
+                  <em>
+                    Your appointment will be with:
+                  </em>
+                  <strong>
+                    Kearny Pearson Kia
+                  </strong>
+                  <span>
+                    7303 Clairemont Mesa Blvd
+                  </span>
+                  <span>
+                    San Diego, CA 92111
+                  </span>
+                  <span>
+                    1 (858) 560-5544
+                  </span>
+                  <a data-target="#request-appointment-slider" data-slide-to="1">
+                    select nearby dealer
+                  </a>
+                </div><!-- /.selected-dealer -->
+                <ul class="appointment-type">
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="appointment-type" value="" checked="">
+                      <em>
+                        <strong>
+                          Vehicle Repair
+                        </strong>
+                        <span>
+                          2 Diagnostic Issues
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="appointment-type" value="">
+                      <em>
+                        <strong>
+                          Maintenance
+                        </strong>
+                        <span>
+                          Next scheduled maintenance: 2641 mi.
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="appointment-type" value="">
+                      <em>
+                        <strong>
+                          Other
+                        </strong>
+                        <span>
+                          Dealership will contact you for more details.
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                </ul><!-- /.appointment-type -->
+                <span class="button full switch-modals" data-next-modal="#appointment-requested">Request Appointment</span>
+              </div><!-- /.modal-request-appointment -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-preferred-dealer">
+                <strong class="modal-title">Select Nearby Dealer</strong>
+                <div class="category-selector special-dropdown">
+                  <em>Dealer Certification</em>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                      <span class="active-filter">Any</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li data-mix-filter=".all">
+                        Any
+                      </li>
+                      <li data-mix-filter=".option-1">
+                        Option 1
+                      </li>
+                      <li data-mix-filter=".option-2">
+                        Option 2
+                      </li>
+                      <li data-mix-filter=".option-3">
+                        Option 3
+                      </li>
+                    </ul>
+                  </div><!-- /.dropdown -->
+                </div><!-- /.category-selector -->
+                <ul class="radio-choices">
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="" checked>
+                      <em>
+                        <span class="address">
+                          <strong>1. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>2. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>3. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>4. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>5. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                </ul><!-- /.radio-choices -->
+                <div class="modal-footer">
+                <span class="button preferred-dealer-submit" data-target="#request-appointment-slider" data-slide-to="0">
+                  Use this dealer
+                </span>
+              </div>
+            </div>
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
+<div class="modal fade appointment-requested" id="appointment-requested" tabindex="-1" role="dialog" aria-labelledby="appointment-requested" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-appointment-requested">
+          <strong class="modal-title">Appointment Requested</strong>
+          <p>
+            Your appointment has been requested at Kearny Pearson Kia. The dealer will contact you within 1 business day to schedule date and time.
+          </p>
+          <span class="button full switch-modals" data-dismiss="modal">Close</span>
+        </div><!-- /.active-recalls -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
 <script type="text/javascript">
-    $(window).on('load',function(){
-        // $('#preferred-dealer').modal('show');
-        $('.radio-toggle span').bind('click', function(){
-          var $this = $(this);
-          $this.parents('label').find('input').trigger('click');
-        });
+$(window).on('load',function(){
+    // $('#appointment-requested').modal('show');
+    $('.radio-toggle span').bind('click', function(){
+      var $this = $(this);
+      $this.parents('label').find('input').trigger('click');
     });
+});
 </script>
   <footer>
     <div class="contain">
