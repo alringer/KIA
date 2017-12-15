@@ -198,6 +198,9 @@
   @media (max-width: 767px) {
     .maintenance-main {
       padding: 65px 22px 30px; } }
+  .maintenance-main .milestone-status-detail-text {
+    padding-top: 31px;
+    padding-left: 15px; }
 
 .milestone-status-detail-form {
   padding-top: 10px; }
@@ -213,12 +216,41 @@
       width: 100%;
       padding-left: 37px;
       font: 500 14px "Source Sans Pro", sans-serif;
-      letter-spacing: .4px; }
+      letter-spacing: .4px;
+      background-position: 12px center;
+      background-repeat: no-repeat; }
+      .milestone-status-detail-form .form-fields li textarea.date,
+      .milestone-status-detail-form .form-fields li input[type="text"].date {
+        background-image: url("/images/icon_calendar_small_grey.svg"); }
+      .milestone-status-detail-form .form-fields li textarea.location,
+      .milestone-status-detail-form .form-fields li input[type="text"].location {
+        background-image: url("/images/icon_location_target_grey.svg"); }
+      .milestone-status-detail-form .form-fields li textarea.mileage,
+      .milestone-status-detail-form .form-fields li input[type="text"].mileage {
+        background-position: 10px center;
+        background-image: url("/images/icon_mileage_grey.svg"); }
+      .milestone-status-detail-form .form-fields li textarea.notes,
+      .milestone-status-detail-form .form-fields li input[type="text"].notes {
+        background-position: 14px 12px;
+        background-image: url("/images/icon_notes_grey.svg"); }
     .milestone-status-detail-form .form-fields li textarea {
       padding-top: 11px;
       height: 118px;
       outline: none;
       padding-right: 15px; }
+
+.milestone-status-detail-text .edit-info {
+  display: inline-block;
+  font: bold 11px/2em "KIA", sans-serif;
+  letter-spacing: .7px;
+  color: #C4172C;
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  margin-left: 35px;
+  text-transform: uppercase;
+  margin-top: 10px; }
+  .milestone-status-detail-text .edit-info:hover {
+    color: #690c18; }
 
 .milestone-status-detail-text ul.text-list {
   list-style: none;
@@ -357,6 +389,9 @@
     margin: 0 auto;
     padding: 51px 16px;
     text-align: center; }
+    @media (max-width: 767px) {
+      .maintenance-dealer-appointment-inner {
+        padding: 30px 16px 25px; } }
   .maintenance-dealer-appointment .button {
     margin-bottom: 26px; }
   .maintenance-dealer-appointment a {
@@ -364,7 +399,19 @@
     color: #C4172C;
     font: bold 11px/2em "KIA", sans-serif;
     text-transform: uppercase;
-    letter-spacing: .7px; }
+    letter-spacing: .7px;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    text-decoration: none; }
+    .maintenance-dealer-appointment a i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 13px; }
+      .maintenance-dealer-appointment a i svg * {
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1) !important; }
+    .maintenance-dealer-appointment a:hover {
+      color: #690c18; }
+      .maintenance-dealer-appointment a:hover i svg * {
+        fill: #690c18; }
 
 .view-maintenance-history .page-view-header {
   margin-bottom: 18px;
@@ -558,8 +605,8 @@
   background: url("/images/icon_mileage_red.svg") center/contain no-repeat; }
 
 .text-list .icon-notes {
-  width: 10px;
-  height: 12px;
+  width: 11px;
+  height: 14px;
   background: url("/images/icon_notes_red.svg") center/contain no-repeat; }
 
 .icon-check {
