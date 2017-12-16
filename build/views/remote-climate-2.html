@@ -848,7 +848,7 @@
             <span class="degree">°</span>
           </span>
           <span class="ui-dial-handle"></span>
-          <input type="text" class="ui-dial-canvas" />
+          <input type="hidden" class="ui-dial-canvas" />
           <input type="hidden" class="ui-dial-value" value="58"  />
           <span class="ui-dial-controls">
             <span class="down"></span>
@@ -1089,7 +1089,7 @@
             </div>
             <div class="ui-dial top steps" data-min="1" data-max="7">
               <span class="ui-dial-handle"></span>
-              <input type="text" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-canvas" />
               <input type="hidden" class="ui-dial-value" value="4" />
               <span class="seat-status">
                 <span class="seat-status-off"></span>
@@ -1120,7 +1120,7 @@
             </div>
             <div class="ui-dial steps bottom" data-min="1" data-max="7">
               <span class="ui-dial-handle"></span>
-              <input type="text" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-canvas" />
               <input type="hidden" class="ui-dial-value" value="4"  />
               <span class="seat-status">
                 <span class="seat-status-off"></span>
@@ -1135,7 +1135,7 @@
             </div>
             <div class="ui-dial steps bottom" data-min="1" data-max="7">
               <span class="ui-dial-handle"></span>
-              <input type="text" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-canvas" />
               <input type="hidden" class="ui-dial-value" value="4"  />
               <span class="seat-status">
                 <span class="seat-status-off"></span>
@@ -1154,3 +1154,8 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#heated-seats -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#heated-seats').modal('show');
+    });
+</script>
