@@ -1743,6 +1743,18 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     .overview-remote-command.remote-command-security .action-buttons .action-button:not(.state-3) {
       width: 100px; } }
 
+.state-1 .accessory-group .icon-defrost {
+  background-image: url("/images/icon_defrost_green.svg"); }
+
+.state-1 .accessory-group .icon-defrost-rear {
+  background-image: url("/images/icon_defrost_rear_green.svg"); }
+
+.state-1 .accessory-group .icon-defrost-mirror {
+  background-image: url("/images/icon_defrost_mirror_green.svg"); }
+
+.state-1 .accessory-group .icon-defrost-steering {
+  background-image: url("/images/icon_defrost_steering_green.svg"); }
+
 .state-1-communicating .accessory-group .toggle,
 .state-2-communicating .accessory-group .toggle,
 .state-1 .accessory-group .toggle {

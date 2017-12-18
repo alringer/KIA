@@ -914,6 +914,23 @@ body.refreshing {
   }
 }
 
+.state-1 {
+  .accessory-group {
+    .icon-defrost {
+      background-image: url("/images/icon_defrost_green.svg");
+    }
+    .icon-defrost-rear {
+      background-image: url("/images/icon_defrost_rear_green.svg");
+    }
+    .icon-defrost-mirror {
+      background-image: url("/images/icon_defrost_mirror_green.svg");
+    }
+    .icon-defrost-steering {
+      background-image: url("/images/icon_defrost_steering_green.svg");
+    }
+  }
+}
+
 .state-1-communicating,
 .state-2-communicating,
 .state-1 {
