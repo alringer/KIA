@@ -1789,11 +1789,10 @@
 </div><!-- /.modal#active-recalls -->
 <script type="text/javascript">
 $(window).on('load',function(){
-    // $('#diagnostic-issues').modal('show');
-    $('.radio-toggle span').bind('click', function(){
-      var $this = $(this);
-      $this.parents('label').find('input').trigger('click');
-    });
+  $('.radio-toggle span').bind('click', function(){
+    var $this = $(this);
+    $this.parents('label').find('input').trigger('click');
+  });
 });
 </script>
   <footer>
