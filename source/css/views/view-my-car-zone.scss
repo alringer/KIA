@@ -1,0 +1,46 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.view-my-car-zone {
+  .my-car-zone-empty-state {
+    height: calc(100vh - 250px);
+    min-height: 450px;
+    max-width: 462px;
+    margin: 0 auto;
+    position: relative;
+    position: relative;
+    &-inner {
+      padding: 0 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+    .icon-my-car-zone-empty-state {
+      margin: 0 auto 21px;
+    }
+    h2 {
+      font: 500 29px $kia;
+      margin: 0 0 26px;
+    }
+    p {
+      font: 14px/1.5em $sans;
+      letter-spacing: .6px;
+      margin-bottom: 30px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:first-of-type {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.icon-my-car-zone-empty-state {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background: url('/images/icon-my-car-zone-empty.png') center/contain no-repeat;
+}

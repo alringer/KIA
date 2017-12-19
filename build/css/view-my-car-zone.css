@@ -1,0 +1,67 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-my-car-zone .my-car-zone-empty-state {
+  height: calc(100vh - 250px);
+  min-height: 450px;
+  max-width: 462px;
+  margin: 0 auto;
+  position: relative;
+  position: relative; }
+  .view-my-car-zone .my-car-zone-empty-state-inner {
+    padding: 0 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+  .view-my-car-zone .my-car-zone-empty-state .icon-my-car-zone-empty-state {
+    margin: 0 auto 21px; }
+  .view-my-car-zone .my-car-zone-empty-state h2 {
+    font: 500 29px "KIA", sans-serif;
+    margin: 0 0 26px; }
+  .view-my-car-zone .my-car-zone-empty-state p {
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    margin-bottom: 30px; }
+    .view-my-car-zone .my-car-zone-empty-state p:last-of-type {
+      margin-bottom: 0; }
+    .view-my-car-zone .my-car-zone-empty-state p:first-of-type {
+      margin-bottom: 30px; }
+
+.icon-my-car-zone-empty-state {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background: url("/images/icon-my-car-zone-empty.png") center/contain no-repeat; }
