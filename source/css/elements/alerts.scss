@@ -130,6 +130,9 @@
           }
         }
       }
+      @media (max-width: $screen-xs-max) {
+        padding-left: 0 !important;
+      }
     }
     p {
       color: $white;

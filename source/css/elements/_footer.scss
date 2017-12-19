@@ -1,5 +1,11 @@
 body {
   padding-bottom: 140px !important;
+  @media (max-width: $screen-sm-max) {
+    padding-bottom: 105px !important;
+  }
+  @media (max-width: $screen-xs-max) {
+    padding-bottom: 80px !important;
+  }
 }
 
 footer {

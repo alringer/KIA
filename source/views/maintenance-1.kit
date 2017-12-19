@@ -3,8 +3,12 @@
   <!-- @import "partials/head/global-css.kit" -->
   <!-- VIEW CSS -->
   <link rel="stylesheet" href="/css/view-maintenance.css">
+  <link rel="stylesheet" href="/css/reference-cards.css">
+  <link rel="stylesheet" href="/css/maintenance-cards.css">
 
   <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/select.kit" -->
+  <!-- @import "partials/head/vendors/map-files.kit" -->
   <!-- VIEW JS -->
 
 <!-- @import "partials/head/head-end.kit" -->
@@ -13,7 +17,7 @@
 <div class="view-maintenance">
   <div class="has-mobile-nav">
     <!-- @import "partials/nav-dual.kit" -->
-    <!-- @import "partials/nav-mobile-notifications.kit" -->
+    <!-- @import "partials/nav-mobile-maintenance.kit" -->
     <div class="page-view">
       <div class="page-view-subnav">
         <ul class="page-view-subnav-items">
@@ -24,26 +28,1052 @@
           </li>
           <li>
             <a href="#">
-              Histroy
+              History
             </a>
           </li>
         </ul><!-- /.page-view-subnav-items -->
       </div><!-- /.page-view-subnav -->
       <div class="contain">
         <div class="page-view-header">
-          <h2>Vehicle Maintenance</h2>
+          <h2>
+            Vehicle Maintenance
+          </h2>
           <div class="header-preferred-dealer">
-            <h3>Kearny Pearson Kia</h3>
-            <strong>Preferred Dealer</strong>
-            <i class="settings-icon">
+            <h3>
+              Kearny Pearson Kia
+            </h3>
+            <strong>
+              Preferred Dealer
+            </strong>
+            <i class="settings-icon" data-toggle="modal" data-target="#preferred-dealer">
               <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
               </svg>
             </i>
           </div><!-- /.header-preferred-dealer -->
         </div><!-- /.page-view-header -->
+        <div class="maintenance-main maintenance-block">
+          <div class="maintenance-main-milestones">
+            <div class="milestone-block milestone-current">
+              <strong>
+                28,585 mi
+              </strong>
+              <em>
+                Current Mileage
+              </em>
+              <span>
+                (Refreshed 4 days ago)
+              </span>
+            </div><!-- /.milestone-block -->
+            <div class="progress-bar">
+              <span class="bar" style="width:80%"></span>
+            </div>
+            <div class="milestone-block milestone-next">
+              <strong>
+                30,000 mi. or 6 mo.
+              </strong>
+              <em>
+                Maintenance Milestone
+              </em>
+            </div><!-- /.milestone-block -->
+            <div class="maintenance-main-milestones-arrows">
+              <span class="milestone-arrow-left">
+                <i class="icon-arrow-left"></i>
+              </span>
+              <span class="milestone-arrow-right">
+                <i class="icon-arrow-right"></i>
+              </span>
+              <div class="milestone-block milestone-until">
+                <strong>1,415 mi.</strong>
+                <em>until Maintenance Milestone</em>
+              </div><!-- /.milestone-until -->
+            </div><!-- /.maintenance-main-milestones-arrows -->
+          </div><!-- /.maintenance-main-milestones -->
+          <div class="milestone-detail">
+            <div class="row">
+              <div class="col-sm-4">
+                <span class="milestone-detail-header">
+                  Replace
+                </span>
+                <ul class="milestone-detail-list">
+                  <li>Climate control air filter</li>
+                  <li>Add fuel additives</li>
+                  <li>Engine  oil and filter</li>
+                  <li>Rotate tires (including tire pressure and tread wear)</li>
+                </ul>
+              </div><!-- /.col -->
+              <div class="col-sm-4">
+                <span class="milestone-detail-header">
+                  Inspect
+                </span>
+                <ul class="milestone-detail-list">
+                  <li>Fuel tank air filter (CCV filter)</li>
+                  <li>Vacuum hoses</li>
+                  <li>Front brakes disc/pads calipers</li>
+                  <li>Propeller shaft</li>
+                  <li>Air clean filter</li>
+                  <li>Exhaust pipes and muffler</li>
+                  <li>Drive shafts and boots</li>
+                  <li>Suspension mounting bolts</li>
+                  <li>Power steering fluid</li>
+                  <li>EHPS motor pump and hoses</li>
+                  <li>Vapor hose and fuel filler cap</li>
+                  <li>Air conditioning refrigerant</li>
+                  <li>Fuel lines, fuel hoses and connections</li>
+                  <li>Steering gear, linkage and boots</li>
+                  <li>Brake hoses and lines</li>
+                  <li>Rear brake disc/pads</li>
+                </ul>
+              </div><!-- /.col -->
+              <div class="col-sm-4">
+                <div class="radio-toggle milestone-status">
+                  <label>
+                    <input type="radio" name="complete" value="0" checked />
+                    <span data-toggle="tab" href="#detail-empty">
+                      Incomplete
+                    </span>
+                  </label>
+                  <label>
+                    <input type="radio" name="complete" value="0" />
+                    <span data-toggle="tab" href="#detail-form">
+                      Complete
+                    </span>
+                  </label>
+                </div><!-- /.radio-toggle -->
+                <div class="milestone-status-detail">
+                  <div class="tab-content">
+                    <div id="detail-empty" class="tab-pane fade in active">
+
+                    </div><!-- /.tab-pane -->
+                    <div id="detail-form" class="tab-pane fade">
+                      <div class="milestone-status-detail-form">
+                        <form action="">
+                          <span class="error-message error-message-main">
+                            <span class="error-message-inner">Oops! Looks like you missed a few things. Please review the form below and see what you missed.</span>
+                          </span><!-- /.error-message -->
+                          <ul class="form-fields">
+                            <li>
+                              <label>
+                                <input type="text" name="" value="" placeholder="Date Completed" class="date">
+                                <span class="error-message">
+                                  <span class="error-message-inner">
+                                    {{ REPLACE ERROR MESSAGE }}
+                                  </span>
+                                </span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="text" name="" value="" placeholder="Service Location" class="location">
+                                <span class="error-message">
+                                  <span class="error-message-inner">
+                                    {{ REPLACE ERROR MESSAGE }}
+                                  </span>
+                                </span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="text" name="" value="" placeholder="Mileage" class="mileage">
+                                <span class="error-message">
+                                  <span class="error-message-inner">
+                                    {{ REPLACE ERROR MESSAGE }}
+                                  </span>
+                                </span>
+                              </label>
+                            </li>
+                            <li>
+                              <label>
+                                <textarea name="" placeholder="Notes" class="notes"></textarea>
+                                <span class="error-message">
+                                  <span class="error-message-inner">
+                                    {{ REPLACE ERROR MESSAGE }}
+                                  </span>
+                                </span>
+                              </label>
+                            </li>
+                          </ul>
+                          <input type="submit" name="" class="button full" value="Save" data-toggle="tab" href="#detail-text-list">
+                        </form>
+                      </div><!-- /.milestone-status-detail-form -->
+                    </div><!-- /.tab-pane -->
+                    <div id="detail-text-list" class="tab-pane fade">
+                      <div class="milestone-status-detail-text">
+                        <ul class="text-list">
+                          <li>
+                            <i class="icon-calendar"></i>
+                            <strong>
+                              Date Completed
+                            </strong>
+                            <div>
+                              June 29, 2017
+                            </div>
+                          </li>
+                          <li>
+                            <i class="icon-location"></i>
+                            <strong>
+                              Location
+                            </strong>
+                            <div>
+                              Kearny Pearson Kia
+                            </div>
+                          </li>
+                          <li>
+                            <i class="icon-mileage"></i>
+                            <strong>
+                              Mileage
+                            </strong>
+                            <div>
+                              7,289
+                            </div>
+                          </li>
+                          <li>
+                            <i class="icon-notes"></i>
+                            <strong>
+                              Notes
+                            </strong>
+                            <div>
+                              Front brakes needed changing along with the left-front headlight bulb.
+                            </div>
+                          </li>
+                        </ul><!-- /.text-list -->
+                        <span class="edit-info" data-toggle="tab" href="#detail-form">
+                          Edit Info
+                        </span>
+                      </div><!-- /.milestone-status-detail-text -->
+                    </div><!-- /.tab-pane -->
+                  </div><!-- /.tab-content -->
+                </div><!-- /.milestone-status-detail -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.maintenance-main-milestone-details -->
+        </div><!-- /.maintenance-main -->
+        <div class="maintenance-cards">
+          <div class="row">
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card"  data-toggle="modal" data-target="#diagnostic-issues">
+                <i class="icon-warning"></i>
+                <strong>
+                  2
+                </strong>
+                <em>
+                  Diagnostic
+                  <span>
+                    Issues Found
+                  </span>
+                </em>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card" data-toggle="modal" data-target="#active-recalls">
+                <i class="icon-recalls"></i>
+                <strong>
+                  3
+                </strong>
+                <em>
+                  Active
+                  <span>
+                    Recalls
+                  </span>
+                </em>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card" data-toggle="modal" data-target="#service-minder">
+                <i class="icon-next-service"></i>
+                <strong>
+                  1,415 <span>mi.</span>
+                </strong>
+                <em>
+                  Until Next Service
+                </em>
+                <a href="#">
+                  Reset
+                </a>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+            <div class="col-sm-3 col-xs-6">
+              <div class="maintenance-block card" data-toggle="modal" data-target="#upcoming-appointments">
+                <i class="icon-upcoming-appointments"></i>
+                <strong>
+                  2
+                </strong>
+                <em>
+                  Upcoming Apppointments
+                </em>
+                <i class="icon-arrow-right"></i>
+              </div><!-- /.maintenance-card -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.maintenance-cards -->
       </div><!-- /.contain -->
+      <div class="maintenance-dealer-appointment">
+        <div class="maintenance-dealer-appointment-inner">
+          <span class="button full large" data-toggle="modal" data-target="#request-appointment">
+            Request Dealer Appointment
+          </span>
+          <a href="#">
+            <i class="icon-coupon">
+              <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs></defs>
+                  <g id="Maintenance-Complete-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-474.000000, -1159.000000)">
+                      <g id="Primary-CTA" transform="translate(112.000000, 1028.000000)" fill="#C4172C" fill-rule="nonzero">
+                          <g id="View-Available-Coupons" transform="translate(362.000000, 127.000000)">
+                              <path d="M5.99999986,15.0591487 C5.99999986,14.3704878 5.99999986,13.2523068 5.99999986,12.5638481 L5.99999986,9.43558772 C5.99999986,8.74613211 6.44669852,7.85219391 6.99594195,7.44026133 L12.5040577,3.30917447 C13.0541014,2.89664174 13.9466985,2.89724189 14.495942,3.30917447 L20.0040577,7.44026133 C20.5541014,7.85279406 20.9999999,8.74712903 20.9999999,9.43558772 L20.9999999,12.5638481 C20.9999999,13.2533037 20.9999999,14.3701072 20.9999999,15.0591487 L20.9999999,23.8152871 C20.9999999,24.5039479 20.4302986,25.0622179 19.7469082,25.0622179 L7.25309147,25.0622179 C6.56102808,25.0622179 5.99999986,24.5043287 5.99999986,23.8152871 L5.99999986,15.0591487 Z M13.4999999,8.81221789 C14.0177669,8.81221789 14.4374999,8.39248486 14.4374999,7.87471789 C14.4374999,7.35695094 14.0177669,6.93721789 13.4999999,6.93721789 C12.9822329,6.93721789 12.5624999,7.35695094 12.5624999,7.87471789 C12.5624999,8.39248486 12.9822329,8.81221789 13.4999999,8.81221789 Z" id="Shape" transform="translate(13.500000, 14.031109) rotate(45.000000) translate(-13.500000, -14.031109) "></path>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </i>
+            View Available Coupons
+          </a>
+        </div><!-- /.maintenance-dealer-appointment-inner -->
+      </div><!-- /.maintenance-dealer-appointment -->
+      <div class="overview-references">
+        <div class="contain">
+          <div class="reference-card indicator-lights">
+            <strong>
+              Indicator Lights
+            </strong>
+            <span class="button outline white transparent less-padding" data-toggle="modal" data-target="#indicator-lights">
+              See what they mean
+            </span>
+          </div><!-- /.reference-card -->
+          <div class="reference-card tires">
+            <strong>
+              Tires
+            </strong>
+            <a href="#" class="button outline white transparent less-padding">
+              Start Shopping
+            </a>
+          </div><!-- /.reference-card -->
+        </div><!-- /.contain -->
+      </div><!-- /.overview-references -->
+      <div class="maitenance-footer-content">
+        <div class="contain">
+          <h3>
+            Why Choose Kia service?
+          </h3>
+          <div class="row">
+            <div class="col-sm-6">
+              <iframe width="560" height="200" src="https://www.youtube.com/embed/a9vFvnnozJE?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <h4>
+                KIA SERVICE IS CENTERED AROUND YOU
+              </h4>
+              <p>
+                At Kia, our design-led transformation has made headlines. But we’ve paired that focus on design with a renewed emphasis on delivering outstanding customer service
+              </p>
+              <p>
+                We crafted a new philosophy on customer service and we believe once you know the details, you’ll want to have all your vehicle repairs and maintenance completed at an authorized Kia dealership. Watch the video and learn more about what does into “Service Centered Around You”.
+              </p>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.contain -->
+      </div><!-- /.maintenance-footer-content -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
-</div><!-- /.view-notifications -->
+</div><!-- /.view-maintenance -->
+<div class="modal fade service-minder" id="service-minder" tabindex="-1" role="dialog" aria-labelledby="service-minder" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="service-minder">
+          <strong class="modal-title">Service Minder</strong>
+          <p>Remind me to service my vehicle every</p>
+          <select class="selectpicker">
+            <option value="7000" selected>7000 miles</option>
+            <option value="9000">9000 miles</option>
+            <option value="10000">10000 miles</option>
+            <option value="50000">50000 miles</option>
+          </select>
+          <span class="button full"  data-dismiss="modal">Save</span>
+        </div><!-- /.service-minder -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
+<div class="modal fade indicator-lights" id="indicator-lights" tabindex="-1" role="dialog" aria-labelledby="indicator-lights" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="indicator-lights">
+          <strong class="modal-title">MALFUNCTION INDICATOR LIGHT GUIDE</strong>
+          <ul>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+            <li>
+              <span></span>
+              <div class="light-info">
+                <strong>
+                  MIL Name
+                </strong>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget..
+                </p>
+              </div><!-- /.light-ifno -->
+            </li>
+          </ul>
+        </div><!-- /.service-minder -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
+<div class="modal fade upcoming-appointments" id="upcoming-appointments" tabindex="-1" role="dialog" aria-labelledby="service-minder" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="upcoming-appointments">
+          <strong class="modal-title">Upcoming Apppointments</strong>
+          <ul>
+            <li>
+              <span class="date">
+                <em>
+                  SEP
+                </em>
+                <strong>
+                  04
+                </strong>
+              </span><!-- /.date -->
+              <div class="details">
+                <strong>
+                  Buerge Kia
+                </strong>
+                <span>
+                  Vehicle Repair
+                </span>
+                <em>
+                  1:52PM
+                </em>
+              </div><!-- /.details -->
+              <div class="actions">
+                <i class="icon-calendar">
+                  <svg width="17px" height="19px" viewBox="0 0 17 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Upcoming-Appointment-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-599.000000, -471.000000)">
+                          <g id="Modal-Copy" transform="translate(304.000000, 375.000000)" fill="">
+                              <g id="Diagnostic-Issue-Copy" transform="translate(35.000000, 82.000000)">
+                                  <path d="M274,16.5740741 L274.999894,16.5740741 C276.104522,16.5740741 277,17.4743789 277,18.5714878 L277,30.4748085 C277,31.5779496 276.109942,32.4722222 274.999894,32.4722222 L262.000106,32.4722222 C260.895478,32.4722222 260,31.5719174 260,30.4748085 L260,18.5714878 C260,17.4683467 260.890058,16.5740741 262.000106,16.5740741 L263,16.5740741 L263,16.9951185 C263,18.1061002 263.895431,19 265,19 C266.11227,19 267,18.102384 267,16.9951185 L267,16.5740741 L270,16.5740741 L270,17.0020869 C270,18.1017394 270.895431,19 272,19 C273.11227,19 274,18.1055038 274,17.0020869 L274,16.5740741 Z M262,22.9989566 L262,24.0010434 C262,24.5573397 262.447248,25 262.998957,25 L264.001043,25 C264.55734,25 265,24.5527519 265,24.0010434 L265,22.9989566 C265,22.4426603 264.552752,22 264.001043,22 L262.998957,22 C262.44266,22 262,22.4472481 262,22.9989566 Z M267,22.9989566 L267,24.0010434 C267,24.5573397 267.447248,25 267.998957,25 L269.001043,25 C269.55734,25 270,24.5527519 270,24.0010434 L270,22.9989566 C270,22.4426603 269.552752,22 269.001043,22 L267.998957,22 C267.44266,22 267,22.4472481 267,22.9989566 Z M272,22.9989566 L272,24.0010434 C272,24.5573397 272.447248,25 272.998957,25 L274.001043,25 C274.55734,25 275,24.5527519 275,24.0010434 L275,22.9989566 C275,22.4426603 274.552752,22 274.001043,22 L272.998957,22 C272.44266,22 272,22.4472481 272,22.9989566 Z M262,27.9989566 L262,29.0010434 C262,29.5573397 262.447248,30 262.998957,30 L264.001043,30 C264.55734,30 265,29.5527519 265,29.0010434 L265,27.9989566 C265,27.4426603 264.552752,27 264.001043,27 L262.998957,27 C262.44266,27 262,27.4472481 262,27.9989566 Z M267,27.9989566 L267,29.0010434 C267,29.5573397 267.447248,30 267.998957,30 L269.001043,30 C269.55734,30 270,29.5527519 270,29.0010434 L270,27.9989566 C270,27.4426603 269.552752,27 269.001043,27 L267.998957,27 C267.44266,27 267,27.4472481 267,27.9989566 Z M272,27.9989566 L272,29.0010434 C272,29.5573397 272.447248,30 272.998957,30 L274.001043,30 C274.55734,30 275,29.5527519 275,29.0010434 L275,27.9989566 C275,27.4426603 274.552752,27 274.001043,27 L272.998957,27 C272.44266,27 272,27.4472481 272,27.9989566 Z M264,15.0093689 C264,14.4519098 264.443865,14 265,14 C265.552285,14 266,14.4433532 266,15.0093689 L266,16.9906311 C266,17.5480902 265.556135,18 265,18 C264.447715,18 264,17.5566468 264,16.9906311 L264,15.0093689 Z M271,15.0093689 C271,14.4519098 271.443865,14 272,14 C272.552285,14 273,14.4433532 273,15.0093689 L273,16.9906311 C273,17.5480902 272.556135,18 272,18 C271.447715,18 271,17.5566468 271,16.9906311 L271,15.0093689 Z" id="Combined-Shape"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+                <i class="icon-location">
+                  <svg width="14px" height="21px" viewBox="0 0 14 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Upcoming-Appointment-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-643.000000, -470.000000)">
+                          <g id="Modal-Copy" transform="translate(304.000000, 375.000000)" fill="">
+                              <g id="Diagnostic-Issue-Copy" transform="translate(35.000000, 82.000000)">
+                                  <path d="M311,33.3636364 C309.819877,33.3636364 308.729974,31.4755944 307.377695,29.0405688 C305.776918,26.1580755 304,22.5090967 304,20.3181818 C304,16.2764616 307.134007,13 311,13 C314.865993,13 318,16.2764616 318,20.3181818 C318,22.5086706 316.064497,26.1566559 314.464148,29.0388866 C313.111656,31.4747248 312.180395,33.3636364 311,33.3636364 Z M311,22.5454545 C312.405816,22.5454545 313.545455,21.4058157 313.545455,20 C313.545455,18.5941843 312.405816,17.4545455 311,17.4545455 C309.594184,17.4545455 308.454545,18.5941843 308.454545,20 C308.454545,21.4058157 309.594184,22.5454545 311,22.5454545 Z" id="Combined-Shape"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+              </div>
+            </li>
+            <li>
+              <span class="date">
+                <em>
+                  SEP
+                </em>
+                <strong>
+                  04
+                </strong>
+              </span><!-- /.date -->
+              <div class="details">
+                <strong>
+                  Buerge Kia
+                </strong>
+                <span>
+                  Vehicle Repair
+                </span>
+                <em>
+                  1:52PM
+                </em>
+              </div><!-- /.details -->
+              <div class="actions">
+                <i class="icon-calendar">
+                  <svg width="17px" height="19px" viewBox="0 0 17 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Upcoming-Appointment-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-599.000000, -471.000000)">
+                          <g id="Modal-Copy" transform="translate(304.000000, 375.000000)" fill="">
+                              <g id="Diagnostic-Issue-Copy" transform="translate(35.000000, 82.000000)">
+                                  <path d="M274,16.5740741 L274.999894,16.5740741 C276.104522,16.5740741 277,17.4743789 277,18.5714878 L277,30.4748085 C277,31.5779496 276.109942,32.4722222 274.999894,32.4722222 L262.000106,32.4722222 C260.895478,32.4722222 260,31.5719174 260,30.4748085 L260,18.5714878 C260,17.4683467 260.890058,16.5740741 262.000106,16.5740741 L263,16.5740741 L263,16.9951185 C263,18.1061002 263.895431,19 265,19 C266.11227,19 267,18.102384 267,16.9951185 L267,16.5740741 L270,16.5740741 L270,17.0020869 C270,18.1017394 270.895431,19 272,19 C273.11227,19 274,18.1055038 274,17.0020869 L274,16.5740741 Z M262,22.9989566 L262,24.0010434 C262,24.5573397 262.447248,25 262.998957,25 L264.001043,25 C264.55734,25 265,24.5527519 265,24.0010434 L265,22.9989566 C265,22.4426603 264.552752,22 264.001043,22 L262.998957,22 C262.44266,22 262,22.4472481 262,22.9989566 Z M267,22.9989566 L267,24.0010434 C267,24.5573397 267.447248,25 267.998957,25 L269.001043,25 C269.55734,25 270,24.5527519 270,24.0010434 L270,22.9989566 C270,22.4426603 269.552752,22 269.001043,22 L267.998957,22 C267.44266,22 267,22.4472481 267,22.9989566 Z M272,22.9989566 L272,24.0010434 C272,24.5573397 272.447248,25 272.998957,25 L274.001043,25 C274.55734,25 275,24.5527519 275,24.0010434 L275,22.9989566 C275,22.4426603 274.552752,22 274.001043,22 L272.998957,22 C272.44266,22 272,22.4472481 272,22.9989566 Z M262,27.9989566 L262,29.0010434 C262,29.5573397 262.447248,30 262.998957,30 L264.001043,30 C264.55734,30 265,29.5527519 265,29.0010434 L265,27.9989566 C265,27.4426603 264.552752,27 264.001043,27 L262.998957,27 C262.44266,27 262,27.4472481 262,27.9989566 Z M267,27.9989566 L267,29.0010434 C267,29.5573397 267.447248,30 267.998957,30 L269.001043,30 C269.55734,30 270,29.5527519 270,29.0010434 L270,27.9989566 C270,27.4426603 269.552752,27 269.001043,27 L267.998957,27 C267.44266,27 267,27.4472481 267,27.9989566 Z M272,27.9989566 L272,29.0010434 C272,29.5573397 272.447248,30 272.998957,30 L274.001043,30 C274.55734,30 275,29.5527519 275,29.0010434 L275,27.9989566 C275,27.4426603 274.552752,27 274.001043,27 L272.998957,27 C272.44266,27 272,27.4472481 272,27.9989566 Z M264,15.0093689 C264,14.4519098 264.443865,14 265,14 C265.552285,14 266,14.4433532 266,15.0093689 L266,16.9906311 C266,17.5480902 265.556135,18 265,18 C264.447715,18 264,17.5566468 264,16.9906311 L264,15.0093689 Z M271,15.0093689 C271,14.4519098 271.443865,14 272,14 C272.552285,14 273,14.4433532 273,15.0093689 L273,16.9906311 C273,17.5480902 272.556135,18 272,18 C271.447715,18 271,17.5566468 271,16.9906311 L271,15.0093689 Z" id="Combined-Shape"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+                <i class="icon-location">
+                  <svg width="14px" height="21px" viewBox="0 0 14 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Upcoming-Appointment-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-643.000000, -470.000000)">
+                          <g id="Modal-Copy" transform="translate(304.000000, 375.000000)" fill="">
+                              <g id="Diagnostic-Issue-Copy" transform="translate(35.000000, 82.000000)">
+                                  <path d="M311,33.3636364 C309.819877,33.3636364 308.729974,31.4755944 307.377695,29.0405688 C305.776918,26.1580755 304,22.5090967 304,20.3181818 C304,16.2764616 307.134007,13 311,13 C314.865993,13 318,16.2764616 318,20.3181818 C318,22.5086706 316.064497,26.1566559 314.464148,29.0388866 C313.111656,31.4747248 312.180395,33.3636364 311,33.3636364 Z M311,22.5454545 C312.405816,22.5454545 313.545455,21.4058157 313.545455,20 C313.545455,18.5941843 312.405816,17.4545455 311,17.4545455 C309.594184,17.4545455 308.454545,18.5941843 308.454545,20 C308.454545,21.4058157 309.594184,22.5454545 311,22.5454545 Z" id="Combined-Shape"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.upcoming-appointments -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#upcoming-appointments -->
+<div class="modal fade preferred-dealer has-fixed-footer" id="preferred-dealer" tabindex="-1" role="dialog" aria-labelledby="preferred-dealer" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-preferred-dealer">
+          <strong class="modal-title">Choose a dealer</strong>
+          <div class="map-wrap">
+            <div class="map">
+
+            </div><!-- /.map -->
+            <div class="map-search">
+              <input type="text" name="" value="" placeholder="Search by city, address or zipcode" />
+            </div><!-- /.ma-search -->
+          </div><!-- /.map-wrap -->
+          <div class="category-selector special-dropdown">
+            <em>Dealer Certification</em>
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="active-filter">Any</span>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li data-mix-filter=".all">
+                  Any
+                </li>
+                <li data-mix-filter=".option-1">
+                  Option 1
+                </li>
+                <li data-mix-filter=".option-2">
+                  Option 2
+                </li>
+                <li data-mix-filter=".option-3">
+                  Option 3
+                </li>
+              </ul>
+            </div><!-- /.dropdown -->
+          </div><!-- /.category-selector -->
+          <ul class="radio-choices">
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="" checked>
+                <em>
+                  <span class="address">
+                    <strong>1. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>2. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>3. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>4. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+            <li>
+              <label class="radio">
+                <input type="radio"  name="preferred-dealer" value="">
+                <em>
+                  <span class="address">
+                    <strong>5. Dealer Name</strong>
+                    <em>555 Street Name</em>
+                    <em>City Name, AB 99999</em>
+                    <em>(555) 555-5555</em>
+                  </span>
+                  <span class="distance">
+                    1.5mi
+                  </span>
+                </em>
+              </label>
+            </li>
+          </ul><!-- /.radio-choices -->
+          <div class="modal-footer">
+          <span class="button preferred-dealer-submit" data-dismiss="modal">
+            Use this dealer
+          </span>
+        </div>
+      </div>
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#service-minder -->
+<div class="modal fade active-recalls" id="active-recalls" tabindex="-1" role="dialog" aria-labelledby="active-recalls" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-active-recalls">
+          <strong class="modal-title">Recalls</strong>
+          <ul class="issues-list">
+            <li>
+              <em>
+                SC123
+              </em>
+              <strong>
+                Transmission Gear Shift Lever
+              </strong>
+            </li>
+            <li>
+              <em>
+                SC123
+              </em>
+              <strong>
+                Transmission Gear Shift Lever
+              </strong>
+            </li>
+            <li>
+              <em>
+                SC123
+              </em>
+              <strong>
+                Transmission Gear Shift Lever
+              </strong>
+            </li>
+          </ul>
+          <span class="button full switch-modals" data-next-modal="#request-appointment">Request an Appointment</span>
+        </div><!-- /.active-recalls -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
+<div class="modal fade request-appointment has-fixed-footer" id="request-appointment" tabindex="-1" role="dialog" aria-labelledby="active-recalls" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <span class="back" data-target="#request-appointment-slider" data-slide-to="0"></span>
+        <div id="request-appointment-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-request-appointment">
+                <strong class="modal-title">Make an Appointment</strong>
+                <div class="selected-dealer">
+                  <em>
+                    Your appointment will be with:
+                  </em>
+                  <strong>
+                    Kearny Pearson Kia
+                  </strong>
+                  <span>
+                    7303 Clairemont Mesa Blvd
+                  </span>
+                  <span>
+                    San Diego, CA 92111
+                  </span>
+                  <span>
+                    1 (858) 560-5544
+                  </span>
+                  <a data-target="#request-appointment-slider" data-slide-to="1">
+                    select nearby dealer
+                  </a>
+                </div><!-- /.selected-dealer -->
+                <ul class="appointment-type">
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="appointment-type" value="" checked="">
+                      <em>
+                        <strong>
+                          Vehicle Repair
+                        </strong>
+                        <span>
+                          2 Diagnostic Issues
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="appointment-type" value="">
+                      <em>
+                        <strong>
+                          Maintenance
+                        </strong>
+                        <span>
+                          Next scheduled maintenance: 2641 mi.
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio" name="appointment-type" value="">
+                      <em>
+                        <strong>
+                          Other
+                        </strong>
+                        <span>
+                          Dealership will contact you for more details.
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                </ul><!-- /.appointment-type -->
+                <span class="button full switch-modals" data-next-modal="#appointment-requested">Request Appointment</span>
+              </div><!-- /.modal-request-appointment -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-preferred-dealer">
+                <strong class="modal-title">Select Nearby Dealer</strong>
+                <div class="category-selector special-dropdown">
+                  <em>Dealer Certification</em>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                      <span class="active-filter">Any</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li data-mix-filter=".all">
+                        Any
+                      </li>
+                      <li data-mix-filter=".option-1">
+                        Option 1
+                      </li>
+                      <li data-mix-filter=".option-2">
+                        Option 2
+                      </li>
+                      <li data-mix-filter=".option-3">
+                        Option 3
+                      </li>
+                    </ul>
+                  </div><!-- /.dropdown -->
+                </div><!-- /.category-selector -->
+                <ul class="radio-choices">
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="" checked>
+                      <em>
+                        <span class="address">
+                          <strong>1. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>2. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>3. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>4. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio">
+                      <input type="radio"  name="preferred-dealer" value="">
+                      <em>
+                        <span class="address">
+                          <strong>5. Dealer Name</strong>
+                          <em>555 Street Name</em>
+                          <em>City Name, AB 99999</em>
+                          <em>(555) 555-5555</em>
+                        </span>
+                        <span class="distance">
+                          1.5mi
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                </ul><!-- /.radio-choices -->
+                <div class="modal-footer">
+                <span class="button preferred-dealer-submit" data-target="#request-appointment-slider" data-slide-to="0">
+                  Use this dealer
+                </span>
+              </div>
+            </div>
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
+<div class="modal fade appointment-requested" id="appointment-requested" tabindex="-1" role="dialog" aria-labelledby="appointment-requested" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-appointment-requested">
+          <strong class="modal-title">Appointment Requested</strong>
+          <p>
+            Your appointment has been requested at Kearny Pearson Kia. The dealer will contact you within 1 business day to schedule date and time.
+          </p>
+          <span class="button full switch-modals" data-dismiss="modal">Close</span>
+        </div><!-- /.active-recalls -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
+<div class="modal fade diagnostic-issues" id="diagnostic-issues" tabindex="-1" role="dialog" aria-labelledby="diagnostic-issues" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-diagnostic-issues">
+          <strong class="modal-title">Vehicle Health Report</strong>
+          <em>
+            Septemper 12, 2017
+          </em>
+          <img src="/images/img_diagnostic_issue.jpg" alt="Diagnostic Issue">
+          <div class="row">
+            <div class="col-xs-12 hidden-md hidden-lg hidden-sm">
+              <div class="diagnostic-category-selector">
+                <strong>Category</strong>
+                <select class="selectpicker">
+                  <option value="safety" selected>(3) Safety</option>
+                  <option value="powertrain">(0) Powertrain</option>
+                  <option value="chassis">(0) Chassis</option>
+                  <option value="electrical">(0) Electrical</option>
+                </select>
+              </div><!-- /.category-selector -->
+            </div><!-- /.col -->
+            <div class="col-sm-4 hidden-xs">
+              <ul class="category-filter-list">
+                <li class="active">
+                  <span>
+                    3
+                  </span>
+                  Safety
+                </li>
+                <li>
+                  <span>
+                    0
+                  </span>
+                  Powertrain
+                </li>
+                <li>
+                  <span>
+                    0
+                  </span>
+                  Chassis
+                </li>
+                <li>
+                  <span>
+                    0
+                  </span>
+                  Electircal
+                </li>
+              </ul>
+            </div><!-- /.col -->
+            <div class="col-sm-8">
+              <ul class="issues-list">
+                <li>
+                  <em>
+                    C112400
+                  </em>
+                  <strong>
+                    WU Sensor Battery Low RR
+                  </strong>
+                  <p>
+                    Possible condition(s) with your Tire Pressure Monitoring System has been detected. KIA recommends a full system check when convenient.
+                  </p>
+                </li>
+                <li>
+                  <em>
+                    C112400
+                  </em>
+                  <strong>
+                    Rear Right Sensor Faul
+                  </strong>
+                  <p>
+                    A routine system check complete
+                  </p>
+                </li>
+              </ul>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+          <span class="button full switch-modals" data-next-modal="#request-appointment">Request Appointment</span>
+        </div><!-- /.active-recalls -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#active-recalls -->
+<script type="text/javascript">
+$(window).on('load',function(){
+  $('.radio-toggle span').bind('click', function(){
+    var $this = $(this);
+    $this.parents('label').find('input').trigger('click');
+  });
+});
+</script>
 <!-- @import "partials/footer.kit" -->

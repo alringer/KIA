@@ -27,7 +27,6 @@ $(document).ready(() => {
         }
       },
       _close_popup_open_modal : () => {
-        console.log('run');
         $('#how-to-activate-uvo').modal('hide');
         setTimeout(() => {
           $('#activate-uvo').modal('show');

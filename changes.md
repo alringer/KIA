@@ -11,6 +11,25 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 4.0.0
+KIA JIRA Issues:
+* KOPE-157 [Climate Page] Pressing Plus Button Performs No Action at 64 Degrees
+* KOPE-160 [Remote > Climate] Heated Accessory Icons Need Additional Top Padding
+* KOPE-161 [Remote > Climate] Too Much Margin Below Upcoming Schedule Tile
+* KOPE-162 [Remote > Climate > Heated and Cooled Seats] Control for Backseats is Cut Off
+* KOPE-163 [Remote > Climate > Heated and Cooled Seats] Control for Backseats is Cut Off
+Seamgen User stories:
+* KK-310 As a user I need to see my notifications
+* KK-301 As a user I need to be able to mark a maintenance milestone as complete/incomplete
+* KK-300 As a user I need to see maintenance milestones
+* KK-344 As a user I need to see my preferred dealer
+* KK-305 As a user I need to see upcoming appointments
+* KK-303 As a user I need to see Active Recalls
+* KK-302 As a user I need to see Diagnostic Issues
+* KK-304 As a user I need to see Diagnostic Issues
+* KK-307 As a user I need to request an appointment
+* KK-306 As a user I need to see the indicator light modal
+* KK-308 As a user i need to see maintenance history
 # V - 3.5.1
 * KOPE-141 Modal Popup Scroll issue
 * KOPE-153 Dynamic Cards - Missing drop down triangle

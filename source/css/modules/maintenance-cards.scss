@@ -210,40 +210,9 @@
   height: 29px;
   background: url('/images/icon_next_service.svg') center/contain no-repeat;
 }
-
-.progress-bar {
-  height: 7px;
-  border-radius: 7px;
-  background: #c4c8cd;
-  width: 100%;
-  position: relative;
-  .bar {
-    height: inherit;
-    border-radius: inherit;
-    min-width: 5%;
-    max-width: 100%;
-    background: $green;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: all 250ms $easeOutQuint;
-  }
-  em {
-    position: absolute;
-    top: 100%;
-    display: block;
-    left: 0;
-    text-align: left;
-    color: $grey;
-    font-size: 12px;
-    letter-spacing: .3px;
-    font-style: normal;
-    line-height: 1em;
-    transform: translateY(7px);
-    &:last-child {
-      left: auto;
-      right: 0;
-      text-align: right;
-    }
-  }
+.icon-upcoming-appointments {
+  display: block;
+  width: 40px;
+  height: 51px;
+  background: url('/images/icon_upcoming_appointments.svg') center/contain no-repeat;
 }

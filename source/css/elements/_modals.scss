@@ -1423,34 +1423,6 @@ body.modal-open {
         font: 500 24px/45px $kia;
         letter-spacing: .5px;
       }
-      .print {
-        float: right;
-        color: #bb1a30;
-        font: bold 11px/45px $kia;
-        text-transform: uppercase;
-        letter-spacing: .7px;
-        transition: all 250ms $easeOutQuint;
-        cursor: pointer;
-        i {
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          svg {
-            * {
-              fill: #bb1a30 !important;
-              transition: all 250ms $easeOutQuint;
-            }
-          }
-        }
-        &:hover {
-          color: darken(#bb1a30, 10%);
-          svg {
-            * {
-              fill: darken(#bb1a30, 10%) !important;
-            }
-          }
-        }
-      }
     }
     &-meta {
       &-item {
@@ -1503,7 +1475,20 @@ body.modal-open {
     }
   }
 }
-
+.modal.preferred-dealer {
+  .modal-dialog {
+    max-width: 455px;
+    .modal-preferred-dealer {
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+      padding-top: 16px;
+      .modal-footer {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
 .modal-preferred-dealer {
   position: relative;
   width: calc(100% + 30px);
@@ -1702,13 +1687,24 @@ body.modal-open {
   text-align: center;
   .modal-dialog {
     max-width: 425px;
+    @media (max-width: $screen-xs-max) {
+      .modal-content {
+        padding-bottom: 0;
+      }
+    }
   }
   .modal-heated-seats {
     height: 728px;
     overflow: hidden;
+    @media (max-width: $screen-xs-max) {
+      height: 650px;
+    }
     &.seat-open {
       .heated-seats-vehicle {
         em {
+          opacity: 0;
+        }
+        > span {
           opacity: 0;
         }
       }
@@ -1723,6 +1719,37 @@ body.modal-open {
         }
         .heated-seats-vehicle {
           transform: translateY(-225px);
+          @media (max-width: $screen-xs-max) {
+            transform: translateY(-325px);
+          }
+        }
+      }
+    }
+    &.seat-1 {
+      .heated-seats-vehicle {
+        > span.heated-seat-1 {
+          opacity: 1;
+        }
+      }
+    }
+    &.seat-2 {
+      .heated-seats-vehicle {
+        > span.heated-seat-2 {
+          opacity: 1;
+        }
+      }
+    }
+    &.seat-3 {
+      .heated-seats-vehicle {
+        > span.heated-seat-3 {
+          opacity: 1;
+        }
+      }
+    }
+    &.seat-4 {
+      .heated-seats-vehicle {
+        > span.heated-seat-4 {
+          opacity: 1;
         }
       }
     }
@@ -1751,6 +1778,9 @@ body.modal-open {
       &.bottom {
         top: auto;
         bottom: 30px;
+        @media (max-width: $screen-xs-max) {
+          // transform: translate(-50%, -50%);
+        }
       }
       &-controls {
         bottom: -25px;
@@ -1875,60 +1905,405 @@ body.modal-open {
   }
 }
 
-.category-selector {
-  padding-left: 25px;
-  margin-bottom: 25px;
-  em {
-    font: bold 10px/1em $kia;
-    letter-spacing: 1px;
-    color: #969696;
-    text-transform: uppercase;
-  }
-  .dropdown {
-    display: inline-block;
-    button {
-      background: none;
-      border: none;
-      height: auto;
-      display: inline-block;
-      padding: 0;
-      font: bold 10px/1em $kia;
-      letter-spacing: 1px;
-      color: $grey_2;
-      text-transform: uppercase;
-      margin-left: 10px;
-    }
-    &-menu {
-      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
-      border: none;
-      min-width: 114px;
-      left: auto;
-      right: -25px;
-      overflow: visible;
-      margin-top: 5px;
-      border-radius: 2px;
-      &:before {
-        position: absolute;
-        right: 24.5px;
-        bottom: 100%;
-        content: '';
-        display: block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 5px 5px 5px;
-        border-color: transparent transparent $white transparent;
+.modal.service-minder {
+  .modal-dialog {
+    width: 327px;
+    .modal-content {
+      padding-top: 17px;
+      .service-minder {
+        max-width: 246px;
+        margin: 0 auto;
+        padding-bottom: 40px;
       }
-      li {
-        padding: 0 20px;
-        height: 45px;
-        line-height: 45px;
-        cursor: pointer;
-        transition: all 250ms $easeOutQuint;
-        &:hover {
-          background: rgba($grey_2, .1);
+      p {
+        text-align: center;
+        font: 14px/1.5em $sans;
+      }
+      .bootstrap-select {
+        outline: none !important;
+        margin-bottom: 20px;
+        button {
+          height: 40px;
+          line-height: 40px;
+          outline: none;
+        }
+        .dropdown-menu {
+          margin-top: -1px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-top: none;
         }
       }
+    }
+  }
+}
+
+.modal.indicator-lights {
+  .modal-dialog {
+    width: 558px;
+    .modal-content {
+      padding-top: 17px;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      @media (min-width: $screen-xs-max) {
+        max-height: 534px;
+      }
+      .indicator-lights {
+        padding: 0 40px;
+        .modal-title {
+          margin-bottom: 54px;
+          @media (max-width: $screen-xs-max) {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-bottom: 36px;
+          position: relative;
+          padding-left: 88px;
+          font: 14px/1.5em $sans;
+          letter-spacing: .4px;
+          color: #2f2f2f;
+          span {
+            display: block;
+            width: 69px;
+            height: 69px;
+            background: #ededed;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          strong {
+            display: block;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal.upcoming-appointments {
+  .modal-dialog {
+    width: 416px;
+    .modal-content {
+      padding-top: 17px;
+      .upcoming-appointments {
+        padding: 0 39px 20px;
+        @media (max-width: $screen-xs-max) {
+          padding: 0 15px;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          @media (max-width: $screen-xs-max) {
+            padding-top: 40px;
+          }
+          li {
+            position: relative;
+            padding-left: 60px;
+            min-height: 70px;
+            margin-bottom: 15px;
+            border-bottom: solid 1px #d5d5d5;
+            &:last-child {
+              margin-bottom: 0;
+              border: none;
+            }
+            .date {
+              position: absolute;
+              top: 0;
+              left: 5px;
+              display: block;
+              width: 28px;
+              text-align: center;
+              em {
+                display: block;
+                font: bold 10px/1em $kia;
+                letter-spacing: 1px;
+                color: #969696;
+                margin-bottom: 1px;
+              }
+              strong {
+                display: block;
+                font: bold 19px/1.11em $kia;
+                letter-spacing: .8px;
+                color: #2f2f2f;
+              }
+            }
+            .details {
+              float: left;
+              strong {
+                display: block;
+                font: bold 14px/1em $sans;
+                margin-bottom: 5px;
+              }
+              span {
+                display: block;
+                font: 14px/1em $sans;
+                margin-bottom: 8px;
+              }
+              em {
+                display: block;
+                font: bold 10px $kia;
+                letter-spacing: 1px;
+                color: #969696;
+              }
+            }
+            .actions {
+              float: right;
+              padding-right: 25px;
+              padding-top: 14px;
+              @media (max-width: $screen-xs-max) {
+                padding-right: 0;
+              }
+              i {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 13.5px;
+                cursor: pointer;
+                svg {
+                  * {
+                    fill: $red !important;
+                    transition: fill 250ms $easeOutQuint;
+                  }
+                }
+                &:hover {
+                  svg {
+                    * {
+                      fill: darken($red, 20%) !important;
+                    }
+                  }
+                }
+                &:first-child {
+                  margin-left: 0px;
+                }
+                &:last-child {
+                  margin-right: 0px;
+                }
+                &.icon-calendar {
+                  width: 17px;
+                  height: 18px;
+                  // background: url('/images/icon_calendar_red_medium.svg') center/contain no-repeat;
+                }
+                &.icon-location {
+                  width: 14px;
+                  height: 20px;
+                  // background: url('/images/icon_location_red.svg') center/contain no-repeat;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal.active-recalls {
+  .modal-dialog {
+    width: 420px;
+    .modal-active-recalls {
+      padding: 16px 40px 40px;
+      @media (max-width: $screen-xs-max) {
+        padding-left: 16px;
+        padding-right: 16px;
+        ul {
+          margin-bottom: 100px;
+        }
+      }
+    }
+  }
+}
+
+.modal.request-appointment {
+  .modal-dialog {
+    width: 450px;
+    .modal-request-appointment {
+      padding: 0 25px 20px;
+      .selected-dealer {
+        padding-bottom: 23px;
+        border-bottom: solid 1px #d5d5d5;
+        margin-bottom: 22px;
+        em {
+          padding-top: 20px;
+          display: block;
+          font: bold 10px/1em $kia;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #969696;
+          margin-bottom: 10px;
+        }
+        strong {
+          display: block;
+          font: bold 16px/1em $sans;
+          color: #2f2f2f;
+          letter-spacing: .4px;
+          margin-bottom: 7px;
+        }
+        span {
+          display: block;
+          font: 14px/1em $sans;
+          letter-spacing: .3px;
+          color: #2f2f2f;
+          margin-bottom: 7px;
+        }
+        a {
+          display: inline-block;
+          color: $red;
+          font: bold 11px/2em $kia;
+          letter-spacing: .7px;
+          text-transform: uppercase;
+          transition: all 250ms $easeOutQuint;
+          cursor: pointer;
+          &:hover {
+            color: darken($red, 20%);
+          }
+        }
+      }
+      .appointment-type {
+        margin: 0 0 50px 15px;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-bottom: 18px;;
+          label {
+            em {
+              display: block;
+              strong {
+                display: block;
+                font: bold 14px/1.5em $sans;
+                letter-spacing: .4px;
+                color: #2f2f2f;
+              }
+              span {
+                display: block;
+                font: 12px/1.75em $sans;
+                letter-spacing: .4px;
+                color: #919191;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 0;
+        .appointment-type {
+          margin: 0 0 50px;
+        }
+      }
+    }
+  }
+}
+
+.modal.appointment-requested {
+  .modal-dialog {
+    width: 389px;
+    .modal-appointment-requested {
+      padding: 20px 40px 40px;
+      p {
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.modal.diagnostic-issues {
+  .modal-dialog {
+    width: 570px;
+    .modal-diagnostic-issues {
+      padding: 16px 40px 40px;
+      .modal-title {
+        + em {
+          display: block;
+          text-align: center;
+          font: 12px/1.75em $sans;
+          letter-spacing: .5px;
+          margin-bottom: 26px;
+          margin-top: -5px;
+        }
+      }
+      > img {
+        display: block;
+        margin: 0 auto;
+      }
+      > .row {
+        margin-top: 44px;
+      }
+      .issues-list {
+        li {
+          margin-bottom: 28px;
+          strong,
+          em,
+          p {
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .button.full {
+        max-width: 340px;
+        display: block;
+        margin: 30px auto 0;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 26px 16px 0;
+        .diagnostic-category-selector {
+          margin-bottom: 17px;
+          strong {
+            display: block;
+            font: bold 10px/1em $kia;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            margin-bottom: 10px;
+          }
+        }
+        .issues-list {
+          li {
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.issues-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    margin-bottom: 12px;
+    padding-bottom: 18px;
+    border-bottom: solid 1px #d5d5d5;
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+    em {
+      display: block;
+      font: 14px $sans;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+    }
+    strong {
+      display: block;
+      font: bold 14px $sans;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+    }
+    p {
+      font: 14px/1.5em $sans;
+      letter-spacing: .6px;
     }
   }
 }

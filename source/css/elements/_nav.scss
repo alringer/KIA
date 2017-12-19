@@ -362,9 +362,11 @@ nav.nav-app {
                 background: $red;
                 content: "";
                 transform: translate(-50%, -50%);
+                display: none;
                 @media (max-width: $screen-xs-max) {
                   width: 4px;
                   height: 4px;
+                  display: block;
                 }
               }
             }

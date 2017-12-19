@@ -21,7 +21,8 @@ $(document).ready(() => {
               value_diff = value_max - value_min,
               min = 0,
               max = 265,
-              step = Math.floor(max / (value_diff));
+              step = max / (value_diff),
+              steps = Math.floor(max / step);
           window.dial.properties.dials.push({
             value_max,
             value_min,
@@ -29,6 +30,7 @@ $(document).ready(() => {
             min,
             max,
             step,
+            steps,
             element : $this,
             input : $this.find('.ui-dial-value'),
             tempText : $this.find('.ui-dial-temperateure-text'),
@@ -57,7 +59,12 @@ $(document).ready(() => {
         var percentage = degree / props.max,
             value_diff = props.value_max - props.value_min,
             value = Math.round(props.value_min + (value_diff * percentage));
+        var current_step = (value - props.value_min) / (props.value_max - props.value_min) * props.steps + 1;
+        percentage = (current_step - 1) / props.steps;
+
+        degree = Math.ceil(props.max * percentage) - 43;
         props.tempText.text(value);
+
         if((value - 1) / value_diff === .5) {
           props.element.addClass('nuetral');
           props.element.removeClass('hot');
@@ -68,7 +75,6 @@ $(document).ready(() => {
           props.element.removeClass('hot')
           props.element.removeClass('nuetral');
         }
-        degree -= 43;
         props.handle.css({
           transform : `rotate(${degree}deg) translate(-140px) rotate(${-degree}deg)`
         });

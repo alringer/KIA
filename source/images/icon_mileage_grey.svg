@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="9px" viewBox="0 0 22 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Maintenance-Complete-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-727.000000, -534.000000)">
+        <g id="Maintenance-Milestones" transform="translate(162.000000, 215.000000)">
+            <g id="Form-Fields" transform="translate(556.000000, 204.000000)">
+                <g id="Mileage" transform="translate(1.000000, 100.000000)">
+                    <g id="Icons" transform="translate(8.000000, 15.000000)">
+                        <rect id="Rectangle-3" fill="#8D9094" x="0" y="0" width="22" height="9" rx="2"></rect>
+                        <path d="M14,1 L20,1 C20.5522847,1 21,1.44771525 21,2 L21,7 C21,7.55228475 20.5522847,8 20,8 L14,8 L14,1 Z" id="Rectangle-3-Copy" fill="#FFFFFF"></path>
+                        <text id="00" font-family=".AppleSystemUIFont" font-size="7" font-weight="normal" letter-spacing="1.38" fill="#FFFFFF">
+                            <tspan x="2.17181641" y="7">0</tspan>
+                            <tspan x="8.19" y="7">0</tspan>
+                        </text>
+                        <text id="0" font-family=".AppleSystemUIFont" font-size="7" font-weight="normal" letter-spacing="1.38" fill="#8D9094">
+                            <tspan x="15.5" y="7">0</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

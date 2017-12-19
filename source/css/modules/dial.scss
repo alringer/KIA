@@ -144,12 +144,19 @@
       width: 40px;
       height: 40px;
       margin: 0 20px;
-      background: url('/images/icon-climate-plus.png') center no-repeat;
       cursor: pointer;
       user-select: none;
       pointer-events: all;
+      &:before {
+        content: "+";
+        font: 40px $kia;
+        color: $red;
+      }
       &.down {
-        background-image: url('/images/icon-climate-minus.png');
+        &:before {
+          content: "-";
+          color: #5bb1df;
+        }
       }
     }
   }

@@ -1445,7 +1445,8 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
   @media (max-width: 767px) {
     .remote-footer-cards {
       padding-top: 9px;
-      max-width: calc(100% - 20px); } }
+      max-width: calc(100% - 20px);
+      margin-bottom: -33px; } }
   .remote-footer-cards .remote-footer-card {
     height: 190px;
     box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
@@ -1687,7 +1688,12 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
 
 @media (max-width: 767px) {
   .remote-climate .remote-body .ui-dial {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px;
+    transform: scale(0.9); }
+    .remote-climate .remote-body .ui-dial-controls > span.down {
+      transform: translateX(-100px) scale(1.5); }
+    .remote-climate .remote-body .ui-dial-controls > span.up {
+      transform: translateX(100px) scale(1.5); } }
 
 .overview-remote-command.remote-command-security.state-2-communicating .action-buttons .state-2, .overview-remote-command.remote-command-security.state-1 .action-buttons .state-2 {
   background: #8ec439 !important; }
@@ -1736,6 +1742,18 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     white-space: nowrap; }
     .overview-remote-command.remote-command-security .action-buttons .action-button:not(.state-3) {
       width: 100px; } }
+
+.state-1 .accessory-group .icon-defrost {
+  background-image: url("/images/icon_defrost_green.svg"); }
+
+.state-1 .accessory-group .icon-defrost-rear {
+  background-image: url("/images/icon_defrost_rear_green.svg"); }
+
+.state-1 .accessory-group .icon-defrost-mirror {
+  background-image: url("/images/icon_defrost_mirror_green.svg"); }
+
+.state-1 .accessory-group .icon-defrost-steering {
+  background-image: url("/images/icon_defrost_steering_green.svg"); }
 
 .state-1-communicating .accessory-group .toggle,
 .state-2-communicating .accessory-group .toggle,
@@ -1963,6 +1981,8 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
         margin: 0 5px; }
         .accessory-group.accessory-group-heated-seats .accessory:first-child, .accessory-group.right .accessory:first-child {
           margin-left: -5px; }
+      .accessory-group.accessory-group-heated-seats:not(.accessory-group-heated-seats) .accessory, .accessory-group.right:not(.accessory-group-heated-seats) .accessory {
+        top: 4px; }
     .accessory-group .accessory {
       transform: none;
       margin: 0; }
