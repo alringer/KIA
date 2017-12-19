@@ -11,6 +11,9 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 4.0.1
+* As requested, the climate icons now change when turning climate on/off. We've also addressed additional Seamgen bug fixes
+===
 # V - 4.0.0
 KIA JIRA Issues:
 * KOPE-157 [Climate Page] Pressing Plus Button Performs No Action at 64 Degrees
