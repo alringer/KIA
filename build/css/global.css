@@ -2370,14 +2370,33 @@ form .form-fields {
   vertical-align: middle;
   display: inline-block;
   line-height: 1em;
+  user-select: none;
   cursor: pointer; }
+  .toggle.tiny input[type="checkbox"]:checked + span:before {
+    left: calc(32px - 16px - 2px); }
+  .toggle.tiny span {
+    height: 18px;
+    width: 32px; }
+    .toggle.tiny span:before {
+      width: 16px;
+      height: 16px;
+      border-radius: 16px; }
   .toggle input[type="checkbox"] {
     display: none; }
     .toggle input[type="checkbox"]:checked + span {
       background-color: #8ec439; }
       .toggle input[type="checkbox"]:checked + span:before {
         left: calc(51px - 28px - 2px); }
-  .toggle span {
+  .toggle em {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+    font-style: normal;
+    cursor: pointer; }
+    .toggle em + input + span {
+      display: inline-block;
+      vertical-align: middle; }
+  .toggle label > span {
     transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
     display: block;
     width: 51px;
@@ -2387,7 +2406,7 @@ form .form-fields {
     border-radius: 31px;
     position: relative;
     cursor: pointer; }
-    .toggle span:before {
+    .toggle label > span:before {
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
       width: 28px;
       height: 28px;

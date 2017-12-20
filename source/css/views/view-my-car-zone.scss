@@ -36,6 +36,189 @@
       }
     }
   }
+  .my-car-zone-wrapper {
+    padding: 0 50px;
+    margin: 0 auto;
+    @media (max-width: $screen-xs-max) {
+      padding: 0;
+    }
+  }
+  .my-car-zone-header {
+    padding: 40px 0 0;
+    margin-bottom: 47px;
+    h2 {
+      margin: 0 0 28px;
+      font: 32px $kia;
+      letter-spacing: 1.5px;
+    }
+    p {
+      clear: both;
+      max-width: 685px;
+      font: 14px $sans;
+      letter-spacing: .6px;
+      color: #000;
+      strong {
+        font-weight: bold;
+      }
+      a {
+        color: $red;
+        font: bold 11px $kia;
+        text-transform: uppercase;
+        letter-spacing: .7px;
+        margin: 0 2.5px;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      padding: 23px 20px 0;
+      h2,
+      .button {
+        display: none;
+      }
+    }
+  }
+}
+
+.my-car-zone-alert-area {
+  margin-bottom: 30px;;
+  &-header {
+    margin-bottom: 16px;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      clear: both;
+    }
+  }
+  h3 {
+    font: bold 12px/1em $kia;
+    letter-spacing: .3px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      position: relative;
+      top: -2px;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding-left: 16px;
+    }
+  }
+  .my-car-zone-alert-area-toggle {
+    position: relative;
+    top: -2px;
+    em {
+      font: 12px $sans;
+      color: #000;
+      letter-spacing: .3px;
+      @media (max-width: $screen-xs-max) {
+        span {
+          display: none;
+        }
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      padding-right: 16px;
+    }
+  }
+}
+
+.alert-card {
+  height: 174px;
+	border-radius: 3px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  position: relative;
+  overflow: hidden;
+  .alert-title {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    font: bold 10px/1em $kia;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #969696;
+  }
+  .icon-settings {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    svg {
+      * {
+        fill: #898989 !important;
+        transition: all 250ms $easeOutQuint;
+      }
+    }
+    &:hover {
+      svg {
+        * {
+          fill: darken(#898989, 20%) !important;
+        }
+      }
+    }
+  }
+  .alert-body {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 49px;
+    padding-left: 91px;
+    font: 12px/1.58em $sans;
+    letter-spacing: .3px;
+    > i {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+    }
+    > strong {
+      display: block;
+      font: bold 14px/1.64em $sans;
+      letter-spacing: .4px;
+    }
+    > span {
+      display: block;
+    }
+  }
+  .alert-status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    padding-left: 23px;
+    background: #2f2f2f;
+    color: #fdfdfd;
+    &.inactive {
+      span {
+        &:before {
+          background-color: $red;
+        }
+      }
+    }
+    span {
+      font: bold 12px $sans;
+      text-transform: uppercase;
+      letter-spacing: .3px;
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background: $green;
+        margin-right: 7px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
 }
 
 .icon-my-car-zone-empty-state {
@@ -43,4 +226,40 @@
   width: 96px;
   height: 96px;
   background: url('/images/icon-my-car-zone-empty.png') center/contain no-repeat;
+}
+
+.icon-geo-fence-alerts {
+  width: 22px;
+  height: 22px;
+  background: url('/images/icon_carzone_geofence.png') center/contain no-repeat;
+}
+
+.icon-curfew-alerts {
+  width: 22px;
+  height: 22px;
+  background: url('/images/icon_carzone_curfew.png') center/contain no-repeat;
+}
+
+.icon-speed-alerts {
+  width: 22px;
+  height: 22px;
+  background: url('/images/icon_carzone_speed.png') center/contain no-repeat;
+}
+
+.icon-alert-geofence {
+  width: 47px;
+  height: 47px;
+  background: url('/images/icon_alert_geofence.png') center no-repeat;
+}
+
+.icon-alert-curfew {
+  width: 47px;
+  height: 47px;
+  background: url('/images/icon_alert_curfew.png') center no-repeat;
+}
+
+.icon-alert-speed {
+  width: 47px;
+  height: 47px;
+  background: url('/images/icon_alert_speed.png') center no-repeat;
 }

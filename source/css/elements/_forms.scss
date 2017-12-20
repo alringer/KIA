@@ -507,7 +507,28 @@ form {
   vertical-align: middle;
   display: inline-block;
   line-height: 1em;
+  user-select: none;
   cursor: pointer;
+  &.tiny {
+    input[type="checkbox"] {
+      &:checked {
+        + span {
+          &:before {
+            left: calc(32px - 16px - 2px);
+          }
+        }
+      }
+    }
+    span {
+      height: 18px;
+      width: 32px;
+      &:before {
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+      }
+    }
+  }
   input[type="checkbox"] {
     display: none;
     &:checked {
@@ -519,7 +540,18 @@ form {
       }
     }
   }
-  span {
+  em {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+    font-style: normal;
+    cursor: pointer;
+    + input + span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  label > span {
     transition: all 250ms $easeOutQuint;
     display: block;
     width: 51px;
