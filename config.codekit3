@@ -817,7 +817,7 @@
 		},
 	"\/source\/images\/dial_heated_seats1.png": {
 		"ft": 32768,
-		"iS": 11236,
+		"iS": 11576,
 		"oA": 0,
 		"oAP": "\/build\/images\/dial_heated_seats1.png",
 		"oF": 0,
@@ -872,7 +872,7 @@
 		},
 	"\/source\/images\/heated_seat_2_cold.png": {
 		"ft": 32768,
-		"iS": 15846,
+		"iS": 12054,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_2_cold.png",
 		"oF": 0,
@@ -883,7 +883,7 @@
 		},
 	"\/source\/images\/heated_seat_2_hot.png": {
 		"ft": 32768,
-		"iS": 15903,
+		"iS": 12134,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_2_hot.png",
 		"oF": 0,
@@ -905,7 +905,7 @@
 		},
 	"\/source\/images\/heated_seat_3_cold.png": {
 		"ft": 32768,
-		"iS": 14980,
+		"iS": 11613,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_3_cold.png",
 		"oF": 0,
@@ -916,7 +916,7 @@
 		},
 	"\/source\/images\/heated_seat_3_hot.png": {
 		"ft": 32768,
-		"iS": 14987,
+		"iS": 11599,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_3_hot.png",
 		"oF": 0,
@@ -938,7 +938,7 @@
 		},
 	"\/source\/images\/heated_seat_4_cold.png": {
 		"ft": 32768,
-		"iS": 15192,
+		"iS": 11895,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_4_cold.png",
 		"oF": 0,
@@ -949,7 +949,7 @@
 		},
 	"\/source\/images\/heated_seat_4_hot.png": {
 		"ft": 32768,
-		"iS": 15227,
+		"iS": 11939,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_4_hot.png",
 		"oF": 0,
@@ -4606,7 +4606,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 535332587
+	"lastBuiltDate": 535494344
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
