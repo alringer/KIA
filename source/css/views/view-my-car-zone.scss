@@ -185,6 +185,15 @@
       display: block;
     }
   }
+  &.inactive {
+    .alert-status {
+      span {
+        &:before {
+          background-color: $red;
+        }
+      }
+    }
+  }
   .alert-status {
     position: absolute;
     bottom: 0;
@@ -194,13 +203,6 @@
     padding-left: 23px;
     background: #2f2f2f;
     color: #fdfdfd;
-    &.inactive {
-      span {
-        &:before {
-          background-color: $red;
-        }
-      }
-    }
     span {
       font: bold 12px $sans;
       text-transform: uppercase;
@@ -219,6 +221,13 @@
       }
     }
   }
+  .mobile-arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    display: none;
+  }
   &.alert-card-speed {
     .alert-body {
       top: 65px;
@@ -226,6 +235,58 @@
         font-size: 18px;
         letter-spacing: .6px;
         line-height: 1.28em;
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    height: auto;
+    .mobile-arrow {
+      display: block;
+    }
+    .alert-title {
+      display: none;
+    }
+    .icon-settings {
+      display: none;
+    }
+    .alert-status {
+      display: none;
+    }
+    &.inactive {
+      .alert-body {
+        > strong {
+          &:before {
+            background-color: $red;
+          }
+        }
+      }
+    }
+    .alert-body {
+      position: relative;
+      left: 0;
+      top: 0 !important;
+      padding: 16px;
+      > i {
+        display: none;
+      }
+      span {
+        padding-left: 16px;
+      }
+      > strong {
+        font-size: 14px !important;
+        letter-spacing: .4px !important;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          background: $green;
+          margin-right: 7px;
+          vertical-align: middle;
+          position: relative;
+          top: -1px;
+        }
       }
     }
   }
@@ -238,12 +299,24 @@
     display: block;
     font: 500 20px/135px $kia;
     color: #c0c0c0;
+    letter-spacing: .5px;
     i {
       display: inline-block;
       margin-right: 21px;
       vertical-align: middle;
       position: relative;
       top: -5px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    height: 80px;
+    strong {
+      font-size: 14px;
+      letter-spacing: .4px;
+      line-height: 80px;
+      i {
+        margin-right: 18px;
+      }
     }
   }
 }
@@ -295,4 +368,15 @@
   width: 64px;
   height: 52px;
   background: url('/images/icon_no_alerts_speed.png') center/contain no-repeat;
+  @media (max-width: $screen-xs-max) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon-arrow-right {
+  display: block;
+  background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat;
+  width: 11px !important;
+  height: 15px !important;
 }

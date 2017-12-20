@@ -179,6 +179,8 @@
       letter-spacing: .4px; }
     .alert-card .alert-body > span {
       display: block; }
+  .alert-card.inactive .alert-status span:before {
+    background-color: #C4172C; }
   .alert-card .alert-status {
     position: absolute;
     bottom: 0;
@@ -188,8 +190,6 @@
     padding-left: 23px;
     background: #2f2f2f;
     color: #fdfdfd; }
-    .alert-card .alert-status.inactive span:before {
-      background-color: #C4172C; }
     .alert-card .alert-status span {
       font: bold 12px "Source Sans Pro", sans-serif;
       text-transform: uppercase;
@@ -205,12 +205,54 @@
         vertical-align: middle;
         position: relative;
         top: -1px; }
+  .alert-card .mobile-arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    display: none; }
   .alert-card.alert-card-speed .alert-body {
     top: 65px; }
     .alert-card.alert-card-speed .alert-body > strong {
       font-size: 18px;
       letter-spacing: .6px;
       line-height: 1.28em; }
+  @media (max-width: 767px) {
+    .alert-card {
+      height: auto; }
+      .alert-card .mobile-arrow {
+        display: block; }
+      .alert-card .alert-title {
+        display: none; }
+      .alert-card .icon-settings {
+        display: none; }
+      .alert-card .alert-status {
+        display: none; }
+      .alert-card.inactive .alert-body > strong:before {
+        background-color: #C4172C; }
+      .alert-card .alert-body {
+        position: relative;
+        left: 0;
+        top: 0 !important;
+        padding: 16px; }
+        .alert-card .alert-body > i {
+          display: none; }
+        .alert-card .alert-body span {
+          padding-left: 16px; }
+        .alert-card .alert-body > strong {
+          font-size: 14px !important;
+          letter-spacing: .4px !important; }
+          .alert-card .alert-body > strong:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background: #8EC439;
+            margin-right: 7px;
+            vertical-align: middle;
+            position: relative;
+            top: -1px; } }
 
 .no-alerts-set {
   height: 135px; }
@@ -218,13 +260,23 @@
     text-align: center;
     display: block;
     font: 500 20px/135px "KIA", sans-serif;
-    color: #c0c0c0; }
+    color: #c0c0c0;
+    letter-spacing: .5px; }
     .no-alerts-set strong i {
       display: inline-block;
       margin-right: 21px;
       vertical-align: middle;
       position: relative;
       top: -5px; }
+  @media (max-width: 767px) {
+    .no-alerts-set {
+      height: 80px; }
+      .no-alerts-set strong {
+        font-size: 14px;
+        letter-spacing: .4px;
+        line-height: 80px; }
+        .no-alerts-set strong i {
+          margin-right: 18px; } }
 
 .icon-my-car-zone-empty-state {
   display: block;
@@ -266,3 +318,13 @@
   width: 64px;
   height: 52px;
   background: url("/images/icon_no_alerts_speed.png") center/contain no-repeat; }
+  @media (max-width: 767px) {
+    .icon-no-alerts-speed {
+      width: 40px;
+      height: 40px; } }
+
+.icon-arrow-right {
+  display: block;
+  background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat;
+  width: 11px !important;
+  height: 15px !important; }
