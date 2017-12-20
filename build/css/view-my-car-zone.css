@@ -205,6 +205,26 @@
         vertical-align: middle;
         position: relative;
         top: -1px; }
+  .alert-card.alert-card-speed .alert-body {
+    top: 65px; }
+    .alert-card.alert-card-speed .alert-body > strong {
+      font-size: 18px;
+      letter-spacing: .6px;
+      line-height: 1.28em; }
+
+.no-alerts-set {
+  height: 135px; }
+  .no-alerts-set strong {
+    text-align: center;
+    display: block;
+    font: 500 20px/135px "KIA", sans-serif;
+    color: #c0c0c0; }
+    .no-alerts-set strong i {
+      display: inline-block;
+      margin-right: 21px;
+      vertical-align: middle;
+      position: relative;
+      top: -5px; }
 
 .icon-my-car-zone-empty-state {
   display: block;
@@ -241,3 +261,8 @@
   width: 47px;
   height: 47px;
   background: url("/images/icon_alert_speed.png") center no-repeat; }
+
+.icon-no-alerts-speed {
+  width: 64px;
+  height: 52px;
+  background: url("/images/icon_no_alerts_speed.png") center/contain no-repeat; }

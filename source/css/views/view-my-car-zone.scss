@@ -219,6 +219,33 @@
       }
     }
   }
+  &.alert-card-speed {
+    .alert-body {
+      top: 65px;
+      > strong {
+        font-size: 18px;
+        letter-spacing: .6px;
+        line-height: 1.28em;
+      }
+    }
+  }
+}
+
+.no-alerts-set {
+  height: 135px;
+  strong {
+    text-align: center;
+    display: block;
+    font: 500 20px/135px $kia;
+    color: #c0c0c0;
+    i {
+      display: inline-block;
+      margin-right: 21px;
+      vertical-align: middle;
+      position: relative;
+      top: -5px;
+    }
+  }
 }
 
 .icon-my-car-zone-empty-state {
@@ -262,4 +289,10 @@
   width: 47px;
   height: 47px;
   background: url('/images/icon_alert_speed.png') center no-repeat;
+}
+
+.icon-no-alerts-speed {
+  width: 64px;
+  height: 52px;
+  background: url('/images/icon_no_alerts_speed.png') center/contain no-repeat;
 }
