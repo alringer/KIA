@@ -311,16 +311,21 @@
             margin-bottom: 0;
           }
           textarea,
-          input[type="text"] {
+          input[type="text"],
+          input[type="number"],
+          input[type="date"] {
+            display: block;
             border-radius: 2px;
             border: solid 1px #b1b5b8;
             resize: none;
             width: 100%;
             padding-left: 37px;
+            height: 40px;
             font: 500 14px $sans;
             letter-spacing: .4px;
             background-position: 12px center;
             background-repeat: no-repeat;
+            outline: none !important;
             &.date {
               background-image: url('/images/icon_calendar_small_grey.svg');
             }

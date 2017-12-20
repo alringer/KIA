@@ -266,28 +266,41 @@
     .milestone-status-detail-form .form-fields li label {
       margin-bottom: 0; }
     .milestone-status-detail-form .form-fields li textarea,
-    .milestone-status-detail-form .form-fields li input[type="text"] {
+    .milestone-status-detail-form .form-fields li input[type="text"],
+    .milestone-status-detail-form .form-fields li input[type="number"],
+    .milestone-status-detail-form .form-fields li input[type="date"] {
+      display: block;
       border-radius: 2px;
       border: solid 1px #b1b5b8;
       resize: none;
       width: 100%;
       padding-left: 37px;
+      height: 40px;
       font: 500 14px "Source Sans Pro", sans-serif;
       letter-spacing: .4px;
       background-position: 12px center;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      outline: none !important; }
       .milestone-status-detail-form .form-fields li textarea.date,
-      .milestone-status-detail-form .form-fields li input[type="text"].date {
+      .milestone-status-detail-form .form-fields li input[type="text"].date,
+      .milestone-status-detail-form .form-fields li input[type="number"].date,
+      .milestone-status-detail-form .form-fields li input[type="date"].date {
         background-image: url("/images/icon_calendar_small_grey.svg"); }
       .milestone-status-detail-form .form-fields li textarea.location,
-      .milestone-status-detail-form .form-fields li input[type="text"].location {
+      .milestone-status-detail-form .form-fields li input[type="text"].location,
+      .milestone-status-detail-form .form-fields li input[type="number"].location,
+      .milestone-status-detail-form .form-fields li input[type="date"].location {
         background-image: url("/images/icon_location_target_grey.svg"); }
       .milestone-status-detail-form .form-fields li textarea.mileage,
-      .milestone-status-detail-form .form-fields li input[type="text"].mileage {
+      .milestone-status-detail-form .form-fields li input[type="text"].mileage,
+      .milestone-status-detail-form .form-fields li input[type="number"].mileage,
+      .milestone-status-detail-form .form-fields li input[type="date"].mileage {
         background-position: 10px center;
         background-image: url("/images/icon_mileage_grey.svg"); }
       .milestone-status-detail-form .form-fields li textarea.notes,
-      .milestone-status-detail-form .form-fields li input[type="text"].notes {
+      .milestone-status-detail-form .form-fields li input[type="text"].notes,
+      .milestone-status-detail-form .form-fields li input[type="number"].notes,
+      .milestone-status-detail-form .form-fields li input[type="date"].notes {
         background-position: 14px 12px;
         background-image: url("/images/icon_notes_grey.svg"); }
     .milestone-status-detail-form .form-fields li textarea {
