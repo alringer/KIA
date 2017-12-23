@@ -1042,17 +1042,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/images\/icon_alert_curfew.png": {
-		"ft": 32768,
-		"iS": 2039,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_alert_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"\/source\/images\/icon_alert_error.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1062,38 +1051,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/source\/images\/icon_alert_geofence.png": {
-		"ft": 32768,
-		"iS": 2514,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_alert_geofence.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/images\/icon_alert_geofence.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/images\/icon_alert_geofence.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/source\/images\/icon_alert_speed.png": {
-		"ft": 32768,
-		"iS": 2125,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_alert_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
 		},
 	"\/source\/images\/icon_arrow_right_dark.svg": {
 		"ft": 2097152,
@@ -1194,39 +1151,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/source\/images\/icon_carzone_curfew.png": {
-		"ft": 32768,
-		"iS": 703,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_carzone_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/images\/icon_carzone_geofence.png": {
-		"ft": 32768,
-		"iS": 754,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_carzone_geofence.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/images\/icon_carzone_speed.png": {
-		"ft": 32768,
-		"iS": 524,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_carzone_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
 		},
 	"\/source\/images\/icon_charge_bolt_small.svg": {
 		"ft": 2097152,
@@ -1860,17 +1784,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/source\/images\/icon_no_alerts_speed.png": {
-		"ft": 32768,
-		"iS": 3368,
-		"oA": 0,
-		"oAP": "\/build\/images\/icon_no_alerts_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
 		},
 	"\/source\/images\/icon_no_charge_schedule.svg": {
 		"ft": 2097152,
@@ -4237,20 +4150,6 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/my-car-zone-1.html",
-		"oF": 0
-		},
-	"\/source\/views\/my-car-zone-2.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/views\/my-car-zone-2.html",
-		"oF": 0
-		},
-	"\/source\/views\/my-car-zone-3.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"oA": 0,
-		"oAP": "\/build\/views\/my-car-zone-3.html",
 		"oF": 0
 		},
 	"\/source\/views\/my-vehicles-1.kit": {
