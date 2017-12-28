@@ -1,0 +1,339 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-schedules .schedules-empty-state {
+  height: calc(100vh - 250px);
+  min-height: 450px;
+  max-width: 462px;
+  margin: 0 auto;
+  position: relative;
+  position: relative; }
+  .view-schedules .schedules-empty-state-inner {
+    padding: 0 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+  .view-schedules .schedules-empty-state .icon-schedules-empty-state {
+    margin: 0 auto 21px; }
+  .view-schedules .schedules-empty-state h2 {
+    font: 500 29px "KIA", sans-serif;
+    margin: 0 0 26px; }
+  .view-schedules .schedules-empty-state p {
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    margin-bottom: 30px; }
+    .view-schedules .schedules-empty-state p:last-of-type {
+      margin-bottom: 0; }
+    .view-schedules .schedules-empty-state p:first-of-type {
+      margin-bottom: 30px; }
+
+.view-schedules .schedules-wrapper {
+  padding: 0 50px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .view-schedules .schedules-wrapper {
+      padding: 0 10px; } }
+
+.view-schedules .schedules-header {
+  padding: 40px 0 0;
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .view-schedules .schedules-header h2 {
+    margin: 0 0 28px;
+    font: 32px "KIA", sans-serif;
+    letter-spacing: 1.5px; }
+  .view-schedules .schedules-header p {
+    clear: both;
+    max-width: 685px;
+    font: 14px "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    color: #000; }
+    .view-schedules .schedules-header p strong {
+      font-weight: bold; }
+    .view-schedules .schedules-header p a {
+      color: #C4172C;
+      font: bold 11px "KIA", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .7px;
+      margin: 0 2.5px; }
+  @media (max-width: 767px) {
+    .view-schedules .schedules-header {
+      padding: 20px 0 0;
+      margin-bottom: 0; }
+      .view-schedules .schedules-header * {
+        display: none; } }
+
+.schedules-alert-area {
+  margin-bottom: 30px;
+  clear: both; }
+  .schedules-alert-area-header {
+    margin-bottom: 16px; }
+    .schedules-alert-area-header:after {
+      content: "";
+      display: block;
+      width: 100%;
+      clear: both; }
+  .schedules-alert-area .row > div {
+    margin-bottom: 10px; }
+    .schedules-alert-area .row > div:last-child {
+      margin-bottom: 0; }
+  .schedules-alert-area h3 {
+    font: bold 12px/1em "KIA", sans-serif;
+    letter-spacing: .3px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0; }
+    .schedules-alert-area h3 i {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+      position: relative;
+      top: -2px; }
+  .schedules-alert-area .schedules-alert-area-toggle {
+    position: relative;
+    top: -2px; }
+    .schedules-alert-area .schedules-alert-area-toggle em {
+      font: 12px "Source Sans Pro", sans-serif;
+      color: #000;
+      letter-spacing: .3px; }
+      @media (max-width: 767px) {
+        .schedules-alert-area .schedules-alert-area-toggle em span {
+          display: none; } }
+
+.alert-card {
+  height: 174px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px; }
+  .alert-card.alert-card-charge .alert-body, .alert-card.alert-card-climate .alert-body {
+    top: 35px; }
+    .alert-card.alert-card-charge .alert-body > strong, .alert-card.alert-card-climate .alert-body > strong {
+      font: bold 18px/1em "Source Sans Pro", sans-serif;
+      letter-spacing: .5px;
+      margin-bottom: 10px; }
+      .alert-card.alert-card-charge .alert-body > strong span, .alert-card.alert-card-climate .alert-body > strong span {
+        padding-top: 3px;
+        display: block;
+        font: bold 12px/1em "Source Sans Pro", sans-serif;
+        letter-spacing: .3px; }
+    .alert-card.alert-card-charge .alert-body > span, .alert-card.alert-card-climate .alert-body > span {
+      font: 12px "Source Sans Pro", sans-serif;
+      margin-bottom: 3px; }
+      .alert-card.alert-card-charge .alert-body > span:last-child, .alert-card.alert-card-climate .alert-body > span:last-child {
+        margin-bottom: 0; }
+      .alert-card.alert-card-charge .alert-body > span strong,
+      .alert-card.alert-card-charge .alert-body > span em, .alert-card.alert-card-climate .alert-body > span strong,
+      .alert-card.alert-card-climate .alert-body > span em {
+        color: #8EC439;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-style: normal; }
+      .alert-card.alert-card-charge .alert-body > span strong, .alert-card.alert-card-climate .alert-body > span strong {
+        color: #C4172C; }
+  .alert-card.alert-card-charge .alert-body {
+    top: 50px; }
+    .alert-card.alert-card-charge .alert-body > strong {
+      font-size: 16px;
+      letter-spacing: .4px; }
+  .alert-card .alert-title {
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    font: bold 10px/1em "KIA", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #969696; }
+  .alert-card .icon-settings {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block; }
+    .alert-card .icon-settings svg * {
+      fill: #898989 !important;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .alert-card .icon-settings:hover svg * {
+      fill: #565656 !important; }
+  .alert-card .alert-body {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 49px;
+    padding-left: 91px;
+    font: 12px/1.58em "Source Sans Pro", sans-serif;
+    letter-spacing: .3px; }
+    .alert-card .alert-body > i {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 19px;
+      transform: translateY(-50%); }
+    .alert-card .alert-body > strong {
+      display: block;
+      font: bold 14px/1.64em "Source Sans Pro", sans-serif;
+      letter-spacing: .4px; }
+    .alert-card .alert-body > span {
+      display: block; }
+  .alert-card.inactive .alert-status span:before {
+    background-color: #C4172C; }
+  .alert-card .alert-status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    padding-left: 23px;
+    background: #2f2f2f;
+    color: #fdfdfd; }
+    .alert-card .alert-status span {
+      font: bold 12px "Source Sans Pro", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .3px; }
+      .alert-card .alert-status span:before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background: #8EC439;
+        margin-right: 7px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px; }
+  .alert-card .mobile-arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    display: none; }
+  .alert-card.alert-card-speed .alert-body {
+    top: 65px; }
+    .alert-card.alert-card-speed .alert-body > strong {
+      font-size: 18px;
+      letter-spacing: .6px;
+      line-height: 1.28em; }
+
+.no-alerts-set {
+  height: 135px; }
+  .no-alerts-set strong {
+    text-align: center;
+    display: block;
+    font: 500 20px/135px "KIA", sans-serif;
+    color: #c0c0c0;
+    letter-spacing: .5px; }
+    .no-alerts-set strong i {
+      display: inline-block;
+      margin-right: 21px;
+      vertical-align: middle;
+      position: relative;
+      top: -5px; }
+  @media (max-width: 767px) {
+    .no-alerts-set {
+      height: 80px; }
+      .no-alerts-set strong {
+        font-size: 14px;
+        letter-spacing: .4px;
+        line-height: 80px; }
+        .no-alerts-set strong i {
+          margin-right: 18px; } }
+
+.icon-schedules-empty-state {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background: url("/images/icon-no-schedules.svg") center/contain no-repeat; }
+
+.icon-geo-fence-alerts {
+  width: 22px;
+  height: 22px;
+  background: url("/images/icon_carzone_geofence.png") center/contain no-repeat; }
+
+.icon-curfew-alerts {
+  width: 22px;
+  height: 22px;
+  background: url("/images/icon_carzone_curfew.png") center/contain no-repeat; }
+
+.icon-speed-alerts {
+  width: 22px;
+  height: 22px;
+  background: url("/images/icon_carzone_speed.png") center/contain no-repeat; }
+
+.icon-alert-climate {
+  width: 57px;
+  height: 57px;
+  background: url("/images/icon_alert_climate.png") center/contain no-repeat;
+  text-align: center;
+  font: bold 18px/57px "KIA", sans-serif;
+  letter-spacing: .5px;
+  padding-left: 5px; }
+  .icon-alert-climate sup {
+    position: relative;
+    top: -4px; }
+
+.icon-alert-curfew {
+  width: 47px;
+  height: 47px;
+  background: url("/images/icon_alert_curfew.png") center no-repeat; }
+
+.icon-alert-speed {
+  width: 47px;
+  height: 47px;
+  background: url("/images/icon_alert_speed.png") center no-repeat; }
+
+.icon-no-alerts-speed {
+  width: 64px;
+  height: 52px;
+  background: url("/images/icon_no_alerts_speed.png") center/contain no-repeat; }
+  @media (max-width: 767px) {
+    .icon-no-alerts-speed {
+      width: 40px;
+      height: 40px; } }
+
+.icon-arrow-right {
+  display: block;
+  background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat;
+  width: 11px !important;
+  height: 15px !important; }
+
+.icon-3d-battery {
+  background: url(/images/icon_3d_battery_small.svg) center/contain no-repeat;
+  width: 70px;
+  height: 115px;
+  left: 15px !important;
+  top: 30px !important; }

@@ -1934,6 +1934,470 @@ body.modal-open {
           padding-left: 25px;
           padding-right: 25px; } }
 
+.add-schedules .modal-dialog,
+.add-my-car-zone-alert .modal-dialog {
+  max-width: 425px; }
+
+.add-schedules .copy,
+.add-my-car-zone-alert .copy {
+  display: inline-block;
+  font: bold 11px/1em "KIA", sans-serif;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  color: #C4172C; }
+  .add-schedules .copy .icon-copy,
+  .add-my-car-zone-alert .copy .icon-copy {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; }
+    .add-schedules .copy .icon-copy svg path,
+    .add-my-car-zone-alert .copy .icon-copy svg path {
+      fill: #C4172C !important;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .add-schedules .copy:hover,
+  .add-my-car-zone-alert .copy:hover {
+    color: #690c18; }
+    .add-schedules .copy:hover svg path,
+    .add-my-car-zone-alert .copy:hover svg path {
+      fill: #690c18 !important; }
+
+.modal-create-alert p {
+  max-width: 334px;
+  margin: 0 auto;
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  letter-spacing: .7px; }
+  @media (max-width: 767px) {
+    .modal-create-alert p {
+      font-size: 13px;
+      letter-spacing: .6px;
+      line-height: 1.62em; } }
+
+.modal-create-alert ul.alert-choices {
+  margin: 0 auto;
+  padding: 0 20px;
+  list-style: none;
+  max-width: 395px; }
+  .modal-create-alert ul.alert-choices li {
+    border-top: solid 1px #d5d5d5;
+    padding: 37.5px 0 34.5px 95px;
+    position: relative;
+    cursor: pointer; }
+    .modal-create-alert ul.alert-choices li:first-child {
+      border-top: none; }
+    .modal-create-alert ul.alert-choices li:hover .icon-arrow-right {
+      margin-right: -5px; }
+    .modal-create-alert ul.alert-choices li strong {
+      display: block;
+      font: bold 14px/1em "KIA", sans-serif;
+      color: #000;
+      letter-spacing: .4px; }
+    .modal-create-alert ul.alert-choices li em {
+      display: block;
+      font: 12px/1.75em "Source Sans Pro", sans-serif;
+      color: #969696;
+      letter-spacing: .5px; }
+    .modal-create-alert ul.alert-choices li .icon-arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 10px !important;
+      height: 20px !important;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.modal-charge-schedule,
+.modal-climate-schedule,
+.modal-speed-alert,
+.modal-geofence-alert,
+.modal-curfew-alert {
+  text-align: center;
+  padding-bottom: 35px; }
+  .modal-charge-schedule .copy,
+  .modal-climate-schedule .copy,
+  .modal-speed-alert .copy,
+  .modal-geofence-alert .copy,
+  .modal-curfew-alert .copy {
+    margin-bottom: 28px; }
+  .modal-charge-schedule form,
+  .modal-climate-schedule form,
+  .modal-speed-alert form,
+  .modal-geofence-alert form,
+  .modal-curfew-alert form {
+    margin-top: 28px;
+    max-width: 298px !important; }
+    .modal-charge-schedule form .form-fields > li,
+    .modal-climate-schedule form .form-fields > li,
+    .modal-speed-alert form .form-fields > li,
+    .modal-geofence-alert form .form-fields > li,
+    .modal-curfew-alert form .form-fields > li {
+      margin-bottom: 25px !important; }
+      .modal-charge-schedule form .form-fields > li.less-margin,
+      .modal-climate-schedule form .form-fields > li.less-margin,
+      .modal-speed-alert form .form-fields > li.less-margin,
+      .modal-geofence-alert form .form-fields > li.less-margin,
+      .modal-curfew-alert form .form-fields > li.less-margin {
+        margin-bottom: 5px !important; }
+      .modal-charge-schedule form .form-fields > li.border-bottom,
+      .modal-climate-schedule form .form-fields > li.border-bottom,
+      .modal-speed-alert form .form-fields > li.border-bottom,
+      .modal-geofence-alert form .form-fields > li.border-bottom,
+      .modal-curfew-alert form .form-fields > li.border-bottom {
+        border-bottom: solid 1px #d5d5d5;
+        padding-bottom: 25px; }
+      .modal-charge-schedule form .form-fields > li > .toggle,
+      .modal-climate-schedule form .form-fields > li > .toggle,
+      .modal-speed-alert form .form-fields > li > .toggle,
+      .modal-geofence-alert form .form-fields > li > .toggle,
+      .modal-curfew-alert form .form-fields > li > .toggle {
+        margin-top: 0;
+        width: 100%;
+        border-bottom: solid 1px #d5d5d5; }
+        .modal-charge-schedule form .form-fields > li > .toggle.no-border,
+        .modal-climate-schedule form .form-fields > li > .toggle.no-border,
+        .modal-speed-alert form .form-fields > li > .toggle.no-border,
+        .modal-geofence-alert form .form-fields > li > .toggle.no-border,
+        .modal-curfew-alert form .form-fields > li > .toggle.no-border {
+          border-bottom: none; }
+        .modal-charge-schedule form .form-fields > li > .toggle.border-top,
+        .modal-climate-schedule form .form-fields > li > .toggle.border-top,
+        .modal-speed-alert form .form-fields > li > .toggle.border-top,
+        .modal-geofence-alert form .form-fields > li > .toggle.border-top,
+        .modal-curfew-alert form .form-fields > li > .toggle.border-top {
+          border-bottom: none;
+          border-top: solid 1px #d5d5d5;
+          padding-top: 7px; }
+        .modal-charge-schedule form .form-fields > li > .toggle span,
+        .modal-climate-schedule form .form-fields > li > .toggle span,
+        .modal-speed-alert form .form-fields > li > .toggle span,
+        .modal-geofence-alert form .form-fields > li > .toggle span,
+        .modal-curfew-alert form .form-fields > li > .toggle span {
+          float: right; }
+        .modal-charge-schedule form .form-fields > li > .toggle em,
+        .modal-climate-schedule form .form-fields > li > .toggle em,
+        .modal-speed-alert form .form-fields > li > .toggle em,
+        .modal-geofence-alert form .form-fields > li > .toggle em,
+        .modal-curfew-alert form .form-fields > li > .toggle em {
+          float: left;
+          font: bold 10px/31px "KIA", sans-serif;
+          letter-spacing: .4px;
+          text-transform: uppercase; }
+      .modal-charge-schedule form .form-fields > li .toggle,
+      .modal-climate-schedule form .form-fields > li .toggle,
+      .modal-speed-alert form .form-fields > li .toggle,
+      .modal-geofence-alert form .form-fields > li .toggle,
+      .modal-curfew-alert form .form-fields > li .toggle {
+        margin-top: 2px; }
+        .modal-charge-schedule form .form-fields > li .toggle strong,
+        .modal-climate-schedule form .form-fields > li .toggle strong,
+        .modal-speed-alert form .form-fields > li .toggle strong,
+        .modal-geofence-alert form .form-fields > li .toggle strong,
+        .modal-curfew-alert form .form-fields > li .toggle strong {
+          margin-bottom: 15px;
+          line-height: 1em; }
+    .modal-charge-schedule form .form-fields .toggle-group,
+    .modal-charge-schedule form .form-fields .checkbox-group,
+    .modal-climate-schedule form .form-fields .toggle-group,
+    .modal-climate-schedule form .form-fields .checkbox-group,
+    .modal-speed-alert form .form-fields .toggle-group,
+    .modal-speed-alert form .form-fields .checkbox-group,
+    .modal-geofence-alert form .form-fields .toggle-group,
+    .modal-geofence-alert form .form-fields .checkbox-group,
+    .modal-curfew-alert form .form-fields .toggle-group,
+    .modal-curfew-alert form .form-fields .checkbox-group {
+      margin-top: -7px;
+      margin-bottom: 5px; }
+    .modal-charge-schedule form .form-fields .note,
+    .modal-climate-schedule form .form-fields .note,
+    .modal-speed-alert form .form-fields .note,
+    .modal-geofence-alert form .form-fields .note,
+    .modal-curfew-alert form .form-fields .note {
+      font: 10px/1em "Source Sans Pro", sans-serif;
+      display: block;
+      letter-spacing: .4px;
+      padding-top: 10px; }
+      .modal-charge-schedule form .form-fields .note em,
+      .modal-climate-schedule form .form-fields .note em,
+      .modal-speed-alert form .form-fields .note em,
+      .modal-geofence-alert form .form-fields .note em,
+      .modal-curfew-alert form .form-fields .note em {
+        font-style: normal; }
+
+.modal-charge-schedule.final-step .final-step-content {
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  font: 14px/1.57 "Source Sans Pro", sans-serif;
+  letter-spacing: .4px; }
+  .modal-charge-schedule.final-step .final-step-content ul {
+    font-weight: bold;
+    margin-bottom: 20px; }
+    .modal-charge-schedule.final-step .final-step-content ul li {
+      padding-left: 10px; }
+  .modal-charge-schedule.final-step .final-step-content .note {
+    font: 12px/1.42em "Source Sans Pro", sans-serif;
+    letter-spacing: .3px;
+    opacity: .5;
+    margin-bottom: 30px; }
+
+.modal-charge-schedule.final-step .modal-actions {
+  max-width: 345px;
+  margin: 0 auto -20px; }
+
+.modal-charge-schedule .form-section-subline {
+  display: block;
+  font: bold 10px "KIA", sans-serif;
+  letter-spacing: .4px;
+  padding-top: 30px; }
+
+.modal-charge-schedule .form-section-headline {
+  font: bold 13px "KIA", sans-serif;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 33px; }
+
+.modal-charge-schedule .center-radio {
+  text-align: center; }
+  .modal-charge-schedule .center-radio .radio {
+    display: inline-block;
+    width: auto;
+    margin: 0 21px; }
+    .modal-charge-schedule .center-radio .radio:first-child {
+      margin-left: 0; }
+    .modal-charge-schedule .center-radio .radio:last-child {
+      margin-right: 0; }
+    .modal-charge-schedule .center-radio .radio em {
+      padding-left: 0;
+      padding-top: 26px; }
+      .modal-charge-schedule .center-radio .radio em:after, .modal-charge-schedule .center-radio .radio em:before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+      .modal-charge-schedule .center-radio .radio em:after {
+        transform: translate(-50%, 3px); }
+      .modal-charge-schedule .center-radio .radio em span {
+        display: block;
+        max-width: 70px;
+        text-align: center;
+        font: 12px "Source Sans Pro", sans-serif;
+        letter-spacing: .3px; }
+
+.modal-charge-schedule .double-dropdowns .row > div {
+  display: inline-block;
+  vertical-align: bottom;
+  float: none;
+  position: relative; }
+  .modal-charge-schedule .double-dropdowns .row > div:first-child:after {
+    display: block;
+    content: "to";
+    position: absolute;
+    left: 100%;
+    font: 14px/1em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    bottom: 20px;
+    transform: translateX(-5px);
+    pointer-events: none; }
+  .modal-charge-schedule .double-dropdowns .row > div strong {
+    color: #969696; }
+
+.modal-charge-schedule .radio {
+  margin-bottom: 10px; }
+  .modal-charge-schedule .radio input[type="radio"]:checked + em .bootstrap-select {
+    opacity: 1;
+    pointer-events: all; }
+  .modal-charge-schedule .radio em {
+    width: 100%;
+    display: block; }
+    .modal-charge-schedule .radio em > span {
+      font: 14px "Source Sans Pro", sans-serif;
+      letter-spacing: .6px; }
+    .modal-charge-schedule .radio em .bootstrap-select {
+      opacity: .5;
+      pointer-events: none; }
+
+.modal-set-boundaries {
+  width: calc(100% + 30px);
+  position: relative;
+  left: -15px; }
+  .modal-set-boundaries .map-wrap {
+    position: relative;
+    margin-bottom: 25px; }
+    .modal-set-boundaries .map-wrap .map {
+      width: 100%;
+      height: 445px; }
+    .modal-set-boundaries .map-wrap .map-search {
+      position: absolute;
+      top: 15px;
+      left: 25px;
+      right: 25px; }
+      .modal-set-boundaries .map-wrap .map-search input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 0 20px 0 40px;
+        font: 400 14px "Source Sans Pro", sans-serif;
+        letter-spacing: .4px;
+        border: none;
+        box-shadow: 0 0 5px 0 rgba(39, 48, 59, 0.56);
+        border-radius: 3px;
+        background: #FFF url("/images/icon_search.svg") 13px center no-repeat;
+        outline: none; }
+  .modal-set-boundaries .slider-bar {
+    max-width: calc(100% - 125px);
+    margin: 65px auto 55px;
+    position: relative; }
+    .modal-set-boundaries .slider-bar-control {
+      position: absolute;
+      left: -50px;
+      display: block;
+      font: 500 42px/1em "KIA", sans-serif;
+      color: #C4172C;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .modal-set-boundaries .slider-bar-control:hover {
+        color: #690c18; }
+      .modal-set-boundaries .slider-bar-control.up {
+        left: auto;
+        right: -50px;
+        margin-top: -1px; }
+      .modal-set-boundaries .slider-bar-control.down {
+        margin-top: -5px; }
+    .modal-set-boundaries .slider-bar-js {
+      height: 3px;
+      border: none !important;
+      background: #c1c1c1; }
+      .modal-set-boundaries .slider-bar-js span {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 100%;
+        height: 31px;
+        width: 31px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #FFF;
+        box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.44);
+        display: block; }
+        .modal-set-boundaries .slider-bar-js span:before {
+          display: block;
+          content: '';
+          width: 12px;
+          height: 12px;
+          border-radius: 100%;
+          background: #e0e0e0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+      .modal-set-boundaries .slider-bar-js-blue {
+        height: 3px;
+        background: #4bbef0;
+        width: 0%;
+        position: absolute;
+        top: 0;
+        left: 0; }
+  .modal-set-boundaries .modal-actions {
+    max-width: 298px;
+    margin: 0 auto 25px; }
+
+.modal-copy-settings {
+  padding: 0 25px 25px; }
+  @media (max-width: 767px) {
+    .modal-copy-settings {
+      padding: 0 0 10px; } }
+  .modal-copy-settings > p {
+    max-width: 338px;
+    padding-right: 40px;
+    margin: 0 auto 20px;
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px; }
+  .modal-copy-settings .copy-options {
+    padding: 0;
+    list-style: none;
+    max-width: 350px;
+    margin: 0 auto 40px; }
+    @media (max-width: 767px) {
+      .modal-copy-settings .copy-options {
+        margin-bottom: 20px; } }
+    .modal-copy-settings .copy-options > li {
+      border-bottom: solid 1px #d5d5d5;
+      padding-top: 25px;
+      padding-bottom: 15px; }
+      @media (max-width: 767px) {
+        .modal-copy-settings .copy-options > li:last-child {
+          border-bottom: none; } }
+      .modal-copy-settings .copy-options > li .car-info {
+        display: block;
+        margin-bottom: 18px; }
+        .modal-copy-settings .copy-options > li .car-info-meta {
+          display: block; }
+          .modal-copy-settings .copy-options > li .car-info-meta em {
+            display: block;
+            font: 10px/1em "Source Sans Pro", sans-serif;
+            letter-spacing: .4px;
+            margin-bottom: 5px; }
+          .modal-copy-settings .copy-options > li .car-info-meta strong {
+            display: block;
+            font: 600 14px/1em "Source Sans Pro", sans-serif;
+            letter-spacing: .6px; }
+      .modal-copy-settings .copy-options > li .radio {
+        margin-bottom: 10px; }
+      .modal-copy-settings .copy-options > li .settings-meta {
+        display: block;
+        padding-top: 15px; }
+        .modal-copy-settings .copy-options > li .settings-meta strong {
+          font: bold 14px/1em "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          display: block;
+          margin-bottom: 5px; }
+        .modal-copy-settings .copy-options > li .settings-meta em {
+          font: 12px/1em "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          display: block; }
+      .modal-copy-settings .copy-options > li .map {
+        height: 95px;
+        pointer-events: none; }
+
+.modal-copy-settings-geofence .copy-options {
+  max-width: 325px; }
+  .modal-copy-settings-geofence .copy-options > li {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.modal-copy-settings-speed .copy-options > li .radio .car-info {
+  margin-bottom: 20px; }
+
+.modal-copy-settings-speed .copy-options > li .radio > em:before {
+  top: 15px; }
+
+.modal-copy-settings-speed .copy-options > li .radio > em:after {
+  top: 15px; }
+
+.modal-copy-settings-speed .copy-options > li .radio .settings-meta {
+  margin-top: 0;
+  padding-top: 0; }
+  .modal-copy-settings-speed .copy-options > li .radio .settings-meta > span {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px; }
+    .modal-copy-settings-speed .copy-options > li .radio .settings-meta > span:last-child {
+      margin-right: 0; }
+    .modal-copy-settings-speed .copy-options > li .radio .settings-meta > span strong {
+      color: #969696;
+      font: bold 10px/1em "KIA", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: block; }
+    .modal-copy-settings-speed .copy-options > li .radio .settings-meta > span em {
+      display: block;
+      color: #000;
+      font: 14px/1em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px; }
+
 ul.issues-list {
   padding: 0;
   margin: 0;
@@ -1965,7 +2429,13 @@ ul.issues-list {
   .modal form {
     width: 100%;
     max-width: 275px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 0px; }
+    .modal form .half {
+      width: 45%;
+      display: inline-block; }
+      .modal form .half + .half {
+        margin-left: 10%; }
     .modal form .form-footer {
       padding-top: 25px;
       padding-bottom: 25px;
@@ -2041,20 +2511,20 @@ form .form-fields {
   margin: 0;
   list-style: none;
   text-align: left; }
-  form .form-fields li {
+  form .form-fields > li {
     margin-bottom: 15px; }
-    form .form-fields li.error label.checkbox input:not(:checked) + em:before {
+    form .form-fields > li.error label.checkbox input:not(:checked) + em:before {
       border-color: #f23f3f; }
-    form .form-fields li.error label input {
+    form .form-fields > li.error label input {
       border-color: #f23f3f !important; }
-    form .form-fields li label {
+    form .form-fields > li label {
       display: inline-block;
       width: 100%;
       cursor: pointer;
       position: relative; }
-      form .form-fields li label:hover input {
+      form .form-fields > li label:hover input {
         border-color: #000; }
-      form .form-fields li label > strong {
+      form .form-fields > li label > strong {
         display: block;
         font-size: 10px;
         letter-spacing: 0.4px;
@@ -2062,7 +2532,7 @@ form .form-fields {
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 10px; }
-        form .form-fields li label > strong .label-helper {
+        form .form-fields > li label > strong .label-helper {
           float: right;
           font-weight: normal;
           text-transform: none;
@@ -2071,29 +2541,29 @@ form .form-fields {
           display: block;
           border-bottom: 1px solid #000;
           transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
-          form .form-fields li label > strong .label-helper:hover {
+          form .form-fields > li label > strong .label-helper:hover {
             color: #C4172C;
             border-bottom-color: #C4172C; }
-      form .form-fields li label > em {
+      form .form-fields > li label > em {
         font-style: normal;
         color: #2f2f2f;
         letter-spacing: .5px;
         font-size: 14px;
         font-family: "Source Sans Pro", sans-serif;
         display: inline-block; }
-      form .form-fields li label .helper {
+      form .form-fields > li label .helper {
         font: italic 12px/1em "Source Sans Pro", sans-serif;
         display: inline-block;
         padding-top: 7px;
         color: #8E8E8E;
         letter-spacing: .5px; }
-      form .form-fields li label.checkbox {
+      form .form-fields > li label.checkbox {
         width: auto;
         margin-top: 5px; }
-      form .form-fields li label > input[type="text"],
-      form .form-fields li label > input[type="email"],
-      form .form-fields li label > input[type="password"],
-      form .form-fields li label > input[type="tel"] {
+      form .form-fields > li label > input[type="text"],
+      form .form-fields > li label > input[type="email"],
+      form .form-fields > li label > input[type="password"],
+      form .form-fields > li label > input[type="tel"] {
         outline: none;
         display: block;
         width: 100%;
@@ -2108,27 +2578,27 @@ form .form-fields {
         color: #2f2f2f;
         -webkit-appearance: none;
         box-shadow: none; }
-        form .form-fields li label > input[type="text"][type="password"],
-        form .form-fields li label > input[type="email"][type="password"],
-        form .form-fields li label > input[type="password"][type="password"],
-        form .form-fields li label > input[type="tel"][type="password"] {
+        form .form-fields > li label > input[type="text"][type="password"],
+        form .form-fields > li label > input[type="email"][type="password"],
+        form .form-fields > li label > input[type="password"][type="password"],
+        form .form-fields > li label > input[type="tel"][type="password"] {
           font-size: 25px;
           font-family: sans-serif;
           letter-spacing: -1.5px; }
-        form .form-fields li label > input[type="text"]:focus,
-        form .form-fields li label > input[type="email"]:focus,
-        form .form-fields li label > input[type="password"]:focus,
-        form .form-fields li label > input[type="tel"]:focus {
+        form .form-fields > li label > input[type="text"]:focus,
+        form .form-fields > li label > input[type="email"]:focus,
+        form .form-fields > li label > input[type="password"]:focus,
+        form .form-fields > li label > input[type="tel"]:focus {
           border-color: #000;
           color: #000; }
-      form .form-fields li label.dual-inputs {
+      form .form-fields > li label.dual-inputs {
         position: relative;
         padding-left: 30px; }
-        form .form-fields li label.dual-inputs input[type="radio"] {
+        form .form-fields > li label.dual-inputs input[type="radio"] {
           display: none; }
-          form .form-fields li label.dual-inputs input[type="radio"]:checked + span:before {
+          form .form-fields > li label.dual-inputs input[type="radio"]:checked + span:before {
             opacity: 1; }
-        form .form-fields li label.dual-inputs .radio {
+        form .form-fields > li label.dual-inputs .radio {
           display: block;
           width: 16px;
           height: 16px;
@@ -2140,7 +2610,7 @@ form .form-fields {
           transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
           margin-top: 0px;
           margin-bottom: 0px; }
-          form .form-fields li label.dual-inputs .radio:before {
+          form .form-fields > li label.dual-inputs .radio:before {
             content: "";
             display: block;
             width: 8px;
@@ -2153,7 +2623,7 @@ form .form-fields {
             border-radius: 100%;
             transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
             opacity: 0; }
-      form .form-fields li label .inline-validator {
+      form .form-fields > li label .inline-validator {
         display: block;
         position: absolute;
         top: calc(100% + 3px);
@@ -2171,10 +2641,10 @@ form .form-fields {
         transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
         transform: translateY(-10px);
         opacity: 0; }
-        form .form-fields li label .inline-validator.show {
+        form .form-fields > li label .inline-validator.show {
           transform: none;
           opacity: 1; }
-        form .form-fields li label .inline-validator:before {
+        form .form-fields > li label .inline-validator:before {
           content: "";
           display: block;
           position: absolute;
@@ -2185,7 +2655,7 @@ form .form-fields {
           border-style: solid;
           border-width: 0 7.5px 10px 7.5px;
           border-color: transparent transparent #000 transparent; }
-        form .form-fields li label .inline-validator > span {
+        form .form-fields > li label .inline-validator > span {
           display: block;
           margin-bottom: 5px;
           padding-left: 20px;
@@ -2193,7 +2663,7 @@ form .form-fields {
           font-size: 12px;
           position: relative;
           transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
-          form .form-fields li label .inline-validator > span:after, form .form-fields li label .inline-validator > span:before {
+          form .form-fields > li label .inline-validator > span:after, form .form-fields > li label .inline-validator > span:before {
             position: absolute;
             top: 50%;
             left: 0;
@@ -2203,14 +2673,14 @@ form .form-fields {
             background: url("/images/icon_x_red.svg") center/contain no-repeat;
             transform: translateY(-50%);
             transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
-          form .form-fields li label .inline-validator > span:after {
+          form .form-fields > li label .inline-validator > span:after {
             background: url("/images/icon_checkmark_green.svg") center/contain no-repeat;
             opacity: 0; }
-        form .form-fields li label .inline-validator .passed {
+        form .form-fields > li label .inline-validator .passed {
           color: #5b5b5b; }
-          form .form-fields li label .inline-validator .passed:before {
+          form .form-fields > li label .inline-validator .passed:before {
             opacity: 0; }
-          form .form-fields li label .inline-validator .passed:after {
+          form .form-fields > li label .inline-validator .passed:after {
             opacity: 1; }
 
 .bootstrap-select {
@@ -2241,6 +2711,16 @@ form .form-fields {
     .bootstrap-select button {
       height: 40px;
       line-height: 40px; } }
+  .bootstrap-select.small button {
+    height: 40px;
+    line-height: 38px; }
+
+.checkbox-group .checkbox-round {
+  margin: 0 4px; }
+  .checkbox-group .checkbox-round:first-child {
+    margin-left: 0px; }
+  .checkbox-group .checkbox-round:last-child {
+    margin-right: 0px; }
 
 .checkbox {
   cursor: pointer;
@@ -2250,6 +2730,34 @@ form .form-fields {
     padding-left: 21px;
     height: 21px;
     display: block; }
+  .checkbox.checkbox-round input[type="checkbox"] {
+    display: none; }
+    .checkbox.checkbox-round input[type="checkbox"]:checked + em span {
+      color: #FFF; }
+    .checkbox.checkbox-round input[type="checkbox"]:checked + em:before {
+      background: #8ec439 !important;
+      border-color: #8ec439 !important; }
+  .checkbox.checkbox-round > em {
+    padding-left: 0px;
+    width: 35px;
+    height: 35px; }
+    .checkbox.checkbox-round > em:after {
+      display: none; }
+    .checkbox.checkbox-round > em:before {
+      width: 35px;
+      height: 36px;
+      border-width: 1px;
+      border-radius: 100%; }
+    .checkbox.checkbox-round > em span {
+      display: block;
+      z-index: 2;
+      position: relative;
+      height: inherit;
+      width: inherit;
+      text-align: center;
+      font: bold 12px/35px "KIA", sans-serif;
+      letter-spacing: .3px;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
   .checkbox input[type="checkbox"] {
     display: none; }
     .checkbox input[type="checkbox"]:checked + em:before {
@@ -2332,13 +2840,13 @@ form .form-fields {
     user-select: none;
     font-style: normal;
     display: block; }
-    .radio > em a {
+    .radio > em > a {
       color: #bb1a30;
       text-decoration: none;
       font-weight: bold;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
       display: inline-block; }
-      .radio > em a:hover {
+      .radio > em > a:hover {
         color: #000; }
     .radio > em:before {
       content: "";
@@ -2450,6 +2958,38 @@ form .form-fields {
       .radio-toggle label span:hover {
         background: #a7a7a7;
         color: #3d3d3d; }
+
+.toggle-group {
+  display: block;
+  white-space: nowrap; }
+  .toggle-group label {
+    display: inline-block;
+    width: 50% !important;
+    margin: 0 .5px; }
+    .toggle-group label.disabled {
+      pointer-events: none;
+      opacity: .35; }
+    .toggle-group label:first-child {
+      margin-left: 0px; }
+    .toggle-group label:last-child {
+      margin-right: 0px; }
+    .toggle-group label input {
+      display: none; }
+      .toggle-group label input:checked + span {
+        background: #8ec439;
+        color: #FFF; }
+    .toggle-group label span {
+      display: block;
+      width: 100%;
+      height: 36px;
+      background: #dadada;
+      border-radius: 2px;
+      color: #707070;
+      font: bold 11px/36px "KIA", sans-serif;
+      letter-spacing: 1.4px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 @keyframes loading-bar {
   0% {
@@ -3489,7 +4029,8 @@ footer {
       color: #8E8E8E;
       letter-spacing: 0.6px;
       vertical-align: middle;
-      margin-right: 20px; }
+      margin-right: 20px;
+      margin-bottom: 0; }
     footer .footer-bottom ul.social-icons {
       display: inline-block;
       vertical-align: middle;

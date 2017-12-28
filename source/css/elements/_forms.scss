@@ -5,6 +5,14 @@
     width: 100%;
     max-width: 275px;
     margin: 0 auto;
+    font-size: 0px;
+    .half {
+      width: 45%;
+      display: inline-block;
+      + .half {
+        margin-left: 10%;
+      }
+    }
     .form-footer {
       padding-top: 25px;
       padding-bottom: 25px;
@@ -93,7 +101,7 @@ form {
     margin: 0;
     list-style: none;
     text-align: left;
-    li {
+    > li {
       margin-bottom: 15px;
       &.error {
         label {
@@ -335,6 +343,24 @@ form {
       line-height: 40px;
     }
   }
+  &.small {
+    button {
+      height: 40px;
+      line-height: 38px;
+    }
+  }
+}
+
+.checkbox-group {
+  .checkbox-round {
+    margin: 0 4px;
+    &:first-child {
+      margin-left: 0px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 
 .checkbox {
@@ -346,6 +372,47 @@ form {
       padding-left: 21px;
       height: 21px;
       display: block;
+    }
+  }
+  &.checkbox-round {
+    input[type="checkbox"] {
+      display: none;
+      &:checked {
+        + em {
+          span {
+            color: $white;
+          }
+          &:before {
+            background: #8ec439 !important;
+            border-color: #8ec439 !important;
+          }
+        }
+      }
+    }
+    > em {
+      padding-left: 0px;
+      width: 35px;
+      height: 35px;
+      &:after {
+        display: none;
+      }
+      &:before {
+        width: 35px;
+        height: 36px;
+        border-width: 1px;
+        border-radius: 100%;
+      }
+      span {
+        display: block;
+        z-index: 2;
+        position: relative;
+        height: inherit;
+        width: inherit;
+        text-align: center;
+        font: bold 12px/35px $kia;
+        letter-spacing: .3px;
+        transition: all 250ms $easeOutQuint;
+      }
     }
   }
   input[type="checkbox"] {
@@ -463,7 +530,7 @@ form {
     user-select: none;
     font-style: normal;
     display: block;
-    a {
+    > a {
       color: #bb1a30;
       text-decoration: none;
       font-weight: bold;
@@ -614,6 +681,48 @@ form {
         background: darken(#dadada, 20%);
         color: darken(#707070, 20%);
       }
+    }
+  }
+}
+
+.toggle-group {
+  display: block;
+  white-space: nowrap;
+  label {
+    display: inline-block;
+    width: 50% !important;
+    margin: 0 .5px;
+    &.disabled {
+      pointer-events: none;
+      opacity: .35;
+    }
+    &:first-child {
+      margin-left: 0px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+    input {
+      display: none;
+      &:checked {
+        + span {
+          background: #8ec439;
+          color: $white;
+        }
+      }
+    }
+    span {
+      display: block;
+      width: 100%;
+      height: 36px;
+      background: #dadada;
+      border-radius: 2px;
+      color: #707070;
+      font: bold 11px/36px $kia;
+      letter-spacing: 1.4px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 250ms $easeOutQuint;
     }
   }
 }

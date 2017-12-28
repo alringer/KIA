@@ -14,7 +14,7 @@
   
   <!-- VIEW CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-  <link rel="stylesheet" href="/css/view-my-car-zone.css">
+  <link rel="stylesheet" href="/css/view-schedules.css">
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -32,7 +32,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="/scripts/my-car-zone.js"></script>
+  <script type="text/javascript" src="/scripts/schedules.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
   
@@ -48,7 +48,7 @@
   </head>
 <body ontouchstart="">
 
-<div class="view-my-car-zone">
+<div class="view-schedules">
   <div class="has-mobile-nav">
     <nav class="nav-app">
       <div class="nav-app-main">
@@ -693,7 +693,7 @@
     
     <div class="nav-mobile">
           <div class="contain">
-            <h1>My Car Zone</h1>
+            <h1>Schedules</h1>
             <ul class="mobile-nav-options">
               <li>
                 <span data-toggle="modal" data-target="#add-alert">
@@ -707,248 +707,85 @@
         </div><!-- /.nav-mobile -->
         
     <div class="page-view">
-      <div class="my-car-zone-empty-state">
-        <div class="my-car-zone-empty-state-inner">
-          <i class="icon-my-car-zone-empty-state"></i>
+      <div class="schedules-empty-state">
+        <div class="schedules-empty-state-inner">
+          <i class="icon-schedules-empty-state"></i>
           <h2>
-            Create an alert
+            Create a schedule!
           </h2>
           <p>
-            Make sure you’re kids aren’t driving past their curfew, driving too fast, or entering or leaving an area they shouldn’t be. Set up My Car Zone alerts and keep your family safe.
+            Do you charge your vehicle the same time every day? Or maybe you like your car at certain temperature every morning? Schedules can help with that. Create one today!
           </p>
-          <span class="button dark-icon less-padding" data-toggle="modal" data-target="#add-my-car-zone-alert">
+          <span class="button dark-icon less-padding" data-toggle="modal" data-target="#add-schedules">
             <i class="fa fa-plus"></i>
-            Create Alert
+            Create Schedule
           </span>
-        </div><!-- /.my-car-zone-empty-state-inner -->
-      </div><!-- /.my-car-zone-empty-state -->
+        </div><!-- /.schedules-empty-state-inner -->
+      </div><!-- /.schedules-empty-state -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
-</div><!-- /.view-my-car-zone -->
-<div class="modal fade add-my-car-zone-alert" id="add-my-car-zone-alert" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+</div><!-- /.view-schedules -->
+<div class="modal fade add-schedules" id="add-schedules" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
       <div class="modal-body">
-        <div id="my-car-zone-alert-modal-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="schedules-modal-slider" class="carousel slide" data-ride="carousel" data-interval="false">
           <div class="carousel-inner">
             <div class="item active">
               <div class="modal-create-alert">
                 <strong class="modal-title">
-                  Create an alert
+                  Choose Schedule Type
                 </strong>
                 <p>
                   <strong>Note: </strong>
-                  If you’ve created the max number of alerts allowed, try editing or deleting your existing alerts.
+                  If you’ve created the max number of schedules allowed, try editing or deleting your existing schedules.
                 </p>
                 <ul class="alert-choices">
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="1">
+                  <li data-target="#schedules-modal-slider" data-slide-to="1">
                     <i></i>
                     <strong>
-                      Speed Alert
+                      Climate Schedule
                     </strong>
-                    <em>0 of 1 alerts created</em>
+                    <em>0 of 2 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="4">
+                  <li data-target="#schedules-modal-slider" data-slide-to="2">
                     <i></i>
                     <strong>
-                      Curfew Alert
+                      Charge Schedule
                     </strong>
-                    <em>0 of 3 alerts created</em>
-                    <i class="icon-arrow-right"></i>
-                  </li>
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="5">
-                    <i></i>
-                    <strong>
-                      Geo Fence Alert
-                    </strong>
-                    <em>2 of 6 alerts created</em>
+                    <em>0 of 2 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
                 </ul>
               </div><!-- /.modal-create-alert -->
             </div><!-- /.item -->
             <div class="item show-back">
-              <div class="modal-speed-alert">
-                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="0"></span>
+              <div class="modal-climate-schedule">
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="0"></span>
                 <strong class="modal-title">
-                  Speed Alert
+                  Create Climate Schedule
                 </strong>
-                <span class="copy" data-target="#my-car-zone-alert-modal-slider" data-slide-to="2">
-                  <i class="icon-copy">
-                    <svg width="17px" height="22px" viewBox="0 0 17 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Curfew-|-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-330.000000, -314.000000)">
-                            <g id="Modal-Copy" transform="translate(195.000000, 239.000000)" fill="#C4172C" fill-rule="nonzero">
-                                <g id="Group-4" transform="translate(135.000000, 73.000000)">
-                                    <path d="M2.96222222,2 L16.7,2 L16.7,21.2622222 L2.96222222,21.2622222 L2.96222222,2 Z M1.86222222,22.3377778 L2.96222222,22.3377778 L13.9622222,22.3377778 L13.9622222,24 L0.2,24 L0.2,4.73777778 L1.86222222,4.73777778 L1.86222222,21.2622222 L1.86222222,22.3377778 Z" id="Combined-Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                  </i>
-                  Copy From...
-                </span>
                 <form>
                   <ul class="form-fields">
-                    <li>
-                      <div class="row">
-                        <div class="col-xs-9">
-                          <label>
-                            <strong>
-                              Repeat this alert every
-                            </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
-                          </label>
-                        </div><!-- /.col -->
-                        <div class="col-xs-3">
-                          <span class="toggle">
-                            <label>
-                              <strong>Active</strong>
-                              <input type="checkbox" name="toggle" value="1" checked>
-                              <span></span>
-                            </label>
-                          </span>
-                        </div><!-- /.col -->
-                      </div><!-- /.row -->
+                    <li class="less-margin">
+                      <span class="toggle">
+                        <label>
+                          <em>Defroster</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
                     </li>
-                  </ul>
-                  <div class="footer-action">
-                    <span class="button main full" data-dismiss="modal">
-                      Save
-                    </span>
-                  </div>
-                </form>
-              </div><!-- /.modal-curfew-alert -->
-            </div><!-- /.item -->
-            <div class="item">
-              <div class="modal-copy-settings modal-copy-settings-speed">
-                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="3"></span>
-                <strong class="modal-title">
-                  Copy Settings
-                </strong>
-                <p>
-                  If you have a speed threshold set on another vehicle, you can copy it’s settings and apply them to this vehicle.
-                </p>
-                <ul class="copy-options">
-                  <li>
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="car-info">
-                          <span class="car-info-meta">
-                            <em>
-                              2017 Niro
-                            </em>
-                            <strong>
-                              My Optima
-                            </strong>
-                          </span>
-                        </span><!-- /.car-info -->
-                        <span class="settings-meta">
-                          <span>
-                            <strong>max speed</strong>
-                            <em>70 mph</em>
-                          </span>
-                          <span>
-                            <strong>Repeat Every</strong>
-                            <em>5 mins</em>
-                          </span>
-                          <span>
-                            <strong>Active</strong>
-                            <em>Yes</em>
-                          </span>
-                        </span>
-                      </em>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="car-info">
-                          <span class="car-info-meta">
-                            <em>
-                              2017 Niro
-                            </em>
-                            <strong>
-                              My Optima
-                            </strong>
-                          </span>
-                        </span><!-- /.car-info -->
-                        <span class="settings-meta">
-                          <span>
-                            <strong>max speed</strong>
-                            <em>70 mph</em>
-                          </span>
-                          <span>
-                            <strong>Repeat Every</strong>
-                            <em>5 mins</em>
-                          </span>
-                          <span>
-                            <strong>Active</strong>
-                            <em>Yes</em>
-                          </span>
-                        </span>
-                      </em>
-                    </label>
-                  </li>
-                </ul>
-                <div class="modal-actions">
-                  <span class="button main full" data-target="#my-car-zone-alert-modal-slider" data-slide-to="1">
-                    Copy these settings
-                  </span>
-                </div>
-              </div><!-- /.modal-copy-settings-curfew -->
-            </div><!-- /.item -->
-            <div class="item show-back">
-              <div class="modal-curfew-alert">
-                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="0"></span>
-                <strong class="modal-title">
-                  Create a curfew alert
-                </strong>
-                <span class="copy" data-target="#my-car-zone-alert-modal-slider" data-slide-to="4">
-                  <i class="icon-copy">
-                    <svg width="17px" height="22px" viewBox="0 0 17 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Curfew-|-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-330.000000, -314.000000)">
-                            <g id="Modal-Copy" transform="translate(195.000000, 239.000000)" fill="#C4172C" fill-rule="nonzero">
-                                <g id="Group-4" transform="translate(135.000000, 73.000000)">
-                                    <path d="M2.96222222,2 L16.7,2 L16.7,21.2622222 L2.96222222,21.2622222 L2.96222222,2 Z M1.86222222,22.3377778 L2.96222222,22.3377778 L13.9622222,22.3377778 L13.9622222,24 L0.2,24 L0.2,4.73777778 L1.86222222,4.73777778 L1.86222222,21.2622222 L1.86222222,22.3377778 Z" id="Combined-Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                  </i>
-                  Copy From...
-                </span>
-                <form>
-                  <ul class="form-fields">
                     <li>
-                      <label>
-                        <strong>
-                          Name
-                        </strong>
-                        <input type="text" placeholder="Tim's Curfew" />
-                        <span class="error-message">
-                          <span class="error-message-inner">
-                            {{ add error message }}
-                          </span>
-                        </span>
-                      </label>
+                      <span class="toggle">
+                        <label>
+                          <em>Heated Accessories</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
                     </li>
                     <li>
                       <label>
@@ -1043,39 +880,13 @@
                       </div><!-- /.row -->
                     </li>
                     <li>
-                      <div class="row">
-                        <div class="col-xs-9">
-                          <label>
-                            <strong>
-                              Repeat this alert every
-                            </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
-                          </label>
-                        </div><!-- /.col -->
-                        <div class="col-xs-3">
-                          <span class="toggle">
-                            <label>
-                              <strong>Active</strong>
-                              <input type="checkbox" name="toggle" value="1" checked>
-                              <span></span>
-                            </label>
-                          </span>
-                        </div><!-- /.col -->
-                      </div><!-- /.row -->
+                      <span class="toggle no-border">
+                        <label>
+                          <em>Heated Accessories</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
                     </li>
                   </ul>
                   <div class="footer-action">
@@ -1084,114 +895,79 @@
                     </span>
                   </div>
                 </form>
-              </div><!-- /.modal-curfew-alert -->
+              </div><!-- /.modal-climate-schedule -->
             </div><!-- /.item -->
             <div class="item show-back">
-              <div class="modal-copy-settings modal-copy-settings-curfew">
-                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="3"></span>
+              <div class="modal-charge-schedule">
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="0"></span>
                 <strong class="modal-title">
-                  Copy Settings
+                  Create Charge Schedule
                 </strong>
-                <p>
-                  If you have a curfew set on another vehicle, you can copy it’s settings and apply them to this vehicle.
-                </p>
-                <ul class="copy-options">
-                  <li>
-                    <span class="car-info">
-                      <span class="car-info-meta">
-                        <em>
-                          2017 Niro
-                        </em>
-                        <strong>
-                          My Optima
-                        </strong>
-                      </span>
-                    </span><!-- /.car-info -->
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="settings-meta">
-                          <strong>School Week</strong>
-                          <em>M, Tu,W, Th, Fr, 9:00 PM - 6:00 AM</em>
-                        </span>
-                      </em>
-                    </label>
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="settings-meta">
-                          <strong>Curfew</strong>
-                          <em>Sa, Sun 11:00 PM - 6:00 AM</em>
-                        </span>
-                      </em>
-                    </label>
-                  </li>
-                  <li>
-                    <span class="car-info">
-                      <span class="car-info-meta">
-                        <em>
-                          2017 Niro
-                        </em>
-                        <strong>
-                          My Optima
-                        </strong>
-                      </span>
-                    </span><!-- /.car-info -->
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="settings-meta">
-                          <strong>School Week</strong>
-                          <em>M, Tu,W, Th, Fr, 9:00 PM - 6:00 AM</em>
-                        </span>
-                      </em>
-                    </label>
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="settings-meta">
-                          <strong>Curfew</strong>
-                          <em>Sa, Sun 11:00 PM - 6:00 AM</em>
-                        </span>
-                      </em>
-                    </label>
-                  </li>
-                </ul>
-                <div class="modal-actions">
-                  <span class="button main full" data-target="#my-car-zone-alert-modal-slider" data-slide-to="3">
-                    Copy these settings
-                  </span>
-                </div>
-              </div><!-- /.modal-copy-settings-curfew -->
-            </div><!-- /.item -->
-            <div class="item show-back">
-              <div class="modal-geofence-alert">
-                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="0"></span>
-                <strong class="modal-title">
-                  Create A Geo Fence
-                </strong>
-                <span class="copy" data-target="#my-car-zone-alert-modal-slider" data-slide-to="7">
-                  <i class="icon-copy">
-                    <svg width="17px" height="22px" viewBox="0 0 17 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Curfew-|-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-330.000000, -314.000000)">
-                            <g id="Modal-Copy" transform="translate(195.000000, 239.000000)" fill="#C4172C" fill-rule="nonzero">
-                                <g id="Group-4" transform="translate(135.000000, 73.000000)">
-                                    <path d="M2.96222222,2 L16.7,2 L16.7,21.2622222 L2.96222222,21.2622222 L2.96222222,2 Z M1.86222222,22.3377778 L2.96222222,22.3377778 L13.9622222,22.3377778 L13.9622222,24 L0.2,24 L0.2,4.73777778 L1.86222222,4.73777778 L1.86222222,21.2622222 L1.86222222,22.3377778 Z" id="Combined-Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                  </i>
-                  Copy From...
-                </span>
                 <form>
                   <ul class="form-fields">
                     <li>
                       <label>
                         <strong>
-                          Name
+                          What days will this be active?
                         </strong>
-                        <input type="text" placeholder="Our Neighborhood" />
+                      </label>
+                      <div class="checkbox-group">
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>M</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Tu</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>W</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Th</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>F</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                      </div><!-- /.checkbox-group -->
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          Start Time
+                        </strong>
+                        <select class="selectpicker small">
+                          <option value="7pm">7:00pm</option>
+                          <option value="730pm">7:30pm</option>
+                          <option value="8pm">8:30pm</option>
+                          <option value="9pm">9:00pm</option>
+                          <option value="10pm">10:00pm</option>
+                        </select>
                         <span class="error-message">
                           <span class="error-message-inner">
                             {{ add error message }}
@@ -1199,35 +975,129 @@
                         </span>
                       </label>
                     </li>
+                    <li  class="less-margin">
+                      <label for="stop-charge-at">
+                        <strong>Stop Charging At</strong>
+                      </label>
+                    </li>
+                    <li class="less-margin">
+                      <label class="radio">
+                        <input type="radio" name="stop_charge_at" id="stop-charge-at" value="" checked>
+                        <em>
+                          <span>80%</span>
+                        </em>
+                      </label>
+                    </li>
+                    <li class="less-margin">
+                      <label class="radio">
+                        <input type="radio" name="stop_charge_at" value="">
+                        <em>
+                          <span>100%</span>
+                        </em>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio" name="stop_charge_at" value="">
+                        <em>
+                          <select class="selectpicker small" data-title="A specific time...">
+                            <option value="7pm">7:00pm</option>
+                            <option value="730pm">7:30pm</option>
+                            <option value="8pm">8:30pm</option>
+                            <option value="9pm">9:00pm</option>
+                            <option value="10pm">10:00pm</option>
+                          </select>
+                        </em>
+                      </label>
+                    </li>
+                    <li>
+                      <span class="toggle border-top">
+                        <label>
+                          <em>Turn this schedule on?</em>
+                          <input type="checkbox" name="toggle" value="1" checked>
+                          <span></span>
+                        </label>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="footer-action">
+                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="3">
+                      Save (demo -> next type)
+                    </span>
+                  </div>
+                </form>
+              </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-charge-schedule">
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="0"></span>
+                <strong class="modal-title">
+                  Create Charge Schedule
+                </strong>
+                <form>
+                  <ul class="form-fields">
+                    <li>
+                      <strong class="form-section-headline">
+                        First Departure Time
+                      </strong>
+                    </li>
                     <li>
                       <label>
                         <strong>
-                          notify me when my vehicle
+                          What days will this be active?
                         </strong>
                       </label>
-                      <span class="toggle-group">
-                        <label>
-                          <input type="radio" name="toggle-group" value="1" checked>
-                          <span>Enters a boudry</span>
+                      <div class="checkbox-group">
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
                         </label>
-                        <label class="disabled">
-                          <input type="radio" name="toggle-group" value="2">
-                          <span>Exits a boudry</span>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>M</span>
+                          </em>
                         </label>
-                      </span>
-                      <span class="note">
-                        <strong>
-                          NOTE:
-                        </strong>
-                        <em>You can only create one on-exit alert. </em>
-                      </span>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Tu</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>W</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Th</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>F</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                      </div><!-- /.checkbox-group -->
                     </li>
-                    <li>
+                    <li class="border-bottom">
                       <div class="row">
                         <div class="col-xs-6">
                           <label>
                             <strong>
-                              Start Time
+                              Departure Time
                             </strong>
                             <select class="selectpicker small">
                               <option value="7pm">7:00pm</option>
@@ -1244,41 +1114,85 @@
                           </label>
                         </div><!-- /.col -->
                         <div class="col-xs-6">
-                          <label>
-                            <strong>
-                              End Time
-                            </strong>
-                            <select class="selectpicker small">
-                              <option value="7pm">7:00pm</option>
-                              <option value="730pm">7:30pm</option>
-                              <option value="8pm">8:30pm</option>
-                              <option value="9pm">9:00pm</option>
-                              <option value="10pm">10:00pm</option>
-                            </select>
-                            <span class="error-message">
-                              {{ add error message }}
-                              </span>
-                            </span>
-                          </label>
+                          <span class="toggle">
+                            <label>
+                              <strong>Turn this schedule on?</strong>
+                              <input type="checkbox" name="toggle" value="1" checked>
+                              <span></span>
+                            </label>
+                          </span>
                         </div><!-- /.col -->
                       </div><!-- /.row -->
                     </li>
                     <li>
+                      <strong class="form-section-headline">
+                        Second Departure Time
+                      </strong>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          What days will this be active?
+                        </strong>
+                      </label>
+                      <div class="checkbox-group">
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>M</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Tu</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>W</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Th</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>F</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                      </div><!-- /.checkbox-group -->
+                    </li>
+                    <li>
                       <div class="row">
-                        <div class="col-xs-9">
+                        <div class="col-xs-6">
                           <label>
                             <strong>
-                              Repeat this alert every
+                              Departure Time
                             </strong>
                             <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
                             </select>
                             <span class="error-message">
                               <span class="error-message-inner">
@@ -1287,10 +1201,10 @@
                             </span>
                           </label>
                         </div><!-- /.col -->
-                        <div class="col-xs-3">
+                        <div class="col-xs-6">
                           <span class="toggle">
                             <label>
-                              <strong>Active</strong>
+                              <strong>Turn this schedule on?</strong>
                               <input type="checkbox" name="toggle" value="1" checked>
                               <span></span>
                             </label>
@@ -1300,100 +1214,166 @@
                     </li>
                   </ul>
                   <div class="footer-action">
-                    <span class="button main full" data-target="#my-car-zone-alert-modal-slider" data-slide-to="6">
-                      Next: Set Boundries
+                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="4">
+                      Next: Review off-peak times
                     </span>
                   </div>
                 </form>
-              </div><!-- /.modal-geofence-alert -->
-            </div><!-- /.item -->
-            <div class="item">
-              <div class="modal-set-boundaries">
-                <strong class="modal-title">
-                  Set Boundaries
-                </strong>
-                <div class="map-wrap">
-                  <div class="map">
-
-                  </div><!-- /.map -->
-                  <div class="map-search">
-                    <input type="text" name="" value="" placeholder="Search by city, address or zipcode" />
-                  </div><!-- /.ma-search -->
-                </div><!-- /.map-wrap -->
-                <div class="slider-bar">
-                  <div class="slider-bar-control down">-</div>
-                  <div class="slider-bar-control up">+</div>
-                  <div class="slider-bar-js"></div>
-                  <div class="slider-bar-js-blue"></div>
-                </div>
-                <div class="modal-actions">
-                  <span class="button full" data-dismiss="modal">
-                    Save Geo Fence
-                  </span>
-                </div><!-- /.modal-actions -->
-              </div><!-- /.modal-set-boundaries -->
+              </div><!-- /.modal-climate-schedule -->
             </div><!-- /.item -->
             <div class="item show-back">
-              <div class="modal-copy-settings modal-copy-settings-geofence">
-                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="5"></span>
+              <div class="modal-charge-schedule">
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="3"></span>
                 <strong class="modal-title">
-                  Copy Settings
+                  Review off-peak times
                 </strong>
-                <p>
-                  If you have a geo fence set on another vehicle, you can copy it’s settings and apply them to this vehicle.
-                </p>
-                <ul class="copy-options">
-                  <li>
-                    <span class="car-info">
-                      <span class="car-info-meta">
+                <form>
+                  <ul class="form-fields">
+                    <li>
+                      <strong class="form-section-subline">
+                        YOUR UTILITY PROVIDERS OFF-PEAK TIMES
+                      </strong>
+                    </li>
+                    <li class="center-radio">
+                      <label class="radio centered">
+                        <input type="radio" name="peak_option"  value="">
                         <em>
-                          2017 Niro
+                          <span>
+                            Ignore off-peak times
+                          </span>
                         </em>
-                        <strong>
-                          My Optima
-                        </strong>
-                      </span>
-                    </span><!-- /.car-info -->
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="settings-meta">
-                          <strong>Our Neighborhood</strong>
-                          <em>On-Entry, 3.11 mi. radius</em>
-                        </span>
-                      </em>
-                      <div class="map"></div>
-                    </label>
-                  </li>
-                  <li>
-                    <span class="car-info">
-                      <span class="car-info-meta">
+                      </label>
+                      <label class="radio centered">
+                        <input type="radio" name="peak_option"  value="">
                         <em>
-                          2017 Niro
+                          <span>
+                            Maximize off-peak times
+                          </span>
                         </em>
-                        <strong>
-                          My Optima
-                        </strong>
-                      </span>
-                    </span><!-- /.car-info -->
-                    <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
-                      <em>
-                        <span class="settings-meta">
-                          <strong>Another Geo Fence</strong>
-                          <em>On-Entry, 3.11 mi. radius</em>
-                        </span>
-                      </em>
-                      <div class="map"></div>
-                    </label>
-                  </li>
-                </ul>
+                      </label>
+                      <label class="radio centered">
+                        <input type="radio" name="peak_option"  value="">
+                        <em>
+                          <span>
+                            Off-peak times only
+                          </span>
+                        </em>
+                      </label>
+                    </li>
+                    <li class="double-dropdowns">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <label>
+                            <strong>
+                              Weekdays (M-F)
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                        <div class="col-xs-6">
+                          <label>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
+                    </li>
+                    <li class="double-dropdowns">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <label>
+                            <strong>
+                              Weekends (Sa-Su)
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                        <div class="col-xs-6">
+                          <label>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
+                    </li>
+                  </ul>
+                  <div class="footer-action">
+                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="5">
+                      Next: Review &amp; Save
+                    </span>
+                  </div>
+                </form>
+              </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-charge-schedule final-step">
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="4"></span>
+                <strong class="modal-title">
+                  Review your schedule
+                </strong>
+                <div class="final-step-content">
+                  <p>Your vehicle will charge between the following times:</p>
+                  <ul>
+                    <li>
+                      1:10 AM (M-F)
+                    </li>
+                    <li>
+                      3:30 AM - 4:20 AM (M-Su)
+                    </li>
+                  </ul>
+                  <p class="note">
+                    <strong>Note:</strong>
+                    Your high-voltage battery may not charge to 100% before your departure time. If this is a mistake, please go back and <strong>deselect Off-Peak Only</strong>.
+                  </p>
+                </div><!-- /.final-step-content -->
                 <div class="modal-actions">
-                  <span class="button main full" data-target="#my-car-zone-alert-modal-slider" data-slide-to="5">
-                    Copy these settings
+                  <span class="button full"  data-dismiss="modal">
+                    Save And Close
                   </span>
-                </div>
-              </div><!-- /.modal-copy-settings-curfew -->
+                </div><!-- /.modal-actions -->
+              </div><!-- /.modal-charge-schedule -->
             </div><!-- /.item -->
           </div><!-- /.carousel-inner -->
         </div><!-- /.carousel -->
@@ -1403,14 +1383,7 @@
 </div><!-- /.modal -->
 <script type="text/javascript">
     $(window).on('load',function(){
-      // $('#add-my-car-zone-alert').modal('show');
-      $( ".slider-bar-js" ).slider({
-         slide: function( event, ui ) {
-           $('.slider-bar-js-blue').css({
-             width : ui.value + '%',
-           })
-         }
-      });
+      // $('#add-schedules').modal('show');
     });
 </script>
   <footer>

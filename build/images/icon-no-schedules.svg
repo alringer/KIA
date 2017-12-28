@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="98" viewBox="0 0 98 98">
+    <defs>
+        <circle id="a" cx="48" cy="48" r="48"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use stroke="#CECECE" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <g transform="translate(24 20)">
+                <path stroke="#CDCDCD" d="M40.227 9.635h3.755a4.009 4.009 0 0 1 4.009 4.008v36.703a4.008 4.008 0 0 1-4.01 4.007H4.01A4.009 4.009 0 0 1 0 50.346V13.643a4.008 4.008 0 0 1 4.01-4.008h3.602v.733a6.422 6.422 0 0 0 6.427 6.42c3.543 0 6.428-2.874 6.428-6.42v-.733h6.906v.733a6.425 6.425 0 0 0 6.427 6.42c3.543 0 6.427-2.874 6.427-6.42v-.733z"/>
+                <rect width="8.834" height="8.726" x="5.453" y="24.905" fill="#CECECE" rx="1"/>
+                <rect width="8.726" height="8.726" x="19.633" y="24.905" fill="#CECECE" rx="1"/>
+                <rect width="8.726" height="8.726" x="33.812" y="24.905" fill="#CECECE" rx="1"/>
+                <rect width="8.726" height="8.726" x="5.646" y="39.084" fill="#CECECE" rx="1"/>
+                <rect width="8.726" height="8.726" x="19.761" y="39.084" fill="#CECECE" rx="1"/>
+                <rect width="8.726" height="8.726" x="33.876" y="39.084" fill="#CECECE" rx="1"/>
+                <rect width="3" height="11.153" x="12.292" fill="#CECECE" rx="1.5"/>
+                <rect width="3" height="11.004" x="32.053" fill="#CECECE" rx="1.5"/>
+            </g>
+        </g>
+    </g>
+</svg>
