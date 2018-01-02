@@ -2283,6 +2283,7 @@ body.modal-open {
 }
 
 .add-schedules,
+.edit-geofence-alert,
 .add-my-car-zone-alert {
   .modal-dialog {
     max-width: 425px;
@@ -2437,6 +2438,62 @@ body.modal-open {
         padding-top: 10px;
         em {
           font-style: normal;
+        }
+      }
+    }
+    .footer-action {
+      &.dual {
+        strong {
+          display: block;
+          font: bold 14px/1.5em $sans;
+          letter-spacing: .6px;
+          margin-bottom: 17px;
+        }
+        .secondary {
+          color: $red;
+          font: bold 11px/1em $kia;
+          display: inline-block;
+          vertical-align: middle;
+          text-transform: uppercase;
+          letter-spacing: .7px;
+          margin-right: 40px;
+          cursor: pointer;
+          transition: all 250ms $easeOutQuint;
+          margin-left: 10px;
+          text-decoration: none !important;
+          i.icon-delete {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            position: relative;
+            top: -2px;
+            svg {
+              * {
+                fill: $red !important;
+                transition: all 250ms $easeOutQuint;
+              }
+            }
+          }
+          &:hover {
+            color: darken($red, 20%);
+            i.icon-delete {
+              svg {
+                * {
+                  fill: darken($red, 20%) !important;
+                }
+              }
+            }
+          }
+        }
+        .button {
+          display: inline-block;
+          min-width: 50%;
+          padding: 0 15px;
+          vertical-align: middle;
+          &.outline {
+            min-width: 135px;
+            margin-left: 10px;
+          }
         }
       }
     }
