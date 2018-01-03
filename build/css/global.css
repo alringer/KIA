@@ -1935,6 +1935,7 @@ body.modal-open {
           padding-right: 25px; } }
 
 .add-schedules .modal-dialog,
+.edit-climate-schedule .modal-dialog,
 .edit-geofence-alert .modal-dialog,
 .edit-speed-alert .modal-dialog,
 .edit-curfew-alert .modal-dialog,
@@ -1942,6 +1943,7 @@ body.modal-open {
   max-width: 425px; }
 
 .add-schedules .copy,
+.edit-climate-schedule .copy,
 .edit-geofence-alert .copy,
 .edit-speed-alert .copy,
 .edit-curfew-alert .copy,
@@ -1954,6 +1956,7 @@ body.modal-open {
   transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
   color: #C4172C; }
   .add-schedules .copy .icon-copy,
+  .edit-climate-schedule .copy .icon-copy,
   .edit-geofence-alert .copy .icon-copy,
   .edit-speed-alert .copy .icon-copy,
   .edit-curfew-alert .copy .icon-copy,
@@ -1962,6 +1965,7 @@ body.modal-open {
     vertical-align: middle;
     margin-right: 10px; }
     .add-schedules .copy .icon-copy svg path,
+    .edit-climate-schedule .copy .icon-copy svg path,
     .edit-geofence-alert .copy .icon-copy svg path,
     .edit-speed-alert .copy .icon-copy svg path,
     .edit-curfew-alert .copy .icon-copy svg path,
@@ -1969,12 +1973,14 @@ body.modal-open {
       fill: #C4172C !important;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
   .add-schedules .copy:hover,
+  .edit-climate-schedule .copy:hover,
   .edit-geofence-alert .copy:hover,
   .edit-speed-alert .copy:hover,
   .edit-curfew-alert .copy:hover,
   .add-my-car-zone-alert .copy:hover {
     color: #690c18; }
     .add-schedules .copy:hover svg path,
+    .edit-climate-schedule .copy:hover svg path,
     .edit-geofence-alert .copy:hover svg path,
     .edit-speed-alert .copy:hover svg path,
     .edit-curfew-alert .copy:hover svg path,

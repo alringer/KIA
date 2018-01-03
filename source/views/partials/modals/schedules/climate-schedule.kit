@@ -1,0 +1,175 @@
+<div class="modal fade edit-climate-schedule" id="edit-climate-schedule" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div id="edit-climate-schedule-modal-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-climate-schedule">
+                <strong class="modal-title">
+                  Create Climate Schedule
+                </strong>
+                <form>
+                  <ul class="form-fields">
+                    <li class="less-margin">
+                      <span class="toggle">
+                        <label>
+                          <em>Defroster</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="toggle">
+                        <label>
+                          <em>Heated Accessories</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          What days will this be active?
+                        </strong>
+                      </label>
+                      <div class="checkbox-group">
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>M</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Tu</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>W</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Th</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>F</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                      </div><!-- /.checkbox-group -->
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <label>
+                            <strong>
+                              Start Time
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                        <div class="col-xs-6">
+                          <label>
+                            <strong>
+                              End Time
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
+                    </li>
+                    <li>
+                      <span class="toggle no-border">
+                        <label>
+                          <em>Heated Accessories</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="footer-action dual">
+                    <div class="tab-content">
+                      <div id="delete-climate-schedule-1" class="tab-pane fade in active">
+                        <a data-toggle="tab" href="#delete-climate-schedule-2" class="secondary">
+                          <i class="icon-delete">
+                            <svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Edit-Driving-Rule-|-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-27.000000, -523.000000)">
+                                <g id="Group-2" transform="translate(27.000000, 520.000000)" fill="#C4172C">
+                                  <path d="M4,4 L4,3 L7,3 L7,4 L10.0044225,4 C10.5542648,4 11,4.44386482 11,5 L11,6 L0,6 L0,5 C0,4.44771525 0.444836974,4 0.995577499,4 L4,4 Z M1,7 L10,7 L10,17.0044225 C10,17.5542648 9.5536886,18 9.00245535,18 L1.99754465,18 C1.44661595,18 1,17.555163 1,17.0044225 L1,7 Z" id="Combined-Shape"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          Delete
+                        </a>
+                        <span class="button main" data-dismiss="modal">
+                          Save
+                        </span>
+                      </div><!-- /.tab-pane -->
+                      <div class="tab-pane fade in" id="delete-climate-schedule-2">
+                        <strong>
+                          Are you sure you want to delete this?
+                        </strong>
+                        <span class="button main" data-dismiss="modal">
+                          Yes, Delete
+                        </span>
+                        <a class="button outline" data-toggle="tab" href="#delete-climate-schedule-1">
+                          Cancel
+                        </a>
+                      </div><!-- /.tab-pane -->
+                    </div><!-- /.tab-content -->
+                  </div>
+                </form>
+              </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
