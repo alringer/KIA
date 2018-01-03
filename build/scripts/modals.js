@@ -104,6 +104,14 @@ $(document).ready(function () {
         setTimeout(function () {
           $(next_modal).modal('show');
         }, 400);
+      },
+      _reset: function _reset() {
+        window.modals.elements.modal.find('.carousel').carousel(0);
+        window.modals.elements.modal.find('.tab-content').each(function () {
+          var $this = $(this),
+              tab_id = $this.find('.tab-pane').first().attr('id');
+          $('a[href="#' + tab_id + '"]').tab('show');
+        });
       }
     }
   };
@@ -114,6 +122,7 @@ $(document).ready(function () {
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._modal_slider_fix);
   window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._modal_slider_fix);
+  window.modals.elements.modal.on('hidden.bs.modal', window.modals.methods._reset);
   window.modals.elements.switch_modals.on('click', window.modals.methods._switch_modals);
   // window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
   // window.modals.elements.html.on('touchmove', window.modals.methods._stop_scroll);
