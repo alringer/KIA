@@ -4468,6 +4468,27 @@
 		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/add-my-car-zone-alert.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/edit-curfew-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/edit-curfew-alert.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/edit-geofence-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/edit-geofence-alert.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/edit-speed-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/edit-speed-alert.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/my-vehicles-modals.kit": {
 		"cB": 0,
 		"ft": 2048,

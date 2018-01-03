@@ -11,7 +11,6 @@ $(document).ready(function() {
     methods : {
       _stop_scroll : (e) => {
         if(window.modals.elements.body.hasClass('stop-scroll')) {
-          console.log('open');
           e.preventDefault();
         }
       },

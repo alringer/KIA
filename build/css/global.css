@@ -1936,11 +1936,15 @@ body.modal-open {
 
 .add-schedules .modal-dialog,
 .edit-geofence-alert .modal-dialog,
+.edit-speed-alert .modal-dialog,
+.edit-curfew-alert .modal-dialog,
 .add-my-car-zone-alert .modal-dialog {
   max-width: 425px; }
 
 .add-schedules .copy,
 .edit-geofence-alert .copy,
+.edit-speed-alert .copy,
+.edit-curfew-alert .copy,
 .add-my-car-zone-alert .copy {
   display: inline-block;
   font: bold 11px/1em "KIA", sans-serif;
@@ -1951,21 +1955,29 @@ body.modal-open {
   color: #C4172C; }
   .add-schedules .copy .icon-copy,
   .edit-geofence-alert .copy .icon-copy,
+  .edit-speed-alert .copy .icon-copy,
+  .edit-curfew-alert .copy .icon-copy,
   .add-my-car-zone-alert .copy .icon-copy {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px; }
     .add-schedules .copy .icon-copy svg path,
     .edit-geofence-alert .copy .icon-copy svg path,
+    .edit-speed-alert .copy .icon-copy svg path,
+    .edit-curfew-alert .copy .icon-copy svg path,
     .add-my-car-zone-alert .copy .icon-copy svg path {
       fill: #C4172C !important;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
   .add-schedules .copy:hover,
   .edit-geofence-alert .copy:hover,
+  .edit-speed-alert .copy:hover,
+  .edit-curfew-alert .copy:hover,
   .add-my-car-zone-alert .copy:hover {
     color: #690c18; }
     .add-schedules .copy:hover svg path,
     .edit-geofence-alert .copy:hover svg path,
+    .edit-speed-alert .copy:hover svg path,
+    .edit-curfew-alert .copy:hover svg path,
     .add-my-car-zone-alert .copy:hover svg path {
       fill: #690c18 !important; }
 

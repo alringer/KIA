@@ -1,0 +1,288 @@
+<div class="modal fade edit-curfew-alert" id="edit-curfew-alert" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div id="edit-curfew-alert-modal-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-curfew-alert">
+                <strong class="modal-title">
+                  Edit a curfew alert
+                </strong>
+                <span class="copy" data-target="#edit-curfew-alert-modal-slider" data-slide-to="1">
+                  <i class="icon-copy">
+                    <svg width="17px" height="22px" viewBox="0 0 17 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Curfew-|-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-330.000000, -314.000000)">
+                            <g id="Modal-Copy" transform="translate(195.000000, 239.000000)" fill="#C4172C" fill-rule="nonzero">
+                                <g id="Group-4" transform="translate(135.000000, 73.000000)">
+                                    <path d="M2.96222222,2 L16.7,2 L16.7,21.2622222 L2.96222222,21.2622222 L2.96222222,2 Z M1.86222222,22.3377778 L2.96222222,22.3377778 L13.9622222,22.3377778 L13.9622222,24 L0.2,24 L0.2,4.73777778 L1.86222222,4.73777778 L1.86222222,21.2622222 L1.86222222,22.3377778 Z" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                  </i>
+                  Copy From...
+                </span>
+                <form>
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>
+                          Name
+                        </strong>
+                        <input type="text" placeholder="Tim's Curfew" />
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            {{ add error message }}
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          What days will this be active?
+                        </strong>
+                      </label>
+                      <div class="checkbox-group">
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>M</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Tu</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>W</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>Th</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="" checked>
+                          <em>
+                            <span>F</span>
+                          </em>
+                        </label>
+                        <label class="checkbox checkbox-round">
+                          <input type="checkbox" name="" value="">
+                          <em>
+                            <span>Su</span>
+                          </em>
+                        </label>
+                      </div><!-- /.checkbox-group -->
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <label>
+                            <strong>
+                              Start Time
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                        <div class="col-xs-6">
+                          <label>
+                            <strong>
+                              End Time
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
+                            <span class="error-message">
+                              {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-9">
+                          <label>
+                            <strong>
+                              Repeat this alert every
+                            </strong>
+                            <select class="selectpicker small">
+                              <option value="5m">5 minutes</option>
+                              <option value="10m">10 minutes</option>
+                              <option value="15m">15 minutes</option>
+                              <option value="20m">20 minutes</option>
+                              <option value="25m">25 minutes</option>
+                              <option value="30m">30 minutes</option>
+                              <option value="45m">45 minutes</option>
+                              <option value="60m">60 minutes</option>
+                            </select>
+                            <span class="error-message">
+                              <span class="error-message-inner">
+                                {{ add error message }}
+                              </span>
+                            </span>
+                          </label>
+                        </div><!-- /.col -->
+                        <div class="col-xs-3">
+                          <span class="toggle">
+                            <label>
+                              <strong>Active</strong>
+                              <input type="checkbox" name="toggle" value="1" checked>
+                              <span></span>
+                            </label>
+                          </span>
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
+                    </li>
+                  </ul>
+                  <div class="footer-action dual">
+                    <div class="tab-content">
+                      <div id="delete-alert-curfew-1" class="tab-pane fade in active">
+                        <a data-toggle="tab" href="#delete-alert-curfew-2" class="secondary">
+                          <i class="icon-delete">
+                            <svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Edit-Driving-Rule-|-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-27.000000, -523.000000)">
+                                <g id="Group-2" transform="translate(27.000000, 520.000000)" fill="#C4172C">
+                                  <path d="M4,4 L4,3 L7,3 L7,4 L10.0044225,4 C10.5542648,4 11,4.44386482 11,5 L11,6 L0,6 L0,5 C0,4.44771525 0.444836974,4 0.995577499,4 L4,4 Z M1,7 L10,7 L10,17.0044225 C10,17.5542648 9.5536886,18 9.00245535,18 L1.99754465,18 C1.44661595,18 1,17.555163 1,17.0044225 L1,7 Z" id="Combined-Shape"></path>
+                                </g>
+                              </g>
+                            </svg>
+                          </i>
+                          Delete
+                        </a>
+                        <span class="button main" data-dismiss="modal">
+                          Save
+                        </span>
+                      </div><!-- /.tab-pane -->
+                      <div class="tab-pane fade in" id="delete-alert-curfew-2">
+                        <strong>
+                          Are you sure you want to delete this?
+                        </strong>
+                        <span class="button main" data-dismiss="modal">
+                          Yes, Delete
+                        </span>
+                        <a class="button outline" data-toggle="tab" href="#delete-alert-curfew-1">
+                          Cancel
+                        </a>
+                      </div><!-- /.tab-pane -->
+                    </div><!-- /.tab-content -->
+                  </div>
+                </form>
+              </div><!-- /.modal-curfew-alert -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-copy-settings modal-copy-settings-curfew">
+                <span class="back" data-target="#edit-curfew-alert-modal-slider" data-slide-to="0"></span>
+                <strong class="modal-title">
+                  Copy Settings
+                </strong>
+                <p>
+                  If you have a curfew set on another vehicle, you can copy it’s settings and apply them to this vehicle.
+                </p>
+                <ul class="copy-options">
+                  <li>
+                    <span class="car-info">
+                      <span class="car-info-meta">
+                        <em>
+                          2017 Niro
+                        </em>
+                        <strong>
+                          My Optima
+                        </strong>
+                      </span>
+                    </span><!-- /.car-info -->
+                    <label class="radio">
+                      <input type="radio" name="copy-settings" value="">
+                      <em>
+                        <span class="settings-meta">
+                          <strong>School Week</strong>
+                          <em>M, Tu,W, Th, Fr, 9:00 PM - 6:00 AM</em>
+                        </span>
+                      </em>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="copy-settings" value="">
+                      <em>
+                        <span class="settings-meta">
+                          <strong>Curfew</strong>
+                          <em>Sa, Sun 11:00 PM - 6:00 AM</em>
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="car-info">
+                      <span class="car-info-meta">
+                        <em>
+                          2017 Niro
+                        </em>
+                        <strong>
+                          My Optima
+                        </strong>
+                      </span>
+                    </span><!-- /.car-info -->
+                    <label class="radio">
+                      <input type="radio" name="copy-settings" value="">
+                      <em>
+                        <span class="settings-meta">
+                          <strong>School Week</strong>
+                          <em>M, Tu,W, Th, Fr, 9:00 PM - 6:00 AM</em>
+                        </span>
+                      </em>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="copy-settings" value="">
+                      <em>
+                        <span class="settings-meta">
+                          <strong>Curfew</strong>
+                          <em>Sa, Sun 11:00 PM - 6:00 AM</em>
+                        </span>
+                      </em>
+                    </label>
+                  </li>
+                </ul>
+                <div class="modal-actions">
+                  <span class="button main full" data-target="#edit-curfew-alert-modal-slider" data-slide-to="3">
+                    Copy these settings
+                  </span>
+                </div>
+              </div><!-- /.modal-copy-settings-curfew -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
