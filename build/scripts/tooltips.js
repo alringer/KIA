@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){window.tooltips={elements:{tooltip:$('[data-toggle="tooltip"]')},methods:{_init:function t(){window.tooltips.elements.tooltip.tooltip()}}},window.tooltips.methods._init()});

@@ -3070,6 +3070,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/tooltips.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/tooltips.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/vendors\/bootstrap\/_bootstrap-compass.scss": {
 		"aP": 0,
 		"bl": 0,
