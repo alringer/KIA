@@ -1083,7 +1083,7 @@
 		"oAP": "\/build\/images\/icon_alert_curfew.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1104,7 +1104,7 @@
 		"oAP": "\/build\/images\/icon_alert_geofence.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1125,7 +1125,7 @@
 		"oAP": "\/build\/images\/icon_alert_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1236,7 +1236,7 @@
 		"oAP": "\/build\/images\/icon_carzone_curfew.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1247,7 +1247,7 @@
 		"oAP": "\/build\/images\/icon_carzone_geofence.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1258,7 +1258,7 @@
 		"oAP": "\/build\/images\/icon_carzone_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1912,7 +1912,7 @@
 		"oAP": "\/build\/images\/icon_no_alerts_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4709,7 +4709,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 535494344
+	"lastBuiltDate": 536702911
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
