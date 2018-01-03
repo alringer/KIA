@@ -2231,9 +2231,15 @@ body.modal-open {
           margin-top: -5px;
         }
       }
-      > img {
-        display: block;
-        margin: 0 auto;
+      &-image {
+        width: calc(100% + 80px);
+        position: relative;
+        left: -40px;
+        background-image: linear-gradient(-180deg, #F7F7F7 0%, #FBFBFB 100%);
+        > img {
+          display: block;
+          margin: 0 auto;
+        }
       }
       > .row {
         margin-top: 44px;

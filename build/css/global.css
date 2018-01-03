@@ -1899,9 +1899,14 @@ body.modal-open {
       letter-spacing: .5px;
       margin-bottom: 26px;
       margin-top: -5px; }
-    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues > img {
-      display: block;
-      margin: 0 auto; }
+    .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues-image {
+      width: calc(100% + 80px);
+      position: relative;
+      left: -40px;
+      background-image: linear-gradient(-180deg, #F7F7F7 0%, #FBFBFB 100%); }
+      .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues-image > img {
+        display: block;
+        margin: 0 auto; }
     .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues > .row {
       margin-top: 44px; }
     .modal.diagnostic-issues .modal-dialog .modal-diagnostic-issues .issues-list li {
