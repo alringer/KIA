@@ -2283,6 +2283,7 @@ body.modal-open {
 }
 
 .add-schedules,
+.edit-charge-schedule,
 .edit-climate-schedule,
 .edit-geofence-alert,
 .edit-speed-alert,
@@ -2629,106 +2630,115 @@ body.modal-open {
     }
   }
 }
-
-.modal-set-boundaries {
-  width: calc(100% + 30px);
-  position: relative;
-  left: -15px;
-  .map-wrap {
+.modal {
+  .modal-set-boundaries {
+    width: calc(100% + 30px);
     position: relative;
-    margin-bottom: 25px;
-    .map {
-      width: 100%;
-      height: 445px;
+    left: -15px;
+    .back {
+      top: 13px !important;
+      @media (max-width: $screen-xs-max) {
+        top: 0px !important;
+      }
     }
-    .map-search {
-      position: absolute;
-      top: 15px;
-      left: 25px;
-      right: 25px;
-      input {
-        display: block;
+    .map-wrap {
+      position: relative;
+      margin-bottom: 25px;
+      .map {
         width: 100%;
-        height: 40px;
-        padding: 0 20px 0 40px;
-        font: 400 14px $sans;
-        letter-spacing: .4px;
-        border: none;
-        box-shadow: 0 0 5px 0 rgba(39, 48, 59, 0.56);
-        border-radius: 3px;
-        background: $white url('/images/icon_search.svg') 13px center no-repeat;
-        outline: none;
+        height: 445px;
       }
-    }
-  }
-  .slider-bar {
-    max-width: calc(100% - 125px);
-    margin: 65px auto 55px;
-    position: relative;
-    &-control {
-      position: absolute;
-      left: -50px;
-      display: block;
-      font: 500 42px/1em $kia;
-      color: $red;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      transition: all 250ms $easeOutQuint;
-      &:hover {
-        color: darken($red, 20%);
-      }
-      &.up {
-        left: auto;
-        right: -50px;
-        margin-top: -1px;
-      }
-      &.down {
-        margin-top: -5px;
-      }
-    }
-    &-js {
-      height: 3px;
-      border: none !important;
-      background: #c1c1c1;
-      span {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        border-radius: 100%;
-        height: 31px;
-        width: 31px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: $white;
-        box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.44);
-        display: block;
-        &:before {
+      .map-search {
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        right: 25px;
+        input {
           display: block;
-          content: '';
-          width: 12px;
-          height: 12px;
-          border-radius: 100%;
-          background: #e0e0e0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 40px;
+          padding: 0 20px 0 40px;
+          font: 400 14px $sans;
+          letter-spacing: .4px;
+          border: none;
+          box-shadow: 0 0 5px 0 rgba(39, 48, 59, 0.56);
+          border-radius: 3px;
+          background: $white url('/images/icon_search.svg') 13px center no-repeat;
+          outline: none;
         }
       }
-      &-blue {
-        height: 3px;
-        background: #4bbef0;
-        width: 0%;
+    }
+    .slider-bar {
+      max-width: calc(100% - 125px);
+      margin: 65px auto 55px;
+      position: relative;
+      &-control {
         position: absolute;
-        top: 0;
-        left: 0;
+        left: -50px;
+        display: block;
+        font: 500 42px/1em $kia;
+        color: $red;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 250ms $easeOutQuint;
+        &:hover {
+          color: darken($red, 20%);
+        }
+        &.up {
+          left: auto;
+          right: -50px;
+          margin-top: -1px;
+        }
+        &.down {
+          margin-top: -5px;
+        }
+      }
+      &-js {
+        height: 3px;
+        border: none !important;
+        background: #c1c1c1;
+        span {
+          position: absolute;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          border-radius: 100%;
+          height: 31px;
+          width: 31px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: $white;
+          box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.44);
+          display: block;
+          &:before {
+            display: block;
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background: #e0e0e0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        &-blue {
+          height: 3px;
+          background: #4bbef0;
+          width: 0%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
       }
     }
-  }
-  .modal-actions {
-    max-width: 298px;
-    margin: 0 auto 25px;
+    .modal-actions {
+      max-width: 318px;
+      margin: 0 auto 25px;
+      padding: 0 10px;
+    }
   }
 }
 

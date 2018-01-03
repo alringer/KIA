@@ -2998,7 +2998,7 @@
 		"oAP": "\/build\/scripts\/my-car-zone.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/my-vehicles.js": {
 		"ft": 64,
@@ -3047,6 +3047,16 @@
 		"oA": 0,
 		"oAP": "\/build\/scripts\/remote-commands.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/slider-bar.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/slider-bar.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4253,9 +4263,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/jquery-knob\/jquery.knob.min.js",
-		"oF": 3,
+		"oF": 2,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4263,9 +4273,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/mixitup\/mixitup.min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4283,9 +4293,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/selectize\/selectize.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4303,9 +4313,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/slick\/slick.min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4538,6 +4548,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/modals\/schedules\/add-schedules.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/schedules\/charge-schedule.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/schedules\/charge-schedule.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/modals\/schedules\/climate-schedule.kit": {
@@ -6584,7 +6601,7 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,

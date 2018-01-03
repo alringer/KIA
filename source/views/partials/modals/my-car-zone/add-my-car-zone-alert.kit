@@ -23,7 +23,7 @@
                     <em>0 of 1 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="4">
+                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="3">
                     <i></i>
                     <strong>
                       Curfew Alert
@@ -308,6 +308,7 @@
                               <option value="10pm">10:00pm</option>
                             </select>
                             <span class="error-message">
+                              <span class="error-message-inner">
                               {{ add error message }}
                               </span>
                             </span>
@@ -529,6 +530,7 @@
                               <option value="10pm">10:00pm</option>
                             </select>
                             <span class="error-message">
+                              <span class="error-message-inner">
                               {{ add error message }}
                               </span>
                             </span>
@@ -580,8 +582,9 @@
                 </form>
               </div><!-- /.modal-geofence-alert -->
             </div><!-- /.item -->
-            <div class="item">
+            <div class="item show-back">
               <div class="modal-set-boundaries">
+                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="5"></span>
                 <strong class="modal-title">
                   Set Boundaries
                 </strong>

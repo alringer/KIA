@@ -33,6 +33,7 @@
   
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="/scripts/my-car-zone.js"></script>
+  <script type="text/javascript" src="/scripts/slider-bar.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
   
@@ -696,7 +697,7 @@
             <h1>My Car Zone</h1>
             <ul class="mobile-nav-options">
               <li>
-                <span data-toggle="modal" data-target="#add-alert">
+                <span data-toggle="modal" data-target="#add-my-car-zone-alert">
                   <svg id="a2513d61-3a1a-465c-917d-2034fe2f4e37" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <path d="M8.4,16h3.2V9.6H18V6.4H11.6V0H8.4V6.4H2V9.6H8.4Z" transform="translate(-2)" style="fill: #9ba1a9"/>
                   </svg>
@@ -750,7 +751,7 @@
                     <em>0 of 1 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="4">
+                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="3">
                     <i></i>
                     <strong>
                       Curfew Alert
@@ -1035,6 +1036,7 @@
                               <option value="10pm">10:00pm</option>
                             </select>
                             <span class="error-message">
+                              <span class="error-message-inner">
                               {{ add error message }}
                               </span>
                             </span>
@@ -1256,6 +1258,7 @@
                               <option value="10pm">10:00pm</option>
                             </select>
                             <span class="error-message">
+                              <span class="error-message-inner">
                               {{ add error message }}
                               </span>
                             </span>
@@ -1307,8 +1310,9 @@
                 </form>
               </div><!-- /.modal-geofence-alert -->
             </div><!-- /.item -->
-            <div class="item">
+            <div class="item show-back">
               <div class="modal-set-boundaries">
+                <span class="back" data-target="#my-car-zone-alert-modal-slider" data-slide-to="5"></span>
                 <strong class="modal-title">
                   Set Boundaries
                 </strong>
@@ -1402,17 +1406,6 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<script type="text/javascript">
-    $(window).on('load',function(){
-      $( ".slider-bar-js" ).slider({
-         slide: function( event, ui ) {
-           $('.slider-bar-js-blue').css({
-             width : ui.value + '%',
-           })
-         }
-      });
-    });
-</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">

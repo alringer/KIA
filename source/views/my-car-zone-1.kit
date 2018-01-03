@@ -9,6 +9,7 @@
   <!-- @import "partials/head/vendors/select.kit" -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="/scripts/my-car-zone.js"></script>
+  <script type="text/javascript" src="/scripts/slider-bar.js"></script>
 
   <!-- @import "partials/head/vendors/map-files.kit" -->
 
@@ -37,15 +38,4 @@
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-my-car-zone -->
 <!-- @import "partials/modals/my-car-zone/add-my-car-zone-alert.kit" -->
-<script type="text/javascript">
-    $(window).on('load',function(){
-      $( ".slider-bar-js" ).slider({
-         slide: function( event, ui ) {
-           $('.slider-bar-js-blue').css({
-             width : ui.value + '%',
-           })
-         }
-      });
-    });
-</script>
 <!-- @import "partials/footer.kit" -->

@@ -6,7 +6,10 @@
 
   <!-- @import "partials/head/global-js.kit" -->
   <!-- VIEW JS -->
+  <!-- @import "partials/head/vendors/select.kit" -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="/scripts/my-car-zone.js"></script>
+  <script type="text/javascript" src="/scripts/slider-bar.js"></script>
 
 <!-- @import "partials/head/head-end.kit" -->
 <div class="view-my-car-zone">
@@ -19,7 +22,7 @@
           <h2 class="pull-left">
             My Car Zone
           </h2>
-          <span class="button dark-icon less-padding pull-right">
+          <span class="button dark-icon less-padding pull-right" data-toggle="modal" data-target="#add-my-car-zone-alert">
             <i class="fa fa-plus"></i>
             Create Rule
           </span>
@@ -73,4 +76,5 @@
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-my-car-zone -->
+<!-- @import "partials/modals/my-car-zone/add-my-car-zone-alert.kit" -->
 <!-- @import "partials/footer.kit" -->
