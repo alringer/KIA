@@ -438,3 +438,23 @@
   left: 15px !important;
   top: 30px !important;
 }
+
+.icon-no-schedule-charge {
+  width: 62px;
+  height: 62px;
+  background: url('/images/icon_no_charge_schedule.png') center/contain no-repeat;
+  @media (max-width: $screen-xs-max) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon-no-schedule-climate {
+  width: 62px;
+  height: 62px;
+  background: url('/images/icon_no_climate_schedule.png') center/contain no-repeat;
+  @media (max-width: $screen-xs-max) {
+    width: 40px;
+    height: 40px;
+  }
+}

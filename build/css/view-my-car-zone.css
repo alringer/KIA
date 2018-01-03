@@ -323,6 +323,24 @@
       width: 40px;
       height: 40px; } }
 
+.icon-no-alerts-geofence {
+  width: 71px;
+  height: 71px;
+  background: url("/images/icon_no_alerts_geofence.png") center/contain no-repeat; }
+  @media (max-width: 767px) {
+    .icon-no-alerts-geofence {
+      width: 40px;
+      height: 40px; } }
+
+.icon-no-alerts-curfew {
+  width: 71px;
+  height: 71px;
+  background: url("/images/icon_no_alerts_curfew.png") center/contain no-repeat; }
+  @media (max-width: 767px) {
+    .icon-no-alerts-curfew {
+      width: 40px;
+      height: 40px; } }
+
 .icon-arrow-right {
   display: block;
   background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat;

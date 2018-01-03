@@ -1,0 +1,77 @@
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-schedules.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/schedules.js"></script>
+
+<!-- @import "partials/head/head-end.kit" -->
+<div class="view-schedules">
+  <div class="has-mobile-nav">
+    <!-- @import "partials/nav-dual.kit" -->
+    <!-- @import "partials/nav-mobile-schedules.kit" -->
+    <div class="page-view">
+      <div class="schedules-wrapper">
+        <div class="schedules-header">
+          <h2 class="pull-left">
+            Schedules
+          </h2>
+          <span class="button dark-icon less-padding pull-right">
+            <i class="fa fa-plus"></i>
+            Create Schedule
+          </span>
+        </div><!-- /.schedules-header -->
+        <div class="schedules-alert-area">
+          <div class="schedules-alert-area-header">
+            <h3 class="pull-left">
+              <i class="icon-geo-fence-alerts"></i>
+              Climate Schedules
+            </h3>
+            <div class="schedules-alert-area-toggle pull-right">
+              <span class="toggle tiny">
+                <label>
+                  <em>All <span>climate schedules</span> on</em>
+                  <input type="checkbox" name="toggle" value="1" checked>
+                  <span></span>
+                </label>
+              </span>
+            </div><!-- /.schedules-alert-area-toggle -->
+          </div><!-- /.schedules-alert-area-header -->
+          <div class="no-alerts-set">
+            <strong>
+              <i class="icon-no-schedule-climate"></i>
+              No climate schedules
+            </strong>
+          </div><!-- /.no-alerts-set -->
+        </div><!-- /.schedules-alert-area -->
+        <div class="schedules-alert-area">
+          <div class="schedules-alert-area-header">
+            <h3 class="pull-left">
+              <i class="icon-geo-fence-alerts"></i>
+              Charge Schedules
+            </h3>
+            <div class="schedules-alert-area-toggle pull-right">
+              <span class="toggle tiny">
+                <label>
+                  <em>All <span>charge schedules</span> on</em>
+                  <input type="checkbox" name="toggle" value="1" checked>
+                  <span></span>
+                </label>
+              </span>
+            </div><!-- /.schedules-alert-area-toggle -->
+          </div><!-- /.schedules-alert-area-header -->
+          <div class="no-alerts-set">
+            <strong>
+              <i class="icon-no-schedule-charge"></i>
+              No charge schedules
+            </strong>
+          </div><!-- /.no-alerts-set -->
+        </div><!-- /.schedules-alert-area -->
+      </div><!-- /.schedules-wrapper -->
+    </div><!-- /.page-view -->
+  </div><!-- /.has-mobile-nav -->
+</div><!-- /.view-schedules -->
+<!-- @import "partials/footer.kit" -->

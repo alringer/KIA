@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/css/alerts.css?v=3.1.0" />
   
   <!-- VIEW CSS -->
-  <link rel="stylesheet" href="/css/view-my-car-zone.css">
+  <link rel="stylesheet" href="/css/view-schedules.css">
 
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -28,13 +28,13 @@
   <script type="text/javascript" src="/scripts/alerts.js"></script>
   
   <!-- VIEW JS -->
-  <script type="text/javascript" src="/scripts/my-car-zone.js"></script>
+  <script type="text/javascript" src="/scripts/schedules.js"></script>
 
   <title>KIA</title>
   </head>
 <body ontouchstart="">
 
-<div class="view-my-car-zone">
+<div class="view-schedules">
   <div class="has-mobile-nav">
     <nav class="nav-app">
       <div class="nav-app-main">
@@ -679,7 +679,7 @@
     
     <div class="nav-mobile">
           <div class="contain">
-            <h1>My Car Zone</h1>
+            <h1>Schedules</h1>
             <ul class="mobile-nav-options">
               <li>
                 <span data-toggle="modal" data-target="#add-alert">
@@ -693,65 +693,66 @@
         </div><!-- /.nav-mobile -->
         
     <div class="page-view">
-      <div class="my-car-zone-wrapper">
-        <div class="my-car-zone-header">
+      <div class="schedules-wrapper">
+        <div class="schedules-header">
           <h2 class="pull-left">
-            My Car Zone
+            Schedules
           </h2>
           <span class="button dark-icon less-padding pull-right">
             <i class="fa fa-plus"></i>
-            Create Rule
+            Create Schedule
           </span>
-          <p>
-            Create and manage alerts for your vehicle to keep you and your family safe. Any time an alert is triggered, you can see when and where it occured in <strong>Locations</strong> under <a>My Trips</a> tab.
-          </p>
-        </div><!-- /.my-car-zone-header -->
-        <div class="my-car-zone-alert-area">
-          <div class="my-car-zone-alert-area-header">
+        </div><!-- /.schedules-header -->
+        <div class="schedules-alert-area">
+          <div class="schedules-alert-area-header">
             <h3 class="pull-left">
               <i class="icon-geo-fence-alerts"></i>
-              Geo Fence Alerts
+              Climate Schedules
             </h3>
-          </div><!-- /.my-car-zone-alert-area-header -->
+            <div class="schedules-alert-area-toggle pull-right">
+              <span class="toggle tiny">
+                <label>
+                  <em>All <span>climate schedules</span> on</em>
+                  <input type="checkbox" name="toggle" value="1" checked>
+                  <span></span>
+                </label>
+              </span>
+            </div><!-- /.schedules-alert-area-toggle -->
+          </div><!-- /.schedules-alert-area-header -->
           <div class="no-alerts-set">
             <strong>
-              <i class="icon-no-alerts-geofence"></i>
-              No geo fence alerts set
+              <i class="icon-no-schedule-climate"></i>
+              No climate schedules
             </strong>
           </div><!-- /.no-alerts-set -->
-        </div><!-- /.my-car-zone-alert-area -->
-        <div class="my-car-zone-alert-area">
-          <div class="my-car-zone-alert-area-header">
+        </div><!-- /.schedules-alert-area -->
+        <div class="schedules-alert-area">
+          <div class="schedules-alert-area-header">
             <h3 class="pull-left">
-              <i class="icon-curfew-alerts"></i>
-              CURFEW ALERTS
+              <i class="icon-geo-fence-alerts"></i>
+              Charge Schedules
             </h3>
-          </div><!-- /.my-car-zone-alert-area-header -->
+            <div class="schedules-alert-area-toggle pull-right">
+              <span class="toggle tiny">
+                <label>
+                  <em>All <span>charge schedules</span> on</em>
+                  <input type="checkbox" name="toggle" value="1" checked>
+                  <span></span>
+                </label>
+              </span>
+            </div><!-- /.schedules-alert-area-toggle -->
+          </div><!-- /.schedules-alert-area-header -->
           <div class="no-alerts-set">
             <strong>
-              <i class="icon-no-alerts-curfew"></i>
-              No curfew alerts set
+              <i class="icon-no-schedule-charge"></i>
+              No charge schedules
             </strong>
           </div><!-- /.no-alerts-set -->
-        </div><!-- /.my-car-zone-alert-area -->
-        <div class="my-car-zone-alert-area">
-          <div class="my-car-zone-alert-area-header">
-            <h3 class="pull-left">
-              <i class="icon-speed-alerts"></i>
-              Speed Alert
-            </h3>
-          </div><!-- /.my-car-zone-alert-area-header -->
-          <div class="no-alerts-set">
-            <strong>
-              <i class="icon-no-alerts-speed"></i>
-              No speed alerts set
-            </strong>
-          </div><!-- /.no-alerts-set -->
-        </div><!-- /.my-car-zone-alert-area -->
-      </div><!-- /.my-car-zone-wrapper -->
+        </div><!-- /.schedules-alert-area -->
+      </div><!-- /.schedules-wrapper -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
-</div><!-- /.view-my-car-zone -->
+</div><!-- /.view-schedules -->
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">
