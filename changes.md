@@ -11,6 +11,12 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 5.0.1
+* KOPE-155 Dynamic Cards - Adding New Card
+* KOPE-173 [Maintenance] Vehicle Health Report Modal is Missing Gradient on Sides
+* KOPE-175 [Maintenance] Clicking on Date Completed Field Does Not Pull up Date Picker on Mobile
+* KOPE-180 [MCZ] Blank State Page Content Off Centered
+===
 # V - 4.0.1
 * As requested, the climate icons now change when turning climate on/off. We've also addressed additional Seamgen bug fixes
 ===
