@@ -507,6 +507,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-schedules.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-schedules.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/images\/battery-states\/10.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1012,6 +1025,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/icon-no-schedules.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon-no-schedules.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/icon-play-square.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1042,6 +1065,28 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_alert_climate.png": {
+		"ft": 32768,
+		"iS": 3353,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_climate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_alert_curfew.png": {
+		"ft": 32768,
+		"iS": 2039,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_curfew.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/icon_alert_error.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1051,6 +1096,38 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/icon_alert_geofence.png": {
+		"ft": 32768,
+		"iS": 2514,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_geofence.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_alert_geofence.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_alert_geofence.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_alert_speed.png": {
+		"ft": 32768,
+		"iS": 2125,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_speed.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/icon_arrow_right_dark.svg": {
 		"ft": 2097152,
@@ -1151,6 +1228,39 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/icon_carzone_curfew.png": {
+		"ft": 32768,
+		"iS": 703,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_carzone_curfew.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_carzone_geofence.png": {
+		"ft": 32768,
+		"iS": 754,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_carzone_geofence.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_carzone_speed.png": {
+		"ft": 32768,
+		"iS": 524,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_carzone_speed.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/icon_charge_bolt_small.svg": {
 		"ft": 2097152,
@@ -1324,6 +1434,16 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"\/source\/images\/icon_copy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_copy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/source\/images\/icon_coupon.svg": {
 		"ft": 2097152,
@@ -1785,6 +1905,50 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_no_alerts_curfew.png": {
+		"ft": 32768,
+		"iS": 3457,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_no_alerts_curfew.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_no_alerts_geofence.png": {
+		"ft": 32768,
+		"iS": 4188,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_no_alerts_geofence.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_no_alerts_speed.png": {
+		"ft": 32768,
+		"iS": 3368,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_no_alerts_speed.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_no_charge_schedule.png": {
+		"ft": 32768,
+		"iS": 2762,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_no_charge_schedule.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/icon_no_charge_schedule.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1794,6 +1958,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/icon_no_climate_schedule.png": {
+		"ft": 32768,
+		"iS": 2867,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_no_climate_schedule.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/icon_notes_grey.svg": {
 		"ft": 2097152,
@@ -2135,6 +2310,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_trash.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_trashcan.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_trashcan.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -2813,7 +2998,7 @@
 		"oAP": "\/build\/scripts\/my-car-zone.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/my-vehicles.js": {
 		"ft": 64,
@@ -2865,6 +3050,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/slider-bar.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/slider-bar.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/template.js": {
 		"ft": 64,
 		"ma": 0,
@@ -2872,6 +3067,16 @@
 		"oA": 0,
 		"oAP": "\/build\/scripts\/template.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/tooltips.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/tooltips.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4068,9 +4273,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/jquery-knob\/jquery.knob.min.js",
-		"oF": 3,
+		"oF": 2,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4078,9 +4283,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/mixitup\/mixitup.min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4098,9 +4303,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/selectize\/selectize.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4118,9 +4323,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/slick\/slick.min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -4150,6 +4355,20 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/my-car-zone-1.html",
+		"oF": 0
+		},
+	"\/source\/views\/my-car-zone-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/my-car-zone-2.html",
+		"oF": 0
+		},
+	"\/source\/views\/my-car-zone-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/my-car-zone-3.html",
 		"oF": 0
 		},
 	"\/source\/views\/my-vehicles-1.kit": {
@@ -4306,6 +4525,55 @@
 		"oAP": "\/build\/views\/partials\/loading.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/add-my-car-zone-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/add-my-car-zone-alert.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/edit-curfew-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/edit-curfew-alert.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/edit-geofence-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/edit-geofence-alert.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/my-car-zone\/edit-speed-alert.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/my-car-zone\/edit-speed-alert.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/schedules\/add-schedules.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/schedules\/add-schedules.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/schedules\/charge-schedule.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/schedules\/charge-schedule.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/modals\/schedules\/climate-schedule.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/schedules\/climate-schedule.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/my-vehicles-modals.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -4381,6 +4649,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav-mobile-remote.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/nav-mobile-schedules.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-mobile-schedules.html",
 		"oF": 0
 		},
 	"\/source\/views\/partials\/nav.kit": {
@@ -4494,6 +4769,27 @@
 		"oA": 0,
 		"oAP": "\/build\/views\/remote-security.html",
 		"oF": 0
+		},
+	"\/source\/views\/schedules-1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/schedules-1.html",
+		"oF": 0
+		},
+	"\/source\/views\/schedules-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/schedules-2.html",
+		"oF": 0
+		},
+	"\/source\/views\/schedules-3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/schedules-3.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -4505,7 +4801,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 535494344
+	"lastBuiltDate": 536702911
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -6315,7 +6611,7 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
