@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="/css/view-schedules.css">
 
   <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/dial-files.kit" -->
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/tooltips.js"></script>
   <!-- @import "partials/head/vendors/select.kit" -->
@@ -188,4 +189,9 @@
 <!-- @import "partials/modals/schedules/add-schedules.kit" -->
 <!-- @import "partials/modals/schedules/climate-schedule.kit" -->
 <!-- @import "partials/modals/schedules/charge-schedule.kit" -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+      $('#edit-climate-schedule').modal('show');
+    });
+</script>
 <!-- @import "partials/footer.kit" -->

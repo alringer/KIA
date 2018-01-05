@@ -2014,6 +2014,17 @@ body.modal-open {
     .add-my-car-zone-alert .copy:hover svg path {
       fill: #690c18 !important; }
 
+.add-schedules .ui-dial,
+.edit-charge-schedule .ui-dial,
+.edit-climate-schedule .ui-dial,
+.edit-geofence-alert .ui-dial,
+.edit-speed-alert .ui-dial,
+.edit-curfew-alert .ui-dial,
+.add-my-car-zone-alert .ui-dial {
+  transform: scale(0.8);
+  transform-origin: top center;
+  margin: 30px auto -50px; }
+
 .modal-create-alert p {
   max-width: 334px;
   margin: 0 auto;

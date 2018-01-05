@@ -2329,6 +2329,11 @@ body.modal-open {
       }
     }
   }
+  .ui-dial {
+    transform: scale(.8);
+    transform-origin: top center;
+    margin: 30px auto -50px;
+  }
 }
 
 .modal-create-alert {
