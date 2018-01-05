@@ -1684,28 +1684,42 @@ body.modal-open {
         border-top-right-radius: 0px;
         border-top: none; }
 
+.modal.coupons .modal-dialog,
 .modal.indicator-lights .modal-dialog {
   width: 558px; }
+  .modal.coupons .modal-dialog .modal-content,
   .modal.indicator-lights .modal-dialog .modal-content {
     padding-top: 17px;
     overflow: auto;
     -webkit-overflow-scrolling: touch; }
     @media (min-width: 767px) {
+      .modal.coupons .modal-dialog .modal-content,
       .modal.indicator-lights .modal-dialog .modal-content {
         max-height: 534px; } }
+    .modal.coupons .modal-dialog .modal-content .modal-coupons,
+    .modal.coupons .modal-dialog .modal-content .indicator-lights,
+    .modal.indicator-lights .modal-dialog .modal-content .modal-coupons,
     .modal.indicator-lights .modal-dialog .modal-content .indicator-lights {
       padding: 0 40px; }
+      .modal.coupons .modal-dialog .modal-content .modal-coupons .modal-title,
+      .modal.coupons .modal-dialog .modal-content .indicator-lights .modal-title,
+      .modal.indicator-lights .modal-dialog .modal-content .modal-coupons .modal-title,
       .modal.indicator-lights .modal-dialog .modal-content .indicator-lights .modal-title {
         margin-bottom: 54px; }
         @media (max-width: 767px) {
+          .modal.coupons .modal-dialog .modal-content .modal-coupons .modal-title,
+          .modal.coupons .modal-dialog .modal-content .indicator-lights .modal-title,
+          .modal.indicator-lights .modal-dialog .modal-content .modal-coupons .modal-title,
           .modal.indicator-lights .modal-dialog .modal-content .indicator-lights .modal-title {
             max-width: 260px;
             margin-left: auto;
             margin-right: auto; } }
+    .modal.coupons .modal-dialog .modal-content ul,
     .modal.indicator-lights .modal-dialog .modal-content ul {
       margin: 0;
       padding: 0;
       list-style: none; }
+      .modal.coupons .modal-dialog .modal-content ul li,
       .modal.indicator-lights .modal-dialog .modal-content ul li {
         margin-bottom: 36px;
         position: relative;
@@ -1713,6 +1727,7 @@ body.modal-open {
         font: 14px/1.5em "Source Sans Pro", sans-serif;
         letter-spacing: .4px;
         color: #2f2f2f; }
+        .modal.coupons .modal-dialog .modal-content ul li span,
         .modal.indicator-lights .modal-dialog .modal-content ul li span {
           display: block;
           width: 69px;
@@ -1721,6 +1736,7 @@ body.modal-open {
           position: absolute;
           top: 0;
           left: 0; }
+        .modal.coupons .modal-dialog .modal-content ul li strong,
         .modal.indicator-lights .modal-dialog .modal-content ul li strong {
           display: block;
           font-weight: bold; }
