@@ -11,6 +11,10 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 5.0.2
+* KOPE-177 Maintenance Page complete and in complete form
+* KOPE-176 [Maintenance] Clicking on "View Coupons" Performs No Action
+===
 # V - 5.0.1
 * KOPE-155 Dynamic Cards - Adding New Card
 * KOPE-173 [Maintenance] Vehicle Health Report Modal is Missing Gradient on Sides
