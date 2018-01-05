@@ -2018,6 +2018,11 @@ body.modal-open {
       border-top: none; }
     .modal-create-alert ul.alert-choices li:hover .icon-arrow-right {
       margin-right: -5px; }
+    .modal-create-alert ul.alert-choices li i:first-child {
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      transform: translateY(-50%); }
     .modal-create-alert ul.alert-choices li strong {
       display: block;
       font: bold 14px/1em "KIA", sans-serif;
@@ -2439,9 +2444,15 @@ body.modal-open {
           border-bottom: none; } }
       .modal-copy-settings .copy-options > li .car-info {
         display: block;
-        margin-bottom: 18px; }
+        margin-bottom: 18px;
+        overflow: hidden; }
+        .modal-copy-settings .copy-options > li .car-info img {
+          display: block;
+          float: left;
+          margin-right: 15px; }
         .modal-copy-settings .copy-options > li .car-info-meta {
-          display: block; }
+          display: block;
+          float: left; }
           .modal-copy-settings .copy-options > li .car-info-meta em {
             display: block;
             font: 10px/1em "Source Sans Pro", sans-serif;
@@ -2455,7 +2466,8 @@ body.modal-open {
         margin-bottom: 10px; }
       .modal-copy-settings .copy-options > li .settings-meta {
         display: block;
-        padding-top: 15px; }
+        padding-top: 15px;
+        clear: both; }
         .modal-copy-settings .copy-options > li .settings-meta strong {
           font: bold 14px/1em "Source Sans Pro", sans-serif;
           letter-spacing: .6px;

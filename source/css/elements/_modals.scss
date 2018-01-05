@@ -2352,6 +2352,12 @@ body.modal-open {
           margin-right: -5px;
         }
       }
+      i:first-child {
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
       strong {
         display: block;
         font: bold 14px/1em $kia;
@@ -2775,8 +2781,15 @@ body.modal-open {
       .car-info {
         display: block;
         margin-bottom: 18px;
+        overflow: hidden;
+        img {
+          display: block;
+          float: left;
+          margin-right: 15px;
+        }
         &-meta {
           display: block;
+          float: left;
           em {
             display: block;
             font: 10px/1em $sans;
@@ -2796,6 +2809,7 @@ body.modal-open {
       .settings-meta {
         display: block;
         padding-top: 15px;
+        clear: both;
         strong {
           font: bold 14px/1em $sans;
           letter-spacing: .6px;

@@ -1118,6 +1118,39 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_alert_red_curfew.png": {
+		"ft": 32768,
+		"iS": 2617,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_red_curfew.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_alert_red_geofence.png": {
+		"ft": 32768,
+		"iS": 2963,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_red_geofence.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_alert_red_speed.png": {
+		"ft": 32768,
+		"iS": 2160,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_alert_red_speed.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/icon_alert_speed.png": {
 		"ft": 32768,
 		"iS": 2125,
@@ -2245,6 +2278,50 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/icon_schedule_charge.png": {
+		"ft": 32768,
+		"iS": 366,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_schedule_charge.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_schedule_climate.png": {
+		"ft": 32768,
+		"iS": 933,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_schedule_climate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_schedule_red_charge.png": {
+		"ft": 32768,
+		"iS": 2765,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_schedule_red_charge.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/icon_schedule_red_climate.png": {
+		"ft": 32768,
+		"iS": 2987,
+		"oA": 0,
+		"oAP": "\/build\/images\/icon_schedule_red_climate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/icon_search.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2727,6 +2804,17 @@
 		"iS": 122501,
 		"oA": 0,
 		"oAP": "\/build\/images\/img_background_tires.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/img_copy_settings_car.png": {
+		"ft": 32768,
+		"iS": 5440,
+		"oA": 0,
+		"oAP": "\/build\/images\/img_copy_settings_car.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -4801,7 +4889,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 536702911
+	"lastBuiltDate": 536719217
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

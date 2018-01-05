@@ -370,16 +370,16 @@
   background: url('/images/icon-no-schedules.svg') center/contain no-repeat;
 }
 
-.icon-geo-fence-alerts {
+.icon-climate-schedule {
   width: 22px;
   height: 22px;
-  background: url('/images/icon_carzone_geofence.png') center/contain no-repeat;
+  background: url('/images/icon_schedule_climate.png') center/contain no-repeat;
 }
 
-.icon-curfew-alerts {
-  width: 22px;
-  height: 22px;
-  background: url('/images/icon_carzone_curfew.png') center/contain no-repeat;
+.icon-charge-schedule {
+  width: 25px;
+  height: 14px;
+  background: url('/images/icon_schedule_charge.png') center/contain no-repeat;
 }
 
 .icon-speed-alerts {
@@ -457,4 +457,18 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.icon-schedule-red-climate {
+  background: url("/images/icon_schedule_red_climate.png") center/contain no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 15px !important;
+}
+
+.icon-schedule-red-charge {
+  background: url("/images/icon_schedule_red_charge.png") center/contain no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 15px !important;
 }
