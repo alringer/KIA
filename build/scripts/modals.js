@@ -30,6 +30,8 @@ $(document).ready(function () {
         if (!$modal.length || !$modal.hasClass('in')) {
           return;
         }
+        console.log('run');
+        $carousel_inner.removeClass('overflow-visible');
 
         // Update the UI to hide the nav
         if ($target.hasClass('hide-nav')) {
@@ -73,7 +75,7 @@ $(document).ready(function () {
         }, 10);
       },
       _carousel_slid: function _carousel_slid() {
-        $('.modal.in .carousel-inner').css('height', 'auto');
+        $('.modal.in .carousel-inner').css('height', 'auto').addClass('overflow-visible');
       },
       // Setup a modal slidershow
       _modal_slider: function _modal_slider() {
@@ -95,6 +97,9 @@ $(document).ready(function () {
         window.modals.elements.modal_slider.slick('unslick');
         window.modals.methods._modal_slider();
         window.modals.elements.modal_slider.resize();
+      },
+      _overflow_hidden: function _overflow_hidden() {
+        $('.modal.in .carousel-inner').addClass('overflow-visible');
       },
       _switch_modals: function _switch_modals() {
         var $this = $(this),
@@ -122,6 +127,7 @@ $(document).ready(function () {
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._carousel_slid);
   window.modals.elements.carousel.on('slid.bs.carousel', window.modals.methods._modal_slider_fix);
   window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._modal_slider_fix);
+  window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._overflow_hidden);
   window.modals.elements.modal.on('hidden.bs.modal', window.modals.methods._reset);
   window.modals.elements.switch_modals.on('click', window.modals.methods._switch_modals);
   // window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);

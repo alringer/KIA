@@ -229,8 +229,13 @@ body .modal {
           margin-bottom: 0px; } }
       body .modal .modal-dialog .modal-content .modal-body {
         padding: 0; }
+        body .modal .modal-dialog .modal-content .modal-body .dropdown-menu {
+          max-height: 150px !important;
+          padding-bottom: 10px; }
         body .modal .modal-dialog .modal-content .modal-body .carousel-inner {
           transition: all 550ms cubic-bezier(0.23, 1, 0.32, 1); }
+          body .modal .modal-dialog .modal-content .modal-body .carousel-inner.overflow-visible {
+            overflow: visible; }
         body .modal .modal-dialog .modal-content .modal-body .carousel .item {
           padding: 15px;
           transition: all 550ms cubic-bezier(0.23, 1, 0.32, 1); }

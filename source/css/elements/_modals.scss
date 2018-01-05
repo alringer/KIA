@@ -91,9 +91,16 @@ body .modal {
       }
       .modal-body {
         padding: 0;
+        .dropdown-menu {
+          max-height: 150px !important;
+          padding-bottom: 10px;
+        }
         .carousel {
           &-inner {
             transition: all 550ms $easeOutQuint;
+            &.overflow-visible {
+              overflow: visible;
+            }
           }
           .item {
             padding: 15px;
