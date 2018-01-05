@@ -1938,6 +1938,7 @@ body.modal-open {
   }
 }
 
+.modal.coupons,
 .modal.indicator-lights {
   .modal-dialog {
     width: 558px;
@@ -1948,6 +1949,7 @@ body.modal-open {
       @media (min-width: $screen-xs-max) {
         max-height: 534px;
       }
+      .modal-coupons,
       .indicator-lights {
         padding: 0 40px;
         .modal-title {
