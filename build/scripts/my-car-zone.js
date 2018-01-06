@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).ready(function(){window.myCarZone={elements:{copy_options:$(".copy-options input")},methods:{_enable_button:function o(){$(this).parents(".copy-options").next(".modal-actions").find(".button").removeClass("disabled")}}},window.myCarZone.elements.copy_options.on("change",window.myCarZone.methods._enable_button)});

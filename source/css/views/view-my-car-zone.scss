@@ -222,11 +222,25 @@
     }
   }
   .mobile-arrow {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    i {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      transition: all 250ms $easeOutQuint;
+    }
+    &:hover {
+      i {
+        margin-right: -5px;
+      }
+    }
   }
   &.alert-card-speed {
     .alert-body {
