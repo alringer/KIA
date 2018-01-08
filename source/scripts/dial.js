@@ -20,7 +20,7 @@ $(document).ready(() => {
               value_min = $this.data('min'),
               value_diff = value_max - value_min,
               min = 0,
-              max = 265,
+              max = $this.hasClass('speed') ? 240 : 265,
               step = max / (value_diff),
               steps = Math.floor(max / step);
           window.dial.properties.dials.push({
@@ -35,6 +35,7 @@ $(document).ready(() => {
             input : $this.find('.ui-dial-value'),
             tempText : $this.find('.ui-dial-temperateure-text'),
             handle : $this.find('.ui-dial-handle'),
+            pin : $this.find('.ui-dial-handle-pin'),
           });
           $this.find('.ui-dial-canvas').knob({
               step,
@@ -61,8 +62,8 @@ $(document).ready(() => {
             value = Math.round(props.value_min + (value_diff * percentage));
         var current_step = (value - props.value_min) / (props.value_max - props.value_min) * props.steps + 1;
         percentage = (current_step - 1) / props.steps;
-
-        degree = Math.ceil(props.max * percentage) - 43;
+        var offset_by = props.element.hasClass('speed') ? 30 : 43;
+        degree = Math.ceil(props.max * percentage) - offset_by;
         props.tempText.text(value);
 
         if((value - 1) / value_diff === .5) {
@@ -75,8 +76,12 @@ $(document).ready(() => {
           props.element.removeClass('hot')
           props.element.removeClass('nuetral');
         }
+        var adjust_by = props.element.hasClass('speed') ? '143' : '140';
         props.handle.css({
-          transform : `rotate(${degree}deg) translate(-140px) rotate(${-degree}deg)`
+          transform : `rotate(${degree}deg) translate(-${adjust_by}px) rotate(${-degree}deg)`
+        });
+        props.pin.css({
+          transform : `rotate(${degree - 90}deg)`
         });
         props.input.val(value);
       },

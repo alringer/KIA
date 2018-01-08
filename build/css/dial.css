@@ -96,6 +96,25 @@
     margin: -15.5px 0 0 -15.5px;
     transform: rotate(-43deg) translate(-140px) rotate(43deg);
     transition: opacity 350ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .ui-dial-handle-pin {
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      .ui-dial-handle-pin:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 130px;
+        background: url("/images/dial_pin.png") center bottom/contain no-repeat;
+        margin-top: -63px;
+        transform-origin: bottom center; }
   .ui-dial-value {
     display: none; }
   .ui-dial.hot:before {
@@ -104,7 +123,8 @@
     background-image: url("/images/climate_dial_communicating_hot.png"); }
   .ui-dial.hot .ui-dial-temperateure {
     color: #de4e54; }
-  .ui-dial.setting .ui-dial-handle {
+  .ui-dial.setting .ui-dial-handle,
+  .ui-dial.setting .ui-dial-handle-pin {
     transition: all 550ms cubic-bezier(0.23, 1, 0.32, 1); }
   .ui-dial-temperateure {
     position: absolute;
@@ -191,3 +211,30 @@
         transition-delay: 0ms; }
       .ui-dial .seat-status > span.seat-status-on.hot {
         background-image: url("/images/seat_on_hot.png"); }
+  .ui-dial.speed {
+    background-image: url("/images/dial_speed.png"); }
+    .ui-dial.speed .ui-dial-handle {
+      transform: rotate(-43deg) translate(-145px) rotate(43deg);
+      border-color: #000; }
+    .ui-dial.speed .ui-dial-temperateure {
+      font: bold 41px/1em "KIA", sans-serif;
+      letter-spacing: 2.7px;
+      color: #000;
+      transform: translate(-50%, -50%) translateY(45px); }
+      .ui-dial.speed .ui-dial-temperateure .mph {
+        font: bold 15px/1em "KIA", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        color: #c1c1c1;
+        padding-top: 1px; }
+    .ui-dial.speed .ui-dial-controls {
+      transform: translateY(-50px); }
+      .ui-dial.speed .ui-dial-controls > * {
+        margin: 0 60px; }
+        .ui-dial.speed .ui-dial-controls > *:first-child {
+          margin-left: 0px; }
+        .ui-dial.speed .ui-dial-controls > *:last-child {
+          margin-right: 0px; }
+        .ui-dial.speed .ui-dial-controls > *:before, .ui-dial.speed .ui-dial-controls > *:after {
+          color: #C4172C !important; }

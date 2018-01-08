@@ -157,6 +157,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/elements\/_slider-bar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/css\/_slider-bar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/elements\/_view-subnav.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -833,6 +846,28 @@
 		"iS": 11576,
 		"oA": 0,
 		"oAP": "\/build\/images\/dial_heated_seats1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/dial_pin.png": {
+		"ft": 32768,
+		"iS": 1614,
+		"oA": 0,
+		"oAP": "\/build\/images\/dial_pin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/dial_speed.png": {
+		"ft": 32768,
+		"iS": 18511,
+		"oA": 0,
+		"oAP": "\/build\/images\/dial_speed.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

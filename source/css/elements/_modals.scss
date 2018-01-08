@@ -2329,10 +2329,13 @@ body.modal-open {
       }
     }
   }
-  .ui-dial {
+  .ui-dial:not(.speed) {
     transform: scale(.8);
     transform-origin: top center;
     margin: 30px auto -50px;
+  }
+  .ui-dial.speed {
+    margin-bottom: -10px;
   }
 }
 
@@ -2685,72 +2688,6 @@ body.modal-open {
           border-radius: 3px;
           background: $white url('/images/icon_search.svg') 13px center no-repeat;
           outline: none;
-        }
-      }
-    }
-    .slider-bar {
-      max-width: calc(100% - 125px);
-      margin: 65px auto 55px;
-      position: relative;
-      &-control {
-        position: absolute;
-        left: -50px;
-        display: block;
-        font: 500 42px/1em $kia;
-        color: $red;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        transition: all 250ms $easeOutQuint;
-        &:hover {
-          color: darken($red, 20%);
-        }
-        &.up {
-          left: auto;
-          right: -50px;
-          margin-top: -1px;
-        }
-        &.down {
-          margin-top: -5px;
-        }
-      }
-      &-js {
-        height: 3px;
-        border: none !important;
-        background: #c1c1c1;
-        span {
-          position: absolute;
-          cursor: pointer;
-          border: none;
-          outline: none;
-          border-radius: 100%;
-          height: 31px;
-          width: 31px;
-          top: 50%;
-          transform: translateY(-50%);
-          background: $white;
-          box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.44);
-          display: block;
-          &:before {
-            display: block;
-            content: '';
-            width: 12px;
-            height: 12px;
-            border-radius: 100%;
-            background: #e0e0e0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-        }
-        &-blue {
-          height: 3px;
-          background: #4bbef0;
-          width: 0%;
-          position: absolute;
-          top: 0;
-          left: 0;
         }
       }
     }
