@@ -1682,6 +1682,80 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
     max-width: calc(100% - 10px);
     pointer-events: none !important; }
 
+.remote-security .remote-body .remote-vehicle {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%; }
+  @media (min-width: 768px) {
+    .remote-security .remote-body .remote-vehicle {
+      padding-bottom: 63%; } }
+  .remote-security .remote-body .remote-vehicle .remote-vehicle-base, .remote-security .remote-body .remote-vehicle .remote-vehicle-body, .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer {
+    position: absolute; }
+  .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer {
+    width: 100%; }
+    .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top {
+      position: relative; }
+      .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-hood,
+      .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-back-diver,
+      .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-front-driver,
+      .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-front-passenger,
+      .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-back-passenger,
+      .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-trunk {
+        position: absolute; }
+
+.remote-vehicle-base .all-doors-closed {
+  display: block; }
+
+.remote-vehicle-base .open-front-door,
+.remote-vehicle-base .open-back-door,
+.remote-vehicle-base .open-both-doors {
+  display: none; }
+
+.remote-vehicle-base.open-front-only .all-doors-closed, .remote-vehicle-base.open-back-only .all-doors-closed, .remote-vehicle-base.open-both .all-doors-closed {
+  display: none; }
+
+.remote-vehicle-base.open-front-only .open-front-door {
+  display: block; }
+
+.remote-vehicle-base.open-back-only .open-back-door {
+  display: block; }
+
+.remote-vehicle-base.open-both .open-both-doors {
+  display: block; }
+
+.vehicle-hood .closed-view,
+.vehicle-trunk .closed-view,
+.vehicle-front-passenger .closed-view,
+.vehicle-back-passenger .closed-view,
+.vehicle-back-diver .closed-view,
+.vehicle-front-driver .closed-view {
+  display: block; }
+
+.vehicle-hood .opened-view,
+.vehicle-trunk .opened-view,
+.vehicle-front-passenger .opened-view,
+.vehicle-back-passenger .opened-view,
+.vehicle-back-diver .opened-view,
+.vehicle-front-driver .opened-view {
+  display: none; }
+
+.vehicle-hood.opened .closed-view,
+.vehicle-trunk.opened .closed-view,
+.vehicle-front-passenger.opened .closed-view,
+.vehicle-back-passenger.opened .closed-view,
+.vehicle-back-diver.opened .closed-view,
+.vehicle-front-driver.opened .closed-view {
+  display: none; }
+
+.vehicle-hood.opened .opened-view,
+.vehicle-trunk.opened .opened-view,
+.vehicle-front-passenger.opened .opened-view,
+.vehicle-back-passenger.opened .opened-view,
+.vehicle-back-diver.opened .opened-view,
+.vehicle-front-driver.opened .opened-view {
+  display: block; }
+
 @media (max-width: 860px) and (min-width: 767px) {
   .remote-climate .remote-body .ui-dial {
     transform: scale(0.85); } }

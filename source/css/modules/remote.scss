@@ -823,6 +823,101 @@ body.refreshing {
     }
   }
 }
+.remote-security {
+    .remote-body {
+        // sets container position
+        .remote-vehicle {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom:: 65%;
+            @media(min-width: 768px) {
+                padding-bottom:: 63%;
+            }
+            // section layers
+            .remote-vehicle-base,
+            .remote-vehicle-body,
+            .remote-vehicle-options-layer {
+                position: absolute;
+            }
+            // options layers container
+            .remote-vehicle-options-layer {
+                width: 100%;
+                // options layers 
+                .remote-vehicle-top {
+                    position: relative;
+                    .vehicle-hood,
+                    .vehicle-back-diver,
+                    .vehicle-front-driver,
+                    .vehicle-front-passenger,
+                    .vehicle-back-passenger,
+                    .vehicle-trunk {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.remote-vehicle-base {
+    .all-doors-closed {
+        display: block;
+    }
+    .open-front-door,
+    .open-back-door,
+    .open-both-doors {
+        display: none;
+    }
+    &.open-front-only,
+    &.open-back-only,
+    &.open-both  {
+        .all-doors-closed {
+            display: none;
+        }
+    }
+
+    &.open-front-only {
+        .open-front-door {
+            display: block;
+        }
+    }
+
+    &.open-back-only {
+        .open-back-door {
+            display: block;
+        }
+    }
+
+    &.open-both {
+        .open-both-doors {
+            display: block;
+        }
+    }
+
+}
+
+.vehicle-hood,
+.vehicle-trunk,
+.vehicle-front-passenger,
+.vehicle-back-passenger,
+.vehicle-back-diver,
+.vehicle-front-driver {
+    .closed-view {
+        display: block;
+    }
+    .opened-view {
+        display: none;
+    }
+    &.opened {
+        .closed-view {
+            display: none;
+        }
+        .opened-view {
+            display: block;
+        }
+    }
+}
 
 .remote-climate {
   .remote-body {
