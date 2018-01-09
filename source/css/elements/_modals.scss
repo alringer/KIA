@@ -2528,6 +2528,14 @@ body.modal-open {
 }
 
 .modal-charge-schedule {
+  > strong {
+    + p {
+      text-align: left;
+      max-width: 298px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+  }
   &.final-step {
     .final-step-content {
       text-align: left;
@@ -2559,6 +2567,7 @@ body.modal-open {
     font: bold 10px $kia;
     letter-spacing: .4px;
     padding-top: 30px;
+    text-transform: uppercase;
   }
   .form-section-headline {
     font: bold 13px $kia;

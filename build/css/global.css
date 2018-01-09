@@ -2270,6 +2270,12 @@ body.modal-open {
         min-width: 135px;
         margin-left: 10px; }
 
+.modal-charge-schedule > strong + p {
+  text-align: left;
+  max-width: 298px;
+  margin: 0 auto;
+  font-size: 14px; }
+
 .modal-charge-schedule.final-step .final-step-content {
   text-align: left;
   padding-left: 25px;
@@ -2295,7 +2301,8 @@ body.modal-open {
   display: block;
   font: bold 10px "KIA", sans-serif;
   letter-spacing: .4px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-transform: uppercase; }
 
 .modal-charge-schedule .form-section-headline {
   font: bold 13px "KIA", sans-serif;
