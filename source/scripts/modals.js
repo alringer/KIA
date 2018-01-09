@@ -28,7 +28,6 @@ $(document).ready(function() {
         if(!$modal.length || !$modal.hasClass('in')) {
           return;
         }
-        console.log('run');
         $carousel_inner.removeClass('overflow-visible');
 
         // Update the UI to hide the nav
