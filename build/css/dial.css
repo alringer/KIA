@@ -237,4 +237,5 @@
         .ui-dial.speed .ui-dial-controls > *:last-child {
           margin-right: 0px; }
         .ui-dial.speed .ui-dial-controls > *:before, .ui-dial.speed .ui-dial-controls > *:after {
-          color: #C4172C !important; }
+          color: #C4172C !important;
+          line-height: 40px; }

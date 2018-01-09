@@ -2309,7 +2309,8 @@ body.modal-open {
   .modal-charge-schedule .center-radio .radio {
     display: inline-block;
     width: auto;
-    margin: 0 21px; }
+    margin: 0 21px;
+    vertical-align: top; }
     .modal-charge-schedule .center-radio .radio:first-child {
       margin-left: 0; }
     .modal-charge-schedule .center-radio .radio:last-child {
