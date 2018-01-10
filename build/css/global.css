@@ -2034,6 +2034,24 @@ body.modal-open {
 .add-my-car-zone-alert .ui-dial.speed {
   margin-bottom: -10px; }
 
+.add-schedules .heated-seats-item,
+.edit-charge-schedule .heated-seats-item,
+.edit-climate-schedule .heated-seats-item,
+.edit-geofence-alert .heated-seats-item,
+.edit-speed-alert .heated-seats-item,
+.edit-curfew-alert .heated-seats-item,
+.add-my-car-zone-alert .heated-seats-item {
+  padding: 0 !important; }
+
+.add-schedules .modal-heated-seats.seat-open.top .heated-seats-vehicle,
+.edit-charge-schedule .modal-heated-seats.seat-open.top .heated-seats-vehicle,
+.edit-climate-schedule .modal-heated-seats.seat-open.top .heated-seats-vehicle,
+.edit-geofence-alert .modal-heated-seats.seat-open.top .heated-seats-vehicle,
+.edit-speed-alert .modal-heated-seats.seat-open.top .heated-seats-vehicle,
+.edit-curfew-alert .modal-heated-seats.seat-open.top .heated-seats-vehicle,
+.add-my-car-zone-alert .modal-heated-seats.seat-open.top .heated-seats-vehicle {
+  transform: translateY(315px) !important; }
+
 .modal-create-alert p {
   max-width: 334px;
   margin: 0 auto;
@@ -2159,6 +2177,12 @@ body.modal-open {
           font: bold 10px/31px "KIA", sans-serif;
           letter-spacing: .4px;
           text-transform: uppercase; }
+        .modal-charge-schedule form .form-fields > li > .toggle strong,
+        .modal-climate-schedule form .form-fields > li > .toggle strong,
+        .modal-speed-alert form .form-fields > li > .toggle strong,
+        .modal-geofence-alert form .form-fields > li > .toggle strong,
+        .modal-curfew-alert form .form-fields > li > .toggle strong {
+          opacity: 0; }
       .modal-charge-schedule form .form-fields > li .toggle,
       .modal-climate-schedule form .form-fields > li .toggle,
       .modal-speed-alert form .form-fields > li .toggle,
@@ -2172,6 +2196,37 @@ body.modal-open {
         .modal-curfew-alert form .form-fields > li .toggle strong {
           margin-bottom: 15px;
           line-height: 1em; }
+      .modal-charge-schedule form .form-fields > li .icon-arrow-right,
+      .modal-climate-schedule form .form-fields > li .icon-arrow-right,
+      .modal-speed-alert form .form-fields > li .icon-arrow-right,
+      .modal-geofence-alert form .form-fields > li .icon-arrow-right,
+      .modal-curfew-alert form .form-fields > li .icon-arrow-right {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .modal-charge-schedule form .form-fields > li .is-slide,
+      .modal-climate-schedule form .form-fields > li .is-slide,
+      .modal-speed-alert form .form-fields > li .is-slide,
+      .modal-geofence-alert form .form-fields > li .is-slide,
+      .modal-curfew-alert form .form-fields > li .is-slide {
+        display: block; }
+        .modal-charge-schedule form .form-fields > li .is-slide:hover .icon-arrow-right,
+        .modal-climate-schedule form .form-fields > li .is-slide:hover .icon-arrow-right,
+        .modal-speed-alert form .form-fields > li .is-slide:hover .icon-arrow-right,
+        .modal-geofence-alert form .form-fields > li .is-slide:hover .icon-arrow-right,
+        .modal-curfew-alert form .form-fields > li .is-slide:hover .icon-arrow-right {
+          margin-right: -5px; }
+      .modal-charge-schedule form .form-fields > li .icon-heated-seats,
+      .modal-climate-schedule form .form-fields > li .icon-heated-seats,
+      .modal-speed-alert form .form-fields > li .icon-heated-seats,
+      .modal-geofence-alert form .form-fields > li .icon-heated-seats,
+      .modal-curfew-alert form .form-fields > li .icon-heated-seats {
+        position: absolute;
+        right: 35px;
+        top: 50%;
+        transform: translate(0, -50%); }
     .modal-charge-schedule form .form-fields .toggle-group,
     .modal-charge-schedule form .form-fields .checkbox-group,
     .modal-climate-schedule form .form-fields .toggle-group,
@@ -2534,6 +2589,41 @@ ul.issues-list {
     ul.issues-list li p {
       font: 14px/1.5em "Source Sans Pro", sans-serif;
       letter-spacing: .6px; }
+
+.icon-heated-seats {
+  width: 25px;
+  height: 20px;
+  background: url("/images/icon_heated_seats.svg") center/contain no-repeat;
+  position: relative;
+  display: inline-block; }
+  .icon-heated-seats:before, .icon-heated-seats:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 3px;
+    display: block;
+    height: 3px;
+    background: #ec4446;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0; }
+  .icon-heated-seats:after {
+    background: #56b5e4;
+    margin-top: 8px; }
+  .icon-heated-seats.hot {
+    margin-top: -3px; }
+    .icon-heated-seats.hot:before {
+      opacity: 1; }
+  .icon-heated-seats.cold {
+    margin-top: -3px; }
+    .icon-heated-seats.cold:after {
+      margin-top: 3px;
+      opacity: 1; }
+  .icon-heated-seats.hot.cold {
+    margin-top: -6px; }
+    .icon-heated-seats.hot.cold:after {
+      margin-top: 8px; }
 
 .modal {
   min-width: 355px; }

@@ -1,4 +1,4 @@
-<div class="modal fade edit-climate-schedule" id="edit-climate-schedule" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal fade edit-climate-schedule heated-seats" id="edit-climate-schedule" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
@@ -34,12 +34,21 @@
                         </label>
                       </span>
                     </li>
-                    <li>
+                    <li class="less-margin">
                       <span class="toggle">
                         <label>
                           <em>Heated Accessories</em>
                           <input type="checkbox" name="toggle" value="1">
                           <span></span>
+                        </label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="toggle is-slide" data-target="#edit-climate-schedule-modal-slider" data-slide-to="1">
+                        <label>
+                          <em>Heated and Cooled Seats</em>
+                          <i class="icon-heated-seats hot cold"></i>
+                          <i class="icon-arrow-right"></i>
                         </label>
                       </span>
                     </li>
@@ -102,6 +111,20 @@
                               Start Time
                             </strong>
                             <select class="selectpicker small">
+                              <option value="12pm">12:00pm</option>
+                              <option value="1230pm">12:30pm</option>
+                              <option value="1pm">1:00pm</option>
+                              <option value="130pm">1:30pm</option>
+                              <option value="2pm">2:00pm</option>
+                              <option value="230pm">2:30pm</option>
+                              <option value="3pm">3:00pm</option>
+                              <option value="330pm">3:30pm</option>
+                              <option value="4pm">4:00pm</option>
+                              <option value="430pm">4:30pm</option>
+                              <option value="5pm">5:00pm</option>
+                              <option value="530pm">5:30pm</option>
+                              <option value="6pm">6:00pm</option>
+                              <option value="630pm">6:30pm</option>
                               <option value="7pm">7:00pm</option>
                               <option value="730pm">7:30pm</option>
                               <option value="8pm">8:30pm</option>
@@ -121,6 +144,20 @@
                               End Time
                             </strong>
                             <select class="selectpicker small">
+                              <option value="12pm">12:00pm</option>
+                              <option value="1230pm">12:30pm</option>
+                              <option value="1pm">1:00pm</option>
+                              <option value="130pm">1:30pm</option>
+                              <option value="2pm">2:00pm</option>
+                              <option value="230pm">2:30pm</option>
+                              <option value="3pm">3:00pm</option>
+                              <option value="330pm">3:30pm</option>
+                              <option value="4pm">4:00pm</option>
+                              <option value="430pm">4:30pm</option>
+                              <option value="5pm">5:00pm</option>
+                              <option value="530pm">5:30pm</option>
+                              <option value="6pm">6:00pm</option>
+                              <option value="630pm">6:30pm</option>
                               <option value="7pm">7:00pm</option>
                               <option value="730pm">7:30pm</option>
                               <option value="8pm">8:30pm</option>
@@ -139,7 +176,7 @@
                     <li>
                       <span class="toggle no-border">
                         <label>
-                          <em>Heated Accessories</em>
+                          <em>Turn this schedule on?</em>
                           <input type="checkbox" name="toggle" value="1">
                           <span></span>
                         </label>
@@ -177,9 +214,93 @@
                         </a>
                       </div><!-- /.tab-pane -->
                     </div><!-- /.tab-content -->
-                  </div>
+                  </div><!-- /.footer-action -->
                 </form>
               </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+            <div class="item show-back heated-seats-item">
+              <div class="modal-heated-seats">
+                <span class="back" data-target="#edit-climate-schedule-modal-slider" data-slide-to="0"></span>
+                <strong class="modal-title">Heated and Cooled Seats</strong>
+                <div class="heated-seats-wrap">
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="text" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="1">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="2">Apply</span>
+                    </span>
+                  </div>
+                  <div class="heated-seats-vehicle">
+                    <img src="/images/image_heated_seats_base.png" alt="vehicle outline" />
+                    <span class="heated-seat-1 off">
+                      <img src="/images/heated_seat_1_off.png" alt="Driver's seat">
+                    </span>
+                    <span class="heated-seat-2 off">
+                      <img src="/images/heated_seat_2_off.png" alt="Passenger's seat">
+                    </span>
+                    <span class="heated-seat-3 off">
+                      <img src="/images/heated_seat_3_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <span class="heated-seat-4 off">
+                      <img src="/images/heated_seat_4_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <em>Select a seat</em>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="3">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="4">Apply</span>
+                    </span>
+                  </div>
+                </div><!-- /.heated-steats-wrap -->
+              </div><!-- /.modal-heated-seats -->
             </div><!-- /.item -->
           </div><!-- /.carousel-inner -->
         </div><!-- /.carousel -->

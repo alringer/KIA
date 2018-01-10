@@ -33,6 +33,7 @@
     
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/tooltips.js"></script>
+  <script type="text/javascript" src="/scripts/heated-seats.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   
@@ -729,7 +730,7 @@
           <div class="schedules-alert-area-cards">
             <div class="row">
               <div class="col-sm-4">
-                <div class="alert-card alert-card-climate">
+                <div class="alert-card alert-card-climate large">
                   <i class="icon-settings" data-toggle="modal" data-target="#edit-climate-schedule">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
@@ -742,14 +743,19 @@
                     <strong>
                       7:30 AM
                       <span>
+                        <span class="hidden-sm hidden-md hidden-lg">68<sup>°</sup> | </span>
                         M, Tu, W
                       </span>
+                      <span class="hidden-sm hidden-md hidden-lg">
+                        Defrost: <em>Off</em> |
+                        Heated Accessories: <em>Off</em>
+                      </span>
                     </strong>
-                    <span>
+                    <span class="hidden-xs">
                       Defrost:
                       <em>On</em>
                     </span>
-                    <span>
+                    <span class="hidden-xs">
                       Heated Accessories:
                       <em>On</em>
                     </span>
@@ -759,10 +765,13 @@
                       Active
                     </span>
                   </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-climate-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
               <div class="col-sm-4">
-                <div class="alert-card alert-card-climate inactive">
+                <div class="alert-card alert-card-climate inactive large">
                   <i class="icon-settings" data-toggle="modal" data-target="#edit-climate-schedule">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
@@ -775,15 +784,27 @@
                     <strong>
                       6:00 PM
                       <span>
+                        <span class="hidden-sm hidden-md hidden-lg">68<sup>°</sup> | </span>
                         M, Tu, W, Th, F
                       </span>
+                      <span class="hidden-sm hidden-md hidden-lg">
+                        Defrost: <strong>Off</strong> |
+                        Heated Accessories: <strong>Off</strong>
+                        <br />
+                        Heated And Coold Seats: <strong>Off</strong>
+                      </span>
                     </strong>
-                    <span>
+                    <span class="hidden-xs">
                       Defrost:
                       <strong>Off</strong>
                     </span>
-                    <span>
+                    <span class="hidden-xs">
                       Heated Accessories:
+                      <strong>Off</strong>
+                    </span>
+                    <span class="hidden-xs">
+                      Heated and <br/>
+                      Cooled Seats
                       <strong>Off</strong>
                     </span>
                   </div><!-- /.alert-body -->
@@ -792,6 +813,9 @@
                       Inactive
                     </span>
                   </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-climate-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
             </div><!-- /.row -->
@@ -822,21 +846,33 @@
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
                     </svg>
                   </i>
-                  <div class="alert-body">
+                  <div class="alert-body dual">
                     <i class="icon-3d-battery">
                     </i>
-                    <strong>
-                      3:00 AM - 8:45 AM
-                      <span>
-                        M, Tu, W
-                      </span>
-                    </strong>
+                    <div class="row">
+                      <div class="col-sm-12 col-xs-6">
+                        <em class="active">Departure 1</em>
+                        <strong>
+                          8:00 AM
+                          <span>
+                            M, Tu, W, Th, F
+                          </span>
+                        </strong>
+                      </div><!-- /.col -->
+                      <div class="col-sm-12 col-xs-6">
+                        <em class="inactive">Departure 2</em>
+                        <strong>
+                          5:00 PM
+                          <span>
+                            M, Tu, W, Th, F
+                          </span>
+                        </strong>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
                   </div><!-- /.alert-body -->
-                  <div class="alert-status">
-                    <span>
-                      Active
-                    </span>
-                  </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-charge-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
               <div class="col-sm-4">
@@ -861,6 +897,9 @@
                       Active
                     </span>
                   </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-charge-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
             </div><!-- /.row -->
@@ -1693,7 +1732,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<div class="modal fade edit-climate-schedule" id="edit-climate-schedule" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal fade edit-climate-schedule heated-seats" id="edit-climate-schedule" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
@@ -1729,12 +1768,21 @@
                         </label>
                       </span>
                     </li>
-                    <li>
+                    <li class="less-margin">
                       <span class="toggle">
                         <label>
                           <em>Heated Accessories</em>
                           <input type="checkbox" name="toggle" value="1">
                           <span></span>
+                        </label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="toggle is-slide" data-target="#edit-climate-schedule-modal-slider" data-slide-to="1">
+                        <label>
+                          <em>Heated and Cooled Seats</em>
+                          <i class="icon-heated-seats hot cold"></i>
+                          <i class="icon-arrow-right"></i>
                         </label>
                       </span>
                     </li>
@@ -1797,6 +1845,20 @@
                               Start Time
                             </strong>
                             <select class="selectpicker small">
+                              <option value="12pm">12:00pm</option>
+                              <option value="1230pm">12:30pm</option>
+                              <option value="1pm">1:00pm</option>
+                              <option value="130pm">1:30pm</option>
+                              <option value="2pm">2:00pm</option>
+                              <option value="230pm">2:30pm</option>
+                              <option value="3pm">3:00pm</option>
+                              <option value="330pm">3:30pm</option>
+                              <option value="4pm">4:00pm</option>
+                              <option value="430pm">4:30pm</option>
+                              <option value="5pm">5:00pm</option>
+                              <option value="530pm">5:30pm</option>
+                              <option value="6pm">6:00pm</option>
+                              <option value="630pm">6:30pm</option>
                               <option value="7pm">7:00pm</option>
                               <option value="730pm">7:30pm</option>
                               <option value="8pm">8:30pm</option>
@@ -1816,6 +1878,20 @@
                               End Time
                             </strong>
                             <select class="selectpicker small">
+                              <option value="12pm">12:00pm</option>
+                              <option value="1230pm">12:30pm</option>
+                              <option value="1pm">1:00pm</option>
+                              <option value="130pm">1:30pm</option>
+                              <option value="2pm">2:00pm</option>
+                              <option value="230pm">2:30pm</option>
+                              <option value="3pm">3:00pm</option>
+                              <option value="330pm">3:30pm</option>
+                              <option value="4pm">4:00pm</option>
+                              <option value="430pm">4:30pm</option>
+                              <option value="5pm">5:00pm</option>
+                              <option value="530pm">5:30pm</option>
+                              <option value="6pm">6:00pm</option>
+                              <option value="630pm">6:30pm</option>
                               <option value="7pm">7:00pm</option>
                               <option value="730pm">7:30pm</option>
                               <option value="8pm">8:30pm</option>
@@ -1834,7 +1910,7 @@
                     <li>
                       <span class="toggle no-border">
                         <label>
-                          <em>Heated Accessories</em>
+                          <em>Turn this schedule on?</em>
                           <input type="checkbox" name="toggle" value="1">
                           <span></span>
                         </label>
@@ -1872,9 +1948,93 @@
                         </a>
                       </div><!-- /.tab-pane -->
                     </div><!-- /.tab-content -->
-                  </div>
+                  </div><!-- /.footer-action -->
                 </form>
               </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+            <div class="item show-back heated-seats-item">
+              <div class="modal-heated-seats">
+                <span class="back" data-target="#edit-climate-schedule-modal-slider" data-slide-to="0"></span>
+                <strong class="modal-title">Heated and Cooled Seats</strong>
+                <div class="heated-seats-wrap">
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="text" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="1">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="2">Apply</span>
+                    </span>
+                  </div>
+                  <div class="heated-seats-vehicle">
+                    <img src="/images/image_heated_seats_base.png" alt="vehicle outline" />
+                    <span class="heated-seat-1 off">
+                      <img src="/images/heated_seat_1_off.png" alt="Driver's seat">
+                    </span>
+                    <span class="heated-seat-2 off">
+                      <img src="/images/heated_seat_2_off.png" alt="Passenger's seat">
+                    </span>
+                    <span class="heated-seat-3 off">
+                      <img src="/images/heated_seat_3_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <span class="heated-seat-4 off">
+                      <img src="/images/heated_seat_4_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <em>Select a seat</em>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="3">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="4">Apply</span>
+                    </span>
+                  </div>
+                </div><!-- /.heated-steats-wrap -->
+              </div><!-- /.modal-heated-seats -->
             </div><!-- /.item -->
           </div><!-- /.carousel-inner -->
         </div><!-- /.carousel -->

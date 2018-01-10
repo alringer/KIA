@@ -65,7 +65,7 @@
   margin: 0 auto; }
   @media (max-width: 767px) {
     .view-schedules .schedules-wrapper {
-      padding: 0 10px; } }
+      padding: 0 0px; } }
 
 .view-schedules .schedules-header {
   padding: 40px 0 0;
@@ -108,14 +108,18 @@
       clear: both; }
   .schedules-alert-area .row > div {
     margin-bottom: 10px; }
+    @media (max-width: 767px) {
+      .schedules-alert-area .row > div {
+        margin-bottom: 2px; } }
     .schedules-alert-area .row > div:last-child {
       margin-bottom: 0; }
   .schedules-alert-area h3 {
-    font: bold 12px/1em "KIA", sans-serif;
+    font: bold 12px/18px "KIA", sans-serif;
     letter-spacing: .3px;
     color: #000;
     text-transform: uppercase;
-    margin: 0; }
+    margin: 0;
+    min-height: 18px; }
     .schedules-alert-area h3 i {
       display: inline-block;
       vertical-align: middle;
@@ -141,13 +145,21 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 10px; }
+  .alert-card.large {
+    height: 194px; }
+  .alert-card.alert-card-charge .icon-settings, .alert-card.alert-card-climate .icon-settings {
+    z-index: 1; }
   .alert-card.alert-card-charge .alert-body, .alert-card.alert-card-climate .alert-body {
     top: 35px; }
-    .alert-card.alert-card-charge .alert-body > strong, .alert-card.alert-card-climate .alert-body > strong {
+    .alert-card.alert-card-charge .alert-body div > strong,
+    .alert-card.alert-card-charge .alert-body > strong, .alert-card.alert-card-climate .alert-body div > strong,
+    .alert-card.alert-card-climate .alert-body > strong {
       font: bold 18px/1em "Source Sans Pro", sans-serif;
       letter-spacing: .5px;
       margin-bottom: 10px; }
-      .alert-card.alert-card-charge .alert-body > strong span, .alert-card.alert-card-climate .alert-body > strong span {
+      .alert-card.alert-card-charge .alert-body div > strong span,
+      .alert-card.alert-card-charge .alert-body > strong span, .alert-card.alert-card-climate .alert-body div > strong span,
+      .alert-card.alert-card-climate .alert-body > strong span {
         padding-top: 3px;
         display: block;
         font: bold 12px/1em "Source Sans Pro", sans-serif;
@@ -166,8 +178,34 @@
         font-style: normal; }
       .alert-card.alert-card-charge .alert-body > span strong, .alert-card.alert-card-climate .alert-body > span strong {
         color: #C4172C; }
+    .alert-card.alert-card-charge .alert-body.dual, .alert-card.alert-card-climate .alert-body.dual {
+      top: 25px;
+      padding-left: 101px; }
+      .alert-card.alert-card-charge .alert-body.dual em, .alert-card.alert-card-climate .alert-body.dual em {
+        display: block;
+        font: 12px/1.5em "Source Sans Pro", sans-serif;
+        color: #898989;
+        position: relative; }
+        .alert-card.alert-card-charge .alert-body.dual em:before, .alert-card.alert-card-climate .alert-body.dual em:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background: #c4172c;
+          border-radius: 100%;
+          left: -12px;
+          top: 50%;
+          transform: translateY(-50%); }
+        .alert-card.alert-card-charge .alert-body.dual em.active:before, .alert-card.alert-card-climate .alert-body.dual em.active:before {
+          background: #8EC439; }
+      .alert-card.alert-card-charge .alert-body.dual strong, .alert-card.alert-card-climate .alert-body.dual strong {
+        margin-bottom: 15px; }
+      .alert-card.alert-card-charge .alert-body.dual > i.icon-3d-battery, .alert-card.alert-card-climate .alert-body.dual > i.icon-3d-battery {
+        top: 55px !important; }
   .alert-card.alert-card-charge .alert-body {
     top: 50px; }
+    .alert-card.alert-card-charge .alert-body div > strong,
     .alert-card.alert-card-charge .alert-body > strong {
       font-size: 16px;
       letter-spacing: .4px; }
@@ -198,16 +236,23 @@
     padding-left: 91px;
     font: 12px/1.58em "Source Sans Pro", sans-serif;
     letter-spacing: .3px; }
+    .alert-card .alert-body .row > div {
+      margin-bottom: 0; }
     .alert-card .alert-body > i {
       display: block;
       position: absolute;
       top: 50%;
       left: 19px;
       transform: translateY(-50%); }
+      .alert-card .alert-body > i.icon-alert-climate {
+        top: 36px;
+        transform: 0; }
+    .alert-card .alert-body div > strong,
     .alert-card .alert-body > strong {
       display: block;
       font: bold 14px/1.64em "Source Sans Pro", sans-serif;
       letter-spacing: .4px; }
+    .alert-card .alert-body div > span,
     .alert-card .alert-body > span {
       display: block; }
   .alert-card.inactive .alert-status span:before {
@@ -237,17 +282,102 @@
         position: relative;
         top: -1px; }
   .alert-card .mobile-arrow {
+    display: none;
     position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
-    display: none; }
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer; }
+    .alert-card .mobile-arrow i {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .alert-card .mobile-arrow:hover i {
+      margin-right: -5px; }
   .alert-card.alert-card-speed .alert-body {
     top: 65px; }
     .alert-card.alert-card-speed .alert-body > strong {
       font-size: 18px;
       letter-spacing: .6px;
       line-height: 1.28em; }
+  @media (max-width: 767px) {
+    .alert-card {
+      height: auto !important;
+      margin-bottom: 0px !important; }
+      .alert-card .icon-settings {
+        display: none; }
+      .alert-card .mobile-arrow {
+        display: block; }
+      .alert-card .alert-status {
+        display: none; }
+      .alert-card .alert-title {
+        display: none; }
+      .alert-card.inactive .alert-body > strong:before {
+        background-color: #C4172C; }
+      .alert-card.alert-card-charge .alert-body {
+        padding-bottom: 5px !important; }
+      .alert-card.alert-card-charge .row {
+        max-width: 95%; }
+      .alert-card .alert-body {
+        position: relative;
+        left: 0;
+        top: 0 !important;
+        padding: 16px !important; }
+        .alert-card .alert-body.dual {
+          padding-left: 0px !important; }
+          .alert-card .alert-body.dual .row > div {
+            padding-left: 45px; }
+          .alert-card .alert-body.dual div > strong:before,
+          .alert-card .alert-body.dual > strong:before {
+            display: none; }
+          .alert-card .alert-body.dual div > strong > span,
+          .alert-card .alert-body.dual > strong > span {
+            padding-left: 0; }
+        .alert-card .alert-body > i {
+          display: none; }
+        .alert-card .alert-body span {
+          padding-left: 16px;
+          font-weight: normal !important; }
+        .alert-card .alert-body div > strong,
+        .alert-card .alert-body > strong {
+          font-size: 14px !important;
+          letter-spacing: .4px !important; }
+          .alert-card .alert-body div > strong > span,
+          .alert-card .alert-body > strong > span {
+            padding-top: 3px !important;
+            line-height: 1.4em !important; }
+            .alert-card .alert-body div > strong > span em,
+            .alert-card .alert-body div > strong > span strong,
+            .alert-card .alert-body > strong > span em,
+            .alert-card .alert-body > strong > span strong {
+              font-weight: bold;
+              font-style: normal;
+              text-transform: uppercase; }
+            .alert-card .alert-body div > strong > span strong,
+            .alert-card .alert-body > strong > span strong {
+              color: #C4172C; }
+            .alert-card .alert-body div > strong > span em,
+            .alert-card .alert-body > strong > span em {
+              color: #8EC439; }
+            .alert-card .alert-body div > strong > span > span,
+            .alert-card .alert-body > strong > span > span {
+              display: inline !important;
+              padding-left: 0; }
+          .alert-card .alert-body div > strong:before,
+          .alert-card .alert-body > strong:before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 6px;
+            background: #8EC439;
+            margin-right: 7px;
+            vertical-align: middle;
+            position: relative;
+            top: -1px; } }
 
 .no-alerts-set {
   height: 135px; }

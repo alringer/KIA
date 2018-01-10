@@ -8,6 +8,7 @@
   <!-- @import "partials/head/vendors/dial-files.kit" -->
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/tooltips.js"></script>
+  <script type="text/javascript" src="/scripts/heated-seats.js"></script>
   <!-- @import "partials/head/vendors/select.kit" -->
 
 <!-- @import "partials/head/head-end.kit" -->
@@ -45,7 +46,7 @@
           <div class="schedules-alert-area-cards">
             <div class="row">
               <div class="col-sm-4">
-                <div class="alert-card alert-card-climate">
+                <div class="alert-card alert-card-climate large">
                   <i class="icon-settings" data-toggle="modal" data-target="#edit-climate-schedule">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
@@ -58,14 +59,19 @@
                     <strong>
                       7:30 AM
                       <span>
+                        <span class="hidden-sm hidden-md hidden-lg">68<sup>°</sup> | </span>
                         M, Tu, W
                       </span>
+                      <span class="hidden-sm hidden-md hidden-lg">
+                        Defrost: <em>Off</em> |
+                        Heated Accessories: <em>Off</em>
+                      </span>
                     </strong>
-                    <span>
+                    <span class="hidden-xs">
                       Defrost:
                       <em>On</em>
                     </span>
-                    <span>
+                    <span class="hidden-xs">
                       Heated Accessories:
                       <em>On</em>
                     </span>
@@ -75,10 +81,13 @@
                       Active
                     </span>
                   </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-climate-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
               <div class="col-sm-4">
-                <div class="alert-card alert-card-climate inactive">
+                <div class="alert-card alert-card-climate inactive large">
                   <i class="icon-settings" data-toggle="modal" data-target="#edit-climate-schedule">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
@@ -91,15 +100,27 @@
                     <strong>
                       6:00 PM
                       <span>
+                        <span class="hidden-sm hidden-md hidden-lg">68<sup>°</sup> | </span>
                         M, Tu, W, Th, F
                       </span>
+                      <span class="hidden-sm hidden-md hidden-lg">
+                        Defrost: <strong>Off</strong> |
+                        Heated Accessories: <strong>Off</strong>
+                        <br />
+                        Heated And Coold Seats: <strong>Off</strong>
+                      </span>
                     </strong>
-                    <span>
+                    <span class="hidden-xs">
                       Defrost:
                       <strong>Off</strong>
                     </span>
-                    <span>
+                    <span class="hidden-xs">
                       Heated Accessories:
+                      <strong>Off</strong>
+                    </span>
+                    <span class="hidden-xs">
+                      Heated and <br/>
+                      Cooled Seats
                       <strong>Off</strong>
                     </span>
                   </div><!-- /.alert-body -->
@@ -108,6 +129,9 @@
                       Inactive
                     </span>
                   </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-climate-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
             </div><!-- /.row -->
@@ -138,21 +162,33 @@
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
                     </svg>
                   </i>
-                  <div class="alert-body">
+                  <div class="alert-body dual">
                     <i class="icon-3d-battery">
                     </i>
-                    <strong>
-                      3:00 AM - 8:45 AM
-                      <span>
-                        M, Tu, W
-                      </span>
-                    </strong>
+                    <div class="row">
+                      <div class="col-sm-12 col-xs-6">
+                        <em class="active">Departure 1</em>
+                        <strong>
+                          8:00 AM
+                          <span>
+                            M, Tu, W, Th, F
+                          </span>
+                        </strong>
+                      </div><!-- /.col -->
+                      <div class="col-sm-12 col-xs-6">
+                        <em class="inactive">Departure 2</em>
+                        <strong>
+                          5:00 PM
+                          <span>
+                            M, Tu, W, Th, F
+                          </span>
+                        </strong>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
                   </div><!-- /.alert-body -->
-                  <div class="alert-status">
-                    <span>
-                      Active
-                    </span>
-                  </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-charge-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
               <div class="col-sm-4">
@@ -177,6 +213,9 @@
                       Active
                     </span>
                   </div><!-- /.alert-status -->
+                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-charge-schedule">
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
               </div><!-- /.col -->
             </div><!-- /.row -->

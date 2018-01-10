@@ -40,7 +40,7 @@
     padding: 0 50px;
     margin: 0 auto;
     @media (max-width: $screen-xs-max) {
-      padding: 0 10px;
+      padding: 0 0px;
     }
   }
   .schedules-header {
@@ -94,17 +94,21 @@
   .row {
     > div {
       margin-bottom: 10px;
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 2px;
+      }
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
   h3 {
-    font: bold 12px/1em $kia;
+    font: bold 12px/18px $kia;
     letter-spacing: .3px;
     color: #000;
     text-transform: uppercase;
     margin: 0;
+    min-height: 18px;
     i {
       display: inline-block;
       vertical-align: middle;
@@ -137,10 +141,17 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
+  &.large {
+    height: 194px;
+  }
   &.alert-card-charge,
   &.alert-card-climate {
+    .icon-settings {
+      z-index: 1;
+    }
     .alert-body {
       top: 35px;
+      div > strong,
       > strong {
         font: bold 18px/1em $sans;
         letter-spacing: .5px;
@@ -169,11 +180,47 @@
            color: $red;
         }
       }
+      &.dual {
+        top: 25px;
+        padding-left: 101px;
+        em {
+          display: block;
+          font: 12px/1.5em $sans;
+          color: #898989;
+          position: relative;
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #c4172c;
+            border-radius: 100%;
+            left: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &.active {
+            &:before {
+              background: $green;
+            }
+          }
+        }
+        strong {
+          margin-bottom: 15px;
+        }
+        > {
+          i.icon-3d-battery {
+            top: 55px !important;
+          }
+        }
+      }
     }
   }
   &.alert-card-charge {
     .alert-body {
       top: 50px;
+      div > strong,
       > strong {
         font-size: 16px;
         letter-spacing: .4px;
@@ -217,18 +264,27 @@
     padding-left: 91px;
     font: 12px/1.58em $sans;
     letter-spacing: .3px;
+    .row > div {
+      margin-bottom: 0;
+    }
     > i {
       display: block;
       position: absolute;
       top: 50%;
       left: 19px;
       transform: translateY(-50%);
+      &.icon-alert-climate {
+        top: 36px;
+        transform: 0;
+      }
     }
+    div > strong,
     > strong {
       display: block;
       font: bold 14px/1.64em $sans;
       letter-spacing: .4px;
     }
+    div > span,
     > span {
       display: block;
     }
@@ -270,11 +326,25 @@
     }
   }
   .mobile-arrow {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    i {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+      transition: all 250ms $easeOutQuint;
+    }
+    &:hover {
+      i {
+        margin-right: -5px;
+      }
+    }
   }
   &.alert-card-speed {
     .alert-body {
@@ -287,50 +357,102 @@
     }
   }
   @media (max-width: $screen-xs-max) {
-    // height: auto;
-    // .mobile-arrow {
-    //   display: block;
-    // }
-    // .alert-title {
-    //   display: none;
-    // }
-    // &.inactive {
-    //   .alert-body {
-    //     > strong {
-    //       &:before {
-    //         background-color: $red;
-    //       }
-    //     }
-    //   }
-    // }
-    // .alert-body {
-    //   position: relative;
-    //   left: 0;
-    //   top: 0 !important;
-    //   padding: 16px;
-    //   > i {
-    //     display: none;
-    //   }
-    //   span {
-    //     padding-left: 16px;
-    //   }
-    //   > strong {
-    //     font-size: 14px !important;
-    //     letter-spacing: .4px !important;
-    //     &:before {
-    //       content: "";
-    //       display: inline-block;
-    //       width: 6px;
-    //       height: 6px;
-    //       border-radius: 6px;
-    //       background: $green;
-    //       margin-right: 7px;
-    //       vertical-align: middle;
-    //       position: relative;
-    //       top: -1px;
-    //     }
-    //   }
-    // }
+    height: auto !important;
+    margin-bottom: 0px !important;
+    .icon-settings {
+      display: none;
+    }
+    .mobile-arrow {
+      display: block;
+    }
+    .alert-status {
+      display: none;
+    }
+    .alert-title {
+      display: none;
+    }
+    &.inactive {
+      .alert-body {
+        > strong {
+          &:before {
+            background-color: $red;
+          }
+        }
+      }
+    }
+    &.alert-card-charge {
+      .alert-body {
+        padding-bottom: 5px !important;
+      }
+      .row {
+        max-width: 95%;
+      }
+    }
+    .alert-body {
+      position: relative;
+      left: 0;
+      top: 0 !important;
+      padding: 16px !important;
+      &.dual {
+        padding-left: 0px !important;
+        .row > div {
+          padding-left: 45px;
+        }
+        div > strong,
+        > strong {
+          &:before {
+            display: none;
+          }
+          > span {
+            padding-left: 0;
+          }
+        }
+      }
+      > i {
+        display: none;
+      }
+      span {
+        padding-left: 16px;
+        font-weight: normal !important;
+      }
+      div > strong,
+      > strong {
+        font-size: 14px !important;
+        letter-spacing: .4px !important;
+        > span {
+          padding-top: 3px !important;
+          line-height: 1.4em !important;
+          em,
+          strong {
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+          }
+          strong {
+            color: $red;
+          }
+          em {
+            color: $green;
+          }
+          > span {
+            display: inline !important;
+            padding-left: 0;
+          }
+        }
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          background: $green;
+          margin-right: 7px;
+          vertical-align: middle;
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
   }
 }
 

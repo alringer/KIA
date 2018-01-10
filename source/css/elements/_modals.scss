@@ -2337,6 +2337,12 @@ body.modal-open {
   .ui-dial.speed {
     margin-bottom: -10px;
   }
+  .heated-seats-item {
+    padding: 0 !important;
+  }
+  .modal-heated-seats.seat-open.top .heated-seats-vehicle {
+    transform: translateY(315px) !important;
+  }
 }
 
 .modal-create-alert {
@@ -2444,6 +2450,9 @@ body.modal-open {
             letter-spacing: .4px;
             text-transform: uppercase;
           }
+          strong {
+            opacity: 0;
+          }
         }
         .toggle {
           margin-top: 2px;
@@ -2451,6 +2460,27 @@ body.modal-open {
             margin-bottom: 15px;
             line-height: 1em;
           }
+        }
+        .icon-arrow-right {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translate(0, -50%);
+          transition: all 250ms $easeOutQuint;
+        }
+        .is-slide {
+          display: block;
+          &:hover {
+            .icon-arrow-right {
+              margin-right: -5px;
+            }
+          }
+        }
+        .icon-heated-seats {
+          position: absolute;
+          right: 35px;
+          top: 50%;
+          transform: translate(0, -50%);
         }
       }
       .toggle-group,
@@ -2874,6 +2904,51 @@ ul.issues-list {
     p {
       font: 14px/1.5em $sans;
       letter-spacing: .6px;
+    }
+  }
+}
+
+.icon-heated-seats {
+  width: 25px;
+  height: 20px;
+  background: url('/images/icon_heated_seats.svg') center/contain no-repeat;
+  position: relative;
+  display: inline-block;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 3px;
+    display: block;
+    height: 3px;
+    background: #ec4446;
+    pointer-events: none;
+    transition: all 250ms $easeOutQuint;
+    opacity: 0;
+  }
+  &:after {
+    background: #56b5e4;
+    margin-top: 8px;
+  }
+  &.hot {
+    margin-top: -3px;
+    &:before {
+      opacity: 1;
+    }
+  }
+  &.cold {
+    margin-top: -3px;
+    &:after {
+      margin-top: 3px;
+      opacity: 1;
+    }
+  }
+  &.hot.cold {
+    margin-top: -6px;
+    &:after {
+      margin-top: 8px;
     }
   }
 }
