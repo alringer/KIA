@@ -36,6 +36,7 @@
     <script type="text/javascript" src="/scripts/dial.js"></script>
     
   <script type="text/javascript" src="/scripts/tooltips.js"></script>
+  <script type="text/javascript" src="/scripts/heated-seats.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
   
@@ -728,7 +729,7 @@
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-schedules -->
-<div class="modal fade add-schedules" id="add-schedules" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal fade add-schedules heated-seats" id="add-schedules" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
@@ -753,7 +754,7 @@
                     <em>0 of 2 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
-                  <li data-target="#schedules-modal-slider" data-slide-to="2">
+                  <li data-target="#schedules-modal-slider" data-slide-to="3">
                     <i class="icon-schedule-red-charge"></i>
                     <strong>
                       Charge Schedule
@@ -794,12 +795,21 @@
                         </label>
                       </span>
                     </li>
-                    <li>
+                    <li class="less-margin">
                       <span class="toggle">
                         <label>
                           <em>Heated Accessories</em>
                           <input type="checkbox" name="toggle" value="1">
                           <span></span>
+                        </label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="toggle is-slide" data-target="#schedules-modal-slider" data-slide-to="2">
+                        <label>
+                          <em>Heated and Cooled Seats</em>
+                          <i class="icon-heated-seats hot cold"></i>
+                          <i class="icon-arrow-right"></i>
                         </label>
                       </span>
                     </li>
@@ -941,6 +951,90 @@
                   </div>
                 </form>
               </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+            <div class="item show-back heated-seats-item">
+              <div class="modal-heated-seats">
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="1"></span>
+                <strong class="modal-title">Heated and Cooled Seats</strong>
+                <div class="heated-seats-wrap">
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="text" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="1">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="2">Apply</span>
+                    </span>
+                  </div>
+                  <div class="heated-seats-vehicle">
+                    <img src="/images/image_heated_seats_base.png" alt="vehicle outline" />
+                    <span class="heated-seat-1 off">
+                      <img src="/images/heated_seat_1_off.png" alt="Driver's seat">
+                    </span>
+                    <span class="heated-seat-2 off">
+                      <img src="/images/heated_seat_2_off.png" alt="Passenger's seat">
+                    </span>
+                    <span class="heated-seat-3 off">
+                      <img src="/images/heated_seat_3_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <span class="heated-seat-4 off">
+                      <img src="/images/heated_seat_4_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <em>Select a seat</em>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="3">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="4">Apply</span>
+                    </span>
+                  </div>
+                </div><!-- /.heated-steats-wrap -->
+              </div><!-- /.modal-heated-seats -->
             </div><!-- /.item -->
             <div class="item show-back">
               <div class="modal-charge-schedule">
@@ -1094,7 +1188,7 @@
                     </li>
                   </ul>
                   <div class="footer-action">
-                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="3">
+                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="4">
                       Save (demo -> next type)
                     </span>
                   </div>
@@ -1321,7 +1415,7 @@
                     </li>
                   </ul>
                   <div class="footer-action">
-                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="4">
+                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="5">
                       Next: Review off-peak times
                     </span>
                   </div>
@@ -1330,7 +1424,7 @@
             </div><!-- /.item -->
             <div class="item show-back">
               <div class="modal-charge-schedule">
-                <span class="back" data-target="#schedules-modal-slider" data-slide-to="3"></span>
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="4"></span>
                 <strong class="modal-title">
                   Review off-peak times
                 </strong>
@@ -1509,7 +1603,7 @@
                     </li>
                   </ul>
                   <div class="footer-action">
-                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="5">
+                    <span class="button main full" data-target="#schedules-modal-slider" data-slide-to="6">
                       Next: Review &amp; Save
                     </span>
                   </div>
@@ -1518,7 +1612,7 @@
             </div><!-- /.item -->
             <div class="item show-back">
               <div class="modal-charge-schedule final-step">
-                <span class="back" data-target="#schedules-modal-slider" data-slide-to="4"></span>
+                <span class="back" data-target="#schedules-modal-slider" data-slide-to="5"></span>
                 <strong class="modal-title">
                   Review your schedule
                 </strong>

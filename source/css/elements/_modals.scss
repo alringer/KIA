@@ -2362,6 +2362,7 @@ body.modal-open {
     padding: 0 20px;
     list-style: none;
     max-width: 395px;
+    text-align: left;
     li {
       border-top: solid 1px #d5d5d5;
       padding: 37.5px 0 34.5px 95px;
@@ -2629,7 +2630,7 @@ body.modal-open {
           transform: translateX(-50%);
         }
         &:after {
-          transform: translate(-50%, 3px);
+          transform: translate(-50%, 3.5px);
         }
         span {
           display: block;

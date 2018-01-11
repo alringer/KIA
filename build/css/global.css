@@ -2067,7 +2067,8 @@ body.modal-open {
   margin: 0 auto;
   padding: 0 20px;
   list-style: none;
-  max-width: 395px; }
+  max-width: 395px;
+  text-align: left; }
   .modal-create-alert ul.alert-choices li {
     border-top: solid 1px #d5d5d5;
     padding: 37.5px 0 34.5px 95px;
@@ -2385,7 +2386,7 @@ body.modal-open {
         left: 50%;
         transform: translateX(-50%); }
       .modal-charge-schedule .center-radio .radio em:after {
-        transform: translate(-50%, 3px); }
+        transform: translate(-50%, 3.5px); }
       .modal-charge-schedule .center-radio .radio em span {
         display: block;
         max-width: 70px;
