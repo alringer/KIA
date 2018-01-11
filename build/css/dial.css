@@ -102,7 +102,8 @@
       top: 5px;
       left: 0;
       right: 0;
-      bottom: 0; }
+      bottom: 0;
+      transform: rotate(-120deg); }
       .ui-dial-handle-pin:before {
         content: "";
         display: block;
@@ -214,9 +215,15 @@
         background-image: url("/images/seat_on_hot.png"); }
   .ui-dial.speed {
     background-image: url("/images/dial_speed.png"); }
+    .ui-dial.speed > div {
+      opacity: 1; }
+    .ui-dial.speed canvas {
+      transform: scale(1.05); }
     .ui-dial.speed .ui-dial-handle {
       transform: rotate(-43deg) translate(-145px) rotate(43deg);
-      border-color: #000; }
+      border-color: #000;
+      z-index: 5;
+      pointer-events: none; }
     .ui-dial.speed .ui-dial-temperateure {
       font: bold 41px/1em "KIA", sans-serif;
       letter-spacing: 2.7px;

@@ -47,6 +47,9 @@ $(document).ready(function () {
             max: max,
             width: 295,
             height: 295,
+            thickness: .015,
+            fgColor: '#8EC439',
+            bgColor: '#c5c9ce',
             change: function change(v) {
               window.dial.methods._adjust_ui(window.dial.elements.dial.index($this), v);
             }
@@ -98,10 +101,9 @@ $(document).ready(function () {
         if (v > props.value_max) {
           v = props.value_max;
         }
-        props.element.val(v);
         var adjust_v = (v - props.value_min) / props.value_diff;
         adjust_v = Math.round(adjust_v * props.max);
-        props.element.val(adjust_v).trigger('change');
+        props.element.find('.ui-dial-canvas').val(adjust_v).trigger('change');
         clearTimeout(window['settingDialClass' + c]);
         props.element.addClass('setting');
         window.dial.methods._adjust_ui(c, adjust_v);

@@ -97,6 +97,7 @@
       left: 0;
       right: 0;
       bottom: 0;
+      transform: rotate(-120deg);
       &:before {
         content: "";
         display: block;
@@ -246,10 +247,18 @@
   }
   &.speed {
     background-image: url('/images/dial_speed.png');
+    > div {
+      opacity: 1;
+    }
+    canvas {
+      transform: scale(1.05);
+    }
     .ui-dial {
       &-handle {
         transform: rotate(-43deg) translate(-145px) rotate(43deg);
         border-color: #000;
+        z-index: 5;
+        pointer-events: none;
       }
       &-temperateure {
         font: bold 41px/1em $kia;
