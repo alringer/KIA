@@ -160,6 +160,7 @@
     transform: translateY(-20px);
     transition: opacity 350ms $easeOutQuint;
     pointer-events: none;
+    user-select: none;
     z-index: 3;
     > span:not(.button) {
       display: inline-block;

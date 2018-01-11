@@ -65,7 +65,9 @@
   margin: 0 auto; }
   @media (max-width: 767px) {
     .view-schedules .schedules-wrapper {
-      padding: 0 0px; } }
+      padding: 0 0px; }
+      .view-schedules .schedules-wrapper .schedules-alert-area-header {
+        padding: 0 16px; } }
 
 .view-schedules .schedules-header {
   padding: 40px 0 0;

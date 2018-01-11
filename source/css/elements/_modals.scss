@@ -2300,6 +2300,10 @@ body.modal-open {
 .add-my-car-zone-alert {
   .modal-dialog {
     max-width: 425px;
+    text-align: left;
+    .modal-heated-seats {
+      text-align: center;
+    }
   }
   .copy {
     display: inline-block;

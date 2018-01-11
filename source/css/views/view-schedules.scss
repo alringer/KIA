@@ -41,6 +41,9 @@
     margin: 0 auto;
     @media (max-width: $screen-xs-max) {
       padding: 0 0px;
+      .schedules-alert-area-header {
+        padding: 0 16px;
+      }
     }
   }
   .schedules-header {

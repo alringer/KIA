@@ -913,7 +913,7 @@
                     <i class="icon-3d-battery">
                     </i>
                     <strong>
-                      12:00 PM - 100%
+                      12:00 PM until 100%
                       <span>
                         M, Tu, W
                       </span>
@@ -2546,10 +2546,13 @@
                 <strong class="modal-title">
                   Review off-peak times
                 </strong>
+                <p class="hidden-sm hidden-md hidden-lg">
+                  Utility companies typically offer reduced rates for energy that is used during off-peak times. Contact your local utility provider to find the most cost-effective time to charge your vehicle.
+                </p>
                 <form>
                   <ul class="form-fields">
                     <li>
-                      <strong class="form-section-subline">
+                      <strong class="form-section-subline hidden-xs">
                         YOUR UTILITY provider's off-peak TIMES
                         <i class="tooltip-button" data-toggle="tooltip" data-placement="bottom" title="Utility companies typically offer reduced rates for energy that is used during off-peak times. Contact your local utility provider to find the most cost-effective time to charge your vehicle.">
                           i
@@ -2656,25 +2659,27 @@
                             <strong>
                               Weekends (Sa-Su)
                             </strong>
-                            <option value="12pm">12:00pm</option>
-                            <option value="1230pm">12:30pm</option>
-                            <option value="1pm">1:00pm</option>
-                            <option value="130pm">1:30pm</option>
-                            <option value="2pm">2:00pm</option>
-                            <option value="230pm">2:30pm</option>
-                            <option value="3pm">3:00pm</option>
-                            <option value="330pm">3:30pm</option>
-                            <option value="4pm">4:00pm</option>
-                            <option value="430pm">4:30pm</option>
-                            <option value="5pm">5:00pm</option>
-                            <option value="530pm">5:30pm</option>
-                            <option value="6pm">6:00pm</option>
-                            <option value="630pm">6:30pm</option>
-                            <option value="7pm">7:00pm</option>
-                            <option value="730pm">7:30pm</option>
-                            <option value="8pm">8:30pm</option>
-                            <option value="9pm">9:00pm</option>
-                            <option value="10pm">10:00pm</option>
+                            <select class="selectpicker small">
+                              <option value="12pm">12:00pm</option>
+                              <option value="1230pm">12:30pm</option>
+                              <option value="1pm">1:00pm</option>
+                              <option value="130pm">1:30pm</option>
+                              <option value="2pm">2:00pm</option>
+                              <option value="230pm">2:30pm</option>
+                              <option value="3pm">3:00pm</option>
+                              <option value="330pm">3:30pm</option>
+                              <option value="4pm">4:00pm</option>
+                              <option value="430pm">4:30pm</option>
+                              <option value="5pm">5:00pm</option>
+                              <option value="530pm">5:30pm</option>
+                              <option value="6pm">6:00pm</option>
+                              <option value="630pm">6:30pm</option>
+                              <option value="7pm">7:00pm</option>
+                              <option value="730pm">7:30pm</option>
+                              <option value="8pm">8:30pm</option>
+                              <option value="9pm">9:00pm</option>
+                              <option value="10pm">10:00pm</option>
+                            </select>
                             <span class="error-message">
                               <span class="error-message-inner">
                                 {{ add error message }}
