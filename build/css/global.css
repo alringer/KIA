@@ -2635,6 +2635,42 @@ ul.issues-list {
     .icon-heated-seats.hot.cold:after {
       margin-top: 8px; }
 
+.modal.award-details .modal-dialog {
+  width: 398px; }
+  .modal.award-details .modal-dialog .modal-award-details {
+    padding: 45px 50px 45px; }
+    @media (max-width: 767px) {
+      .modal.award-details .modal-dialog .modal-award-details {
+        padding-left: 30px;
+        padding-right: 30px; } }
+    .modal.award-details .modal-dialog .modal-award-details .award-details-list {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .modal.award-details .modal-dialog .modal-award-details .award-details-list .award-listing {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+        box-shadow: none; }
+        .modal.award-details .modal-dialog .modal-award-details .award-details-list .award-listing.unawarded .award-main {
+          opacity: .3; }
+        .modal.award-details .modal-dialog .modal-award-details .award-details-list .award-listing .award-icon {
+          margin-right: 28px; }
+        .modal.award-details .modal-dialog .modal-award-details .award-details-list .award-listing .award-main strong {
+          font: bold 14px "KIA", sans-serif;
+          letter-spacing: .4px;
+          text-transform: uppercase;
+          margin-bottom: 4px; }
+        .modal.award-details .modal-dialog .modal-award-details .award-details-list .award-listing .award-main em {
+          font: 14px/1.5em "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          margin-bottom: 3px; }
+        .modal.award-details .modal-dialog .modal-award-details .award-details-list .award-listing .award-main span {
+          display: block;
+          font: 500 10px "KIA", sans-serif;
+          letter-spacing: .3px;
+          color: #9ba1a9; }
+
 .modal {
   min-width: 355px; }
   .modal form {

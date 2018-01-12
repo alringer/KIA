@@ -2957,3 +2957,54 @@ ul.issues-list {
     }
   }
 }
+
+.modal.award-details {
+  .modal-dialog {
+    width: 398px;
+    .modal-award-details {
+      padding: 45px 50px 45px;
+      @media (max-width: $screen-xs-max) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .award-details-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .award-listing {
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 0;
+          box-shadow: none;
+          &.unawarded {
+            .award-main {
+              opacity: .3;
+            }
+          }
+          .award-icon {
+            margin-right: 28px;
+          }
+          .award-main {
+            strong {
+              font: bold 14px $kia;
+              letter-spacing: .4px;
+              text-transform: uppercase;
+              margin-bottom: 4px;
+            }
+            em {
+              font: 14px/1.5em $sans;
+              letter-spacing: .6px;
+              margin-bottom: 3px;
+            }
+            span {
+              display: block;
+              font: 500 10px $kia;
+              letter-spacing: .3px;
+              color: #9ba1a9;
+            }
+          }
+        }
+      }
+    }
+  }
+}

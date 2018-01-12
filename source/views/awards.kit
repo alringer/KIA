@@ -1,0 +1,367 @@
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-awards.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/slick.kit" -->
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/my-vehicles.js"></script>
+
+<!-- @import "partials/head/head-end.kit" -->
+<div class="view-awards nav-no-service nav-no-selector">
+  <div class="has-mobile-nav">
+    <!-- @import "partials/nav.kit" -->
+    <div class="nav-mobile">
+      <div class="contain">
+        <h1>My Vehicles</h1>
+      </div><!-- /.contain -->
+    </div><!-- /.nav-mobile -->
+  </div><!-- /.has-mobile-nav -->
+  <div class="page-view">
+    <div class="page-view-subnav">
+      <ul class="page-view-subnav-items">
+        <li>
+          <a href="#">
+            My Vehicles
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            Awards
+          </a>
+        </li>
+      </ul><!-- /.page-view-subnav-items -->
+    </div><!-- /.page-view-subnav -->
+    <div class="awards-page-view">
+      <div class="contain">
+        <div class="hidden-xs">
+          <h1>Awards</h1>
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <td>AWARD AND DESCRIPTION</td>
+                <td>DATE EARNED</td>
+                <td>AWARDS EARNED</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-toggle="modal" data-target="#award-details">
+                <td>
+                  <div class="award-icon">
+                    <img src="/images/award-1.png" alt="Award Title">
+                  </div><!-- /.award-icon -->
+                </td>
+                <td>
+                  <div class="award-main">
+                    <strong>Efficiency Leader</strong>
+                    <em>Earn the efficient driver award 3 months in a row</em>
+                  </div>
+                </td>
+                <td>
+                  <div class="award-date">
+                    02/14/17
+                  </div><!-- /.award-date -->
+                </td>
+                <td>
+                  <div class="award-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                    </svg>
+                    <strong>2 of 3</strong>
+                    awards earned
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.award-date -->
+                </td>
+              </tr>
+              <tr class="separator" />
+              <tr data-toggle="modal" data-target="#award-details">
+                <td>
+                  <div class="award-icon unawarded">
+                    <img src="/images/award-2.png" alt="Award Title">
+                  </div><!-- /.award-icon -->
+                </td>
+                <td>
+                  <div class="award-main">
+                    <strong>Scheduler</strong>
+                    <em>Schedule a service appointment</em>
+                  </div>
+                </td>
+                <td>
+                  <div class="award-date">
+                  </div><!-- /.award-date -->
+                </td>
+                <td>
+                  <div class="award-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                    </svg>
+                    <strong>0 of 1</strong>
+                    awards earned
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.award-date -->
+                </td>
+              </tr>
+              <tr class="separator" />
+              <tr data-toggle="modal" data-target="#award-details">
+                <td>
+                  <div class="award-icon">
+                    <img src="/images/award-3.png" alt="Award Title">
+                  </div><!-- /.award-icon -->
+                </td>
+                <td>
+                  <div class="award-main">
+                    <strong>Getting Interested</strong>
+                    <em>Add a POI to MyUVO</em>
+                  </div>
+                </td>
+                <td>
+                  <div class="award-date">
+                    09/16/16
+                  </div><!-- /.award-date -->
+                </td>
+                <td>
+                  <div class="award-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                    </svg>
+                    <strong>1 of 2</strong>
+                    awards earned
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.award-date -->
+                </td>
+              </tr>
+              <tr class="separator" />
+              <tr data-toggle="modal" data-target="#award-details">
+                <td>
+                  <div class="award-icon">
+                    <img src="/images/award-4.png" alt="Award Title">
+                  </div><!-- /.award-icon -->
+                </td>
+                <td>
+                  <div class="award-main">
+                    <strong>Growing Garage</strong>
+                    <em>Add a second UVO vehicle to your MyUVO account</em>
+                  </div>
+                </td>
+                <td>
+                  <div class="award-date">
+                    04/17/17
+                  </div><!-- /.award-date -->
+                </td>
+                <td>
+                  <div class="award-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                    </svg>
+                    <strong>1 of 1</strong>
+                    awards earned
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.award-date -->
+                </td>
+              </tr>
+              <tr class="separator" />
+              <tr data-toggle="modal" data-target="#award-details">
+                <td>
+                  <div class="award-icon unawarded">
+                    <img src="/images/award-5.png" alt="Award Title">
+                  </div><!-- /.award-icon -->
+                </td>
+                <td>
+                  <div class="award-main">
+                    <strong>Power User</strong>
+                    <em>Log into MyUVO 10 times n a single month.</em>
+                  </div>
+                </td>
+                <td>
+                  <div class="award-date">
+
+                  </div><!-- /.award-date -->
+                </td>
+                <td>
+                  <div class="award-count">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                    </svg>
+                    <strong>0 of 1</strong>
+                    awards earned
+                    <i class="icon-arrow-right"></i>
+                  </div><!-- /.award-date -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.hidden-xs -->
+          <div class="hidden-sm hidden-md hidden-lg">
+            <div class="award-listing" data-toggle="modal" data-target="#award-details">
+              <span class="label">Award & Description</span>
+              <div class="award-icon">
+                <img src="/images/award-1.png" alt="Award Title">
+              </div><!-- /.award-icon -->
+              <div class="award-main">
+                <strong>Efficiency Leader</strong>
+                <em>Earn the efficient driver award 3 months in a row</em>
+              </div>
+              <div class="award-date">
+                <span class="label">Date Earned</span>
+                02/14/17
+              </div><!-- /.award-date -->
+              <div class="award-count">
+                <span class="label">Awards Earned</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                </svg>
+                <strong>0 of 1</strong>
+                awards earned
+              </div><!-- /.award-count -->
+              <i class="icon-arrow-right"></i>
+            </div><!-- /.award-listing -->
+            <div class="award-listing" data-toggle="modal" data-target="#award-details">
+              <span class="label">Award & Description</span>
+              <div class="award-icon unawarded">
+                <img src="/images/award-2.png" alt="Award Title">
+              </div><!-- /.award-icon -->
+              <div class="award-main">
+                <strong>Scheduler</strong>
+                <em>Shedule a service appointment</em>
+              </div>
+              <div class="award-date">
+                <span class="label">Date Earned</span>
+                —
+              </div><!-- /.award-date -->
+              <div class="award-count">
+                <span class="label">Awards Earned</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                </svg>
+                <strong>0 of 1</strong>
+                awards earned
+              </div><!-- /.award-count -->
+              <i class="icon-arrow-right"></i>
+            </div><!-- /.award-listing -->
+            <div class="award-listing" data-toggle="modal" data-target="#award-details">
+              <span class="label">Award & Description</span>
+              <div class="award-icon">
+                <img src="/images/award-3.png" alt="Award Title">
+              </div><!-- /.award-icon -->
+              <div class="award-main">
+                <strong>Getting Interested</strong>
+                <em>Add a POI to MyUVO</em>
+              </div>
+              <div class="award-date">
+                <span class="label">Date Earned</span>
+                9/16/16
+              </div><!-- /.award-date -->
+              <div class="award-count">
+                <span class="label">Awards Earned</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                </svg>
+                <strong>1 of 1</strong>
+                awards earned
+              </div><!-- /.award-count -->
+              <i class="icon-arrow-right"></i>
+            </div><!-- /.award-listing -->
+            <div class="award-listing" data-toggle="modal" data-target="#award-details">
+              <span class="label">Award & Description</span>
+              <div class="award-icon">
+                <img src="/images/award-4.png" alt="Award Title">
+              </div><!-- /.award-icon -->
+              <div class="award-main">
+                <strong>Growing Garage</strong>
+                <em>Add a second UVO vehicle to  your MyUVO account</em>
+              </div>
+              <div class="award-date">
+                <span class="label">Date Earned</span>
+                04/17/17
+              </div><!-- /.award-date -->
+              <div class="award-count">
+                <span class="label">Awards Earned</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                </svg>
+                <strong>1 of 1</strong>
+                awards earned
+              </div><!-- /.award-count -->
+              <i class="icon-arrow-right"></i>
+            </div><!-- /.award-listing -->
+            <div class="award-listing" data-toggle="modal" data-target="#award-details">
+              <span class="label">Award & Description</span>
+              <div class="award-icon unawarded">
+                <img src="/images/award-5.png" alt="Award Title">
+              </div><!-- /.award-icon -->
+              <div class="award-main">
+                <strong>Power User</strong>
+                <em>Add a second UVO vehicle to  your MyUVO account</em>
+              </div>
+              <div class="award-date">
+                <span class="label">Date Earned</span>
+                —
+              </div><!-- /.award-date -->
+              <div class="award-count" data-toggle="modal" data-target="#award-details">
+                <span class="label">Awards Earned</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#FFBE00" fill-rule="nonzero" d="M19.966 1.615a.487.487 0 0 0-.043-.218.263.263 0 0 0-.175-.175.296.296 0 0 0-.218-.087h-3.055V.393c0-.087-.044-.175-.131-.262A.419.419 0 0 0 16.038 0H3.905A.419.419 0 0 0 3.6.131a.469.469 0 0 0-.088.262v.742H.414a.296.296 0 0 0-.219.087c-.058.03-.101.088-.13.175a.487.487 0 0 0-.044.218s-.157 5.098.392 6.677C.78 9.343 2.188 10.824 3.73 11.26c.611 1.455 2.255 2.604 4.932 3.448l.088 2.837-3.666.873c-.088 0-.16.044-.219.131a.423.423 0 0 0-.087.218v1.135h10.431v-1.135a.423.423 0 0 0-.087-.218c-.059-.087-.131-.13-.219-.13l-3.753-.874.087-2.837c2.512-.547 4.17-1.696 4.976-3.448 1.571-.436 2.951-1.916 3.317-2.968.549-1.58.436-6.677.436-6.677zM3.512 9.209c-.669-.233-1.288-.606-1.44-1.266C1.86 7.023 1.947 4.62 2 3.545a.56.56 0 0 1 .56-.533h.952v6.197zm14.403-1.266c-.168.67-.8 1.033-1.44 1.266V3.012h.954a.56.56 0 0 1 .561.53c.058 1.074.155 3.484-.075 4.401z"/>
+                </svg>
+                <strong>0 of 1</strong>
+                awards earned
+              </div><!-- /.award-count -->
+              <i class="icon-arrow-right"></i>
+            </div><!-- /.award-listing -->
+          </div>
+      </div><!-- /.contain -->
+    </div>
+  </div><!-- /.page-view -->
+</div><!-- /.view-my-vehicles -->
+<div class="modal fade award-details" id="award-details" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-award-details">
+          <ul class="award-details-list">
+            <li>
+              <div class="award-listing">
+                <div class="award-icon">
+                  <img src="/images/award-6.png" alt="Award Title">
+                </div><!-- /.award-icon -->
+                <div class="award-main">
+                  <strong>Efficient Driver</strong>
+                  <em>Have a drive score in the top 10% of UVO drivers</em>
+                  <span>Earned 8 months ago</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="award-listing">
+                <div class="award-icon">
+                  <img src="/images/award-7.png" alt="Award Title">
+                </div><!-- /.award-icon -->
+                <div class="award-main">
+                  <strong>Efficient Driver</strong>
+                  <em>Have a drive score in the top 10% of UVO drivers</em>
+                  <span>Earned 8 months ago</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="award-listing unawarded">
+                <div class="award-icon">
+                  <img src="/images/award-8.png" alt="Award Title">
+                </div><!-- /.award-icon -->
+                <div class="award-main">
+                  <strong>Efficiency King</strong>
+                  <em>Earn the efficient driver award 9 months in a row</em>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.modal-award-details -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#award-details -->
+<!-- @import "partials/my-vehicles-modals.kit" -->
+<!-- @import "partials/footer.kit" -->

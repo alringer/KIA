@@ -1,0 +1,159 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.awards-page-view .contain {
+  max-width: 1035px;
+  margin: 0 auto;
+  padding: 0 20px; }
+  @media (max-width: 767px) {
+    .awards-page-view .contain {
+      padding: 0 10px; } }
+  .awards-page-view .contain h1 {
+    margin: 41px 0 53px;
+    font: 100 32px/1.5em "KIA", sans-serif; }
+  .awards-page-view .contain table {
+    width: 100%; }
+    .awards-page-view .contain table thead {
+      font: bold 10px "KIA", sans-serif;
+      letter-spacing: 1px;
+      color: #969696; }
+      .awards-page-view .contain table thead td {
+        padding-bottom: 29px; }
+    .awards-page-view .contain table tbody tr {
+      cursor: pointer; }
+      .awards-page-view .contain table tbody tr:hover .icon-arrow-right {
+        margin-right: -5px; }
+      .awards-page-view .contain table tbody tr.separator {
+        height: 3px; }
+    .awards-page-view .contain table tbody td {
+      padding: 21px 0;
+      background: #FFF;
+      box-shadow: inset 0 -1px 0 0 #e9e9e9;
+      margin-bottom: 3px; }
+
+.award-icon {
+  text-align: center; }
+  .award-icon img {
+    max-width: 100%; }
+  .award-icon.unawarded {
+    opacity: .2; }
+
+.award-main strong {
+  display: block;
+  font: bold 14px "KIA", sans-serif;
+  letter-spacing: .4px;
+  color: #000;
+  margin-bottom: 4px; }
+
+.award-main em {
+  display: block;
+  font: 14px/1.5em "Source Sans Pro", sans-serif; }
+
+.award-date {
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  letter-spacing: .6px; }
+
+.award-count {
+  font: 14px/1.43em "Source Sans Pro", sans-serif;
+  letter-spacing: .4px;
+  position: relative; }
+  .award-count svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    position: relative;
+    top: -3px; }
+
+.award-listing {
+  background: #FFF;
+  box-shadow: inset 0 -1px 0 0 #e9e9e9;
+  margin-bottom: 3px;
+  padding: 20px 35px 20px 20px;
+  overflow: hidden;
+  position: relative;
+  font-size: 0; }
+  .award-listing .icon-arrow-right {
+    right: 10px; }
+  .award-listing .label {
+    display: block;
+    font: bold 8px "KIA", sans-serif;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    color: #666666;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 3px;
+    margin-top: 19px; }
+  .award-listing > .label {
+    margin-bottom: 7px;
+    margin-top: 0; }
+  .award-listing .award-icon {
+    width: 65px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px; }
+  .award-listing .award-main {
+    width: calc(100% - 100px);
+    display: inline-block;
+    vertical-align: middle; }
+    .award-listing .award-main strong {
+      font-size: 12px;
+      letter-spacing: .3px;
+      margin-bottom: 6px; }
+    .award-listing .award-main em {
+      font: 12px/1.25em "Source Sans Pro", sans-serif;
+      letter-spacing: .3px; }
+  .award-listing .award-date {
+    clear: both;
+    float: left;
+    width: 40.333333%;
+    display: block;
+    font: 12px/1.75em "Source Sans Pro", sans-serif; }
+  .award-listing .award-count {
+    float: left;
+    font: 12px/1.75em "Source Sans Pro", sans-serif; }
+    .award-listing .award-count svg {
+      margin-right: 5px;
+      width: 15px;
+      top: 0; }
+
+.icon-arrow-right {
+  display: block;
+  background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat;
+  width: 11px !important;
+  height: 15px !important;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
