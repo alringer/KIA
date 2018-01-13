@@ -442,6 +442,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-awards.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-awards.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-maintenance.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -532,6 +545,94 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/source\/images\/award-1.png": {
+		"ft": 32768,
+		"iS": 8176,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-2.png": {
+		"ft": 32768,
+		"iS": 7319,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-3.png": {
+		"ft": 32768,
+		"iS": 7669,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-4.png": {
+		"ft": 32768,
+		"iS": 9715,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-5.png": {
+		"ft": 32768,
+		"iS": 10090,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-6.png": {
+		"ft": 32768,
+		"iS": 9898,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-7.png": {
+		"ft": 32768,
+		"iS": 9628,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/award-8.png": {
+		"ft": 32768,
+		"iS": 5502,
+		"oA": 0,
+		"oAP": "\/build\/images\/award-8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/battery-states\/10.svg": {
 		"ft": 2097152,
@@ -2442,6 +2543,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/icon_triangle_error.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/icon_trophy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/icon_trophy.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -4639,6 +4750,20 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/views\/account-settings.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/account-settings.html",
+		"oF": 0
+		},
+	"\/source\/views\/awards.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/awards.html",
+		"oF": 0
+		},
 	"\/source\/views\/login.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -5111,7 +5236,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 536719217
+	"lastBuiltDate": 537422281
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
