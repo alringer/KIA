@@ -4750,6 +4750,13 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/views\/account-settings.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/account-settings.html",
+		"oF": 0
+		},
 	"\/source\/views\/awards.kit": {
 		"cB": 0,
 		"ft": 2048,

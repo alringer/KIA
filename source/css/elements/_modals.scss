@@ -119,6 +119,10 @@ body .modal {
     }
   }
   &.hide-nav {
+    .modal-title-main {
+      opacity: 0;
+      margin-bottom: -25px !important;
+    }
     .nav-tabs {
       opacity: 0;
       pointer-events: none;
@@ -891,6 +895,9 @@ body.modal-open {
   letter-spacing: .4px;
   padding-top: 11px;
   margin-bottom: 22px;
+  &.modal-title-main {
+    transition: all 250ms $easeOutQuint;
+  }
 }
 .modal.add-card {
   .modal-dialog {
@@ -3004,6 +3011,229 @@ ul.issues-list {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.modal.settings {
+  .modal-dialog {
+    width: 460px;
+    .modal-content {
+      .modal-body {
+        .modal-title {
+          padding-top: 28px;
+          margin-bottom: 0;
+        }
+        form {
+          max-width: 100%;
+          input {
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: .6px;
+          }
+          label {
+            position: relative;
+            &.required {
+              position: relative;
+              z-index: 1;
+              input[type="text"],
+              input[type="email"] {
+                padding-right: 85px;
+              }
+              &:after {
+                display: block;
+                content: "Required";
+                font: italic 12px $sans;
+                color: #9da0a4;
+                position: absolute;
+                right: 19px;
+                top: 37px;
+                pointer-events: none;
+              }
+            }
+            .button {
+              vertical-align: middle;
+            }
+            input {
+              + input {
+                margin-top: 10px;
+              }
+            }
+            .last-updated {
+              display: inline-block;
+              vertical-align: middle;
+              font: 12px $sans;
+              letter-spacing: .3px;
+              color: #9da0a4;
+              margin-left: 13px;
+            }
+          }
+          .verify-number-link {
+            display: block;
+            text-align: center;
+            font: bold 11px/40px $kia;
+            letter-spacing: .7px;
+            color: $red;
+            margin-top: 24px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+            @media (max-width: $screen-xs-max) {
+              text-align: left;
+              max-width: 200px;
+              padding: 0 20px;
+            }
+          }
+        }
+        .carousel {
+          .item {
+            padding: 0 40px 38px;
+            @media (max-width: $screen-xs-max) {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+          }
+        }
+        .modal-actions {
+          padding-top: 30px;
+        }
+        .verified {
+          height: 26px;
+          padding: 0;
+          background: $green;
+          line-height: 26px;
+          border-radius: 26px;
+          padding: 0 10px;
+          text-transform: uppercase;
+          letter-spacing: .5px;
+          margin-top: 31px;
+          .icon-check-green {
+            display: inline-block;
+            margin-right: 2px;
+            // margin-left: -10px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            width: 15px;
+            height: 11px;
+            background: url("/images/icon_check_green.svg") center/contain no-repeat;
+          }
+        }
+        @media (max-width: $screen-xs-max) {
+          .change-pw-field {
+            position: relative;
+            .button {
+              margin-top: 15px;
+            }
+            .last-updated {
+              position: absolute;
+              left: 0;
+              padding: 0;
+              margin: 0;
+              top: 15px;
+            }
+          }
+          .mobile-partial {
+            max-width: 185px;
+            width: 185px;
+            + .half {
+              width: calc(100% - 200px);
+            }
+          }
+          .mobile-full {
+            width: 100%;
+            margin-left: 0;
+            label {
+              max-width: 185px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .nav-tabs {
+      padding-top: 34px;
+    }
+  }
+}
+
+.modal-change-password {
+  form {
+    padding-top: 68px;
+  }
+  @media (max-width: $screen-xs-max) {
+    .modal-title {
+      padding-top: 0px !important;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 30px !important;
+      + p {
+        margin-bottom: 21px;
+      }
+    }
+    form {
+      padding-top: 0;
+    }
+    span.back {
+      top: -20px !important;
+    }
+  }
+}
+
+body {
+  .modal-verify-number {
+    .back {
+      transition: all 250ms $easeOutQuint;
+    }
+    .modal-title {
+      margin-bottom: 52px !important;
+      + p {
+        font: 14px $sans;
+        letter-spacing: .6px;
+        margin-bottom: 40px;
+      }
+    }
+    .modal-actions {
+      &.dual {
+        font-size: 0;
+        > * {
+          width: 50%;
+          display: inline-block;
+          vertical-align: top;
+          text-align: center;
+          padding: 0;
+          &.secondary {
+            font: bold 11px/40px $kia;
+            color: $red;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .7px;
+            span {
+              cursor: pointer;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      .modal-title {
+        padding-top: 0px !important;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 30px !important;
+        + p {
+          margin-bottom: 21px;
+        }
+      }
+      span.back {
+        top: -20px !important;
       }
     }
   }

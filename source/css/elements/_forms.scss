@@ -9,8 +9,15 @@
     .half {
       width: 45%;
       display: inline-block;
+      vertical-align: top;
       + .half {
         margin-left: 10%;
+      }
+      &.wider {
+        width: 48.5%;
+        + .wider {
+          margin-left: 2.5%;
+        }
       }
     }
     .form-footer {
@@ -116,6 +123,12 @@ form {
             border-color: #f23f3f !important;
           }
         }
+      }
+      &.more-margin {
+        margin-bottom: 25px;
+      }
+      &.break {
+        margin: 0;
       }
       label {
         display: inline-block;

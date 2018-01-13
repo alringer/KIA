@@ -57,6 +57,12 @@
   &.bright-red {
     background-color: #f23f3f;
   }
+  &.black {
+    background: #000;
+    &:hover {
+      background: darken($red, 20%);
+    }
+  }
   &.outline {
     background: transparent;
     border: solid 1px #979797;
