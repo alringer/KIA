@@ -11,6 +11,37 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 5.0.4
+* KK-630 Update Create Rule CTA to Create Alert
+* KK-631 Remove toggles on Schedules Page (empty state)
+* KK-632 Update Edit Geofence modal workflow
+===
+# V - 5.0.3
+* KK-355 As a user I need to see an empty state when there are no alerts
+* KK-363 As a user I need to see My Car Zone Alerts
+* KK-356 As a user I need to be able to choose what kind of alert I want to create
+* KK-361As a user I need to create a geofence alert
+* KK-384 As a user I need to set boundaries for my geo fence
+* KK-362 As a user I need to copy geo fence settings from another vehicle
+* KK-359 As a user I need to create a curfew alert
+* KK-360 As a user I need to copy curfew settings from another vehicle
+* KK-357 As a user I need to set a speed alert
+* KK-358 As a user I need to copy speed settings from another vehicle
+* KK-364 As a user I need to delete a My Car Zone alert.
+* KK-141 As a user I need to see a non-empty state
+* KK-143 As a user I need to see empty states
+* KK-226 As a user I need a Climate Schedule Card
+* KK-228 As a user i need to create a Charge Schedule
+* KK-142 As a user I need to see the Create Schedule modal
+* KK-152 As a user I need to be able to review my charge schedule
+* KK-150 As a user I need to be able to set a departure time
+* KK-151 As a user I need to be able to set off-peak times
+* KK-154 As a user I need a charge schedule card with percentage complete
+* KK-153 As a user I need to a charge schedule card with departure times
+* KK-155 As a user I need a charge schedule card with specific stop time
+* KK-227 As a user I need a Battery Schedule Card
+* KK-312 As a user I need to see my awards
+===
 # V - 5.0.2
 * KOPE-177 Maintenance Page complete and in complete form
 * KOPE-176 [Maintenance] Clicking on "View Coupons" Performs No Action
