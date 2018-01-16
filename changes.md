@@ -11,6 +11,11 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 5.0.4
+* KK-630 Update Create Rule CTA to Create Alert
+* KK-631 Remove toggles on Schedules Page (empty state)
+* KK-632 Update Edit Geofence modal workflow
+===
 # V - 5.0.3
 * KK-355 As a user I need to see an empty state when there are no alerts
 * KK-363 As a user I need to see My Car Zone Alerts
