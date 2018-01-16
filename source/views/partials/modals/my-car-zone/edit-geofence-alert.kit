@@ -25,6 +25,11 @@
                   Copy From...
                 </span>
                 <form>
+                  <span class="error-message error-message-main">
+                    <span class="error-message-inner">
+                      {{ ERROR MESSAGE}}
+                    </span>
+                  </span>
                   <ul class="form-fields">
                     <li>
                       <label>
@@ -54,6 +59,11 @@
                           <input type="radio" name="toggle-group" value="2">
                           <span>Exits a boundary</span>
                         </label>
+                      </span>
+                      <span class="error-message">
+                        <span class="error-message-inner">
+                          {{ ERROR MESSAGE }}
+                        </span>
                       </span>
                     </li>
                     <li>
@@ -107,8 +117,8 @@
                           </i>
                           Delete
                         </a>
-                        <span class="button main" data-dismiss="modal">
-                          Save
+                        <span class="button main" data-target="#edit-geofence-alert-modal-slider" data-slide-to="2">
+                          Set Boundaries
                         </span>
                       </div><!-- /.tab-pane -->
                       <div class="tab-pane fade in" id="delete-alert-geofence-2">
@@ -188,6 +198,33 @@
                   </span>
                 </div>
               </div><!-- /.modal-copy-settings-curfew -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-set-boundaries">
+                <span class="back" data-target="#edit-geofence-alert-modal-slider" data-slide-to="0"></span>
+                <strong class="modal-title">
+                  Set Boundaries
+                </strong>
+                <div class="map-wrap">
+                  <div class="map">
+
+                  </div><!-- /.map -->
+                  <div class="map-search">
+                    <input type="text" name="" value="" placeholder="Search by name, city, state or zip" />
+                  </div><!-- /.ma-search -->
+                </div><!-- /.map-wrap -->
+                <div class="slider-bar">
+                  <div class="slider-bar-control down">-</div>
+                  <div class="slider-bar-control up">+</div>
+                  <div class="slider-bar-js"></div>
+                  <div class="slider-bar-js-blue"></div>
+                </div>
+                <div class="modal-actions">
+                  <span class="button full" data-dismiss="modal">
+                    Save Geo Fence
+                  </span>
+                </div><!-- /.modal-actions -->
+              </div><!-- /.modal-set-boundaries -->
             </div><!-- /.item -->
           </div><!-- /.carousel-inner -->
         </div><!-- /.carousel -->
