@@ -116,6 +116,10 @@
     border-radius: 2px; }
   .button.bright-red {
     background-color: #f23f3f; }
+  .button.black {
+    background: #000; }
+    .button.black:hover {
+      background: #690c18; }
   .button.outline {
     background: transparent;
     border: solid 1px #979797;
@@ -245,6 +249,9 @@ body .modal {
     body .modal.login .modal-dialog {
       width: 355px;
       max-width: 100vw; }
+  body .modal.hide-nav .modal-title-main {
+    opacity: 0;
+    margin-bottom: -25px !important; }
   body .modal.hide-nav .nav-tabs {
     opacity: 0;
     pointer-events: none;
@@ -898,6 +905,8 @@ body.modal-open {
   letter-spacing: .4px;
   padding-top: 11px;
   margin-bottom: 22px; }
+  .modal-title.modal-title-main {
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .modal.add-card .modal-dialog {
   width: 645px;
@@ -2671,6 +2680,279 @@ ul.issues-list {
           letter-spacing: .3px;
           color: #9ba1a9; }
 
+.modal.settings .modal-dialog {
+  width: 460px; }
+  .modal.settings .modal-dialog .modal-content .modal-body .modal-title {
+    padding-top: 28px;
+    margin-bottom: 0; }
+  .modal.settings .modal-dialog .modal-content .modal-body form {
+    max-width: 100%; }
+    .modal.settings .modal-dialog .modal-content .modal-body form input {
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: .6px; }
+    .modal.settings .modal-dialog .modal-content .modal-body form label {
+      position: relative; }
+      .modal.settings .modal-dialog .modal-content .modal-body form label.required {
+        position: relative;
+        z-index: 1; }
+        .modal.settings .modal-dialog .modal-content .modal-body form label.required input[type="text"],
+        .modal.settings .modal-dialog .modal-content .modal-body form label.required input[type="email"] {
+          padding-right: 85px; }
+        .modal.settings .modal-dialog .modal-content .modal-body form label.required:after {
+          display: block;
+          content: "Required";
+          font: italic 12px "Source Sans Pro", sans-serif;
+          color: #9da0a4;
+          position: absolute;
+          right: 19px;
+          top: 37px;
+          pointer-events: none; }
+      .modal.settings .modal-dialog .modal-content .modal-body form label .button {
+        vertical-align: middle; }
+      .modal.settings .modal-dialog .modal-content .modal-body form label input + input {
+        margin-top: 10px; }
+      .modal.settings .modal-dialog .modal-content .modal-body form label .last-updated {
+        display: inline-block;
+        vertical-align: middle;
+        font: 12px "Source Sans Pro", sans-serif;
+        letter-spacing: .3px;
+        color: #9da0a4;
+        margin-left: 13px; }
+    .modal.settings .modal-dialog .modal-content .modal-body form .verify-number-link {
+      display: block;
+      text-align: center;
+      font: bold 11px/40px "KIA", sans-serif;
+      letter-spacing: .7px;
+      color: #C4172C;
+      margin-top: 24px;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .modal.settings .modal-dialog .modal-content .modal-body form .verify-number-link:hover {
+        text-decoration: underline; }
+      @media (max-width: 767px) {
+        .modal.settings .modal-dialog .modal-content .modal-body form .verify-number-link {
+          text-align: left;
+          max-width: 200px;
+          padding: 0 20px; } }
+  .modal.settings .modal-dialog .modal-content .modal-body .carousel .item {
+    padding: 0 40px 38px; }
+    @media (max-width: 767px) {
+      .modal.settings .modal-dialog .modal-content .modal-body .carousel .item {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .modal.settings .modal-dialog .modal-content .modal-body .modal-actions {
+    padding-top: 30px; }
+  .modal.settings .modal-dialog .modal-content .modal-body .verified {
+    height: 26px;
+    padding: 0;
+    background: #8EC439;
+    line-height: 26px;
+    border-radius: 26px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-top: 31px; }
+    .modal.settings .modal-dialog .modal-content .modal-body .verified .icon-check-green {
+      display: inline-block;
+      margin-right: 2px;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      width: 15px;
+      height: 11px;
+      background: url("/images/icon_check_green.svg") center/contain no-repeat; }
+  @media (max-width: 767px) {
+    .modal.settings .modal-dialog .modal-content .modal-body .change-pw-field {
+      position: relative; }
+      .modal.settings .modal-dialog .modal-content .modal-body .change-pw-field .button {
+        margin-top: 15px; }
+      .modal.settings .modal-dialog .modal-content .modal-body .change-pw-field .last-updated {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        top: 15px; }
+    .modal.settings .modal-dialog .modal-content .modal-body .mobile-partial {
+      max-width: 185px;
+      width: 185px; }
+      .modal.settings .modal-dialog .modal-content .modal-body .mobile-partial + .half {
+        width: calc(100% - 200px); }
+    .modal.settings .modal-dialog .modal-content .modal-body .mobile-full {
+      width: 100%;
+      margin-left: 0; }
+      .modal.settings .modal-dialog .modal-content .modal-body .mobile-full label {
+        max-width: 185px; } }
+
+@media (max-width: 767px) {
+  .modal.settings .nav-tabs {
+    padding-top: 34px; } }
+
+.modal-change-password form {
+  padding-top: 68px; }
+
+@media (max-width: 767px) {
+  .modal-change-password .modal-title {
+    padding-top: 0px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px !important; }
+    .modal-change-password .modal-title + p {
+      margin-bottom: 21px; }
+  .modal-change-password form {
+    padding-top: 0; }
+  .modal-change-password span.back {
+    top: -20px !important; } }
+
+body .modal-verify-number .back {
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+body .modal-verify-number .modal-title {
+  margin-bottom: 52px !important; }
+  body .modal-verify-number .modal-title + p {
+    font: 14px "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    margin-bottom: 40px; }
+
+body .modal-verify-number .modal-actions.dual {
+  font-size: 0; }
+  body .modal-verify-number .modal-actions.dual > * {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 0; }
+    body .modal-verify-number .modal-actions.dual > *.secondary {
+      font: bold 11px/40px "KIA", sans-serif;
+      color: #C4172C;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .7px; }
+      body .modal-verify-number .modal-actions.dual > *.secondary span {
+        cursor: pointer; }
+        body .modal-verify-number .modal-actions.dual > *.secondary span:hover {
+          text-decoration: underline; }
+
+@media (max-width: 767px) {
+  body .modal-verify-number .modal-title {
+    padding-top: 0px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px !important; }
+    body .modal-verify-number .modal-title + p {
+      margin-bottom: 21px; }
+  body .modal-verify-number span.back {
+    top: -20px !important; } }
+
+.modal-notification-settings .dropdown {
+  width: 100%;
+  font-size: 14px;
+  text-align: left; }
+  .modal-notification-settings .dropdown button {
+    width: 100%;
+    height: 47px;
+    -webkit-appearance: none;
+    background-color: #FFF;
+    border: solid 1px #a9adb1;
+    border-radius: 2px;
+    text-align: left;
+    position: relative;
+    padding: 0 0 0 12px; }
+    .modal-notification-settings .dropdown button .caret {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%); }
+    .modal-notification-settings .dropdown button .placeholder {
+      display: inline-block;
+      font: italic 14px "Source Sans Pro", sans-serif;
+      letter-spacing: .4px;
+      color: #9da0a4;
+      padding: 0 4px; }
+  .modal-notification-settings .dropdown-menu {
+    width: 100%;
+    max-height: 250px !important;
+    margin-top: -1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: solid 1px #a9adb1 !important;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 !important; }
+    .modal-notification-settings .dropdown-menu .car-data {
+      padding: 10px 7px 10px 12px; }
+      .modal-notification-settings .dropdown-menu .car-data:hover {
+        background-color: rgba(0, 0, 0, 0.05); }
+  .modal-notification-settings .dropdown .car-data {
+    display: block;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .modal-notification-settings .dropdown .car-data img {
+      margin-right: 13px; }
+    .modal-notification-settings .dropdown .car-data > * {
+      display: inline-block;
+      vertical-align: middle; }
+      .modal-notification-settings .dropdown .car-data > * > * {
+        display: block; }
+      .modal-notification-settings .dropdown .car-data > * em {
+        font: 10px/1em "Source Sans Pro", sans-serif;
+        letter-spacing: .4px;
+        text-transform: uppercase; }
+      .modal-notification-settings .dropdown .car-data > * strong {
+        font: 600 14px/1em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px; }
+      .modal-notification-settings .dropdown .car-data > *.car-vin {
+        margin-left: 45px; }
+        .modal-notification-settings .dropdown .car-data > *.car-vin strong {
+          font-weight: normal; }
+
+.modal-notification-settings .modal-actions .button {
+  padding: 0;
+  width: 80px; }
+  .modal-notification-settings .modal-actions .button.outline {
+    width: calc(100% - 90px);
+    float: right; }
+
+.modal-notification-settings-apply-to .modal-title {
+  margin-bottom: 45px !important; }
+  .modal-notification-settings-apply-to .modal-title + p {
+    margin-bottom: 0px; }
+
+.modal-notification-settings-apply-to .modal-options {
+  padding-top: 46px; }
+  .modal-notification-settings-apply-to .modal-options .select-all {
+    color: #C4172C;
+    display: inline-block;
+    margin-bottom: 6px;
+    font: bold 11px/2.09em "KIA", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    cursor: pointer; }
+    .modal-notification-settings-apply-to .modal-options .select-all:hover {
+      text-decoration: underline; }
+  .modal-notification-settings-apply-to .modal-options ul {
+    padding: 0;
+    margin: 0 0 45px;
+    list-style: none; }
+    .modal-notification-settings-apply-to .modal-options ul li {
+      margin-bottom: 17px; }
+      .modal-notification-settings-apply-to .modal-options ul li:last-child {
+        margin-bottom: 0; }
+      .modal-notification-settings-apply-to .modal-options ul li .car-data img {
+        display: inline-block;
+        margin-right: 15px;
+        vertical-align: middle; }
+      .modal-notification-settings-apply-to .modal-options ul li .car-data > span {
+        display: inline-block;
+        vertical-align: middle; }
+        .modal-notification-settings-apply-to .modal-options ul li .car-data > span > * {
+          display: block; }
+        .modal-notification-settings-apply-to .modal-options ul li .car-data > span em {
+          font: 10px "Source Sans Pro", sans-serif;
+          letter-spacing: .4px; }
+        .modal-notification-settings-apply-to .modal-options ul li .car-data > span strong {
+          font: 600 14px "Source Sans Pro", sans-serif;
+          letter-spacing: .6px; }
+
 .modal {
   min-width: 355px; }
   .modal form {
@@ -2680,9 +2962,14 @@ ul.issues-list {
     font-size: 0px; }
     .modal form .half {
       width: 45%;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: top; }
       .modal form .half + .half {
         margin-left: 10%; }
+      .modal form .half.wider {
+        width: 48.5%; }
+        .modal form .half.wider + .wider {
+          margin-left: 2.5%; }
     .modal form .form-footer {
       padding-top: 25px;
       padding-bottom: 25px;
@@ -2764,6 +3051,53 @@ form .form-fields {
       border-color: #f23f3f; }
     form .form-fields > li.error label input {
       border-color: #f23f3f !important; }
+    form .form-fields > li.fieldgroup-header {
+      font: bold 12px/1.75em "KIA", sans-serif;
+      color: #000;
+      letter-spacing: .5px;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 25px; }
+    form .form-fields > li.fieldgroup-head {
+      text-align: right; }
+      form .form-fields > li.fieldgroup-head span {
+        display: inline-block;
+        text-align: center;
+        font: bold 10px "KIA", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #969696;
+        width: 77px;
+        vertical-align: middle; }
+    form .form-fields > li.fieldgroup-body .fieldgroup-item {
+      margin-bottom: 20px; }
+      form .form-fields > li.fieldgroup-body .fieldgroup-item .toggle {
+        width: 77px; }
+        form .form-fields > li.fieldgroup-body .fieldgroup-item .toggle span {
+          margin: 0 auto; }
+      form .form-fields > li.fieldgroup-body .fieldgroup-item-header {
+        font: 14px/1.5em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px;
+        width: 100%;
+        max-width: calc(100% - 240px);
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle; }
+      form .form-fields > li.fieldgroup-body .fieldgroup-item-options {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+        width: 240px; }
+    form .form-fields > li.more-margin {
+      margin-bottom: 25px; }
+    form .form-fields > li.less-margin {
+      margin-bottom: 0px; }
+    form .form-fields > li.break {
+      margin: 0; }
+    form .form-fields > li hr {
+      border-top-color: #d5d5d5;
+      margin-top: 30px;
+      margin-bottom: 30px; }
     form .form-fields > li label {
       display: inline-block;
       width: 100%;

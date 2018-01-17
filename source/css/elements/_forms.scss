@@ -9,8 +9,15 @@
     .half {
       width: 45%;
       display: inline-block;
+      vertical-align: top;
       + .half {
         margin-left: 10%;
+      }
+      &.wider {
+        width: 48.5%;
+        + .wider {
+          margin-left: 2.5%;
+        }
       }
     }
     .form-footer {
@@ -116,6 +123,67 @@ form {
             border-color: #f23f3f !important;
           }
         }
+      }
+      &.fieldgroup-header {
+        font: bold 12px/1.75em $kia;
+        color: #000;
+        letter-spacing: .5px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      &.fieldgroup-head {
+        text-align: right;
+        span {
+          display: inline-block;
+          text-align: center;
+          font: bold 10px $kia;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #969696;
+          width: 77px;
+          vertical-align: middle;
+        }
+      }
+      &.fieldgroup-body {
+        .fieldgroup-item {
+          margin-bottom: 20px;
+          .toggle {
+            width: 77px;
+            span {
+              margin: 0 auto;
+            }
+          }
+          &-header {
+            font: 14px/1.5em $sans;
+            letter-spacing: .6px;
+            width: 100%;
+            max-width: calc(100% - 240px);
+            text-align: left;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          &-options {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: right;
+            width: 240px;
+          }
+        }
+      }
+      &.more-margin {
+        margin-bottom: 25px;
+      }
+      &.less-margin {
+        margin-bottom: 0px;
+      }
+      &.break {
+        margin: 0;
+      }
+      hr {
+        border-top-color: #d5d5d5;
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
       label {
         display: inline-block;

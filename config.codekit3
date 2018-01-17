@@ -559,7 +559,7 @@
 		},
 	"\/source\/images\/award-2.png": {
 		"ft": 32768,
-		"iS": 7319,
+		"iS": 10704,
 		"oA": 0,
 		"oAP": "\/build\/images\/award-2.png",
 		"oF": 0,
@@ -625,7 +625,7 @@
 		},
 	"\/source\/images\/award-8.png": {
 		"ft": 32768,
-		"iS": 5502,
+		"iS": 5765,
 		"oA": 0,
 		"oAP": "\/build\/images\/award-8.png",
 		"oF": 0,
@@ -2956,6 +2956,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/img_car_apply_notif_settings.png": {
+		"ft": 32768,
+		"iS": 5303,
+		"oA": 0,
+		"oAP": "\/build\/images\/img_car_apply_notif_settings.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/img_car_notif_settings.png": {
+		"ft": 32768,
+		"iS": 2857,
+		"oA": 0,
+		"oAP": "\/build\/images\/img_car_notif_settings.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/img_copy_settings_car.png": {
 		"ft": 32768,
 		"iS": 5440,
@@ -4749,6 +4771,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/source\/views\/account-settings.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/account-settings.html",
+		"oF": 0
 		},
 	"\/source\/views\/awards.kit": {
 		"cB": 0,
