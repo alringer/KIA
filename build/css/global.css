@@ -4026,14 +4026,16 @@ nav.nav-main {
       padding: 5px 0 10px; }
       nav.nav-main .account-menu .dropdown .dropdown-menu li {
         height: 40px;
-        line-height: 40px; }
+        line-height: 40px;
+        cursor: pointer; }
         nav.nav-main .account-menu .dropdown .dropdown-menu li a {
           line-height: 40px;
           background: transparent;
           padding: 0;
           font: 14px/40px "Source Sans Pro", sans-serif;
           letter-spacing: .7px;
-          padding: 0 3px; }
+          padding: 0 3px;
+          cursor: pointer; }
           nav.nav-main .account-menu .dropdown .dropdown-menu li a i {
             display: inline-block;
             vertical-align: middle;

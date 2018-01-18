@@ -5,6 +5,7 @@ $(document).ready(() => {
       save_info_btn : $('.save-personal-info-btn'),
       save_notifs_btn : $('.save-notifications-btn'),
       save_multiple_notifs_btn : $('.save-multiple-notifications-btn'),
+      change_pw_btn : $('.change-password-btn'),
       verify_number_btn : $('.verify-number-btn'),
       resend_code_btn : $('.resend-code-btn'),
       select_all : $('.modal-notification-settings-apply-to .select-all'),
@@ -14,6 +15,7 @@ $(document).ready(() => {
       create_password: $('.modal-change-password .password-field'),
       toggle_show_password_rules : $('.modal-change-password .toggle-show-password-rules'),
       toggle_show_password : $('.toggle-show-password'),
+      change_pw_fields : $('.modal-change-password input')
     },
     methods : {
       _disable : () => {
@@ -55,6 +57,29 @@ $(document).ready(() => {
           window.loading.methods._loading_stop();
           window.accountSettings.elements.save_multiple_notifs_btn.removeClass('spinning');
           $("#settings").modal('hide');
+          window.alerts.methods.open._success();
+        }, 2000);
+      },
+      _change_pw_disable : () => {
+        var valid = true;
+        window.accountSettings.elements.change_pw_fields.each(function(){
+          if(!$(this).val()) {
+            valid = false;
+          }
+        });
+        if(valid) {
+          window.accountSettings.elements.change_pw_btn.removeClass('disabled');
+        }
+      },
+      _change_password : () => {
+        window.accountSettings.elements.change_pw_btn.addClass('spinning');
+        window.loading.methods._loading_start();
+        window.accountSettings.methods._disable();
+        setTimeout(() => {
+          window.accountSettings.methods._enable();
+          window.loading.methods._loading_stop();
+          window.accountSettings.elements.change_pw_btn.removeClass('spinning');
+          $("#modal-settings-slider").carousel(0);
           window.alerts.methods.open._success();
         }, 2000);
       },
@@ -158,6 +183,7 @@ $(document).ready(() => {
   window.accountSettings.elements.save_info_btn.on('click', window.accountSettings.methods._update_info_save);
   window.accountSettings.elements.save_notifs_btn.on('click', window.accountSettings.methods._save_notifications);
   window.accountSettings.elements.save_multiple_notifs_btn.on('click', window.accountSettings.methods._save_multiple_notifications);
+  window.accountSettings.elements.change_pw_btn.on('click', window.accountSettings.methods._change_password);
   window.accountSettings.elements.verify_number_btn.on('click', window.accountSettings.methods._verify_number);
   window.accountSettings.elements.select_all.on('click', window.accountSettings.methods._select_all);
   window.accountSettings.elements.checkboxes.on('change', window.accountSettings.methods._checkbox_change);
@@ -165,6 +191,8 @@ $(document).ready(() => {
   window.accountSettings.elements.dropdown_options.on('click', window.accountSettings.methods._dropdown_select);
   window.accountSettings.elements.info_fields.on('change', window.accountSettings.methods._personal_info_change);
   window.accountSettings.elements.info_fields.on('keyup', window.accountSettings.methods._personal_info_change);
+  window.accountSettings.elements.change_pw_fields.on('change', window.accountSettings.methods._change_pw_disable);
+  window.accountSettings.elements.change_pw_fields.on('keyup', window.accountSettings.methods._change_pw_disable);
 
   window.accountSettings.elements.create_password.on('change', window.accountSettings.methods._password_validation);
   window.accountSettings.elements.create_password.on('keyup', window.accountSettings.methods._password_validation);

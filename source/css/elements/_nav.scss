@@ -139,6 +139,7 @@ nav.nav-main {
         li {
           height: 40px;
           line-height: 40px;
+          cursor: pointer;
           a {
             line-height: 40px;
             background: transparent;
@@ -146,6 +147,7 @@ nav.nav-main {
             font: 14px/40px $sans;
             letter-spacing: .7px;
             padding: 0 3px;
+            cursor: pointer;
             i {
               display: inline-block;
               vertical-align: middle;
