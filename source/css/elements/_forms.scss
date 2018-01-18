@@ -153,6 +153,9 @@ form {
             span {
               margin: 0 auto;
             }
+            @media (max-width: $screen-xs-max) {
+              width: calc(200px / 3);
+            }
           }
           &-header {
             font: 14px/1.5em $sans;
@@ -162,12 +165,33 @@ form {
             text-align: left;
             display: inline-block;
             vertical-align: middle;
+            &.long {
+              max-width: calc(100% - 160px);
+            }
+            @media (max-width: $screen-xs-max) {
+              font: 12px $sans;
+              letter-spacing: .5px;
+              max-width: calc(100% - 200px);
+              &.long {
+                max-width: calc(100% - 90px);
+              }
+            }
           }
           &-options {
             display: inline-block;
             vertical-align: middle;
             text-align: right;
             width: 240px;
+
+            &.short {
+              width: 160px;
+            }
+            @media (max-width: $screen-xs-max) {
+              width: 200px;
+              &.short {
+                width: 90px;
+              }
+            }
           }
         }
       }

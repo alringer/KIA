@@ -3333,6 +3333,16 @@
 		"oAP": "\/build\/library-manifest.html",
 		"oF": 0
 		},
+	"\/source\/scripts\/account-settings.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/account-settings.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/add-card.js": {
 		"ft": 64,
 		"ma": 0,

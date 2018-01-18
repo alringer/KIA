@@ -3017,6 +3017,65 @@ ul.issues-list {
 }
 
 .modal.settings {
+  .modal-nav {
+    z-index: 5;
+  }
+  .carousel {
+    .item {
+      form {
+        overflow: auto;
+        max-height: calc(100vh - 300px);
+        margin-bottom: 50px;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  }
+  .modal-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $white !important;
+    border-top: 1px solid #d5d5d5;
+    padding: 20px !important;
+    z-index: 5;
+  }
+  @media (max-width: $screen-xs-max) {
+    .modal-body {
+      .carousel {
+        .carousel-inner {
+          top: 150px !important;
+        }
+        .item {
+          height: 100%;
+          overflow: hidden !important;
+          > div {
+            height: 100%;
+            max-height: 100%;
+            form {
+              height: 100%;
+              overflow: auto;
+              -ms-overflow-style: -ms-autohiding-scrollbar;
+              -webkit-overflow-scrolling: touch;
+              position: relative;
+              max-height: calc(100%);
+              padding-bottom: 100px;
+            }
+          }
+        }
+      }
+    }
+    &.hide-nav {
+      .modal-body {
+        .carousel {
+          .carousel-inner {
+            top: 15px !important;
+          }
+        }
+      }
+    }
+  }
   .modal-dialog {
     width: 460px;
     .modal-content {
@@ -3052,8 +3111,16 @@ ul.issues-list {
                 pointer-events: none;
               }
             }
+            &.no-pointer {
+              cursor: default;
+              span {
+                font: 14px/1.5em $sans;
+                letter-spacing: .6px;
+              }
+            }
             .button {
               vertical-align: middle;
+              cursor: pointer;
             }
             input {
               + input {
@@ -3063,6 +3130,7 @@ ul.issues-list {
             .last-updated {
               display: inline-block;
               vertical-align: middle;
+              cursor: default;
               font: 12px $sans;
               letter-spacing: .3px;
               color: #9da0a4;
@@ -3161,30 +3229,79 @@ ul.issues-list {
   }
 }
 
-.modal-change-password {
-  form {
-    padding-top: 68px;
-  }
-  @media (max-width: $screen-xs-max) {
-    .modal-title {
-      padding-top: 0px !important;
-      padding-left: 50px;
-      padding-right: 50px;
-      margin-bottom: 30px !important;
-      + p {
-        margin-bottom: 21px;
-      }
+.modal {
+  .modal-change-password {
+    .modal-actions {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+      border-top: none !important;
     }
     form {
-      padding-top: 0;
+      padding-top: 68px;
     }
-    span.back {
-      top: -20px !important;
+    @media (max-width: $screen-xs-max) {
+      .modal-title {
+        padding-top: 0px !important;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 30px !important;
+        + p {
+          margin-bottom: 21px;
+        }
+      }
+      form {
+        padding-top: 0;
+      }
+      span.back {
+        top: -20px !important;
+      }
+    }
+    .toggle-show-password {
+      display: none;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: calc(50% + 11px);
+      right: 47px;
+      transform: translateY(-50%);
+      background: url('/images/icon_show_password.svg') center/contain no-repeat;
+      pointer-events: none;
+      cursor: pointer;
+      z-index: 3;
+      &-rules {
+        display: none;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: calc(50% + 12px);
+        right: 0px;
+        transform: translateY(-50%);
+        background: url('/images/icon_help.svg') center/contain no-repeat;
+        pointer-events: none;
+        cursor: pointer;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      .password-field {
+        max-width: calc(100% - 30px);
+      }
+      .toggle-show {
+        opacity: 0 !important;
+        transform: translateY(-10px) !important;
+      }
+      .toggle-show-password {
+        display: block;
+        pointer-events: all;
+        &-rules {
+          display: block;
+          pointer-events: all;
+        }
+      }
     }
   }
 }
 
-body {
+.modal {
   .modal-verify-number {
     .back {
       transition: all 250ms $easeOutQuint;
@@ -3198,7 +3315,10 @@ body {
       }
     }
     .modal-actions {
+      border-top: none !important;
       &.dual {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
         font-size: 0;
         > * {
           width: 50%;
@@ -3288,12 +3408,14 @@ body {
     .car-data {
       display: block;
       transition: all 250ms $easeOutQuint;
+      white-space: nowrap;
       img {
         margin-right: 13px;
       }
       > * {
         display: inline-block;
         vertical-align: middle;
+        white-space: normal;
         > * {
           display: block;
         }
@@ -3306,22 +3428,49 @@ body {
           font: 600 14px/1em $sans;
           letter-spacing: .6px;
         }
+        &.car-meta {
+          width: 90px;
+          margin-right: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          * {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          @media (max-width: $screen-xs-max) {
+            width: 80px;
+          }
+        }
         &.car-vin {
-          margin-left: 45px;
           strong {
             font-weight: normal;
+            @media (max-width: $screen-xs-max) {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              width: 65px;
+            }
           }
         }
       }
     }
   }
   .modal-actions {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
     .button {
       padding: 0;
       width: 80px;
       &.outline {
         width: calc(100% - 90px);
         float: right;
+        margin-bottom: 0px !important;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 100% !important;
+        margin-bottom: 10px;
       }
     }
   }
@@ -3336,10 +3485,11 @@ body {
   }
   .modal-options {
     padding-top: 46px;
+    margin-bottom: 75px;
     .select-all {
       color: $red;
       display: inline-block;
-      margin-bottom: 6px;
+      margin-bottom: 15px;
       font: bold 11px/2.09em $kia;
       text-transform: uppercase;
       letter-spacing: .7px;
@@ -3353,7 +3503,7 @@ body {
       margin: 0 0 45px;
       list-style: none;
       li {
-        margin-bottom: 17px;
+        margin-bottom: 25px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -3381,5 +3531,12 @@ body {
         }
       }
     }
+  }
+}
+
+.disable-modal {
+  pointer-events: none;
+  * {
+    pointer-events: none !important;
   }
 }

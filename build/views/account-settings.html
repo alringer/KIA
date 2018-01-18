@@ -26,6 +26,7 @@
   <script type="text/javascript" src="/scripts/loading.js"></script>
   <script type="text/javascript" src="/scripts/nav.js"></script>
   <script type="text/javascript" src="/scripts/alerts.js"></script>
+  <script type="text/javascript" src="/scripts/account-settings.js"></script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
@@ -40,6 +41,47 @@
   </head>
 <body ontouchstart="">
 
+  <span class="loading-bar"></span>
+  
+  <div class="alerts">
+      <div class="alert alert-success alert-dismissible">
+        <p>&lt;A success message goes here, replace me!&gt;</p>
+        <div class="alert-actions">
+          <button type="button" class="close">
+            Close
+          </button>
+        </div><!-- /.alert-actions -->
+      </div><!-- /.alert -->
+      <div class="alert alert-failed alert-dismissible">
+        <p>&lt;An error message goes here, replace me!&gt;</p>
+        <div class="alert-actions double-actions">
+          <button type="button" class="close">
+            Retry
+          </button>
+          <button type="button" class="close">
+            Close
+          </button>
+        </div><!-- /.alert-actions -->
+      </div><!-- /.alert -->
+      <div class="alert alert-notification alert-dismissible">
+        <ul class="notification-list">
+          <li>
+            <i class="notification-geofence"></i>
+            <strong>
+              Geo Fence Alert
+            </strong>
+            <em>
+              <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
+            </em>
+            <span>
+              Just now
+            </span>
+          </li>
+        </ul>
+        <span type="button" class="close"></span>
+      </div><!-- /.alert -->
+    </div><!-- /.alerts -->
+    
   <div class="has-mobile-nav">
     <nav class="nav-main">
       <div class="contain">
@@ -368,7 +410,7 @@
   <div class="page-view">
 
   </div><!-- /.page-view -->
-  <div class="modal fade settings" id="settings" tabindex="-1" role="dialog" aria-labelledby="settings" aria-hidden="true">
+  <div class="modal fade has-fixed-footer settings" id="settings" tabindex="-1" role="dialog" aria-labelledby="settings" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <span class="icon-close" data-dismiss="modal"></span>
@@ -401,11 +443,13 @@
                       </label>
                     </li>
                     <li class="more-margin">
-                      <label class="required">
+                      <label class="no-pointer">
                         <strong>
                           Email Address
                         </strong>
-                        <input type="email" name="" value="johnsmith@gmail.com" />
+                        <span>
+                          johnsmith@gmail.com
+                        </span>
                       </label>
                     </li>
                     <li class="more-margin change-pw-field">
@@ -526,7 +570,10 @@
                   </ul>
                 </form>
                 <div class="modal-actions">
-                  <span class="button full" data-dismiss="modal">Update Personal Info</span>
+                  <span class="button full save-personal-info-btn has-spinner disabled">
+                    Update Personal Info
+                    <span class="spinner"><i class="icon-communicating white"></i></span>
+                  </span>
                 </div><!-- /.modal-delete-actions -->
               </div><!-- /.modal-settings -->
             </div><!-- /.item -->
@@ -571,7 +618,7 @@
                                 <img src="/images/img_car_notif_settings.png" alt="Car Name" />
                                 <span class="car-meta">
                                   <em>2017 Niro</em>
-                                  <strong>My Niro</strong>
+                                  <strong>My Niro 2</strong>
                                 </span><!-- /.car-meta -->
                                 <span class="car-vin">
                                   <em>Vin</em>
@@ -584,7 +631,7 @@
                                 <img src="/images/img_car_notif_settings.png" alt="Car Name" />
                                 <span class="car-meta">
                                   <em>2017 Niro</em>
-                                  <strong>My Niro</strong>
+                                  <strong>My Niro 3</strong>
                                 </span><!-- /.car-meta -->
                                 <span class="car-vin">
                                   <em>Vin</em>
@@ -601,9 +648,11 @@
                         <strong>Copy Settings From</strong>
                         <div class="dropdown">
                           <button class="dropdown-toggle" type="button" data-toggle="dropdown">
-                            <span class="placeholder">
-                              None
-                            </span><!-- /.placeholder -->
+                            <span class="car-data">
+                              <span class="placeholder">
+                                None
+                              </span><!-- /.placeholder -->
+                            </span>
                             <span class="caret"></span>
                           </button>
                           <ul class="dropdown-menu account-menu-list">
@@ -625,7 +674,7 @@
                                 <img src="/images/img_car_notif_settings.png" alt="Car Name" />
                                 <span class="car-meta">
                                   <em>2017 Niro</em>
-                                  <strong>My Niro</strong>
+                                  <strong>My Niro 2</strong>
                                 </span><!-- /.car-meta -->
                                 <span class="car-vin">
                                   <em>Vin</em>
@@ -638,7 +687,7 @@
                                 <img src="/images/img_car_notif_settings.png" alt="Car Name" />
                                 <span class="car-meta">
                                   <em>2017 Niro</em>
-                                  <strong>My Niro</strong>
+                                  <strong>My Niro 3</strong>
                                 </span><!-- /.car-meta -->
                                 <span class="car-vin">
                                   <em>Vin</em>
@@ -723,10 +772,10 @@
                     <li class="fieldgroup-body">
                       <div class="fieldgroup">
                         <div class="fieldgroup-item">
-                          <span class="fieldgroup-item-header">
+                          <span class="fieldgroup-item-header long">
                             Alert me when there are software updates, new features, and service annoucements
                           </span>
-                          <span class="fieldgroup-item-options">
+                          <span class="fieldgroup-item-options short">
                             <span class="toggle">
                               <label>
                                 <input type="checkbox" name="toggle" value="1">
@@ -911,11 +960,14 @@
                       <hr />
                     </li>
                   </ul>
-                  <div class="modal-actions">
-                    <span class="button" data-dismiss="modal">Save</span>
-                    <span class="button outline" data-target="#modal-settings-slider" data-slide-to="4">Save And apply to multiple vehicles...</span>
-                  </div>
                 </form>
+                <div class="modal-actions">
+                  <span class="button has-spinner save-notifications-btn">
+                    Save
+                    <span class="spinner"><i class="icon-communicating white"></i></span>
+                  </span>
+                  <span class="button outline" data-target="#modal-settings-slider" data-slide-to="4">Save And apply to multiple vehicles...</span>
+                </div>
               </div><!-- /.modal-notification-settings -->
             </div>
             <div class="item hide-nav show-back">
@@ -937,7 +989,23 @@
                         <strong>
                           New Password
                         </strong>
-                        <input type="password" name="" value="">
+                        <input class="password-field" type="password" name="" value="">
+                        <span class="toggle-show-password"></span>
+                        <span class="toggle-show-password-rules"></span>
+                        <span class="inline-validator create-password-validator">
+                          <span class="inline-validator-rule">
+                            Have at least 8 characters
+                          </span>
+                          <span class="inline-validator-rule">
+                            Have at least one number
+                          </span>
+                          <span class="inline-validator-rule passed">
+                            Have at least one uppercase letter
+                          </span>
+                          <span class="inline-validator-rule passed">
+                            No special charasters ˆ &amp; * (
+                          </span>
+                        </span><!-- /.inline-validator -->
                       </label>
                     </li>
                     <li>
@@ -973,8 +1041,11 @@
                   </ul>
                 </form>
                 <div class="modal-actions dual">
-                  <span class="button"  data-target="#modal-settings-slider" data-slide-to="0">Verify</span>
-                  <span class="secondary"><span>Resend Code</span></span>
+                  <span class="button has-spinner verify-number-btn">
+                    Verify
+                    <span class="spinner"><i class="icon-communicating white"></i></span>
+                  </span>
+                  <span class="secondary resend-code-btn"><span>Resend Code</span></span>
                 </div><!-- /.modal-delete-actions -->
               </div><!-- /.modal-change-password -->
             </div><!-- /.item -->
@@ -983,55 +1054,60 @@
                 <span class="back" data-target="#modal-settings-slider" data-slide-to="1"></span>
                 <strong class="modal-title">Apply Settings to...</strong>
                 <p>Select one or more vehicles to copy your notifications settings to</p>
-                <div class="modal-options">
-                  <span class="select-all">Select All</span>
-                  <ul>
-                    <li>
-                      <label class="checkbox">
-                        <input type="checkbox" name="edit" value="">
-                        <em></em>
-                        <span class="car-data">
-                          <img src="/images/img_car_apply_notif_settings.png" alt="Car Name" />
-                          <span>
-                            <em>2017 Niro</em>
-                            <strong>My Niro</strong>
-                            <em>VIN: 12345678901234567</em>
-                          </span>
-                        </span><!-- /.car-data -->
-                      </label>
-                    </li>
-                    <li>
-                      <label class="checkbox">
-                        <input type="checkbox" name="edit" value="">
-                        <em></em>
-                        <span class="car-data">
-                          <img src="/images/img_car_apply_notif_settings.png" alt="Car Name" />
-                          <span>
-                            <em>2017 Niro</em>
-                            <strong>My Niro</strong>
-                            <em>VIN: 12345678901234567</em>
-                          </span>
-                        </span><!-- /.car-data -->
-                      </label>
-                    </li>
-                    <li>
-                      <label class="checkbox">
-                        <input type="checkbox" name="edit" value="">
-                        <em></em>
-                        <span class="car-data">
-                          <img src="/images/img_car_apply_notif_settings.png" alt="Car Name" />
-                          <span>
-                            <em>2017 Niro</em>
-                            <strong>My Niro</strong>
-                            <em>VIN: 12345678901234567</em>
-                          </span>
-                        </span><!-- /.car-data -->
-                      </label>
-                    </li>
-                  </ul>
-                </div><!-- /.modal-options -->
+                <form class="" action="index.html" method="post">
+                  <div class="modal-options">
+                    <span class="select-all">Select All</span>
+                    <ul>
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" name="edit" value="">
+                          <em></em>
+                          <span class="car-data">
+                            <img src="/images/img_car_apply_notif_settings.png" alt="Car Name" />
+                            <span>
+                              <em>2017 Niro</em>
+                              <strong>My Niro</strong>
+                              <em>VIN: 12345678901234567</em>
+                            </span>
+                          </span><!-- /.car-data -->
+                        </label>
+                      </li>
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" name="edit" value="">
+                          <em></em>
+                          <span class="car-data">
+                            <img src="/images/img_car_apply_notif_settings.png" alt="Car Name" />
+                            <span>
+                              <em>2017 Niro</em>
+                              <strong>My Niro</strong>
+                              <em>VIN: 12345678901234567</em>
+                            </span>
+                          </span><!-- /.car-data -->
+                        </label>
+                      </li>
+                      <li>
+                        <label class="checkbox">
+                          <input type="checkbox" name="edit" value="">
+                          <em></em>
+                          <span class="car-data">
+                            <img src="/images/img_car_apply_notif_settings.png" alt="Car Name" />
+                            <span>
+                              <em>2017 Niro</em>
+                              <strong>My Niro</strong>
+                              <em>VIN: 12345678901234567</em>
+                            </span>
+                          </span><!-- /.car-data -->
+                        </label>
+                      </li>
+                    </ul>
+                  </div><!-- /.modal-options -->
+                </form>
                 <div class="modal-actions">
-                  <span class="button full" data-dismiss="modal">Apply and Save</span>
+                  <span class="button full has-spinner save-multiple-notifications-btn disabled">
+                    Apply and Save
+                    <span class="spinner"><i class="icon-communicating white"></i></span>
+                  </span>
                 </div><!-- /.modal-delete-actions -->
               </div><!-- /.modal-notification-settings-apply-to -->
             </div><!-- /.item -->
