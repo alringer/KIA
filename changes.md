@@ -11,6 +11,19 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 5.0.5
+* KOPE-298 End time not needed for climate schedules
+* KOPE-286 Entire MCZ alert card should be clickable
+* KOPE-287 My Trips hyperlink hover state
+* KOPE-289 Geo fence map is too tall for mobile phones
+* KOPE-291 Create alert modal and page order do not align
+* KOPE-292 "Ignore Off-peak Times" is not selected by default and does not disable off-peak form
+* KOPE-293 Need top/bottom padding when there are more than three geo fence alerts
+* KOPE-294 Cards get cut off in tablet view
+* KOPE-297 Cannot drag slider on mobile
+* KOPE-299 Clicking outside the dropdown does not close it
+* KOPE-302 My Car Zone - Geo Fence - Copy Settings Alignment issue
+===
 # V - 5.0.4
 * KK-630 Update Create Rule CTA to Create Alert
 * KK-631 Remove toggles on Schedules Page (empty state)
