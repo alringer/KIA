@@ -2706,7 +2706,7 @@ body.modal-open {
     .back {
       top: 13px !important;
       @media (max-width: $screen-xs-max) {
-        top: 0px !important;
+        top: -1px !important;
       }
     }
     .map-wrap {
