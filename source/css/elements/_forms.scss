@@ -780,6 +780,12 @@ form {
 .toggle-group {
   display: block;
   white-space: nowrap;
+  &.col-4 {
+    label {
+      width: 25% !important;
+      margin: 0;
+    }
+  }
   label {
     display: inline-block;
     width: 50% !important;

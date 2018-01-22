@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="POI-Detail-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-575.000000, -207.000000)">
+        <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#C4172C">
+            <g id="Delete">
+                <g transform="translate(443.000000, 58.000000)">
+                    <path d="M4,4 L4,3 L7,3 L7,4 L10.0044225,4 C10.5542648,4 11,4.44386482 11,5 L11,6 L0,6 L0,5 C0,4.44771525 0.444836974,4 0.995577499,4 L4,4 Z M1,7 L10,7 L10,17.0044225 C10,17.5542648 9.5536886,18 9.00245535,18 L1.99754465,18 C1.44661595,18 1,17.555163 1,17.0044225 L1,7 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

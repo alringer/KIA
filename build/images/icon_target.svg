@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="My-POI's-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-156.000000, -293.000000)">
+        <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#9BA1A9" fill-rule="nonzero">
+            <g id="Recommended">
+                <g transform="translate(2.000000, 118.000000)">
+                    <path d="M31,29 C26.0374,29 22,33.0374 22,38 C22,42.96242 26.0374,47 31,47 C35.9626,47 40,42.96242 40,38 C40,33.0374 35.9626,29 31,29 Z M31.72576,45.51266 L31.72576,43.08068 L30.27424,43.08068 L30.27424,45.51284 C26.69026,45.16922 23.83078,42.30974 23.48734,38.72576 L25.9195,38.72576 L25.9195,37.27424 L23.48734,37.27424 C23.83096,33.69026 26.69026,30.83096 30.27424,30.48734 L30.27424,32.91932 L31.72576,32.91932 L31.72576,30.48734 C35.30974,30.83078 38.16922,33.69008 38.51266,37.27424 L36.08068,37.27424 L36.08068,38.72576 L38.51284,38.72576 C38.16922,42.30974 35.30974,45.16922 31.72576,45.51266 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

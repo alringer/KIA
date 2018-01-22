@@ -3716,6 +3716,9 @@ form .form-fields {
 .toggle-group {
   display: block;
   white-space: nowrap; }
+  .toggle-group.col-4 label {
+    width: 25% !important;
+    margin: 0; }
   .toggle-group label {
     display: inline-block;
     width: 50% !important;

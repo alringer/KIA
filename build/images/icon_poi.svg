@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-562.000000, -160.000000)">
+        <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#9BA1A9">
+            <g id="Search-Contents">
+                <g transform="translate(1.000000, 10.000000)">
+                    <path d="M437,27.2727273 C435.651288,27.2727273 434.405685,25.114965 432.860223,22.3320786 C431.030763,19.0378005 429,14.8675391 429,12.3636364 C429,7.74452755 432.581722,4 437,4 C441.418278,4 445,7.74452755 445,12.3636364 C445,14.8670521 442.787997,19.0361782 440.959026,22.3301561 C439.413322,25.1139712 438.349023,27.2727273 437,27.2727273 Z M437.001278,8 L435.822489,11.622012 L432,11.622012 L435.093016,13.861349 L433.908262,17.4827219 L437.001278,15.2455154 L440.090034,17.4827219 L438.909753,13.861349 L442,11.622012 L438.180493,11.622012 L437.001278,8 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,818 @@
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-locations.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/locations.js"></script>
+  <!-- @import "partials/head/vendors/map-files.kit" -->
+
+<!-- @import "partials/head/head-end.kit" -->
+  <!-- @import "partials/loading.kit" -->
+  <!-- @import "partials/alerts.kit" -->
+  <div class="has-mobile-nav">
+    <!-- @import "partials/nav-dual.kit" -->
+    <!-- @import "partials/nav-mobile-my-vehicles.kit" -->
+    <div class="page-view">
+      <div class="page-view-subnav">
+        <ul class="page-view-subnav-items">
+          <li>
+            <a href="#" class="active">
+              Locations
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              My Trips
+            </a>
+          </li>
+        </ul><!-- /.page-view-subnav-items -->
+      </div><!-- /.page-view-subnav -->
+      <div class="locations-map">
+        <div class="map"></div>
+        <div class="locations-utility">
+          <div class="locations-utility-main">
+            <form>
+              <i class="icon-search">
+                <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Icons-/-Search-Icon-/-Unselected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M6.45315976,0.0809258762 C3.10148362,0.0809258762 0.36135318,2.82106169 0.36135318,6.17273246 C0.36135318,9.52440503 3.10148362,12.2645534 6.45315976,12.2645534 C7.7440315,12.2645534 8.9423436,11.8584449 9.93018379,11.1671323 L13.9335401,15.1760786 C14.3533372,15.5958757 15.0366946,15.5958757 15.4564917,15.1760786 C15.8763068,14.7562814 15.8763068,14.072942 15.4564917,13.6531269 L11.4475455,9.64977082 C12.138858,8.66193063 12.5449665,7.46360061 12.5449665,6.17273246 C12.5449665,2.82105631 9.804818,0.0809258762 6.45315976,0.0809258762 Z M6.45315976,2.23097526 C8.64282381,2.23097526 10.394917,3.9830505 10.394917,6.17273246 C10.394917,8.36239292 8.64282381,10.114504 6.45315976,10.114504 C4.2634778,10.114504 2.51140256,8.36239292 2.51140256,6.17273246 C2.51140256,3.98304513 4.2634778,2.23097526 6.45315976,2.23097526 Z" fill="#9BA1A9" fill-rule="nonzero"></path>
+                    </g>
+                </svg>
+              </i>
+              <input type="text" name="" value="" placeholder="Search by name, city, state, or zip" class="location-search-input" />
+            </form>
+            <div class="locations-utility-tools">
+              <i class="icon-settings" data-target="#locations-utility-carousel" data-slide-to="3">
+                <svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Location-Detail-Collapsed-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-509.000000, -163.000000)">
+                        <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#9BA1A9">
+                            <g id="Search-Contents">
+                                <g transform="translate(1.000000, 10.000000)">
+                                    <g id="Group-2" transform="translate(340.000000, 0.000000)">
+                                        <path d="M45,10.0000418 C45.5531447,10.0049766 46,10.4465275 46,11.0093689 L46,12.9906311 C46,13.5450107 45.5615315,13.995004 45,13.9999587 L45,24.0066023 C45,24.5552407 44.5561352,25 44,25 C43.4477153,25 43,24.5550537 43,24.0066023 L43,13.9999582 C42.4468553,13.9950234 42,13.5534725 42,12.9906311 L42,11.0093689 C42,10.4549893 42.4384685,10.004996 43,10.0000413 L43,7.99339768 C43,7.44475929 43.4438648,7 44,7 C44.5522847,7 45,7.44494629 45,7.99339768 L45,10.0000418 Z M51,16.0000418 C51.5531447,16.0049766 52,16.4465275 52,17.0093689 L52,18.9906311 C52,19.5450107 51.5615315,19.995004 51,19.9999587 L51,24.0066023 C51,24.5552407 50.5561352,25 50,25 C49.4477153,25 49,24.5550537 49,24.0066023 L49,19.9999582 C48.4468553,19.9950234 48,19.5534725 48,18.9906311 L48,17.0093689 C48,16.4549893 48.4384685,16.004996 49,16.0000413 L49,7.99339768 C49,7.44475929 49.4438648,7 50,7 C50.5522847,7 51,7.44494629 51,7.99339768 L51,16.0000418 Z M39,16.0000418 C39.5531447,16.0049766 40,16.4465275 40,17.0093689 L40,18.9906311 C40,19.5450107 39.5615315,19.995004 39,19.9999587 L39,24.0066023 C39,24.5552407 38.5561352,25 38,25 C37.4477153,25 37,24.5550537 37,24.0066023 L37,19.9999582 C36.4468553,19.9950234 36,19.5534725 36,18.9906311 L36,17.0093689 C36,16.4549893 36.4384685,16.004996 37,16.0000413 L37,7.99339768 C37,7.44475929 37.4438648,7 38,7 C38.5522847,7 39,7.44494629 39,7.99339768 L39,16.0000418 Z" id="Combined-Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+              </i><!-- /.icon-settings -->
+              <i class="icon-poi" data-target="#locations-utility-carousel" data-slide-to="4">
+                <svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-562.000000, -160.000000)">
+                        <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#9BA1A9">
+                            <g id="Search-Contents">
+                                <g transform="translate(1.000000, 10.000000)">
+                                    <path d="M437,27.2727273 C435.651288,27.2727273 434.405685,25.114965 432.860223,22.3320786 C431.030763,19.0378005 429,14.8675391 429,12.3636364 C429,7.74452755 432.581722,4 437,4 C441.418278,4 445,7.74452755 445,12.3636364 C445,14.8670521 442.787997,19.0361782 440.959026,22.3301561 C439.413322,25.1139712 438.349023,27.2727273 437,27.2727273 Z M437.001278,8 L435.822489,11.622012 L432,11.622012 L435.093016,13.861349 L433.908262,17.4827219 L437.001278,15.2455154 L440.090034,17.4827219 L438.909753,13.861349 L442,11.622012 L438.180493,11.622012 L437.001278,8 Z" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <span>MY POI's</span>
+              </i>
+            </div><!-- /.locations-utility-tools -->
+          </div><!-- /.locations-utility-main -->
+          <div class="locations-utility-drawer">
+            <div id="locations-utility-collapse" class="collapse">
+              <div id="locations-utility-carousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <ul class="locations-search-results-list">
+                      <li>
+                        <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="2">
+                          <i>
+                            <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -208.000000)">
+                                    <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#BB1A30">
+                                        <g id="Search-Item-Copy-3">
+                                            <g transform="translate(1.000000, 62.000000)">
+                                                <g id="Icons-/-Pin-Copy-33" transform="translate(18.000000, 0.000000)">
+                                                    <path d="M11,32 C9.14552057,32 7.43281688,29.0330769 5.30780715,25.2066081 C2.79229915,20.6769757 0,14.9428663 0,11.5 C0,5.14872538 4.92486775,0 11,0 C17.0751322,0 22,5.14872538 22,11.5 C22,14.9421966 18.9584953,20.674745 16.4436608,25.2039646 C14.3183173,29.0317104 12.8549065,32 11,32 Z M11,15 C13.209139,15 15,13.209139 15,11 C15,8.790861 13.209139,7 11,7 C8.790861,7 7,8.790861 7,11 C7,13.209139 8.790861,15 11,15 Z" id="Combined-Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                          </i>
+                          <div class="locations-search-results-item-titles">
+                            <strong>Chargers Park</strong>
+                            <em>Murphy Canyon Road, San Diego, CA, United States</em>
+                          </div>
+                          <span>0.2 mi</span>
+                          <i class="icon-arrow-right"></i>
+                        </div><!-- /.locations-search-results-item -->
+                      </li>
+                      <li>
+                        <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="2">
+                          <i>
+                            <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -208.000000)">
+                                    <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#BB1A30">
+                                        <g id="Search-Item-Copy-3">
+                                            <g transform="translate(1.000000, 62.000000)">
+                                                <g id="Icons-/-Pin-Copy-33" transform="translate(18.000000, 0.000000)">
+                                                    <path d="M11,32 C9.14552057,32 7.43281688,29.0330769 5.30780715,25.2066081 C2.79229915,20.6769757 0,14.9428663 0,11.5 C0,5.14872538 4.92486775,0 11,0 C17.0751322,0 22,5.14872538 22,11.5 C22,14.9421966 18.9584953,20.674745 16.4436608,25.2039646 C14.3183173,29.0317104 12.8549065,32 11,32 Z M11,15 C13.209139,15 15,13.209139 15,11 C15,8.790861 13.209139,7 11,7 C8.790861,7 7,8.790861 7,11 C7,13.209139 8.790861,15 11,15 Z" id="Combined-Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                          </i>
+                          <div class="locations-search-results-item-titles">
+                            <strong>Qualcomm Stadium</strong>
+                            <em>Friars Road, San Diego, CA United States</em>
+                          </div>
+                          <span>0.3 mi</span>
+                          <i class="icon-arrow-right"></i>
+                        </div><!-- /.locations-search-results-item -->
+                      </li>
+                      <li>
+                        <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="2">
+                          <i>
+                            <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -208.000000)">
+                                    <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#BB1A30">
+                                        <g id="Search-Item-Copy-3">
+                                            <g transform="translate(1.000000, 62.000000)">
+                                                <g id="Icons-/-Pin-Copy-33" transform="translate(18.000000, 0.000000)">
+                                                    <path d="M11,32 C9.14552057,32 7.43281688,29.0330769 5.30780715,25.2066081 C2.79229915,20.6769757 0,14.9428663 0,11.5 C0,5.14872538 4.92486775,0 11,0 C17.0751322,0 22,5.14872538 22,11.5 C22,14.9421966 18.9584953,20.674745 16.4436608,25.2039646 C14.3183173,29.0317104 12.8549065,32 11,32 Z M11,15 C13.209139,15 15,13.209139 15,11 C15,8.790861 13.209139,7 11,7 C8.790861,7 7,8.790861 7,11 C7,13.209139 8.790861,15 11,15 Z" id="Combined-Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                          </i>
+                          <div class="locations-search-results-item-titles">
+                            <strong>Charger Boulevard</strong>
+                            <em>San Diego, CA, United States</em>
+                          </div>
+                          <span>3.6 mi</span>
+                          <i class="icon-arrow-right"></i>
+                        </div><!-- /.locations-search-results-item -->
+                      </li>
+                      <li>
+                        <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="1">
+                          <i>
+                            <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -376.000000)">
+                                    <g id="Search-Bar" transform="translate(132.000000, 146.000000)">
+                                        <g id="Search-Item-Copy-3">
+                                            <g transform="translate(1.000000, 62.000000)">
+                                                <g id="Icons-/-Pin-Green" transform="translate(18.000000, 168.000000)">
+                                                    <path d="M11,32 C12.8549065,32 14.3183173,29.0317104 16.4436608,25.2039646 C18.9584953,20.674745 22,14.9421966 22,11.5 C22,5.14872538 17.0751322,0 11,0 C4.92486775,0 0,5.14872538 0,11.5 C0,14.9428663 2.79229915,20.6769757 5.30780715,25.2066081 C7.43281688,29.0330769 9.14552057,32 11,32 Z" id="Oval-3" fill="#8EC439"></path>
+                                                    <g id="Icons-/-Bolt-Up" transform="translate(7.250000, 5.500000)" fill="#FFFFFF">
+                                                        <path d="M5.37181727,7.16900849 C6.30277779,7.16685859 7.78823862,7.18823508 8.01515528,7.19536796 L7.02746719,7.16432104 C7.57295226,7.18146778 7.58998748,7.84296874 7.07568149,8.62634169 L2.76893499,15.1862278 C2.25007794,15.9765328 1.09424788,16.8136159 0.872234956,16.8729273 L1.8294612,16.6172015 C1.30079974,16.758435 1.0753234,16.1346596 1.32676294,15.2206259 L2.87530672,9.59135534 C2.87530672,9.59135534 2.87621393,9.58777964 2.87793779,9.58109793 C1.94659738,9.58323216 0.442313838,9.56125964 0.234844719,9.55473807 L1.22253281,9.585785 C0.677047741,9.56863825 0.660012524,8.9071373 1.20135942,8.08257658 L5.4540241,1.605066 C5.98781543,0.792013656 7.17476198,-0.0685883859 7.37776504,-0.122821239 L6.4205388,0.132904504 C6.94920026,-0.00832892368 7.17094568,0.62900907 6.91318541,1.56601991 L5.37469328,7.1587507 C5.37469328,7.1587507 5.373682,7.1623967 5.37181727,7.16900849 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                          </i>
+                          <div class="locations-search-results-item-titles">
+                            <strong>ChargePoint EV Chargers in the CELL LOT </strong>
+                            <em>C Street, San Diego, CA, United States</em>
+                          </div>
+                          <span>5 mi</span>
+                          <i class="icon-arrow-right"></i>
+                        </div><!-- /.locations-search-results-item -->
+                      </li>
+                      <li>
+                        <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="1">
+                          <i>
+                            <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -376.000000)">
+                                    <g id="Search-Bar" transform="translate(132.000000, 146.000000)">
+                                        <g id="Search-Item-Copy-3">
+                                            <g transform="translate(1.000000, 62.000000)">
+                                                <g id="Icons-/-Pin-Green" transform="translate(18.000000, 168.000000)">
+                                                    <path d="M11,32 C12.8549065,32 14.3183173,29.0317104 16.4436608,25.2039646 C18.9584953,20.674745 22,14.9421966 22,11.5 C22,5.14872538 17.0751322,0 11,0 C4.92486775,0 0,5.14872538 0,11.5 C0,14.9428663 2.79229915,20.6769757 5.30780715,25.2066081 C7.43281688,29.0330769 9.14552057,32 11,32 Z" id="Oval-3" fill="#8EC439"></path>
+                                                    <g id="Icons-/-Bolt-Up" transform="translate(7.250000, 5.500000)" fill="#FFFFFF">
+                                                        <path d="M5.37181727,7.16900849 C6.30277779,7.16685859 7.78823862,7.18823508 8.01515528,7.19536796 L7.02746719,7.16432104 C7.57295226,7.18146778 7.58998748,7.84296874 7.07568149,8.62634169 L2.76893499,15.1862278 C2.25007794,15.9765328 1.09424788,16.8136159 0.872234956,16.8729273 L1.8294612,16.6172015 C1.30079974,16.758435 1.0753234,16.1346596 1.32676294,15.2206259 L2.87530672,9.59135534 C2.87530672,9.59135534 2.87621393,9.58777964 2.87793779,9.58109793 C1.94659738,9.58323216 0.442313838,9.56125964 0.234844719,9.55473807 L1.22253281,9.585785 C0.677047741,9.56863825 0.660012524,8.9071373 1.20135942,8.08257658 L5.4540241,1.605066 C5.98781543,0.792013656 7.17476198,-0.0685883859 7.37776504,-0.122821239 L6.4205388,0.132904504 C6.94920026,-0.00832892368 7.17094568,0.62900907 6.91318541,1.56601991 L5.37469328,7.1587507 C5.37469328,7.1587507 5.373682,7.1623967 5.37181727,7.16900849 Z"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                          </i>
+                          <div class="locations-search-results-item-titles">
+                            <strong>Charge Point Charging Station</strong>
+                            <em>Sea World Drive, San Diego, CA, United States</em>
+                          </div>
+                          <span>5.4 mi</span>
+                          <i class="icon-arrow-right"></i>
+                        </div><!-- /.locations-search-results-item -->
+                      </li>
+                    </ul>
+                  </div><!-- /.item -->
+                  <div class="item">
+                    <div class="poi-detail">
+                      <span class="back" data-target="#locations-utility-carousel" data-slide-to="0">
+                        Back To Results
+                      </span>
+                      <div class="poi-detail-main">
+                        <i>
+                          <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -376.000000)">
+                                  <g id="Search-Bar" transform="translate(132.000000, 146.000000)">
+                                      <g id="Search-Item-Copy-3">
+                                          <g transform="translate(1.000000, 62.000000)">
+                                              <g id="Icons-/-Pin-Green" transform="translate(18.000000, 168.000000)">
+                                                  <path d="M11,32 C12.8549065,32 14.3183173,29.0317104 16.4436608,25.2039646 C18.9584953,20.674745 22,14.9421966 22,11.5 C22,5.14872538 17.0751322,0 11,0 C4.92486775,0 0,5.14872538 0,11.5 C0,14.9428663 2.79229915,20.6769757 5.30780715,25.2066081 C7.43281688,29.0330769 9.14552057,32 11,32 Z" id="Oval-3" fill="#8EC439"></path>
+                                                  <g id="Icons-/-Bolt-Up" transform="translate(7.250000, 5.500000)" fill="#FFFFFF">
+                                                      <path d="M5.37181727,7.16900849 C6.30277779,7.16685859 7.78823862,7.18823508 8.01515528,7.19536796 L7.02746719,7.16432104 C7.57295226,7.18146778 7.58998748,7.84296874 7.07568149,8.62634169 L2.76893499,15.1862278 C2.25007794,15.9765328 1.09424788,16.8136159 0.872234956,16.8729273 L1.8294612,16.6172015 C1.30079974,16.758435 1.0753234,16.1346596 1.32676294,15.2206259 L2.87530672,9.59135534 C2.87530672,9.59135534 2.87621393,9.58777964 2.87793779,9.58109793 C1.94659738,9.58323216 0.442313838,9.56125964 0.234844719,9.55473807 L1.22253281,9.585785 C0.677047741,9.56863825 0.660012524,8.9071373 1.20135942,8.08257658 L5.4540241,1.605066 C5.98781543,0.792013656 7.17476198,-0.0685883859 7.37776504,-0.122821239 L6.4205388,0.132904504 C6.94920026,-0.00832892368 7.17094568,0.62900907 6.91318541,1.56601991 L5.37469328,7.1587507 C5.37469328,7.1587507 5.373682,7.1623967 5.37181727,7.16900849 Z"></path>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                        </i>
+                        <strong>ChargePoint EV Charges in the CELL LOT</strong>
+                        <em>9388 Lightwave Ave, San Diego, CA 92123</em>
+                        <q>Located behind the store</q>
+                        <span>5 mi</span>
+                      </div><!-- /.poi-detail-main -->
+                      <div class="poi-detail-main-buttons">
+                        <span class="button">
+                          Get Directions
+                        </span>
+                        <span class="button">
+                          Add to POI's
+                        </span>
+                      </div><!-- /.poi-detail-main-buttons -->
+                      <div class="poi-detail-fields">
+                        <div class="field">
+                          <span class="label">Notes</span>
+                          <span class="field-cell">
+                            <input type="text" name="" value="" placeholder="Add note...">
+                          </span>
+                        </div><!-- /.field -->
+                        <div class="field">
+                          <span class="label">LEVEL 1: 120V</span>
+                          <span class="field-cell">
+                            <em>Not Available</em>
+                          </span>
+                        </div><!-- /.field -->
+                        <div class="field">
+                          <span class="label">LEVEL 2: 240V</span>
+                          <span class="field-cell">
+                            3/4 Available
+                          </span>
+                        </div><!-- /.field -->
+                        <div class="field">
+                          <span class="label">DC Fast Charge</span>
+                          <span class="field-cell">
+                            <em>Not available</em>
+                          </span>
+                        </div><!-- /.field -->
+                        <div class="field">
+                          <span class="label">Popular Times</span>
+                          <div class="popular-times">
+                            <div class="popular-times-bars">
+                              <span><span></span></span>
+                              <span><span></span></span>
+                              <span><span></span></span>
+                              <span><span></span></span>
+                              <span><span></span></span>
+                              <span><span></span></span>
+                              <span><span style="height: 15%"></span></span>
+                              <span><span style="height: 25%"></span></span>
+                              <span><span style="height: 35%"></span></span>
+                              <span><span style="height: 55%"></span></span>
+                              <span><span style="height: 75%"></span></span>
+                              <span><span style="height: 95%"></span></span>
+                              <span><span style="height: 100%"></span></span>
+                              <span><span style="height: 95%"></span></span>
+                              <span><span style="height: 90%"></span></span>
+                              <span><span style="height: 85%"></span></span>
+                              <span><span style="height: 25%"></span></span>
+                              <span><span style="height: 25%"></span></span>
+                              <span><span></span></span>
+                              <span><span></span></span>
+                              <span><span></span></span>
+                            </div><!-- /.popular-times-bars -->
+                          </div>
+                        </div><!-- /.field -->
+                      </div><!-- /.poi-detail-fields -->
+                    </div><!-- /.poi-detail -->
+                  </div><!-- /.item -->
+                  <div class="item">
+                    <div class="poi-detail">
+                      <span class="back" data-target="#locations-utility-carousel" data-slide-to="0">
+                        Back To Results
+                      </span>
+                      <div class="poi-detail-main">
+                        <i>
+                          <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -208.000000)">
+                                  <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#BB1A30">
+                                      <g id="Search-Item-Copy-3">
+                                          <g transform="translate(1.000000, 62.000000)">
+                                              <g id="Icons-/-Pin-Copy-33" transform="translate(18.000000, 0.000000)">
+                                                  <path d="M11,32 C9.14552057,32 7.43281688,29.0330769 5.30780715,25.2066081 C2.79229915,20.6769757 0,14.9428663 0,11.5 C0,5.14872538 4.92486775,0 11,0 C17.0751322,0 22,5.14872538 22,11.5 C22,14.9421966 18.9584953,20.674745 16.4436608,25.2039646 C14.3183173,29.0317104 12.8549065,32 11,32 Z M11,15 C13.209139,15 15,13.209139 15,11 C15,8.790861 13.209139,7 11,7 C8.790861,7 7,8.790861 7,11 C7,13.209139 8.790861,15 11,15 Z" id="Combined-Shape"></path>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                        </i>
+                        <strong>In-N-Out Burger</strong>
+                        <em>3020 El Camino Real, Tustin, Ca 92782</em>
+                        <q>Located behind the store</q>
+                        <span>3.8 mi</span>
+                      </div><!-- /.poi-detail-main -->
+                      <div class="poi-detail-main-buttons">
+                        <span class="button">
+                          Get Directions
+                        </span>
+                        <span class="button">
+                          Add to POI's
+                        </span>
+                        <span class="button">
+                          Nearby Charging
+                        </span>
+                      </div><!-- /.poi-detail-main-buttons -->
+                      <div class="poi-detail-fields">
+                        <div class="field">
+                          <span class="label">PHONE NUMBER</span>
+                          <span class="field-cell">
+                            619-423-6846
+                          </span>
+                        </div><!-- /.field -->
+                      </div><!-- /.poi-detail-fields -->
+                    </div><!-- /.poi-detail -->
+                  </div><!-- /.item-active -->
+                  <div class="item">
+                    <div class="poi-filtering">
+                      <form>
+                        <ul class="form-fields">
+                          <li>
+                            <label>
+                              <strong>Charge Type</strong>
+                            </label>
+                            <span class="toggle-group col-4">
+                              <label>
+                                <input type="radio" name="toggle-group" value="1" checked>
+                                <span>All Types</span>
+                              </label>
+                              <label>
+                                <input type="radio" name="toggle-group" value="2">
+                                <span>
+                                  <strong>Level 1: 120V</strong>
+                                  <em>2hr 30min</em>
+                                </span>
+                              </label>
+                              <label>
+                                <input type="radio" name="toggle-group" value="3">
+                                <span>
+                                  <strong>Level 2: 240V</strong>
+                                  <em>1hr 30min</em>
+                                </span>
+                              </label>
+                              <label>
+                                <input type="radio" name="toggle-group" value="4">
+                                <span>
+                                  <strong>Level 3</strong>
+                                  <em>DC Fast Charge</em>
+                                </span>
+                              </label>
+                            </span>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <strong>Brand</strong>
+                              <input type="checkbox" name="" value="" checked />
+                              <em>All Brands</em>
+                            </label>
+                            <ul class="sub-form-fields">
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>Seema Charge Network</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>Public Stations</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>AeroVironment Network</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>Shorepower</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>Charge Point Network</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>Electric Vehicle</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>eVgo Network</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>OpConnect</em>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="checkbox">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>Blink</em>
+                                </label>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <div class="form-actions">
+                          <span class="button reset-btn" data-target="#locations-utility-carousel" data-slide-to="0">
+                            Done
+                          </span>
+                          <span class="button outline reset-btn" data-target="#locations-utility-carousel" data-slide-to="0">
+                            Reset
+                          </span>
+                        </div>
+                      </form>
+                    </div><!-- /.poi-filtering -->
+                  </div>
+                  <div class="item">
+                    <div class="saved-pois">
+                      <div class="saved-pois-filters">
+                        <div class="category-selector special-dropdown">
+                          <em>Display</em>
+                          <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                              <span class="active-filter">All</span>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                All
+                              </li>
+                              <li>
+                                Option 1
+                              </li>
+                              <li>
+                                Option 2
+                              </li>
+                              <li>
+                                Option 3
+                              </li>
+                            </ul>
+                          </div><!-- /.dropdown -->
+                        </div>
+                        <div class="category-selector special-dropdown">
+                          <em>Sort by</em>
+                          <div class="dropdown">
+                            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                              <span class="active-filter">Date Added</span>
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                Date Added
+                              </li>
+                              <li>
+                                Option 1
+                              </li>
+                              <li>
+                                Option 2
+                              </li>
+                              <li>
+                                Option 3
+                              </li>
+                            </ul>
+                          </div><!-- /.dropdown -->
+                        </div>
+                      </div><!-- /.saved-poi-filters -->
+                      <span class="list-header">
+                        Recommended
+                      </span>
+                      <ul class="locations-search-results-list recommended">
+                        <li>
+                          <div class="locations-search-results-item">
+                            <i>
+                              <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="My-POI's-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-156.000000, -293.000000)">
+                                      <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#9BA1A9" fill-rule="nonzero">
+                                          <g id="Recommended">
+                                              <g transform="translate(2.000000, 118.000000)">
+                                                  <path d="M31,29 C26.0374,29 22,33.0374 22,38 C22,42.96242 26.0374,47 31,47 C35.9626,47 40,42.96242 40,38 C40,33.0374 35.9626,29 31,29 Z M31.72576,45.51266 L31.72576,43.08068 L30.27424,43.08068 L30.27424,45.51284 C26.69026,45.16922 23.83078,42.30974 23.48734,38.72576 L25.9195,38.72576 L25.9195,37.27424 L23.48734,37.27424 C23.83096,33.69026 26.69026,30.83096 30.27424,30.48734 L30.27424,32.91932 L31.72576,32.91932 L31.72576,30.48734 C35.30974,30.83078 38.16922,33.69008 38.51266,37.27424 L36.08068,37.27424 L36.08068,38.72576 L38.51284,38.72576 C38.16922,42.30974 35.30974,45.16922 31.72576,45.51266 Z" id="Shape"></path>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </i>
+                            <div class="locations-search-results-item-titles">
+                              <strong>My Home</strong>
+                              <em>400 Embarcadero West, Oakland, CA 94607</em>
+                            </div>
+                            <span>5.4 mi</span>
+                            <span class="button"  data-target="#locations-utility-carousel" data-slide-to="5">Add to POIS</span>
+                          </div><!-- /.locations-search-results-item -->
+                        </li>
+                      </ul>
+                      <span class="list-header">
+                        My Pois
+                      </span>
+                      <ul class="locations-search-results-list">
+                        <li>
+                          <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="6">
+                            <i>
+                              <svg width="19px" height="28px" viewBox="0 0 19 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="My-POI's-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-153.000000, -388.000000)">
+                                      <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#FFC62F">
+                                          <g id="Recommended-Copy-5">
+                                              <g transform="translate(1.000000, 218.000000)">
+                                                  <g id="My-POI's" transform="translate(0.000000, 22.000000)">
+                                                      <g id="Chick-Fil-A" transform="translate(1.000000, 0.000000)">
+                                                          <path d="M28.5,29.6363636 C26.8984041,29.6363636 25.4192509,27.074021 23.5840153,23.7693434 C21.4115311,19.8573881 19,14.9052027 19,11.9318182 C19,6.44662646 23.2532949,2 28.5,2 C33.7467051,2 38,6.44662646 38,11.9318182 C38,14.9046243 35.373246,19.8554616 33.2013434,23.7670604 C31.3658195,27.0728408 30.1019647,29.6363636 28.5,29.6363636 Z M28.501518,6.75 L27.101706,11.0511393 L22.5625,11.0511393 L26.2354569,13.710352 L24.8285611,18.0107322 L28.501518,15.3540495 L32.169415,18.0107322 L30.767832,13.710352 L34.4375,11.0511393 L29.9018359,11.0511393 L28.501518,6.75 Z" id="Pin-Yellow"></path>
+                                                      </g>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </i>
+                            <div class="locations-search-results-item-titles">
+                              <strong>Qualcomm Stadium</strong>
+                              <em>Friars Road, San Diego, CA United States</em>
+                            </div>
+                            <span>0.3 mi</span>
+                            <i class="icon-arrow-right"></i>
+                          </div><!-- /.locations-search-results-item -->
+                        </li>
+                        <li>
+                          <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="6">
+                            <i>
+                              <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -208.000000)">
+                                      <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#BB1A30">
+                                          <g id="Search-Item-Copy-3">
+                                              <g transform="translate(1.000000, 62.000000)">
+                                                  <g id="Icons-/-Pin-Copy-33" transform="translate(18.000000, 0.000000)">
+                                                      <path d="M11,32 C9.14552057,32 7.43281688,29.0330769 5.30780715,25.2066081 C2.79229915,20.6769757 0,14.9428663 0,11.5 C0,5.14872538 4.92486775,0 11,0 C17.0751322,0 22,5.14872538 22,11.5 C22,14.9421966 18.9584953,20.674745 16.4436608,25.2039646 C14.3183173,29.0317104 12.8549065,32 11,32 Z M11,15 C13.209139,15 15,13.209139 15,11 C15,8.790861 13.209139,7 11,7 C8.790861,7 7,8.790861 7,11 C7,13.209139 8.790861,15 11,15 Z" id="Combined-Shape"></path>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </i>
+                            <div class="locations-search-results-item-titles">
+                              <strong>Charger Boulevard</strong>
+                              <em>San Diego, CA, United States</em>
+                            </div>
+                            <span>3.6 mi</span>
+                            <i class="icon-arrow-right"></i>
+                          </div><!-- /.locations-search-results-item -->
+                        </li>
+                        <li>
+                          <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="6">
+                            <i>
+                              <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -376.000000)">
+                                      <g id="Search-Bar" transform="translate(132.000000, 146.000000)">
+                                          <g id="Search-Item-Copy-3">
+                                              <g transform="translate(1.000000, 62.000000)">
+                                                  <g id="Icons-/-Pin-Green" transform="translate(18.000000, 168.000000)">
+                                                      <path d="M11,32 C12.8549065,32 14.3183173,29.0317104 16.4436608,25.2039646 C18.9584953,20.674745 22,14.9421966 22,11.5 C22,5.14872538 17.0751322,0 11,0 C4.92486775,0 0,5.14872538 0,11.5 C0,14.9428663 2.79229915,20.6769757 5.30780715,25.2066081 C7.43281688,29.0330769 9.14552057,32 11,32 Z" id="Oval-3" fill="#8EC439"></path>
+                                                      <g id="Icons-/-Bolt-Up" transform="translate(7.250000, 5.500000)" fill="#FFFFFF">
+                                                          <path d="M5.37181727,7.16900849 C6.30277779,7.16685859 7.78823862,7.18823508 8.01515528,7.19536796 L7.02746719,7.16432104 C7.57295226,7.18146778 7.58998748,7.84296874 7.07568149,8.62634169 L2.76893499,15.1862278 C2.25007794,15.9765328 1.09424788,16.8136159 0.872234956,16.8729273 L1.8294612,16.6172015 C1.30079974,16.758435 1.0753234,16.1346596 1.32676294,15.2206259 L2.87530672,9.59135534 C2.87530672,9.59135534 2.87621393,9.58777964 2.87793779,9.58109793 C1.94659738,9.58323216 0.442313838,9.56125964 0.234844719,9.55473807 L1.22253281,9.585785 C0.677047741,9.56863825 0.660012524,8.9071373 1.20135942,8.08257658 L5.4540241,1.605066 C5.98781543,0.792013656 7.17476198,-0.0685883859 7.37776504,-0.122821239 L6.4205388,0.132904504 C6.94920026,-0.00832892368 7.17094568,0.62900907 6.91318541,1.56601991 L5.37469328,7.1587507 C5.37469328,7.1587507 5.373682,7.1623967 5.37181727,7.16900849 Z"></path>
+                                                      </g>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </i>
+                            <div class="locations-search-results-item-titles">
+                              <strong>ChargePoint EV Chargers in the CELL LOT </strong>
+                              <em>C Street, San Diego, CA, United States</em>
+                            </div>
+                            <span>5 mi</span>
+                            <i class="icon-arrow-right"></i>
+                          </div><!-- /.locations-search-results-item -->
+                        </li>
+                        <li>
+                          <div class="locations-search-results-item" data-target="#locations-utility-carousel" data-slide-to="6">
+                            <i>
+                              <svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="Type-Ahead-Search-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -376.000000)">
+                                      <g id="Search-Bar" transform="translate(132.000000, 146.000000)">
+                                          <g id="Search-Item-Copy-3">
+                                              <g transform="translate(1.000000, 62.000000)">
+                                                  <g id="Icons-/-Pin-Green" transform="translate(18.000000, 168.000000)">
+                                                      <path d="M11,32 C12.8549065,32 14.3183173,29.0317104 16.4436608,25.2039646 C18.9584953,20.674745 22,14.9421966 22,11.5 C22,5.14872538 17.0751322,0 11,0 C4.92486775,0 0,5.14872538 0,11.5 C0,14.9428663 2.79229915,20.6769757 5.30780715,25.2066081 C7.43281688,29.0330769 9.14552057,32 11,32 Z" id="Oval-3" fill="#8EC439"></path>
+                                                      <g id="Icons-/-Bolt-Up" transform="translate(7.250000, 5.500000)" fill="#FFFFFF">
+                                                          <path d="M5.37181727,7.16900849 C6.30277779,7.16685859 7.78823862,7.18823508 8.01515528,7.19536796 L7.02746719,7.16432104 C7.57295226,7.18146778 7.58998748,7.84296874 7.07568149,8.62634169 L2.76893499,15.1862278 C2.25007794,15.9765328 1.09424788,16.8136159 0.872234956,16.8729273 L1.8294612,16.6172015 C1.30079974,16.758435 1.0753234,16.1346596 1.32676294,15.2206259 L2.87530672,9.59135534 C2.87530672,9.59135534 2.87621393,9.58777964 2.87793779,9.58109793 C1.94659738,9.58323216 0.442313838,9.56125964 0.234844719,9.55473807 L1.22253281,9.585785 C0.677047741,9.56863825 0.660012524,8.9071373 1.20135942,8.08257658 L5.4540241,1.605066 C5.98781543,0.792013656 7.17476198,-0.0685883859 7.37776504,-0.122821239 L6.4205388,0.132904504 C6.94920026,-0.00832892368 7.17094568,0.62900907 6.91318541,1.56601991 L5.37469328,7.1587507 C5.37469328,7.1587507 5.373682,7.1623967 5.37181727,7.16900849 Z"></path>
+                                                      </g>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </i>
+                            <div class="locations-search-results-item-titles">
+                              <strong>Charge Point Charging Station</strong>
+                              <em>Sea World Drive, San Diego, CA, United States</em>
+                            </div>
+                            <span>5.4 mi</span>
+                            <i class="icon-arrow-right"></i>
+                          </div><!-- /.locations-search-results-item -->
+                        </li>
+                      </ul>
+                    </div><!-- /.saved-pois -->
+                  </div>
+                  <div class="item">
+                    <div class="poi-detail poi-edit">
+                      <span class="back" data-target="#locations-utility-carousel" data-slide-to="4">
+                        Back
+                      </span>
+                      <div class="poi-detail-main">
+                        <i>
+                          <svg width="19px" height="28px" viewBox="0 0 19 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="My-POI's-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-153.000000, -388.000000)">
+                                  <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#FFC62F">
+                                      <g id="Recommended-Copy-5">
+                                          <g transform="translate(1.000000, 218.000000)">
+                                              <g id="My-POI's" transform="translate(0.000000, 22.000000)">
+                                                  <g id="Chick-Fil-A" transform="translate(1.000000, 0.000000)">
+                                                      <path d="M28.5,29.6363636 C26.8984041,29.6363636 25.4192509,27.074021 23.5840153,23.7693434 C21.4115311,19.8573881 19,14.9052027 19,11.9318182 C19,6.44662646 23.2532949,2 28.5,2 C33.7467051,2 38,6.44662646 38,11.9318182 C38,14.9046243 35.373246,19.8554616 33.2013434,23.7670604 C31.3658195,27.0728408 30.1019647,29.6363636 28.5,29.6363636 Z M28.501518,6.75 L27.101706,11.0511393 L22.5625,11.0511393 L26.2354569,13.710352 L24.8285611,18.0107322 L28.501518,15.3540495 L32.169415,18.0107322 L30.767832,13.710352 L34.4375,11.0511393 L29.9018359,11.0511393 L28.501518,6.75 Z" id="Pin-Yellow"></path>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                        </i>
+                        <div class="poi-edit-title">
+                          <div class="poi-edit-title-main">
+                            <strong class="poi-edit-title-text">My Home</strong>
+                            <i>
+                              <svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="Saving-POI-Step-1-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-286.000000, -263.000000)">
+                                      <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#9BA1A9" fill-rule="nonzero">
+                                          <g id="Home-/-Edit-Home">
+                                              <g transform="translate(28.000000, 111.000000)">
+                                                  <g id="Group-4">
+                                                      <g id="Group-5" transform="translate(45.000000, 2.000000)">
+                                                          <path d="M81.6341996,12.2867983 L81.02,15.33 L84.0632017,14.7158004 L89.4725485,9.30661163 L87.0435463,6.87776741 L81.6341996,12.2867983 Z M89.5909978,4.33 L87.8251543,6.0958435 L90.2539986,8.52468772 L92.02,6.75884422 L89.5909978,4.33 Z" id="Shape"></path>
+                                                      </g>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </i>
+                          </div><!-- /.poi-edit-title-main -->
+                          <input type="text" name="" value="My Home" class="poi-edit-input">
+                        </div>
+                        <em>400 Embarcadero West, Oakland, CA 94607</em>
+                        <span>5 mi</span>
+                      </div><!-- /.poi-detail-main -->
+                      <div class="poi-detail-fields">
+                        <div class="field">
+                          <span class="label">Phone Number</span>
+                          <span class="field-cell">
+                            <input type="tel" name="" value="" placeholder="Add phone number...">
+                          </span>
+                        </div><!-- /.field -->
+                        <div class="field">
+                          <span class="label">Notes</span>
+                          <span class="field-cell">
+                            <input type="text" name="" value="" placeholder="Add note...">
+                          </span>
+                        </div><!-- /.field -->
+                      </div><!-- /.poi-detail-fields -->
+                      <div class="poi-actions">
+                        <span class="button save-poi-btn has-spinner">
+                          Save
+                          <span class="spinner"><i class="icon-communicating white"></i></span>
+                        </span>
+                      </div>
+                    </div><!-- /.poi-detail -->
+                  </div><!-- /.item -->
+                  <div class="item">
+                    <div class="poi-detail">
+                      <span class="back" data-target="#locations-utility-carousel" data-slide-to="4">
+                        Back
+                      </span>
+                      <span class="delete" data-target="#locations-utility-carousel" data-slide-to="4">
+                        <i>
+                          <svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="POI-Detail-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-575.000000, -207.000000)">
+                                  <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#C4172C">
+                                      <g id="Delete">
+                                          <g transform="translate(443.000000, 58.000000)">
+                                              <path d="M4,4 L4,3 L7,3 L7,4 L10.0044225,4 C10.5542648,4 11,4.44386482 11,5 L11,6 L0,6 L0,5 C0,4.44771525 0.444836974,4 0.995577499,4 L4,4 Z M1,7 L10,7 L10,17.0044225 C10,17.5542648 9.5536886,18 9.00245535,18 L1.99754465,18 C1.44661595,18 1,17.555163 1,17.0044225 L1,7 Z" id="Combined-Shape"></path>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                        </i>
+                        Delete
+                      </span>
+                      <div class="poi-detail-main">
+                        <i>
+                          <svg width="19px" height="28px" viewBox="0 0 19 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="My-POI's-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-153.000000, -388.000000)">
+                                  <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#FFC62F">
+                                      <g id="Recommended-Copy-5">
+                                          <g transform="translate(1.000000, 218.000000)">
+                                              <g id="My-POI's" transform="translate(0.000000, 22.000000)">
+                                                  <g id="Chick-Fil-A" transform="translate(1.000000, 0.000000)">
+                                                      <path d="M28.5,29.6363636 C26.8984041,29.6363636 25.4192509,27.074021 23.5840153,23.7693434 C21.4115311,19.8573881 19,14.9052027 19,11.9318182 C19,6.44662646 23.2532949,2 28.5,2 C33.7467051,2 38,6.44662646 38,11.9318182 C38,14.9046243 35.373246,19.8554616 33.2013434,23.7670604 C31.3658195,27.0728408 30.1019647,29.6363636 28.5,29.6363636 Z M28.501518,6.75 L27.101706,11.0511393 L22.5625,11.0511393 L26.2354569,13.710352 L24.8285611,18.0107322 L28.501518,15.3540495 L32.169415,18.0107322 L30.767832,13.710352 L34.4375,11.0511393 L29.9018359,11.0511393 L28.501518,6.75 Z" id="Pin-Yellow"></path>
+                                                  </g>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                        </i>
+                        <strong>In-N-Out Burger</strong>
+                        <em>3020 El Camino Real, Tustin, Ca 92782</em>
+                        <q>Located behind the store</q>
+                        <span>3.8 mi</span>
+                      </div><!-- /.poi-detail-main -->
+                      <div class="poi-detail-main-buttons">
+                        <span class="button">
+                          Get Directions
+                        </span>
+                        <span class="button">
+                          Add to POI's
+                        </span>
+                        <span class="button">
+                          Nearby Charging
+                        </span>
+                      </div><!-- /.poi-detail-main-buttons -->
+                      <div class="poi-detail-fields">
+                        <div class="field">
+                          <span class="label">PHONE NUMBER</span>
+                          <span class="field-cell">
+                            619-423-6846
+                          </span>
+                        </div><!-- /.field -->
+                        <div class="field">
+                          <span class="label">Notes</span>
+                          <span class="field-cell">
+                            <input type="text" name="" value="" placeholder="Add note...">
+                          </span>
+                        </div><!-- /.field -->
+                      </div><!-- /.poi-detail-fields -->
+                    </div><!-- /.poi-detail -->
+                  </div>
+                </div><!-- /.carousel-inner -->
+              </div><!-- /.carousel -->
+              <div class="locations-search-results-footer">
+                <div class="locations-search-results-footer-inner pull-right">
+                  <em>Powered By</em>
+                  <img src="/images/siriusxmtravellink.png" alt="SirusXM Travel Link">
+                </div><!-- /.locations-search-results-footer-inner -->
+              </div><!-- /.locations-search-results-footer -->
+            </div><!-- /.collpase -->
+          </div><!-- /.locations-utility-drawer -->
+        </div><!-- /.locations-utility -->
+      </div><!-- /.locations-map -->
+    </div><!-- /.page-view -->
+  </div><!-- /.has-mobile-nav -->
+<!-- @import "partials/footer.kit" -->
