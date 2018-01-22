@@ -2451,6 +2451,9 @@ body.modal-open {
     .modal .modal-set-boundaries .map-wrap .map {
       width: 100%;
       height: 445px; }
+      @media (max-width: 767px) {
+        .modal .modal-set-boundaries .map-wrap .map {
+          height: 225px; } }
     .modal .modal-set-boundaries .map-wrap .map-search {
       position: absolute;
       top: 15px;

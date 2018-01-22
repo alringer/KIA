@@ -2715,6 +2715,9 @@ body.modal-open {
       .map {
         width: 100%;
         height: 445px;
+        @media (max-width: $screen-xs-max) {
+          height: 225px;
+        }
       }
       .map-search {
         position: absolute;

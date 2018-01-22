@@ -83,8 +83,11 @@
 }
 
 .schedules-alert-area {
-  margin-bottom: 30px;;
+  margin-bottom: 10px;
   clear: both;
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 30px;
+  }
   &-header {
     margin-bottom: 16px;
     &:after {
@@ -143,7 +146,13 @@
 	box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
   position: relative;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 250ms $easeOutQuint;
+  &:hover {
+    box-shadow: 0 5px 10px 3px rgba(39, 48, 59, 0.1);
+    transform: scale(1.025);
+  }
   &.large {
     height: 194px;
   }
