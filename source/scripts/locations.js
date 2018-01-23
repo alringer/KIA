@@ -11,6 +11,8 @@ $(document).ready(() => {
       location_carousel : $('#locations-utility-carousel'),
       reset_btn : $('.locations-utility .reset-btn'),
       save_poi_btn : $('.save-poi-btn'),
+      nav_toggle_search : $('.nav-toggle-search'),
+      location_utility : $('.locations-utility'),
     },
     methods : {
       collapse : {
@@ -25,7 +27,8 @@ $(document).ready(() => {
         _carousel_slide : (data) => {
           var $carousel_inner = window.locations.elements.location_carousel.find('.carousel-inner'),
               $items = $carousel_inner.children('.item'),
-              $target = $(data.relatedTarget);
+              $target = $(data.relatedTarget),
+              $active_item = $items.filter('.active');
 
           $carousel_inner.removeClass('overflow-visible');
 
@@ -35,6 +38,23 @@ $(document).ready(() => {
             // Then remove the height
             $carousel_inner.css('height', parseInt($target.innerHeight(), 10));
           }, 10);
+
+
+          if($target.hasClass('top')) {
+            window.locations.elements.location_utility.removeClass('slide-down');
+          }
+
+          if($target.hasClass('bottom')) {
+            window.locations.elements.location_utility.addClass('slide-down');
+          }
+
+          if($target.hasClass('hide-search')) {
+            window.locations.elements.location_utility.addClass('hide-search');
+          }
+
+          if($target.hasClass('show-search')) {
+            window.locations.elements.location_utility.removeClass('hide-search');
+          }
         },
       },
       poi : {
@@ -87,13 +107,34 @@ $(document).ready(() => {
           }else{
             if(window.locations.elements.location_search_input.val().length) {
               window.locations.methods.collapse._open();
+            }else{
+              window.locations.methods.collapse._close();
             }
           }
         },
       },
       _reset_btn : () => {
         window.locations.elements.location_utility_tools.removeClass('active');
-      }
+      },
+      mobile : {
+        _toggle_search : function() {
+          console.log('run');
+          var $this = $(this),
+              is_active = $this.hasClass('active');
+          window.locations.elements.nav_toggle_search.removeClass('active');
+          if(is_active) {
+            window.locations.elements.location_utility.removeClass('open');
+            window.locations.methods.collapse._close();
+            return;
+          }
+          window.locations.elements.location_utility.addClass('open');
+          $this.addClass('active');
+          if($this.is('.icon-settings') || $this.is('.icon-poi')) {
+            window.locations.methods.collapse._open();
+          }
+
+        }
+      },
     },
   };
   // EVENTS
@@ -108,5 +149,5 @@ $(document).ready(() => {
   window.locations.elements.location_carousel.on('slide.bs.carousel', window.locations.methods.carousel._carousel_slide);
   window.locations.elements.reset_btn.on('click', window.locations.methods._reset_btn);
   window.locations.elements.save_poi_btn.on('click', window.locations.methods.poi._save);
-  console.log(window.locations.elements.save_poi_btn.length);
+  window.locations.elements.nav_toggle_search.on('click', window.locations.methods.mobile._toggle_search);
 });
