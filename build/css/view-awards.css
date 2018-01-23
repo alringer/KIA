@@ -50,11 +50,17 @@
       .awards-page-view .contain table thead td {
         padding-bottom: 29px; }
     .awards-page-view .contain table tbody tr {
-      cursor: pointer; }
+      cursor: pointer;
+      pointer-events: all; }
       .awards-page-view .contain table tbody tr:hover .icon-arrow-right {
         margin-right: -5px; }
+      @media (max-width: 991px) {
+        .awards-page-view .contain table tbody tr .icon-arrow-right {
+          right: 2%; } }
       .awards-page-view .contain table tbody tr.separator {
         height: 3px; }
+        .awards-page-view .contain table tbody tr.separator td {
+          display: none; }
     .awards-page-view .contain table tbody td {
       padding: 21px 0;
       background: #FFF;
@@ -101,7 +107,8 @@
   padding: 20px 35px 20px 20px;
   overflow: hidden;
   position: relative;
-  font-size: 0; }
+  font-size: 0;
+  cursor: pointer; }
   .award-listing .icon-arrow-right {
     right: 10px; }
   .award-listing .label {

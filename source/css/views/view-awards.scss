@@ -1,5 +1,7 @@
 @import "../variables.scss";
 @import "../mixins.scss";
+body {
+}
 .awards-page-view {
   .contain {
     max-width: 1035px;
@@ -25,13 +27,22 @@
       tbody {
         tr {
           cursor: pointer;
+          pointer-events: all;
           &:hover {
             .icon-arrow-right {
               margin-right: -5px;
             }
           }
+          @media (max-width: $screen-sm-max) {
+            .icon-arrow-right {
+              right: 2%;
+            }
+          }
           &.separator {
             height: 3px;
+            td {
+              display: none;
+            }
           }
         }
         td {
@@ -90,6 +101,7 @@
   overflow: hidden;
   position: relative;
   font-size: 0;
+  cursor: pointer;
   .icon-arrow-right {
     right: 10px;
   }
