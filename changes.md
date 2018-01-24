@@ -11,6 +11,10 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 5.0.6
+* KOPE-326 Clicking on vehicle's driver or front passenger seats moves vehicle up and covers seat control
+* Adding 10 min increment to "Create A Curfew Alert" modal for verification
+===
 # V - 5.0.5
 * KOPE-298 End time not needed for climate schedules
 * KOPE-286 Entire MCZ alert card should be clickable
