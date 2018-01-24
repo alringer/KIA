@@ -1563,8 +1563,10 @@ body.modal-open {
       opacity: 0 !important;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
       pointer-events: none !important; }
-      .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) * {
-        pointer-events: none !important; }
+      .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) {
+        display: none; }
+        .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) * {
+          pointer-events: none !important; }
       .modal.heated-seats .modal-heated-seats .ui-dial.active {
         opacity: 1 !important;
         pointer-events: all !important; }

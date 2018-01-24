@@ -12,8 +12,6 @@ $(document).ready(() => {
             $modal = $this.parents('.modal-heated-seats'),
             $dials = $modal.find('.ui-dial'),
             index = $modal.find('.heated-seats-vehicle > span').index($this);
-        console.log($modal.length);
-        console.log(index);
         $modal.addClass('seat-open');
         $modal.removeClass('top bottom');
         $modal.removeClass('seat-1 seat-2 seat-3 seat-4');

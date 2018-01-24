@@ -1774,6 +1774,7 @@ body.modal-open {
       transition: all 250ms $easeOutQuint;
       pointer-events: none !important;
       &:not(.active) {
+        display: none;
         * {
           pointer-events: none !important;
         }
