@@ -3566,7 +3566,7 @@
 	"\/source\/scripts\/heated-seats.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/heated-seats.js",
 		"oF": 0,
