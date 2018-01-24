@@ -494,6 +494,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-my-trips.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-my-trips.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-my-vehicles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4971,6 +4984,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/awards.html",
+		"oF": 0
+		},
+	"\/source\/views\/locations-my-trips.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/locations-my-trips.html",
 		"oF": 0
 		},
 	"\/source\/views\/locations.kit": {
