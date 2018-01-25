@@ -31,6 +31,14 @@
   to {
     transform: rotate(360deg); } }
 
+@keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
 .my-trips-page-view .locations-map {
   height: calc(100vh - 215px);
   position: relative;
@@ -168,6 +176,7 @@
       display: block;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
     .my-trips-page-view .trips-list .trip.active {
+      cursor: default;
       border-color: rgba(196, 23, 44, 0.5); }
       .my-trips-page-view .trips-list .trip.active:after {
         background: #C4172C; }
@@ -293,13 +302,67 @@
       margin-right: 5px;
       margin-bottom: 5px;
       min-width: 21px;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      text-transform: capitalize; }
       .my-trips-page-view .trips-list .trip-tags .badge.add {
         width: 21px;
         padding: 0;
         text-align: center;
         font-size: 18px;
-        letter-spacing: 0px; }
+        letter-spacing: 0px;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .my-trips-page-view .trips-list .trip-tags .badge.add em {
+          font-style: normal;
+          pointer-events: none;
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          position: relative;
+          display: inline-block;
+          vertical-align: top; }
+        .my-trips-page-view .trips-list .trip-tags .badge.add span {
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .my-trips-page-view .trips-list .trip-tags .badge.add input {
+          position: absolute;
+          display: block;
+          -webkit-appearance: none;
+          background: none;
+          width: 100%;
+          height: 21px;
+          border-radius: 100%;
+          border: none;
+          outline: none;
+          opacity: 0;
+          cursor: pointer;
+          top: 0;
+          left: 0; }
+        .my-trips-page-view .trips-list .trip-tags .badge.add.adding {
+          width: auto; }
+          .my-trips-page-view .trips-list .trip-tags .badge.add.adding em {
+            margin-left: 10px;
+            margin-right: 5px;
+            transform: rotate(45deg);
+            pointer-events: all; }
+          .my-trips-page-view .trips-list .trip-tags .badge.add.adding span {
+            font: 600 11px/21px "Source Sans Pro", sans-serif;
+            letter-spacing: 1.1px;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 11px;
+            position: relative;
+            height: 21px;
+            text-transform: capitalize; }
+            .my-trips-page-view .trips-list .trip-tags .badge.add.adding span:after {
+              content: "";
+              position: absolute;
+              right: -3px;
+              height: 75%;
+              top: 50%;
+              transform: translateY(-50%);
+              opacity: .5;
+              width: 1px;
+              background: #FFF;
+              animation: blink-animation 1s steps(5, start) infinite;
+              -webkit-animation: blink-animation 1s steps(5, start) infinite; }
 
 .icon-trip-alert-geo {
   background: url("/images/ic_mcz_geofence_white_small.png") top center/contain no-repeat; }

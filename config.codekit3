@@ -3686,6 +3686,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/my-trips.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/my-trips.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/my-vehicles.js": {
 		"ft": 64,
 		"ma": 0,

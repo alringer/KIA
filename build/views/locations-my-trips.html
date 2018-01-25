@@ -32,6 +32,7 @@
   
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/locations.js"></script>
+  <script type="text/javascript" src="/scripts/my-trips.js"></script>
   <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
   
   <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
@@ -903,6 +904,86 @@
                 </div><!-- /.row -->
               </div><!-- /.trip-data -->
             </div><!-- /.trip-main -->
+            <div id="demo" class="collapse in">
+              <div class="trip-meta">
+                <div class="trip-alerts">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <i class="icon-trip-alert-geo"></i>
+                      <span>
+                        <strong>0</strong>
+                        <em>Geo Fence Alerts</em>
+                      </span>
+                    </div><!-- /.col -->
+                    <div class="col-xs-4">
+                      <i class="icon-trip-alert-curfew"></i>
+                      <span>
+                        <strong>0</strong>
+                        <em>Curfew Alerts</em>
+                      </span>
+                    </div><!-- /.col -->
+                    <div class="col-xs-4">
+                      <i class="icon-trip-alert-speed"></i>
+                      <span>
+                        <strong>3</strong>
+                        <em>Speed Alerts</em>
+                      </span>
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                </div><!-- /.trip-alerts -->
+                <div class="radio-toggle milestone-status">
+                  <label>
+                    <input type="radio" name="trip-type-1" value="0" checked="">
+                    <span>
+                      Personal
+                    </span>
+                  </label>
+                  <label>
+                    <input type="radio" name="trip-type-1" value="0">
+                    <span>
+                      Business
+                    </span>
+                  </label>
+                </div>
+              </div><!-- /.trip-meta -->
+              <div class="trip-tags">
+                <strong>Tags</strong>
+                <span class="badge">Gym</span>
+                <span class="badge">Downtown</span>
+                <span class="badge add">
+                  <span></span>
+                  <input type="text" name="" value="" tabindex="-1">
+                  <em>+</em>
+                </span>
+              </div><!-- /.trip-tags -->
+            </div><!-- /.collapse -->
+          </div><!-- /.trip -->
+          <div class="trip">
+            <div class="trip-main">
+              <span class="trip-label">
+                PERSONAL TRIP
+              </span>
+              <div class="trip-points">
+                <span>A <em>3:00 PM</em></span>
+                <span>B <em>3:00 PM</em></span>
+              </div><!-- /.trip-points -->
+              <div class="trip-data">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <strong>92.7 <span>MI</span></strong>
+                    <em>Distance</em>
+                  </div>
+                  <div class="col-xs-4">
+                    <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                    <em>Duration</em>
+                  </div>
+                  <div class="col-xs-4">
+                    <strong>68 <span>MPH</span></strong>
+                    <em>Avg Speed</em>
+                  </div>
+                </div><!-- /.row -->
+              </div><!-- /.trip-data -->
+            </div><!-- /.trip-main -->
             <div id="demo" class="collapse">
               <div class="trip-meta">
                 <div class="trip-alerts">
@@ -932,13 +1013,13 @@
                 </div><!-- /.trip-alerts -->
                 <div class="radio-toggle milestone-status">
                   <label>
-                    <input type="radio" name="complete" value="0" checked="">
+                    <input type="radio" name="trip-type-2" value="0" checked="">
                     <span>
                       Personal
                     </span>
                   </label>
                   <label>
-                    <input type="radio" name="complete" value="0">
+                    <input type="radio" name="trip-type-2" value="0">
                     <span>
                       Business
                     </span>
