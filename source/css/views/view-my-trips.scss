@@ -1,0 +1,350 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.my-trips-page-view {
+  .locations-map {
+    height: calc(100vh - 215px);
+    position: relative;
+    overflow: hidden;
+    .map {
+      position: absolute;
+      height: auto;
+      width: auto;
+      top: 0;
+      right: 0;
+      width: calc(100% - 422px);
+      bottom: 0;
+    }
+  }
+  .my-trips-toolbar {
+    position: relative;
+    width: 100%;
+    height: 102px;
+    background: #F7F7F7;
+    z-index: 5;
+    padding-top: 26px;
+    &-inner {
+      text-align: center;
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+      }
+    }
+    .toggle-edit {
+      margin-right: 15px;
+    }
+    form {
+      .form-fields {
+        font-size: 0;
+        text-align: center;
+        width: 100%;
+        > li {
+          display: inline-block;
+          vertical-align: bottom;
+          margin-right: 10px;
+          text-align: left;
+          position: relative;
+          &.trips-search {
+            width: 223px;
+            input[type="text"] {
+              padding: 0 10px 0 36px;
+            }
+          }
+          &.trips-alerts {
+            width: 140px;
+          }
+          &.trips-type {
+            width: 140px;
+          }
+          .icon-search {
+            position: absolute;
+            bottom: 20px;
+            left: 12px;
+            transform: translateY(50%);
+          }
+          .bootstrap-select {
+            outline: none !important;
+            box-shadow: none !important;
+            * {
+              outline: none !important;
+              box-shadow: none !important;
+            }
+            .btn {
+              background: $white !important;
+              font-weight: normal;
+            }
+          }
+          label {
+            strong {
+              margin-bottom: 3px;
+            }
+          }
+          input[type="text"] {
+            font-weight: normal;
+          }
+          #reportrange {
+            font-size: 12px;
+            min-width: 230px;
+            height: 40px;
+            background: $white;
+            border-radius: 2px;
+            border: solid 1px #b1b5b8;
+            padding: 0 19px 0 14px;
+            font: 14px/40px $sans;
+            letter-spacing: .4px;
+            .fa {
+              color: #8d9094;
+              margin-right: 5px;
+            }
+          }
+          .export-btn {
+            font: bold 11px/40px $kia;
+            text-transform: uppercase;
+            color: $red;
+            display: inline-block;
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            transition: color 250ms $easeOutQuint;
+            i {
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              top: 3px;
+              margin-right: 5px;
+              svg {
+                path {
+                  fill: $red !important;
+                  transition: all 250ms $easeOutQuint;
+                }
+              }
+            }
+            &:hover {
+              color: darken($red, 20%);
+              i {
+                svg {
+                  path {
+                    fill: darken($red, 20%) !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .trips-list {
+    position: absolute;
+    width: 422px;
+    top: 102px;
+    bottom: 0;
+    background: #eaeaea;
+    overflow: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 4px;
+    > strong {
+      display: block;
+      padding: 16px 19px;
+      font: bold 10px/1em $kia;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #969696;
+    }
+    .trip {
+      background-color: $white;
+    	box-shadow: 0 1px 1px 0 rgba(#000026, .25);
+      margin-bottom: 4px;
+      border: solid 1px $white;
+      transition: all 250ms $easeOutQuint;
+      position: relative;
+      border-radius: 2px;
+      cursor: pointer;
+      &:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: $white;
+        content: "";
+        display: block;
+        transition: all 250ms $easeOutQuint;
+      }
+      &.active {
+        &:after {
+          background: $red;
+        }
+        border-color: rgba($red, .5);
+      }
+      &-label {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font: bold 8px/1em $kia;
+        color: #969696;
+      }
+      &-main {
+        padding: 51px 0;
+        position: relative;
+        .trip-points {
+          position: absolute;
+          left: 16px;
+          top: 16px;
+          bottom: 16px;
+          width: 16px;
+          &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #000;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          > span {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            color: $white;
+            text-align: center;
+            width: 17px;
+            height: 17px;
+            font: bold 11px/17px $sans;
+            border-radius: 100%;
+            &:last-child {
+              top: auto;
+              bottom: 0;
+            }
+            em {
+              position: absolute;
+              left: 100%;
+              white-space: nowrap;
+              color: #000;
+              font: bold 10px/1em $kia;
+              top: 50%;
+              transform: translateY(-50%);
+              margin-left: 13px;
+              letter-spacing: .4px;
+            }
+          }
+        }
+        .trip-data {
+          width: 320px;
+          margin: 0 auto;
+          strong {
+            display: block;
+            font: bold 16px/1em $kia;
+            span {
+              font-size: 12px;
+            }
+          }
+          em {
+            display: block;
+            font: bold 10px/1em $kia;
+            letter-spacing: .1px;
+            text-transform: uppercase;
+            color: #969696;
+          }
+        }
+      }
+    }
+    .trip-meta {
+      border-top: solid 1px #d4d4d4;
+      padding: 23px 30px 21px;
+      .trip-alerts {
+        max-width: 340px;
+        margin: 0 auto 16px;
+        i {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          vertical-align: top;
+          position: relative;
+          top: 2px;
+          margin-right: 5px;
+        }
+        span {
+          display: inline-block;
+          vertical-align: top;
+        }
+        strong {
+          display: block;
+          font: 600 19px/1em $kia;
+          margin-bottom: 3px;
+        }
+        em {
+          display: block;
+          width: 65px;
+          font: bold 10px $kia;
+          letter-spacing: 1px;
+          color: #969696;
+          text-transform: uppercase;
+        }
+      }
+      .radio-toggle {
+        span {
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+    .trip-tags {
+      border-top: solid 1px #d4d4d4;
+      padding: 20px 0 15px;
+      line-height: 1em;
+      padding-left: 60px;
+      position: relative;
+      font-size: 0;
+      padding-right: 30px;
+      > strong {
+        position: absolute;
+        left: 18px;
+        font: bold 10px/1em $kia;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+      }
+      .badge {
+        background: #000;
+        padding: 0 11px;
+        height: 21px;
+        font: 600 11px/21px $sans;
+        letter-spacing: 1.1px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        min-width: 21px;
+        cursor: pointer;
+        &.add {
+          width: 21px;
+          padding: 0;
+          text-align: center;
+          font-size: 18px;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+}
+
+.daterangepicker {
+
+}
+
+.icon-trip-alert-geo {
+  background: url('/images/ic_mcz_geofence_white_small.png') top center/contain no-repeat;
+}
+.icon-trip-alert-curfew {
+  background: url('/images/ic_mcz_curfew_white_small.png') top center/contain no-repeat;
+}
+.icon-trip-alert-speed {
+  background: url('/images/ic_mcz_speed_white_small.png') top center/contain no-repeat;
+}

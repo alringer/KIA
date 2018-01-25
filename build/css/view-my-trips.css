@@ -1,0 +1,311 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.my-trips-page-view .locations-map {
+  height: calc(100vh - 215px);
+  position: relative;
+  overflow: hidden; }
+  .my-trips-page-view .locations-map .map {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 0;
+    right: 0;
+    width: calc(100% - 422px);
+    bottom: 0; }
+
+.my-trips-page-view .my-trips-toolbar {
+  position: relative;
+  width: 100%;
+  height: 102px;
+  background: #F7F7F7;
+  z-index: 5;
+  padding-top: 26px; }
+  .my-trips-page-view .my-trips-toolbar-inner {
+    text-align: center; }
+    .my-trips-page-view .my-trips-toolbar-inner > * {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left; }
+  .my-trips-page-view .my-trips-toolbar .toggle-edit {
+    margin-right: 15px; }
+  .my-trips-page-view .my-trips-toolbar form .form-fields {
+    font-size: 0;
+    text-align: center;
+    width: 100%; }
+    .my-trips-page-view .my-trips-toolbar form .form-fields > li {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 10px;
+      text-align: left;
+      position: relative; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li.trips-search {
+        width: 223px; }
+        .my-trips-page-view .my-trips-toolbar form .form-fields > li.trips-search input[type="text"] {
+          padding: 0 10px 0 36px; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li.trips-alerts {
+        width: 140px; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li.trips-type {
+        width: 140px; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li .icon-search {
+        position: absolute;
+        bottom: 20px;
+        left: 12px;
+        transform: translateY(50%); }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li .bootstrap-select {
+        outline: none !important;
+        box-shadow: none !important; }
+        .my-trips-page-view .my-trips-toolbar form .form-fields > li .bootstrap-select * {
+          outline: none !important;
+          box-shadow: none !important; }
+        .my-trips-page-view .my-trips-toolbar form .form-fields > li .bootstrap-select .btn {
+          background: #FFF !important;
+          font-weight: normal; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li label strong {
+        margin-bottom: 3px; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li input[type="text"] {
+        font-weight: normal; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li #reportrange {
+        font-size: 12px;
+        min-width: 230px;
+        height: 40px;
+        background: #FFF;
+        border-radius: 2px;
+        border: solid 1px #b1b5b8;
+        padding: 0 19px 0 14px;
+        font: 14px/40px "Source Sans Pro", sans-serif;
+        letter-spacing: .4px; }
+        .my-trips-page-view .my-trips-toolbar form .form-fields > li #reportrange .fa {
+          color: #8d9094;
+          margin-right: 5px; }
+      .my-trips-page-view .my-trips-toolbar form .form-fields > li .export-btn {
+        font: bold 11px/40px "KIA", sans-serif;
+        text-transform: uppercase;
+        color: #C4172C;
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        transition: color 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .my-trips-page-view .my-trips-toolbar form .form-fields > li .export-btn i {
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          top: 3px;
+          margin-right: 5px; }
+          .my-trips-page-view .my-trips-toolbar form .form-fields > li .export-btn i svg path {
+            fill: #C4172C !important;
+            transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .my-trips-page-view .my-trips-toolbar form .form-fields > li .export-btn:hover {
+          color: #690c18; }
+          .my-trips-page-view .my-trips-toolbar form .form-fields > li .export-btn:hover i svg path {
+            fill: #690c18 !important; }
+
+.my-trips-page-view .trips-list {
+  position: absolute;
+  width: 422px;
+  top: 102px;
+  bottom: 0;
+  background: #eaeaea;
+  overflow: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 4px; }
+  .my-trips-page-view .trips-list > strong {
+    display: block;
+    padding: 16px 19px;
+    font: bold 10px/1em "KIA", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #969696; }
+  .my-trips-page-view .trips-list .trip {
+    background-color: #FFF;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 38, 0.25);
+    margin-bottom: 4px;
+    border: solid 1px #FFF;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer; }
+    .my-trips-page-view .trips-list .trip:after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #FFF;
+      content: "";
+      display: block;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .my-trips-page-view .trips-list .trip.active {
+      border-color: rgba(196, 23, 44, 0.5); }
+      .my-trips-page-view .trips-list .trip.active:after {
+        background: #C4172C; }
+    .my-trips-page-view .trips-list .trip-label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font: bold 8px/1em "KIA", sans-serif;
+      color: #969696; }
+    .my-trips-page-view .trips-list .trip-main {
+      padding: 51px 0;
+      position: relative; }
+      .my-trips-page-view .trips-list .trip-main .trip-points {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        bottom: 16px;
+        width: 16px; }
+        .my-trips-page-view .trips-list .trip-main .trip-points:after {
+          position: absolute;
+          content: "";
+          display: block;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background: #000;
+          left: 50%;
+          transform: translateX(-50%); }
+        .my-trips-page-view .trips-list .trip-main .trip-points > span {
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #000;
+          color: #FFF;
+          text-align: center;
+          width: 17px;
+          height: 17px;
+          font: bold 11px/17px "Source Sans Pro", sans-serif;
+          border-radius: 100%; }
+          .my-trips-page-view .trips-list .trip-main .trip-points > span:last-child {
+            top: auto;
+            bottom: 0; }
+          .my-trips-page-view .trips-list .trip-main .trip-points > span em {
+            position: absolute;
+            left: 100%;
+            white-space: nowrap;
+            color: #000;
+            font: bold 10px/1em "KIA", sans-serif;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 13px;
+            letter-spacing: .4px; }
+      .my-trips-page-view .trips-list .trip-main .trip-data {
+        width: 320px;
+        margin: 0 auto; }
+        .my-trips-page-view .trips-list .trip-main .trip-data strong {
+          display: block;
+          font: bold 16px/1em "KIA", sans-serif; }
+          .my-trips-page-view .trips-list .trip-main .trip-data strong span {
+            font-size: 12px; }
+        .my-trips-page-view .trips-list .trip-main .trip-data em {
+          display: block;
+          font: bold 10px/1em "KIA", sans-serif;
+          letter-spacing: .1px;
+          text-transform: uppercase;
+          color: #969696; }
+  .my-trips-page-view .trips-list .trip-meta {
+    border-top: solid 1px #d4d4d4;
+    padding: 23px 30px 21px; }
+    .my-trips-page-view .trips-list .trip-meta .trip-alerts {
+      max-width: 340px;
+      margin: 0 auto 16px; }
+      .my-trips-page-view .trips-list .trip-meta .trip-alerts i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+        margin-right: 5px; }
+      .my-trips-page-view .trips-list .trip-meta .trip-alerts span {
+        display: inline-block;
+        vertical-align: top; }
+      .my-trips-page-view .trips-list .trip-meta .trip-alerts strong {
+        display: block;
+        font: 600 19px/1em "KIA", sans-serif;
+        margin-bottom: 3px; }
+      .my-trips-page-view .trips-list .trip-meta .trip-alerts em {
+        display: block;
+        width: 65px;
+        font: bold 10px "KIA", sans-serif;
+        letter-spacing: 1px;
+        color: #969696;
+        text-transform: uppercase; }
+    .my-trips-page-view .trips-list .trip-meta .radio-toggle span {
+      height: 30px;
+      line-height: 30px; }
+  .my-trips-page-view .trips-list .trip-tags {
+    border-top: solid 1px #d4d4d4;
+    padding: 20px 0 15px;
+    line-height: 1em;
+    padding-left: 60px;
+    position: relative;
+    font-size: 0;
+    padding-right: 30px; }
+    .my-trips-page-view .trips-list .trip-tags > strong {
+      position: absolute;
+      left: 18px;
+      font: bold 10px/1em "KIA", sans-serif;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block; }
+    .my-trips-page-view .trips-list .trip-tags .badge {
+      background: #000;
+      padding: 0 11px;
+      height: 21px;
+      font: 600 11px/21px "Source Sans Pro", sans-serif;
+      letter-spacing: 1.1px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      min-width: 21px;
+      cursor: pointer; }
+      .my-trips-page-view .trips-list .trip-tags .badge.add {
+        width: 21px;
+        padding: 0;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0px; }
+
+.icon-trip-alert-geo {
+  background: url("/images/ic_mcz_geofence_white_small.png") top center/contain no-repeat; }
+
+.icon-trip-alert-curfew {
+  background: url("/images/ic_mcz_curfew_white_small.png") top center/contain no-repeat; }
+
+.icon-trip-alert-speed {
+  background: url("/images/ic_mcz_speed_white_small.png") top center/contain no-repeat; }
