@@ -963,6 +963,8 @@
 .filter-list {
   background-color: #f1f1f1;
   padding: 7px 20px;
+  transition: all 250ms $easeOutQuint;
+  overflow: hidden;
   .badge {
     background-color: #000;
     margin-bottom: 2px;
@@ -972,6 +974,7 @@
     i {
       font-size: 10px;
       margin-left: 3px;
+      cursor: pointer;
     }
   }
   @media (max-width: $screen-xs-max) {

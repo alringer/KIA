@@ -15,7 +15,8 @@ $(document).ready(function () {
       reset_btn: $('.locations-utility .reset-btn'),
       save_poi_btn: $('.save-poi-btn'),
       nav_toggle_search: $('.nav-toggle-search'),
-      location_utility: $('.locations-utility')
+      location_utility: $('.locations-utility'),
+      filter_badge: $('.filter-list .badge')
     },
     methods: {
       collapse: {
@@ -135,6 +136,21 @@ $(document).ready(function () {
       _reset_btn: function _reset_btn() {
         window.locations.elements.location_utility_tools.removeClass('active');
       },
+      filters: {
+        _remove: function _remove() {
+          $(this).parents('.badge').remove();
+          if (!$('.filter-list .badge').length) {
+            window.locations.methods.filters._close();
+          }
+        },
+        _close: function _close() {
+          var $list = $('.filter-list');
+          $list.css('height', $list.outerHeight());
+          setTimeout(function () {
+            $list.addClass('close');
+          }, 10);
+        }
+      },
       mobile: {
         _toggle_search: function _toggle_search() {
           var $this = $(this),
@@ -170,5 +186,6 @@ $(document).ready(function () {
   window.locations.elements.reset_btn.on('click', window.locations.methods._reset_btn);
   window.locations.elements.save_poi_btn.on('click', window.locations.methods.poi._save);
   window.locations.elements.nav_toggle_search.on('click', window.locations.methods.mobile._toggle_search);
+  window.locations.elements.filter_badge.find('i').on('click', window.locations.methods.filters._remove);
   $('form').on('submit', window.locations.methods.form_submit);
 });
