@@ -312,7 +312,12 @@
       padding-left: 60px;
       position: relative;
       font-size: 0;
-      padding-right: 30px;
+      padding-right: 85px;
+      &.focused {
+        em {
+          opacity: 1;
+        }
+      }
       > strong {
         position: absolute;
         left: 18px;
@@ -323,6 +328,17 @@
         top: 50%;
         transform: translateY(-50%);
         display: block;
+      }
+      > em {
+        position: absolute;
+        bottom: 25px;
+        display: block;
+        font: italic 11px/1em $sans;
+        color: #9da0a4;
+        right: 30px;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 250ms $easeOutQuint;
       }
       .badge {
         background: #000;
