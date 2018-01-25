@@ -20,6 +20,7 @@ $(document).ready(() => {
       },
       tags : {
         _add : function() {
+          window.myTrips.methods.tags._save();
           var $this = $(this),
               $badge = $this.parents('.badge');
           $badge.addClass('adding');
@@ -46,38 +47,49 @@ $(document).ready(() => {
             window.myTrips.methods.tags._save();
           }
           if(e.keyCode === 27) {
-            window.myTrips.methods.tags._cancel_element($this);
+            // window.myTrips.methods.tags._cancel_element($badge, true);
           }
         },
         _cancel : function() {
-          var $this = $(this);
-          window.myTrips.methods.tags._cancel_element($this);
+          var $this = $(this),
+              $badge = $this.parents('.badge');
+          window.myTrips.methods.tags._cancel_element($badge);
         },
-        _cancel_element : ($this) => {
-          var $badge = $this.parents('.badge'),
-              $input = $badge.find('input'),
-              $text = $badge.find('span');
+        _cancel_element : ($badge, no_delete) => {
+          var $input = $badge.find('input'),
+              $text = $badge.find('span'),
+              $badges = $badge.parents('.trip-tags').find('.badge'),
+              index = $badges.index($badge);
           $input.val('');
           $text.text('');
           $badge.removeClass('adding');
           $badge.parents('.trip-tags').removeClass('focused');
           $input.blur();
+          if($badges.length > 1 && index < $badges.length - 1 && !no_delete) {
+            $badge.addClass('remove');
+          }
         },
         _save : () => {
           var $trip = $('.trip.active'),
               $badge = $trip.find('.badge.adding'),
-              $text = $badge.find('span');
+              $text = $badge.find('span'),
+              $input = $badge.find('input'),
+              $badges = $badge.parents('.trip-tags').find('.badge'),
+              index = $badges.index($badge);
+          $input.blur();
+          console.log('saving');
           if(!$text.text().length) {
             window.myTrips.methods.tags._cancel_element($badge);
           }else{
             $badge.removeClass('add adding');
-            $badge.find('em, input').remove();
-            var html = `<span class="badge add">
-                  <span></span>
-                  <input type="text" name="" value="" tabindex="-1">
-                  <em>+</em>
-                </span>`;
-            $(html).appendTo($trip.find('.trip-tags')).find('input').trigger('focus');
+            if(index === $badges.length - 1) {
+              var html = `<span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>`;
+            }
+            $(html).appendTo($trip.find('.trip-tags')).find('input');
           }
         }
       }
