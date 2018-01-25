@@ -90,6 +90,7 @@
         @media (max-width: 767px) {
           .locations-map .locations-utility-main form {
             width: 100%; } }
+        .locations-map .locations-utility-main form .icon-cancel,
         .locations-map .locations-utility-main form .icon-search {
           position: absolute;
           top: 50%;
@@ -97,6 +98,12 @@
           pointer-events: none;
           transform: translateY(-50%);
           margin-top: 2px; }
+        .locations-map .locations-utility-main form .icon-cancel {
+          left: auto;
+          right: 2px;
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          opacity: 0;
+          cursor: pointer; }
         .locations-map .locations-utility-main form input[type="text"] {
           -webkit-appearance: none;
           border: none;
@@ -106,7 +113,11 @@
           font: 400 14px "Source Sans Pro", sans-serif;
           letter-spacing: .4px;
           outline: none;
-          background: none; }
+          background: none;
+          padding-right: 30px; }
+          .locations-map .locations-utility-main form input[type="text"].has-text + .icon-cancel {
+            opacity: 1;
+            pointer-events: all; }
     .locations-map .locations-utility-tools {
       display: inline-block;
       vertical-align: middle; }

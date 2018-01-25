@@ -8,6 +8,7 @@ $(document).ready(() => {
       location_utility_tools : $('.locations-utility-tools > *'),
       location_utility_collapse : $('#locations-utility-collapse'),
       location_search_input : $('.location-search-input'),
+      location_search_clear : $('.search-clear'),
       location_carousel : $('#locations-utility-carousel'),
       reset_btn : $('.locations-utility .reset-btn'),
       save_poi_btn : $('.save-poi-btn'),
@@ -77,9 +78,7 @@ $(document).ready(() => {
           if(val) {
             $edit_title.find('.poi-edit-title-text').text(val);
           }
-          console.log($input);
-          console.log($(this));
-          // $this.blur();
+          $this.blur();
         },
         _keyup : function(e) {
           if(e.keyCode === 13) {
@@ -120,11 +119,17 @@ $(document).ready(() => {
           }else{
             if(window.locations.elements.location_search_input.val().length) {
               window.locations.methods.collapse._open();
+              window.locations.elements.location_search_input.addClass('has-text');
             }else{
               window.locations.methods.collapse._close();
+              window.locations.elements.location_search_input.removeClass('has-text');
             }
           }
         },
+        _clear : () => {
+          window.locations.methods.collapse._close();
+          window.locations.elements.location_search_input.val('').removeClass('has-text');
+        }
       },
       _reset_btn : () => {
         window.locations.elements.location_utility_tools.removeClass('active');
@@ -160,6 +165,7 @@ $(document).ready(() => {
   window.locations.elements.poi_edit_input.on('keyup', window.locations.methods.poi._keyup);
   window.locations.elements.location_utility_tools.on('click', window.locations.methods.utility._toggle_utlity);
   window.locations.elements.location_search_input.on('keyup', window.locations.methods.search._keyup);
+  window.locations.elements.location_search_clear.on('click', window.locations.methods.search._clear);
   window.locations.elements.location_carousel.on('slide.bs.carousel', window.locations.methods.carousel._carousel_slide);
   window.locations.elements.reset_btn.on('click', window.locations.methods._reset_btn);
   window.locations.elements.save_poi_btn.on('click', window.locations.methods.poi._save);
