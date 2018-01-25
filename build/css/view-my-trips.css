@@ -59,17 +59,77 @@
   background: #F7F7F7;
   z-index: 5;
   padding-top: 26px; }
+  .my-trips-page-view .my-trips-toolbar .edit-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding-left: 62px;
+    font: bold 10px/19px "KIA", sans-serif;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    color: #C4172C;
+    pointer-events: none;
+    background: #F7F7F7;
+    height: 102px;
+    z-index: 3;
+    padding-top: 55px;
+    opacity: 0;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .my-trips-page-view .my-trips-toolbar .edit-toolbar .checkbox {
+      position: absolute;
+      left: 16px; }
+    .my-trips-page-view .my-trips-toolbar .edit-toolbar > span {
+      margin-left: 35px;
+      display: inline-block;
+      vertical-align: middle;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: pointer; }
+      .my-trips-page-view .my-trips-toolbar .edit-toolbar > span.disabled {
+        opacity: .3;
+        pointer-events: none; }
+        .my-trips-page-view .my-trips-toolbar .edit-toolbar > span.disabled > * {
+          pointer-events: none; }
+      .my-trips-page-view .my-trips-toolbar .edit-toolbar > span:hover {
+        color: #690c18; }
+      .my-trips-page-view .my-trips-toolbar .edit-toolbar > span:first-of-type {
+        margin-left: 0; }
+    .my-trips-page-view .my-trips-toolbar .edit-toolbar .merge-toggle {
+      position: relative;
+      width: 125px;
+      height: 19px; }
+      .my-trips-page-view .my-trips-toolbar .edit-toolbar .merge-toggle.disabled span.active {
+        pointer-events: none; }
+      .my-trips-page-view .my-trips-toolbar .edit-toolbar .merge-toggle span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none; }
+        .my-trips-page-view .my-trips-toolbar .edit-toolbar .merge-toggle span.active {
+          opacity: 1;
+          pointer-events: all; }
+    .my-trips-page-view .my-trips-toolbar .edit-toolbar span {
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .my-trips-page-view .my-trips-toolbar .edit-toolbar span i {
+        display: inline-block;
+        vertical-align: middle;
+        height: 17px;
+        margin-right: 2px;
+        position: relative;
+        top: -1px; }
   .my-trips-page-view .my-trips-toolbar-inner {
-    text-align: center; }
+    padding-left: 16px; }
     .my-trips-page-view .my-trips-toolbar-inner > * {
       display: inline-block;
       vertical-align: middle;
       text-align: left; }
-  .my-trips-page-view .my-trips-toolbar .toggle-edit {
+  .my-trips-page-view .my-trips-toolbar .start-edit {
     margin-right: 15px; }
   .my-trips-page-view .my-trips-toolbar form .form-fields {
     font-size: 0;
-    text-align: center;
     width: 100%; }
     .my-trips-page-view .my-trips-toolbar form .form-fields > li {
       display: inline-block;
@@ -172,9 +232,23 @@
     transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
     position: relative;
     border-radius: 2px;
-    /* Rectangle 5: */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
     cursor: pointer; }
+    .my-trips-page-view .trips-list .trip.hide-trip {
+      transition: all 550ms cubic-bezier(0.23, 1, 0.32, 1);
+      height: 0 !important;
+      margin-bottom: 0 !important;
+      box-shadow: none;
+      border: none; }
+    .my-trips-page-view .trips-list .trip.merged .trip-points .merge {
+      opacity: 1; }
+    .my-trips-page-view .trips-list .trip:hover .trip-main .trip-points > .merge {
+      opacity: 0 !important; }
+    .my-trips-page-view .trips-list .trip:hover .trip-main .trip-points > span, .my-trips-page-view .trips-list .trip:hover .trip-main .trip-points:after {
+      background: #FFF; }
+    .my-trips-page-view .trips-list .trip:hover .trip-main .checkbox {
+      opacity: 1; }
     .my-trips-page-view .trips-list .trip:after {
       position: absolute;
       right: 0;
@@ -199,12 +273,21 @@
     .my-trips-page-view .trips-list .trip-main {
       padding: 51px 0;
       position: relative; }
+      .my-trips-page-view .trips-list .trip-main .checkbox {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 14px;
+        z-index: 1;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 0; }
       .my-trips-page-view .trips-list .trip-main .trip-points {
         position: absolute;
         left: 16px;
         top: 16px;
         bottom: 16px;
-        width: 16px; }
+        width: 16px;
+        pointer-events: none; }
         .my-trips-page-view .trips-list .trip-main .trip-points:after {
           position: absolute;
           content: "";
@@ -214,8 +297,10 @@
           width: 1px;
           background: #000;
           left: 50%;
-          transform: translateX(-50%); }
+          transform: translateX(-50%);
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
         .my-trips-page-view .trips-list .trip-main .trip-points > span {
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
           z-index: 1;
           position: absolute;
           top: 0;
@@ -227,6 +312,21 @@
           height: 17px;
           font: bold 11px/17px "Source Sans Pro", sans-serif;
           border-radius: 100%; }
+          .my-trips-page-view .trips-list .trip-main .trip-points > span.merge {
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #FFF;
+            width: 19px;
+            height: 19px;
+            left: -1px;
+            transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+            opacity: 0; }
+            .my-trips-page-view .trips-list .trip-main .trip-points > span.merge svg {
+              width: 9px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
           .my-trips-page-view .trips-list .trip-main .trip-points > span:last-child {
             top: auto;
             bottom: 0; }
@@ -439,3 +539,16 @@
 
 .icon-trip-alert-speed {
   background: url("/images/ic_mcz_speed_white_small.png") top center/contain no-repeat; }
+
+.editing .my-trips-toolbar .edit-toolbar {
+  opacity: 1;
+  pointer-events: all; }
+
+.editing .trip .trip-main .trip-points > span, .editing .trip .trip-main .trip-points:after {
+  background: #FFF; }
+
+.editing .trip .trip-main .trip-points > .merge {
+  opacity: 0 !important; }
+
+.editing .trip .trip-main .checkbox {
+  opacity: 1; }
