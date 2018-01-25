@@ -20,9 +20,11 @@ $(document).ready(function () {
       collapse: {
         _open: function _open() {
           window.locations.elements.location_utility_collapse.collapse("show");
+          // $('body').addClass('hide-subnav');
         },
         _close: function _close() {
           window.locations.elements.location_utility_collapse.collapse("hide");
+          // $('body').removeClass('hide-subnav');
         }
       },
       carousel: {
@@ -57,6 +59,9 @@ $(document).ready(function () {
             window.locations.elements.location_utility.removeClass('hide-search');
           }
         }
+      },
+      form_submit: function form_submit(e) {
+        e.preventDefault();
       },
       poi: {
         _open: function _open(e) {
@@ -133,8 +138,10 @@ $(document).ready(function () {
           if (is_active) {
             window.locations.elements.location_utility.removeClass('open');
             window.locations.methods.collapse._close();
+            $('body').removeClass('hide-subnav');
             return;
           }
+          $('body').addClass('hide-subnav');
           window.locations.elements.location_utility.addClass('open');
           $this.addClass('active');
           if ($this.is('.icon-settings') || $this.is('.icon-poi')) {
@@ -157,4 +164,5 @@ $(document).ready(function () {
   window.locations.elements.reset_btn.on('click', window.locations.methods._reset_btn);
   window.locations.elements.save_poi_btn.on('click', window.locations.methods.poi._save);
   window.locations.elements.nav_toggle_search.on('click', window.locations.methods.mobile._toggle_search);
+  $('form').on('submit', window.locations.methods.form_submit);
 });

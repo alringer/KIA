@@ -26,6 +26,7 @@
     width: 531px;
     border-right: 2px;
     max-width: calc(100vw - 40px);
+    z-index: 1;
     @media (max-width: $screen-xs-max) {
       width: 100%;
       max-width: 100%;
@@ -952,5 +953,30 @@
     overflow: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  body {
+    .page-view-subnav {
+      transition: all 250ms $easeOutQuint;
+    }
+    .nav-app-main {
+      transition: all 250ms $easeOutQuint;
+    }
+    &.hide-subnav {
+      .page-view-subnav {
+        margin-top: -2px;
+        height: 0 !important;
+        overflow: hidden;
+      }
+      .nav-app-main {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .locations-map {
+        height: calc(100vh - 60px);
+      }
+    }
   }
 }
