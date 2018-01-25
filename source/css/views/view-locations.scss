@@ -447,12 +447,20 @@
           line-height: 30px;
           padding: 0 10px;
           margin-right: 5px;
+          i {
+            display: inline-block;
+            margin-right: 3px;
+            position: relative;
+            top: 1px;
+          }
           &:last-of-type {
             margin-right: 0;
           }
           @media (max-width: $screen-xs-max) {
             width: 48%;
             margin-bottom: 5px;
+            padding: 0;
+            text-align: center;
             &:nth-child(2) {
               float: right;
               margin-right: 0;

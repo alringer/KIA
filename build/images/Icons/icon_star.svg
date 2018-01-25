@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Location-Detail-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-323.000000, -363.000000)" fill-opacity="0.5">
+        <g id="Search-Bar" transform="translate(132.000000, 146.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Address">
+                <g transform="translate(21.000000, 210.000000)">
+                    <g id="Stop-Button-Copy" transform="translate(160.000000, 0.000000)">
+                        <polygon id="Shape" points="17.5019174 7 19.2707401 12.433018 25 12.433018 20.3646299 15.7920235 22.1350505 21.2240828 17.5019174 17.868273 12.8623929 21.2240828 14.6395245 15.7920235 10 12.433018 15.7337339 12.433018"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
