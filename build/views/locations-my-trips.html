@@ -875,191 +875,655 @@
           </div><!-- /.my-trips-toolbar-inner -->
         </div><!-- /.my-trips-toolbar -->
         <div class="trips-list">
-          <strong>
-            Yesterday
-          </strong>
-          <div class="trip active">
-            <div class="trip-main">
-              <span class="trip-label">
-                PERSONAL TRIP
-              </span>
-              <div class="trip-points">
-                <span>A <em>3:00 PM</em></span>
-                <span>B <em>3:00 PM</em></span>
-              </div><!-- /.trip-points -->
-              <div class="trip-data">
-                <div class="row">
-                  <div class="col-xs-4">
-                    <strong>92.7 <span>MI</span></strong>
-                    <em>Distance</em>
-                  </div>
-                  <div class="col-xs-4">
-                    <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
-                    <em>Duration</em>
-                  </div>
-                  <div class="col-xs-4">
-                    <strong>68 <span>MPH</span></strong>
-                    <em>Avg Speed</em>
-                  </div>
-                </div><!-- /.row -->
-              </div><!-- /.trip-data -->
-            </div><!-- /.trip-main -->
-            <div id="demo" class="collapse in">
-              <div class="trip-meta">
-                <div class="trip-alerts">
+          <div class="trips-list-inner">
+            <strong>
+              Yesterday
+            </strong>
+            <div class="trip active">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
+                </span>
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
                   <div class="row">
                     <div class="col-xs-4">
-                      <i class="icon-trip-alert-geo"></i>
-                      <span>
-                        <strong>0</strong>
-                        <em>Geo Fence Alerts</em>
-                      </span>
-                    </div><!-- /.col -->
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
                     <div class="col-xs-4">
-                      <i class="icon-trip-alert-curfew"></i>
-                      <span>
-                        <strong>0</strong>
-                        <em>Curfew Alerts</em>
-                      </span>
-                    </div><!-- /.col -->
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
                     <div class="col-xs-4">
-                      <i class="icon-trip-alert-speed"></i>
-                      <span>
-                        <strong>3</strong>
-                        <em>Speed Alerts</em>
-                      </span>
-                    </div><!-- /.col -->
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
                   </div><!-- /.row -->
-                </div><!-- /.trip-alerts -->
-                <div class="radio-toggle milestone-status">
-                  <label>
-                    <input type="radio" name="trip-type-1" value="0" checked="">
-                    <span>
-                      Personal
-                    </span>
-                  </label>
-                  <label>
-                    <input type="radio" name="trip-type-1" value="0">
-                    <span>
-                      Business
-                    </span>
-                  </label>
-                </div>
-              </div><!-- /.trip-meta -->
-              <div class="trip-tags">
-                <strong>Tags</strong>
-                <span class="badge">
-                  <span>gym</span>
-                  <input type="text" name="" value="gym" tabindex="-1">
-                  <em>+</em>
-                </span>
-                <span class="badge">
-                  <span>downtown</span>
-                  <input type="text" name="" value="gym" tabindex="-1">
-                  <em>+</em>
-                </span>
-                <span class="badge add">
-                  <span></span>
-                  <input type="text" name="" value="" tabindex="-1">
-                  <em>+</em>
-                </span>
-                <em>Press Enter</em>
-              </div><!-- /.trip-tags -->
-            </div><!-- /.collapse -->
-          </div><!-- /.trip -->
-          <div class="trip">
-            <div class="trip-main">
-              <span class="trip-label">
-                PERSONAL TRIP
-              </span>
-              <div class="trip-points">
-                <span>A <em>3:00 PM</em></span>
-                <span>B <em>3:00 PM</em></span>
-              </div><!-- /.trip-points -->
-              <div class="trip-data">
-                <div class="row">
-                  <div class="col-xs-4">
-                    <strong>92.7 <span>MI</span></strong>
-                    <em>Distance</em>
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse in">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-1" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-1" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
                   </div>
-                  <div class="col-xs-4">
-                    <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
-                    <em>Duration</em>
-                  </div>
-                  <div class="col-xs-4">
-                    <strong>68 <span>MPH</span></strong>
-                    <em>Avg Speed</em>
-                  </div>
-                </div><!-- /.row -->
-              </div><!-- /.trip-data -->
-            </div><!-- /.trip-main -->
-            <div id="demo" class="collapse">
-              <div class="trip-meta">
-                <div class="trip-alerts">
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+            <div class="trip">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
+                </span>
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
                   <div class="row">
                     <div class="col-xs-4">
-                      <i class="icon-trip-alert-geo"></i>
-                      <span>
-                        <strong>0</strong>
-                        <em>Geo Fence Alerts</em>
-                      </span>
-                    </div><!-- /.col -->
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
                     <div class="col-xs-4">
-                      <i class="icon-trip-alert-curfew"></i>
-                      <span>
-                        <strong>0</strong>
-                        <em>Curfew Alerts</em>
-                      </span>
-                    </div><!-- /.col -->
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
                     <div class="col-xs-4">
-                      <i class="icon-trip-alert-speed"></i>
-                      <span>
-                        <strong>3</strong>
-                        <em>Speed Alerts</em>
-                      </span>
-                    </div><!-- /.col -->
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
                   </div><!-- /.row -->
-                </div><!-- /.trip-alerts -->
-                <div class="radio-toggle milestone-status">
-                  <label>
-                    <input type="radio" name="trip-type-2" value="0" checked="">
-                    <span>
-                      Personal
-                    </span>
-                  </label>
-                  <label>
-                    <input type="radio" name="trip-type-2" value="0">
-                    <span>
-                      Business
-                    </span>
-                  </label>
-                </div>
-              </div><!-- /.trip-meta -->
-              <div class="trip-tags">
-                <strong>Tags</strong>
-                <span class="badge">
-                  <span>gym</span>
-                  <input type="text" name="" value="gym" tabindex="-1">
-                  <em>+</em>
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-3" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-3" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
+                  </div>
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+            <strong>
+              This Past Week
+            </strong>
+            <div class="trip">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
                 </span>
-                <span class="badge">
-                  <span>downtown</span>
-                  <input type="text" name="" value="gym" tabindex="-1">
-                  <em>+</em>
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
+                  </div><!-- /.row -->
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-4" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-4" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
+                  </div>
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+            <div class="trip">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
                 </span>
-                <span class="badge add">
-                  <span></span>
-                  <input type="text" name="" value="" tabindex="-1">
-                  <em>+</em>
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
+                  </div><!-- /.row -->
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-5" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-5" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
+                  </div>
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+            <div class="trip">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
                 </span>
-                <em>Press Enter</em>
-              </div><!-- /.trip-tags -->
-            </div><!-- /.collapse -->
-          </div><!-- /.trip -->
-          <strong>
-            This Past Week
-          </strong>
-        </div><!-- /.trips-list <-->
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
+                  </div><!-- /.row -->
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-6" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-6" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
+                  </div>
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+            <div class="trip">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
+                </span>
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
+                  </div><!-- /.row -->
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-7" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-7" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
+                  </div>
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+            <div class="trip">
+              <div class="trip-main">
+                <span class="trip-label">
+                  PERSONAL TRIP
+                </span>
+                <div class="trip-points">
+                  <span>A <em>3:00 PM</em></span>
+                  <span>B <em>3:00 PM</em></span>
+                </div><!-- /.trip-points -->
+                <div class="trip-data">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <strong>92.7 <span>MI</span></strong>
+                      <em>Distance</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>1 <span>HR</span> 45 <span>MIN</span></strong>
+                      <em>Duration</em>
+                    </div>
+                    <div class="col-xs-4">
+                      <strong>68 <span>MPH</span></strong>
+                      <em>Avg Speed</em>
+                    </div>
+                  </div><!-- /.row -->
+                </div><!-- /.trip-data -->
+              </div><!-- /.trip-main -->
+              <div class="collapse">
+                <div class="trip-meta">
+                  <div class="trip-alerts">
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-geo"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Geo Fence Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-curfew"></i>
+                        <span>
+                          <strong>0</strong>
+                          <em>Curfew Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                      <div class="col-xs-4">
+                        <i class="icon-trip-alert-speed"></i>
+                        <span>
+                          <strong>3</strong>
+                          <em>Speed Alerts</em>
+                        </span>
+                      </div><!-- /.col -->
+                    </div><!-- /.row -->
+                  </div><!-- /.trip-alerts -->
+                  <div class="radio-toggle milestone-status">
+                    <label>
+                      <input type="radio" name="trip-type-8" value="0" checked="">
+                      <span>
+                        Personal
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="trip-type-8" value="0">
+                      <span>
+                        Business
+                      </span>
+                    </label>
+                  </div>
+                </div><!-- /.trip-meta -->
+                <div class="trip-tags">
+                  <strong>Tags</strong>
+                  <span class="badge">
+                    <span>gym</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge">
+                    <span>downtown</span>
+                    <input type="text" name="" value="gym" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <span class="badge add">
+                    <span></span>
+                    <input type="text" name="" value="" tabindex="-1">
+                    <em>+</em>
+                  </span>
+                  <em>Press Enter</em>
+                </div><!-- /.trip-tags -->
+              </div><!-- /.collapse -->
+            </div><!-- /.trip -->
+          </div><!-- /.trips-list-inner -->
+          <span class="scroll-top">
+            <svg width="19px" height="11px" viewBox="0 0 19 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Hover-Over-a-Trip-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-476.000000, -945.000000)" stroke-linecap="square">
+                    <g id="Trip-List" transform="translate(111.000000, 219.000000)" stroke="#FFFFFF" stroke-width="2">
+                        <g id="Back-To-Top" transform="translate(346.000000, 710.000000)">
+                            <g id="Icons-/-Chevron" transform="translate(28.500000, 21.500000) rotate(90.000000) translate(-28.500000, -21.500000) translate(24.000000, 13.000000)">
+                                <g id="up">
+                                    <path d="M8.35714286,0.642857143 L0.536448175,8.46355182" id="Line"></path>
+                                    <path d="M8.35714286,8.35714286 L0.536448175,16.1778375" id="Line-Copy-2" transform="translate(4.500000, 12.214286) scale(1, -1) translate(-4.500000, -12.214286) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <em>Top</em>
+          </span>
+        </div><!-- /.trip-list -->
         <div class="map"></div>
       </div><!-- /.locations-map -->
     </div><!-- /.page-view -->

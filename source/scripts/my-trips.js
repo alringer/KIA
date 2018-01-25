@@ -5,6 +5,8 @@ $(document).ready(() => {
       trip_collapse : $('.trip .collapse'),
       badge_input : $('.trip .badge input'),
       badge_cancel : $('.trip .badge em'),
+      trip_list_scroll : $('.trips-list-inner'),
+      scroll_top : $('.scroll-top'),
     },
     methods : {
       _toggle : function() {
@@ -92,7 +94,20 @@ $(document).ready(() => {
             $(html).appendTo($trip.find('.trip-tags')).find('input');
           }
         }
-      }
+      },
+      scroll : {
+        onscroll : (e) => {
+          var y = window.myTrips.elements.trip_list_scroll.scrollTop();
+          if(y > 10) {
+            window.myTrips.elements.trip_list_scroll.addClass('scrolled');
+          }else{
+            window.myTrips.elements.trip_list_scroll.removeClass('scrolled');
+          }
+        },
+        scrolltop : (e) => {
+          window.myTrips.elements.trip_list_scroll.scrollTop(0);
+        },
+      },
     }
   };
   // EVENTS
@@ -100,4 +115,6 @@ $(document).ready(() => {
   $('body').delegate('.trip .badge input', 'focus', window.myTrips.methods.tags._add);
   $('body').delegate('.trip .badge input', 'change paste keyup keydown', window.myTrips.methods.tags._keyup);
   $('body').delegate('.trip .badge em', 'click', window.myTrips.methods.tags._cancel);
+  window.myTrips.elements.trip_list_scroll.on('scroll', window.myTrips.methods.scroll.onscroll);
+  window.myTrips.elements.scroll_top.on('click', window.myTrips.methods.scroll.scrolltop);
 });

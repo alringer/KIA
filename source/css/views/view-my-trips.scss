@@ -150,26 +150,41 @@
     top: 102px;
     bottom: 0;
     background: #eaeaea;
-    overflow: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    -webkit-overflow-scrolling: touch;
     padding: 0 4px;
-    > strong {
-      display: block;
-      padding: 16px 19px;
-      font: bold 10px/1em $kia;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #969696;
+    &-inner {
+      max-height: 100%;
+      overflow: auto;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 100px;
+      + .scroll-top {
+        opacity: 0;
+        pointer-events: none;
+      }
+      &.scrolled {
+        + .scroll-top {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+      > strong {
+        display: block;
+        padding: 16px 19px;
+        font: bold 10px/1em $kia;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #969696;
+      }
     }
     .trip {
       background-color: $white;
-    	box-shadow: 0 1px 1px 0 rgba(#000026, .25);
       margin-bottom: 4px;
       border: solid 1px $white;
       transition: all 250ms $easeOutQuint;
       position: relative;
       border-radius: 2px;
+      /* Rectangle 5: */
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
       cursor: pointer;
       &:after {
         position: absolute;
@@ -449,6 +464,33 @@
         }
       }
     }
+  }
+}
+
+.scroll-top {
+  position: absolute;
+  bottom: 11px;
+  z-index: 10;
+  display: block;
+  right: 17px;
+  width: 56px;
+  height: 56px;
+  background: rgba($black, .5);
+  border-radius: 100%;
+  color: $white;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 350ms $easeOutQuint;
+  cursor: pointer;
+  &:hover {
+    background: rgba($black, .9);
+  }
+  em {
+    display: block;
+    font: bold 10px/1em $kia;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    padding-left: 2px;
   }
 }
 
