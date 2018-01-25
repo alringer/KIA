@@ -58,24 +58,32 @@ $(document).ready(() => {
         },
       },
       poi : {
-        _open : (e) => {
+        _open : function(e) {
           e.stopPropagation();
-          window.locations.elements.poi_edit_title.addClass('editing');
+          var $this = $(this),
+              $edit_title = $this.parents('.poi-edit-title');
+          $edit_title.addClass('editing');
         },
-        _close : () => {
-          window.locations.elements.poi_edit_title.removeClass('editing');
-          var val = window.locations.elements.poi_edit_input.val();
+        _close : function(e, $input) {
+          var $this = $input || $(this),
+              $edit_title = $this.parents('.poi-edit-title');
+          $edit_title.removeClass('editing');
+          var val = $this.val();
           if(val) {
-            window.locations.elements.poi_edit_title_text.text(val);
+            $edit_title.find('.poi-edit-title-text').text(val);
           }
+          console.log($input);
+          console.log($(this));
+          // $this.blur();
         },
-        _keyup : (e) => {
+        _keyup : function(e) {
           if(e.keyCode === 13) {
-            window.locations.methods.poi._close();
+            window.locations.methods.poi._close(null, $(this));
           }
         },
         _save : () => {
           window.locations.elements.save_poi_btn.addClass('spinning');
+          window.locations.methods.poi._close(null, $('.poi-edit-title.editing input'));
           window.loading.methods._loading_start();
           setTimeout(() => {
             window.loading.methods._loading_stop();
@@ -118,7 +126,6 @@ $(document).ready(() => {
       },
       mobile : {
         _toggle_search : function() {
-          console.log('run');
           var $this = $(this),
               is_active = $this.hasClass('active');
           window.locations.elements.nav_toggle_search.removeClass('active');
