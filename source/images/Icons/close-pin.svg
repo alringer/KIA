@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Close Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Location-Detail-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-944.000000, -366.000000)" stroke-linecap="square">
+        <g id="Map" transform="translate(-273.000000, 4.000000)" stroke="#979797" stroke-width="2">
+            <g id="Map-Pins" transform="translate(359.000000, 141.000000)">
+                <g id="Icons-/-Pin-Copy-40" transform="translate(614.000000, 211.000000)">
+                    <g id="Components-/-Popover">
+                        <g id="Close-Button" transform="translate(246.000000, 11.000000)">
+                            <path d="M6.61111111,0.388888889 L0.197391249,6.80260875" id="Line"></path>
+                            <path d="M6.61111111,0.388888889 L0.197391249,6.80260875" id="Line-Copy" transform="translate(3.500000, 3.500000) scale(-1, 1) translate(-3.500000, -3.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -17,7 +17,8 @@ $(document).ready(function () {
       nav_toggle_search: $('.nav-toggle-search'),
       location_utility: $('.locations-utility'),
       filter_badge: $('.filter-list .badge'),
-      toggle_detail: $('.toggle-detail')
+      toggle_detail: $('.toggle-detail'),
+      pin_refresh_start: $('.pin-refresh-start')
     },
     methods: {
       collapse: {
@@ -184,6 +185,18 @@ $(document).ready(function () {
             window.locations.methods.collapse._open();
           }
         }
+      },
+      pin: {
+        _refresh: function _refresh() {
+          var $pin = $(this).parents('.pin');
+          $pin.addClass('pin-refreshing');
+          window.loading.methods._loading_start();
+          setTimeout(function () {
+            window.loading.methods._loading_stop();
+            $pin.removeClass('pin-refreshing');
+            $pin.find('timestamp').text('Last updated just now');
+          }, 1500);
+        }
       }
     }
   };
@@ -203,5 +216,6 @@ $(document).ready(function () {
   window.locations.elements.nav_toggle_search.on('click', window.locations.methods.mobile._toggle_search);
   window.locations.elements.filter_badge.find('i').on('click', window.locations.methods.filters._remove);
   window.locations.elements.toggle_detail.on('click', window.locations.methods.collapse._toggle);
+  window.locations.elements.pin_refresh_start.on('click', window.locations.methods.pin._refresh);
   $('form').on('submit', window.locations.methods.form_submit);
 });

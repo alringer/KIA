@@ -821,3 +821,164 @@
 .show-toggle .toggle-detail {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 40, 0.25);
   transform: translate(-50%, 100%); }
+
+.pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block; }
+  .pin-icon.car {
+    width: 57px;
+    height: 31px;
+    display: block;
+    background: url("/images/pin_car.png") center no-repeat; }
+  .pin .pin-close {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    overflow: hidden; }
+    .pin .pin-close svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 12px; }
+  .pin.pin-poi {
+    margin-left: 250px;
+    margin-top: 250px; }
+    .pin.pin-poi .pin-box {
+      margin-bottom: 75px; }
+  .pin .pin-box {
+    background-color: #ffffff;
+    box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.25);
+    width: 294px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 32px;
+    padding: 20px 20px 25px; }
+    .pin .pin-box:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      margin-top: 3px;
+      border-style: solid;
+      border-width: 12px 10px 0 10px;
+      border-color: #ffffff transparent transparent transparent; }
+  .pin .pin-header {
+    font: bold 10px/1em "KIA", sans-serif;
+    letter-spacing: 1px;
+    color: #969696;
+    margin-bottom: 11px;
+    display: block; }
+  .pin .pin-data {
+    position: relative;
+    padding-right: 50px; }
+    .pin .pin-data strong {
+      display: block;
+      font: bold 14px/1.36 "Source Sans Pro", sans-serif;
+      letter-spacing: .4px; }
+    .pin .pin-data span {
+      display: block;
+      font: 12px/1.58em "Source Sans Pro", sans-serif; }
+    .pin .pin-data em {
+      display: block;
+      font: italic 10px/1.9em "Source Sans Pro", sans-serif;
+      color: #969696; }
+    .pin .pin-data .distance {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      font: 12px "Source Sans Pro", sans-serif;
+      letter-spacing: .3px;
+      color: #9ba1a9; }
+    .pin .pin-data + .pin-actions {
+      padding-top: 20px; }
+  .pin .pin-actions {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .pin .pin-actions li {
+      font: bold 11px/2.09em "KIA", sans-serif;
+      letter-spacing: .7px;
+      color: #C4172C;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 2px; }
+      .pin .pin-actions li svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: -2px; }
+    .pin .pin-actions + .pin-update {
+      margin-top: 23px; }
+  .pin .pin-update {
+    height: 40px;
+    margin-bottom: -20px;
+    border-top: solid 1px #d4d4d4;
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+    text-align: center;
+    cursor: pointer; }
+    .pin .pin-update span {
+      position: absolute;
+      display: block;
+      width: 100%;
+      line-height: 40px;
+      font: 12px/40px "Source Sans Pro", sans-serif;
+      letter-spacing: .3px;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 2;
+      cursor: pointer; }
+      .pin .pin-update span i {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+        margin-right: 5px; }
+      .pin .pin-update span.refreshing {
+        cursor: default;
+        opacity: 0;
+        z-index: 1;
+        pointer-events: none; }
+  .pin.pin-refreshing {
+    pointer-events: none; }
+    .pin.pin-refreshing .pin-update span {
+      opacity: 0; }
+      .pin.pin-refreshing .pin-update span.refreshing {
+        opacity: 1;
+        z-index: 2;
+        pointer-events: all; }
+
+.icon-communicating {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: url("/images/icon_communicating.png") center/contain no-repeat;
+  animation: spin 1s infinite linear; }
+  .icon-communicating.white {
+    background-image: url("/images/icon_communicating_white.png");
+    width: 17px;
+    height: 17px; }
+
+.icon-refresh {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url("/images/icon_refresh.svg") center/contain no-repeat;
+  vertical-align: middle; }

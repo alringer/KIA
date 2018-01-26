@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="56px" viewBox="0 0 38 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>pin red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Location-Detail-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-815.000000, -547.000000)">
+        <g id="Map" transform="translate(-273.000000, 4.000000)">
+            <g id="Map-Pins" transform="translate(359.000000, 141.000000)">
+                <g id="Icons-/-Pin-Copy-40" transform="translate(614.000000, 211.000000)">
+                    <g id="pin-red" transform="translate(115.000000, 191.000000)">
+                        <path d="M19,55.2727273 C22.2039293,55.2727273 24.731639,50.1456815 28.4026868,43.5341207 C32.7464919,35.7109232 38,25.8092487 38,19.8636364 C38,8.89325292 29.4934102,0 19,0 C8.50658975,0 0,8.89325292 0,19.8636364 C0,25.8104054 4.82306217,35.7147763 9.16803053,43.5386867 C12.8385019,50.1480419 15.7968083,55.2727273 19,55.2727273 Z" id="Oval-3" fill="#BB1A30"></path>
+                        <circle id="Oval-9" fill="#FFFFFF" cx="19" cy="19" r="7"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

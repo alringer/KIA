@@ -18,6 +18,8 @@ $(document).ready(() => {
       unmerge : $('.merge-toggle .unmerge'),
       delete : $('.edit-toolbar .delete'),
       select_all : $('.select-all'),
+      choose_format : $('.modal-export .choose-format input'),
+      email : $('.modal-export input[type="email"]'),
     },
     methods : {
       _stop_prop : (e) => {
@@ -207,6 +209,17 @@ $(document).ready(() => {
           window.myTrips.methods.edit._checkbox_change();
         }
       },
+      export : {
+        _disable : () => {
+          var checked = window.myTrips.elements.choose_format.filter(':checked').length,
+              email = window.myTrips.elements.email.val().length;
+          if(checked && email) {
+            $('.export-button').removeClass('disabled');
+          }else{
+            $('.export-button').addClass('disabled');
+          }
+        }
+      }
     }
   };
   // EVENTS
@@ -224,5 +237,7 @@ $(document).ready(() => {
   window.myTrips.elements.unmerge.on('click', window.myTrips.methods.edit._unmerge);
   window.myTrips.elements.delete.on('click', window.myTrips.methods.edit._delete);
   window.myTrips.elements.select_all.on('change', window.myTrips.methods.edit._select_all);
+  window.myTrips.elements.choose_format.on('change', window.myTrips.methods.export._disable);
+  window.myTrips.elements.email.on('keyup change paste', window.myTrips.methods.export._disable);
   console.log(window.myTrips.elements.select_all.length);
 });

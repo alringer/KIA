@@ -16,6 +16,7 @@ $(document).ready(() => {
       location_utility : $('.locations-utility'),
       filter_badge : $('.filter-list .badge'),
       toggle_detail : $('.toggle-detail'),
+      pin_refresh_start : $('.pin-refresh-start')
     },
     methods : {
       collapse : {
@@ -185,6 +186,18 @@ $(document).ready(() => {
 
         }
       },
+      pin : {
+        _refresh : function() {
+          var $pin = $(this).parents('.pin');
+          $pin.addClass('pin-refreshing');
+          window.loading.methods._loading_start();
+          setTimeout(() => {
+            window.loading.methods._loading_stop();
+            $pin.removeClass('pin-refreshing');
+            $pin.find('timestamp').text('Last updated just now');
+          }, 1500);
+        }
+      }
     },
   };
   // EVENTS
@@ -203,5 +216,6 @@ $(document).ready(() => {
   window.locations.elements.nav_toggle_search.on('click', window.locations.methods.mobile._toggle_search);
   window.locations.elements.filter_badge.find('i').on('click', window.locations.methods.filters._remove);
   window.locations.elements.toggle_detail.on('click', window.locations.methods.collapse._toggle);
+  window.locations.elements.pin_refresh_start.on('click', window.locations.methods.pin._refresh);
   $('form').on('submit', window.locations.methods.form_submit);
 });

@@ -3748,6 +3748,94 @@ form .form-fields {
       text-transform: uppercase;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
 
+.modal-export .modal-dialog {
+  width: 302px; }
+  .modal-export .modal-dialog .modal-content .export-settings {
+    padding: 18px 40px 40px; }
+    .modal-export .modal-dialog .modal-content .export-settings .export-data {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .modal-export .modal-dialog .modal-content .export-settings .export-data li {
+        border-bottom: solid 1px #d4d4d4;
+        margin-bottom: 10px; }
+      .modal-export .modal-dialog .modal-content .export-settings .export-data strong {
+        display: block;
+        font: bold 10px "KIA", sans-serif;
+        letter-spacing: 1px;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 5px; }
+      .modal-export .modal-dialog .modal-content .export-settings .export-data span {
+        display: block;
+        font: 14px/1.5em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px;
+        margin-bottom: 10px; }
+        .modal-export .modal-dialog .modal-content .export-settings .export-data span svg {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 3px;
+          position: relative;
+          top: -2px;
+          width: 13px;
+          height: 14px; }
+    @media (max-width: 767px) {
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .choose-format {
+        text-align: center; } }
+    .modal-export .modal-dialog .modal-content .export-settings .form-fields .choose-format strong {
+      text-align: left;
+      display: block;
+      font: bold 10px "KIA", sans-serif;
+      letter-spacing: 1px;
+      color: #000;
+      text-transform: uppercase;
+      margin-bottom: 16px; }
+    .modal-export .modal-dialog .modal-content .export-settings .form-fields input {
+      font-weight: normal !important; }
+    .modal-export .modal-dialog .modal-content .export-settings .form-fields .format {
+      display: inline-block;
+      width: 61px;
+      height: 61px;
+      border: solid 1px #d2d2d2;
+      border-radius: 6px;
+      vertical-align: top;
+      text-align: center;
+      line-height: 61px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden; }
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .format span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .format svg {
+        display: inline-block;
+        vertical-align: middle; }
+        .modal-export .modal-dialog .modal-content .export-settings .form-fields .format svg path {
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .format input {
+        display: none; }
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(1) input:checked + span {
+        background: #C11E07; }
+        .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(1) input:checked + span svg path {
+          fill: #FFF; }
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(2) {
+        margin: 0 10px; }
+        .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(2) input:checked + span {
+          background: #0F9D58; }
+          .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(2) input:checked + span svg path {
+            fill: #FFF; }
+      .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(3) input:checked + span {
+        background: #0078C9; }
+        .modal-export .modal-dialog .modal-content .export-settings .form-fields .format:nth-of-type(3) input:checked + span svg path {
+          fill: #FFF; }
+
 @keyframes loading-bar {
   0% {
     transform: scaleX(0);
