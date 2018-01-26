@@ -9,4135 +9,10 @@
 	],
 "creatorBuild": "26148",
 "files": {
-	"\/build\/changes.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/changes.html",
-		"oF": 0
-		},
-	"\/build\/css\/alerts.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/build": {
+		"ft": 65536,
 		"oA": 1,
-		"oAP": "\/build\/build\/css\/alerts-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/dial.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/dial-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/fonts\/kia\/KIAB.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAB.eot",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAB.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAB.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAB.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAB.ttf",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAB.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAB.woff",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAL.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAL.eot",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAL.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAL.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAL.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAL.ttf",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAL.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAL.woff",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAM.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAM.eot",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAM.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAM.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAM.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAM.ttf",
-		"oF": 0
-		},
-	"\/build\/css\/fonts\/kia\/KIAM.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/fonts\/kia\/KIAM.woff",
-		"oF": 0
-		},
-	"\/build\/css\/global.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/global-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/login.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/login-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/maintenance-cards.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/maintenance-cards-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/overview-maintenance.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/overview-maintenance-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/overview-remote-commands.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/overview-remote-commands-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/poc.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/poc-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/recommended-cards.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/recommended-cards-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/reference-cards.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/reference-cards-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/remote.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/remote-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/selectize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/selectize-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-awards.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-awards-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-locations.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-locations-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-maintenance.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-maintenance-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-my-car-zone.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-my-car-zone-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-my-trips.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-my-trips-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-my-vehicles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/view-my-vehicles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-notifications.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-notifications-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-overview.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/view-overview-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-registration.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/css\/view-registration-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/css\/view-schedules.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/build\/css\/view-schedules-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/images\/award-1.png": {
-		"ft": 32768,
-		"iS": 3758,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-2.png": {
-		"ft": 32768,
-		"iS": 3960,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-3.png": {
-		"ft": 32768,
-		"iS": 3278,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-4.png": {
-		"ft": 32768,
-		"iS": 3764,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-5.png": {
-		"ft": 32768,
-		"iS": 3778,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-5.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-6.png": {
-		"ft": 32768,
-		"iS": 3628,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-6.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-7.png": {
-		"ft": 32768,
-		"iS": 3758,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-7.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/award-8.png": {
-		"ft": 32768,
-		"iS": 2799,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/award-8.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/battery-states\/10.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/10.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/100.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/100.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/15.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/15.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/20.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/20.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/25.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/25.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/30.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/30.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/35.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/35.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/40.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/40.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/45.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/45.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/5.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/5.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/50.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/50.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/55.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/55.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/60.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/60.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/65.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/65.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/70.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/70.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/75.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/75.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/80.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/80.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/85.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/85.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/90.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/90.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery-states\/95.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery-states\/95.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/battery_shell.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/battery_shell.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/bkg_charging_etiquette.png": {
-		"ft": 32768,
-		"iS": 105814,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/bkg_charging_etiquette.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/bkg_find-charge-station-card.png": {
-		"ft": 32768,
-		"iS": 151031,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/bkg_find-charge-station-card.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/climate_dial_communicating.png": {
-		"ft": 32768,
-		"iS": 8122,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/climate_dial_communicating.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/climate_dial_communicating_hot.png": {
-		"ft": 32768,
-		"iS": 7956,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/climate_dial_communicating_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/climate_dial_locked.png": {
-		"ft": 32768,
-		"iS": 7967,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/climate_dial_locked.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/climate_dial_locked_hot.png": {
-		"ft": 32768,
-		"iS": 7987,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/climate_dial_locked_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/dial.png": {
-		"ft": 32768,
-		"iS": 8331,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/dial.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/dial.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/dial.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/dial_heated_seats.png": {
-		"ft": 32768,
-		"iS": 3819,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/dial_heated_seats.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/dial_heated_seats1.png": {
-		"ft": 32768,
-		"iS": 3960,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/dial_heated_seats1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/dial_pin.png": {
-		"ft": 32768,
-		"iS": 578,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/dial_pin.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/dial_speed.png": {
-		"ft": 32768,
-		"iS": 6524,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/dial_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/group.png": {
-		"ft": 32768,
-		"iS": 30092,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/group.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_1_cold.png": {
-		"ft": 32768,
-		"iS": 6468,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_1_cold.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_1_hot.png": {
-		"ft": 32768,
-		"iS": 6461,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_1_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_1_off.png": {
-		"ft": 32768,
-		"iS": 6132,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_1_off.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_2_cold.png": {
-		"ft": 32768,
-		"iS": 6824,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_2_cold.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_2_hot.png": {
-		"ft": 32768,
-		"iS": 6911,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_2_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_2_off.png": {
-		"ft": 32768,
-		"iS": 6424,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_2_off.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_3_cold.png": {
-		"ft": 32768,
-		"iS": 6513,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_3_cold.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_3_hot.png": {
-		"ft": 32768,
-		"iS": 6540,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_3_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_3_off.png": {
-		"ft": 32768,
-		"iS": 6044,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_3_off.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_4_cold.png": {
-		"ft": 32768,
-		"iS": 6749,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_4_cold.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_4_hot.png": {
-		"ft": 32768,
-		"iS": 6862,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_4_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/heated_seat_4_off.png": {
-		"ft": 32768,
-		"iS": 6141,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/heated_seat_4_off.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/ic_mcz_curfew_white_small.png": {
-		"ft": 32768,
-		"iS": 759,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/ic_mcz_curfew_white_small.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/ic_mcz_geofence_white_small.png": {
-		"ft": 32768,
-		"iS": 835,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/ic_mcz_geofence_white_small.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/ic_mcz_speed_white_small.png": {
-		"ft": 32768,
-		"iS": 560,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/ic_mcz_speed_white_small.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon-bluetooth.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon-bluetooth.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon-climate-minus.png": {
-		"ft": 32768,
-		"iS": 156,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon-climate-minus.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon-climate-plus.png": {
-		"ft": 32768,
-		"iS": 241,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon-climate-plus.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon-my-car-zone-empty.png": {
-		"ft": 32768,
-		"iS": 3705,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon-my-car-zone-empty.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon-no-schedules.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon-no-schedules.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon-play-square.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon-play-square.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon-search.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon-search.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_3d_battery_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_3d_battery_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_alert_check.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_alert_check.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_alert_climate.png": {
-		"ft": 32768,
-		"iS": 1949,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_climate.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_alert_curfew.png": {
-		"ft": 32768,
-		"iS": 1443,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_alert_error.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_alert_error.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_alert_geofence.png": {
-		"ft": 32768,
-		"iS": 1539,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_geofence.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_alert_geofence.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_alert_geofence.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_alert_red_curfew.png": {
-		"ft": 32768,
-		"iS": 1731,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_red_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_alert_red_geofence.png": {
-		"ft": 32768,
-		"iS": 1622,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_red_geofence.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_alert_red_speed.png": {
-		"ft": 32768,
-		"iS": 1479,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_red_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_alert_speed.png": {
-		"ft": 32768,
-		"iS": 1357,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_alert_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_arrow_right_dark.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_arrow_right_dark.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_arrow_right_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_arrow_right_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_award.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_award.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_back_arrow.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_back_arrow.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_battery.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_battery.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_battery_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_battery_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_calendar_red_medium.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_calendar_red_medium.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_calendar_red_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_calendar_red_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_calendar_small_grey.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_calendar_small_grey.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_cancel_circle.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_cancel_circle.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_carzone_curfew.png": {
-		"ft": 32768,
-		"iS": 703,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_carzone_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_carzone_geofence.png": {
-		"ft": 32768,
-		"iS": 754,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_carzone_geofence.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_carzone_speed.png": {
-		"ft": 32768,
-		"iS": 524,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_carzone_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_charge_bolt_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_charge_bolt_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_charge_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_charge_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_charging.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_charging.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_charging_pin_card.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_charging_pin_card.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_check_green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_check_green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_check_green_light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_check_green_light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_checkmark_green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_checkmark_green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_checkmark_green_thin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_checkmark_green_thin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_checkmark_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_checkmark_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_climate_schedule.png": {
-		"ft": 32768,
-		"iS": 1949,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_climate_schedule.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_climate_schedule.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_climate_schedule.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_clock.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_clock.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_cog.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_cog.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_cog_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_cog_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_communicating.png": {
-		"ft": 32768,
-		"iS": 960,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_communicating.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_communicating.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_communicating.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_communicating_white.png": {
-		"ft": 32768,
-		"iS": 500,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_communicating_white.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_copy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_copy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_coupon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_coupon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_mirror.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_mirror.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_mirror_green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_mirror_green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_rear.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_rear.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_rear_green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_rear_green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_steering.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_steering.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_defrost_steering_green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_defrost_steering_green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_down_arrow.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_down_arrow.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_edit.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_edit.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_export.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_export.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_fan_off.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_fan_off.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_fan_on.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_fan_on.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_gas_battery.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_gas_battery.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_google_play.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_google_play.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_grid_view.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_grid_view.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_heated_seats.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_heated_seats.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_help.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_help.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_horn.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_horn.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_list_view.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_list_view.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_location_circle.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_location_circle.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_location_red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_location_red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_location_target_grey.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_location_target_grey.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_location_target_red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_location_target_red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_lock_red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_lock_red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_lock_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_lock_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_locked.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_locked.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_locked_dark.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_locked_dark.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_locked_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_locked_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_map_view.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_map_view.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_dashboard.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_dashboard.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_locations.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_locations.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_maintenance.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_maintenance.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_more.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_more.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_mycarzone.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_mycarzone.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_reference.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_reference.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_remote.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_remote.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_schedules.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_schedules.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_menu_stats.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_menu_stats.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_mileage_grey.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_mileage_grey.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_mileage_red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_mileage_red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_minus.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_minus.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_motor.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_motor.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_motor_off.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_motor_off.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_nav_service.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_nav_service.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_next_service.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_next_service.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_no_alerts_curfew.png": {
-		"ft": 32768,
-		"iS": 2126,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_no_alerts_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_no_alerts_geofence.png": {
-		"ft": 32768,
-		"iS": 2287,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_no_alerts_geofence.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_no_alerts_speed.png": {
-		"ft": 32768,
-		"iS": 2170,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_no_alerts_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_no_charge_schedule.png": {
-		"ft": 32768,
-		"iS": 1455,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_no_charge_schedule.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_no_charge_schedule.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_no_charge_schedule.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_no_climate_schedule.png": {
-		"ft": 32768,
-		"iS": 1448,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_no_climate_schedule.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_notes_grey.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notes_grey.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notes_red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notes_red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notification_geo.png": {
-		"ft": 32768,
-		"iS": 1050,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_notification_geo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_notification_tag.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notification_tag.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notification_tool.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notification_tool.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_battery.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_battery.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_charge_schedule.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_charge_schedule.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_climate.png": {
-		"ft": 32768,
-		"iS": 639,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_notifications_climate.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_notifications_climate_schedule.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_climate_schedule.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_curfew.png": {
-		"ft": 32768,
-		"iS": 921,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_notifications_curfew.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_notifications_curfew.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_curfew.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_locked.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_locked.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_panic.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_panic.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_security.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_security.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_notifications_speed.png": {
-		"ft": 32768,
-		"iS": 655,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_notifications_speed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_notifications_unlock.png": {
-		"ft": 32768,
-		"iS": 338,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_notifications_unlock.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_notifications_valet_alert.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_notifications_valet_alert.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_phone.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_phone.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_plugged_in.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_plugged_in.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_plus.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_plus.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_poi.png": {
-		"ft": 32768,
-		"iS": 579,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_poi.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_poi.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_poi.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_power.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_power.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_print.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_print.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_recalls.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_recalls.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_refresh.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_refresh.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_remote_fan.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_remote_fan.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_remote_fan_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_remote_fan_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_schedule_charge.png": {
-		"ft": 32768,
-		"iS": 221,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_schedule_charge.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_schedule_climate.png": {
-		"ft": 32768,
-		"iS": 776,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_schedule_climate.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_schedule_red_charge.png": {
-		"ft": 32768,
-		"iS": 1454,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_schedule_red_charge.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_schedule_red_climate.png": {
-		"ft": 32768,
-		"iS": 1448,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_schedule_red_climate.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_search.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_search.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_settings-sliders.png": {
-		"ft": 32768,
-		"iS": 174,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_settings-sliders.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_settings-sliders.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_settings-sliders.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_settings.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_settings.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_show_password.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_show_password.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_sort.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_sort.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_stop.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_stop.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_sun.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_sun.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_target.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_target.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_trash.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_trash.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_trashcan.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_trashcan.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_triangle_error.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_triangle_error.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_trophy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_trophy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_unlock_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_unlock_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_unlocked.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_unlocked.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_unlocked_dark.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_unlocked_dark.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_unplugged.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_unplugged.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_upcoming_appointments.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_upcoming_appointments.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_uvo_locked.png": {
-		"ft": 32768,
-		"iS": 1485,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/icon_uvo_locked.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/icon_warning.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_warning.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/icon_x_red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/icon_x_red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/Bolt Up.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Bolt Up.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/close-pin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/close-pin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/delete.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/delete.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/doc1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/doc1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/doc2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/doc2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/doc3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/doc3.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_calendar_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_calendar_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_directions.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_directions.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_pencil.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_pencil.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_road_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_road_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_star.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_star.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_tag_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_tag_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/icon_warning_small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/icon_warning_small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/merge.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/merge.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/p-g-s.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/p-g-s.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/Pin Copy 18.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Pin Copy 18.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/Pin Copy 33.png": {
-		"ft": 32768,
-		"iS": 834,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/Icons\/Pin Copy 33.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/Icons\/Pin Copy 33.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Pin Copy 33.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/Pin Copy 5.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Pin Copy 5.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/Pin Green.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Pin Green.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/pin red.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/pin red.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/Pin Yellow.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Pin Yellow.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/pin-g-small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/pin-g-small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/pin-red-s.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/pin-red-s.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/pin_car.png": {
-		"ft": 32768,
-		"iS": 2036,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/Icons\/pin_car.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/Icons\/Search Icon\/Unselected.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/Search Icon\/Unselected.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/unmerge.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/unmerge.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/Icons\/up.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/Icons\/up.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/image_car-no-vehicles.jpg": {
-		"ft": 16384,
-		"iS": 128016,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car-no-vehicles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_car-no-vehicles.png": {
-		"ft": 32768,
-		"iS": 63988,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car-no-vehicles.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_car_grid_1.png": {
-		"ft": 32768,
-		"iS": 28682,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car_grid_1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_car_grid_2.png": {
-		"ft": 32768,
-		"iS": 36140,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car_grid_2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_car_grid_3.png": {
-		"ft": 32768,
-		"iS": 30765,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car_grid_3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_car_grid_4.png": {
-		"ft": 32768,
-		"iS": 30879,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car_grid_4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_car_niro.png": {
-		"ft": 32768,
-		"iS": 36167,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_car_niro.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_door_open.png": {
-		"ft": 32768,
-		"iS": 67080,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_door_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_heated_seats_base.png": {
-		"ft": 32768,
-		"iS": 49585,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_heated_seats_base.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_overview_car_2.png": {
-		"ft": 32768,
-		"iS": 131320,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_overview_car_2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_overview_car_3.png": {
-		"ft": 32768,
-		"iS": 123970,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_overview_car_3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_overview_car_4.png": {
-		"ft": 32768,
-		"iS": 71157,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_overview_car_4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_overview_car_5.png": {
-		"ft": 32768,
-		"iS": 52873,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_overview_car_5.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_reference_card_1.jpg": {
-		"ft": 16384,
-		"iS": 235122,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_reference_card_1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_reference_card_1.png": {
-		"ft": 32768,
-		"iS": 102888,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_reference_card_1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_reference_card_2.jpg": {
-		"ft": 16384,
-		"iS": 208215,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_reference_card_2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_reference_card_3.jpg": {
-		"ft": 16384,
-		"iS": 214528,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_reference_card_3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_reference_card_4.jpg": {
-		"ft": 16384,
-		"iS": 154039,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_reference_card_4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_dashboard.jpg": {
-		"ft": 16384,
-		"iS": 85374,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_dashboard.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_dashboard_2.jpg": {
-		"ft": 16384,
-		"iS": 77780,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_dashboard_2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_phone.jpg": {
-		"ft": 16384,
-		"iS": 76878,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_phone.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_phone_eservices.jpg": {
-		"ft": 16384,
-		"iS": 82085,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_phone_eservices.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_phone_eservices_2.jpg": {
-		"ft": 16384,
-		"iS": 89272,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_phone_eservices_2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_start.jpg": {
-		"ft": 16384,
-		"iS": 85122,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_start.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_uvo.jpg": {
-		"ft": 16384,
-		"iS": 63220,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_uvo.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_registration_step_uvo_eservices.jpg": {
-		"ft": 16384,
-		"iS": 62619,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_registration_step_uvo_eservices.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/image_selector_1.png": {
-		"ft": 32768,
-		"iS": 2252,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_selector_1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/image_vehicle_settings_car.png": {
-		"ft": 32768,
-		"iS": 5298,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/image_vehicle_settings_car.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/img_background_indicator_lights.png": {
-		"ft": 32768,
-		"iS": 29465,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/img_background_indicator_lights.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/img_background_tires.png": {
-		"ft": 32768,
-		"iS": 41468,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/img_background_tires.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/img_car_apply_notif_settings.png": {
-		"ft": 32768,
-		"iS": 2703,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/img_car_apply_notif_settings.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/img_car_notif_settings.png": {
-		"ft": 32768,
-		"iS": 1837,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/img_car_notif_settings.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/img_copy_settings_car.png": {
-		"ft": 32768,
-		"iS": 2660,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/img_copy_settings_car.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/img_diagnostic_issue.jpg": {
-		"ft": 16384,
-		"iS": 12156,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/img_diagnostic_issue.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/logo_google_play.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/logo_google_play.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/logo_kia.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/logo_kia.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/logo_kia_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/logo_kia_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/logo_uvo_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/logo_uvo_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/notifications_climate.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/notifications_climate.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/photo_vin_on_dashboard.jpg": {
-		"ft": 16384,
-		"iS": 41851,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/photo_vin_on_dashboard.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/photo_vin_on_document.jpg": {
-		"ft": 16384,
-		"iS": 34966,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/photo_vin_on_document.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/photo_vin_on_side_door.jpg": {
-		"ft": 16384,
-		"iS": 44413,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/photo_vin_on_side_door.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/build\/images\/pin_car.png": {
-		"ft": 32768,
-		"iS": 2036,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/pin_car.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_base.png": {
-		"ft": 32768,
-		"iS": 183889,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_base.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_ground_all_closed.png": {
-		"ft": 32768,
-		"iS": 117580,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_ground_all_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_ground_both_open.png": {
-		"ft": 32768,
-		"iS": 106682,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_ground_both_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_ground_front_open.png": {
-		"ft": 32768,
-		"iS": 106672,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_ground_front_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_ground_rear_open.png": {
-		"ft": 32768,
-		"iS": 103258,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_ground_rear_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_hood_closed.png": {
-		"ft": 32768,
-		"iS": 23580,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_hood_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_hood_open.png": {
-		"ft": 32768,
-		"iS": 23695,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_hood_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_left_front_closed.png": {
-		"ft": 32768,
-		"iS": 27462,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_left_front_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_left_front_open.png": {
-		"ft": 32768,
-		"iS": 24103,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_left_front_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_left_rear_closed.png": {
-		"ft": 32768,
-		"iS": 22415,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_left_rear_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_left_rear_open.png": {
-		"ft": 32768,
-		"iS": 22288,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_left_rear_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_right_front_closed.png": {
-		"ft": 32768,
-		"iS": 31458,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_right_front_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_right_front_open.png": {
-		"ft": 32768,
-		"iS": 21842,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_right_front_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_right_rear_closed.png": {
-		"ft": 32768,
-		"iS": 26906,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_right_rear_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_right_rear_open.png": {
-		"ft": 32768,
-		"iS": 18068,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_right_rear_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_trunk_closed.png": {
-		"ft": 32768,
-		"iS": 9913,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_trunk_closed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/remote-vehicle\/img_optima_trunk_open.png": {
-		"ft": 32768,
-		"iS": 13785,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/remote-vehicle\/img_optima_trunk_open.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/seat_off.png": {
-		"ft": 32768,
-		"iS": 6149,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/seat_off.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/seat_on_cold.png": {
-		"ft": 32768,
-		"iS": 6297,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/seat_on_cold.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/seat_on_hot.png": {
-		"ft": 32768,
-		"iS": 5687,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/seat_on_hot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/siriusxmtravellink.png": {
-		"ft": 32768,
-		"iS": 1995,
-		"oA": 0,
-		"oAP": "\/build\/build\/images\/siriusxmtravellink.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/build\/images\/spinner_white.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/spinner_white.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/images\/uvo-logo-black.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/images\/uvo-logo-black.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/index.html",
-		"oF": 0
-		},
-	"\/build\/library-manifest.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/library-manifest.html",
-		"oF": 0
-		},
-	"\/build\/scripts\/account-settings.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/account-settings-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/add-card.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/add-card-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/alerts.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/alerts-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/dial.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/dial-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/forms.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/forms-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/heated-seats.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/heated-seats-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/loading.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/loading-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/locations.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/locations-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/login.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/login-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/maintenance.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/maintenance-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/map.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/map-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/modals.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/modals-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/my-car-zone.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/my-car-zone-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/my-trips.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/my-trips-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/my-vehicles.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/my-vehicles-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/nav.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/nav-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/overview.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/overview-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/registration.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/registration-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/remote-commands.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/remote-commands-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/slider-bar.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/slider-bar-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/template.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/scripts\/template-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/scripts\/tooltips.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/scripts\/tooltips-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/shippable.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/shippable.yml",
-		"oF": 0
-		},
-	"\/build\/vendors\/font-awesome\/css\/font-awesome.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/css\/font-awesome-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.eot",
-		"oF": 0
-		},
-	"\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.ttf",
-		"oF": 0
-		},
-	"\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff",
-		"oF": 0
-		},
-	"\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/fonts\/fontawesome-webfont.woff2",
-		"oF": 0
-		},
-	"\/build\/vendors\/font-awesome\/fonts\/FontAwesome.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/font-awesome\/fonts\/FontAwesome.otf",
-		"oF": 0
-		},
-	"\/build\/vendors\/jquery-knob\/jquery.knob.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/build\/build\/vendors\/jquery-knob\/jquery.knob.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/vendors\/mixitup\/mixitup.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/mixitup\/mixitup.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/vendors\/selectize\/selectize.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/selectize\/selectize-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/vendors\/slick\/slick.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/build\/build\/vendors\/slick\/slick-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/build\/vendors\/slick\/slick.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/slick\/slick.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/vendors\/touch-punch\/jquery.ui.touch-punch.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/build\/vendors\/touch-punch\/jquery.ui.touch-punch.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/build\/views\/account-settings.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/account-settings.html",
-		"oF": 0
-		},
-	"\/build\/views\/awards.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/awards.html",
-		"oF": 0
-		},
-	"\/build\/views\/locations-my-trips.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/locations-my-trips.html",
-		"oF": 0
-		},
-	"\/build\/views\/locations.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/locations.html",
-		"oF": 0
-		},
-	"\/build\/views\/login.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/login.html",
-		"oF": 0
-		},
-	"\/build\/views\/maintenance-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/maintenance-1.html",
-		"oF": 0
-		},
-	"\/build\/views\/maintenance-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/maintenance-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/my-car-zone-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/my-car-zone-1.html",
-		"oF": 0
-		},
-	"\/build\/views\/my-car-zone-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/my-car-zone-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/my-car-zone-3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/my-car-zone-3.html",
-		"oF": 0
-		},
-	"\/build\/views\/my-vehicles-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/my-vehicles-1.html",
-		"oF": 0
-		},
-	"\/build\/views\/my-vehicles-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/my-vehicles-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/notifications-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/notifications-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/notifications.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/notifications.html",
-		"oF": 0
-		},
-	"\/build\/views\/overview-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/overview-1.html",
-		"oF": 0
-		},
-	"\/build\/views\/overview-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/overview-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/overview-3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/overview-3.html",
-		"oF": 0
-		},
-	"\/build\/views\/overview-4.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/overview-4.html",
-		"oF": 0
-		},
-	"\/build\/views\/overview-5.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/overview-5.html",
-		"oF": 0
-		},
-	"\/build\/views\/partials\/add-card-modal.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/partials\/add-card-modal.html",
-		"oF": 0
-		},
-	"\/build\/views\/partials\/modals\/settings.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/partials\/modals\/settings.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-1.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-10.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-10.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-11.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-11.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-3.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-4.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-4.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-5.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-5.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-6.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-6.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-7.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-7.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-8.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-8.html",
-		"oF": 0
-		},
-	"\/build\/views\/registration-9.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/registration-9.html",
-		"oF": 0
-		},
-	"\/build\/views\/remote-battery.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/remote-battery.html",
-		"oF": 0
-		},
-	"\/build\/views\/remote-climate-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/remote-climate-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/remote-climate.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/remote-climate.html",
-		"oF": 0
-		},
-	"\/build\/views\/remote-security.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/remote-security.html",
-		"oF": 0
-		},
-	"\/build\/views\/schedules-1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/schedules-1.html",
-		"oF": 0
-		},
-	"\/build\/views\/schedules-2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/schedules-2.html",
-		"oF": 0
-		},
-	"\/build\/views\/schedules-3.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/build\/views\/schedules-3.html",
+		"oAP": "\/build\/build",
 		"oF": 0
 		},
 	"\/changes.md": {
@@ -4212,7 +87,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_buttons.css",
+		"oAP": "\/build\/css\/_buttons.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4225,7 +100,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_footer.css",
+		"oAP": "\/build\/css\/_footer.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4238,7 +113,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_forms.css",
+		"oAP": "\/build\/css\/_forms.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4251,7 +126,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_loading.css",
+		"oAP": "\/build\/css\/_loading.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4264,7 +139,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_modals.css",
+		"oAP": "\/build\/css\/_modals.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4277,7 +152,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_nav.css",
+		"oAP": "\/build\/css\/_nav.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4290,7 +165,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_slider-bar.css",
+		"oAP": "\/build\/css\/_slider-bar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4303,7 +178,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/elements\/_view-subnav.css",
+		"oAP": "\/build\/css\/_view-subnav.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4329,7 +204,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/css\/fonts\/_fonts.css",
+		"oAP": "\/build\/css\/_fonts.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4575,7 +450,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-awards.css",
+		"oAP": "\/build\/css\/view-awards.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4588,7 +463,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-locations.css",
+		"oAP": "\/build\/css\/view-locations.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4601,7 +476,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-maintenance.css",
+		"oAP": "\/build\/css\/view-maintenance.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4614,7 +489,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-my-car-zone.css",
+		"oAP": "\/build\/css\/view-my-car-zone.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4627,7 +502,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-my-trips.css",
+		"oAP": "\/build\/css\/view-my-trips.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4653,7 +528,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-notifications.css",
+		"oAP": "\/build\/css\/view-notifications.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4692,7 +567,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/css\/views\/view-schedules.css",
+		"oAP": "\/build\/css\/view-schedules.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4704,7 +579,7 @@
 		"oAP": "\/build\/images\/award-1.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4715,7 +590,7 @@
 		"oAP": "\/build\/images\/award-2.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4726,7 +601,7 @@
 		"oAP": "\/build\/images\/award-3.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4737,7 +612,7 @@
 		"oAP": "\/build\/images\/award-4.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4748,7 +623,7 @@
 		"oAP": "\/build\/images\/award-5.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4759,7 +634,7 @@
 		"oAP": "\/build\/images\/award-6.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4770,7 +645,7 @@
 		"oAP": "\/build\/images\/award-7.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4781,7 +656,7 @@
 		"oAP": "\/build\/images\/award-8.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5111,7 +986,7 @@
 		"oAP": "\/build\/images\/dial_pin.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5122,7 +997,7 @@
 		"oAP": "\/build\/images\/dial_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5276,7 +1151,7 @@
 		"oAP": "\/build\/images\/ic_mcz_curfew_white_small.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5287,7 +1162,7 @@
 		"oAP": "\/build\/images\/ic_mcz_geofence_white_small.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5298,7 +1173,7 @@
 		"oAP": "\/build\/images\/ic_mcz_speed_white_small.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5341,7 +1216,7 @@
 		"oAP": "\/build\/images\/icon-my-car-zone-empty.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5402,7 +1277,7 @@
 		"oAP": "\/build\/images\/icon_alert_climate.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5413,7 +1288,7 @@
 		"oAP": "\/build\/images\/icon_alert_curfew.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5434,7 +1309,7 @@
 		"oAP": "\/build\/images\/icon_alert_geofence.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5455,7 +1330,7 @@
 		"oAP": "\/build\/images\/icon_alert_red_curfew.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5466,7 +1341,7 @@
 		"oAP": "\/build\/images\/icon_alert_red_geofence.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5477,7 +1352,7 @@
 		"oAP": "\/build\/images\/icon_alert_red_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5488,7 +1363,7 @@
 		"oAP": "\/build\/images\/icon_alert_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5599,7 +1474,7 @@
 		"oAP": "\/build\/images\/icon_carzone_curfew.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5610,7 +1485,7 @@
 		"oAP": "\/build\/images\/icon_carzone_geofence.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -5621,7 +1496,7 @@
 		"oAP": "\/build\/images\/icon_carzone_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6285,7 +2160,7 @@
 		"oAP": "\/build\/images\/icon_no_alerts_curfew.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6296,7 +2171,7 @@
 		"oAP": "\/build\/images\/icon_no_alerts_geofence.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6307,7 +2182,7 @@
 		"oAP": "\/build\/images\/icon_no_alerts_speed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6318,7 +2193,7 @@
 		"oAP": "\/build\/images\/icon_no_charge_schedule.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6339,7 +2214,7 @@
 		"oAP": "\/build\/images\/icon_no_climate_schedule.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6565,7 +2440,7 @@
 		"oAP": "\/build\/images\/icon_poi.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6646,7 +2521,7 @@
 		"oAP": "\/build\/images\/icon_schedule_charge.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6657,7 +2532,7 @@
 		"oAP": "\/build\/images\/icon_schedule_climate.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6668,7 +2543,7 @@
 		"oAP": "\/build\/images\/icon_schedule_red_charge.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6679,7 +2554,7 @@
 		"oAP": "\/build\/images\/icon_schedule_red_climate.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -6700,7 +2575,7 @@
 		"oAP": "\/build\/images\/icon_settings-sliders.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7062,7 +2937,7 @@
 		"oAP": "\/build\/images\/Icons\/Pin Copy 33.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7480,7 +3355,7 @@
 		"oAP": "\/build\/images\/img_car_apply_notif_settings.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7491,7 +3366,7 @@
 		"oAP": "\/build\/images\/img_car_notif_settings.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7502,7 +3377,7 @@
 		"oAP": "\/build\/images\/img_copy_settings_car.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7603,7 +3478,7 @@
 		"oAP": "\/build\/images\/pin_car.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7614,7 +3489,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_base.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7625,7 +3500,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_ground_all_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7636,7 +3511,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_ground_both_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7647,7 +3522,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_ground_front_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7658,7 +3533,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_ground_rear_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7669,7 +3544,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_hood_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7680,7 +3555,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_hood_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7691,7 +3566,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_left_front_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7702,7 +3577,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_left_front_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7713,7 +3588,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_left_rear_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7724,7 +3599,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_left_rear_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7735,7 +3610,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_right_front_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7746,7 +3621,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_right_front_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7757,7 +3632,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_right_rear_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7768,7 +3643,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_right_rear_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7779,7 +3654,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_trunk_closed.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7790,7 +3665,7 @@
 		"oAP": "\/build\/images\/remote-vehicle\/img_optima_trunk_open.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7834,7 +3709,7 @@
 		"oAP": "\/build\/images\/siriusxmtravellink.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7877,10 +3752,10 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/account-settings-min.js",
+		"oAP": "\/build\/scripts\/account-settings.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/add-card.js": {
 		"ft": 64,
@@ -7927,7 +3802,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/heated-seats-min.js",
+		"oAP": "\/build\/scripts\/heated-seats.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -7945,12 +3820,12 @@
 	"\/source\/scripts\/locations.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/locations-min.js",
+		"oAP": "\/build\/scripts\/locations.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/login.js": {
 		"ft": 64,
@@ -7967,7 +3842,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/maintenance-min.js",
+		"oAP": "\/build\/scripts\/maintenance.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -7997,20 +3872,20 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/my-car-zone-min.js",
+		"oAP": "\/build\/scripts\/my-car-zone.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/my-trips.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/my-trips-min.js",
+		"oAP": "\/build\/scripts\/my-trips.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/my-vehicles.js": {
 		"ft": 64,
@@ -8067,10 +3942,10 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/slider-bar-min.js",
+		"oAP": "\/build\/scripts\/slider-bar.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/scripts\/template.js": {
 		"ft": 64,
@@ -8087,10 +3962,10 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/scripts\/tooltips-min.js",
+		"oAP": "\/build\/scripts\/tooltips.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"\/source\/vendors\/bootstrap\/_bootstrap-compass.scss": {
 		"aP": 0,
@@ -8100,7 +3975,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/_bootstrap-compass.css",
+		"oAP": "\/build\/css\/_bootstrap-compass.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8113,7 +3988,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/_bootstrap-mincer.css",
+		"oAP": "\/build\/css\/_bootstrap-mincer.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8126,7 +4001,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/_bootstrap-sprockets.css",
+		"oAP": "\/build\/css\/_bootstrap-sprockets.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8152,7 +4027,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_alerts.css",
+		"oAP": "\/build\/css\/_alerts.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8165,7 +4040,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_badges.css",
+		"oAP": "\/build\/css\/_badges.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8178,7 +4053,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_breadcrumbs.css",
+		"oAP": "\/build\/css\/_breadcrumbs.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8191,7 +4066,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_button-groups.css",
+		"oAP": "\/build\/css\/_button-groups.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8204,7 +4079,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_buttons.css",
+		"oAP": "\/build\/css\/_buttons.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8217,7 +4092,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_carousel.css",
+		"oAP": "\/build\/css\/_carousel.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8230,7 +4105,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_close.css",
+		"oAP": "\/build\/css\/_close.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8243,7 +4118,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_code.css",
+		"oAP": "\/build\/css\/_code.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8256,7 +4131,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_component-animations.css",
+		"oAP": "\/build\/css\/_component-animations.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8269,7 +4144,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_dropdowns.css",
+		"oAP": "\/build\/css\/_dropdowns.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8282,7 +4157,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_forms.css",
+		"oAP": "\/build\/css\/_forms.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8295,7 +4170,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_glyphicons.css",
+		"oAP": "\/build\/css\/_glyphicons.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8308,7 +4183,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_grid.css",
+		"oAP": "\/build\/css\/_grid.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8321,7 +4196,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_input-groups.css",
+		"oAP": "\/build\/css\/_input-groups.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8334,7 +4209,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_jumbotron.css",
+		"oAP": "\/build\/css\/_jumbotron.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8347,7 +4222,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_labels.css",
+		"oAP": "\/build\/css\/_labels.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8360,7 +4235,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_list-group.css",
+		"oAP": "\/build\/css\/_list-group.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8373,7 +4248,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_media.css",
+		"oAP": "\/build\/css\/_media.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8386,7 +4261,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_mixins.css",
+		"oAP": "\/build\/css\/_mixins.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8399,7 +4274,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_modals.css",
+		"oAP": "\/build\/css\/_modals.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8412,7 +4287,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_navbar.css",
+		"oAP": "\/build\/css\/_navbar.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8425,7 +4300,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_navs.css",
+		"oAP": "\/build\/css\/_navs.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8438,7 +4313,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_normalize.css",
+		"oAP": "\/build\/css\/_normalize.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8451,7 +4326,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_pager.css",
+		"oAP": "\/build\/css\/_pager.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8464,7 +4339,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_pagination.css",
+		"oAP": "\/build\/css\/_pagination.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8477,7 +4352,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_panels.css",
+		"oAP": "\/build\/css\/_panels.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8490,7 +4365,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_popovers.css",
+		"oAP": "\/build\/css\/_popovers.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8503,7 +4378,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_print.css",
+		"oAP": "\/build\/css\/_print.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8516,7 +4391,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_progress-bars.css",
+		"oAP": "\/build\/css\/_progress-bars.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8529,7 +4404,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_responsive-embed.css",
+		"oAP": "\/build\/css\/_responsive-embed.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8542,7 +4417,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_responsive-utilities.css",
+		"oAP": "\/build\/css\/_responsive-utilities.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8555,7 +4430,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_scaffolding.css",
+		"oAP": "\/build\/css\/_scaffolding.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8568,7 +4443,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_tables.css",
+		"oAP": "\/build\/css\/_tables.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8581,7 +4456,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_theme.css",
+		"oAP": "\/build\/css\/_theme.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8594,7 +4469,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_thumbnails.css",
+		"oAP": "\/build\/css\/_thumbnails.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8607,7 +4482,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_tooltip.css",
+		"oAP": "\/build\/css\/_tooltip.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8620,7 +4495,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_type.css",
+		"oAP": "\/build\/css\/_type.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8633,7 +4508,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_utilities.css",
+		"oAP": "\/build\/css\/_utilities.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8646,7 +4521,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_variables.css",
+		"oAP": "\/build\/css\/_variables.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8659,7 +4534,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/_wells.css",
+		"oAP": "\/build\/css\/_wells.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8672,7 +4547,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_alerts.css",
+		"oAP": "\/build\/css\/_alerts.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8685,7 +4560,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_background-variant.css",
+		"oAP": "\/build\/css\/_background-variant.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8698,7 +4573,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_border-radius.css",
+		"oAP": "\/build\/css\/_border-radius.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8711,7 +4586,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_buttons.css",
+		"oAP": "\/build\/css\/_buttons.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8724,7 +4599,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_center-block.css",
+		"oAP": "\/build\/css\/_center-block.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8737,7 +4612,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_clearfix.css",
+		"oAP": "\/build\/css\/_clearfix.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8750,7 +4625,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_forms.css",
+		"oAP": "\/build\/css\/_forms.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8763,7 +4638,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_gradients.css",
+		"oAP": "\/build\/css\/_gradients.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8776,7 +4651,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_grid-framework.css",
+		"oAP": "\/build\/css\/_grid-framework.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8789,7 +4664,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_grid.css",
+		"oAP": "\/build\/css\/_grid.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8802,7 +4677,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_hide-text.css",
+		"oAP": "\/build\/css\/_hide-text.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8815,7 +4690,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_image.css",
+		"oAP": "\/build\/css\/_image.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8828,7 +4703,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_labels.css",
+		"oAP": "\/build\/css\/_labels.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8841,7 +4716,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_list-group.css",
+		"oAP": "\/build\/css\/_list-group.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8854,7 +4729,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_nav-divider.css",
+		"oAP": "\/build\/css\/_nav-divider.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8867,7 +4742,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_nav-vertical-align.css",
+		"oAP": "\/build\/css\/_nav-vertical-align.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8880,7 +4755,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_opacity.css",
+		"oAP": "\/build\/css\/_opacity.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8893,7 +4768,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_pagination.css",
+		"oAP": "\/build\/css\/_pagination.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8906,7 +4781,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_panels.css",
+		"oAP": "\/build\/css\/_panels.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8919,7 +4794,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_progress-bar.css",
+		"oAP": "\/build\/css\/_progress-bar.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8932,7 +4807,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_reset-filter.css",
+		"oAP": "\/build\/css\/_reset-filter.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8945,7 +4820,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_reset-text.css",
+		"oAP": "\/build\/css\/_reset-text.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8958,7 +4833,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_resize.css",
+		"oAP": "\/build\/css\/_resize.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8971,7 +4846,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_responsive-visibility.css",
+		"oAP": "\/build\/css\/_responsive-visibility.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8984,7 +4859,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_size.css",
+		"oAP": "\/build\/css\/_size.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -8997,7 +4872,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_tab-focus.css",
+		"oAP": "\/build\/css\/_tab-focus.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9010,7 +4885,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_table-row.css",
+		"oAP": "\/build\/css\/_table-row.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9023,7 +4898,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_text-emphasis.css",
+		"oAP": "\/build\/css\/_text-emphasis.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9036,7 +4911,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_text-overflow.css",
+		"oAP": "\/build\/css\/_text-overflow.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9049,7 +4924,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/bootstrap\/bootstrap\/mixins\/_vendor-prefixes.css",
+		"oAP": "\/build\/css\/_vendor-prefixes.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9107,7 +4982,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_animated.css",
+		"oAP": "\/build\/css\/_animated.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9120,7 +4995,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_bordered-pulled.css",
+		"oAP": "\/build\/css\/_bordered-pulled.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9133,7 +5008,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_core.css",
+		"oAP": "\/build\/css\/_core.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9146,7 +5021,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_fixed-width.css",
+		"oAP": "\/build\/css\/_fixed-width.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9159,7 +5034,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_icons.css",
+		"oAP": "\/build\/css\/_icons.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9172,7 +5047,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_larger.css",
+		"oAP": "\/build\/css\/_larger.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9185,7 +5060,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_list.css",
+		"oAP": "\/build\/css\/_list.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9198,7 +5073,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_mixins.css",
+		"oAP": "\/build\/css\/_mixins.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9211,7 +5086,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_path.css",
+		"oAP": "\/build\/css\/_path.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9224,7 +5099,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_rotated-flipped.css",
+		"oAP": "\/build\/css\/_rotated-flipped.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9237,7 +5112,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_screen-reader.css",
+		"oAP": "\/build\/css\/_screen-reader.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9250,7 +5125,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_stacked.css",
+		"oAP": "\/build\/css\/_stacked.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9263,7 +5138,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/vendors\/font-awesome\/scss\/_variables.css",
+		"oAP": "\/build\/css\/_variables.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -9285,9 +5160,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/vendors\/jquery-knob\/jquery.knob.min.js",
-		"oF": 3,
+		"oF": 2,
 		"sC": 3,
 		"tS": 1
 		},
@@ -9295,9 +5170,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
-		"oAP": "\/build\/vendors\/mixitup\/mixitup.min-min.js",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/build\/vendors\/mixitup\/mixitup.min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -9315,9 +5190,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
-		"oAP": "\/build\/vendors\/selectize\/selectize-min.js",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/build\/vendors\/selectize\/selectize.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -9335,9 +5210,9 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 0,
-		"oA": 2,
-		"oAP": "\/build\/vendors\/slick\/slick.min-min.js",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/build\/vendors\/slick\/slick.min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -9346,7 +5221,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/vendors\/touch-punch\/jquery.ui.touch-punch.min-min.js",
+		"oAP": "\/build\/vendors\/touch-punch\/jquery.ui.touch-punch.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -9858,7 +5733,7 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 535332587
+	"lastBuiltDate": 537422281
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -10256,7 +6131,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8193,
+	"esLintEnvironmentsMask": 8209,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -10319,7 +6194,7 @@
 			"optionString": "{'exceptMethods': []}"
 			},
 		"comma-dangle": {
-			"active": 1,
+			"active": 0,
 			"optionString": "'never'"
 			},
 		"comma-spacing": {
@@ -10563,7 +6438,7 @@
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -10983,7 +6858,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
@@ -11249,7 +7124,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -11290,7 +7165,7 @@
 			"flagValue": -1
 			},
 		"devel": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"dojo": {
@@ -11660,14 +7535,14 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 0,
+		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
@@ -11696,7 +7571,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 1,
 		"disableJavascript": 0,
 		"ieCompatibility": 1,
@@ -11761,10 +7636,10 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 1,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
@@ -11793,7 +7668,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"importCSS": 0,
@@ -11817,7 +7692,7 @@
 		"autoOutputPathRelativePath": "\/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
 		"jsxMode": 0,
