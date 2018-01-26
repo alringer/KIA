@@ -780,3 +780,61 @@
     position: absolute;
     bottom: 12px;
     left: 12px; }
+
+body .daterangepicker {
+  padding: 0;
+  margin: 0; }
+  body .daterangepicker .ranges {
+    padding: 0;
+    margin: 0;
+    background: none; }
+    body .daterangepicker .ranges ul {
+      margin: 0;
+      padding: 0; }
+      body .daterangepicker .ranges ul li {
+        padding: 0 20px;
+        margin: 0;
+        background: none;
+        font: 14px/2.79em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px;
+        color: #2f2f2f;
+        border: none;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 0px; }
+        body .daterangepicker .ranges ul li:hover {
+          background: #f4f4f4; }
+        body .daterangepicker .ranges ul li.active {
+          background: #efefef; }
+    body .daterangepicker .ranges .range_inputs {
+      text-align: center;
+      padding: 9px 0; }
+      body .daterangepicker .ranges .range_inputs .btn {
+        width: 73px;
+        font: bold 11px/30px "KIA", sans-serif;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        padding: 0;
+        height: 30px;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        body .daterangepicker .ranges .range_inputs .btn-success {
+          background: #c4172c;
+          border-color: #c4172c; }
+          body .daterangepicker .ranges .range_inputs .btn-success:hover {
+            background: #961222;
+            border-color: #961222; }
+  body .daterangepicker .input-mini {
+    height: 40px;
+    border-radius: 0px !important;
+    border: solid 1px #cecece !important; }
+    body .daterangepicker .input-mini + i {
+      opacity: .65 !important;
+      top: 13px; }
+  body .daterangepicker thead tr:last-child {
+    text-transform: uppercase; }
+  body .daterangepicker td.off {
+    background: #FFF !important;
+    color: #999 !important; }
+  body .daterangepicker td.active:not(.off) {
+    background: #bb1a30 !important; }
+  body .daterangepicker td.in-range:not(.active):not(.off) {
+    background: rgba(187, 26, 48, 0.26); }
