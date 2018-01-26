@@ -970,7 +970,7 @@
 		},
 	"\/source\/images\/dial_heated_seats1.png": {
 		"ft": 32768,
-		"iS": 11236,
+		"iS": 11576,
 		"oA": 0,
 		"oAP": "\/build\/images\/dial_heated_seats1.png",
 		"oF": 0,
@@ -1047,7 +1047,7 @@
 		},
 	"\/source\/images\/heated_seat_2_cold.png": {
 		"ft": 32768,
-		"iS": 15846,
+		"iS": 12054,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_2_cold.png",
 		"oF": 0,
@@ -1058,7 +1058,7 @@
 		},
 	"\/source\/images\/heated_seat_2_hot.png": {
 		"ft": 32768,
-		"iS": 15903,
+		"iS": 12134,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_2_hot.png",
 		"oF": 0,
@@ -1080,7 +1080,7 @@
 		},
 	"\/source\/images\/heated_seat_3_cold.png": {
 		"ft": 32768,
-		"iS": 14980,
+		"iS": 11613,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_3_cold.png",
 		"oF": 0,
@@ -1091,7 +1091,7 @@
 		},
 	"\/source\/images\/heated_seat_3_hot.png": {
 		"ft": 32768,
-		"iS": 14987,
+		"iS": 11599,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_3_hot.png",
 		"oF": 0,
@@ -1113,7 +1113,7 @@
 		},
 	"\/source\/images\/heated_seat_4_cold.png": {
 		"ft": 32768,
-		"iS": 15192,
+		"iS": 11895,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_4_cold.png",
 		"oF": 0,
@@ -1124,7 +1124,7 @@
 		},
 	"\/source\/images\/heated_seat_4_hot.png": {
 		"ft": 32768,
-		"iS": 15227,
+		"iS": 11939,
 		"oA": 0,
 		"oAP": "\/build\/images\/heated_seat_4_hot.png",
 		"oF": 0,
@@ -5215,16 +5215,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
-		},
-	"\/source\/vendors\/touch-punch\/jquery.ui.touch-punch.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/vendors\/touch-punch\/jquery.ui.touch-punch.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"\/source\/views\/account-settings.kit": {
 		"cB": 0,
