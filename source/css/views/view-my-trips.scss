@@ -149,7 +149,7 @@
     .start-edit {
       margin-right: 15px;
       @media (max-width: $screen-sm-max) {
-        margin-right: 3;
+        margin-right: 3px;
       }
       @media (max-width: $screen-xs-max) {
         display: none;
@@ -187,6 +187,9 @@
           }
           &.trips-type {
             width: 140px;
+            @media (max-width: $screen-sm-max) {
+              width: 100px;
+            }
           }
           .icon-search {
             position: absolute;
@@ -229,8 +232,8 @@
               margin-right: 5px;
             }
             @media (max-width: $screen-xs-max) {
-              width: 175px;
-              min-width: 175px;
+              width: 155px;
+              min-width: 155px;
             }
           }
           .export-btn {

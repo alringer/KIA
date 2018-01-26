@@ -156,7 +156,7 @@
     margin-right: 15px; }
     @media (max-width: 991px) {
       .my-trips-page-view .my-trips-toolbar .start-edit {
-        margin-right: 3; } }
+        margin-right: 3px; } }
     @media (max-width: 767px) {
       .my-trips-page-view .my-trips-toolbar .start-edit {
         display: none; } }
@@ -188,6 +188,9 @@
             width: 120px; } }
       .my-trips-page-view .my-trips-toolbar form .form-fields > li.trips-type {
         width: 140px; }
+        @media (max-width: 991px) {
+          .my-trips-page-view .my-trips-toolbar form .form-fields > li.trips-type {
+            width: 100px; } }
       .my-trips-page-view .my-trips-toolbar form .form-fields > li .icon-search {
         position: absolute;
         bottom: 20px;
@@ -221,8 +224,8 @@
           margin-right: 5px; }
         @media (max-width: 767px) {
           .my-trips-page-view .my-trips-toolbar form .form-fields > li #reportrange {
-            width: 175px;
-            min-width: 175px; } }
+            width: 155px;
+            min-width: 155px; } }
       .my-trips-page-view .my-trips-toolbar form .form-fields > li .export-btn {
         font: bold 11px/40px "KIA", sans-serif;
         text-transform: uppercase;
