@@ -15,17 +15,26 @@ $(document).ready(() => {
       nav_toggle_search : $('.nav-toggle-search'),
       location_utility : $('.locations-utility'),
       filter_badge : $('.filter-list .badge'),
+      toggle_detail : $('.toggle-detail'),
     },
     methods : {
       collapse : {
         _open : () => {
           window.locations.elements.location_utility_collapse.collapse("show");
-          // $('body').addClass('hide-subnav');
+          window.locations.elements.toggle_detail.removeClass("flip");
         },
         _close : () => {
           window.locations.elements.location_utility_collapse.collapse("hide");
-          // $('body').removeClass('hide-subnav');
-        }
+          window.locations.elements.toggle_detail.addClass("flip");
+        },
+        _toggle : function() {
+          var $this = $(this);
+          if(!$this.hasClass('flip')) {
+            window.locations.methods.collapse._close();
+          }else{
+            window.locations.methods.collapse._open();
+          }
+        },
       },
       carousel : {
         _carousel_slide : (data) => {
@@ -58,6 +67,12 @@ $(document).ready(() => {
 
           if($target.hasClass('show-search')) {
             window.locations.elements.location_utility.removeClass('hide-search');
+          }
+
+          if($target.hasClass('show-toggle')) {
+            window.locations.elements.location_utility.addClass('show-toggle');
+          }else{
+            window.locations.elements.location_utility.removeClass('show-toggle');
           }
         },
       },
@@ -187,5 +202,6 @@ $(document).ready(() => {
   window.locations.elements.save_poi_btn.on('click', window.locations.methods.poi._save);
   window.locations.elements.nav_toggle_search.on('click', window.locations.methods.mobile._toggle_search);
   window.locations.elements.filter_badge.find('i').on('click', window.locations.methods.filters._remove);
+  window.locations.elements.toggle_detail.on('click', window.locations.methods.collapse._toggle);
   $('form').on('submit', window.locations.methods.form_submit);
 });
