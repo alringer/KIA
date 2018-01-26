@@ -209,7 +209,19 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
       top: -1px; }
     @media (max-width: 767px) {
       .remote-footer-caption {
-        display: none; } }
+        text-align: left;
+        width: 265px;
+        margin: 5px auto;
+        padding: 0;
+        padding-right: 30px;
+        position: relative; }
+        .remote-footer-caption strong {
+          display: block; }
+        .remote-footer-caption i {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%); } }
   .remote-footer .overview-remote-command {
     width: 100%;
     max-width: 100%;

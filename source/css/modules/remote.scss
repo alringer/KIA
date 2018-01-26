@@ -226,7 +226,21 @@ body.refreshing {
       top: -1px;
     }
     @media (max-width: $screen-xs-max) {
-      display: none;
+      text-align: left;
+      width: 265px;
+      margin: 5px auto;
+      padding: 0;
+      padding-right: 30px;
+      position: relative;
+      strong {
+        display: block;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
     }
   }
   .overview-remote-command {
