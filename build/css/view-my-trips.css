@@ -658,7 +658,9 @@
   opacity: 0 !important; }
 
 .editing .trip .trip-main .checkbox {
-  opacity: 1; }
+  opacity: 1;
+  z-index: 6;
+  pointer-events: all; }
 
 .edit-tablet {
   color: #C4172C;
@@ -750,6 +752,8 @@
 .modal-trip-details .modal-body .trip {
   border-bottom: none;
   box-shadow: none; }
+  .modal-trip-details .modal-body .trip .trip-points > span, .modal-trip-details .modal-body .trip .trip-points:after {
+    background: #000 !important; }
 
 .modal-filters .carousel .item {
   padding-left: 0 !important;
