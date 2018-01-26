@@ -1250,3 +1250,72 @@
   background: url('/images/icon_refresh.svg') center/contain no-repeat;
   vertical-align: middle;
 }
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(#000, .28);
+	border: solid 1px #d4d4d4;
+  z-index: 1;
+  @media (max-width: $screen-xs-max) {
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    // width: 305px;
+  }
+  ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    li {
+      font: 12px/1.75em $sans;
+      letter-spacing: .3px;
+      margin-bottom: 11px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      svg {
+        width: 21px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 11px;
+      }
+    }
+  }
+  ul.mobile-legend {
+    padding: 9px 20px 9px 11px;
+    font-size: 0;
+    white-space: nowrap;
+    li {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 15px;
+      line-height: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+      span {
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+        border-radius: 100%;
+        margin-right: 5px;
+        &.green {
+          background: #8ec439;
+        }
+        &.red {
+          background: #ff6b4d;
+        }
+        &.slate {
+          background: #75859a;
+        }
+      }
+    }
+  }
+}
