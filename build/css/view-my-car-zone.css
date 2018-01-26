@@ -93,7 +93,8 @@
       font: bold 11px "KIA", sans-serif;
       text-transform: uppercase;
       letter-spacing: .7px;
-      margin: 0 2.5px; }
+      margin: 0 2.5px;
+      cursor: pointer; }
   @media (max-width: 767px) {
     .view-my-car-zone .my-car-zone-header {
       padding: 23px 20px 0; }
@@ -102,7 +103,7 @@
         display: none; } }
 
 .my-car-zone-alert-area {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
   .my-car-zone-alert-area-header {
     margin-bottom: 16px; }
     .my-car-zone-alert-area-header:after {
@@ -145,7 +146,13 @@
   background-color: #ffffff;
   box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .alert-card:hover {
+    box-shadow: 0 5px 10px 3px rgba(39, 48, 59, 0.1);
+    transform: scale(1.025); }
   .alert-card .alert-title {
     position: absolute;
     top: 20px;

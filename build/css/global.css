@@ -1600,8 +1600,10 @@ body.modal-open {
       opacity: 0 !important;
       transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
       pointer-events: none !important; }
-      .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) * {
-        pointer-events: none !important; }
+      .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) {
+        display: none; }
+        .modal.heated-seats .modal-heated-seats .ui-dial:not(.active) * {
+          pointer-events: none !important; }
       .modal.heated-seats .modal-heated-seats .ui-dial.active {
         opacity: 1 !important;
         pointer-events: all !important; }
@@ -2481,13 +2483,16 @@ body.modal-open {
     top: 13px !important; }
     @media (max-width: 767px) {
       .modal .modal-set-boundaries .back {
-        top: 0px !important; } }
+        top: -1px !important; } }
   .modal .modal-set-boundaries .map-wrap {
     position: relative;
     margin-bottom: 25px; }
     .modal .modal-set-boundaries .map-wrap .map {
       width: 100%;
       height: 445px; }
+      @media (max-width: 767px) {
+        .modal .modal-set-boundaries .map-wrap .map {
+          height: 225px; } }
     .modal .modal-set-boundaries .map-wrap .map-search {
       position: absolute;
       top: 15px;
@@ -3278,6 +3283,10 @@ form .form-fields {
       position: relative; }
       form .form-fields > li label:hover input {
         border-color: #000; }
+      form .form-fields > li label.has-select {
+        pointer-events: none; }
+        form .form-fields > li label.has-select .bootstrap-select {
+          pointer-events: all; }
       form .form-fields > li label > strong {
         display: block;
         font-size: 10px;

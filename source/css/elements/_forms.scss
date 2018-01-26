@@ -219,6 +219,12 @@ form {
             border-color: $black;
           }
         }
+        &.has-select {
+          pointer-events: none;
+          .bootstrap-select {
+            pointer-events: all;
+          }
+        }
         > strong {
           display: block;
           font-size: 10px;

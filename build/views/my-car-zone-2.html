@@ -38,6 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/vendors/touch-punch/jquery.ui.touch-punch.min.js"></script>
   <script type="text/javascript" src="/scripts/my-car-zone.js"></script>
   <script type="text/javascript" src="/scripts/slider-bar.js"></script>
 
@@ -735,12 +736,12 @@
           </div><!-- /.my-car-zone-alert-area-header -->
           <div class="my-car-zone-alert-area-cards">
             <div class="row">
-              <div class="col-sm-4">
-                <div class="alert-card alert-card-geofence">
+              <div class="col-sm-5 col-md-4">
+                <div class="alert-card alert-card-geofence" data-toggle="modal" data-target="#edit-geofence-alert">
                   <strong class="alert-title">
                     Geo Fence Alert
                   </strong>
-                  <i class="icon-settings" data-toggle="modal" data-target="#edit-geofence-alert">
+                  <i class="icon-settings">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
                     </svg>
@@ -768,7 +769,7 @@
                       Active
                     </span>
                   </div><!-- /.alert-status -->
-                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-geofence-alert">
+                  <div class="mobile-arrow">
                     <i class="icon-arrow-right"></i>
                   </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
@@ -794,12 +795,12 @@
           </div><!-- /.my-car-zone-alert-area-header -->
           <div class="my-car-zone-alert-area-cards">
             <div class="row">
-              <div class="col-sm-4">
-                <div class="alert-card alert-card-curfew">
+              <div class="col-sm-5 col-md-4">
+                <div class="alert-card alert-card-curfew" data-toggle="modal" data-target="#edit-curfew-alert">
                   <strong class="alert-title">
                     Curfew Alert
                   </strong>
-                  <i class="icon-settings" data-toggle="modal" data-target="#edit-curfew-alert">
+                  <i class="icon-settings">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
                     </svg>
@@ -827,7 +828,7 @@
                       Active
                     </span>
                   </div><!-- /.alert-status -->
-                  <div class="mobile-arrow" data-toggle="modal" data-target="#edit-geofence-alert">
+                  <div class="mobile-arrow">
                     <i class="icon-arrow-right"></i>
                   </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
@@ -853,12 +854,12 @@
           </div><!-- /.my-car-zone-alert-area-header -->
           <div class="my-car-zone-alert-area-cards">
             <div class="row">
-              <div class="col-sm-4">
-                <div class="alert-card alert-card-speed inactive">
+              <div class="col-sm-5 col-md-4">
+                <div class="alert-card alert-card-speed inactive" data-toggle="modal" data-target="#edit-speed-alert">
                   <strong class="alert-title">
                     Speed Alert
                   </strong>
-                  <i class="icon-settings" data-toggle="modal" data-target="#edit-speed-alert">
+                  <i class="icon-settings">
                     <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                       <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"></path>
                     </svg>
@@ -877,7 +878,7 @@
                       Not Active
                     </span>
                   </div><!-- /.alert-status -->
-                  <div class="mobile-arrow"  data-toggle="modal" data-target="#edit-geofence-alert">
+                  <div class="mobile-arrow">
                     <i class="icon-arrow-right"></i>
                   </div><!-- /.mobile-arrow -->
                 </div><!-- /.alert-card -->
@@ -918,12 +919,12 @@
                   If you’ve created the max number of alerts allowed, try editing or deleting your existing alerts.
                 </p>
                 <ul class="alert-choices">
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="1">
-                    <i class="icon-alert-red-speed"></i>
+                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="5">
+                    <i class="icon-alert-red-geofence"></i>
                     <strong>
-                      Speed Alert
+                      Geo Fence Alert
                     </strong>
-                    <em>0 of 1 alerts created</em>
+                    <em>2 of 6 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
                   <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="3">
@@ -934,12 +935,12 @@
                     <em>0 of 3 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
-                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="5">
-                    <i class="icon-alert-red-geofence"></i>
+                  <li data-target="#my-car-zone-alert-modal-slider" data-slide-to="1">
+                    <i class="icon-alert-red-speed"></i>
                     <strong>
-                      Geo Fence Alert
+                      Speed Alert
                     </strong>
-                    <em>2 of 6 alerts created</em>
+                    <em>0 of 1 alerts created</em>
                     <i class="icon-arrow-right"></i>
                   </li>
                 </ul>
@@ -989,26 +990,26 @@
                     <li>
                       <div class="row">
                         <div class="col-xs-9">
-                          <label>
+                          <label for="select-1">
                             <strong>
                               Repeat this alert every
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small" id="select-1">
+                            <option value="5m">5 minutes</option>
+                            <option value="10m">10 minutes</option>
+                            <option value="15m">15 minutes</option>
+                            <option value="20m">20 minutes</option>
+                            <option value="25m">25 minutes</option>
+                            <option value="30m">30 minutes</option>
+                            <option value="45m">45 minutes</option>
+                            <option value="60m">60 minutes</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-3">
                           <span class="toggle">
@@ -1042,7 +1043,7 @@
                 <ul class="copy-options">
                   <li>
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="car-info">
                           <img src="/images/img_copy_settings_car.png" alt="My Optima">
@@ -1074,7 +1075,7 @@
                   </li>
                   <li>
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="car-info">
                           <img src="/images/img_copy_settings_car.png" alt="My Optima">
@@ -1160,43 +1161,43 @@
                       </label>
                       <div class="checkbox-group">
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="">
+                          <input type="checkbox" name="" value="1">
                           <em>
                             <span>Su</span>
                           </em>
                         </label>
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="" checked>
+                          <input type="checkbox" name="" value="1" checked>
                           <em>
                             <span>M</span>
                           </em>
                         </label>
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="" checked>
+                          <input type="checkbox" name="" value="1" checked>
                           <em>
                             <span>Tu</span>
                           </em>
                         </label>
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="" checked>
+                          <input type="checkbox" name="" value="1" checked>
                           <em>
                             <span>W</span>
                           </em>
                         </label>
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="" checked>
+                          <input type="checkbox" name="" value="1" checked>
                           <em>
                             <span>Th</span>
                           </em>
                         </label>
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="" checked>
+                          <input type="checkbox" name="" value="1" checked>
                           <em>
                             <span>F</span>
                           </em>
                         </label>
                         <label class="checkbox checkbox-round">
-                          <input type="checkbox" name="" value="">
+                          <input type="checkbox" name="" value="1">
                           <em>
                             <span>Su</span>
                           </em>
@@ -1215,38 +1216,314 @@
                             <strong>
                               Start Time
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="7pm">7:00pm</option>
-                              <option value="730pm">7:30pm</option>
-                              <option value="8pm">8:30pm</option>
-                              <option value="9pm">9:00pm</option>
-                              <option value="10pm">10:00pm</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="1">12:00am</option>
+                            <option value="1">12:10am</option>
+                            <option value="1">12:20am</option>
+                            <option value="1">12:30am</option>
+                            <option value="1">12:40am</option>
+                            <option value="1">12:50am</option>
+                            <option value="1">1:00am</option>
+                            <option value="1">1:10am</option>
+                            <option value="1">1:20am</option>
+                            <option value="1">1:30am</option>
+                            <option value="1">1:40am</option>
+                            <option value="1">1:50am</option>
+                            <option value="1">2:00am</option>
+                            <option value="1">2:10am</option>
+                            <option value="1">2:20am</option>
+                            <option value="1">2:30am</option>
+                            <option value="1">2:40am</option>
+                            <option value="1">2:50am</option>
+                            <option value="1">3:00am</option>
+                            <option value="1">3:10am</option>
+                            <option value="1">3:20am</option>
+                            <option value="1">3:30am</option>
+                            <option value="1">3:40am</option>
+                            <option value="1">3:50am</option>
+                            <option value="1">4:00am</option>
+                            <option value="1">4:10am</option>
+                            <option value="1">4:20am</option>
+                            <option value="1">4:30am</option>
+                            <option value="1">4:40am</option>
+                            <option value="1">4:50am</option>
+                            <option value="1">5:00am</option>
+                            <option value="1">5:10am</option>
+                            <option value="1">5:20am</option>
+                            <option value="1">5:30am</option>
+                            <option value="1">5:40am</option>
+                            <option value="1">5:50am</option>
+                            <option value="1">6:10am</option>
+                            <option value="1">6:20am</option>
+                            <option value="1">6:30am</option>
+                            <option value="1">6:40am</option>
+                            <option value="1">6:50am</option>
+                            <option value="1">7:00am</option>
+                            <option value="1">7:10am</option>
+                            <option value="1">7:20am</option>
+                            <option value="1">7:30am</option>
+                            <option value="1">7:40am</option>
+                            <option value="1">7:50am</option>
+                            <option value="1">8:00am</option>
+                            <option value="1">8:10am</option>
+                            <option value="1">8:20am</option>
+                            <option value="1">8:30am</option>
+                            <option value="1">8:40am</option>
+                            <option value="1">8:50am</option>
+                            <option value="1">9:00am</option>
+                            <option value="1">9:10am</option>
+                            <option value="1">9:20am</option>
+                            <option value="1">9:30am</option>
+                            <option value="1">9:40am</option>
+                            <option value="1">9:50am</option>
+                            <option value="1">10:00am</option>
+                            <option value="1">10:10am</option>
+                            <option value="1">10:20am</option>
+                            <option value="1">10:30am</option>
+                            <option value="1">10:40am</option>
+                            <option value="1">10:50am</option>
+                            <option value="1">11:00am</option>
+                            <option value="1">11:10am</option>
+                            <option value="1">11:20am</option>
+                            <option value="1">11:30am</option>
+                            <option value="1">11:40am</option>
+                            <option value="1">11:50am</option>
+                            <option value="1">12:00pm</option>
+                            <option value="1">12:10pm</option>
+                            <option value="1">12:20pm</option>
+                            <option value="1">12:30pm</option>
+                            <option value="1">12:40pm</option>
+                            <option value="1">12:50pm</option>
+                            <option value="1">1:00pm</option>
+                            <option value="1">1:10pm</option>
+                            <option value="1">1:20pm</option>
+                            <option value="1">1:30pm</option>
+                            <option value="1">1:40pm</option>
+                            <option value="1">1:50pm</option>
+                            <option value="1">2:00pm</option>
+                            <option value="1">2:10pm</option>
+                            <option value="1">2:20pm</option>
+                            <option value="1">2:30pm</option>
+                            <option value="1">2:40pm</option>
+                            <option value="1">2:50pm</option>
+                            <option value="1">3:00pm</option>
+                            <option value="1">3:10pm</option>
+                            <option value="1">3:20pm</option>
+                            <option value="1">3:30pm</option>
+                            <option value="1">3:40pm</option>
+                            <option value="1">3:50pm</option>
+                            <option value="1">4:00pm</option>
+                            <option value="1">4:10pm</option>
+                            <option value="1">4:20pm</option>
+                            <option value="1">4:30pm</option>
+                            <option value="1">4:40pm</option>
+                            <option value="1">4:50pm</option>
+                            <option value="1">5:00pm</option>
+                            <option value="1">5:10pm</option>
+                            <option value="1">5:20pm</option>
+                            <option value="1">5:30pm</option>
+                            <option value="1">5:40pm</option>
+                            <option value="1">5:50pm</option>
+                            <option value="1">6:00pm</option>
+                            <option value="1">6:10pm</option>
+                            <option value="1">6:20pm</option>
+                            <option value="1">6:30pm</option>
+                            <option value="1">6:40pm</option>
+                            <option value="1">6:50pm</option>
+                            <option value="1">7:00pm</option>
+                            <option value="1">7:10pm</option>
+                            <option value="1">7:20pm</option>
+                            <option value="1">7:30pm</option>
+                            <option value="1">7:40pm</option>
+                            <option value="1">7:50pm</option>
+                            <option value="1">8:00pm</option>
+                            <option value="1">8:10pm</option>
+                            <option value="1">8:20pm</option>
+                            <option value="1">8:30pm</option>
+                            <option value="1">8:40pm</option>
+                            <option value="1">8:50pm</option>
+                            <option value="1">9:00pm</option>
+                            <option value="1">9:10pm</option>
+                            <option value="1">9:20pm</option>
+                            <option value="1">9:30pm</option>
+                            <option value="1">9:40pm</option>
+                            <option value="1">9:50pm</option>
+                            <option value="1">10:00pm</option>
+                            <option value="1">10:10pm</option>
+                            <option value="1">10:20pm</option>
+                            <option value="1">10:30pm</option>
+                            <option value="1">10:40pm</option>
+                            <option value="1">10:50pm</option>
+                            <option value="1">11:00pm</option>
+                            <option value="1">11:10pm</option>
+                            <option value="1">11:20pm</option>
+                            <option value="1">11:30pm</option>
+                            <option value="1">11:40pm</option>
+                            <option value="1">11:50pm</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-6">
                           <label>
                             <strong>
                               End Time
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="7pm">7:00pm</option>
-                              <option value="730pm">7:30pm</option>
-                              <option value="8pm">8:30pm</option>
-                              <option value="9pm">9:00pm</option>
-                              <option value="10pm">10:00pm</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                              {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="1">12:00am</option>
+                            <option value="1">12:10am</option>
+                            <option value="1">12:20am</option>
+                            <option value="1">12:30am</option>
+                            <option value="1">12:40am</option>
+                            <option value="1">12:50am</option>
+                            <option value="1">1:00am</option>
+                            <option value="1">1:10am</option>
+                            <option value="1">1:20am</option>
+                            <option value="1">1:30am</option>
+                            <option value="1">1:40am</option>
+                            <option value="1">1:50am</option>
+                            <option value="1">2:00am</option>
+                            <option value="1">2:10am</option>
+                            <option value="1">2:20am</option>
+                            <option value="1">2:30am</option>
+                            <option value="1">2:40am</option>
+                            <option value="1">2:50am</option>
+                            <option value="1">3:00am</option>
+                            <option value="1">3:10am</option>
+                            <option value="1">3:20am</option>
+                            <option value="1">3:30am</option>
+                            <option value="1">3:40am</option>
+                            <option value="1">3:50am</option>
+                            <option value="1">4:00am</option>
+                            <option value="1">4:10am</option>
+                            <option value="1">4:20am</option>
+                            <option value="1">4:30am</option>
+                            <option value="1">4:40am</option>
+                            <option value="1">4:50am</option>
+                            <option value="1">5:00am</option>
+                            <option value="1">5:10am</option>
+                            <option value="1">5:20am</option>
+                            <option value="1">5:30am</option>
+                            <option value="1">5:40am</option>
+                            <option value="1">5:50am</option>
+                            <option value="1">6:10am</option>
+                            <option value="1">6:20am</option>
+                            <option value="1">6:30am</option>
+                            <option value="1">6:40am</option>
+                            <option value="1">6:50am</option>
+                            <option value="1">7:00am</option>
+                            <option value="1">7:10am</option>
+                            <option value="1">7:20am</option>
+                            <option value="1">7:30am</option>
+                            <option value="1">7:40am</option>
+                            <option value="1">7:50am</option>
+                            <option value="1">8:00am</option>
+                            <option value="1">8:10am</option>
+                            <option value="1">8:20am</option>
+                            <option value="1">8:30am</option>
+                            <option value="1">8:40am</option>
+                            <option value="1">8:50am</option>
+                            <option value="1">9:00am</option>
+                            <option value="1">9:10am</option>
+                            <option value="1">9:20am</option>
+                            <option value="1">9:30am</option>
+                            <option value="1">9:40am</option>
+                            <option value="1">9:50am</option>
+                            <option value="1">10:00am</option>
+                            <option value="1">10:10am</option>
+                            <option value="1">10:20am</option>
+                            <option value="1">10:30am</option>
+                            <option value="1">10:40am</option>
+                            <option value="1">10:50am</option>
+                            <option value="1">11:00am</option>
+                            <option value="1">11:10am</option>
+                            <option value="1">11:20am</option>
+                            <option value="1">11:30am</option>
+                            <option value="1">11:40am</option>
+                            <option value="1">11:50am</option>
+                            <option value="1">12:00pm</option>
+                            <option value="1">12:10pm</option>
+                            <option value="1">12:20pm</option>
+                            <option value="1">12:30pm</option>
+                            <option value="1">12:40pm</option>
+                            <option value="1">12:50pm</option>
+                            <option value="1">1:00pm</option>
+                            <option value="1">1:10pm</option>
+                            <option value="1">1:20pm</option>
+                            <option value="1">1:30pm</option>
+                            <option value="1">1:40pm</option>
+                            <option value="1">1:50pm</option>
+                            <option value="1">2:00pm</option>
+                            <option value="1">2:10pm</option>
+                            <option value="1">2:20pm</option>
+                            <option value="1">2:30pm</option>
+                            <option value="1">2:40pm</option>
+                            <option value="1">2:50pm</option>
+                            <option value="1">3:00pm</option>
+                            <option value="1">3:10pm</option>
+                            <option value="1">3:20pm</option>
+                            <option value="1">3:30pm</option>
+                            <option value="1">3:40pm</option>
+                            <option value="1">3:50pm</option>
+                            <option value="1">4:00pm</option>
+                            <option value="1">4:10pm</option>
+                            <option value="1">4:20pm</option>
+                            <option value="1">4:30pm</option>
+                            <option value="1">4:40pm</option>
+                            <option value="1">4:50pm</option>
+                            <option value="1">5:00pm</option>
+                            <option value="1">5:10pm</option>
+                            <option value="1">5:20pm</option>
+                            <option value="1">5:30pm</option>
+                            <option value="1">5:40pm</option>
+                            <option value="1">5:50pm</option>
+                            <option value="1">6:00pm</option>
+                            <option value="1">6:10pm</option>
+                            <option value="1">6:20pm</option>
+                            <option value="1">6:30pm</option>
+                            <option value="1">6:40pm</option>
+                            <option value="1">6:50pm</option>
+                            <option value="1">7:00pm</option>
+                            <option value="1">7:10pm</option>
+                            <option value="1">7:20pm</option>
+                            <option value="1">7:30pm</option>
+                            <option value="1">7:40pm</option>
+                            <option value="1">7:50pm</option>
+                            <option value="1">8:00pm</option>
+                            <option value="1">8:10pm</option>
+                            <option value="1">8:20pm</option>
+                            <option value="1">8:30pm</option>
+                            <option value="1">8:40pm</option>
+                            <option value="1">8:50pm</option>
+                            <option value="1">9:00pm</option>
+                            <option value="1">9:10pm</option>
+                            <option value="1">9:20pm</option>
+                            <option value="1">9:30pm</option>
+                            <option value="1">9:40pm</option>
+                            <option value="1">9:50pm</option>
+                            <option value="1">10:00pm</option>
+                            <option value="1">10:10pm</option>
+                            <option value="1">10:20pm</option>
+                            <option value="1">10:30pm</option>
+                            <option value="1">10:40pm</option>
+                            <option value="1">10:50pm</option>
+                            <option value="1">11:00pm</option>
+                            <option value="1">11:10pm</option>
+                            <option value="1">11:20pm</option>
+                            <option value="1">11:30pm</option>
+                            <option value="1">11:40pm</option>
+                            <option value="1">11:50pm</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                            {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                       </div><!-- /.row -->
                     </li>
@@ -1257,22 +1534,22 @@
                             <strong>
                               Repeat this alert every
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="5m">5 minutes</option>
+                            <option value="10m">10 minutes</option>
+                            <option value="15m">15 minutes</option>
+                            <option value="20m">20 minutes</option>
+                            <option value="25m">25 minutes</option>
+                            <option value="30m">30 minutes</option>
+                            <option value="45m">45 minutes</option>
+                            <option value="60m">60 minutes</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-3">
                           <span class="toggle">
@@ -1317,20 +1594,20 @@
                       </span>
                     </span><!-- /.car-info -->
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="settings-meta">
                           <strong>School Week</strong>
-                          <em>M, Tu,W, Th, Fr, 9:00 PM - 6:00 AM</em>
+                          <em>M, Tu,W, Th, Fr, 9:00pm - 6:00am</em>
                         </span>
                       </em>
                     </label>
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="settings-meta">
                           <strong>Curfew</strong>
-                          <em>Sa, Sun 11:00 PM - 6:00 AM</em>
+                          <em>Sa, Sun 11:00pm - 6:00am</em>
                         </span>
                       </em>
                     </label>
@@ -1348,20 +1625,20 @@
                       </span>
                     </span><!-- /.car-info -->
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="settings-meta">
                           <strong>School Week</strong>
-                          <em>M, Tu,W, Th, Fr, 9:00 PM - 6:00 AM</em>
+                          <em>M, Tu,W, Th, Fr, 9:00pm - 6:00am</em>
                         </span>
                       </em>
                     </label>
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="settings-meta">
                           <strong>Curfew</strong>
-                          <em>Sa, Sun 11:00 PM - 6:00 AM</em>
+                          <em>Sa, Sun 11:00pm - 6:00am</em>
                         </span>
                       </em>
                     </label>
@@ -1449,22 +1726,22 @@
                             <strong>
                               Repeat this alert every
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="5m">5 minutes</option>
+                            <option value="10m">10 minutes</option>
+                            <option value="15m">15 minutes</option>
+                            <option value="20m">20 minutes</option>
+                            <option value="25m">25 minutes</option>
+                            <option value="30m">30 minutes</option>
+                            <option value="45m">45 minutes</option>
+                            <option value="60m">60 minutes</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-3">
                           <span class="toggle">
@@ -1497,7 +1774,7 @@
 
                   </div><!-- /.map -->
                   <div class="map-search">
-                    <input type="text" name="" value="" placeholder="Search by name, city, state or zip" />
+                    <input type="text" name="" value="1" placeholder="Search by name, city, state or zip" />
                   </div><!-- /.ma-search -->
                 </div><!-- /.map-wrap -->
                 <div class="slider-bar">
@@ -1536,7 +1813,7 @@
                       </span>
                     </span><!-- /.car-info -->
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="settings-meta">
                           <strong>Our Neighborhood</strong>
@@ -1559,7 +1836,7 @@
                       </span>
                     </span><!-- /.car-info -->
                     <label class="radio">
-                      <input type="radio" name="copy-settings" value="">
+                      <input type="radio" name="copy-settings" value="1">
                       <em>
                         <span class="settings-meta">
                           <strong>Another Geo Fence</strong>
@@ -1659,22 +1936,22 @@
                             <strong>
                               Repeat this alert every
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="5m">5 minutes</option>
+                            <option value="10m">10 minutes</option>
+                            <option value="15m">15 minutes</option>
+                            <option value="20m">20 minutes</option>
+                            <option value="25m">25 minutes</option>
+                            <option value="30m">30 minutes</option>
+                            <option value="45m">45 minutes</option>
+                            <option value="60m">60 minutes</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-3">
                           <span class="toggle">
@@ -1923,38 +2200,38 @@
                             <strong>
                               Start Time
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="7pm">7:00pm</option>
-                              <option value="730pm">7:30pm</option>
-                              <option value="8pm">8:30pm</option>
-                              <option value="9pm">9:00pm</option>
-                              <option value="10pm">10:00pm</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="7pm">7:00pm</option>
+                            <option value="730pm">7:30pm</option>
+                            <option value="8pm">8:30pm</option>
+                            <option value="9pm">9:00pm</option>
+                            <option value="10pm">10:00pm</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-6">
                           <label>
                             <strong>
                               End Time
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="7pm">7:00pm</option>
-                              <option value="730pm">7:30pm</option>
-                              <option value="8pm">8:30pm</option>
-                              <option value="9pm">9:00pm</option>
-                              <option value="10pm">10:00pm</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                              {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="7pm">7:00pm</option>
+                            <option value="730pm">7:30pm</option>
+                            <option value="8pm">8:30pm</option>
+                            <option value="9pm">9:00pm</option>
+                            <option value="10pm">10:00pm</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                            {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                       </div><!-- /.row -->
                     </li>
@@ -1965,22 +2242,22 @@
                             <strong>
                               Repeat this alert every
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="5m">5 minutes</option>
+                            <option value="10m">10 minutes</option>
+                            <option value="15m">15 minutes</option>
+                            <option value="20m">20 minutes</option>
+                            <option value="25m">25 minutes</option>
+                            <option value="30m">30 minutes</option>
+                            <option value="45m">45 minutes</option>
+                            <option value="60m">60 minutes</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-3">
                           <span class="toggle">
@@ -2168,22 +2445,22 @@
                             <strong>
                               Repeat this alert every
                             </strong>
-                            <select class="selectpicker small">
-                              <option value="5m">5 minutes</option>
-                              <option value="10m">10 minutes</option>
-                              <option value="15m">15 minutes</option>
-                              <option value="20m">20 minutes</option>
-                              <option value="25m">25 minutes</option>
-                              <option value="30m">30 minutes</option>
-                              <option value="45m">45 minutes</option>
-                              <option value="60m">60 minutes</option>
-                            </select>
-                            <span class="error-message">
-                              <span class="error-message-inner">
-                                {{ add error message }}
-                              </span>
-                            </span>
                           </label>
+                          <select class="selectpicker small">
+                            <option value="5m">5 minutes</option>
+                            <option value="10m">10 minutes</option>
+                            <option value="15m">15 minutes</option>
+                            <option value="20m">20 minutes</option>
+                            <option value="25m">25 minutes</option>
+                            <option value="30m">30 minutes</option>
+                            <option value="45m">45 minutes</option>
+                            <option value="60m">60 minutes</option>
+                          </select>
+                          <span class="error-message">
+                            <span class="error-message-inner">
+                              {{ add error message }}
+                            </span>
+                          </span>
                         </div><!-- /.col -->
                         <div class="col-xs-3">
                           <span class="toggle">
