@@ -915,7 +915,7 @@
                 </li>
               </ul>
             </form>
-            <div class="hidden-sm hidden-md hidden-lg mobile-toolbar">
+            <div class="hidden-sm hidden-md hidden-lg mobile-toolbar" data-toggle="modal" data-target="#filters">
               <span>
                 <svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="My-Trips-|-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-16.000000, -122.000000)">
@@ -968,6 +968,7 @@
               Yesterday
             </strong>
             <div class="trip active">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1072,6 +1073,7 @@
               </div><!-- /.collapse -->
             </div><!-- /.trip -->
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1179,6 +1181,7 @@
               This Past Week
             </strong>
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1283,6 +1286,7 @@
               </div><!-- /.collapse -->
             </div><!-- /.trip -->
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1387,6 +1391,7 @@
               </div><!-- /.collapse -->
             </div><!-- /.trip -->
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1491,6 +1496,7 @@
               </div><!-- /.collapse -->
             </div><!-- /.trip -->
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1595,6 +1601,7 @@
               </div><!-- /.collapse -->
             </div><!-- /.trip -->
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1699,6 +1706,7 @@
               </div><!-- /.collapse -->
             </div><!-- /.trip -->
             <div class="trip">
+              <span class="mobile-modal" data-toggle="modal" data-target="#trip-details"></span>
               <div class="trip-main">
                 <label class="checkbox solo start-edit">
                   <input type="checkbox" name="" value="" class="stop-propagation" />
@@ -1850,6 +1858,78 @@
 
         cb(start, end);
 
+    });
+</script>
+<div class="modal fade modal-filters" id="filters" tabindex="-1" role="dialog" aria-labelledby="filters" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="filters-modal-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <span class="back" data-dismiss="modal"></span>
+              <strong class="modal-title">
+                Filter
+              </strong>
+              <form>
+                <ul class="form-fields">
+                  <li class="trips-search">
+                    <label>
+                      <strong>Search Trips</strong>
+                      <input type="text" name="" value="" placeholder="Search Tags">
+                      <i class="icon-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill="#9BA1A9" fill-rule="nonzero" d="M6.453.08C3.101.08.361 2.822.361 6.174c0 3.351 2.74 6.092 6.092 6.092 1.291 0 2.49-.407 3.477-1.098l4.004 4.01c.42.419 1.103.419 1.522 0 .42-.42.42-1.104 0-1.524L11.448 9.65a6.044 6.044 0 0 0 1.097-3.477C12.545 2.82 9.805.08 6.453.08zm0 2.151a3.926 3.926 0 0 1 3.942 3.942 3.926 3.926 0 0 1-3.942 3.942 3.926 3.926 0 0 1-3.942-3.942A3.926 3.926 0 0 1 6.453 2.23z"/>
+                        </svg>
+                      </i>
+                    </label>
+                  </li>
+                  <li class="trips-alerts">
+                    <label>
+                      <strong>My Car Zone Alerts</strong>
+                      <select class="selectpicker small">
+                        <option value="1">All</option>
+                        <option value="1">Option 1</option>
+                        <option value="1">Option 2</option>
+                        <option value="1">Option 3</option>
+                      </select>
+                    </label>
+                  </li>
+                  <li class="trips-type">
+                    <label>
+                      <strong>Trip Type</strong>
+                      <select class="selectpicker small">
+                        <option value="1">All</option>
+                        <option value="1" selected>Personal</option>
+                        <option value="1">Business</option>
+                      </select>
+                    </label>
+                  </li>
+                  <li class="trips-date">
+                    <label>
+                      <strong>Date Range</strong>
+                      <select class="selectpicker small">
+                        <option value="1">All</option>
+                        <option value="1" selected>Personal</option>
+                        <option value="1">Business</option>
+                      </select>
+                    </label>
+                  </li>
+                </ul>
+                <div class="form-actions">
+                  <span class="button full">Apply Filters</span>
+                </div>
+              </form>
+            </div><!-- /.item -->
+          </div>
+        </div>
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+      $('#filters').modal('show');
     });
 </script>
   <footer>
