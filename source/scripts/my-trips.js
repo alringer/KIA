@@ -124,10 +124,10 @@ $(document).ready(() => {
       },
       edit : {
         _start : () => {
-          window.myTrips.elements.view.addClass('editing');
+         $('body').addClass('editing');
         },
         _stop : () => {
-          window.myTrips.elements.view.removeClass('editing');
+          $('body').removeClass('editing');
           window.myTrips.elements.trip_checkboxes.prop('checked', false);
           window.myTrips.elements.select_all.prop('checked', false);
         },

@@ -15,6 +15,12 @@
     height: calc(100vh - 215px);
     position: relative;
     overflow: hidden;
+    @media (max-width: $screen-sm-max) {
+      height: calc(100vh - 193px);
+    }
+    @media (max-width: $screen-xs-max) {
+      height: calc(100vh - 147px);
+    }
     .map {
       position: absolute;
       height: auto;
@@ -23,6 +29,9 @@
       right: 0;
       width: calc(100% - 422px);
       bottom: 0;
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
     }
   }
   .my-trips-toolbar {
@@ -32,6 +41,16 @@
     background: #F7F7F7;
     z-index: 5;
     padding-top: 26px;
+    @media (max-width: $screen-xs-max) {
+      height: 43px;
+      padding-top: 0;
+    }
+    &-inner {
+      white-space: nowrap;
+      > * {
+        white-space: normal;
+      }
+    }
     .edit-toolbar {
       position: absolute;
       top: 0;
@@ -107,6 +126,17 @@
           top: -1px;
         }
       }
+      @media (max-width: $screen-xs-max) {
+        height: 43px;
+        padding-top: 12px;
+        padding-left: 51px;
+        > span {
+          margin-left: 25px;
+        }
+        .cancel {
+          display: none;
+        }
+      }
     }
     &-inner {
       padding-left: 16px;
@@ -118,25 +148,42 @@
     }
     .start-edit {
       margin-right: 15px;
+      @media (max-width: $screen-sm-max) {
+        margin-right: 3;
+      }
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
     }
     form {
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
       .form-fields {
         font-size: 0;
         width: 100%;
+        white-space: nowrap;
         > li {
           display: inline-block;
           vertical-align: bottom;
           margin-right: 10px;
           text-align: left;
           position: relative;
+          white-space: normal;
           &.trips-search {
             width: 223px;
             input[type="text"] {
               padding: 0 10px 0 36px;
             }
+            @media (max-width: $screen-sm-max) {
+              width: 143px;
+            }
           }
           &.trips-alerts {
-            width: 140px;
+            width: 120px;
+            @media (max-width: $screen-sm-max) {
+              width: 120px;
+            }
           }
           &.trips-type {
             width: 140px;
@@ -181,6 +228,10 @@
               color: #8d9094;
               margin-right: 5px;
             }
+            @media (max-width: $screen-xs-max) {
+              width: 175px;
+              min-width: 175px;
+            }
           }
           .export-btn {
             font: bold 11px/40px $kia;
@@ -214,6 +265,9 @@
                 }
               }
             }
+            @media (max-width: $screen-sm-max) {
+              margin-left: 0px;
+            }
           }
         }
       }
@@ -226,6 +280,13 @@
     bottom: 0;
     background: #eaeaea;
     padding: 0 4px;
+    @media (max-width: $screen-xs-max) {
+      position: absolute;
+      width: 100%;
+      top: 43px;
+      height: 100%;
+      padding: 0;
+    }
     &-inner {
       max-height: 100%;
       overflow: auto;
@@ -251,30 +312,32 @@
         color: #969696;
       }
     }
-    .trip {
-      background-color: $white;
-      margin-bottom: 4px;
-      border: solid 1px $white;
-      transition: all 250ms $easeOutQuint;
-      position: relative;
-      border-radius: 2px;
-      box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
-      overflow: hidden;
-      cursor: pointer;
-      &.hide-trip {
-        transition: all 550ms $easeOutQuint;
-        height: 0 !important;
-        margin-bottom: 0 !important;
-        box-shadow: none;
-        border: none;
-      }
-      &.merged {
-        .trip-points {
-          .merge {
-            opacity: 1;
-          }
+  }
+  .trip {
+    background-color: $white;
+    margin-bottom: 4px;
+    border: solid 1px $white;
+    transition: all 250ms $easeOutQuint;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
+    cursor: pointer;
+    &.hide-trip {
+      transition: all 550ms $easeOutQuint;
+      height: 0 !important;
+      margin-bottom: 0 !important;
+      box-shadow: none;
+      border: none;
+    }
+    &.merged {
+      .trip-points {
+        .merge {
+          opacity: 1;
         }
       }
+    }
+    @media (min-width: $screen-xs-max) {
       &:hover {
         .trip-main {
           .trip-points {
@@ -291,309 +354,338 @@
           }
         }
       }
-      &:after {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 3px;
-        background: $white;
-        content: "";
-        display: block;
-        transition: all 250ms $easeOutQuint;
-      }
-      &.active {
+    }
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: $white;
+      content: "";
+      display: block;
+      transition: all 250ms $easeOutQuint;
+    }
+    &.active {
+      @media (min-width: $screen-xs-max) {
         cursor: default;
         &:after {
           background: $red;
         }
         border-color: rgba($red, .5);
       }
-      &-label {
+    }
+    &-label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font: bold 8px/1em $kia;
+      color: #969696;
+    }
+    &-main {
+      padding: 51px 0;
+      position: relative;
+      .checkbox {
         position: absolute;
-        top: 20px;
-        right: 20px;
-        font: bold 8px/1em $kia;
-        color: #969696;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 14px;
+        z-index: 1;
+        transition: all 250ms $easeOutQuint;
+        opacity: 0;
       }
-      &-main {
-        padding: 51px 0;
-        position: relative;
-        .checkbox {
+      .trip-points {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        bottom: 16px;
+        width: 16px;
+        pointer-events: none;
+        user-select: none;
+        &:after {
           position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 14px;
-          z-index: 1;
+          content: "";
+          display: block;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background: #000;
+          left: 50%;
+          transform: translateX(-50%);
           transition: all 250ms $easeOutQuint;
-          opacity: 0;
         }
-        .trip-points {
+        > span {
+          transition: all 250ms $easeOutQuint;
+          z-index: 1;
           position: absolute;
-          left: 16px;
-          top: 16px;
-          bottom: 16px;
-          width: 16px;
-          pointer-events: none;
-          &:after {
-            position: absolute;
-            content: "";
-            display: block;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background: #000;
-            left: 50%;
-            transform: translateX(-50%);
+          top: 0;
+          left: 0;
+          background: #000;
+          color: $white;
+          text-align: center;
+          width: 17px;
+          height: 17px;
+          font: bold 11px/17px $sans;
+          border-radius: 100%;
+          &.merge {
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #FFF;
+            width: 19px;
+            height: 19px;
+            left: -1px;
             transition: all 250ms $easeOutQuint;
-          }
-          > span {
-            transition: all 250ms $easeOutQuint;
-            z-index: 1;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #000;
-            color: $white;
-            text-align: center;
-            width: 17px;
-            height: 17px;
-            font: bold 11px/17px $sans;
-            border-radius: 100%;
-            &.merge {
-              top: 50%;
-              transform: translateY(-50%);
-              border: 1px solid #FFF;
-              width: 19px;
-              height: 19px;
-              left: -1px;
-              transition: all 250ms $easeOutQuint;
-              opacity: 0;
-              svg {
-                width: 9px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-              }
-            }
-            &:last-child {
-              top: auto;
-              bottom: 0;
-            }
-            em {
+            opacity: 0;
+            svg {
+              width: 9px;
               position: absolute;
-              left: 100%;
-              white-space: nowrap;
-              color: #000;
-              font: bold 10px/1em $kia;
               top: 50%;
-              transform: translateY(-50%);
-              margin-left: 13px;
-              letter-spacing: .4px;
+              left: 50%;
+              transform: translate(-50%, -50%);
             }
           }
-        }
-        .trip-data {
-          width: 320px;
-          margin: 0 auto;
-          strong {
-            display: block;
-            font: bold 16px/1em $kia;
-            span {
-              font-size: 12px;
-            }
+          &:last-child {
+            top: auto;
+            bottom: 0;
           }
           em {
-            display: block;
+            position: absolute;
+            left: 100%;
+            white-space: nowrap;
+            color: #000;
             font: bold 10px/1em $kia;
-            letter-spacing: .1px;
-            text-transform: uppercase;
-            color: #969696;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 13px;
+            letter-spacing: .4px;
           }
         }
-      }
-    }
-    .trip-meta {
-      border-top: solid 1px #d4d4d4;
-      padding: 23px 30px 21px;
-      .trip-alerts {
-        max-width: 340px;
-        margin: 0 auto 16px;
-        i {
-          display: inline-block;
-          width: 18px;
-          height: 18px;
-          vertical-align: top;
-          position: relative;
-          top: 2px;
-          margin-right: 5px;
+        @media (max-width: $screen-xs-max) {
+          left: 10px;
         }
-        span {
-          display: inline-block;
-          vertical-align: top;
+      }
+      .trip-data {
+        width: 320px;
+        margin: 0 auto;
+        @media (max-width: $screen-xs-max) {
+          width: 100%;
+          padding: 0 0px 0 60px;
+          .row {
+            > * {
+              padding: 0;
+              &:nth-child(2) {
+                position: relative;
+                left: -20px;
+              }
+            }
+          }
         }
         strong {
           display: block;
-          font: 600 19px/1em $kia;
-          margin-bottom: 3px;
+          font: bold 16px/1em $kia;
+          span {
+            font-size: 12px;
+          }
         }
         em {
           display: block;
-          width: 65px;
-          font: bold 10px $kia;
-          letter-spacing: 1px;
-          color: #969696;
+          font: bold 10px/1em $kia;
+          letter-spacing: .1px;
           text-transform: uppercase;
-        }
-      }
-      .radio-toggle {
-        span {
-          height: 30px;
-          line-height: 30px;
+          color: #969696;
         }
       }
     }
-    .trip-tags {
-      border-top: solid 1px #d4d4d4;
-      padding: 20px 0 15px;
-      line-height: 1em;
-      padding-left: 60px;
+  }
+  @media (max-width: $screen-xs-max) {
+    .trips-list {
+      .trip-meta {
+        display: none;
+      }
+      .trip-tags {
+        display: none;
+      }
+    }
+  }
+  .trip-meta {
+    border-top: solid 1px #d4d4d4;
+    padding: 23px 30px 21px;
+    .trip-alerts {
+      max-width: 340px;
+      margin: 0 auto 16px;
+      i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
+      }
+      span {
+        display: inline-block;
+        vertical-align: top;
+      }
+      strong {
+        display: block;
+        font: 600 19px/1em $kia;
+        margin-bottom: 3px;
+      }
+      em {
+        display: block;
+        width: 65px;
+        font: bold 10px $kia;
+        letter-spacing: 1px;
+        color: #969696;
+        text-transform: uppercase;
+      }
+    }
+    .radio-toggle {
+      span {
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+  .trip-tags {
+    border-top: solid 1px #d4d4d4;
+    padding: 20px 0 15px;
+    line-height: 1em;
+    padding-left: 60px;
+    position: relative;
+    font-size: 0;
+    padding-right: 85px;
+    &.focused {
+      em {
+        opacity: 1;
+      }
+    }
+    > strong {
+      position: absolute;
+      left: 18px;
+      font: bold 10px/1em $kia;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+    }
+    > em {
+      position: absolute;
+      bottom: 25px;
+      display: block;
+      font: italic 11px/1em $sans;
+      color: #9da0a4;
+      right: 30px;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 250ms $easeOutQuint;
+    }
+    .badge {
+      background: #000;
+      height: 21px;
+      font: 600 11px/21px $sans;
+      letter-spacing: 1.1px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      min-width: 21px;
+      cursor: pointer;
       position: relative;
-      font-size: 0;
-      padding-right: 85px;
-      &.focused {
+      text-transform: capitalize;
+      padding: 0 11px 0 0;
+      text-align: left;
+      transition: all 250ms $easeOutQuint;
+      em {
+        font-style: normal;
+        pointer-events: none;
+        transition: all 250ms $easeOutQuint;
+        position: relative;
+        display: block;
+        opacity: 0;
+        width: 21px;
+        height: 21px;
+        line-height: 19px;
+        position: absolute;
+        right: 0;
+        font-size: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        border-radius: 100%;
+      }
+      span {
+        // transition: all 250ms $easeOutQuint;
+        font: 600 11px/21px $sans;
+        letter-spacing: 1.1px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        height: 21px;
+        text-transform: capitalize;
+        padding: 0 0 0 11px;
+      }
+      input {
+        position: absolute;
+        display: block;
+        -webkit-appearance: none;
+        background: none;
+        width: 100%;
+        height: 21px;
+        border-radius: 100%;
+        border: none;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+      }
+      &.remove {
+        display: none;
+      }
+      &.add {
+        width: 21px;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0px;
+        transition: all 250ms $easeOutQuint;
+        &:not(.adding) {
+          text-align: center;
+          padding-right: 0px;
+          letter-spacing: 0;
+          span {
+            padding: 0;
+          }
+          em {
+            margin: 0 !important;
+          }
+        }
         em {
           opacity: 1;
         }
       }
-      > strong {
-        position: absolute;
-        left: 18px;
-        font: bold 10px/1em $kia;
-        color: #000;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block;
-      }
-      > em {
-        position: absolute;
-        bottom: 25px;
-        display: block;
-        font: italic 11px/1em $sans;
-        color: #9da0a4;
-        right: 30px;
-        pointer-events: none;
-        opacity: 0;
-        transition: all 250ms $easeOutQuint;
-      }
-      .badge {
-        background: #000;
-        height: 21px;
-        font: 600 11px/21px $sans;
-        letter-spacing: 1.1px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        min-width: 21px;
-        cursor: pointer;
-        position: relative;
-        text-transform: capitalize;
-        padding: 0 11px 0 0;
-        text-align: left;
-        transition: all 250ms $easeOutQuint;
+      &.adding {
+        width: auto !important;
+        padding-right: 25px;
         em {
-          font-style: normal;
-          pointer-events: none;
-          transition: all 250ms $easeOutQuint;
-          position: relative;
-          display: block;
-          opacity: 0;
-          width: 21px;
-          height: 21px;
-          line-height: 19px;
-          position: absolute;
-          right: 0;
-          font-size: 18px;
-          top: 50%;
-          transform: translateY(-50%);
-          text-align: center;
-          border-radius: 100%;
+          transform: translateY(-50%) rotate(45deg);
+          pointer-events: all;
+          opacity: 1;
         }
         span {
-          // transition: all 250ms $easeOutQuint;
-          font: 600 11px/21px $sans;
-          letter-spacing: 1.1px;
-          display: inline-block;
-          vertical-align: top;
-          position: relative;
-          height: 21px;
-          text-transform: capitalize;
-          padding: 0 0 0 11px;
-        }
-        input {
-          position: absolute;
-          display: block;
-          -webkit-appearance: none;
-          background: none;
-          width: 100%;
-          height: 21px;
-          border-radius: 100%;
-          border: none;
-          outline: none;
-          opacity: 0;
-          cursor: pointer;
-          top: 0;
-          left: 0;
-        }
-        &.remove {
-          display: none;
-        }
-        &.add {
-          width: 21px;
-          text-align: center;
-          font-size: 18px;
-          letter-spacing: 0px;
-          transition: all 250ms $easeOutQuint;
-          &:not(.adding) {
-            text-align: center;
-            padding-right: 0px;
-            letter-spacing: 0;
-            span {
-              padding: 0;
-            }
-            em {
-              margin: 0 !important;
-            }
-          }
-          em {
-            opacity: 1;
-          }
-        }
-        &.adding {
-          width: auto !important;
-          padding-right: 25px;
-          em {
-            transform: translateY(-50%) rotate(45deg);
-            pointer-events: all;
-            opacity: 1;
-          }
-          span {
-            // padding-right: 0;
-            &:after {
-              content: "";
-              position: absolute;
-              right: -3px;
-              height: 75%;
-              top: 50%;
-              transform: translateY(-50%);
-              opacity: .5;
-              width: 1px;
-              background: $white;
-              animation: blink-animation 1s steps(5, start) infinite;
-              -webkit-animation: blink-animation 1s steps(5, start) infinite;
-            }
+          // padding-right: 0;
+          &:after {
+            content: "";
+            position: absolute;
+            right: -3px;
+            height: 75%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: .5;
+            width: 1px;
+            background: $white;
+            animation: blink-animation 1s steps(5, start) infinite;
+            -webkit-animation: blink-animation 1s steps(5, start) infinite;
           }
         }
       }
@@ -617,7 +709,7 @@
   transition: all 350ms $easeOutQuint;
   cursor: pointer;
   &:hover {
-    background: rgba($black, .9);
+    background: rgba($black, .65);
   }
   em {
     display: block;
@@ -625,6 +717,15 @@
     letter-spacing: .7px;
     text-transform: uppercase;
     padding-left: 2px;
+  }
+  @media (max-width: $screen-xs-max) {
+    bottom: 50px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    em {
+      display: none;
+    }
   }
 }
 
@@ -663,6 +764,79 @@
       .checkbox {
         opacity: 1;
       }
+    }
+  }
+}
+
+.edit-tablet {
+  color: $red;
+  font: bold 11px/40px $kia;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+    margin-right: 2px;
+  }
+}
+
+.mobile-nav-options {
+  .icon-export {
+    svg {
+      width: 16px;
+      height: 18px;
+    }
+  }
+  .stop-edit {
+    font: bold 11px $kia;
+    color: $red;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    display: none !important;
+  }
+}
+.editing {
+  .mobile-nav-options {
+    li {
+      display: none !important;
+      &.stop-edit {
+        display: inline-block !important;
+      }
+    }
+  }
+}
+
+.mobile-toolbar {
+  font: 11px/43px $sans;
+  letter-spacing: .5px;
+  color: #2f2f2f;
+  white-space: nowrap !important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  > span {
+    display: inline-block;
+    margin-right: 21px;
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      margin-right: 3px;
+    }
+  }
+  .fade-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: 0;
+    width: 70px;
+    background-image: linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #FFFFFF 72%);
+    i {
+      right: 10px;
     }
   }
 }
