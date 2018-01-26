@@ -116,6 +116,22 @@ $(document).ready(function () {
               tab_id = $this.find('.tab-pane').first().attr('id');
           $('a[href="#' + tab_id + '"]').tab('show');
         });
+      },
+      _go_to_setting: function _go_to_setting() {
+        console.log('run');
+        var $this = $(this),
+            settings = $this.data('go-to-settings');
+        setTimeout(function () {
+          $('#settings .carousel-inner').removeClass('overflow-visible');
+          $('#settings .carousel').carousel(1);
+          setTimeout(function () {
+            var $form = $('.modal-notification-settings form'),
+                $settings = $('#' + settings);
+            $form.scrollTop(0);
+            var offset = $settings.offset().top - $form.offset().top;
+            $form.scrollTop(offset);
+          }, 250);
+        }, 350);
       }
     }
   };
@@ -129,6 +145,7 @@ $(document).ready(function () {
   window.modals.elements.modal.on('shown.bs.modal', window.modals.methods._overflow_hidden);
   window.modals.elements.modal.on('hidden.bs.modal', window.modals.methods._reset);
   window.modals.elements.switch_modals.on('click', window.modals.methods._switch_modals);
+  $('[data-go-to-settings]').on('click', window.modals.methods._go_to_setting);
   // window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
   // window.modals.elements.html.on('touchmove', window.modals.methods._stop_scroll);
 

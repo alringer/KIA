@@ -5489,6 +5489,13 @@
 		"oAP": "\/build\/views\/partials\/modals\/schedules\/climate-schedule.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/modals\/settings.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/modals\/settings.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/my-vehicles-modals.kit": {
 		"cB": 0,
 		"ft": 2048,
