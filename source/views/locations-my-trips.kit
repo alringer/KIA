@@ -427,13 +427,13 @@
                   </div><!-- /.trip-alerts -->
                   <div class="radio-toggle milestone-status">
                     <label>
-                      <input type="radio" name="trip-type-3" value="0" checked="">
+                      <input type="radio" name="trip-type-2" value="0" checked="">
                       <span>
                         Personal
                       </span>
                     </label>
                     <label>
-                      <input type="radio" name="trip-type-3" value="0">
+                      <input type="radio" name="trip-type-2" value="0">
                       <span>
                         Business
                       </span>
@@ -1117,33 +1117,6 @@
       </div><!-- /.locations-map -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
-  <script type="text/javascript">
-    $(function() {
-
-        var start = moment().subtract(29, 'days');
-        var end = moment();
-
-        function cb(start, end) {
-            $('#reportrange span').html(start.format('MMM DD, YYYY') + ' - ' + end.format('MMM DD, YYYY'));
-        }
-
-        $('#reportrange').daterangepicker({
-            startDate: start,
-            endDate: end,
-            ranges: {
-               'Today': [moment(), moment()],
-               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-               'This Month': [moment().startOf('month'), moment().endOf('month')],
-               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-            },
-        }, cb);
-
-        cb(start, end);
-
-    });
-</script>
 <div class="modal fade modal-trip-details" id="trip-details" tabindex="-1" role="dialog" aria-labelledby="filters" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -1312,12 +1285,11 @@
                   <li class="trips-date">
                     <label>
                       <strong>Date Range</strong>
-                      <select class="selectpicker small">
-                        <option value="1">All</option>
-                        <option value="1" selected>Personal</option>
-                        <option value="1">Business</option>
-                      </select>
                     </label>
+                    <div id="reportrange1" class="pull-right">
+                        <i class="fa fa-calendar"></i>&nbsp;
+                        <span></span>
+                    </div>
                   </li>
                 </ul>
                 <div class="form-actions">
@@ -1447,7 +1419,34 @@
 </div><!-- /.modal -->
 <script type="text/javascript">
     $(window).on('load',function(){
-      // $('#trip-details').modal('show');
+      // $('#filters').modal('show');
     });
+</script>
+<script type="text/javascript">
+  $(function() {
+
+      var start = moment().subtract(29, 'days');
+      var end = moment();
+
+      function cb(start, end) {
+          $('#reportrange span').html(start.format('MMM DD, YYYY') + ' - ' + end.format('MMM DD, YYYY'));
+      }
+
+      $('#reportrange').daterangepicker({
+          startDate: start,
+          endDate: end,
+          ranges: {
+             'Today': [moment(), moment()],
+             'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+             'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+             'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+             'This Month': [moment().startOf('month'), moment().endOf('month')],
+             'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+      }, cb);
+
+      cb(start, end);
+
+  });
 </script>
 <!-- @import "partials/footer.kit" -->

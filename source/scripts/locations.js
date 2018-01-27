@@ -194,7 +194,7 @@ $(document).ready(() => {
           setTimeout(() => {
             window.loading.methods._loading_stop();
             $pin.removeClass('pin-refreshing');
-            $pin.find('timestamp').text('Last updated just now');
+            $pin.find('.timestamp').text('Last updated just now');
           }, 1500);
         }
       }

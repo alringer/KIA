@@ -11,6 +11,31 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 6.0.0
+* KK-312 As a user I need to see my Awards
+* KK-319 As a user I need to see my vehicles location on a map
+* KK-320 As a user I need to be able to search for POIs
+* KK-322 As a user I need to see my saved POI's
+* KK-323 As a user I need to see POI's and Charge Stations on the map
+* KK-324 As user I need to see POI details
+* KK-325 As a user I need to be able to filter the charge stations that appear on the map
+* KK-328 As a user I need to be able to search for specific tags on My Trips
+* KK-329 As a user I need to be able to filter My Trips
+* KK-330 As a user I need to be able to view the details of a specific trip
+* KK-331 As a user I need to be able to export my trips
+* KK-334 As a user I need to be able to delete a trip
+* KK-335 As a user I need to be able to merge and unmerge trips
+* KK-163 As a user I need to see the Account Settings modal
+* KK-165 As a user I need to change my account password
+* KK-164 As a user I need to see the Notification Settings modal
+* KK-167 As a user I need make notifications settings for a specific vehicle
+* KK-166 As a user I need to verify my phone number
+* KK-169 As a user I need to apply notification settings to other vehicles
+* KK-168 As a user I need to choose a vehicle to copy settings from
+* KK-369 As a user I need to be able to access my Climate Notification Settings
+* KK-292 As a user I need to access my notification settings
+* KOPE-159 [Remote > Security] Click Gear Icon Performs no Action
+===
 # V - 5.0.6
 * KOPE-326 Clicking on vehicle's driver or front passenger seats moves vehicle up and covers seat control
 * Adding 10 min increment to "Create A Curfew Alert" modal for verification

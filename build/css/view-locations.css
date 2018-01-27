@@ -36,7 +36,8 @@
   margin-bottom: -150px;
   margin-top: 1px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media (max-width: 991px) {
     .locations-map {
       height: calc(100vh - 194px); } }
