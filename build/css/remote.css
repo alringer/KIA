@@ -1705,7 +1705,8 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
   .remote-security .remote-body .remote-vehicle .remote-vehicle-base,
   .remote-security .remote-body .remote-vehicle .remote-vehicle-body,
   .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer {
-    position: absolute; }
+    position: absolute;
+    width: 100%; }
   .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer {
     width: 100%; }
     .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top {
@@ -1716,7 +1717,8 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
       .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-front-passenger,
       .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-back-passenger,
       .remote-security .remote-body .remote-vehicle .remote-vehicle-options-layer .remote-vehicle-top .vehicle-trunk {
-        position: absolute; }
+        position: absolute;
+        width: 100%; }
 
 .remote-vehicle-base .all-doors-closed {
   display: block; }
