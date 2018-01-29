@@ -2816,7 +2816,16 @@ ul.issues-list {
           max-width: 200px;
           padding: 0 20px; } }
   .modal.settings .modal-dialog .modal-content .modal-body .carousel .item {
-    padding: 0 40px 38px; }
+    padding: 0; }
+    .modal.settings .modal-dialog .modal-content .modal-body .carousel .item > div form {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 100px;
+      margin-bottom: 0px; }
+      @media (max-width: 767px) {
+        .modal.settings .modal-dialog .modal-content .modal-body .carousel .item > div form {
+          padding-left: 0px;
+          padding-right: 0px; } }
     @media (max-width: 767px) {
       .modal.settings .modal-dialog .modal-content .modal-body .carousel .item {
         padding-left: 20px;
@@ -2934,7 +2943,13 @@ ul.issues-list {
   .modal .modal-verify-number .modal-title + p {
     font: 14px "Source Sans Pro", sans-serif;
     letter-spacing: .6px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    @media (max-width: 767px) {
+      .modal .modal-verify-number .modal-title + p {
+        padding-left: 0px;
+        padding-right: 0px; } }
 
 .modal .modal-verify-number .modal-actions {
   border-top: none !important; }
@@ -3068,7 +3083,13 @@ ul.issues-list {
 .modal-notification-settings-apply-to .modal-title {
   margin-bottom: 45px !important; }
   .modal-notification-settings-apply-to .modal-title + p {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    @media (max-width: 767px) {
+      .modal-notification-settings-apply-to .modal-title + p {
+        padding-left: 0px;
+        padding-right: 0px; } }
 
 .modal-notification-settings-apply-to .modal-options {
   padding-top: 46px;

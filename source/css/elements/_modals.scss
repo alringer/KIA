@@ -3162,7 +3162,19 @@ ul.issues-list {
         }
         .carousel {
           .item {
-            padding: 0 40px 38px;
+            padding: 0;
+            > div {
+              form {
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 100px;
+                margin-bottom: 0px;
+                @media (max-width: $screen-xs-max) {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+              }
+            }
             @media (max-width: $screen-xs-max) {
               padding-left: 20px;
               padding-right: 20px;
@@ -3316,6 +3328,12 @@ ul.issues-list {
         font: 14px $sans;
         letter-spacing: .6px;
         margin-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        @media (max-width: $screen-xs-max) {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
       }
     }
     .modal-actions {
@@ -3485,6 +3503,12 @@ ul.issues-list {
     margin-bottom: 45px !important;
     + p {
       margin-bottom: 0px;
+      padding-left: 40px;
+      padding-right: 40px;
+      @media (max-width: $screen-xs-max) {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
   .modal-options {
