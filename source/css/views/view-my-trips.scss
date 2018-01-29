@@ -1029,6 +1029,11 @@ body {
             width: 240px;
             position: relative;
             transform-origin: top left;
+            @media (max-width: 375px) {
+              transform-origin: top left;
+              margin-bottom: -40px;
+              transform: scale(.8);
+            }
           }
           &:before {
             content: "Custom Date Range";

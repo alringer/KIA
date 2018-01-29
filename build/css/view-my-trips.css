@@ -847,7 +847,13 @@ body .daterangepicker {
           body .daterangepicker.show-calendar .calendar table {
             width: 240px;
             position: relative;
-            transform-origin: top left; }
+            transform-origin: top left; } }
+        @media (max-width: 767px) and (max-width: 375px) {
+          body .daterangepicker.show-calendar .calendar table {
+            transform-origin: top left;
+            margin-bottom: -40px;
+            transform: scale(0.8); } }
+  @media (max-width: 767px) {
           body .daterangepicker.show-calendar .calendar:before {
             content: "Custom Date Range";
             display: block;
