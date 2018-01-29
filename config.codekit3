@@ -7,7 +7,7 @@
 		"uuidString": "35F6608E-6DA5-45F2-87E1-7BF9B91317FF"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -5216,6 +5216,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/vendors\/touch-punch\/jquery.ui.touch-punch.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/vendors\/touch-punch\/jquery.ui.touch-punch.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/views\/account-settings.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -6294,6 +6304,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,

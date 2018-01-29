@@ -788,9 +788,82 @@
     bottom: 12px;
     left: 12px; }
 
+.modal-filters .form-fields .daterange {
+  font: 14px "Source Sans Pro", sans-serif;
+  letter-spacing: .6px;
+  text-align: left;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: solid 1px #b1b5b8;
+  border-radius: 2px;
+  padding-left: 14px;
+  color: #2f2f2f;
+  margin-bottom: 40px; }
+  .modal-filters .form-fields .daterange i {
+    color: #8d9094;
+    margin-right: 4px; }
+
+body .daterangepicker.dropdown-menu {
+  z-index: 1000000; }
+
 body .daterangepicker {
   padding: 0;
   margin: 0; }
+  @media (max-width: 767px) {
+    body .daterangepicker {
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100vh !important;
+      box-shadow: none !important;
+      border-radius: 0px; }
+      body .daterangepicker:after {
+        display: none; }
+      body .daterangepicker.show-calendar {
+        top: 0 !important;
+        width: 100%;
+        left: 0 !important;
+        height: 100vh;
+        overflow: auto; }
+        body .daterangepicker.show-calendar .daterangepicker_input {
+          display: none; }
+        body .daterangepicker.show-calendar .ranges {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding-top: 50px;
+          text-align: right; }
+          body .daterangepicker.show-calendar .ranges li {
+            padding: 0 10px 0; }
+          body .daterangepicker.show-calendar .ranges .range_inputs {
+            padding-right: 10px; }
+            body .daterangepicker.show-calendar .ranges .range_inputs > * {
+              display: block;
+              width: 100% !important;
+              margin-bottom: 10px; }
+        body .daterangepicker.show-calendar .calendar {
+          padding-top: 40px; }
+          body .daterangepicker.show-calendar .calendar table {
+            width: 240px;
+            position: relative;
+            transform-origin: top left; }
+          body .daterangepicker.show-calendar .calendar:before {
+            content: "Custom Date Range";
+            display: block;
+            font: 500 14px "KIA", sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 10px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%); }
+          body .daterangepicker.show-calendar .calendar + .calendar {
+            padding-top: 0px; }
+            body .daterangepicker.show-calendar .calendar + .calendar:before {
+              display: none; } }
   body .daterangepicker .ranges {
     padding: 0;
     margin: 0;
@@ -808,8 +881,9 @@ body .daterangepicker {
         border: none;
         transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
         border-radius: 0px; }
-        body .daterangepicker .ranges ul li:hover {
-          background: #f4f4f4; }
+        @media (min-width: 767px) {
+          body .daterangepicker .ranges ul li:hover {
+            background: #f4f4f4; } }
         body .daterangepicker .ranges ul li.active {
           background: #efefef; }
     body .daterangepicker .ranges .range_inputs {
