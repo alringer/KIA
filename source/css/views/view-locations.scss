@@ -1028,6 +1028,9 @@
   overflow: hidden;
   transition: all 250ms $easeOutQuint;
   cursor: pointer;
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
   &:before {
     position: absolute;
     top: 0;
