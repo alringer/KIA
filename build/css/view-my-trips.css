@@ -818,6 +818,11 @@ body .daterangepicker {
       height: 100vh !important;
       box-shadow: none !important;
       border-radius: 0px; }
+      body .daterangepicker .ranges {
+        margin: 0 auto !important;
+        float: none !important; }
+        body .daterangepicker .ranges ul {
+          margin: 0 auto !important; }
       body .daterangepicker:after {
         display: none; }
       body .daterangepicker.show-calendar {
@@ -842,13 +847,29 @@ body .daterangepicker {
               display: block;
               width: 100% !important;
               margin-bottom: 10px; }
+        body .daterangepicker.show-calendar .calendar-table {
+          margin: 0 auto;
+          max-width: 270px;
+          transform: translateX(-80px); } }
+      @media (max-width: 767px) and (max-width: 450px) {
+        body .daterangepicker.show-calendar .calendar-table {
+          transform: translateX(0px); } }
+  @media (max-width: 767px) {
         body .daterangepicker.show-calendar .calendar {
-          padding-top: 40px; }
+          padding-top: 40px;
+          max-width: 100% !important;
+          width: 100% !important;
+          float: none; } }
+      @media (max-width: 767px) and (max-width: 450px) {
+        body .daterangepicker.show-calendar .calendar {
+          padding-right: 120px; } }
+  @media (max-width: 767px) {
           body .daterangepicker.show-calendar .calendar table {
-            width: 240px;
+            width: 100%;
             position: relative;
-            transform-origin: top left; } }
-        @media (max-width: 767px) and (max-width: 375px) {
+            transform-origin: top left;
+            margin: 0 auto !important; } }
+        @media (max-width: 767px) and (max-width: 374px) {
           body .daterangepicker.show-calendar .calendar table {
             transform-origin: top left;
             margin-bottom: -40px;
@@ -887,7 +908,7 @@ body .daterangepicker {
         border: none;
         transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
         border-radius: 0px; }
-        @media (min-width: 767px) {
+        @media (min-width: 991px) {
           body .daterangepicker .ranges ul li:hover {
             background: #f4f4f4; } }
         body .daterangepicker .ranges ul li.active {
@@ -958,7 +979,7 @@ body .daterangepicker {
           top: -2px;
           width: 13px;
           height: 14px; }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .modal-export .modal-dialog .modal-content .export-settings .form-fields .choose-format {
         text-align: center; } }
     .modal-export .modal-dialog .modal-content .export-settings .form-fields .choose-format strong {

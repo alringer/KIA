@@ -992,6 +992,13 @@ body {
       height: 100vh !important;
       box-shadow: none !important;
       border-radius: 0px;
+      .ranges {
+        ul {
+          margin: 0 auto !important;
+        }
+        margin: 0 auto !important;
+        float: none !important;
+      }
       &:after {
         display: none;
       }
@@ -1022,14 +1029,30 @@ body {
             }
           }
         }
+        .calendar-table {
+          margin: 0 auto;
+          max-width: 270px;
+          transform: translateX(-80px);
+          @media (max-width: 450px) {
+            transform: translateX(0px);
+          }
+        }
         .calendar {
           // margin: 0 auto;
           padding-top: 40px;
+          max-width: 100% !important;
+          width: 100% !important;
+          // margin-right: 20px;
+          float: none;
+          @media (max-width: 450px) {
+            padding-right: 120px;
+          }
           table {
-            width: 240px;
+            width: 100%;
             position: relative;
             transform-origin: top left;
-            @media (max-width: 375px) {
+            margin: 0 auto !important;
+            @media (max-width: 374px) {
               transform-origin: top left;
               margin-bottom: -40px;
               transform: scale(.8);
@@ -1074,7 +1097,7 @@ body {
           border: none;
           transition: all 250ms $easeOutQuint;
           border-radius: 0px;
-          @media (min-width: $screen-xs-max) {
+          @media (min-width: $screen-sm-max) {
             &:hover {
               background: lighten(#efefef, 2%);
             }
@@ -1174,7 +1197,7 @@ body {
         }
         .form-fields {
           .choose-format {
-            @media (max-width: $screen-xs-max) {
+            @media (max-width: $screen-sm-max) {
               text-align: center;
             }
             strong {

@@ -175,7 +175,7 @@
                 <li class="trips-date">
                   <label>
                     <strong>Date Range</strong>
-                    <div id="reportrange" class="pull-right">
+                    <div id="reportrange" class="pull-right daterange">
                         <i class="fa fa-calendar"></i>&nbsp;
                         <span></span>
                     </div>
@@ -1419,7 +1419,7 @@
 </div><!-- /.modal -->
 <script type="text/javascript">
     $(window).on('load',function(){
-      // $('#filters').modal('show');
+      $('#filters').modal('show');
     });
 </script>
 <script type="text/javascript">
@@ -1443,6 +1443,7 @@
                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
             },
         }, function(start, end) {
+          console.log('cb')
           $this.find('span').html(start.format('MMM DD, YYYY') + ' - ' + end.format('MMM DD, YYYY'));
         });
       });
