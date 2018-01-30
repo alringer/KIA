@@ -11,7 +11,7 @@
     margin-bottom: 40px;
   }
 </style>
-# V - 6.0.0
+# V - 6.0.1
 * KK-312 As a user I need to see my Awards
 * KK-319 As a user I need to see my vehicles location on a map
 * KK-320 As a user I need to be able to search for POIs
