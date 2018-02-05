@@ -546,6 +546,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-pre-login.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-pre-login.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-registration.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3482,6 +3495,300 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/pre-login\/appt-modal.png": {
+		"ft": 32768,
+		"iS": 30461,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/appt-modal.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/awards\/1.png": {
+		"ft": 32768,
+		"iS": 14784,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/awards\/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/awards\/2.png": {
+		"ft": 32768,
+		"iS": 14576,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/awards\/2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/awards\/3.png": {
+		"ft": 32768,
+		"iS": 10101,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/awards\/3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/awards\/4.png": {
+		"ft": 32768,
+		"iS": 13466,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/awards\/4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/battery.png": {
+		"ft": 32768,
+		"iS": 38766,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/battery.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/btn_app_store.png": {
+		"ft": 32768,
+		"iS": 4864,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/btn_app_store.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/btn_google.png": {
+		"ft": 32768,
+		"iS": 5634,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/btn_google.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/climate.png": {
+		"ft": 32768,
+		"iS": 45401,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/climate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/grunge.png": {
+		"ft": 32768,
+		"iS": 1073125,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/grunge.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/grunge_mobile.png": {
+		"ft": 32768,
+		"iS": 381159,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/grunge_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/icon_account.png": {
+		"ft": 32768,
+		"iS": 4208,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/icon_account.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/icon_account.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/pre-login\/icon_account.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/pre-login\/icon_sign_in.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/pre-login\/icon_sign_in.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/pre-login\/kia_uvo_logos.png": {
+		"ft": 32768,
+		"iS": 5885,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/kia_uvo_logos.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/maintenance-history-dtop.png": {
+		"ft": 32768,
+		"iS": 104452,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/maintenance-history-dtop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/maintenance-history-mobile.png": {
+		"ft": 32768,
+		"iS": 58951,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/maintenance-history-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/map-dtop.png": {
+		"ft": 32768,
+		"iS": 179521,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/map-dtop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/map-mobile.png": {
+		"ft": 32768,
+		"iS": 64916,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/map-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/niro-image.jpg": {
+		"ft": 16384,
+		"iS": 211384,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/niro-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/radio-mobile.png": {
+		"ft": 32768,
+		"iS": 35779,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/radio-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/radio.png": {
+		"ft": 32768,
+		"iS": 77961,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/radio.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/security.png": {
+		"ft": 32768,
+		"iS": 196063,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/security.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/store-mobile.png": {
+		"ft": 32768,
+		"iS": 83076,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/store-mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/store.png": {
+		"ft": 32768,
+		"iS": 128725,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/store.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/ui-form.png": {
+		"ft": 32768,
+		"iS": 35110,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/ui-form.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/uvo.png": {
+		"ft": 32768,
+		"iS": 1201,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/uvo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/remote-vehicle\/img_optima_base.png": {
 		"ft": 32768,
 		"iS": 444843,
@@ -3914,6 +4221,16 @@
 		"oA": 0,
 		"oAP": "\/build\/scripts\/overview.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/pre-login.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/pre-login.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
@@ -5595,6 +5912,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav.html",
+		"oF": 0
+		},
+	"\/source\/views\/pre-login.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/pre-login.html",
 		"oF": 0
 		},
 	"\/source\/views\/registration-1.kit": {

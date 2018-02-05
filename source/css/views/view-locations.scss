@@ -57,8 +57,26 @@
               .carousel-inner   {
                 height: calc(100vh - 383px) !important;
                 overflow: auto;
+                -ms-overflow-style: -ms-autohiding-scrollbar;
+                -webkit-overflow-scrolling: touch;
+                .item {
+                  height: calc(100vh - 383px) !important;
+                }
               }
             }
+          }
+        }
+      }
+    }
+    @media (max-height: 700px) AND (min-width: $screen-xs-max) {
+      #locations-utility-carousel {
+        .carousel-inner   {
+          height: calc(100vh - 320px) !important;
+          overflow: auto;
+          -ms-overflow-style: -ms-autohiding-scrollbar;
+          -webkit-overflow-scrolling: touch;
+          .item {
+            height: calc(100vh - 320px) !important;
           }
         }
       }
@@ -92,6 +110,9 @@
           transition: all 250ms $easeOutQuint;
           opacity: 0;
           cursor: pointer;
+          @media (max-width: $screen-xs-max) {
+            right: 20px;
+          }
         }
         input[type="text"] {
           -webkit-appearance: none;
@@ -104,6 +125,9 @@
           outline: none;
           background: none;
           padding-right: 30px;
+          @media (max-width: $screen-xs-max) {
+            padding-right: 50px;
+          }
           &.has-text {
             + .icon-cancel {
               opacity: 1;
@@ -1265,9 +1289,9 @@
   z-index: 1;
   @media (max-width: $screen-xs-max) {
     left: 50%;
-    bottom: 8px;
+    bottom: 60px;
     transform: translateX(-50%);
-    // width: 305px;
+    position: fixed;
   }
   ul {
     margin: 0;
