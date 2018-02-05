@@ -31,9 +31,13 @@
   to {
     transform: rotate(360deg); } }
 
+body {
+  padding-bottom: 0 !important; }
+  body footer {
+    display: none; }
+
 .locations-map {
-  height: calc(100vh - 215px);
-  margin-bottom: -150px;
+  height: calc(100vh - 125px);
   margin-top: 1px;
   width: 100%;
   position: relative;
