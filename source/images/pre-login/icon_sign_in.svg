@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="71px" viewBox="0 0 51 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>sign_in_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pre_Login-|-Tablet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-538.000000, -8738.000000)">
+        <g id="CREATE-/-SIGN-UP" transform="translate(20.000000, 8699.000000)">
+            <g id="Sign-In" transform="translate(378.000000, 0.000000)">
+                <g id="sign_in_icon" transform="translate(165.500000, 73.500000) scale(-1, 1) translate(-165.500000, -73.500000) translate(142.000000, 38.000000)">
+                    <path d="M45.1111111,23.5555556 L45.1111111,70.2222222 C32.2244669,70.2222222 21.7777778,59.7755331 21.7777778,46.8888889 C21.7777778,34.0022447 32.2244669,23.5555556 45.1111111,23.5555556 Z" id="Oval-11-Copy-2" fill="#212121" transform="translate(33.444444, 46.888889) scale(-1, 1) translate(-33.444444, -46.888889) "></path>
+                    <path d="M25.1111111,23.5555556 L25.1111111,70.2222222 C12.2244669,70.2222222 1.77777778,59.7755331 1.77777778,46.8888889 C1.77777778,34.0022447 12.2244669,23.5555556 25.1111111,23.5555556 Z" id="Oval-11-Copy-3" fill="#212121"></path>
+                    <circle id="Oval-11-Copy" stroke="#414141" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="23.3333333" cy="46.6666667" r="23.3333333"></circle>
+                    <path d="M23.3333333,42 L23.3333333,54.4444444" id="Line" stroke="#808080" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                    <path d="M21.7777778,11.6666667 C21.7777778,7.80067342 24.8980024,4.66666667 28.7882783,4.66666667 L36.545055,4.66666667 C40.4168476,4.66666667 43.5555556,7.80853994 43.5555556,11.6666667 L43.5555556,18.6666667" id="Rectangle-24" stroke="#414141" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(32.666667, 11.666667) rotate(-334.000000) translate(-32.666667, -11.666667) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

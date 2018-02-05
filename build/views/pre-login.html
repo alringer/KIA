@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+<html ontouchstart="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta name="format-detection" content="telephone=no">
+
+
+  <!-- GLOBAL VENDOR CSS -->
+  <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/css/global.css?v=3.1.0" />
+  <link rel="stylesheet" href="/css/alerts.css?v=3.1.0" />
+  
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/view-pre-login.css">
+  <!-- GLOBAL VENDOR JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- GLOBAL JS -->
+  <script type="text/javascript" src="/scripts/modals.js"></script>
+  <script type="text/javascript" src="/scripts/forms.js"></script>
+  <script type="text/javascript" src="/scripts/loading.js"></script>
+  <script type="text/javascript" src="/scripts/nav.js"></script>
+  <script type="text/javascript" src="/scripts/alerts.js"></script>
+  <script type="text/javascript" src="/scripts/account-settings.js"></script>
+  
+
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/login.js"></script>
+  <script type="text/javascript" src="/scripts/pre-login.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <title>KIA</title>
+  </head>
+<body ontouchstart="">
+
+
+<!-- <div style="height:100vh;line-height:100vh;text-align:center;">
+  <button type="button" class="button" data-toggle="modal" data-target="#login">
+    Login
+  </button>
+</div> -->
+<div class="view-pre-login">
+  <header>
+    <nav>
+      <div class="contain">
+        <div class="pull-left">
+          <a href="/" class="logo white">KIA</a>
+        </div>
+        <div class="pull-right">
+          <ul class="nav-items">
+            <li>
+              <a href="#">
+                UVO Availability
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Explore
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Sign In
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button outline white transparent less-padding">Create Account</a>
+            </li>
+          </ul>
+          <span class="hidden-sm hidden-md hidden-lg">
+            SIGN IN / CREATE ACCOUNT
+          </span>
+        </div><!-- /.float-right -->
+      </div><!-- /.contaon  -->
+    </nav>
+    <video preload="auto" autoplay="autoplay" loop="true" playsinline>
+      <source type="video/mp4" src="https://www.kia.com/us/k3/content/media/mediabin/content_pages/owners/Clip_00_1600x1000_FINAL_new.mp4">
+      <source type="video/webm" src="https://www.kia.com/us/k3/content/media/mediabin/content_pages/owners/Clip_00_1600x1000_FINAL_new-2500kv.webm">
+      <source type="video/ogg" src="https://www.kia.com/us/k3/content/media/mediabin/content_pages/owners/Clip_00_1600x1000_FINAL_new.ogg">
+    </video>
+    <div class="header-content">
+      <div class="contain">
+        <div class="header-content-inner">
+          <h1>Get The Most Out of Your Kia</h1>
+          <p>The owners portal is <em>the</em> destination for anything you need for your vehicle. Scroll and discover all of the exciting features available to all Kia owners.</p>
+          <div class="header-cta">
+            <a href="#" class="button large">
+              Craete Account
+            </a>
+            <p>
+              Already have an account?
+              <a href="#">Sign In</a>
+            </p>
+          </div>
+        </div><!-- /.header-content-inner -->
+      </div><!-- /.contain -->
+    </div><!-- /.header-content -->
+  </header>
+  <div class="page-content">
+    <div class="contain">
+      <section class="intro-panels">
+        <div class="panel-row">
+          <div class="panel">
+            <strong>Kia owners portal</strong>
+            <h2>Welcome Kia Owners!</h2>
+            <p>The Owners Portal is your one-stop-shop for all things Kia. When you sign up, you can book dealership appointments, see maintenance milestones, make car payments, view owners manuals and more! Log in anytime from your desktop or mobile device and get the info you need fast. At Kia, we are commited to providing the best experience for you both on and off the road. Create an account today and thank you for being a loyal Kia customer!</p>
+          </div><!-- /.panel -->
+          <div class="image">
+            <img src="/images/pre-login/niro-image.jpg" alt="Niro">
+          </div>
+        </div><!-- /.panel-row -->
+        <div class="panel-row map">
+          <div class="text">
+            <h2>There for you. Always.</h2>
+            <p>We know that everyone needs help sometimes. Thats why we’ve made it easy to choose your preferred dealership and quickly book a service appointment any time you find yourself in a bind!</p>
+          </div>
+          <div class="panel">
+            <img src="/images/pre-login/appt-modal.png" alt="Make an Appointment" />
+          </div><!-- /.panel -->
+        </div><!-- /.panel-row -->
+      </section><!-- /.intro-panels -->
+      <section class="maintenance">
+        <div class="text pull-left">
+          <strong>Maintenance</strong>
+          <h2>Keep your vehicle in good health</h2>
+          <p>Get notified about upcoming maintenance milestones, vehicle diagnostic issues, and recalls and easily schedule appointments with your preferred dealer.</p>
+        </div><!-- /.text -->
+        <div class="status pull-right">
+          <div class="status-header hidden-sm hidden-md hidden-lg">
+            <strong>1,415 mi.</strong>
+            <em>until Maintenance Milestone </em>
+          </div>
+          <div class="progress-bar">
+            <div class="bar">
+              <div class="tip hidden-xs">
+                <span>Milestone is approaching!</span>
+                <span>Request Appointment</span>
+              </div>
+            </div>
+          </div>
+          <div class="pull-left">
+            <strong>28,985 mi.</strong>
+            <em class="hidden-xs">Current Mileage</em>
+          </div>
+          <div class="pull-right">
+            <strong>30,000 mi. <span>or</span> 6 mo.</strong>
+            <em class="hidden-xs">Maintenance Milestone</em>
+          </div>
+        </div><!-- /.status -->
+        <div class="image">
+          <img src="/images/pre-login/maintenance-history-dtop.png" alt="User Interface" class="hidden-xs">
+          <img src="/images/pre-login/maintenance-history-mobile.png" alt="User Interface" class="hidden-sm hidden-md hidden-lg">
+        </div>
+        <div class="text-last">
+          <h3>View your maintenance history</h3>
+          <p>No more trying to recall the last time you serviced your vehicle. Maintenance History helps you track all services completed on your vehicle. </p>
+        </div><!-- /.text-last -->
+      </section><!-- /.maintenance -->
+      <section class="dark">
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-7">
+            <div class="text">
+              <strong>Manuals, documents<span class="hidden-sm hidden-xs">, and more</span></strong>
+              <h2>Stop searching<br /> through the glove box</h2>
+              <p class="hidden-sm hidden-xs">Owners manuals, Bluetooth connectivity guides, warranty information– everything stored in one convenient location with easy access. You can even upload your own documents like maintenance receipts, insurance cards, registraion, etc. The days of digging around in the glove box are long gone.</p>
+              <p class="hidden-md hidden-lg">Owners manuals, warranty info, user guides – everything stored in one convenient location with easy access. You can even upload your own documents like maintenance receipts, insurance cards, registraion, etc. The days of digging around in the glove box are long gone.</p>
+            </div><!-- /.text -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-6 col-sm-push-6">
+            <div class="image">
+              <img src="/images/pre-login/radio.png" alt="Car Panel" class="hidden-xs" />
+              <img src="/images/pre-login/radio-mobile.png" alt="Car Panel" class="hidden-sm hidden-md hidden-lg" />
+            </div><!-- /.image -->
+          </div><!-- /.col -->
+          <div class="col-sm-6 col-sm-pull-6">
+            <div class="text">
+              <h3>Bluetooth® connectivity guides</h3>
+              <p>Not very tech savvy? Doesn’t mean you need to miss out on incredible technology like Bluetooth® connectivity. We’ll walk you though connecting your phone to your car so you can make take phone calls, listen to Pandora, and more all through your vehicles head unit.</p>
+            </div><!-- /.text -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="image">
+              <img src="/images/pre-login/store.png" alt="Store" class="hidden-xs" />
+              <img src="/images/pre-login/store-mobile.png" alt="Store" class="hidden-sm hidden-md hidden-lg" />
+            </div><!-- /.image -->
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <div class="text">
+              <h3>10 years. 100,000 miles.</h3>
+              <p>Our cars last. So do our warranties. We offer one of the best warranties out there and you shouldn’t have to dig around to find out what it covers. The Kia Owners Portal puts all of that information in an easy-to-access location for you to reference when you need it!</p>
+            </div><!-- /.text -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </section><!-- /.dark -->
+      <section class="tracking">
+        <div class="image">
+          <img src="/images/pre-login/ui-form.png" alt="Tracking Form">
+        </div>
+        <div class="text">
+          <h3>Keep track of it all.</h3>
+          <p>We’ve designed the Kia Owners Portal to be customizeable so you can keep track of the information that is important to you. For example, in your vehicle settings you can add custom fields to store information like your insurance info, license plate number, and more!</p>
+        </div>
+      </section><!-- /.tracking -->
+    </div><!-- /.contain -->
+    <section class="uvo-intro">
+      <div class="image">
+        <img src="/images/pre-login/kia_uvo_logos.png" alt="Kia | UVO" />
+      </div><!-- /.logo -->
+      <p>Owners of Kia’s with UVO get access to these great features:</p>
+    </section><!-- /.uvo-intro -->
+    <div class="contain">
+      <section class="remote-promo">
+        <div class="text">
+          <strong>
+            <img src="/images/pre-login/uvo.png" alt="UVO">
+            Remote
+          </strong>
+          <h2>Command your car remotely</h2>
+          <p>Lock or unlock your car, adjust the in-car temperature, even start charging your battery all from your phone or desktop computer.</p>
+        </div><!-- /.text -->
+        <ul class="tab-nav">
+          <li class="active"><a data-toggle="tab" href="#security-tab">Security</a></li>
+          <li><a data-toggle="tab" href="#climate-tab">Climate</a></li>
+          <li><a data-toggle="tab" href="#battery-tab">Battery</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="security-tab" class="tab-pane fade in active">
+            <img src="/images/pre-login/security.png" alt="Security">
+            <div class="text">
+              <h3>Unlock your car from anywhere</h3>
+              <p>Locked your keys in your car? No worries. Unlock your car from your desktop or phone with the push of a button.</p>
+            </div>
+          </div>
+          <div id="climate-tab" class="tab-pane fade">
+            <img src="/images/pre-login/climate.png" alt="Climate">
+            <div class="text">
+              <h3>Hot out? Don’t sweat it</h3>
+              <p>Your driving experience should be comfortable from start to finish. Set your in-car climate to the perfect temperature and start your journey off right.</p>
+            </div>
+          </div>
+          <div id="battery-tab" class="tab-pane fade">
+            <img src="/images/pre-login/battery.png" alt="Battery">
+            <div class="text">
+              <h3>Stay charged up</h3>
+              <p>See your battery’s range at a glance and choose when your car starts and stops charging. Charge during off-peak hours to save money or just while your car is parked at the office. It’s all just a button away.</p>
+            </div>
+          </div>
+        </div>
+      </section><!-- /.remote-promo -->
+      <section class="awards">
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="/images/pre-login/awards/1.png" alt="Award 1">
+          </div>
+          <div class="col-xs-3">
+            <img src="/images/pre-login/awards/2.png" alt="Award 2">
+          </div>
+          <div class="col-xs-3">
+            <img src="/images/pre-login/awards/3.png" alt="Award 3">
+          </div>
+          <div class="col-xs-3">
+            <img src="/images/pre-login/awards/4.png" alt="Award 4">
+          </div>
+        </div><!-- /.row -->
+        <div class="text">
+          <strong>Awards</strong>
+          <h3>Earn Awards</h3>
+          <p>Badges are awarded for completing certain tasks throughout the portal like adding another Kia to your account, scheduling an appointment with your preferred dealer, and more. Try to win them all!</p>
+        </div>
+      </section><!-- /.awards -->
+      <section class="account-cta">
+        <div class="row">
+          <div class="col-sm-6">
+            <a class="account-cta-box">
+              <span class="account-cta-box-inner">
+                <img src="/images/pre-login/icon_account.svg" alt="Account">
+                <strong>NEW TO THE OWNERS PORTAL?</strong>
+                <em>Create account</em>
+              </span>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a class="account-cta-box">
+              <span class="account-cta-box-inner">
+                <img src="/images/pre-login/icon_sign_in.svg" alt="Account">
+                <strong>RETURNING USER?</strong>
+                <em>Sign in</em>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="app-cta">
+        <div class="text">
+          <strong>MOBILE APP</strong>
+          <h3>Get the mobile app now!</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#">
+              <img src="/images/pre-login/btn_app_store.png" alt="Download on the App Store">
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#">
+              <img src="/images/pre-login/btn_google.png" alt="Get it on Google Play">
+            </a>
+          </div>
+        </div>
+      </section><!-- /.app-cta -->
+    </div><!-- /.contain -->
+  </div><!-- /.page-content -->
+</div><!-- /.view-pre-login -->
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <ul class="nav-tabs modal-nav">
+          <li class="active" data-target="#login-slider" data-slide-to="0">Sign In</li>
+          <li data-target="#login-slider" data-slide-to="1">Create Account</li>
+        </ul>
+        <span class="back" data-target="#login-slider" data-slide-to="0"></span>
+        <div id="login-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active remember-back">
+              <form class="login-form" autocomplete="off">
+                <input type="text" style="display:none" />
+                <ul class="form-fields">
+                  <li>
+                    <label>
+                      <strong>
+                        Email or Phone Number
+                      </strong>
+                      <input type="text" class="login-email" />
+                      <span class="error-message">
+                        <span class="error-message-inner">
+                          There is no account with this email. Click
+                            <em data-target="#login-slider" data-slide-to="1" class="use-email-to-craete">
+                              HERE
+                            </em>
+                          to create an account using this email
+                        </span>
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <strong>
+                        Password
+                      </strong>
+                      <input type="password" />
+                      <span class="toggle-show-password"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="" value="">
+                      <em>
+                        Remember Me
+                      </em>
+                    </label>
+                  </li>
+                </ul>
+                <div class="form-footer">
+                  <input type="submit" value="Sign In" class="button full main" data-action="login.demo.error" />
+                  <a class="secondary" data-target="#login-slider" data-slide-to="2">
+                    Forgot Password
+                  </a>
+                </div><!-- /.footer-action -->
+              </form>
+            </div><!-- /.item -->
+            <div class="item remember-back">
+              <form class="create-form" autocomplete="off">
+                <input type="text" style="display:none" />
+                <span class="error-message error-message-main">
+                  <span class="error-message-inner">Oops! Looks like you missed a few things. Please review the form below and see what you missed.</span>
+                </span><!-- /.error-message -->
+                <ul class="form-fields">
+                  <li>
+                    <label>
+                      <strong>
+                        Email or Phone Number
+                      </strong>
+                      <input type="text" class="create-email" />
+                      <span class="error-message">
+                        <span class="error-message-inner">
+                          This email address is already linked to an account. Did you
+                            <em data-target="#login-slider" data-slide-to="2" class="use-email-to-recover">
+                               Forget Your Password?
+                            </em>
+                        </span>
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <strong>
+                        Choose a password
+                      </strong>
+                      <input type="password" class="create-password" autocomplete="off" />
+                      <span class="toggle-show-password"></span>
+                      <span class="toggle-show-password-rules"></span>
+                      <span class="inline-validator create-password-validator">
+                        <span class="inline-validator-rule">
+                          Have at least 8 characters
+                        </span>
+                        <span class="inline-validator-rule">
+                          Have at least one number
+                        </span>
+                        <span class="inline-validator-rule passed">
+                          Have at least one uppercase letter
+                        </span>
+                        <span class="inline-validator-rule passed">
+                          No special charasters ˆ &amp; * (
+                        </span>
+                      </span><!-- /.inline-validator -->
+                    </label>
+                  </li>
+                  <li>
+                    <div class="g-recaptcha" data-sitekey="6LdmFTQUAAAAAJGKzEG-S4t0OrfT3HIjQjN5BRGp"></div>
+                    <span class="error-message">
+                      <span class="error-message-inner">
+                          You must verify that you are not a robot.
+                      </span>
+                    </span>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="" value="" checked>
+                      <em class="smaller">
+                        I have read and agree to the <a href="#" target="_blank">Terms of Service</a>
+                        and the <a href="#" target="_blank">Privacy Policy</a>
+                      </em>
+                      <span class="error-message">
+                        <span class="error-message-inner">
+                          You must agree to the Terms of Service and Privacy Policy to create your account.
+                        </span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="form-footer">
+                  <input type="submit" value="Create Account" class="button full main" data-action="login.demo.error_create" />
+                </div><!-- /.footer-action -->
+              </form>
+            </div><!-- /.item -->
+            <div class="item hide-nav show-back">
+              <div class="reset-password-flow">
+                <div class="reset-password-first">
+                  <strong>
+                    Forgot Password
+                  </strong>
+                  <p>
+                    Enter the email address or phone number you used to set up your account.
+                  </p>
+                  <form class="recover-form" autocomplete="off">
+                    <ul class="form-fields">
+                      <li>
+                        <label>
+                          <strong>
+                            Email or Phone Number
+                          </strong>
+                          <input type="text" class="reset-email" />
+                          <span class="helper">
+                            Standard SMS rates apply
+                          </span>
+                        </label>
+                      </li>
+                    </ul>
+                    <div class="form-footer">
+                      <input type="submit" value="Send Password Reset Link" class="button full main" data-target="#login-slider" data-slide-to="3" />
+                    </div><!-- /.footer-action -->
+                  </form>
+                </div><!-- /.reset-password-first -->
+              </div><!-- /.reset-password-flow -->
+            </div><!-- /.item -->
+            <div class="item hide-nav hide-close">
+              <div class="reset-password-last">
+                <span class="completed-icon"></span>
+                <p>
+                  Success! A password reset link has been sent to <strong>andrewdavis@kiausa.com</strong>
+                </p>
+                <a class="button full" data-target="#login-slider" data-slide-to="0" >Back To Sign In</a>
+              </div><!-- /.reset-password-last -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+    <div class="contain">
+      <ul class="footer-menu-items">
+        <li>
+          <a href="#">
+            Privacy / Legal
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Kia.com
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Other Kia Sites
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            MPG
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Global Disclaimer
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Terms of Service
+          </a>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2017 Kia Motors America, Inc.</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest-p"></i>
+            </a>
+          </li>
+        </ul><!-- /.social-icons -->
+      </div><!-- /.footer-bottom -->
+    </div><!-- /.contain -->
+  </footer>
+</body>
+</html>
+

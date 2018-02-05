@@ -1,0 +1,921 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-pre-login header {
+  position: relative;
+  height: 768px;
+  overflow: hidden; }
+  .view-pre-login header:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.35); }
+  .view-pre-login header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+    .view-pre-login header nav .contain {
+      max-width: 1025px;
+      padding: 15px 30px 0; }
+    .view-pre-login header nav .logo {
+      width: 61px;
+      height: 31px; }
+    .view-pre-login header nav .nav-items {
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      vertical-align: middle; }
+      .view-pre-login header nav .nav-items li {
+        display: inline-block;
+        font: bold 10px/1em "KIA", sans-serif;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        margin-right: 30px;
+        vertical-align: middle; }
+        .view-pre-login header nav .nav-items li a {
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          color: #FFF;
+          text-decoration: none; }
+          .view-pre-login header nav .nav-items li a:hover {
+            color: #C4172C; }
+  .view-pre-login header video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .view-pre-login header .header-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #FFF; }
+    .view-pre-login header .header-content .contain {
+      max-width: 945px;
+      padding: 0 20px; }
+    .view-pre-login header .header-content-inner {
+      max-width: 290px; }
+    .view-pre-login header .header-content h1 {
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      font: 100 36px "KIA", sans-serif;
+      letter-spacing: 1.7px;
+      margin-bottom: 20px; }
+    .view-pre-login header .header-content p {
+      font: 16px/1.44em "Source Sans Pro", sans-serif;
+      letter-spacing: .7px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      margin-bottom: 39px; }
+    @media (min-width: 767px) {
+      .view-pre-login header .header-content .button.large {
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+        letter-spacing: 2px; } }
+    .view-pre-login header .header-content .header-cta p {
+      font-size: 14px;
+      line-height: 1.64em;
+      letter-spacing: .6px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+      .view-pre-login header .header-content .header-cta p a {
+        display: inline-block;
+        vertical-align: middle;
+        color: #FFF;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font: bold 11px/1.64em "KIA", sans-serif;
+        margin-left: 6px;
+        position: relative;
+        top: -1px;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+        .view-pre-login header .header-content .header-cta p a:hover {
+          color: #C4172C; }
+  @media (max-width: 767px) {
+    .view-pre-login header {
+      height: 565px; }
+      .view-pre-login header nav .contain {
+        padding: 15px 20px 0; }
+      .view-pre-login header nav ul.nav-items {
+        display: none; }
+        .view-pre-login header nav ul.nav-items + span {
+          font: bold 10px "KIA", sans-serif;
+          letter-spacing: .3px;
+          color: #FFF;
+          text-transform: uppercase; }
+      .view-pre-login header .header-content {
+        text-align: center; }
+        .view-pre-login header .header-content h1 {
+          font-size: 27px;
+          margin-bottom: 11px; }
+        .view-pre-login header .header-content p {
+          font-size: 14px;
+          line-height: 1.64em;
+          margin-bottom: 17px; }
+        .view-pre-login header .header-content-inner {
+          margin: 0 auto; }
+        .view-pre-login header .header-content .button.large {
+          width: 215px;
+          margin-bottom: 10px; } }
+
+.view-pre-login .page-content .contain {
+  max-width: 1025px;
+  padding: 0 50px; }
+  @media (max-width: 991px) {
+    .view-pre-login .page-content .contain {
+      padding: 0 20px; } }
+  @media (max-width: 767px) {
+    .view-pre-login .page-content .contain {
+      padding: 0 11px; } }
+
+.view-pre-login .intro-panels {
+  position: relative;
+  z-index: 2; }
+  .view-pre-login .intro-panels .panel-row {
+    position: relative; }
+    .view-pre-login .intro-panels .panel-row:first-child {
+      padding-top: 89px; }
+      .view-pre-login .intro-panels .panel-row:first-child .panel {
+        border-radius: 2px;
+        background-color: #FFF;
+        box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.24);
+        position: absolute;
+        right: 0;
+        width: 455px;
+        top: -30px;
+        padding: 42px 40px 45px 95px; }
+        .view-pre-login .intro-panels .panel-row:first-child .panel strong {
+          display: block;
+          font: bold 12px/1em "KIA", sans-serif;
+          color: #969696;
+          text-transform: uppercase;
+          letter-spacing: .6px; }
+        .view-pre-login .intro-panels .panel-row:first-child .panel h2 {
+          position: relative;
+          font: 100 30px/1em "KIA", sans-serif;
+          color: #000;
+          margin: 34px 0 15px; }
+          .view-pre-login .intro-panels .panel-row:first-child .panel h2:before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #C4172C;
+            position: absolute;
+            bottom: 100%;
+            margin-bottom: 12px; }
+        .view-pre-login .intro-panels .panel-row:first-child .panel p {
+          font: 14px/1.79em "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          color: #2f2f2f;
+          margin-bottom: 0; }
+      .view-pre-login .intro-panels .panel-row:first-child .image {
+        position: relative;
+        z-index: 4;
+        width: 526px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.24);
+        border-radius: 2px;
+        overflow: hidden;
+        max-width: calc(100% - 400px); }
+        .view-pre-login .intro-panels .panel-row:first-child .image img {
+          display: block;
+          width: 100%; }
+      @media (max-width: 991px) {
+        .view-pre-login .intro-panels .panel-row:first-child .panel {
+          padding-left: 47px;
+          width: 350px; }
+          .view-pre-login .intro-panels .panel-row:first-child .panel h2 {
+            font-size: 23px; }
+        .view-pre-login .intro-panels .panel-row:first-child .image {
+          width: 100%;
+          max-width: calc(100% - 335px); } }
+      @media (max-width: 767px) {
+        .view-pre-login .intro-panels .panel-row:first-child {
+          padding-top: 0;
+          margin-top: -25px; }
+          .view-pre-login .intro-panels .panel-row:first-child .panel {
+            position: relative;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            width: 100%;
+            padding: 35px 20px 65px;
+            margin-bottom: 0; }
+            .view-pre-login .intro-panels .panel-row:first-child .panel strong {
+              font-size: 10px;
+              letter-spacing: .5px; }
+            .view-pre-login .intro-panels .panel-row:first-child .panel h2 {
+              font-size: 16px;
+              letter-spacing: .4px; }
+            .view-pre-login .intro-panels .panel-row:first-child .panel p {
+              font-size: 12px;
+              line-height: 2.08em;
+              letter-spacing: .5px; }
+          .view-pre-login .intro-panels .panel-row:first-child .image {
+            max-width: calc(100% - 30px);
+            margin: -40px auto 40px; } }
+    .view-pre-login .intro-panels .panel-row.map {
+      position: relative;
+      margin-top: 155px;
+      padding: 95px 0;
+      padding-left: 11.3513514%;
+      background: url("/images/pre-login/map-dtop.png") left center/cover no-repeat;
+      margin-bottom: 168px; }
+      .view-pre-login .intro-panels .panel-row.map .text {
+        max-width: 300px; }
+        .view-pre-login .intro-panels .panel-row.map .text h2 {
+          font: 100 22px "KIA", sans-serif;
+          letter-spacing: .6px;
+          margin: 0;
+          margin-bottom: 17px; }
+        .view-pre-login .intro-panels .panel-row.map .text p {
+          font: 14px/1.79em "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          margin: 0; }
+      .view-pre-login .intro-panels .panel-row.map .panel {
+        border-radius: 2px;
+        background-color: #FFF;
+        box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.24);
+        position: absolute;
+        right: 13.5135135%;
+        top: 50%;
+        transform: translateY(-50%); }
+      @media (max-width: 991px) {
+        .view-pre-login .intro-panels .panel-row.map {
+          margin-bottom: 158px;
+          margin-top: 235px;
+          padding: 85px 0 70px;
+          padding-left: 8.5164835%; }
+          .view-pre-login .intro-panels .panel-row.map .text {
+            max-width: 235px; }
+          .view-pre-login .intro-panels .panel-row.map .panel {
+            right: 8.9285714%; } }
+      @media (max-width: 767px) {
+        .view-pre-login .intro-panels .panel-row.map {
+          margin-top: 72px;
+          background: url("/images/pre-login/map-mobile.png") top center/cover no-repeat;
+          padding: 0;
+          max-height: 395px;
+          overflow: visible;
+          margin-bottom: 250px; }
+          .view-pre-login .intro-panels .panel-row.map .text {
+            width: 100%;
+            position: relative;
+            padding: 0;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 32px;
+            max-width: calc(100% - 70px); }
+            .view-pre-login .intro-panels .panel-row.map .text h2 {
+              font: 500 16px "KIA", sans-serif;
+              letter-spacing: .4px;
+              margin-bottom: 12px; }
+            .view-pre-login .intro-panels .panel-row.map .text p {
+              font: 12px/2.08em "Source Sans Pro", sans-serif;
+              letter-spacing: .5px;
+              margin-bottom: 28px; }
+          .view-pre-login .intro-panels .panel-row.map .panel {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+            width: calc(100% - 30px);
+            max-width: 332px;
+            margin: 0 auto; }
+            .view-pre-login .intro-panels .panel-row.map .panel img {
+              display: block;
+              width: 100%; } }
+
+.view-pre-login .maintenance {
+  position: relative; }
+  .view-pre-login .maintenance:after {
+    display: block;
+    content: "";
+    clear: both; }
+  .view-pre-login .maintenance .text {
+    max-width: 326px; }
+    .view-pre-login .maintenance .text strong {
+      display: block;
+      font: bold 12px/1em "KIA", sans-serif;
+      color: #969696;
+      text-transform: uppercase;
+      letter-spacing: .6px; }
+    .view-pre-login .maintenance .text h2 {
+      position: relative;
+      font: 100 30px "KIA", sans-serif;
+      color: #000;
+      margin: 34px 0 15px; }
+      .view-pre-login .maintenance .text h2:before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        background: #C4172C;
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 15px; }
+    .view-pre-login .maintenance .text p {
+      font-size: 14px;
+      line-height: 1.79em;
+      letter-spacing: .6px; }
+  .view-pre-login .maintenance .status {
+    background: #FFF;
+    box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.1);
+    border-radius: 2px;
+    padding: 40px;
+    width: calc(100% - 395px);
+    margin-top: 100px;
+    position: relative; }
+    .view-pre-login .maintenance .status.play .bar {
+      width: 95%; }
+    .view-pre-login .maintenance .status.play .tip {
+      opacity: 1;
+      transform: none;
+      margin-bottom: 20px;
+      transition-delay: 500ms; }
+    .view-pre-login .maintenance .status .bar {
+      width: 0;
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .view-pre-login .maintenance .status .tip {
+      background: #000;
+      color: #FFF;
+      padding: 15px 30px 15px 20px;
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      text-align: left;
+      border-radius: 2px;
+      border-bottom-right-radius: 0px;
+      opacity: 0;
+      transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transform: scale(0);
+      transform-origin: right bottom; }
+      .view-pre-login .maintenance .status .tip:after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 100%;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 20px 0;
+        border-color: transparent #000 transparent transparent; }
+      .view-pre-login .maintenance .status .tip span {
+        display: block;
+        white-space: nowrap;
+        font: 15px/1.4em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px; }
+        .view-pre-login .maintenance .status .tip span:last-child {
+          color: #C4172C;
+          font: bold 11px/2em "KIA", sans-serif;
+          text-transform: uppercase; }
+    .view-pre-login .maintenance .status .pull-right {
+      text-align: right; }
+    .view-pre-login .maintenance .status strong {
+      padding-top: 15px;
+      display: block;
+      font: 500 18px "KIA", sans-serif;
+      letter-spacing: .9px;
+      color: #000;
+      margin-bottom: 3px; }
+    .view-pre-login .maintenance .status em {
+      display: block;
+      font: bold 10px "KIA", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #969696; }
+  .view-pre-login .maintenance .image {
+    clear: both;
+    text-align: center;
+    padding-top: 97px; }
+    .view-pre-login .maintenance .image img {
+      max-width: calc(100% - 200px); }
+  .view-pre-login .maintenance .text-last {
+    text-align: center;
+    max-width: 625px;
+    margin: 0 auto 125px;
+    padding-top: 22px; }
+    .view-pre-login .maintenance .text-last h3 {
+      font: 100 22px "KIA", sans-serif;
+      letter-spacing: .6px;
+      color: #000;
+      margin: 0 0 18px; }
+    .view-pre-login .maintenance .text-last p {
+      font: 14px/1.79em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px; }
+  @media (max-width: 991px) {
+    .view-pre-login .maintenance .text {
+      max-width: 275px; }
+      .view-pre-login .maintenance .text h2 {
+        font-size: 23px;
+        letter-spacing: .6px; }
+    .view-pre-login .maintenance .status {
+      margin-top: 75px;
+      padding: 20px;
+      width: calc(100% - 300px); }
+      .view-pre-login .maintenance .status strong {
+        padding-top: 10px;
+        font-size: 14px; }
+      .view-pre-login .maintenance .status em {
+        font-size: 8px; } }
+
+@media (max-width: 991px) and (max-width: 370px) {
+  .view-pre-login .maintenance {
+    margin-top: -30px; } }
+  @media (max-width: 991px) {
+    .view-pre-login .maintenance .image {
+      padding-top: 120px; } }
+  @media (max-width: 767px) {
+    .view-pre-login .maintenance .text {
+      max-width: calc(100% - 40px);
+      margin-left: 20px; }
+      .view-pre-login .maintenance .text strong {
+        font-size: 10px;
+        letter-spacing: .5px; }
+      .view-pre-login .maintenance .text h2 {
+        font-size: 16px;
+        letter-spacing: .4px; }
+      .view-pre-login .maintenance .text p {
+        padding-right: 30px; }
+    .view-pre-login .maintenance .status {
+      width: 100%;
+      margin-top: 25px; }
+      .view-pre-login .maintenance .status .status-header {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: -5px; }
+        .view-pre-login .maintenance .status .status-header strong {
+          font: 500 20px/1em "KIA", sans-serif;
+          letter-spacing: .1px;
+          color: #000;
+          margin-bottom: 5px; }
+        .view-pre-login .maintenance .status .status-header em {
+          font: bold 9px/1em "KIA", sans-serif;
+          letter-spacing: 1px; }
+      .view-pre-login .maintenance .status strong {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: .5px;
+        font-family: "Source Sans Pro", sans-serif; }
+    .view-pre-login .maintenance .image {
+      padding-top: 40px; }
+      .view-pre-login .maintenance .image img {
+        max-width: 100%; }
+    .view-pre-login .maintenance .text-last {
+      padding-top: 50px;
+      margin-bottom: 75px; }
+      .view-pre-login .maintenance .text-last h3 {
+        font: 500 16px "KIA", sans-serif;
+        letter-spacing: .4px; }
+      .view-pre-login .maintenance .text-last p {
+        padding: 0 10px; } }
+
+.view-pre-login .dark {
+  padding: 78px 0 90px;
+  background: #000 url("/images/pre-login/grunge.png") top left/contain no-repeat;
+  color: #FFF;
+  border-radius: 2px;
+  overflow: hidden; }
+  .view-pre-login .dark strong {
+    display: block;
+    font: bold 12px/1em "KIA", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .6px; }
+  .view-pre-login .dark h2 {
+    position: relative;
+    font: 100 30px "KIA", sans-serif;
+    margin: 34px 0 15px;
+    max-width: 225px; }
+    @media (max-width: 991px) {
+      .view-pre-login .dark h2 {
+        font-size: 23px;
+        letter-spacing: .6px;
+        max-width: calc(100% + 40px);
+        width: calc(100% + 40px); } }
+    .view-pre-login .dark h2:before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #C4172C;
+      position: absolute;
+      bottom: 100%;
+      margin-bottom: 12px; }
+  .view-pre-login .dark h3 {
+    font: 100 24px "KIA", sans-serif;
+    letter-spacing: .6px;
+    margin-bottom: 22px; }
+    @media (max-width: 991px) {
+      .view-pre-login .dark h3 {
+        font-size: 20px;
+        letter-spacing: .5px;
+        margin-bottom: 15px; } }
+  .view-pre-login .dark p {
+    font: 14px/1.79em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    max-width: 350px; }
+  .view-pre-login .dark .row img {
+    width: 100%;
+    position: relative;
+    display: block;
+    transform: translateY(-5%); }
+  .view-pre-login .dark .row:first-child {
+    margin-bottom: 250px; }
+    @media (max-width: 991px) {
+      .view-pre-login .dark .row:first-child {
+        margin-bottom: 150px; } }
+    .view-pre-login .dark .row:first-child p {
+      line-height: 1.79em; }
+      @media (max-width: 991px) {
+        .view-pre-login .dark .row:first-child p {
+          width: calc(100% + 30px); } }
+  .view-pre-login .dark .row:nth-child(2) {
+    padding-left: 66px;
+    margin-bottom: 50px; }
+    @media (max-width: 991px) {
+      .view-pre-login .dark .row:nth-child(2) {
+        padding-left: 40px; } }
+  .view-pre-login .dark .row:nth-child(3) {
+    margin-bottom: 0; }
+    @media (max-width: 991px) {
+      .view-pre-login .dark .row:nth-child(3) {
+        padding-right: 30px; } }
+  @media (max-width: 767px) {
+    .view-pre-login .dark {
+      text-align: center;
+      background-image: url("/images/pre-login/grunge_mobile.png"); }
+      .view-pre-login .dark strong,
+      .view-pre-login .dark h2 {
+        text-align: left;
+        width: 100% !important; }
+      .view-pre-login .dark .row {
+        padding-left: 20px !important;
+        padding-right: 20px !important; }
+      .view-pre-login .dark p {
+        margin: 0 auto;
+        width: 100% !important; }
+      .view-pre-login .dark .image {
+        margin-bottom: 25px; }
+        .view-pre-login .dark .image img {
+          transform: none; } }
+
+.view-pre-login .tracking {
+  padding-top: 112px;
+  text-align: center;
+  margin-bottom: 145px; }
+  .view-pre-login .tracking .image {
+    text-align: center;
+    margin-bottom: 60px; }
+    .view-pre-login .tracking .image img {
+      max-width: calc(100% - 30px); }
+  .view-pre-login .tracking .text h3 {
+    font: 100 24px "KIA", sans-serif;
+    letter-spacing: .6px;
+    color: #000;
+    margin: 0 0 18px; }
+  .view-pre-login .tracking .text p {
+    max-width: 707px;
+    margin: 0 auto;
+    font: 14px/1.79em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px; }
+    @media (max-width: 991px) {
+      .view-pre-login .tracking .text p {
+        max-width: 525px; } }
+  @media (max-width: 991px) {
+    .view-pre-login .tracking {
+      padding-top: 100px;
+      margin-bottom: 115px; } }
+  @media (max-width: 767px) {
+    .view-pre-login .tracking {
+      padding-top: 70px;
+      margin-bottom: 85px; }
+      .view-pre-login .tracking .image {
+        margin-bottom: 25px;
+        max-width: calc(100% - 50px);
+        margin: 0 auto 25px; }
+      .view-pre-login .tracking .text h3 {
+        font-size: 19px;
+        letter-spacing: .4px;
+        margin-bottom: 12px; }
+      .view-pre-login .tracking .text p {
+        font-size: 12px;
+        line-height: 2.08em;
+        letter-spacing: .5px; } }
+
+.view-pre-login .uvo-intro {
+  background: #000;
+  text-align: center;
+  padding: 65px 0; }
+  .view-pre-login .uvo-intro p {
+    color: #FFF;
+    font: 100 18px "KIA", sans-serif;
+    letter-spacing: 1.3px;
+    padding-top: 11px;
+    margin: 0; }
+  @media (max-width: 991px) {
+    .view-pre-login .uvo-intro p {
+      font-size: 16px;
+      letter-spacing: 1.1px; } }
+  @media (max-width: 767px) {
+    .view-pre-login .uvo-intro {
+      padding: 50px 0 60px; }
+      .view-pre-login .uvo-intro p {
+        font-size: 14px;
+        max-width: 255px;
+        margin: 0 auto; } }
+
+.view-pre-login .remote-promo {
+  padding-top: 100px; }
+  .view-pre-login .remote-promo > .text {
+    max-width: 425px;
+    margin-bottom: 30px; }
+    .view-pre-login .remote-promo > .text strong {
+      display: block;
+      font: bold 12px/1em "KIA", sans-serif;
+      color: #969696;
+      text-transform: uppercase;
+      letter-spacing: .6px; }
+      .view-pre-login .remote-promo > .text strong img {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -2px;
+        margin-right: 9px; }
+    .view-pre-login .remote-promo > .text h2 {
+      position: relative;
+      font: 100 30px/1em "KIA", sans-serif;
+      color: #000;
+      margin: 55px 0 18px; }
+      .view-pre-login .remote-promo > .text h2:before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        background: #C4172C;
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 35px; }
+    .view-pre-login .remote-promo > .text p {
+      font: 14px/1.79em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+      margin-bottom: 0; }
+  .view-pre-login .remote-promo .tab-nav {
+    margin: 0;
+    padding: 0 75px;
+    border-bottom: solid 1px #d4d4d4;
+    overflow: hidden;
+    list-style: none; }
+    .view-pre-login .remote-promo .tab-nav li {
+      float: left;
+      width: 33.3333%;
+      text-align: center;
+      font: bold 14px/70px "KIA", sans-serif;
+      text-transform: uppercase; }
+      .view-pre-login .remote-promo .tab-nav li a {
+        color: #8e8e8e;
+        display: inline-block;
+        position: relative;
+        text-decoration: none !important; }
+        .view-pre-login .remote-promo .tab-nav li a:after {
+          position: absolute;
+          display: block;
+          content: "";
+          bottom: 0px;
+          width: calc(100% + 40px);
+          height: 1px;
+          background: #C4172C;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+          opacity: 0; }
+      .view-pre-login .remote-promo .tab-nav li.active a {
+        color: #000; }
+        .view-pre-login .remote-promo .tab-nav li.active a:after {
+          opacity: 1; }
+  .view-pre-login .remote-promo .tab-content {
+    text-align: center; }
+    .view-pre-login .remote-promo .tab-content img {
+      max-width: 100%; }
+    .view-pre-login .remote-promo .tab-content .text {
+      padding-top: 50px;
+      max-width: 516px;
+      margin: 0 auto; }
+      .view-pre-login .remote-promo .tab-content .text h3 {
+        font: 100 24px "KIA", sans-serif;
+        letter-spacing: .6px;
+        color: #000;
+        margin: 0 0 17px; }
+      .view-pre-login .remote-promo .tab-content .text p {
+        font: 14px/1.79em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px; }
+
+.view-pre-login .awards {
+  padding-top: 120px;
+  text-align: center;
+  margin-bottom: 165px; }
+  .view-pre-login .awards .row {
+    max-width: 745px;
+    margin: 0 auto; }
+    .view-pre-login .awards .row > div {
+      position: relative;
+      min-height: 85px; }
+  .view-pre-login .awards img {
+    position: relative;
+    transform: translate(-50%, -50%) scale(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block; }
+  .view-pre-login .awards strong {
+    display: block;
+    font: bold 12px/1em "KIA", sans-serif;
+    color: #969696;
+    text-transform: uppercase;
+    letter-spacing: .6px; }
+  .view-pre-login .awards .text {
+    padding-top: 55px;
+    max-width: 505px;
+    margin: 0 auto; }
+  .view-pre-login .awards h3 {
+    position: relative;
+    font: 100 30px/1em "KIA", sans-serif;
+    color: #000;
+    margin: 34px 0 27px; }
+    .view-pre-login .awards h3:before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #C4172C;
+      position: absolute;
+      bottom: 100%;
+      margin-bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .view-pre-login .awards p {
+    font: 14px/1.79em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    color: #2f2f2f;
+    margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .view-pre-login .awards img {
+      transform: translate(-50%, -50%) scale(0.75); }
+    .view-pre-login .awards strong {
+      font-size: 10px; }
+    .view-pre-login .awards h3 {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: .4px;
+      margin-bottom: 12px; }
+    .view-pre-login .awards p {
+      font-size: 12px;
+      line-height: 2.08em;
+      letter-spacing: .5px; } }
+
+.view-pre-login .account-cta {
+  margin-bottom: 151px; }
+  .view-pre-login .account-cta .row {
+    max-width: 945px;
+    margin: 0 auto; }
+    @media (min-width: 767px) {
+      .view-pre-login .account-cta .row > div {
+        padding: 0 40px; } }
+  .view-pre-login .account-cta-box {
+    display: block;
+    background: #000;
+    height: 240px;
+    position: relative;
+    cursor: pointer; }
+    @media (max-width: 767px) {
+      .view-pre-login .account-cta-box {
+        margin-bottom: 30px; } }
+    .view-pre-login .account-cta-box:after {
+      display: block;
+      position: absolute;
+      width: 71px;
+      height: 71px;
+      background: #C4172C;
+      content: "";
+      bottom: 0;
+      right: 0;
+      transform: translate(15px, 15px); }
+    .view-pre-login .account-cta-box:before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      height: 30px;
+      width: 15px;
+      background: #C4172C url("/images/icon_arrow_right_white.svg") center/contain no-repeat;
+      transform: translate(-50%, -25%);
+      margin-right: 2px; }
+    .view-pre-login .account-cta-box-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      display: block;
+      text-align: center;
+      margin-top: -10px; }
+      .view-pre-login .account-cta-box-inner strong {
+        display: block;
+        font: bold 12px "KIA", sans-serif;
+        letter-spacing: .6px;
+        color: #969696;
+        margin-bottom: 3px;
+        margin-top: 25px; }
+      .view-pre-login .account-cta-box-inner em {
+        display: block;
+        color: #FFF;
+        font: 500 26px "KIA", sans-serif;
+        letter-spacing: 1.1px; }
+
+.view-pre-login .app-cta {
+  text-align: center;
+  margin-bottom: 188px; }
+  .view-pre-login .app-cta strong {
+    display: block;
+    font: bold 12px/1em "KIA", sans-serif;
+    color: #969696;
+    text-transform: uppercase;
+    letter-spacing: .6px; }
+  .view-pre-login .app-cta .text {
+    margin: 0 auto; }
+  .view-pre-login .app-cta h3 {
+    position: relative;
+    font: 100 30px/1em "KIA", sans-serif;
+    color: #000;
+    margin: 34px 0 37px; }
+    .view-pre-login .app-cta h3:before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #C4172C;
+      position: absolute;
+      bottom: 100%;
+      margin-bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .view-pre-login .app-cta .row {
+    max-width: 400px;
+    margin: 0 auto; }
+    .view-pre-login .app-cta .row a {
+      display: block; }
+  @media (max-width: 767px) {
+    .view-pre-login .app-cta {
+      margin-bottom: 50px; }
+      .view-pre-login .app-cta a {
+        margin-bottom: 31px; }
+      .view-pre-login .app-cta strong {
+        font-size: 10px; }
+      .view-pre-login .app-cta h3 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: .4px; } }
