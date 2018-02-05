@@ -88,14 +88,14 @@ body {
             -webkit-overflow-scrolling: touch; }
             .locations-map .locations-utility.slide-down .locations-utility-drawer #locations-utility-carousel .carousel-inner .item {
               height: calc(100vh - 383px) !important; } }
-    @media (max-height: 700px) and (min-width: 767px) {
+    @media (max-height: 800px) and (min-width: 767px) {
       .locations-map .locations-utility #locations-utility-carousel .carousel-inner {
-        height: calc(100vh - 320px) !important;
+        height: calc(100vh - 270px) !important;
         overflow: auto;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch; }
         .locations-map .locations-utility #locations-utility-carousel .carousel-inner .item {
-          height: calc(100vh - 320px) !important; } }
+          height: calc(100vh - 270px) !important; } }
     .locations-map .locations-utility-main {
       height: 50px; }
       @media (max-width: 767px) {

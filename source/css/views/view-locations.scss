@@ -73,15 +73,15 @@ body {
         }
       }
     }
-    @media (max-height: 700px) AND (min-width: $screen-xs-max) {
+    @media (max-height: 800px) AND (min-width: $screen-xs-max) {
       #locations-utility-carousel {
         .carousel-inner   {
-          height: calc(100vh - 320px) !important;
+          height: calc(100vh - 270px) !important;
           overflow: auto;
           -ms-overflow-style: -ms-autohiding-scrollbar;
           -webkit-overflow-scrolling: touch;
           .item {
-            height: calc(100vh - 320px) !important;
+            height: calc(100vh - 270px) !important;
           }
         }
       }
