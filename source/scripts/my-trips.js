@@ -80,10 +80,8 @@ $(document).ready(() => {
               index = $badges.index($badge);
           $input.val('');
           $text.text('');
-          console.log('canceling');
           $badge.removeClass('adding');
           $badge.parents('.trip-tags').removeClass('focused');
-          // $input.blur();
           if($badges.length > 1 && index < $badges.length - 1 && !no_delete) {
             $badge.addClass('remove');
           }
@@ -98,7 +96,6 @@ $(document).ready(() => {
           if(!text.length) {
             window.myTrips.methods.tags._cancel_element($badge);
           }else{
-            console.log('has-text');
             $badge.removeClass('add adding');
             if(index === $badges.length - 1) {
               var html = `<span class="badge add">
@@ -107,7 +104,6 @@ $(document).ready(() => {
                     <em>+</em>
                   </span>`;
               $(html).appendTo($trip.find('.trip-tags')).find('input');
-              // $input.blur();
             }
           }
         }
@@ -229,7 +225,7 @@ $(document).ready(() => {
   // EVENTS
   window.myTrips.elements.trip.on('click', window.myTrips.methods._toggle);
   $('body').delegate('.trip .badge input', 'focus', window.myTrips.methods.tags._add);
-  $('body').delegate('.trip .badge input', 'change paste keyup keydown', window.myTrips.methods.tags._keyup);
+  $('body').delegate('.trip .badge input', 'paste keyup keydown', window.myTrips.methods.tags._keyup);
   $('body').delegate('.trip .badge input', 'blur', window.myTrips.methods.tags._save);
   $('body').delegate('.trip .badge em', 'click', window.myTrips.methods.tags._cancel);
   window.myTrips.elements.trip_list_scroll.on('scroll', window.myTrips.methods.scroll.onscroll);
