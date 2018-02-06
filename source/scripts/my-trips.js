@@ -63,6 +63,7 @@ $(document).ready(() => {
           setTimeout(function(){ that.selectionStart = that.selectionEnd = 10000; }, 0);
           if(e.keyCode === 13) {
             window.myTrips.methods.tags._save();
+            var $input = $badge.find('input');
           }
           if(e.keyCode === 27) {
             window.myTrips.methods.tags._cancel_element($badge, true);
@@ -105,6 +106,9 @@ $(document).ready(() => {
                   </span>`;
               $(html).appendTo($trip.find('.trip-tags')).find('input');
             }
+            setTimeout(() => {
+              $input.blur();
+            }, 100);
           }
         }
       },
