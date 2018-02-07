@@ -51,9 +51,36 @@
     left: 0;
     width: 100%;
     z-index: 2; }
+    .view-pre-login header nav .icon-bars {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      position: relative;
+      top: 3px; }
+    .view-pre-login header nav.scroll {
+      background: #FFF;
+      z-index: 3;
+      position: fixed;
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.07);
+      height: 70px;
+      transform: translateY(-100%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0; }
+      @media (max-width: 767px) {
+        .view-pre-login header nav.scroll {
+          display: none; } }
+      .view-pre-login header nav.scroll.show {
+        transform: none;
+        opacity: 1; }
+      .view-pre-login header nav.scroll .logo {
+        position: relative;
+        top: 5px; }
+      .view-pre-login header nav.scroll .nav-items li a:not(.button) {
+        color: #000; }
     .view-pre-login header nav .contain {
       max-width: 1025px;
-      padding: 15px 30px 0; }
+      padding: 15px 30px 0;
+      overflow: hidden; }
     .view-pre-login header nav .logo {
       width: 61px;
       height: 31px; }
@@ -71,6 +98,8 @@
         text-transform: uppercase;
         margin-right: 30px;
         vertical-align: middle; }
+        .view-pre-login header nav .nav-items li:last-child {
+          margin-right: 0; }
         .view-pre-login header nav .nav-items li a {
           transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
           color: #FFF;
@@ -517,7 +546,20 @@
   background: #000 url("/images/pre-login/grunge.png") top left/contain no-repeat;
   color: #FFF;
   border-radius: 2px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 40px; }
+  .view-pre-login .dark .manual-image {
+    margin-left: 45px;
+    display: block;
+    position: relative;
+    top: 20px;
+    transform: none !important;
+    max-width: calc(100% - 45px); }
+    @media (max-width: 767px) {
+      .view-pre-login .dark .manual-image {
+        top: 0;
+        margin-left: 0;
+        margin: 0 auto; } }
   .view-pre-login .dark strong {
     display: block;
     font: bold 12px/1em "KIA", sans-serif;
@@ -534,6 +576,11 @@
         letter-spacing: .6px;
         max-width: calc(100% + 40px);
         width: calc(100% + 40px); } }
+    @media (max-width: 991px) {
+      .view-pre-login .dark h2 {
+        font-size: 18px;
+        letter-spacing: .5px;
+        margin-bottom: 30px; } }
     .view-pre-login .dark h2:before {
       content: "";
       display: block;
@@ -585,7 +632,10 @@
   @media (max-width: 767px) {
     .view-pre-login .dark {
       text-align: center;
-      background-image: url("/images/pre-login/grunge_mobile.png"); }
+      background-image: url("/images/pre-login/grunge_mobile.png");
+      background-size: auto;
+      background-repeat: repeat-x;
+      background-position: center top; }
       .view-pre-login .dark strong,
       .view-pre-login .dark h2 {
         text-align: left;
@@ -708,12 +758,19 @@
     border-bottom: solid 1px #d4d4d4;
     overflow: hidden;
     list-style: none; }
+    @media (max-width: 767px) {
+      .view-pre-login .remote-promo .tab-nav {
+        padding: 0; } }
     .view-pre-login .remote-promo .tab-nav li {
       float: left;
       width: 33.3333%;
       text-align: center;
       font: bold 14px/70px "KIA", sans-serif;
       text-transform: uppercase; }
+      @media (max-width: 767px) {
+        .view-pre-login .remote-promo .tab-nav li {
+          font-size: 12px;
+          line-height: 60px; } }
       .view-pre-login .remote-promo .tab-nav li a {
         color: #8e8e8e;
         display: inline-block;
@@ -738,7 +795,33 @@
   .view-pre-login .remote-promo .tab-content {
     text-align: center; }
     .view-pre-login .remote-promo .tab-content img {
-      max-width: 100%; }
+      max-width: 100%;
+      display: inline-block; }
+    .view-pre-login .remote-promo .tab-content .battery-render-wrap {
+      padding-top: 55px;
+      margin-bottom: 20px; }
+      @media (max-width: 767px) {
+        .view-pre-login .remote-promo .tab-content .battery-render-wrap {
+          padding-top: 20px; }
+          .view-pre-login .remote-promo .tab-content .battery-render-wrap img {
+            max-width: calc(100% - 250px); } }
+    .view-pre-login .remote-promo .tab-content .dial-render-wrap {
+      padding-top: 55px; }
+      @media (max-width: 767px) {
+        .view-pre-login .remote-promo .tab-content .dial-render-wrap {
+          padding-top: 20px;
+          margin-bottom: -20px; }
+          .view-pre-login .remote-promo .tab-content .dial-render-wrap img {
+            max-width: calc(100% - 100px); } }
+    .view-pre-login .remote-promo .tab-content .car-render + .button-render {
+      display: inline-block;
+      margin-top: -100px; }
+      @media (max-width: 767px) {
+        .view-pre-login .remote-promo .tab-content .car-render + .button-render {
+          margin-top: -50px; } }
+      @media (max-width: 374px) {
+        .view-pre-login .remote-promo .tab-content .car-render + .button-render {
+          margin-top: -10px; } }
     .view-pre-login .remote-promo .tab-content .text {
       padding-top: 50px;
       max-width: 516px;
@@ -751,6 +834,16 @@
       .view-pre-login .remote-promo .tab-content .text p {
         font: 14px/1.79em "Source Sans Pro", sans-serif;
         letter-spacing: .6px; }
+      @media (max-width: 767px) {
+        .view-pre-login .remote-promo .tab-content .text h3 {
+          font-size: 16px; }
+        .view-pre-login .remote-promo .tab-content .text p {
+          font-size: 12px;
+          line-height: 2.08em;
+          letter-spacing: .5px;
+          padding: 0 20px;
+          max-width: 400px;
+          margin: 0 auto; } }
 
 .view-pre-login .awards {
   padding-top: 120px;
@@ -919,3 +1012,23 @@
         font-size: 16px;
         font-weight: 500;
         letter-spacing: .4px; } }
+
+.view-pre-login nav.nav-app .nav-app-mobile-menu {
+  bottom: 0;
+  left: auto;
+  transform: translateX(-100%); }
+  .view-pre-login nav.nav-app .nav-app-mobile-menu.open {
+    transform: none; }
+  .view-pre-login nav.nav-app .nav-app-mobile-menu-body {
+    top: 0;
+    bottom: 0; }
+    .view-pre-login nav.nav-app .nav-app-mobile-menu-body .nav-list li {
+      margin-left: 15px;
+      padding-right: 15px; }
+      .view-pre-login nav.nav-app .nav-app-mobile-menu-body .nav-list li a {
+        padding-left: 0; }
+      .view-pre-login nav.nav-app .nav-app-mobile-menu-body .nav-list li .button {
+        width: 100%;
+        padding: 0;
+        height: 40px;
+        line-height: 40px; }

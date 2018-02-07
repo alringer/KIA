@@ -13,17 +13,22 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
 <!-- @import "partials/head/head-end.kit" -->
-
-<!-- <div style="height:100vh;line-height:100vh;text-align:center;">
-  <button type="button" class="button" data-toggle="modal" data-target="#login">
-    Login
-  </button>
-</div> -->
 <div class="view-pre-login">
   <header>
     <nav>
       <div class="contain">
         <div class="pull-left">
+          <div class="hidden-sm hidden-md hidden-lg icon-bars" data-action="nav-toggle">
+            <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Pre_Login-|-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-14.000000, -23.000000)" stroke-linecap="square">
+                    <g id="HERO-IMAGE" transform="translate(-217.000000, -3.000000)" stroke="#FFFFFF" stroke-width="2">
+                        <g id="Icons-/-Mobile-Menu-Icon" transform="translate(232.000000, 27.000000)">
+                            <path d="M1.5,2 L0.5,2 L0.5,0 L1.5,0 L21.8960781,0 L22.8960781,0 L22.8960781,2 L21.8960781,2 L1.5,2 Z M1.5,9 L0.5,9 L0.5,7 L1.5,7 L21.8960781,7 L22.8960781,7 L22.8960781,9 L21.8960781,9 L1.5,9 Z M1.5,16 L0.5,16 L0.5,14 L1.5,14 L21.8960781,14 L22.8960781,14 L22.8960781,16 L21.8960781,16 L1.5,16 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+          </div>
           <a href="/" class="logo white">KIA</a>
         </div>
         <div class="pull-right">
@@ -44,17 +49,57 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#login">
                 Sign In
               </a>
             </li>
             <li>
-              <a href="#" class="button outline white transparent less-padding">Create Account</a>
+              <a href="#" class="button outline white transparent less-padding" data-toggle="modal" data-target="#login">
+                Create Account
+              </a>
             </li>
           </ul>
           <span class="hidden-sm hidden-md hidden-lg">
-            SIGN IN / CREATE ACCOUNT
+            <span data-toggle="modal" data-target="#login">
+              SIGN IN / CREATE ACCOUNT
+            </span>
           </span>
+        </div><!-- /.float-right -->
+      </div><!-- /.contain  -->
+    </nav>
+    <nav class="scroll">
+      <div class="contain">
+        <div class="pull-left">
+          <a href="/" class="logo">KIA</a>
+        </div>
+        <div class="pull-right">
+          <ul class="nav-items">
+            <li>
+              <a href="#">
+                UVO Availability
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Explore
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#login">
+                Sign In
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button less-padding" data-toggle="modal" data-target="#login">
+                Create Account
+              </a>
+            </li>
+          </ul>
         </div><!-- /.float-right -->
       </div><!-- /.contaon  -->
     </nav>
@@ -69,18 +114,19 @@
           <h1>Get The Most Out of Your Kia</h1>
           <p>The owners portal is <em>the</em> destination for anything you need for your vehicle. Scroll and discover all of the exciting features available to all Kia owners.</p>
           <div class="header-cta">
-            <a href="#" class="button large">
+            <a href="#" class="button large" data-toggle="modal" data-target="#login">
               Craete Account
             </a>
             <p>
               Already have an account?
-              <a href="#">Sign In</a>
+              <a href="#" data-toggle="modal" data-target="#login">Sign In</a>
             </p>
           </div>
         </div><!-- /.header-content-inner -->
       </div><!-- /.contain -->
     </div><!-- /.header-content -->
   </header>
+  <span class="trigger-nav-scroll"></span>
   <div class="page-content">
     <div class="contain">
       <section class="intro-panels">
@@ -143,10 +189,14 @@
       </section><!-- /.maintenance -->
       <section class="dark">
         <div class="row">
-          <div class="col-sm-4 col-sm-push-7">
+          <div class="col-sm-7 hidden-xs">
+            <img src="/images/pre-login/manuals.png" alt="Owner's Manuals" class="manual-image" />
+          </div>
+          <div class="col-sm-4">
             <div class="text">
               <strong>Manuals, documents<span class="hidden-sm hidden-xs">, and more</span></strong>
               <h2>Stop searching<br /> through the glove box</h2>
+              <img src="/images/pre-login/manuals.png" alt="Owner's Manuals" class="manual-image hidden-sm hidden-md hidden-lg" />
               <p class="hidden-sm hidden-xs">Owners manuals, Bluetooth connectivity guides, warranty information– everything stored in one convenient location with easy access. You can even upload your own documents like maintenance receipts, insurance cards, registraion, etc. The days of digging around in the glove box are long gone.</p>
               <p class="hidden-md hidden-lg">Owners manuals, warranty info, user guides – everything stored in one convenient location with easy access. You can even upload your own documents like maintenance receipts, insurance cards, registraion, etc. The days of digging around in the glove box are long gone.</p>
             </div><!-- /.text -->
@@ -215,21 +265,28 @@
 
         <div class="tab-content">
           <div id="security-tab" class="tab-pane fade in active">
-            <img src="/images/pre-login/security.png" alt="Security">
+            <img src="/images/pre-login/tabs/security/optima-render.png" alt="Security" class="car-render">
+            <img src="/images/pre-login/tabs/security/security-buttons.png" alt="Security Buttons" class="button-render">
             <div class="text">
               <h3>Unlock your car from anywhere</h3>
               <p>Locked your keys in your car? No worries. Unlock your car from your desktop or phone with the push of a button.</p>
             </div>
           </div>
           <div id="climate-tab" class="tab-pane fade">
-            <img src="/images/pre-login/climate.png" alt="Climate">
+            <div class="dial-render-wrap">
+              <img src="/images/pre-login/tabs/climate/dial.png" alt="Climate" class="dial-render">
+            </div>
+            <img src="/images/pre-login/tabs/climate/climate-buttons.png" alt="Climate Buttons" class="button-render">
             <div class="text">
               <h3>Hot out? Don’t sweat it</h3>
               <p>Your driving experience should be comfortable from start to finish. Set your in-car climate to the perfect temperature and start your journey off right.</p>
             </div>
           </div>
           <div id="battery-tab" class="tab-pane fade">
-            <img src="/images/pre-login/battery.png" alt="Battery">
+            <div class="battery-render-wrap">
+              <img src="/images/pre-login/tabs/battery/battery-render.png" alt="Battery" class="battery-render">
+            </div>
+            <img src="/images/pre-login/tabs/battery/battery-buttons.png" alt="Battery Buttons" class="button-render">
             <div class="text">
               <h3>Stay charged up</h3>
               <p>See your battery’s range at a glance and choose when your car starts and stops charging. Charge during off-peak hours to save money or just while your car is parked at the office. It’s all just a button away.</p>
@@ -261,7 +318,7 @@
       <section class="account-cta">
         <div class="row">
           <div class="col-sm-6">
-            <a class="account-cta-box">
+            <a class="account-cta-box" data-toggle="modal" data-target="#login">
               <span class="account-cta-box-inner">
                 <img src="/images/pre-login/icon_account.svg" alt="Account">
                 <strong>NEW TO THE OWNERS PORTAL?</strong>
@@ -270,11 +327,11 @@
             </a>
           </div>
           <div class="col-sm-6">
-            <a class="account-cta-box">
+            <a class="account-cta-box" data-toggle="modal" data-target="#login">
               <span class="account-cta-box-inner">
                 <img src="/images/pre-login/icon_sign_in.svg" alt="Account">
                 <strong>RETURNING USER?</strong>
-                <em>Sign in</em>
+                <em >Sign in</em>
               </span>
             </a>
           </div>
@@ -300,6 +357,116 @@
       </section><!-- /.app-cta -->
     </div><!-- /.contain -->
   </div><!-- /.page-content -->
+  <nav class="nav-app">
+    <div class="nav-app-mobile-menu">
+      <div class="nav-app-mobile-menu-inner">
+        <div class="nav-app-mobile-menu-default">
+          <div class="nav-app-mobile-menu-body">
+            <div class="nav-app-mobile-menu-body-inner">
+              <ul class="nav-list main-nav">
+                <li>
+                  <a href="#">
+                    <span>UVO Availability</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Explore</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Contact</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="sign-in-link" data-toggle="modal" data-target="#login">
+                    <span>Sign In</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="button less-padding" data-toggle="modal" data-target="#login">
+                    Create Account
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav-list text-nav">
+                <li>
+                  <a href="#">
+                    <span>Privacy / Legal</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Kia.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Other Kia Sites</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>MPG</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Global Disclaimer</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Terms of Service</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="nav-list-footer">
+                <p>
+                  2017® Kia Motors America, Inc
+                </p>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- /.nav-list-footer -->
+            </div><!-- /.nav-app-mobile-menu-body-inner -->
+          </div><!-- /.nav-app-mobile-menu-body -->
+        </div><!-- /.nav-app-mobile-menu-default -->
+      </div><!-- /.nav-app-mobile-menu-inner -->
+    </div><!-- /.nav-app-mobile-menu -->
+    <div class="nav-app-mobile-menu-close" data-action="nav-toggle"></div>
+  </nav><!-- /.app-nav -->
+
 </div><!-- /.view-pre-login -->
 <div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
   <div class="modal-dialog" role="document">

@@ -3596,7 +3596,7 @@
 		},
 	"\/source\/images\/pre-login\/grunge.png": {
 		"ft": 32768,
-		"iS": 1073125,
+		"iS": 991030,
 		"oA": 0,
 		"oAP": "\/build\/images\/pre-login\/grunge.png",
 		"oF": 0,
@@ -3607,7 +3607,7 @@
 		},
 	"\/source\/images\/pre-login\/grunge_mobile.png": {
 		"ft": 32768,
-		"iS": 381159,
+		"iS": 367361,
 		"oA": 0,
 		"oAP": "\/build\/images\/pre-login\/grunge_mobile.png",
 		"oF": 0,
@@ -3647,6 +3647,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/pre-login\/Icons\/Mobile Menu Icon.png": {
+		"ft": 32768,
+		"iS": 179,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/Icons\/Mobile Menu Icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/Icons\/Mobile Menu Icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/pre-login\/Icons\/Mobile Menu Icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/pre-login\/kia_uvo_logos.png": {
 		"ft": 32768,
 		"iS": 5885,
@@ -3680,6 +3701,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/pre-login\/manuals.png": {
+		"ft": 32768,
+		"iS": 242911,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/manuals.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/pre-login\/map-dtop.png": {
 		"ft": 32768,
 		"iS": 179521,
@@ -3704,7 +3736,7 @@
 		},
 	"\/source\/images\/pre-login\/niro-image.jpg": {
 		"ft": 16384,
-		"iS": 211384,
+		"iS": 198581,
 		"oA": 0,
 		"oAP": "\/build\/images\/pre-login\/niro-image.jpg",
 		"oF": 0,
@@ -3747,7 +3779,7 @@
 		},
 	"\/source\/images\/pre-login\/store-mobile.png": {
 		"ft": 32768,
-		"iS": 83076,
+		"iS": 80138,
 		"oA": 0,
 		"oAP": "\/build\/images\/pre-login\/store-mobile.png",
 		"oF": 0,
@@ -3761,6 +3793,50 @@
 		"iS": 128725,
 		"oA": 0,
 		"oAP": "\/build\/images\/pre-login\/store.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/tabs\/climate\/climate-buttons.png": {
+		"ft": 32768,
+		"iS": 5204,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/tabs\/climate\/climate-buttons.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/tabs\/climate\/dial.png": {
+		"ft": 32768,
+		"iS": 39084,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/tabs\/climate\/dial.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 2,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/tabs\/security\/optima-render.png": {
+		"ft": 32768,
+		"iS": 232006,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/tabs\/security\/optima-render.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/tabs\/security\/security-buttons.png": {
+		"ft": 32768,
+		"iS": 4128,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/tabs\/security\/security-buttons.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

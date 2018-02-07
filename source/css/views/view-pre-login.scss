@@ -22,9 +22,45 @@
       left: 0;
       width: 100%;
       z-index: 2;
+      .icon-bars {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        position: relative;
+        top: 3px;
+      }
+      &.scroll {
+        background: $white;
+        z-index: 3;
+        position: fixed;
+        box-shadow: 0 2px 14px 0 rgba(0,0,0,0.07);
+        height: 70px;
+        transform: translateY(-100%);
+        transition: all 250ms $easeOutQuint;
+        opacity: 0;
+        @media (max-width: $screen-xs-max) {
+          display: none;
+        }
+        &.show {
+          transform: none;
+          opacity: 1;
+        }
+        .logo {
+          position: relative;
+          top: 5px;
+        }
+        .nav-items {
+          li {
+            a:not(.button) {
+              color: #000;
+            }
+          }
+        }
+      }
       .contain {
         max-width: 1025px;
         padding: 15px 30px 0;
+        overflow: hidden;
       }
       .logo {
         width: 61px;
@@ -44,6 +80,9 @@
           text-transform: uppercase;
           margin-right: 30px;
           vertical-align: middle;
+          &:last-child {
+            margin-right: 0;
+          }
           a {
             transition: all 250ms $easeOutQuint;
             color: $white;
@@ -595,11 +634,29 @@
     color: $white;
     border-radius: 2px;
     overflow: hidden;
+    @media (max-width: $screen-xs-max) {}
+    padding-top: 40px;
+    .manual-image {
+      margin-left: 45px;
+      display: block;
+      position: relative;
+      top: 20px;
+      transform: none !important;
+      max-width: calc(100% - 45px);
+      @media (max-width: $screen-xs-max) {
+        top: 0;
+        margin-left: 0;
+        margin:  0 auto;
+      }
+    }
     strong {
       display: block;
       font: bold 12px/1em $kia;
       text-transform: uppercase;
       letter-spacing: .6px;
+      @media (max-width: $screen-xs-max) {
+
+      }
     }
     h2 {
       position: relative;
@@ -611,6 +668,11 @@
         letter-spacing: .6px;
         max-width: calc(100% + 40px);
         width: calc(100% + 40px);
+      }
+      @media (max-width: $screen-sm-max) {
+        font-size: 18px;
+        letter-spacing: .5px;
+        margin-bottom: 30px;
       }
       &:before {
         content: "";
@@ -674,6 +736,9 @@
     @media (max-width: $screen-xs-max) {
       text-align: center;
       background-image: url('/images/pre-login/grunge_mobile.png');
+      background-size: auto;
+      background-repeat: repeat-x;
+      background-position: center top;
       strong,
       h2 {
         text-align: left;
@@ -823,12 +888,19 @@
       border-bottom: solid 1px #d4d4d4;
       overflow: hidden;
       list-style: none;
+      @media (max-width: $screen-xs-max) {
+        padding: 0;
+      }
       li {
         float: left;
         width: 33.3333%;
         text-align: center;
         font: bold 14px/70px $kia;
         text-transform: uppercase;
+        @media (max-width: $screen-xs-max) {
+          font-size: 12px;
+          line-height: 60px;
+        }
         &.active {
 
         }
@@ -865,6 +937,39 @@
       text-align: center;
       img  {
         max-width: 100%;
+        display: inline-block;
+      }
+      .battery-render-wrap {
+        padding-top: 55px;
+        margin-bottom: 20px;
+        @media (max-width: $screen-xs-max) {
+          padding-top: 20px;
+          img {
+            max-width: calc(100% - 250px);
+          }
+        }
+      }
+      .dial-render-wrap {
+        padding-top: 55px;
+        @media (max-width: $screen-xs-max) {
+          padding-top: 20px;
+          margin-bottom: -20px;
+          img {
+            max-width: calc(100% - 100px);
+          }
+        }
+      }
+      .car-render {
+        + .button-render {
+          display: inline-block;
+          margin-top: -100px;
+          @media (max-width: $screen-xs-max) {
+            margin-top: -50px;
+          }
+          @media (max-width: 374px) {
+            margin-top: -10px;
+          }
+        }
       }
       .text {
         padding-top: 50px;
@@ -879,6 +984,19 @@
         p {
           font: 14px/1.79em $sans;
           letter-spacing: .6px;
+        }
+        @media (max-width: $screen-xs-max) {
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 2.08em;
+            letter-spacing: .5px;
+            padding: 0 20px;
+            max-width: 400px;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -1080,6 +1198,36 @@
         font-size: 16px;
         font-weight: 500;
         letter-spacing: .4px;
+      }
+    }
+  }
+  nav.nav-app {
+    .nav-app-mobile-menu {
+      bottom: 0;
+      left: auto;
+      // right: 100%;
+      transform: translateX(-100%);
+      &.open {
+        transform: none;
+      }
+      &-body {
+        top: 0;
+        bottom: 0;
+        .nav-list {
+          li {
+            margin-left: 15px;
+            padding-right: 15px;
+            a {
+              padding-left: 0;
+            }
+            .button {
+              width: 100%;
+              padding: 0;
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+        }
       }
     }
   }
