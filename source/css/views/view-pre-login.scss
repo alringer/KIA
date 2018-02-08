@@ -1675,10 +1675,18 @@
   .page-header {
     border-bottom: none;
     padding-top: 35px;
+    @media (max-width: $screen-xs-max) {
+      padding-top: 20px;
+    }
     h1 {
       font: 100 32px $kia;
       letter-spacing: 1.5px;
       margin: 0 0 41px;
+      @media (max-width: $screen-xs-max) {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
       + p {
         font: 14px/1.5em $sans;
         letter-spacing: .6px;

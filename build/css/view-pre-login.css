@@ -1409,10 +1409,18 @@
 .view-uvo-availability .page-header {
   border-bottom: none;
   padding-top: 35px; }
+  @media (max-width: 767px) {
+    .view-uvo-availability .page-header {
+      padding-top: 20px; } }
   .view-uvo-availability .page-header h1 {
     font: 100 32px "KIA", sans-serif;
     letter-spacing: 1.5px;
     margin: 0 0 41px; }
+    @media (max-width: 767px) {
+      .view-uvo-availability .page-header h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: 500; } }
     .view-uvo-availability .page-header h1 + p {
       font: 14px/1.5em "Source Sans Pro", sans-serif;
       letter-spacing: .6px;
