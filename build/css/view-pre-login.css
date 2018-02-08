@@ -59,7 +59,7 @@
       top: 3px; }
     .view-pre-login header nav.scroll {
       background: #FFF;
-      z-index: 3;
+      z-index: 15;
       position: fixed;
       box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.07);
       height: 70px;
@@ -1032,3 +1032,351 @@
         padding: 0;
         height: 40px;
         line-height: 40px; }
+
+.view-pre-login .map-scroll {
+  margin-top: 200px;
+  position: relative;
+  padding: 0 50px;
+  margin-bottom: 100px; }
+  @media (max-width: 767px) {
+    .view-pre-login .map-scroll {
+      display: none; } }
+  .view-pre-login .map-scroll .contain {
+    max-width: 807px;
+    position: relative;
+    padding: 0; }
+  .view-pre-login .map-scroll .map-element {
+    width: 100%;
+    background: url("/images/pre-login/map.png") top center/contain no-repeat;
+    padding-top: 257.9925651%;
+    border-radius: 2px;
+    margin: 0 auto;
+    box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.24);
+    position: relative; }
+  .view-pre-login .map-scroll .map-path {
+    display: inline-block;
+    position: absolute;
+    top: 6.8%;
+    right: 4.8%;
+    max-width: 38.9095415%; }
+  .view-pre-login .map-scroll .car {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2082px;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .view-pre-login .map-scroll .car .contain {
+      height: 100%; }
+    .view-pre-login .map-scroll .car.hide-car {
+      opacity: 0; }
+      .view-pre-login .map-scroll .car.hide-car .car-element {
+        pointer-events: none; }
+    .view-pre-login .map-scroll .car.fixed {
+      position: fixed; }
+      .view-pre-login .map-scroll .car.fixed .contain {
+        margin-top: 70px; }
+  .view-pre-login .map-scroll .car-container {
+    transform: translateX(55px);
+    width: 100%;
+    top: 120px;
+    padding: 0;
+    transform-origin: top center; }
+  .view-pre-login .map-scroll .car-element {
+    position: absolute;
+    right: 41.5%;
+    width: 30px;
+    height: 57px;
+    background: url("/images/pre-login/car-pin.png") top center/contain no-repeat;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    transform-origin: center;
+    transform: rotate(-22deg);
+    pointer-events: all; }
+
+.view-pre-login .white-box {
+  position: absolute;
+  z-index: 10;
+  background: #FFFFFF;
+  box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.1);
+  border-radius: 2px;
+  max-width: 430px; }
+  .view-pre-login .white-box.on-scroll {
+    padding: 38px 38px 35px;
+    max-width: 355px;
+    transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0;
+    transform: translateX(20px) scale(0.5); }
+    @media (max-width: 991px) {
+      .view-pre-login .white-box.on-scroll {
+        max-width: 315px;
+        padding: 20px; } }
+    .view-pre-login .white-box.on-scroll.show {
+      transform: none;
+      opacity: 1; }
+    .view-pre-login .white-box.on-scroll p {
+      max-width: 235px; }
+  .view-pre-login .white-box.map-intro-box {
+    top: -70px;
+    left: -50px;
+    padding: 45px 50px; }
+    .view-pre-login .white-box.map-intro-box p {
+      max-width: 235px; }
+    @media (max-width: 991px) {
+      .view-pre-login .white-box.map-intro-box {
+        left: -30px;
+        width: 402px; } }
+  .view-pre-login .white-box.charging-box {
+    top: 18%;
+    left: 5%; }
+  .view-pre-login .white-box.geo-box {
+    top: 39%;
+    left: 15%; }
+  .view-pre-login .white-box.curfew-box {
+    top: 60%;
+    left: 28%; }
+    @media (max-width: 991px) {
+      .view-pre-login .white-box.curfew-box {
+        left: 25%; } }
+  .view-pre-login .white-box.speed-box {
+    top: 80%;
+    left: 31%; }
+    @media (max-width: 991px) {
+      .view-pre-login .white-box.speed-box {
+        left: 24%; } }
+  .view-pre-login .white-box strong {
+    display: block;
+    font: bold 12px/1em "KIA", sans-serif;
+    color: #969696;
+    text-transform: uppercase;
+    letter-spacing: .6px; }
+    .view-pre-login .white-box strong img {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      margin-right: 9px; }
+  .view-pre-login .white-box h2 {
+    position: relative;
+    font: 100 30px/1em "KIA", sans-serif;
+    color: #000;
+    margin: 30px 0 18px; }
+    .view-pre-login .white-box h2:before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background: #C4172C;
+      position: absolute;
+      bottom: 100%;
+      margin-bottom: 15px; }
+  .view-pre-login .white-box h3 {
+    font: bold 15px "KIA", sans-serif;
+    color: #000;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin: 0 0 10px; }
+  .view-pre-login .white-box p {
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    color: #2f2f2f;
+    margin-bottom: 0; }
+
+.view-pre-login .map-info {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  transform: translateX(20px) scale(0.5);
+  transform-origin: bottom center; }
+  .view-pre-login .map-info img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .view-pre-login .map-info.show {
+    transform: none;
+    opacity: 1; }
+  .view-pre-login .map-info.geo-info {
+    top: 13.5%;
+    right: 22%; }
+
+.view-pre-login .alert-circle {
+  position: absolute;
+  z-index: 10;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #F23F3F;
+  box-shadow: 1px 1px 2px 0 rgba(53, 6, 6, 0.5);
+  line-height: 25px;
+  text-align: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .view-pre-login .alert-circle.show {
+    opacity: 1;
+    transform: none; }
+    .view-pre-login .alert-circle.show span {
+      opacity: 1;
+      transform: translate(15px, -50%);
+      transition-delay: 225ms; }
+  .view-pre-login .alert-circle span {
+    display: block;
+    background: #000000;
+    box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
+    border-radius: 2px;
+    color: #FFF;
+    width: 105px;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    font: bold 14px/43px "KIA", sans-serif;
+    padding-left: 3px;
+    transform: translate(0, -50%) scale(0.75);
+    transform-origin: left center;
+    opacity: 0;
+    transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .view-pre-login .alert-circle span:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7.5px 7px 7.5px 0;
+      border-color: transparent #000 transparent transparent; }
+  .view-pre-login .alert-circle img {
+    display: inline-block;
+    position: relative;
+    top: -1.5px;
+    left: 1px; }
+  .view-pre-login .alert-circle.alert-geo {
+    top: 40%;
+    left: 63.7%; }
+  .view-pre-login .alert-circle.alert-curfew {
+    top: 60%;
+    left: 74.5%; }
+    .view-pre-login .alert-circle.alert-curfew img {
+      top: -2px;
+      left: 1.5px; }
+  .view-pre-login .alert-circle.alert-speed {
+    top: 81%;
+    left: 93%; }
+    .view-pre-login .alert-circle.alert-speed.show span {
+      transform: translate(-15px, -50%); }
+    .view-pre-login .alert-circle.alert-speed span {
+      left: auto;
+      right: 100%;
+      transform: translate(0, -50%) scale(0.75); }
+      .view-pre-login .alert-circle.alert-speed span:after {
+        left: 100%;
+        transform: translateY(-50%) rotate(180deg); }
+    .view-pre-login .alert-circle.alert-speed img {
+      top: -2px;
+      left: 1px; }
+
+.view-pre-login .map-stats {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: #FFFFFF;
+  box-shadow: 0 1px 29px 0 rgba(68, 68, 68, 0.1);
+  border-radius: 2px;
+  width: calc(100% - 80px);
+  max-width: 705px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 171px; }
+  .view-pre-login .map-stats .trip-points {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    bottom: 16px;
+    width: 16px;
+    pointer-events: none;
+    user-select: none; }
+    .view-pre-login .map-stats .trip-points:after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #000;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .view-pre-login .map-stats .trip-points > span {
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000;
+      color: #FFF;
+      text-align: center;
+      width: 17px;
+      height: 17px;
+      font: bold 11px/17px "Source Sans Pro", sans-serif;
+      border-radius: 100%; }
+      .view-pre-login .map-stats .trip-points > span.merge {
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid #FFF;
+        width: 19px;
+        height: 19px;
+        left: -1px;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 0; }
+        .view-pre-login .map-stats .trip-points > span.merge svg {
+          width: 9px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+      .view-pre-login .map-stats .trip-points > span:last-child {
+        top: auto;
+        bottom: 0; }
+      .view-pre-login .map-stats .trip-points > span em {
+        position: absolute;
+        left: 100%;
+        white-space: nowrap;
+        color: #000;
+        font: bold 10px/1em "KIA", sans-serif;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 13px;
+        letter-spacing: .4px; }
+    @media (max-width: 767px) {
+      .view-pre-login .map-stats .trip-points {
+        left: 10px; } }
+  .view-pre-login .map-stats .trip-data {
+    width: 420px;
+    margin: 0 auto;
+    padding-top: 57px; }
+    .view-pre-login .map-stats .trip-data strong {
+      display: block;
+      font: bold 42px/1em "KIA", sans-serif;
+      width: 55px;
+      position: relative;
+      margin-bottom: 3px; }
+      .view-pre-login .map-stats .trip-data strong span:last-child {
+        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 100%;
+        bottom: -7px; }
+    .view-pre-login .map-stats .trip-data em {
+      display: block;
+      font: bold 10px/1em "KIA", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #969696;
+      padding-left: 6px; }
