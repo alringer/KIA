@@ -29,6 +29,9 @@ $(document).ready(function () {
         window.nav.elements.nav_menu.addClass('open');
       },
       _close: function _close(e) {
+        if ($(e.target).is('[data-toggle="modal"]') || $(e.target).parents('[data-toggle="modal"]').length) {
+          return;
+        }
         if (!window.nav.elements.nav_menu.hasClass('open')) {
           return;
         }
