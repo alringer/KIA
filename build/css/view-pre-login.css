@@ -36,6 +36,13 @@
   position: relative;
   height: 768px;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .view-pre-login header {
+      background: url("/images/pre-login/header_mobile.png") right bottom/cover no-repeat; }
+      .view-pre-login header:before {
+        opacity: .15; }
+      .view-pre-login header video {
+        display: none; } }
   .view-pre-login header *::-webkit-media-controls-start-playback-button {
     display: none !important;
     -webkit-appearance: none; }

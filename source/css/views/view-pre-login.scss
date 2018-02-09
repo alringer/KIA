@@ -5,6 +5,15 @@
     position: relative;
     height: 768px;
     overflow: hidden;
+    @media (max-width: $screen-xs-max) {
+      background: url('/images/pre-login/header_mobile.png') right bottom/cover no-repeat;
+      &:before {
+        opacity: .15;
+      }
+      video {
+        display: none;
+      }
+    }
     *::-webkit-media-controls-start-playback-button {
       display: none!important;
       -webkit-appearance: none;
