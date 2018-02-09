@@ -11,6 +11,11 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 7.0.0
+* KK-367 As a user I need a landing page for KOP
+* KK-368 As a user I need a marketing explaination for how "UVO-Locations" works
+* KK-366 As a user I need a UVO availability page
+===
 # V - 6.0.2
 * KOPE-384 Settings Popup On onLoad in IE
 * KOPE-390 Locations filter area is not viewable on shorter monitors
