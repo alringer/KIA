@@ -40,7 +40,7 @@
     visibility: hidden; } }
 
 .my-trips-page-view .locations-map {
-  height: calc(100vh - 215px);
+  height: calc(100vh - 125px);
   position: relative;
   overflow: hidden; }
   @media (max-width: 991px) {

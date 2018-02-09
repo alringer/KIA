@@ -11,6 +11,17 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 6.0.2
+* KOPE-384 Settings Popup On onLoad in IE
+* KOPE-390 Locations filter area is not viewable on shorter monitors
+* KOPE-388 My Trips Footer should be removed
+* KOPE-391 Locations page footer needs to be removed
+* KOPE-401 Saving tags does not work properly on iPhone 6 (1 of 2)
+* KOPE-402 Saving tags does not work properly on iPhone 6 (2 of 2)
+* KOPE-403 Clear button is too close to right side of screen
+* KOPE-404 Save button cut off when saving a POI
+* KOPE-405 Map's charge station legend is cut off on pageload
+===
 # V - 6.0.1
 * KK-312 As a user I need to see my Awards
 * KK-319 As a user I need to see my vehicles location on a map

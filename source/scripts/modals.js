@@ -117,7 +117,6 @@ $(document).ready(function() {
         });
       },
       _go_to_setting : function() {
-        console.log('run');
         var $this = $(this),
             settings = $this.data('go-to-settings');
         setTimeout(() => {
@@ -130,7 +129,7 @@ $(document).ready(function() {
             var offset = $settings.offset().top - $form.offset().top;
             $form.scrollTop(offset);
           }, 250);
-        }, 350);
+        }, 450);
       }
     }
   };

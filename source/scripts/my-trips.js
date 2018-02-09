@@ -63,9 +63,10 @@ $(document).ready(() => {
           setTimeout(function(){ that.selectionStart = that.selectionEnd = 10000; }, 0);
           if(e.keyCode === 13) {
             window.myTrips.methods.tags._save();
+            var $input = $badge.find('input');
           }
           if(e.keyCode === 27) {
-            // window.myTrips.methods.tags._cancel_element($badge, true);
+            window.myTrips.methods.tags._cancel_element($badge, true);
           }
         },
         _cancel : function() {
@@ -82,21 +83,18 @@ $(document).ready(() => {
           $text.text('');
           $badge.removeClass('adding');
           $badge.parents('.trip-tags').removeClass('focused');
-          $input.blur();
           if($badges.length > 1 && index < $badges.length - 1 && !no_delete) {
             $badge.addClass('remove');
           }
         },
         _save : () => {
-          var $trip = $('.trip.active'),
+          var $trip = (window.innerWidth < 768 ) ? $('.modal.in .trip') : $('.trip.active'),
               $badge = $trip.find('.badge.adding'),
-              $text = $badge.find('span'),
+              text = $badge.find('span').text(),
               $input = $badge.find('input'),
               $badges = $badge.parents('.trip-tags').find('.badge'),
               index = $badges.index($badge);
-          $input.blur();
-          console.log('saving');
-          if(!$text.text().length) {
+          if(!text.length) {
             window.myTrips.methods.tags._cancel_element($badge);
           }else{
             $badge.removeClass('add adding');
@@ -106,8 +104,11 @@ $(document).ready(() => {
                     <input type="text" name="" value="" tabindex="-1">
                     <em>+</em>
                   </span>`;
+              $(html).appendTo($trip.find('.trip-tags')).find('input');
             }
-            $(html).appendTo($trip.find('.trip-tags')).find('input');
+            setTimeout(() => {
+              $input.blur();
+            }, 100);
           }
         }
       },
@@ -172,6 +173,7 @@ $(document).ready(() => {
           });
           window.myTrips.elements.trip_checkboxes.prop('checked', false);
           window.myTrips.methods.edit._checkbox_change();
+          window.myTrips.methods.edit._stop();
         },
         _delete : () => {
           var $trips = window.myTrips.elements.trip_checkboxes.filter(':checked').parents('.trip');
@@ -184,6 +186,7 @@ $(document).ready(() => {
           });
           window.myTrips.elements.trip_checkboxes.prop('checked', false);
           window.myTrips.methods.edit._checkbox_change();
+          window.myTrips.methods.edit._stop();
         },
         _unmerge : () => {
           var $trips = window.myTrips.elements.trip;
@@ -192,6 +195,7 @@ $(document).ready(() => {
             $trips.css('height', 'auto');
           }, 550);
           window.myTrips.methods.edit._checkbox_change();
+          window.myTrips.methods.edit._stop();
         },
         _select_all : function() {
           var $this = $(this),
@@ -225,7 +229,8 @@ $(document).ready(() => {
   // EVENTS
   window.myTrips.elements.trip.on('click', window.myTrips.methods._toggle);
   $('body').delegate('.trip .badge input', 'focus', window.myTrips.methods.tags._add);
-  $('body').delegate('.trip .badge input', 'change paste keyup keydown', window.myTrips.methods.tags._keyup);
+  $('body').delegate('.trip .badge input', 'paste keyup keydown', window.myTrips.methods.tags._keyup);
+  $('body').delegate('.trip .badge input', 'blur', window.myTrips.methods.tags._save);
   $('body').delegate('.trip .badge em', 'click', window.myTrips.methods.tags._cancel);
   window.myTrips.elements.trip_list_scroll.on('scroll', window.myTrips.methods.scroll.onscroll);
   window.myTrips.elements.scroll_top.on('click', window.myTrips.methods.scroll.scrolltop);
@@ -239,5 +244,4 @@ $(document).ready(() => {
   window.myTrips.elements.select_all.on('change', window.myTrips.methods.edit._select_all);
   window.myTrips.elements.choose_format.on('change', window.myTrips.methods.export._disable);
   window.myTrips.elements.email.on('keyup change paste', window.myTrips.methods.export._disable);
-  console.log(window.myTrips.elements.select_all.length);
 });
