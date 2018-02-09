@@ -43,10 +43,8 @@ $(document).ready(() => {
             path_start = (window.innerWidth > 767) ? window.preLogin.elements.path.offset().top - Math.abs(map_start - window.preLogin.elements.path.offset().top) : window.preLogin.elements.path_m.offset().top  - Math.abs(map_start - window.preLogin.elements.path_m.offset().top);
         if(path) {
           var point = path.getPointAtLength((((y - path_start) / (((window.innerWidth > 767) ? 1896 : (1748 * scale)) * scale)) * Math.floor(( path.getTotalLength() ))));
-          console.log((((y - path_start) / (((window.innerWidth > 767) ? 1896 : (1748 * scale)) * scale)) * Math.floor(( path.getTotalLength() ))));
           point.x = point.x * scale;
           point.y = point.y * scale;
-          console.log(point);
           window.preLogin.elements.mobile_map.css('transform', `translateX(50%) scale(${scale})`);
           if( y > map_start) {
             window.preLogin.elements.car.addClass('fixed');
@@ -74,18 +72,19 @@ $(document).ready(() => {
         window.preLogin.elements.scroll_box.each(function() {
           var $this = $(this);
           if(y > $this.offset().top - 400) {
-            // $this.addClass('show');
+            $this.addClass('show');
+            console.log('showing');
           }
         });
         window.preLogin.elements.scroll_info.each(function() {
           var $this = $(this);
           if(y > $this.offset().top - 200) {
-            // $this.addClass('show');
+            $this.addClass('show');
           }
         });
         window.preLogin.elements.alert.each(function() {
           var $this = $(this);
-          if(y > $this.offset().top - 225) {
+          if(y > $this.offset().top - 310) {
             $this.addClass('show');
           }
         });
@@ -116,6 +115,8 @@ $(document).ready(() => {
   $(window).on('scroll', window.preLogin.methods._scroll);
   $(window).on('resize', window.preLogin.methods._scroll);
   $(document).ready(() => {
-    window.preLogin.methods._scroll();
+    setTimeout(() => {
+      window.preLogin.methods._scroll();
+    }, 200);
   });
 });

@@ -1266,7 +1266,7 @@
     @media (max-width: $screen-xs-max) {
       padding: 0;
       width: 320px;
-      margin: 0 auto;
+      margin: 130px auto 0;
     }
     .contain {
       max-width: 807px;
@@ -1290,7 +1290,7 @@
         left: 50%;
         transform : translateX(-50%);
         @media (max-width: 321px) {
-          margin-left: -11px;
+          // margin-left: -11px;
         }
       }
     }
@@ -1336,7 +1336,7 @@
       right: 0;
       height: 2082px;
       pointer-events: none;
-      transition: all 250ms $easeOutQuint;
+      transition: all 250ms $easeOutQuint, opacity 0ms linear;
       @media (max-width: $screen-xs-max) {
         height: 0;
         padding-top: 631.875%;
@@ -1372,7 +1372,7 @@
       padding: 0;
       transform-origin: top center;
       @media (max-width: $screen-xs-max) {
-        transform: none;
+        transform: translateX(223px);
         position: absolute;
         top: 250px;
         left: 0;
@@ -1391,6 +1391,7 @@
       top: -6px;
       @media (max-width: $screen-xs-max) {
         right: 305px;
+        transform: rotate(26deg);
       }
     }
   }
@@ -1407,6 +1408,11 @@
       transition: all 350ms $easeOutBack;
       opacity: 0;
       transform: translateX(20px) scale(.5);
+      @media (max-width: $screen-xs-max) {
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 265px;
+      }
       @media (max-width: $screen-sm-max) {
         max-width: 315px;
         padding: 20px;
@@ -1433,17 +1439,31 @@
 
         }
       }
-    }
-    @media (max-width: $screen-xs-max) {
-      display: none;
+      @media (max-width: $screen-xs-max) {
+        width: 298px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px;
+        h2 {
+          font-size: 16px;
+          letter-spacing: .4px;
+          font-weight: 500;
+        }
+      }
     }
     &.charging-box {
       top: 18%;
       left: 5%;
+      @media (max-width: $screen-xs-max) {
+        top: 465px;
+      }
     }
     &.geo-box {
       top: 39%;
       left: 15%;
+      @media (max-width: $screen-xs-max) {
+        top: 42%;
+      }
     }
     &.curfew-box {
       top: 60%;
@@ -1501,6 +1521,10 @@
       letter-spacing: .6px;
       color: #2f2f2f;
       margin-bottom: 0;
+      @media (max-width: $screen-xs-max) {
+        font-size: 12px;
+        line-height: 1.75em;
+      }
     }
   }
   .map-info {
@@ -1513,6 +1537,9 @@
     transform: translateX(20px) scale(.5);
     transform-origin: bottom center;
     pointer-events: none;
+    @media (max-width: $screen-xs-max) {
+      display: none !important;
+    }
     img {
       display: block;
       position: absolute;
@@ -1590,6 +1617,10 @@
     &.alert-geo {
       top: 40%;
       left: 63.7%;
+      @media (max-width: $screen-xs-max) {
+        top: 35%;
+        left: 25%;
+      }
     }
     &.alert-curfew {
       top: 60%;
@@ -1598,10 +1629,32 @@
         top: -2px;
         left: 1.5px;
       }
+      @media (max-width: $screen-xs-max) {
+        top: 52%;
+        left: 50%;
+        span {
+          left: auto;
+          right: 100%;
+          transform: translate(0, -50%) scale(.75);
+          &:after {
+            left: 100%;
+            transform: translateY(-50%) rotate(180deg);
+          }
+        }
+        &.show {
+          span {
+            transform: translate(-15px, -50%) scale(1);
+          }
+        }
+      }
     }
     &.alert-speed {
       top: 81%;
       left: 93%;
+      @media (max-width: $screen-xs-max) {
+        top: 70%;
+        left: 64%;
+      }
       &.show {
         span {
           transform: translate(-15px, -50%);
@@ -1622,10 +1675,13 @@
       }
     }
   }
-  .map-stats {
+  .car-stop {
     @media (max-width: $screen-xs-max) {
-      display: none;
+      position: relative;
+      top: 50px;
     }
+  }
+  .map-stats {
     position: absolute;
     bottom: 0;
     z-index: 10;
@@ -1637,6 +1693,10 @@
     left: 50%;
     transform: translate(-50%, 50%);
     height: 171px;
+    @media (max-width: $screen-xs-max) {
+      height: 123px;
+      width: calc(100% - 22px);
+    }
     .trip-points {
       position: absolute;
       left: 16px;
@@ -1711,18 +1771,30 @@
       width: 420px;
       margin: 0 auto;
       padding-top: 57px;
+      @media (max-width: $screen-xs-max) {
+        padding-top: 46px;
+        width: 220px;
+      }
       strong {
         display: block;
         font: bold 42px/1em $kia;
         width: 55px;
         position: relative;
         margin-bottom: 3px;
+        @media (max-width: $screen-xs-max) {
+          font-size: 16px;
+          width: 22px;
+        }
         span:last-child {
           font-size: 20px;
           display: inline-block;
           position: absolute;
           left: 100%;
           bottom: -7px;
+          @media (max-width: $screen-xs-max) {
+            font-size: 12px;
+            bottom: -2px;
+          }
         }
       }
       em {
@@ -1732,6 +1804,10 @@
         text-transform: uppercase;
         color: #969696;
         padding-left: 6px;
+        @media (max-width: $screen-xs-max) {
+          padding-left: 1px;
+          white-space: nowrap;
+        }
       }
     }
   }
