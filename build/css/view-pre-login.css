@@ -61,6 +61,9 @@
       margin-right: 20px;
       position: relative;
       top: 3px; }
+    .view-pre-login header nav.forced-scroll {
+      opacity: 1 !important;
+      transform: none !important; }
     .view-pre-login header nav.forced-scroll, .view-pre-login header nav.scroll {
       background: #FFF;
       z-index: 15;
@@ -1696,7 +1699,11 @@
   height: 75px;
   line-height: 75px;
   padding: 0 11px;
-  overflow: hidden; }
+  overflow: hidden;
+  pointer-events: all;
+  cursor: pointer; }
+  .view-uvo-availability .row-collapse .collapse-header * {
+    pointer-events: none; }
   .view-uvo-availability .row-collapse .collapse-header[aria-expanded="true"] .icon-arrow-right {
     transform: translateY(-50%) rotate(-90deg); }
   .view-uvo-availability .row-collapse .collapse-header img {

@@ -34,6 +34,8 @@
         top: 3px;
       }
       &.forced-scroll {
+        opacity: 1 !important;
+        transform: none !important;
       }
       &.forced-scroll,
       &.scroll {
@@ -2003,6 +2005,11 @@
       line-height: 75px;
       padding: 0 11px;
       overflow: hidden;
+      pointer-events: all;
+      cursor: pointer;
+      * {
+        pointer-events: none;
+      }
       &[aria-expanded="true"] {
         .icon-arrow-right {
           transform: translateY(-50%) rotate(-90deg);

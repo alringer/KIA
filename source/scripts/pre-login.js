@@ -52,7 +52,6 @@ $(document).ready(() => {
           var point = path.getPointAtLength(
               (y - path_start) / (point_offset * scale) * Math.floor( path.getTotalLength() )
           );
-          console.log();
           point.x = point.x * scale;
           point.y = point.y * scale;
           window.preLogin.elements.mobile_map.css({
