@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "26261",
 "files": {
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/changes.md": {
 		"cB": 0,
 		"cS": 0,
@@ -3919,6 +3925,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/tabs\/battery\/battery-buttons.png": {
+		"ft": 32768,
+		"iS": 3651,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/tabs\/battery\/battery-buttons.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/pre-login\/tabs\/battery\/battery-render.png": {
+		"ft": 32768,
+		"iS": 17190,
+		"oA": 0,
+		"oAP": "\/build\/images\/pre-login\/tabs\/battery\/battery-render.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
