@@ -11,6 +11,9 @@ $(document).ready(() => {
       car_container : $('.car-container'),
       car_stop : $('.car-stop'),
       path : $('#pathy'),
+      path_m : $('#pathm'),
+      map_path_m : $('.map-path-m'),
+      mobile_map : $('.mobile-map'),
       scroll_box : $('.white-box.on-scroll'),
       scroll_info : $('.map-info.on-scroll'),
       alert : $('.alert-circle.on-scroll'),
@@ -33,15 +36,18 @@ $(document).ready(() => {
           window.preLogin.elements.nav_scroll.removeClass('show');
         }
 
-        var scale = window.preLogin.elements.map_element.outerWidth() / 807,
-            map_start = window.preLogin.elements.map_element.offset().top - (80 * (1 - scale + 1)),
-            path = document.getElementById('pathy');
+        var scale = (window.innerWidth > 767) ? window.preLogin.elements.map_element.outerWidth() / 807 : 1,
+            start_offset = (window.innerWidth > 767) ? 150 : (-70 * scale),
+            map_start = window.preLogin.elements.map_element.offset().top - (start_offset * (1 - scale + 1)),
+            path = (window.innerWidth > 767) ? document.getElementById('pathy') : document.getElementById('pathm'),
+            path_start = (window.innerWidth > 767) ? window.preLogin.elements.path.offset().top - Math.abs(map_start - window.preLogin.elements.path.offset().top) : window.preLogin.elements.path_m.offset().top  - Math.abs(map_start - window.preLogin.elements.path_m.offset().top);
         if(path) {
-          var point = path.getPointAtLength((((y - map_start) / (1896 * scale)) * Math.floor(( path.getTotalLength() ))));
+          var point = path.getPointAtLength((((y - path_start) / (((window.innerWidth > 767) ? 1896 : (1748 * scale)) * scale)) * Math.floor(( path.getTotalLength() ))));
+          console.log((((y - path_start) / (((window.innerWidth > 767) ? 1896 : (1748 * scale)) * scale)) * Math.floor(( path.getTotalLength() ))));
           point.x = point.x * scale;
           point.y = point.y * scale;
-          // point.x = point.x;
-          // point.y = point.y;
+          console.log(point);
+          window.preLogin.elements.mobile_map.css('transform', `translateX(50%) scale(${scale})`);
           if( y > map_start) {
             window.preLogin.elements.car.addClass('fixed');
             if(point.x >= 0) {
@@ -68,13 +74,13 @@ $(document).ready(() => {
         window.preLogin.elements.scroll_box.each(function() {
           var $this = $(this);
           if(y > $this.offset().top - 400) {
-            $this.addClass('show');
+            // $this.addClass('show');
           }
         });
         window.preLogin.elements.scroll_info.each(function() {
           var $this = $(this);
           if(y > $this.offset().top - 200) {
-            $this.addClass('show');
+            // $this.addClass('show');
           }
         });
         window.preLogin.elements.alert.each(function() {

@@ -1264,7 +1264,9 @@
     padding: 0 50px;
     margin-bottom: 100px;
     @media (max-width: $screen-xs-max) {
-      display: none;
+      padding: 0;
+      width: 320px;
+      margin: 0 auto;
     }
     .contain {
       max-width: 807px;
@@ -1279,6 +1281,31 @@
       margin: 0 auto;
       box-shadow: 0 1px 29px 0 rgba(68,68,68,0.24);
       position: relative;
+      @media (max-width: $screen-xs-max) {
+        height: 2022px;
+        padding-top: 0;
+        background-image: url('/images/pre-login/map_m.png');
+        max-width: 320px;
+        box-shadow: none;
+        left: 50%;
+        transform : translateX(-50%);
+        @media (max-width: 321px) {
+          margin-left: -11px;
+        }
+      }
+    }
+    .mobile-map {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      transform-origin: top center;
+      left: auto;
+      right: 50%;
+      transform: translateX(50%);
+      top: 13.5%;
+      width: 100%;
+      height: 100%;
+      margin-right: -2%;
     }
     .map-path {
       display: inline-block;
@@ -1286,6 +1313,21 @@
       top: 6.8%;
       right: 4.8%;
       max-width: 38.9095415%;
+      transform-origin: top center;
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
+      &-m {
+        display: none;
+        @media (max-width: $screen-xs-max) {
+          max-width: 100%;
+          display: block;
+          left: 50%;
+          top: 0;
+          transform-origin: top center;
+          transform: translateX(-50%);
+        }
+      }
     }
     .car {
       position: absolute;
@@ -1295,6 +1337,14 @@
       height: 2082px;
       pointer-events: none;
       transition: all 250ms $easeOutQuint;
+      @media (max-width: $screen-xs-max) {
+        height: 0;
+        padding-top: 631.875%;
+        max-width: 320px;
+        left: 50%;
+        margin-left: calc(-320px / 2);
+      }
+      z-index: 2;
       .contain {
         height: 100%;
       }
@@ -1307,7 +1357,11 @@
       &.fixed {
         position: fixed;
         .contain {
-          margin-top: 70px;
+          margin-top: 150px;
+          @media (max-width: $screen-xs-max) {
+            margin-top: 0;
+            top: 165px;
+          }
         }
       }
     }
@@ -1317,6 +1371,12 @@
       top: 120px;
       padding: 0;
       transform-origin: top center;
+      @media (max-width: $screen-xs-max) {
+        transform: none;
+        position: absolute;
+        top: 250px;
+        left: 0;
+      }
     }
     .car-element {
       position: absolute;
@@ -1328,6 +1388,10 @@
       transform-origin: center;
       transform: rotate(-22deg);
       pointer-events: all;
+      top: -6px;
+      @media (max-width: $screen-xs-max) {
+        right: 305px;
+      }
     }
   }
   .white-box {
@@ -1369,6 +1433,9 @@
 
         }
       }
+    }
+    @media (max-width: $screen-xs-max) {
+      display: none;
     }
     &.charging-box {
       top: 18%;
@@ -1556,6 +1623,9 @@
     }
   }
   .map-stats {
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
     position: absolute;
     bottom: 0;
     z-index: 10;
