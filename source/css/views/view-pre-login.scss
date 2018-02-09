@@ -1,6 +1,27 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 .view-pre-login {
+  + .modal {
+    + footer {
+      display: block !important;
+      @media (max-width: $screen-xs-max) {
+        height: 41px;
+        line-height: 41px;
+        border-top: 1px solid #dfdfdf;
+        .footer-bottom {
+          height: 41px;
+          line-height: 41px;
+          padding: 0;
+        }
+        .footer-menu-items {
+          display: none;
+        }
+        .social-icons {
+          display: none;
+        }
+      }
+    }
+  }
   header {
     position: relative;
     height: 768px;

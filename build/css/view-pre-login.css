@@ -32,6 +32,22 @@
   to {
     transform: rotate(360deg); } }
 
+.view-pre-login + .modal + footer {
+  display: block !important; }
+  @media (max-width: 767px) {
+    .view-pre-login + .modal + footer {
+      height: 41px;
+      line-height: 41px;
+      border-top: 1px solid #dfdfdf; }
+      .view-pre-login + .modal + footer .footer-bottom {
+        height: 41px;
+        line-height: 41px;
+        padding: 0; }
+      .view-pre-login + .modal + footer .footer-menu-items {
+        display: none; }
+      .view-pre-login + .modal + footer .social-icons {
+        display: none; } }
+
 .view-pre-login header {
   position: relative;
   height: 768px;
