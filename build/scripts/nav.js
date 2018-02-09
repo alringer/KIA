@@ -39,7 +39,9 @@ $(document).ready(function () {
       },
       _stop_propagation: function _stop_propagation(e) {
         // e.preventDefault();
-        e.stopPropagation();
+        if (!$(e.target).is('[data-toggle="modal"]') && !$(e.target).parents('[data-toggle="modal"]').length) {
+          e.stopPropagation();
+        }
       },
       _vehicle_selector_open: function _vehicle_selector_open() {
         window.nav.elements.nav_menu_inner.addClass('selector');

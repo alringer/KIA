@@ -36,6 +36,9 @@
   position: relative;
   height: 768px;
   overflow: hidden; }
+  .view-pre-login header *::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none; }
   .view-pre-login header:before {
     display: block;
     content: "";
@@ -58,25 +61,6 @@
       margin-right: 20px;
       position: relative;
       top: 3px; }
-    .view-pre-login header nav.forced-scroll {
-      opacity: 1 !important;
-      transform: none !important;
-      display: block !important;
-      color: #000; }
-      @media (max-width: 767px) {
-        .view-pre-login header nav.forced-scroll {
-          height: 65px !important; }
-          .view-pre-login header nav.forced-scroll .contain {
-            overflow: visible !important; } }
-      .view-pre-login header nav.forced-scroll .icon-bars {
-        position: relative;
-        top: 8px; }
-        .view-pre-login header nav.forced-scroll .icon-bars * {
-          stroke: #000 !important; }
-      .view-pre-login header nav.forced-scroll ul.nav-items + span {
-        display: inline-block;
-        padding-top: 13px;
-        color: #000; }
     .view-pre-login header nav.forced-scroll, .view-pre-login header nav.scroll {
       background: #FFF;
       z-index: 15;
@@ -88,10 +72,23 @@
       opacity: 0; }
       @media (max-width: 767px) {
         .view-pre-login header nav.forced-scroll, .view-pre-login header nav.scroll {
-          display: none; } }
+          height: 65px !important;
+          display: block !important; }
+          .view-pre-login header nav.forced-scroll .contain, .view-pre-login header nav.scroll .contain {
+            overflow: visible !important; } }
+      .view-pre-login header nav.forced-scroll .icon-bars, .view-pre-login header nav.scroll .icon-bars {
+        position: relative;
+        top: 8px; }
+        .view-pre-login header nav.forced-scroll .icon-bars *, .view-pre-login header nav.scroll .icon-bars * {
+          stroke: #000 !important; }
+      .view-pre-login header nav.forced-scroll ul.nav-items + span, .view-pre-login header nav.scroll ul.nav-items + span {
+        display: inline-block;
+        padding-top: 13px;
+        color: #000; }
       .view-pre-login header nav.forced-scroll.show, .view-pre-login header nav.scroll.show {
         transform: none;
-        opacity: 1; }
+        opacity: 1;
+        color: #000; }
       .view-pre-login header nav.forced-scroll .logo, .view-pre-login header nav.scroll .logo {
         position: relative;
         top: 5px; }
