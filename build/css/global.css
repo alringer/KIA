@@ -3838,7 +3838,11 @@ form .form-fields {
     text-align: center;
     font-size: 0;
     line-height: 53px;
-    height: inherit; }
+    height: inherit;
+    white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch; }
     .page-view-subnav-items li {
       display: inline-block;
       margin: 0 25px;

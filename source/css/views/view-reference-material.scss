@@ -1,0 +1,46 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.view-reference-material {
+  .page-view-header {
+    padding-top: 42px;
+    @media (max-width: $screen-xs-max) {
+      padding-top: 24px;
+    }
+    h2 {
+      font: 100 32px/1em $kia;
+      letter-spacing: 1.5px;
+      color: #000;
+      margin: 0;
+      @media (max-width: $screen-xs-max) {
+        font-size: 20px;
+        letter-spacing: .5px;
+      }
+    }
+  }
+  .contain {
+    max-width: 852px;
+    padding: 0 20px;
+  }
+  .page-view-content {
+    .text-content {
+      padding-top: 51px;
+      font: 14px/1.5em $sans;
+      max-width: 650px;
+      letter-spacing: .6px;
+      strong {
+        display: block;
+        margin-bottom: 2px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding-top: 25px;
+        font-size: 13px;
+        letter-spacing: .3px;
+        line-height: 1.62em;
+      }
+    }
+  }
+}

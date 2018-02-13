@@ -559,6 +559,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-reference-material.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-reference-material.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-registration.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4300,13 +4313,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/index.html",
-		"oF": 0
-		},
 	"\/source\/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -6160,6 +6166,13 @@
 		"oAP": "\/build\/views\/partials\/nav-mobile-overview.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/nav-mobile-reference.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-mobile-reference.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/nav-mobile-remote.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -6319,6 +6332,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/uvo-availability.html",
+		"oF": 0
+		},
+	"\/source\/views\/warranty-info.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/warranty-info.html",
 		"oF": 0
 		}
 	},

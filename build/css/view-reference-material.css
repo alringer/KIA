@@ -1,0 +1,68 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-reference-material .page-view-header {
+  padding-top: 42px; }
+  @media (max-width: 767px) {
+    .view-reference-material .page-view-header {
+      padding-top: 24px; } }
+  .view-reference-material .page-view-header h2 {
+    font: 100 32px/1em "KIA", sans-serif;
+    letter-spacing: 1.5px;
+    color: #000;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .view-reference-material .page-view-header h2 {
+        font-size: 20px;
+        letter-spacing: .5px; } }
+
+.view-reference-material .contain {
+  max-width: 852px;
+  padding: 0 20px; }
+
+.view-reference-material .page-view-content .text-content {
+  padding-top: 51px;
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  max-width: 650px;
+  letter-spacing: .6px; }
+  .view-reference-material .page-view-content .text-content strong {
+    display: block;
+    margin-bottom: 2px; }
+  .view-reference-material .page-view-content .text-content p {
+    margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .view-reference-material .page-view-content .text-content {
+      padding-top: 25px;
+      font-size: 13px;
+      letter-spacing: .3px;
+      line-height: 1.62em; } }
