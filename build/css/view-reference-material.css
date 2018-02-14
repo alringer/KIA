@@ -207,6 +207,37 @@
     padding: 13px 75px 15px 20px;
     position: relative;
     cursor: pointer; }
+    .view-reference-material .menu-with-content .content-area .faq-row.has-collapse {
+      padding-right: 20px; }
+    .view-reference-material .menu-with-content .content-area .faq-row .collapse-header {
+      padding-left: 55px;
+      position: relative;
+      cursor: pointer; }
+      .view-reference-material .menu-with-content .content-area .faq-row .collapse-header[aria-expanded="true"] .icon-arrow-right {
+        transform: translateY(-50%) rotate(90deg); }
+      .view-reference-material .menu-with-content .content-area .faq-row .collapse-header strong {
+        font-size: 12px;
+        letter-spacing: .3px; }
+      .view-reference-material .menu-with-content .content-area .faq-row .collapse-header .icon-arrow-right {
+        left: 12px;
+        transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      @media (max-width: 767px) {
+        .view-reference-material .menu-with-content .content-area .faq-row .collapse-header {
+          padding-left: 35px; }
+          .view-reference-material .menu-with-content .content-area .faq-row .collapse-header .icon-arrow-right {
+            left: 9px; } }
+    .view-reference-material .menu-with-content .content-area .faq-row .collapse {
+      cursor: default; }
+      .view-reference-material .menu-with-content .content-area .faq-row .collapse-body {
+        padding: 25px 50px 10px 55px; }
+        .view-reference-material .menu-with-content .content-area .faq-row .collapse-body p {
+          margin-bottom: 20px; }
+          .view-reference-material .menu-with-content .content-area .faq-row .collapse-body p:last-child {
+            margin-bottom: 0; }
+        @media (max-width: 767px) {
+          .view-reference-material .menu-with-content .content-area .faq-row .collapse-body {
+            padding: 10px 0 10px 0;
+            width: calc(100% + 10px); } }
     .view-reference-material .menu-with-content .content-area .faq-row strong {
       display: block;
       font: bold 12px/1.75em "KIA", sans-serif;

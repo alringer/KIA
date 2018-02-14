@@ -5894,6 +5894,13 @@
 		"oAP": "\/build\/views\/awards.html",
 		"oF": 0
 		},
+	"\/source\/views\/bluetooth-faq.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/bluetooth-faq.html",
+		"oF": 0
+		},
 	"\/source\/views\/faq-detail.kit": {
 		"cB": 0,
 		"ft": 2048,
