@@ -203,6 +203,53 @@
       @media (max-width: $screen-xs-max) {
         padding: 10px 10px 20px;
       }
+      &.faq-area {
+        padding: 0;
+      }
+      .list-row {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .faq-row {
+        border-bottom: solid 1px #d5d5d5;
+        padding: 13px 75px 15px 20px;
+        position: relative;
+        cursor: pointer;
+        strong {
+          display: block;
+          font: bold 12px/1.75em $kia;
+          letter-spacing: .3px;
+        }
+        p {
+          margin: 0;
+        }
+        .icon-arrow-right {
+          position: absolute;
+          top: 50%;
+          right: 37.5px;
+          transform: translateY(-50%);
+          transition: all 250ms $easeOutQuint;
+        }
+        @media (min-width: $screen-xs-max) {
+          &:hover {
+            .icon-arrow-right {
+              margin-right: -10px;
+            }
+          }
+        }
+        @media (max-width: $screen-xs-max) {
+          padding-left: 12px;
+          padding-right: 30px;
+          p {
+            font-size: 12px;
+            letter-spacing: .3px;
+          }
+          .icon-arrow-right {
+            right: 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -267,4 +314,11 @@
       }
     }
   }
+}
+
+.icon-arrow-right {
+  display: block;
+  width: 12px;
+  height: 18px;
+  background: url('/images/icon_arrow_right_dark.svg') center/contain no-repeat;
 }

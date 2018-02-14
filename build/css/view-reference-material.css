@@ -196,6 +196,41 @@
   @media (max-width: 767px) {
     .view-reference-material .menu-with-content .content-area {
       padding: 10px 10px 20px; } }
+  .view-reference-material .menu-with-content .content-area.faq-area {
+    padding: 0; }
+  .view-reference-material .menu-with-content .content-area .list-row {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .view-reference-material .menu-with-content .content-area .faq-row {
+    border-bottom: solid 1px #d5d5d5;
+    padding: 13px 75px 15px 20px;
+    position: relative;
+    cursor: pointer; }
+    .view-reference-material .menu-with-content .content-area .faq-row strong {
+      display: block;
+      font: bold 12px/1.75em "KIA", sans-serif;
+      letter-spacing: .3px; }
+    .view-reference-material .menu-with-content .content-area .faq-row p {
+      margin: 0; }
+    .view-reference-material .menu-with-content .content-area .faq-row .icon-arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 37.5px;
+      transform: translateY(-50%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    @media (min-width: 767px) {
+      .view-reference-material .menu-with-content .content-area .faq-row:hover .icon-arrow-right {
+        margin-right: -10px; } }
+    @media (max-width: 767px) {
+      .view-reference-material .menu-with-content .content-area .faq-row {
+        padding-left: 12px;
+        padding-right: 30px; }
+        .view-reference-material .menu-with-content .content-area .faq-row p {
+          font-size: 12px;
+          letter-spacing: .3px; }
+        .view-reference-material .menu-with-content .content-area .faq-row .icon-arrow-right {
+          right: 10px; } }
 
 .modal-video .modal-dialog {
   width: 776px; }
@@ -243,3 +278,9 @@
         padding-left: 8px; }
       .sub-tabs > ul li a:hover {
         color: #2f2f2f; }
+
+.icon-arrow-right {
+  display: block;
+  width: 12px;
+  height: 18px;
+  background: url("/images/icon_arrow_right_dark.svg") center/contain no-repeat; }
