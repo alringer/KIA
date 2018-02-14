@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){window.refMaterial={elements:{tab_nav:$('.nav-tabs > [data-toggle="tab"]')},methods:{_switch_views:function e(){var a=$(this);window.refMaterial.elements.tab_nav.removeClass("active"),a.addClass("active")}}},window.refMaterial.elements.tab_nav.on("click",window.refMaterial.methods._switch_views)});

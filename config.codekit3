@@ -455,6 +455,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-informational-videos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-informational-videos.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-locations.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4062,6 +4075,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/reference\/video-thumb-car.png": {
+		"ft": 32768,
+		"iS": 73728,
+		"oA": 0,
+		"oAP": "\/build\/images\/reference\/video-thumb-car.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/remote-vehicle\/img_optima_base.png": {
 		"ft": 32768,
 		"iS": 444843,
@@ -4503,6 +4527,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/pre-login.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/reference-material.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/reference-material.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -5828,6 +5862,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/awards.html",
+		"oF": 0
+		},
+	"\/source\/views\/informational-videos.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/informational-videos.html",
 		"oF": 0
 		},
 	"\/source\/views\/locations-my-trips.kit": {

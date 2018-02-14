@@ -4,6 +4,7 @@
 .view-reference-material {
   .page-view-header {
     padding-top: 42px;
+    overflow: hidden;
     @media (max-width: $screen-xs-max) {
       padding-top: 24px;
     }
@@ -41,6 +42,118 @@
         letter-spacing: .3px;
         line-height: 1.62em;
       }
+    }
+  }
+  .switch-views {
+    border: none;
+    > a {
+      border: none;
+      padding: 0;
+      margin: 0 21px;
+      @media (max-width: $screen-xs-max) {
+        margin: 0 7px;
+      }
+      svg {
+        * {
+          fill: #8e8e8e !important;
+          transition: all 250ms $easeOutQuint;
+        }
+      }
+      &.active {
+        svg {
+          * {
+            fill: $red !important;
+            transition: all 250ms $easeOutQuint;
+          }
+        }
+      }
+      &:hover {
+        svg {
+          * {
+            fill: darken($red, 10%) !important;
+          }
+        }
+      }
+    }
+    > * {
+      display: inline-block;
+    }
+    .search {
+      margin-left: 21px;
+      position: relative;
+      @media (max-width: $screen-xs-max) {
+        margin-left: 7px;
+      }
+      &:before {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url('/images/icon_search.svg') center/contain no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+      input[type="text"] {
+        -webkit-appearance: none;
+        height: 40px;
+        border: 1px solid #a9adb1;
+        border-radius: 2px;
+        background: #fff;
+        padding-left: 40px;
+        display: block;
+        font-size: 11px;
+        font-weight: normal;
+        letter-spacing: 1.4px;
+        outline: none;
+        width: 200px;
+      }
+    }
+  }
+  .tab-content {
+  }
+  .page-view-intro {
+    padding-top: 40px;
+    margin-bottom: 55px;
+    p {
+      max-width: 653px;
+      font: 14px/1.5em $sans;
+      @media (max-width: $screen-sm-max) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.modal-video {
+  .modal-dialog {
+    width: 776px;
+    .video-wrap {
+      position: relative;
+      padding-top: 56.314433%;
+    }
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .modal-dialog {
+      background: transparent !important;
+      pointer-events: none;
+      iframe {
+        pointer-events: all;
+      }
+    }
+    .video-wrap {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
     }
   }
 }
