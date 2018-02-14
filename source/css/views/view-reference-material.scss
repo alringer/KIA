@@ -322,3 +322,12 @@
   height: 18px;
   background: url('/images/icon_arrow_right_dark.svg') center/contain no-repeat;
 }
+
+.view-uvo-faq {
+  @media (max-width: $screen-xs-max) {
+    .page-view-header {
+      margin-bottom: 20px !important;
+      padding-top: 0;
+    }
+  }
+}
