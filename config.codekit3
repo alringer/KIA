@@ -5864,6 +5864,13 @@
 		"oAP": "\/build\/views\/awards.html",
 		"oF": 0
 		},
+	"\/source\/views\/how-to-videos.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/how-to-videos.html",
+		"oF": 0
+		},
 	"\/source\/views\/informational-videos.kit": {
 		"cB": 0,
 		"ft": 2048,

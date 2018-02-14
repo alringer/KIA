@@ -125,6 +125,86 @@
       }
     }
   }
+  .menu-with-content {
+    @media (max-width: $screen-xs-max) {
+      .row {
+        > div {
+          padding: 0 5px;
+        }
+      }
+    }
+    .page-view-header {
+      margin-bottom: 32px;
+      position: relative;
+      .back {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 30px;
+        height: 17px;
+        cursor: pointer;
+        transition: all 250ms $easeOutQuint;
+        z-index: 3;
+        background: url('/images/icon_back_arrow.svg') left center/contain no-repeat;
+        font: bold 12px/17px $kia;
+        letter-spacing: .3px;
+        color: #000;
+        text-transform: uppercase;
+        padding-left: 20px;
+        text-decoration: none;
+        @media (max-width: $screen-xs-max) {
+          position: relative;
+          top: -10px;
+          transform: scale(.9);
+          transform-origin: left center;
+          margin-bottom: 4px;
+        }
+      }
+    }
+    .sub-tabs {
+      padding-top: 45px;
+      @media (max-width: $screen-xs-max) {
+        padding-top: 0;
+      }
+      strong {
+        display: block;
+        font: bold 10px $kia;
+        letter-spacing: .4px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .bootstrap-select {
+        margin-bottom: 28px;;
+      }
+    }
+    .content-area {
+      background: #FFFFFF;
+      box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
+      border-radius: 2px;
+      padding: 36px 40px 80px;
+      font: 14px/1.5em $sans;
+      letter-spacing: .6px;
+      iframe {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      h3 {
+        font: bold 14px $kia;
+        letter-spacing: .4px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 33px;
+      }
+      p {
+        margin-bottom: 20px;
+        max-width: 430px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 10px 10px 20px;
+      }
+    }
+  }
 }
 
 .modal-video {
@@ -154,6 +234,37 @@
       top: 50%;
       left: 0;
       transform: translateY(-50%);
+    }
+  }
+}
+
+.sub-tabs {
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 185px;
+    li {
+      margin-bottom: 20px;
+      a {
+        font: bold 12px $kia;
+        letter-spacing: .7px;
+        color: #929292;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 11px;
+        display: block;
+        transition: all 250ms $easeOutQuint;
+        text-decoration: none;
+        &.active {
+          color: #2f2f2f;
+          border-left: 3px solid $red;
+          padding-left: 8px;
+        }
+        &:hover {
+          color: #2f2f2f;
+        }
+      }
     }
   }
 }

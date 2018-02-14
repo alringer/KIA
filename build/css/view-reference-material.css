@@ -128,6 +128,75 @@
       .view-reference-material .page-view-intro p {
         max-width: 100%; } }
 
+@media (max-width: 767px) {
+  .view-reference-material .menu-with-content .row > div {
+    padding: 0 5px; } }
+
+.view-reference-material .menu-with-content .page-view-header {
+  margin-bottom: 32px;
+  position: relative; }
+  .view-reference-material .menu-with-content .page-view-header .back {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 30px;
+    height: 17px;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 3;
+    background: url("/images/icon_back_arrow.svg") left center/contain no-repeat;
+    font: bold 12px/17px "KIA", sans-serif;
+    letter-spacing: .3px;
+    color: #000;
+    text-transform: uppercase;
+    padding-left: 20px;
+    text-decoration: none; }
+    @media (max-width: 767px) {
+      .view-reference-material .menu-with-content .page-view-header .back {
+        position: relative;
+        top: -10px;
+        transform: scale(0.9);
+        transform-origin: left center;
+        margin-bottom: 4px; } }
+
+.view-reference-material .menu-with-content .sub-tabs {
+  padding-top: 45px; }
+  @media (max-width: 767px) {
+    .view-reference-material .menu-with-content .sub-tabs {
+      padding-top: 0; } }
+  .view-reference-material .menu-with-content .sub-tabs strong {
+    display: block;
+    font: bold 10px "KIA", sans-serif;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .view-reference-material .menu-with-content .sub-tabs .bootstrap-select {
+    margin-bottom: 28px; }
+
+.view-reference-material .menu-with-content .content-area {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  border-radius: 2px;
+  padding: 36px 40px 80px;
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  letter-spacing: .6px; }
+  .view-reference-material .menu-with-content .content-area iframe {
+    width: 100%;
+    margin-bottom: 25px; }
+  .view-reference-material .menu-with-content .content-area h3 {
+    font: bold 14px "KIA", sans-serif;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 33px; }
+  .view-reference-material .menu-with-content .content-area p {
+    margin-bottom: 20px;
+    max-width: 430px; }
+  @media (max-width: 767px) {
+    .view-reference-material .menu-with-content .content-area {
+      padding: 10px 10px 20px; } }
+
 .modal-video .modal-dialog {
   width: 776px; }
   .modal-video .modal-dialog .video-wrap {
@@ -150,3 +219,27 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%); } }
+
+.sub-tabs > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 185px; }
+  .sub-tabs > ul li {
+    margin-bottom: 20px; }
+    .sub-tabs > ul li a {
+      font: bold 12px "KIA", sans-serif;
+      letter-spacing: .7px;
+      color: #929292;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 11px;
+      display: block;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      text-decoration: none; }
+      .sub-tabs > ul li a.active {
+        color: #2f2f2f;
+        border-left: 3px solid #C4172C;
+        padding-left: 8px; }
+      .sub-tabs > ul li a:hover {
+        color: #2f2f2f; }
