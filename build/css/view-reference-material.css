@@ -38,7 +38,7 @@
     .view-reference-material .page-view-header {
       padding-top: 24px; } }
   .view-reference-material .page-view-header h2 {
-    font: 100 32px/1em "KIA", sans-serif;
+    font: 100 32px "KIA", sans-serif;
     letter-spacing: 1.5px;
     color: #000;
     margin: 0; }
@@ -289,3 +289,135 @@
   .view-uvo-faq .page-view-header {
     margin-bottom: 20px !important;
     padding-top: 0; } }
+
+.faq-detail {
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  letter-spacing: .6px;
+  margin-top: -35px; }
+  @media (max-width: 767px) {
+    .faq-detail {
+      margin-top: -20px; } }
+  .faq-detail-section {
+    padding: 35px 0 30px; }
+    .faq-detail-section:not(.no-border) {
+      border-bottom: solid 1px #d5d5d5; }
+    @media (max-width: 767px) {
+      .faq-detail-section {
+        padding: 20px 0 20px;
+        margin-left: -10px;
+        margin-right: -10px; }
+        .faq-detail-section > * {
+          padding-left: 10px !important; }
+        .faq-detail-section .row {
+          margin-left: 0;
+          margin-right: 0; } }
+  .faq-detail strong {
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .4px; }
+    @media (max-width: 767px) {
+      .faq-detail strong {
+        font: bold 14px/1.5em "Source Sans Pro", sans-serif;
+        letter-spacing: .4px;
+        text-transform: none;
+        padding-top: 10px; } }
+  .faq-detail .icon-list {
+    padding: 5px 0 0;
+    margin: 0;
+    font-size: 0; }
+    .faq-detail .icon-list li {
+      display: inline-block;
+      text-align: center;
+      margin: 0 7.5px; }
+      .faq-detail .icon-list li:first-child {
+        margin-left: 0; }
+      .faq-detail .icon-list li:last-child {
+        margin-right: 0; }
+      .faq-detail .icon-list li i {
+        display: block;
+        width: 42px;
+        height: 42px;
+        margin: 0 auto; }
+        .faq-detail .icon-list li i svg {
+          width: 100%; }
+      .faq-detail .icon-list li span {
+        display: block;
+        font: 12px/1.75em "Source Sans Pro", sans-serif;
+        letter-spacing: .3px;
+        text-align: center; }
+  .faq-detail h4 {
+    font: 500 20px "KIA", sans-serif;
+    letter-spacing: .5px;
+    text-transform: none;
+    margin: 0 0 20px;
+    padding-right: 20px; }
+    @media (max-width: 767px) {
+      .faq-detail h4 {
+        font-size: 16px;
+        letter-spacing: .4px; } }
+  .faq-detail ul.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: list; }
+    .faq-detail ul.list li {
+      counter-increment: list;
+      max-width: 616px;
+      font: 14px/1.5em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      min-height: 42px;
+      margin-bottom: 0;
+      padding-left: 50px;
+      position: relative;
+      padding-right: 20px; }
+      .faq-detail ul.list li em {
+        font-weight: bold;
+        font-style: normal; }
+      .faq-detail ul.list li a {
+        text-transform: uppercase;
+        color: #C4172C;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        text-decoration: none; }
+        .faq-detail ul.list li a:hover {
+          color: #690c18; }
+      .faq-detail ul.list li:before {
+        content: counter(list);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        letter-spacing: normal;
+        color: #FFF;
+        background: #C4172C;
+        border-radius: 100%;
+        font: bold 12px/24px "KIA", sans-serif;
+        padding-left: 1px; }
+      @media (max-width: 767px) {
+        .faq-detail ul.list li {
+          padding-left: 40px;
+          font-size: 12px;
+          line-height: 1.75em;
+          letter-spacing: .3px; }
+          .faq-detail ul.list li:before {
+            padding-left: 0; } }
+    .faq-detail ul.list + .important {
+      padding-left: 50px; }
+      @media (max-width: 767px) {
+        .faq-detail ul.list + .important {
+          padding-left: 50px !important; } }
+  .faq-detail .important {
+    padding-top: 65px;
+    color: #C4172C;
+    margin-bottom: 0 !important;
+    max-width: 100% !important;
+    font: 12px/1.42em "Source Sans Pro", sans-serif !important; }
+    .faq-detail .important strong {
+      font: inherit;
+      font-weight: bold; }
+    @media (max-width: 767px) {
+      .faq-detail .important {
+        padding-top: 31px; } }
