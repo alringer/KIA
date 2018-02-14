@@ -98,9 +98,11 @@
 
 .view-informational-videos .video-box {
   position: relative;
-  margin: 0 -12px;
-  margin-bottom: 6px;
+  margin: 0 -12px 6px;
   cursor: pointer; }
+  @media (max-width: 767px) {
+    .view-informational-videos .video-box {
+      margin: 0 0 20px; } }
   .view-informational-videos .video-box:hover:after {
     opacity: 1; }
   .view-informational-videos .video-box:hover .video-title {

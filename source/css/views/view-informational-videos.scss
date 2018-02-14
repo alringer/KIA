@@ -85,8 +85,10 @@
   }
   .video-box {
     position: relative;
-    margin: 0 -12px;
-    margin-bottom: 6px;
+    margin: 0 -12px 6px;
+    @media (max-width: $screen-xs-max) {
+      margin: 0 0 20px;
+    }
     cursor: pointer;
     &:hover {
       &:after {
