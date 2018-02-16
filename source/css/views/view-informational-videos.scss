@@ -24,6 +24,7 @@
       }
     }
   }
+  .file-row,
   .video-row {
     border-radius: 2px;
   	background-color: #ffffff;
@@ -53,7 +54,9 @@
       transition: all 250ms $easeOutQuint;
       opacity: 0;
     }
+    .file-thumb,
     .video-thumb {
+      width: 100%;
       max-width: 71px;
       height: 41px;
       display: inline-block;
@@ -80,6 +83,36 @@
         letter-spacing: .3px;
         vertical-align: top;
         margin-left: 15px;
+      }
+    }
+  }
+  .file-thumb {
+    background: url('/images/reference/file.svg') center/contain no-repeat;
+  }
+  .file-row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .file-box {
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
+    border-radius: 2px;
+    height: 176px;
+    margin: 0 -12px 6px;
+    padding-top: 16px;
+    padding: 16px 35px 0;
+    cursor: pointer;
+    overflow: hidden;
+    .file-thumb {
+      height: 61px;
+      margin-bottom: 19px;
+    }
+    strong {
+      display: block;
+      font: 12px/1.75em $sans;
+      letter-spacing: .5px;
+      @media (max-width: $screen-xs-max) {
+        text-align: center;
       }
     }
   }
