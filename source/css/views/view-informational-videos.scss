@@ -24,98 +24,6 @@
       }
     }
   }
-  .file-row,
-  .video-row {
-    border-radius: 2px;
-  	background-color: #ffffff;
-  	border: solid 1px #e9e9e9;
-    padding: 22px 30px;
-    transition: all 250ms $easeOutQuint;
-    position: relative;
-    margin-bottom: 2px;
-    @media (max-width: $screen-xs-max) {
-      padding-left: 18px;
-      padding-right: 18px;
-    }
-    cursor: pointer;
-    &:hover {
-      &:after {
-        opacity: 1;
-      }
-    }
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      border-bottom: 1px solid $red;
-      transition: all 250ms $easeOutQuint;
-      opacity: 0;
-    }
-    .file-thumb,
-    .video-thumb {
-      width: 100%;
-      max-width: 71px;
-      height: 41px;
-      display: inline-block;
-      vertical-align: middle;
-      @media (max-width: $screen-xs-max) {
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-      }
-    }
-    .video-title {
-      display: inline-block;
-      vertical-align: middle;
-      font: 14px/1.5em $sans;
-      letter-spacing: .6px;
-      margin-left: 25px;
-      max-width: calc(100% - 100px);
-      @media (max-width: $screen-xs-max) {
-        font-size: 12px;
-        line-height: 1.58em;
-        letter-spacing: .3px;
-        vertical-align: top;
-        margin-left: 15px;
-      }
-    }
-  }
-  .file-thumb {
-    background: url('/images/reference/file.svg') center/contain no-repeat;
-  }
-  .file-row {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .file-box {
-    background: #FFFFFF;
-    box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
-    border-radius: 2px;
-    height: 176px;
-    margin: 0 -12px 6px;
-    padding-top: 16px;
-    padding: 16px 35px 0;
-    cursor: pointer;
-    overflow: hidden;
-    .file-thumb {
-      height: 61px;
-      margin-bottom: 19px;
-    }
-    strong {
-      display: block;
-      font: 12px/1.75em $sans;
-      letter-spacing: .5px;
-      @media (max-width: $screen-xs-max) {
-        text-align: center;
-      }
-    }
-  }
   .video-box {
     position: relative;
     margin: 0 -12px 6px;
@@ -179,6 +87,99 @@
         opacity: 0;
         font-style: normal;
       }
+    }
+  }
+}
+.my-file-box,
+.file-row,
+.video-row {
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #e9e9e9;
+  padding: 22px 30px;
+  transition: all 250ms $easeOutQuint;
+  position: relative;
+  margin-bottom: 2px;
+  @media (max-width: $screen-xs-max) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  cursor: pointer;
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid $red;
+    transition: all 250ms $easeOutQuint;
+    opacity: 0;
+  }
+  .file-thumb,
+  .video-thumb {
+    width: 100%;
+    max-width: 71px;
+    height: 41px;
+    display: inline-block;
+    vertical-align: middle;
+    @media (max-width: $screen-xs-max) {
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  .video-title {
+    display: inline-block;
+    vertical-align: middle;
+    font: 14px/1.5em $sans;
+    letter-spacing: .6px;
+    margin-left: 25px;
+    max-width: calc(100% - 100px);
+    @media (max-width: $screen-xs-max) {
+      font-size: 12px;
+      line-height: 1.58em;
+      letter-spacing: .3px;
+      vertical-align: top;
+      margin-left: 15px;
+    }
+  }
+}
+.file-thumb {
+  background: url('/images/reference/file.svg') center/contain no-repeat;
+}
+.file-row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.file-box {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
+  border-radius: 2px;
+  height: 176px;
+  margin: 0 -12px 6px;
+  padding-top: 16px;
+  padding: 16px 35px 0;
+  cursor: pointer;
+  overflow: hidden;
+  .file-thumb {
+    height: 61px;
+    margin-bottom: 19px;
+  }
+  strong {
+    display: block;
+    font: 12px/1.75em $sans;
+    letter-spacing: .5px;
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
     }
   }
 }

@@ -1,0 +1,355 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-my-documents .switch-views {
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.view-my-documents.editing h2 {
+  opacity: 0; }
+
+.view-my-documents.editing .my-documents-nav-tools > span {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none; }
+
+.view-my-documents.editing .my-documents-nav-tools > div {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0); }
+
+.view-my-documents.editing .switch-views {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none; }
+
+.view-my-documents.editing .ulility-nav-edit {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0); }
+
+.view-my-documents.editing .item-edit {
+  opacity: 1 !important; }
+
+.view-my-documents h2 {
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.view-my-documents .button svg {
+  display: inline-block;
+  position: relative;
+  top: 3px; }
+
+.view-my-documents .my-documents-empty-state {
+  position: relative;
+  height: calc(100vh - 263px); }
+  .view-my-documents .my-documents-empty-state-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 431px; }
+    .view-my-documents .my-documents-empty-state-cta input {
+      display: none; }
+    .view-my-documents .my-documents-empty-state-cta > svg {
+      display: block;
+      margin: 0 auto 22px; }
+    .view-my-documents .my-documents-empty-state-cta h1 {
+      margin: 0;
+      font-size: 29px;
+      letter-spacing: 1.4px;
+      margin-bottom: 18px;
+      font-family: "KIA", sans-serif;
+      font-weight: 500; }
+    .view-my-documents .my-documents-empty-state-cta p {
+      font-size: 14px;
+      line-height: 1.5em;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+      margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    .view-my-documents .my-documents-empty-state {
+      height: calc(100vh - 175px); }
+      .view-my-documents .my-documents-empty-state-cta {
+        max-width: 275px; }
+        .view-my-documents .my-documents-empty-state-cta img {
+          max-width: 147px;
+          margin-bottom: 22px; }
+        .view-my-documents .my-documents-empty-state-cta h1 {
+          font-size: 24px;
+          margin-bottom: 14px; } }
+
+.view-my-documents .page-view-header {
+  overflow: hidden;
+  margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .view-my-documents .page-view-header {
+      margin-bottom: 20px;
+      width: calc(100% + 15px);
+      position: relative;
+      left: -15px; }
+      .view-my-documents .page-view-header .pull-right {
+        float: none !important;
+        text-align: center; }
+      .view-my-documents .page-view-header .search input {
+        width: 170px !important; } }
+    @media (max-width: 767px) and (max-width: 380px) {
+      .view-my-documents .page-view-header .search input {
+        width: 120px !important; } }
+  @media (max-width: 767px) {
+      .view-my-documents .page-view-header .upload-label {
+        margin-left: 0px !important; }
+      .view-my-documents .page-view-header .button i {
+        display: none !important; } }
+
+.view-my-documents .item-edit {
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 8px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.75);
+  height: 35px;
+  width: 35px;
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0; }
+  .view-my-documents .item-edit em:before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -1px; }
+
+.view-my-documents .my-file-box .file-thumb,
+.view-my-documents .file-row .file-thumb {
+  background: none;
+  width: auto;
+  height: auto;
+  display: inline-block; }
+
+.view-my-documents .file-row {
+  background-color: #ffffff;
+  box-shadow: inset 0 -1px 0 0 #e9e9e9;
+  padding-left: 58px;
+  position: relative; }
+  .view-my-documents .file-row .file-title {
+    display: inline-block;
+    margin-left: 44px; }
+  .view-my-documents .file-row:hover .item-edit {
+    opacity: 1; }
+
+.view-my-documents .row {
+  margin-left: -4.5px;
+  margin-right: -4.5px; }
+  .view-my-documents .row > div {
+    padding: 4.5px; }
+
+.view-my-documents .my-file-box {
+  background: #F9F9F9;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  border-radius: 2px;
+  padding: 0; }
+  .view-my-documents .my-file-box .item-edit {
+    top: 12px;
+    left: 12px;
+    transform: none; }
+  .view-my-documents .my-file-box:hover .item-edit {
+    opacity: 1; }
+  .view-my-documents .my-file-box .file-preview img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%; }
+  .view-my-documents .my-file-box:after {
+    border-bottom-width: 2px; }
+  .view-my-documents .my-file-box .file-meta {
+    padding: 15px 11px;
+    border-top: solid 1px #e3e3e3; }
+  .view-my-documents .my-file-box .file-thumb {
+    display: inline-block; }
+    @media (max-width: 767px) {
+      .view-my-documents .my-file-box .file-thumb {
+        width: 15px; }
+        .view-my-documents .my-file-box .file-thumb img {
+          width: 100%; } }
+  .view-my-documents .my-file-box .file-title {
+    display: inline-block;
+    margin-left: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 50px);
+    vertical-align: middle; }
+    @media (max-width: 767px) {
+      .view-my-documents .my-file-box .file-title {
+        font-size: 12px;
+        margin-left: 5px;
+        max-width: calc(100% - 30px); } }
+
+.view-my-documents .upload-label {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-left: 5px; }
+  .view-my-documents .upload-label input {
+    display: none; }
+
+.view-my-documents .edit-utility {
+  position: relative; }
+
+.view-my-documents .ulility-nav-edit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  padding-right: inherit;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  height: 40px;
+  line-height: 40px;
+  pointer-events: none;
+  white-space: nowrap;
+  right: 70px; }
+  @media (max-width: 767px) {
+    .view-my-documents .ulility-nav-edit {
+      right: 0; } }
+  .view-my-documents .ulility-nav-edit li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 19px; }
+    .view-my-documents .ulility-nav-edit li:first-child {
+      margin-left: 0px; }
+    .view-my-documents .ulility-nav-edit li:last-child {
+      margin-right: 0px; }
+    .view-my-documents .ulility-nav-edit li span {
+      display: block;
+      font-size: 10px;
+      line-height: 1em;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #C4172C;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      font-family: "KIA", sans-serif;
+      cursor: pointer; }
+      .view-my-documents .ulility-nav-edit li span.disabled {
+        pointer-events: none;
+        opacity: .3; }
+      .view-my-documents .ulility-nav-edit li span em {
+        font-style: normal; }
+      .view-my-documents .ulility-nav-edit li span.select-all svg {
+        width: 10px;
+        height: 10px; }
+        .view-my-documents .ulility-nav-edit li span.select-all svg * {
+          fill: none !important;
+          stroke: #C4172C !important; }
+      .view-my-documents .ulility-nav-edit li span svg {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 10px;
+        top: -2px; }
+        .view-my-documents .ulility-nav-edit li span svg * {
+          fill: #C4172C !important;
+          transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+      .view-my-documents .ulility-nav-edit li span:hover {
+        color: #000; }
+        .view-my-documents .ulility-nav-edit li span:hover svg * {
+          fill: #000 !important; }
+        .view-my-documents .ulility-nav-edit li span:hover.select-all svg * {
+          fill: none !important;
+          stroke: #000 !important; }
+  @media (max-width: 767px) {
+    .view-my-documents .ulility-nav-edit {
+      padding-right: 0px;
+      padding-left: 0px;
+      text-align: center;
+      width: 100%;
+      height: 60px;
+      margin: 0 auto; }
+      .view-my-documents .ulility-nav-edit li {
+        vertical-align: bottom;
+        margin: 0 15px; }
+        .view-my-documents .ulility-nav-edit li:nth-child(3) {
+          margin-right: 0px; }
+        .view-my-documents .ulility-nav-edit li span {
+          display: block;
+          height: 60px;
+          line-height: 70px;
+          position: relative; }
+          .view-my-documents .ulility-nav-edit li span svg {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 20px !important; }
+          .view-my-documents .ulility-nav-edit li span em {
+            display: none; }
+          .view-my-documents .ulility-nav-edit li span.cancel {
+            display: none; } }
+
+.my-documents-nav-tools {
+  float: right; }
+  .my-documents-nav-tools > span {
+    display: inline-block;
+    margin: 0 15px;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+    pointer-events: all; }
+    .my-documents-nav-tools > span:first-child {
+      margin-left: 0px; }
+    .my-documents-nav-tools > span:last-child {
+      margin-right: 0px; }
+  .my-documents-nav-tools > div {
+    cursor: pointer;
+    color: #C4172C;
+    font-size: 11px;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(100%);
+    font-weight: bold;
+    opacity: 0;
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+    pointer-events: none; }

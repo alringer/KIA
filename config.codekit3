@@ -455,6 +455,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-bluetooth.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-bluetooth.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-informational-videos.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -503,6 +516,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/view-my-car-zone.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/css\/views\/view-my-documents.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-my-documents.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -4075,11 +4101,82 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/reference\/bluetooth-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/reference\/bluetooth-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/reference\/doc-screen.png": {
+		"ft": 32768,
+		"iS": 25577,
+		"oA": 0,
+		"oAP": "\/build\/images\/reference\/doc-screen.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/reference\/docs-empty.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/reference\/docs-empty.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/reference\/file.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/build\/images\/reference\/file.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/reference\/file1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/reference\/file1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/reference\/file2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/reference\/file2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/reference\/file3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/reference\/file3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/source\/images\/reference\/icon-upload.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/reference\/icon-upload.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -4421,6 +4518,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/bluetooth.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/bluetooth.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/dial.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4517,6 +4624,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/my-car-zone.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/my-documents.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/my-documents.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -5911,6 +6028,13 @@
 		"oAP": "\/build\/views\/bluetooth-faq.html",
 		"oF": 0
 		},
+	"\/source\/views\/bluetooth.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/bluetooth.html",
+		"oF": 0
+		},
 	"\/source\/views\/faq-detail.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -5993,6 +6117,20 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/my-car-zone-3.html",
+		"oF": 0
+		},
+	"\/source\/views\/my-documents-empty.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/my-documents-empty.html",
+		"oF": 0
+		},
+	"\/source\/views\/my-documents.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/my-documents.html",
 		"oF": 0
 		},
 	"\/source\/views\/my-vehicles-1.kit": {

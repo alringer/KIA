@@ -1,0 +1,127 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-bluetooth .bluetooth-onboarding {
+  position: relative;
+  height: calc(100vh - 263px); }
+  .view-bluetooth .bluetooth-onboarding-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; }
+    .view-bluetooth .bluetooth-onboarding-cta > svg {
+      display: block;
+      margin: 0 auto 22px; }
+    .view-bluetooth .bluetooth-onboarding-cta h1 {
+      margin: 0;
+      font-size: 29px;
+      letter-spacing: 1.4px;
+      margin-bottom: 18px;
+      font-family: "KIA", sans-serif;
+      font-weight: 500; }
+    .view-bluetooth .bluetooth-onboarding-cta p {
+      font-size: 14px;
+      line-height: 1.5em;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+      margin-bottom: 32px;
+      max-width: 431px;
+      margin: 0 auto 45px; }
+    .view-bluetooth .bluetooth-onboarding-cta form {
+      white-space: nowrap;
+      width: 100%; }
+      @media (max-width: 767px) {
+        .view-bluetooth .bluetooth-onboarding-cta form {
+          max-width: 500px;
+          margin: 0 auto; } }
+      .view-bluetooth .bluetooth-onboarding-cta form .form-fields {
+        display: inline-block;
+        width: calc(100% - 100px);
+        font-size: 0;
+        vertical-align: bottom; }
+        @media (max-width: 767px) {
+          .view-bluetooth .bluetooth-onboarding-cta form .form-fields {
+            display: block;
+            width: calc(100%);
+            margin: 0 auto 5px; } }
+        .view-bluetooth .bluetooth-onboarding-cta form .form-fields > li {
+          display: inline-block;
+          width: calc(33.3333% - 8px);
+          margin: 0 4px; }
+          @media (max-width: 767px) {
+            .view-bluetooth .bluetooth-onboarding-cta form .form-fields > li {
+              display: block;
+              width: 100%;
+              margin: 0 0 28px; } }
+          .view-bluetooth .bluetooth-onboarding-cta form .form-fields > li strong {
+            display: block;
+            font: bold 10px "KIA", sans-serif;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+            margin-bottom: 8px; }
+      .view-bluetooth .bluetooth-onboarding-cta form .form-action {
+        display: inline-block;
+        vertical-align: bottom; }
+        @media (max-width: 767px) {
+          .view-bluetooth .bluetooth-onboarding-cta form .form-action {
+            display: block; }
+            .view-bluetooth .bluetooth-onboarding-cta form .form-action .button {
+              width: calc(100%);
+              margin: 0 auto; } }
+  @media (max-width: 767px) {
+    .view-bluetooth .bluetooth-onboarding {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      height: auto; }
+      .view-bluetooth .bluetooth-onboarding-cta {
+        max-width: calc(100% - 20px);
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+        padding-top: 40px; }
+        .view-bluetooth .bluetooth-onboarding-cta img {
+          max-width: 147px;
+          margin-bottom: 22px; }
+        .view-bluetooth .bluetooth-onboarding-cta h1 {
+          font-size: 24px;
+          margin-bottom: 14px;
+          line-height: normal; }
+        .view-bluetooth .bluetooth-onboarding-cta p {
+          margin-bottom: 35px; } }

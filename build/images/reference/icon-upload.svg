@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Empty-Documents-|-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-533.000000, -580.000000)" fill-opacity="0.5">
+        <g id="Empty-Data-Set" transform="translate(352.000000, 313.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Button" transform="translate(165.000000, 255.000000)">
+                <path d="M24.9296414,16.4596605 C25.1517649,16.7260068 25.0227313,17.1652055 24.63765,17.1652055 L23.1274122,17.1652055 L23.1274122,23.7049249 C23.1274122,23.9302793 22.9394149,24.1182765 22.7140606,24.1182765 L19.362419,24.1182765 C19.1370647,24.1182765 18.9490674,23.9302793 18.9490674,23.7049249 L18.9490674,17.1652055 L17.4388296,17.1652055 C17.0537483,17.1652055 16.9247147,16.7260068 17.1468382,16.4596605 C18.346507,15.018281 19.5463777,13.5766996 20.7460464,12.135522 C20.8340881,12.0297104 20.9380823,11.9911417 21.0382398,11.9980074 C21.1383973,11.9911417 21.2421895,12.0297104 21.3304332,12.135522 C22.5301019,13.5769015 23.7299726,15.018281 24.9296414,16.4596605 Z M16,26 L26,26 L26,29 L16,29 L16,26 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

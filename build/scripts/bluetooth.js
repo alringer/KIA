@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){window.bluetooth={elements:{select:$("form .selectpicker")},methods:{_select:function e(){var t=$(this),l=t.parents("li"),o=l.next("li");t.val()&&o.length&&o.removeClass("disabled")}}},window.bluetooth.elements.select.on("change.disabled",window.bluetooth.methods._select)});
