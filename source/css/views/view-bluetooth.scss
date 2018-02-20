@@ -2,6 +2,237 @@
 @import "../mixins.scss";
 
 .view-bluetooth {
+  .page-view-content {
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
+    border-radius: 2px;
+    padding: 55px 45px 60px;
+    margin-top: 45px;
+    @media (max-width: $screen-xs-max) {
+      padding: 20px 20px 60px;
+      margin-top: 10px;
+    }
+    .pairing-devices {
+      margin-bottom: 40px;
+      .row {
+        margin-bottom: 10px;
+        @media (max-width: $screen-xs-max) {
+          margin-bottom: 20px;
+        }
+      }
+      .device {
+        text-align: center;
+        min-height: 125px;
+        padding-top: 15px;
+        @media (max-width: $screen-xs-max) {
+          margin-bottom: 10px;
+        }
+        strong {
+          display: block;
+          font: 14px $sans;
+          letter-spacing: .4px;
+          color: #000;
+          padding-top: 11px;
+          a {
+            color: $red;
+            display: inline-block;
+            font: bold 11px $kia;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            margin-left: 5px;
+            @media (max-width: $screen-xs-max) {
+              display: block;
+              top: 0;
+              margin-bottom: 10px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      .instructions {
+        font: 14px/1.5em $sans;
+        p {
+          margin-bottom: 5px;
+        }
+        ol {
+          margin: 0;
+          padding: 0 0 0 12px;
+          @media (max-width: $screen-xs-max) {
+            font-size: 12px;
+          }
+          li {
+            margin-bottom: 3px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    .pairing-compatibility {
+      border-top: solid 1px #d5d5d5;
+      padding-top: 55px;
+      @media (max-width: $screen-xs-max) {
+        padding-top: 48px;
+      }
+      h2 {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        font: 500 20px $kia;
+        letter-spacing: .5px;
+        color: #000;
+        @media (max-width: $screen-xs-max) {
+          display: block;
+          max-width: 200px;
+          margin-bottom: 30px;
+        }
+      }
+      .bootstrap-select {
+        display: inline-block;
+        width: 120px !important;
+        vertical-align: middle;
+        position: relative;
+        top: 5px;
+        margin-left: 13px;
+        @media (max-width: $screen-xs-max) {
+          display: block;
+          top: 0;
+          margin: 0;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        .row {
+          > div:first-child {
+            .pairing-compatibility-col {
+              border-top: none;
+            }
+          }
+        }
+      }
+      .pairing-compatibility-col {
+        clear: both;
+        padding-top: 49px;
+        @media (max-width: $screen-xs-max) {
+          border-top: solid 1px #d5d5d5;
+          padding-top: 28px;
+          margin-bottom: 20px;
+        }
+        strong {
+          display: block;
+          font: bold 14px $sans;
+          letter-spacing: .4px;
+          margin-bottom: 30px;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 23px;
+            font: 14px $sans;
+            letter-spacing: .6px;
+            @media (max-width: $screen-xs-max) {
+              font-size: 12px;
+              margin-bottom: 15px;
+            }
+            &:before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              width: 20px;
+              height: 20px;
+              background: url('/images/reference/check-circle.svg') center/contain no-repeat;
+            }
+          }
+          &.incompatible {
+            li:before {
+              background-image: url('/images/reference/x-circle.svg');
+            }
+          }
+        }
+      }
+    }
+  }
+  .cta-boxes {
+    padding-top: 8px;
+    .row {
+      margin-left: -5px;
+      margin-right: -5px;
+      > div {
+        padding: 0 5px;
+      }
+    }
+    .box {
+      color: #FFF;
+      padding-left: 73px;
+      position: relative;
+      margin-bottom: 7px;
+      min-height: 176px;
+      @media (max-width: $screen-xs-max) {
+        min-height: auto;
+      }
+      &.red {
+        background: $red;
+      }
+      &.blue {
+        background: #0082FC;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 73px;
+        text-align: center;
+        transform: translateY(-50%);
+      }
+      &-content {
+        padding: 30px 0;
+        display: inline-block;
+        max-width: 165px;
+        @media (max-width: $screen-xs-max) {
+          display: block;
+          max-width: 100%;
+          padding-bottom: 0;
+        }
+        strong {
+          font: bold 12px $kia;
+          letter-spacing: .3px;
+          text-transform: uppercase;
+        }
+        p {
+          font: 14px/1.5em $sans;
+          letter-spacing: .6px;
+        }
+      }
+      &-button {
+        position: absolute;
+        padding-right: 20px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width: $screen-xs-max) {
+          position: relative;
+          padding-right: 0;
+          top: 0;
+          transform: none;
+        }
+        .button {
+          width: 145px;
+          padding: 0;
+          background: rgba(0,0,0,0.27);
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
   .bluetooth-onboarding {
     position: relative;
     height: calc(100vh - 263px);

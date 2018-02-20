@@ -1,1 +1,0 @@
-"use strict";$(document).ready(function(){window.template={elements:{element:$(".element")},methods:{_method:function e(){}}},window.template.elements.element.on("click",window.template.methods._method)});

@@ -31,6 +31,200 @@
   to {
     transform: rotate(360deg); } }
 
+.view-bluetooth .page-view-content {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  border-radius: 2px;
+  padding: 55px 45px 60px;
+  margin-top: 45px; }
+  @media (max-width: 767px) {
+    .view-bluetooth .page-view-content {
+      padding: 20px 20px 60px;
+      margin-top: 10px; } }
+  .view-bluetooth .page-view-content .pairing-devices {
+    margin-bottom: 40px; }
+    .view-bluetooth .page-view-content .pairing-devices .row {
+      margin-bottom: 10px; }
+      @media (max-width: 767px) {
+        .view-bluetooth .page-view-content .pairing-devices .row {
+          margin-bottom: 20px; } }
+    .view-bluetooth .page-view-content .pairing-devices .device {
+      text-align: center;
+      min-height: 125px;
+      padding-top: 15px; }
+      @media (max-width: 767px) {
+        .view-bluetooth .page-view-content .pairing-devices .device {
+          margin-bottom: 10px; } }
+      .view-bluetooth .page-view-content .pairing-devices .device strong {
+        display: block;
+        font: 14px "Source Sans Pro", sans-serif;
+        letter-spacing: .4px;
+        color: #000;
+        padding-top: 11px; }
+        .view-bluetooth .page-view-content .pairing-devices .device strong a {
+          color: #C4172C;
+          display: inline-block;
+          font: bold 11px "KIA", sans-serif;
+          letter-spacing: .7px;
+          text-transform: uppercase;
+          vertical-align: middle;
+          position: relative;
+          top: -2px;
+          margin-left: 5px; }
+          @media (max-width: 767px) {
+            .view-bluetooth .page-view-content .pairing-devices .device strong a {
+              display: block;
+              top: 0;
+              margin-bottom: 10px;
+              margin-top: 5px; } }
+    .view-bluetooth .page-view-content .pairing-devices .instructions {
+      font: 14px/1.5em "Source Sans Pro", sans-serif; }
+      .view-bluetooth .page-view-content .pairing-devices .instructions p {
+        margin-bottom: 5px; }
+      .view-bluetooth .page-view-content .pairing-devices .instructions ol {
+        margin: 0;
+        padding: 0 0 0 12px; }
+        @media (max-width: 767px) {
+          .view-bluetooth .page-view-content .pairing-devices .instructions ol {
+            font-size: 12px; } }
+        .view-bluetooth .page-view-content .pairing-devices .instructions ol li {
+          margin-bottom: 3px;
+          padding-left: 10px; }
+  .view-bluetooth .page-view-content .pairing-compatibility {
+    border-top: solid 1px #d5d5d5;
+    padding-top: 55px; }
+    @media (max-width: 767px) {
+      .view-bluetooth .page-view-content .pairing-compatibility {
+        padding-top: 48px; } }
+    .view-bluetooth .page-view-content .pairing-compatibility h2 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      font: 500 20px "KIA", sans-serif;
+      letter-spacing: .5px;
+      color: #000; }
+      @media (max-width: 767px) {
+        .view-bluetooth .page-view-content .pairing-compatibility h2 {
+          display: block;
+          max-width: 200px;
+          margin-bottom: 30px; } }
+    .view-bluetooth .page-view-content .pairing-compatibility .bootstrap-select {
+      display: inline-block;
+      width: 120px !important;
+      vertical-align: middle;
+      position: relative;
+      top: 5px;
+      margin-left: 13px; }
+      @media (max-width: 767px) {
+        .view-bluetooth .page-view-content .pairing-compatibility .bootstrap-select {
+          display: block;
+          top: 0;
+          margin: 0; } }
+    @media (max-width: 767px) {
+      .view-bluetooth .page-view-content .pairing-compatibility .row > div:first-child .pairing-compatibility-col {
+        border-top: none; } }
+    .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col {
+      clear: both;
+      padding-top: 49px; }
+      @media (max-width: 767px) {
+        .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col {
+          border-top: solid 1px #d5d5d5;
+          padding-top: 28px;
+          margin-bottom: 20px; } }
+      .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col strong {
+        display: block;
+        font: bold 14px "Source Sans Pro", sans-serif;
+        letter-spacing: .4px;
+        margin-bottom: 30px; }
+      .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col ul li {
+          padding-left: 30px;
+          position: relative;
+          margin-bottom: 23px;
+          font: 14px "Source Sans Pro", sans-serif;
+          letter-spacing: .6px; }
+          @media (max-width: 767px) {
+            .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col ul li {
+              font-size: 12px;
+              margin-bottom: 15px; } }
+          .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col ul li:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: url("/images/reference/check-circle.svg") center/contain no-repeat; }
+        .view-bluetooth .page-view-content .pairing-compatibility .pairing-compatibility-col ul.incompatible li:before {
+          background-image: url("/images/reference/x-circle.svg"); }
+
+.view-bluetooth .cta-boxes {
+  padding-top: 8px; }
+  .view-bluetooth .cta-boxes .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+    .view-bluetooth .cta-boxes .row > div {
+      padding: 0 5px; }
+  .view-bluetooth .cta-boxes .box {
+    color: #FFF;
+    padding-left: 73px;
+    position: relative;
+    margin-bottom: 7px;
+    min-height: 176px; }
+    @media (max-width: 767px) {
+      .view-bluetooth .cta-boxes .box {
+        min-height: auto; } }
+    .view-bluetooth .cta-boxes .box.red {
+      background: #C4172C; }
+    .view-bluetooth .cta-boxes .box.blue {
+      background: #0082FC; }
+    .view-bluetooth .cta-boxes .box i {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 73px;
+      text-align: center;
+      transform: translateY(-50%); }
+    .view-bluetooth .cta-boxes .box-content {
+      padding: 30px 0;
+      display: inline-block;
+      max-width: 165px; }
+      @media (max-width: 767px) {
+        .view-bluetooth .cta-boxes .box-content {
+          display: block;
+          max-width: 100%;
+          padding-bottom: 0; } }
+      .view-bluetooth .cta-boxes .box-content strong {
+        font: bold 12px "KIA", sans-serif;
+        letter-spacing: .3px;
+        text-transform: uppercase; }
+      .view-bluetooth .cta-boxes .box-content p {
+        font: 14px/1.5em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px; }
+    .view-bluetooth .cta-boxes .box-button {
+      position: absolute;
+      padding-right: 20px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      @media (max-width: 767px) {
+        .view-bluetooth .cta-boxes .box-button {
+          position: relative;
+          padding-right: 0;
+          top: 0;
+          transform: none; } }
+      .view-bluetooth .cta-boxes .box-button .button {
+        width: 145px;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.27);
+        margin-bottom: 30px; }
+
 .view-bluetooth .bluetooth-onboarding {
   position: relative;
   height: calc(100vh - 263px); }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pairing-Instructions-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-205.000000, -848.000000)">
+        <g id="CONTENT" transform="translate(32.000000, 254.000000)">
+            <g id="Feature-compatability" transform="translate(170.000000, 398.000000)">
+                <g id="Compatable" transform="translate(1.000000, 145.000000)">
+                    <g id="Checkmark" transform="translate(2.000000, 51.000000)">
+                        <circle id="Oval" fill="#98C454" cx="9.5" cy="9.5" r="9.5"></circle>
+                        <g id="Icons-/-Checkmark" transform="translate(4.700000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M3.60707027,7.21390374 C3.4477573,7.21390374 3.29445614,7.15077974 3.18203529,7.03775771 L0.176130223,4.03185264 C-0.0589315537,3.79679086 -0.0589315537,3.41684446 0.176130223,3.18178269 C0.411191999,2.94672091 0.791138399,2.94672091 1.02620018,3.18178269 L3.58422539,5.7398079 L8.5710219,0.198722496 C8.79345887,-0.0471605381 9.17340527,-0.0682018736 9.41988949,0.154235101 C9.6663737,0.376070895 9.68621268,0.756017296 9.46437688,1.00310269 L4.05374776,7.01491283 C3.94373163,7.13755375 3.78742457,7.2090943 3.62270097,7.21390374 L3.60707027,7.21390374 L3.60707027,7.21390374 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
