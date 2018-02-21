@@ -12,7 +12,7 @@
   }
 </style>
 # V - 7.0.1
-* KK-275 Create Account displays Sign in modal
+* KOPE-434 Create Account displays Sign in modal
 ===
 # V - 7.0.0
 * KK-367 As a user I need a landing page for KOP
