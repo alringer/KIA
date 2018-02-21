@@ -110,6 +110,8 @@ $(document).ready(function() {
       },
       _reset : () => {
         window.modals.elements.modal.find('.carousel').carousel(0);
+        window.modals.elements.modal.find('.nav-tabs li').removeClass('active');
+        window.modals.elements.modal.find('.nav-tabs li').first().addClass('active');
         window.modals.elements.modal.find('.tab-content').each(function(){
           var $this = $(this),
               tab_id = $this.find('.tab-pane').first().attr('id');
