@@ -1352,3 +1352,70 @@ body {
     }
   }
 }
+
+.waypoints {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  &-action {
+    .button {
+      width: 146px;
+    }
+  }
+  + .poi-actions {
+    .button {
+      width: 146px;
+    }
+  }
+  .waypoint {
+    &-input {
+      position: relative;
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        margin-top: 2px;
+        cursor: pointer;
+        &.icon-search {
+          left: 16px;
+          pointer-events: none;
+        }
+        &.icon-cancel {
+          right: 16px;
+          svg {
+            path {
+              transition: all 250ms $easeOutQuint;
+            }
+          }
+          &:hover {
+            svg {
+              path {
+                fill: #000 !important;
+              }
+            }
+          }
+        }
+      }
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        height: 50px;
+        font: 600 14px $sans;
+        letter-spacing: .4px;
+        padding-left: 45px;
+        border: solid 1px #d4d4d4;
+        outline: none;
+      }
+      .locations-search-results-list {
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        background: $white;
+        max-height: 150px;
+        width: 100%;
+        border: solid 1px #d4d4d4;
+        border-top: none;
+      }
+    }
+  }
+}
