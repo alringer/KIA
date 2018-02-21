@@ -16,7 +16,9 @@ $(document).ready(() => {
       location_utility : $('.locations-utility'),
       filter_badge : $('.filter-list .badge'),
       toggle_detail : $('.toggle-detail'),
-      pin_refresh_start : $('.pin-refresh-start')
+      pin_refresh_start : $('.pin-refresh-start'),
+      waypoint_search : $('.waypoint-search'),
+      waypoint_clear : $('[data-waypoint="clear"]'),
     },
     methods : {
       collapse : {
@@ -110,7 +112,41 @@ $(document).ready(() => {
             window.loading.methods._loading_stop();
             window.locations.elements.save_poi_btn.removeClass('spinning');
             window.locations.elements.location_carousel.carousel(4);
-          }, 2000)
+          }, 2000);
+        },
+        waypoints : {
+          _keyup : function(e) {
+            var $this = $(this),
+                $parent = $this.parents('li'),
+                $search_results = $parent.find('.locations-search-results-list');
+            if(e.keyCode === 27) {
+              $search_results.removeClass('show');
+            }else{
+              if($this.val().length) {
+                $parent.addClass('has-text');
+                $search_results.addClass('show');
+              }else{
+                $search_results.removeClass('show');
+                $parent.removeClass('has-text');
+              }
+            }
+          },
+          _close : function() {
+            var $this = $(this),
+                $parent = $this.parents('li'),
+                $search_results = $parent.find('.locations-search-results-list');
+            $search_results.removeClass('show');
+            $parent.removeClass('has-text');
+          },
+          _clear : function() {
+            var $this = $(this),
+                $parent = $this.parents('li'),
+                $input = $parent.find('input'),
+                $search_results = $parent.find('.locations-search-results-list');
+            $input.val('');
+            $parent.removeClass('has-text');
+            $search_results.removeClass('show');
+          }
         }
       },
       utility : {
@@ -217,5 +253,7 @@ $(document).ready(() => {
   window.locations.elements.filter_badge.find('i').on('click', window.locations.methods.filters._remove);
   window.locations.elements.toggle_detail.on('click', window.locations.methods.collapse._toggle);
   window.locations.elements.pin_refresh_start.on('click', window.locations.methods.pin._refresh);
+  window.locations.elements.waypoint_search.on('keyup', window.locations.methods.poi.waypoints._keyup);
+  window.locations.elements.waypoint_clear.on('click', window.locations.methods.poi.waypoints._clear);
   $('form').on('submit', window.locations.methods.form_submit);
 });
