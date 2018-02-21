@@ -11,6 +11,9 @@
     margin-bottom: 40px;
   }
 </style>
+# V - 7.0.2
+* Modal Nav Fix
+===
 # V - 7.0.1
 * KOPE-434 Create Account displays Sign in modal
 ===
