@@ -198,6 +198,6 @@
     display: block;
     font: 12px/1.75em "Source Sans Pro", sans-serif;
     letter-spacing: .5px; }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .file-box strong {
         text-align: center; } }

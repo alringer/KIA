@@ -4,6 +4,11 @@
 .view-my-documents {
   .switch-views {
     transition: all 250ms $easeOutQuint;
+    @media (max-width: $screen-sm-max) AND (min-width: $screen-xs-max) {
+      > a {
+        margin: 0 10px;
+      }
+    }
   }
   &.editing {
     h2 {
@@ -39,6 +44,10 @@
   }
   h2 {
     transition: all 250ms $easeOutQuint;
+    @media (max-width: $screen-sm-max) {
+      font-size: 26px !important;
+      padding-top: 7px;
+    }
   }
   .button {
     svg {
@@ -46,6 +55,10 @@
       position: relative;
       top: 3px;
     }
+  }
+  .edit-button {
+    vertical-align: bottom;
+    margin-bottom: 5px;
   }
   .my-documents-empty-state {
     position: relative;

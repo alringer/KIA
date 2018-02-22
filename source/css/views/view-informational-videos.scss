@@ -178,7 +178,7 @@
     display: block;
     font: 12px/1.75em $sans;
     letter-spacing: .5px;
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: $screen-sm-max) {
       text-align: center;
     }
   }
