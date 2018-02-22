@@ -482,13 +482,24 @@ body {
           input[type="text"] {
             -webkit-appearance: none;
             border: none;
-            font-style: italic;
             outline: none;
             width: 100%;
             padding-right: 30px;
             height: 57px;
             background: none;
             padding-left: 0px;
+            &::-webkit-input-placeholder {
+              font-style: italic;
+            }
+            &::-moz-placeholder {
+              font-style: italic;
+            }
+            &:-ms-input-placeholder {
+              font-style: italic;
+            }
+            &:-moz-placeholder {
+              font-style: italic;
+            }
           }
         }
       }

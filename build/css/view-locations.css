@@ -416,13 +416,24 @@ body {
           .locations-map .poi-detail-fields .field-cell input[type="text"] {
             -webkit-appearance: none;
             border: none;
-            font-style: italic;
             outline: none;
             width: 100%;
             padding-right: 30px;
             height: 57px;
             background: none;
             padding-left: 0px; }
+            .locations-map .poi-detail-fields .field-cell input[type="tel"]::-webkit-input-placeholder,
+            .locations-map .poi-detail-fields .field-cell input[type="text"]::-webkit-input-placeholder {
+              font-style: italic; }
+            .locations-map .poi-detail-fields .field-cell input[type="tel"]::-moz-placeholder,
+            .locations-map .poi-detail-fields .field-cell input[type="text"]::-moz-placeholder {
+              font-style: italic; }
+            .locations-map .poi-detail-fields .field-cell input[type="tel"]:-ms-input-placeholder,
+            .locations-map .poi-detail-fields .field-cell input[type="text"]:-ms-input-placeholder {
+              font-style: italic; }
+            .locations-map .poi-detail-fields .field-cell input[type="tel"]:-moz-placeholder,
+            .locations-map .poi-detail-fields .field-cell input[type="text"]:-moz-placeholder {
+              font-style: italic; }
 
 .popular-times {
   width: 100%;
