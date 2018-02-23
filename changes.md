@@ -22,6 +22,7 @@
 * KK-336 As a user I need to see my vehicle manuals
 * KK-340 As a user I need to be able to see My Documents
 * KK-703 As a user, I want to be able to add Way Points to my POI
+* KOPE-437 Edit POI UX/UI Screen Missing
 ===
 </style>
 

@@ -85,8 +85,7 @@
   top: 3px; }
 
 .view-my-documents .edit-button {
-  vertical-align: bottom;
-  margin-bottom: 5px; }
+  vertical-align: bottom; }
 
 .view-my-documents .my-documents-empty-state {
   position: relative;
