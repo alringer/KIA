@@ -21,7 +21,7 @@ $(document).ready(() => {
       waypoint : $('.waypoint'),
       waypoint_search : $('.waypoint-search'),
       waypoint_clear : $('[data-waypoint="clear"]'),
-      waypoint_delete: $('.waypoint .delete'),
+      waypoint_delete: $('.waypoint .delete, [data-waypoint="delete"]'),
       waypoint_mobile_add : $('.modal .locations-search-results-item'),
       draggable : $('.draggable'),
       waypoint_select : $('.waypoint-input .locations-search-results-item'),

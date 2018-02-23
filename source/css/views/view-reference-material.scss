@@ -46,6 +46,15 @@
   }
   .switch-views {
     border: none;
+    > * {
+      vertical-align: middle;
+      &[href="#grid-view"] {
+        svg {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
     > a {
       border: none;
       padding: 0;
