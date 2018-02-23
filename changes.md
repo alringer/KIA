@@ -11,6 +11,26 @@
     margin-bottom: 40px;
   }
 </style>
+
+# V - 8.0.0
+* KK-338 As a user I need to see warranty info
+* KK-337 As a user I need to be able to see informational videos
+* KK-461 As user I need to see how-to videos
+* KK-343 As a user I need to see a UVO page
+* KK-342 As a user I need to see bluetooth FAQs
+* KK-341 As a user I need to see bluetooth information
+* KK-336 As a user I need to see my vehicle manuals
+* KK-340 As a user I need to be able to see My Documents
+* KK-703 As a user, I want to be able to add Way Points to my POI
+===
+</style>
+
+# V - 7.0.2
+* Modal Nav Fix
+===
+# V - 7.0.1
+* KOPE-434 Create Account displays Sign in modal
+===
 # V - 7.0.0
 * KK-367 As a user I need a landing page for KOP
 * KK-368 As a user I need a marketing explaination for how "UVO-Locations" works

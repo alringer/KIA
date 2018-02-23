@@ -110,6 +110,8 @@ $(document).ready(function() {
       },
       _reset : () => {
         window.modals.elements.modal.find('.carousel').carousel(0);
+        window.modals.elements.modal.find('.nav-tabs li').removeClass('active');
+        window.modals.elements.modal.find('.nav-tabs li').first().addClass('active');
         window.modals.elements.modal.find('.tab-content').each(function(){
           var $this = $(this),
               tab_id = $this.find('.tab-pane').first().attr('id');
@@ -130,7 +132,15 @@ $(document).ready(function() {
             $form.scrollTop(offset);
           }, 250);
         }, 450);
-      }
+      },
+      _go_to_slide : function() {
+        var $this = $(this),
+            slide = $this.data('go-to-slide');
+        setTimeout(() => {
+          $('.modal.in .carousel-inner').removeClass('overflow-visible');
+          $('.modal.in .carousel').carousel(slide);
+        }, 450);
+      },
     }
   };
 
@@ -144,6 +154,7 @@ $(document).ready(function() {
   window.modals.elements.modal.on('hidden.bs.modal', window.modals.methods._reset);
   window.modals.elements.switch_modals.on('click', window.modals.methods._switch_modals);
   $('[data-go-to-settings]').on('click', window.modals.methods._go_to_setting);
+  $('[data-go-to-slide]').on('click', window.modals.methods._go_to_slide);
   // window.modals.elements.body.on('touchmove', window.modals.methods._stop_scroll);
   // window.modals.elements.html.on('touchmove', window.modals.methods._stop_scroll);
 
