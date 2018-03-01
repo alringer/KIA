@@ -2,6 +2,12 @@
 @import "../mixins.scss";
 
 .view-reference-material {
+  .page-view {
+    .contain {
+      max-width: 852px;
+      padding: 0 20px;
+    }
+  }
   .page-view-header {
     padding-top: 42px;
     overflow: hidden;
@@ -18,10 +24,6 @@
         letter-spacing: .5px;
       }
     }
-  }
-  .contain {
-    max-width: 852px;
-    padding: 0 20px;
   }
   .page-view-content {
     .text-content {
