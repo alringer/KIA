@@ -3840,13 +3840,17 @@ form .form-fields {
     line-height: 53px;
     height: inherit;
     white-space: nowrap;
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    height: 53px; }
     .page-view-subnav-items li {
       display: inline-block;
       margin: 0 25px;
-      height: inherit; }
+      height: inherit;
+      height: 53px;
+      overflow: hidden; }
       .page-view-subnav-items li a {
         text-transform: uppercase;
         text-decoration: none;
