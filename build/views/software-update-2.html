@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html ontouchstart="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta name="format-detection" content="telephone=no">
+
+
+  <!-- GLOBAL VENDOR CSS -->
+  <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/css/global.css?v=3.1.0" />
+  <link rel="stylesheet" href="/css/alerts.css?v=3.1.0" />
+  
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-software-update.css">
+
+  <!-- GLOBAL VENDOR JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- GLOBAL JS -->
+  <script type="text/javascript" src="/scripts/modals.js"></script>
+  <script type="text/javascript" src="/scripts/forms.js"></script>
+  <script type="text/javascript" src="/scripts/loading.js"></script>
+  <script type="text/javascript" src="/scripts/nav.js"></script>
+  <script type="text/javascript" src="/scripts/alerts.js"></script>
+  <script type="text/javascript" src="/scripts/account-settings.js"></script>
+  
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/software-update.js"></script>
+
+  <title>KIA</title>
+  </head>
+<body ontouchstart="">
+
+<span class="loading-bar"></span>
+
+<div class="alerts">
+  <div class="alert alert-success alert-dismissible">
+    <p>&lt;A success message goes here, replace me!&gt;</p>
+    <div class="alert-actions">
+      <button type="button" class="close">
+        Close
+      </button>
+    </div><!-- /.alert-actions -->
+  </div><!-- /.alert -->
+  <div class="alert alert-failed alert-dismissible">
+    <p>&lt;An error message goes here, replace me!&gt;</p>
+    <div class="alert-actions double-actions">
+      <button type="button" class="close">
+        Retry
+      </button>
+      <button type="button" class="close">
+        Close
+      </button>
+    </div><!-- /.alert-actions -->
+  </div><!-- /.alert -->
+  <div class="alert alert-notification alert-dismissible">
+    <ul class="notification-list">
+      <li>
+        <i class="notification-geofence"></i>
+        <strong>
+          Geo Fence Alert
+        </strong>
+        <em>
+          <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
+        </em>
+        <span>
+          Just now
+        </span>
+      </li>
+    </ul>
+    <span type="button" class="close"></span>
+  </div><!-- /.alert -->
+</div><!-- /.alerts -->
+
+<div class="view-software-update">
+  <div class="has-mobile-nav">
+    <nav class="nav-main">
+      <div class="contain">
+        <a href="/" class="nav-service-text">
+          <em>
+            Need to service your car?
+          </em>
+          <strong>
+            Make an appointment
+          </strong>
+        </a>
+        <a href="/" class="logo">
+          Kia
+        </a>
+        <div class="vehicle-selector">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="vehicle-selector-current">
+                <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                <span class="title">My Niro</span>
+                <span class="caret"></span>
+              </span><!-- /.vehicle-selector-current -->
+            </button>
+            <ul class="dropdown-menu vehicle-selector-list">
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <a href="#" class="settings-icon">
+                  <!-- <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg> -->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <!-- <a href="#" class="settings-icon">
+                  <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg>
+                </a> -->
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <!-- <a href="#" class="settings-icon">
+                  <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg>
+                </a> -->
+              </li>
+              <li>
+                <a href="#" class="last-link">
+                   View All Vehicles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.vehicle-selector -->
+        <div class="notifications-menu unread">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+              <i class="icon-notifications unread">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+                    <path fill="#9BA1A9" fill-rule="nonzero" d="M11.499 8.098L0 2.83V.479A.48.48 0 0 1 .48 0h22.04a.48.48 0 0 1 .48.48v2.315L11.499 8.098zm.201.961L23 3.852v11.002a.48.48 0 0 1-.48.48H.48a.479.479 0 0 1-.48-.48V3.885l11.3 5.176a.487.487 0 0 0 .4-.002z"/>
+                </svg>
+              </i>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="notification-list">
+                <li class="unread">
+                  <i class="notification-geofence"></i>
+                  <strong>
+                    Geo Fence Alert
+                  </strong>
+                  <em>
+                    <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
+                  </em>
+                  <span>
+                    2 minutes ago
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-maintenance"></i>
+                  <strong>
+                    Maintenance
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
+                  </em>
+                  <span>
+                    4 hours ago
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-unlocked"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> was <strong>unlocked</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-climate"></i>
+                  <strong>
+                    Climate
+                  </strong>
+                  <em>
+                    <strong>My Niro’s climate</strong> was set to <strong>71˚</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-valet"></i>
+                  <strong>
+                    Valet Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> driven outside allowed area. <strong>View Vehicles Location.</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-locked"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> was <strong>locked</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-maintenance"></i>
+                  <strong>
+                    Maintenance
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-schedules-climate"></i>
+                  <strong>
+                    Schedules
+                  </strong>
+                  <em>
+                    A <strong>Climate Schedule</strong> will start in <strong>My Niro</strong> in 30 minutes.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-schedules-charge"></i>
+                  <strong>
+                    Schedules
+                  </strong>
+                  <em>
+                    <strong>My Niro’s charge schedule</strong> set to start in <strong>30 minutes</strong> has been <strong>canceled</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-remote"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> has been <strong>started remotely</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-panic"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>My Niro’s</strong> alarm has been <strong>activated</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-battery"></i>
+                  <strong>
+                    Battery
+                  </strong>
+                  <em>
+                    <strong>OG Soul’s</strong> battery <strong>started charging</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-curfew"></i>
+                  <strong>
+                    Curfew Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> is being driven past <strong>Tim’s Curfew</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-speed"></i>
+                  <strong>
+                    Speed Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> exceeded the <strong>speed threshold</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+              </ul>
+              <div class="menu-anchor">
+                <a href="#">See All Notifications</a>
+              </div><!-- /.menu-anchor -->
+            </div><!-- /.dropdown-menu -->
+          </div>
+        </div><!-- /.notifications-menu -->
+        <div class="account-menu">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+              Account
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu account-menu-list">
+              <li>
+                <a href="#">
+                  <i class="icon-awards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#9BA1A9" fill-rule="nonzero" d="M15.972 1.292a.39.39 0 0 0-.035-.175.21.21 0 0 0-.14-.14.237.237 0 0 0-.174-.07H13.18V.315c0-.07-.035-.14-.105-.21A.335.335 0 0 0 12.83 0H3.124a.335.335 0 0 0-.244.105.375.375 0 0 0-.07.21v.593H.33a.237.237 0 0 0-.175.07c-.046.023-.081.07-.104.14a.39.39 0 0 0-.035.174S-.11 5.37.33 6.634c.292.84 1.42 2.025 2.653 2.374.489 1.164 1.804 2.083 3.946 2.758l.07 2.27-2.933.698c-.07 0-.128.035-.175.105a.339.339 0 0 0-.07.174v.908h8.345v-.908a.339.339 0 0 0-.07-.174c-.047-.07-.105-.105-.175-.105l-3.002-.698.07-2.27c2.01-.438 3.336-1.357 3.98-2.758 1.257-.35 2.36-1.533 2.653-2.374.44-1.264.35-5.342.35-5.342zM2.81 7.367c-.536-.186-1.03-.485-1.152-1.013-.17-.736-.1-2.658-.058-3.518a.448.448 0 0 1 .448-.427h.762v4.958zM14.33 6.354c-.134.536-.64.827-1.152 1.013V2.409h.764c.239 0 .436.186.448.424.047.86.124 2.788-.06 3.521z"/>
+                    </svg>
+                  </i>
+                  <span>My Awards</span>
+                </a>
+              </li>
+              <li>
+                <a data-toggle="modal" data-target="#settings">
+                  <i class="icon-cog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                        <path fill="#9BA1A9" fill-rule="nonzero" d="M0 12.503l1.505-.869a7.98 7.98 0 0 1-.3-2.176c0-.741.1-1.458.29-2.138l-1.49-.86a9.48 9.48 0 0 1 1.949-3.327l1.448.836A7.742 7.742 0 0 1 7.06 1.822V.2a9.53 9.53 0 0 1 3.856-.006v1.635a7.744 7.744 0 0 1 3.653 2.158l1.477-.853a9.48 9.48 0 0 1 1.95 3.327l-1.53.883c.186.673.284 1.382.284 2.115 0 .747-.102 1.47-.294 2.154l1.544.891a9.48 9.48 0 0 1-1.944 3.33l-1.515-.874a7.743 7.743 0 0 1-3.625 2.129v1.696a9.531 9.531 0 0 1-3.856-.005v-1.686a7.741 7.741 0 0 1-3.63-2.118l-1.486.858A9.48 9.48 0 0 1 0 12.503zm8.998.139c1.712 0 3.1-1.407 3.1-3.143 0-1.735-1.388-3.142-3.1-3.142-1.713 0-3.101 1.407-3.101 3.142 0 1.736 1.388 3.143 3.1 3.143z"/>
+                    </svg>
+                  </i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-power">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                        <path fill="#9BA1A9" fill-rule="nonzero" d="M8.5 16.98c-4.687 0-8.5-3.771-8.5-8.406a8.267 8.267 0 0 1 1.76-5.12 1.207 1.207 0 0 1 1.679-.218 1.176 1.176 0 0 1 .22 1.661 5.935 5.935 0 0 0-1.264 3.676 6.105 6.105 0 1 0 12.21 0 5.935 5.935 0 0 0-1.264-3.676 1.176 1.176 0 0 1 .22-1.66 1.207 1.207 0 0 1 1.68.217A8.269 8.269 0 0 1 17 8.574c0 4.635-3.813 8.405-8.5 8.405zm-.233-6.848a1.19 1.19 0 0 1-1.19-1.19V1.169a1.194 1.194 0 1 1 2.388 0v7.778a1.19 1.19 0 0 1-1.198 1.185z"/>
+                    </svg>
+                  </i>
+                  <span>Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.account-menu -->
+      </div><!-- /.contain -->
+    </nav>
+    
+    <div class="nav-mobile">
+      <div class="contain">
+        <h1>Software Update</h1>
+      </div><!-- /.contain -->
+    </div><!-- /.nav-mobile -->
+  </div><!-- /.has-mobile-nav -->
+  <div class="page-view">
+      <div class="contain">
+      <div class="page-view-header">
+        <a href="#" class="back">
+          Back to my vehicles
+        </a>
+        <h2>
+          2017 Niro UVO Software Update
+        </h2>
+      </div><!-- /.page-view-header -->
+      <div class="page-view-content">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-5">
+                <strong>SOFTWARE VERSION:</strong>
+              </div><!-- /.col -->
+              <div class="col-sm-7">
+                <p class="no-margin">ST.PSEV.USA.E512.161024</p>
+                <a href="#" class="no-wrap">HOW CAN I CHECK IF MY SOFTWARE IS UP TO DATE?</a>
+              </div><!-- /.col -->
+              <div class="col-sm-5">
+                <strong>DATE AVAILABLE:</strong>
+              </div><!-- /.col -->
+              <div class="col-sm-7">
+                <p class="no-margin">Jan 05, 2017</p>
+              </div><!-- /.col -->
+              <div class="col-sm-5">
+                <strong>LAST DOWNLOADED BY YOU:</strong>
+              </div><!-- /.col -->
+              <div class="col-sm-7">
+                <p class="no-margin">Jan 18, 2017</p>
+              </div><!-- /.col -->
+              <div class="col-sm-5">
+                <strong>ESTIMATE TIME TO UPDATE:</strong>
+              </div><!-- /.col -->
+              <div class="col-sm-7">
+                <p class="no-margin">3 hours</p>
+              </div><!-- /.col -->
+            </div>
+            <div class="vehicle-render hidden-sm hidden-lg hidden-md">
+              <em>2017 Niro</em>
+              <strong>My Ride</strong>
+              <img src="/images/software-update/vehicle-render.png" alt="My Ride">
+            </div><!-- /.vehicle-render -->
+            <p class="no-margin">
+              <strong>WHATS NEW?</strong>
+            </p>
+            <p class="no-margin">ANDROID AUTO™, APPLE CARPLAY™, and MORE!</p>
+            <p class="no-margin">Abdroid Auto™, and Apple CarPlay™ compatibility and improved user interface. Older vehicles may also get a map update.</p>
+          </div><!-- /.col -->
+          <div class="col-sm-6 hidden-xs">
+            <div class="vehicle-render">
+              <em>2017 Niro</em>
+              <strong>My Ride</strong>
+              <img src="/images/software-update/vehicle-render.png" alt="My Ride" />
+            </div><!-- /.vehicle-render -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.page-view-content -->
+    </div><!-- /.contain -->
+    <div class="update-cta">
+      <div class="contain">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div class="hidden-sm hidden-xs">
+              <a href="#" class="button less-padding full" data-toggle="modal" data-target="#software-update-download">DOWNLOAD LATEST SOFTWARE</a>
+            </div>
+            <div class="hidden-md hidden-lg">
+              <p>Please visit this page on your desktop to download the latest update</p>
+            </div>
+          </div><!-- /.col -->
+          <div class="col-sm-6 col-xs-12">
+            <strong>REQUIREMENTS</strong>
+            <ul>
+              <li>SD card from vehicle’s navigation system</li>
+              <li>Computer with slot for SD card or adapter</li>
+              <li>Windows XP or new or OS X 10.7 or higher</li>
+              <li>More than 27GB of free hard disk space</li>
+              <li>Secure, well ventilated area for vehicle</li>
+              <li>Vehicle engine when updating head unit (approx. 40 minutes)</li>
+            </ul>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.contain -->
+    </div><!-- /.update-cta -->
+      <div class="download-instructions">
+        <div class="contain">
+          <div class="download-instructions-header">
+            <h3 class="pull-left">How do I install the software?</h3>
+            <a href="#" class="pull-right" download>
+              <svg width="19px" height="26px" viewBox="0 0 19 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Software-Update*" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Update-Step-2-|-Desktop" transform="translate(-727.000000, -825.000000)" fill="#BB1A30" fill-rule="nonzero">
+                          <path d="M739.012648,832.823529 C738.550585,832.823529 738.176471,832.44916 738.176471,831.987352 L738.176471,825 L728.024234,825 C727.458565,825 727,825.457941 727,826.024795 L727,849.122264 C727,849.688243 727.460251,850.147059 728.028259,850.147059 L744.971741,850.147059 C745.539633,850.147059 746,849.685284 746,849.119475 L746,832.823529 L739.012648,832.823529 L739.012648,832.823529 Z M741.561692,842.948847 C741.38524,843.037784 741.120563,843.126721 740.767659,843.126721 C740.061852,843.126721 739.003142,842.948847 738.120884,842.50416 C736.621044,842.682035 735.474108,842.859909 734.591849,843.215659 C734.503624,843.215659 734.503624,843.215659 734.415398,843.304596 C733.356688,845.17228 732.474429,846.061654 731.768622,846.061654 C731.59217,846.061654 731.503945,846.061654 731.415719,845.972717 L730.974589,845.705905 L730.974589,845.616967 C730.886364,845.439093 730.886364,845.350155 730.886364,845.17228 C730.974589,844.727594 731.503945,843.927158 732.562655,843.304596 C732.739107,843.215659 733.003784,843.037784 733.356688,842.859909 C733.621365,842.415223 733.886043,841.881598 734.238946,841.259037 C734.680075,840.369664 734.944753,839.48029 735.20943,838.679854 C734.856527,837.612606 734.680075,836.990044 735.032979,835.744921 C735.121205,835.389172 735.385882,835.033422 735.738786,835.033422 L735.915237,835.033422 C736.091689,835.033422 736.268141,835.12236 736.444592,835.211297 C737.062173,835.833859 736.797496,837.256856 736.444592,838.413042 L736.444592,838.501979 C736.797496,839.48029 737.326851,840.280726 737.856206,840.81435 C738.120884,840.992225 738.297335,841.1701 738.650239,841.347974 C739.091368,841.347974 739.444271,841.259037 739.797175,841.259037 C740.855885,841.259037 741.561692,841.436912 741.826369,841.881598 C741.914595,842.059473 741.914595,842.237348 741.914595,842.415223 C741.826369,842.50416 741.738143,842.770972 741.561692,842.948847 L741.561692,842.948847 Z M735.827011,839.48029 C735.65056,840.102851 735.297656,840.81435 734.944753,841.614786 C734.768301,841.970536 734.591849,842.237348 734.415398,842.593097 L734.503624,842.593097 L734.591849,842.593097 C735.738786,842.148411 736.797496,841.881598 737.503303,841.792661 C737.326851,841.703724 737.238625,841.614786 737.150399,841.525849 C736.70927,840.992225 736.179915,840.280726 735.827011,839.48029 L735.827011,839.48029 Z M741.208788,842.237348 C741.120563,842.148411 740.767659,841.881598 739.532497,841.881598 L739.356045,841.881598 C739.356045,841.881598 739.356045,841.881598 739.356045,841.970536 C739.973626,842.237348 740.591207,842.415223 741.032337,842.415223 L741.208788,842.415223 L741.297014,842.415223 C741.297014,842.415223 741.297014,842.415223 741.297014,842.326285 C741.297014,842.326285 741.208788,842.326285 741.208788,842.237348 L741.208788,842.237348 Z M733.09201,843.571408 C732.915558,843.660346 732.739107,843.749283 732.650881,843.83822 C732.0333,844.371844 731.59217,844.994406 731.503945,845.261218 C732.0333,845.17228 732.562655,844.638656 733.09201,843.571408 L733.09201,843.571408 Z M735.738786,837.434731 C735.827011,837.078982 735.915237,836.901107 735.915237,836.634295 L735.915237,836.45642 C736.003463,836.011733 736.003463,835.655984 735.915237,835.567047 C735.915237,835.567047 735.915237,835.567047 735.915237,835.478109 L735.827011,835.389172 C735.827011,835.389172 735.827011,835.478109 735.738786,835.478109 C735.562334,836.011733 735.562334,836.634295 735.738786,837.434731 L735.738786,837.434731 Z M746,831.705882 L739.854323,831.705882 C739.54493,831.705882 739.294118,831.455243 739.294118,831.145677 L739.294118,825 L746,831.705882 L746,831.705882 Z" id="Shape"></path>
+                      </g>
+                  </g>
+              </svg>
+              Downlad Detailed Instructions
+            </a>
+          </div><!-- /.download-instructions-header -->
+          <div class="download-instructions-list">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="download-instructions-list-item">
+                  <span class="list-title">
+                    Step 1
+                  </span>
+                  <img src="/images/software-update/step1.png" alt="Step 1">
+                  <p>Turn the vehicle off and remove the SD card from the vehicles head unit.</p>
+                  <strong>Approx. 1 minute</strong>
+                </div>
+              </div><!-- /.col -->
+              <div class="col-sm-4">
+                <div class="download-instructions-list-item">
+                  <span class="list-title">
+                    Step 2
+                  </span>
+                  <img src="/images/software-update/step2.png" alt="Step 2">
+                  <p>Insert SD card into computer, click <strong>Download Latest Software</strong> button above and follow prompts. After the download has completed, edject SD card.</p>
+                  <strong>Approx. 30-60 minutes (2.25 hours for older vehicles)</strong>
+                </div>
+              </div><!-- /.col -->
+              <div class="col-sm-4">
+                <div class="download-instructions-list-item">
+                  <span class="list-title">
+                    Step 3
+                  </span>
+                  <img src="/images/software-update/step3.png" alt="Step 3">
+                  <p>Park in a secure, well-ventilated area and turn vehicle off. Insert SD card into head unit. Start the engine, press <strong>Setup</strong>, press <strong>System Info</strong>, press <strong>Update</strong> and follow the onscreen prompts.</p>
+                  <strong>Approx. 40 minutes</strong>
+                </div>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.download-instructions-list -->
+        </div><!-- /.contain -->
+      </div><!-- /.download-instructions -->
+      <div class="support">
+        <div class="contain">
+          <h3>Help and support</h3>
+          <div class="support-list">
+            <ul>
+              <li>
+                <a href="#">
+                  Learn more about ANDROID AUTO™
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Learn more about APPLE CARPLAY™
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Troubleshooting
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  ANDROID AUTO™ FAQ
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  APPLE CARPLAY™ FAQ
+                  <i class="icon-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.support-list -->
+        </div>
+      </div>
+  </div><!-- /.page-view -->
+</div><!-- /.view-maintenance -->
+<div class="modal software-update-download" id="software-update-download">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div id="software-update-download-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="download-terms">
+                <strong class="modal-title adjusted">
+                  Software Update Legal Terms & Conditions
+                </strong>
+                <p>To begin download, pleas accept our Terms & Conditions</p>
+                <div class="terms">
+                  <p><em>Software update Legal Terms & Conditions</em></p>
+                  <p>IMPORTANT - READ CAREFULLY BEFORE PROCEEDING - THIS IS A BINDING LEGAL CONTRACT. THESE TERMS REQUIRE YOU TO ARBITRATE ANY DISBUTES YOU HAVE WITH US AND YOU WAIVE THE ABILITY TO BRING CLAIMS AGAINST US INA CLASS ACTION FORMAT.</p>
+                  <hr />
+                  <p>YOU UNDERSTAND AND AGREE THAT BY CHECKING THE BOX AND CLICKING THE “BEGIN DOWNLOAD” BUTTON, AND/OR DOWNLOADING OR USING ANY PART OF THE SOFTWARE (DEFINED BELOW), YOU ARE AGREEING TO BE LEGALLY BOUND BY ALL OF THESE</p>
+                  <p>YOU UNDERSTAND AND AGREE THAT BY CHECKING THE BOX AND CLICKING THE “BEGIN DOWNLOAD” BUTTON, AND/OR DOWNLOADING OR USING ANY PART OF THE SOFTWARE (DEFINED BELOW), YOU ARE AGREEING TO BE LEGALLY BOUND BY ALL OF THESE</p>
+                </div>
+                <label class="checkbox">
+                  <input class="terms-checkbox" type="checkbox" name="" value="">
+                  <em>
+                    I have read and agree to the Software Update Legal Terms & Conditions and Software Update Instructions and consent to the UVO eServices Privacy Policy
+                  </em>
+                </label>
+                <div class="modal-action dual">
+                  <span class="download-button button disabled" data-target="#software-update-download-slider" data-slide-to="1">Begin Download</span>
+                  <span class="button outline" data-dismiss="modal">Cancel</span>
+                </div><!-- /.modal-action -->
+              </div><!-- /.update-checking -->
+            </div><!-- /.item -->
+            <div class="item hide-close">
+              <div class="update-checking">
+                <strong class="modal-title">
+                  Your download has begun!
+                </strong>
+                <div class="download-instructions">
+                  <p>Once the download has completed, please execute the file and follow it’s instructions.</p>
+                  <p class="no-margin"><strong>Don’t see your download?</strong></p>
+                  <p>If you don’t see the download, check your browser’s security settings.</p>
+                  <p class="no-margin"><strong>Enable downloads on Google Chrome</strong></p>
+                  <ol>
+                    <li>Go to Google Chrome > Settings</li>
+                    <li>Click + <strong>Show Advanced Settings</strong></li>
+                    <li>Scroll to <strong>Privacy</strong> and click on <strong>Content settings…</strong></li>
+                    <li>Scroll to <strong>Automatic Downloads</strong> and check your settings.</li>
+                  </ol>
+                </div>
+                <div class="modal-action">
+                  <span class="button full" data-dismiss="modal">Close</span>
+                </div><!-- /.modal-action -->
+              </div><!-- /.update-checking -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.modal-body -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.software-update -->
+  <footer>
+    <div class="contain">
+      <ul class="footer-menu-items">
+        <li>
+          <a href="#">
+            Privacy / Legal
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Kia.com
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Other Kia Sites
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            MPG
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Global Disclaimer
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Terms of Service
+          </a>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2017 Kia Motors America, Inc.</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest-p"></i>
+            </a>
+          </li>
+        </ul><!-- /.social-icons -->
+      </div><!-- /.footer-bottom -->
+    </div><!-- /.contain -->
+  </footer>
+</body>
+</html>
+

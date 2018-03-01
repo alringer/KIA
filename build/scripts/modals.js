@@ -118,6 +118,7 @@ $(document).ready(function () {
               tab_id = $this.find('.tab-pane').first().attr('id');
           $('a[href="#' + tab_id + '"]').tab('show');
         });
+        window.modals.elements.modal.removeClass('hide-close');
       },
       _go_to_setting: function _go_to_setting() {
         var $this = $(this),

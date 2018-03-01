@@ -3568,3 +3568,74 @@ ul.issues-list {
     pointer-events: none !important;
   }
 }
+
+
+.modal.software-update {
+  .modal-dialog {
+    width: 365px;
+    .update-checking {
+      text-align: center;
+      padding: 20px 0;
+      .update,
+      .complete,
+      .loading {
+        display: block;
+        width: 42px;
+        height: 42px;
+        background: url('/images/software-update/loading.png') center/contain no-repeat;
+        margin: 0 auto;
+      }
+      .loading {
+        animation: spin 1s infinite linear;
+      }
+      .complete {
+        background: url('/images/software-update/complete.png') center/contain no-repeat;
+      }
+      .update {
+        background: url('/images/software-update/update.png') center/contain no-repeat;
+        height: 49px;
+      }
+      em {
+        padding-top: 13px;
+        display: block;
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+        max-width: 230px;
+        margin: 0 auto;
+      }
+      .modal-action {
+        padding-top: 16px;
+        .match-w {
+          padding: 0;
+          width: 115px;
+          text-align: center;
+          + .match-w {
+            width: 99px;
+          }
+        }
+        @media (max-width: $screen-xs-max) {
+          padding-top: 30px;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .modal-dialog {
+      .modal-content {
+        padding-bottom: 0;
+      }
+    }
+    .item {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}

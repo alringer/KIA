@@ -44,6 +44,7 @@
   <!-- VIEW JS -->
   <script type="text/javascript" src="/vendors/mixitup/mixitup.min.js"></script>
   <script type="text/javascript" src="/scripts/my-vehicles.js"></script>
+  <script type="text/javascript" src="/scripts/software-update.js"></script>
 
   <title>KIA</title>
   </head>
@@ -516,7 +517,7 @@
                     My Ride
                   </strong>
                   <div class="my-vehicles-grid-item-settings">
-                    <a href="" class="my-vehicles-grid-item-settings-message">
+                    <a href="" class="my-vehicles-grid-item-settings-message" data-toggle="modal" data-target="#software-update" data-software-update="1">
                       Check for software update
                     </a>
                     <a href="#" class="my-vehicles-grid-item-settings-icon">
@@ -628,7 +629,7 @@
                     Andrew's Car
                   </strong>
                   <div class="my-vehicles-grid-item-settings">
-                    <a href="" class="my-vehicles-grid-item-settings-message">
+                    <a href="" class="my-vehicles-grid-item-settings-message" data-toggle="modal" data-target="#software-update" data-software-update="1">
                       Check for software update
                     </a>
                     <a href="#" class="my-vehicles-grid-item-settings-icon">
@@ -708,7 +709,7 @@
                     The New Hotness
                   </strong>
                   <div class="my-vehicles-grid-item-settings">
-                    <a href="" class="my-vehicles-grid-item-settings-message">
+                    <a href="" class="my-vehicles-grid-item-settings-message" data-toggle="modal" data-target="#software-update" data-software-update="0">
                       Check for software update
                     </a>
                     <a href="#" class="my-vehicles-grid-item-settings-icon">
@@ -958,7 +959,7 @@
                        18 mins ago.
                     </em>
                   </div><!-- /.car-meta-data -->
-                  <div class="my-vehicles-list-item-meta-data-actions">
+                  <div class="my-vehicles-list-item-meta-data-actions" data-toggle="modal" data-target="#software-update" data-software-update="1">
                     <a href="#">Check for software update</a>
                   </div><!-- /.my-vehicles-list-meta-data-actions -->
                 </div><!-- /.meta-data-inner -->
@@ -1552,6 +1553,51 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal software-update" id="software-update">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="software-update-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="update-checking">
+                <span class="loading"></span>
+                <em>Checking for updates...please wait</em>
+                <div class="modal-action">
+                  <span class="button" data-dismiss="modal">Cancel</span>
+                </div><!-- /.modal-action -->
+              </div><!-- /.update-checking -->
+            </div><!-- /.item -->
+            <div class="item">
+              <div class="update-checking">
+                <span class="complete"></span>
+                <em>This vehicle is up to date!</em>
+                <div class="modal-action">
+                  <span class="button" data-dismiss="modal">Close</span>
+                </div><!-- /.modal-action -->
+              </div><!-- /.update-checking -->
+            </div><!-- /.item -->
+            <div class="item">
+              <div class="update-checking">
+                <span class="update"></span>
+                <em>There is an update available for your vehicle!</em>
+                <div class="modal-action">
+                  <span class="button match-w" data-dismiss="modal">Get Update</span>
+                  <span class="button outline match-w" data-dismiss="modal">Close</span>
+                </div><!-- /.modal-action -->
+              </div><!-- /.update-checking -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.modal-body -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.software-update -->
+<script type="text/javascript">
+    $(window).on('load',function(){
+      // $('#software-update').modal('show');
+    });
+</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">

@@ -3133,6 +3133,60 @@ ul.issues-list {
   .disable-modal * {
     pointer-events: none !important; }
 
+.modal.software-update .modal-dialog {
+  width: 365px; }
+  .modal.software-update .modal-dialog .update-checking {
+    text-align: center;
+    padding: 20px 0; }
+    .modal.software-update .modal-dialog .update-checking .update,
+    .modal.software-update .modal-dialog .update-checking .complete,
+    .modal.software-update .modal-dialog .update-checking .loading {
+      display: block;
+      width: 42px;
+      height: 42px;
+      background: url("/images/software-update/loading.png") center/contain no-repeat;
+      margin: 0 auto; }
+    .modal.software-update .modal-dialog .update-checking .loading {
+      animation: spin 1s infinite linear; }
+    .modal.software-update .modal-dialog .update-checking .complete {
+      background: url("/images/software-update/complete.png") center/contain no-repeat; }
+    .modal.software-update .modal-dialog .update-checking .update {
+      background: url("/images/software-update/update.png") center/contain no-repeat;
+      height: 49px; }
+    .modal.software-update .modal-dialog .update-checking em {
+      padding-top: 13px;
+      display: block;
+      font: 14px/1.5em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      max-width: 230px;
+      margin: 0 auto; }
+    .modal.software-update .modal-dialog .update-checking .modal-action {
+      padding-top: 16px; }
+      .modal.software-update .modal-dialog .update-checking .modal-action .match-w {
+        padding: 0;
+        width: 115px;
+        text-align: center; }
+        .modal.software-update .modal-dialog .update-checking .modal-action .match-w + .match-w {
+          width: 99px; }
+      @media (max-width: 767px) {
+        .modal.software-update .modal-dialog .update-checking .modal-action {
+          padding-top: 30px; } }
+    @media (max-width: 767px) {
+      .modal.software-update .modal-dialog .update-checking {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%); } }
+
+@media (max-width: 767px) {
+  .modal.software-update .modal-dialog .modal-content {
+    padding-bottom: 0; }
+  .modal.software-update .item {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; } }
+
 .modal {
   min-width: 355px; }
   .modal form {
