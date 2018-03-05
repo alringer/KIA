@@ -1,0 +1,210 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.view-drivers-preferences .page-view-header {
+  padding-top: 42px;
+  overflow: hidden;
+  margin-bottom: 42px; }
+  @media (max-width: 767px) {
+    .view-drivers-preferences .page-view-header {
+      padding-top: 24px; } }
+  .view-drivers-preferences .page-view-header h2 {
+    font: 100 32px "KIA", sans-serif;
+    letter-spacing: 1.5px;
+    color: #000;
+    margin: 0; }
+    @media (max-width: 767px) {
+      .view-drivers-preferences .page-view-header h2 {
+        font-size: 20px;
+        letter-spacing: .5px; } }
+
+.view-drivers-preferences .contain {
+  max-width: 852px;
+  padding: 0 20px; }
+
+.view-drivers-preferences .page-view-content .text-content {
+  padding-top: 51px;
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  max-width: 650px;
+  letter-spacing: .6px; }
+  .view-drivers-preferences .page-view-content .text-content strong {
+    display: block;
+    margin-bottom: 2px; }
+  .view-drivers-preferences .page-view-content .text-content p {
+    margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .view-drivers-preferences .page-view-content .text-content {
+      padding-top: 25px;
+      font-size: 13px;
+      letter-spacing: .3px;
+      line-height: 1.62em; } }
+
+.view-drivers-preferences .content-area {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  border-radius: 2px;
+  padding: 36px 40px 80px;
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  letter-spacing: .6px; }
+  .view-drivers-preferences .content-area .info {
+    color: #628797;
+    text-align: center;
+    font: italic 12px "Source Sans Pro", sans-serif;
+    letter-spacing: .3px;
+    margin-bottom: 44px; }
+    .view-drivers-preferences .content-area .info i {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      border: 1px solid #628797;
+      border-radius: 100%;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 18px;
+      margin-right: 10px; }
+  .view-drivers-preferences .content-area .driver-preferences-setting + .driver-preferences-setting {
+    margin-top: 28px;
+    border-top: solid 2px #d4d4d4;
+    padding-top: 25px; }
+  .view-drivers-preferences .content-area .driver-preferences-setting.disabled {
+    opacity: 1; }
+    .view-drivers-preferences .content-area .driver-preferences-setting.disabled .toggle {
+      pointer-events: all; }
+    .view-drivers-preferences .content-area .driver-preferences-setting.disabled p,
+    .view-drivers-preferences .content-area .driver-preferences-setting.disabled .setting {
+      pointer-events: none;
+      opacity: .4; }
+  .view-drivers-preferences .content-area .driver-preferences-setting .toggle {
+    margin-bottom: 16px; }
+  .view-drivers-preferences .content-area .driver-preferences-setting p,
+  .view-drivers-preferences .content-area .driver-preferences-setting .setting {
+    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .view-drivers-preferences .content-area .driver-preferences-setting .setting label {
+    display: block;
+    width: 100%; }
+    .view-drivers-preferences .content-area .driver-preferences-setting .setting label input {
+      display: none; }
+      .view-drivers-preferences .content-area .driver-preferences-setting .setting label input:checked + span {
+        background-color: #f0f0f0;
+        box-shadow: inset 1px 1px 2px 0 rgba(176, 176, 176, 0.5); }
+        .view-drivers-preferences .content-area .driver-preferences-setting .setting label input:checked + span i {
+          filter: none; }
+    .view-drivers-preferences .content-area .driver-preferences-setting .setting label span {
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: pointer;
+      min-height: 65px;
+      display: block;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.18);
+      position: relative;
+      padding: 20px 25px 20px 100px; }
+      .view-drivers-preferences .content-area .driver-preferences-setting .setting label span strong {
+        font: 14px/1.5em "Source Sans Pro", sans-serif; }
+    .view-drivers-preferences .content-area .driver-preferences-setting .setting label i {
+      display: block;
+      width: 100px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      filter: grayscale(100%); }
+  .view-drivers-preferences .content-area .driver-preferences-setting p em {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: normal; }
+  .view-drivers-preferences .content-area .toggle label span {
+    display: inline-block !important;
+    vertical-align: middle; }
+  .view-drivers-preferences .content-area .toggle em {
+    display: inline-block;
+    margin-left: 12px;
+    font: bold 12px "KIA", sans-serif;
+    letter-spacing: .5px;
+    text-transform: uppercase; }
+  .view-drivers-preferences .content-area h3 {
+    font: bold 14px "KIA", sans-serif;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 33px; }
+  .view-drivers-preferences .content-area p {
+    margin-bottom: 20px;
+    max-width: 430px; }
+  @media (max-width: 767px) {
+    .view-drivers-preferences .content-area {
+      padding: 10px 10px 20px; } }
+
+.sub-tabs > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 185px; }
+  .sub-tabs > ul li {
+    margin-bottom: 20px; }
+    .sub-tabs > ul li a {
+      font: bold 12px "KIA", sans-serif;
+      letter-spacing: .7px;
+      color: #929292;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 11px;
+      display: block;
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+      text-decoration: none; }
+      .sub-tabs > ul li a.active {
+        color: #2f2f2f; }
+        .sub-tabs > ul li a.active span {
+          background: #C4172C; }
+      .sub-tabs > ul li a:hover {
+        color: #2f2f2f; }
+        .sub-tabs > ul li a:hover span {
+          background: #000; }
+      .sub-tabs > ul li a span {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: #929292;
+        text-align: center;
+        font: bold 12px/18px "Source Sans Pro", sans-serif;
+        color: #FFF;
+        letter-spacing: normal;
+        border-radius: 2px;
+        margin-right: 13px;
+        transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+        padding-left: 1.5px; }
