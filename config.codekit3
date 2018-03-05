@@ -7,7 +7,7 @@
 		"uuidString": "35F6608E-6DA5-45F2-87E1-7BF9B91317FF"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -464,6 +464,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/build\/css\/view-bluetooth.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/css\/views\/view-drivers-preferences.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-drivers-preferences.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1073,6 +1086,50 @@
 		"iS": 18511,
 		"oA": 0,
 		"oAP": "\/build\/images\/dial_speed.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/driver-preferences\/icon_pref_1-1.png": {
+		"ft": 32768,
+		"iS": 1531,
+		"oA": 0,
+		"oAP": "\/build\/images\/driver-preferences\/icon_pref_1-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/driver-preferences\/icon_pref_1-2.png": {
+		"ft": 32768,
+		"iS": 2811,
+		"oA": 0,
+		"oAP": "\/build\/images\/driver-preferences\/icon_pref_1-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/driver-preferences\/icon_pref_2-1.png": {
+		"ft": 32768,
+		"iS": 1844,
+		"oA": 0,
+		"oAP": "\/build\/images\/driver-preferences\/icon_pref_2-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/driver-preferences\/icon_pref_2-2.png": {
+		"ft": 32768,
+		"iS": 2013,
+		"oA": 0,
+		"oAP": "\/build\/images\/driver-preferences\/icon_pref_2-2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -4721,6 +4778,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/driver-preferences.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/driver-preferences.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/forms.js": {
 		"ft": 64,
 		"ma": 0,
@@ -6233,6 +6300,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/bluetooth.html",
+		"oF": 0
+		},
+	"\/source\/views\/driver-preferences.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/driver-preferences.html",
 		"oF": 0
 		},
 	"\/source\/views\/faq-detail.kit": {
