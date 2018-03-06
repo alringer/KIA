@@ -309,6 +309,16 @@
                 </li>
                 <li>
                   <a href="#">
+                    <i class="icon-user">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                          <path fill="#A1A6AE" fill-rule="nonzero" d="M.01 15.059c-.258-3.826 3.465-3.847 6.066-5.476V7.842C3.03 5.552 4.506 0 8.04 0c3.446 0 4.95 5.562 1.873 7.842v1.74c2.819 1.682 7.371 1.58 7.074 5.477-.573.793-16.535.991-16.976 0z"/>
+                      </svg>
+                    </i>
+                    <span>Driver Preferences</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
                     <i class="icon-mycarzone">
                       <i class="icon-power">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -719,6 +729,16 @@
                   </svg>
                 </i>
                 <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-user">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                      <path fill="#A1A6AE" fill-rule="nonzero" d="M.01 15.059c-.258-3.826 3.465-3.847 6.066-5.476V7.842C3.03 5.552 4.506 0 8.04 0c3.446 0 4.95 5.562 1.873 7.842v1.74c2.819 1.682 7.371 1.58 7.074 5.477-.573.793-16.535.991-16.976 0z"/>
+                  </svg>
+                </i>
+                <span>Driver Preferences</span>
               </a>
             </li>
             <li>
@@ -1343,6 +1363,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<script type="text/javascript" src="/scripts/slider-bar.js"></script>
 <div class="modal fade vehicle-settings has-fixed-footer" id="vehicle-settings" tabindex="-1" role="dialog" aria-labelledby="add-card" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -1441,6 +1462,25 @@
                           Find your recommended PSI in your vehicles owners manual
                         </span>
                       </label>
+                    </li>
+                    <li class="extra-space no-input overflow">
+                      <strong>Charge Limits</strong>
+                      <div class="charge-limit">
+                        <em>DC Charger:</em>
+                        <div class="slider-bar" data-value="90">
+                          <em>Charge up to <span class="slider-value">90%</span></em>
+                          <div class="slider-bar-js"></div>
+                          <div class="slider-bar-js-blue"></div>
+                        </div>
+                      </div>
+                      <div class="charge-limit">
+                        <em>AC Charger:</em>
+                        <div class="slider-bar" data-value="50">
+                          <em>Charge up to <span class="slider-value">50%</span></em>
+                          <div class="slider-bar-js"></div>
+                          <div class="slider-bar-js-blue"></div>
+                        </div>
+                      </div>
                     </li>
                     <li class="extra-space no-input has-dealer-choice">
                       <strong>Preferred Dealer</strong>
@@ -1646,6 +1686,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 <div class="modal fade delete" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

@@ -1092,6 +1092,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/driver-preferences\/driver-preferences-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/build\/images\/driver-preferences\/driver-preferences-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/source\/images\/driver-preferences\/icon_pref_1-1.png": {
 		"ft": 32768,
 		"iS": 1531,
@@ -6713,6 +6723,13 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/build\/views\/partials\/nav.html",
+		"oF": 0
+		},
+	"\/source\/views\/partials\/vehicle-settings.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/vehicle-settings.html",
 		"oF": 0
 		},
 	"\/source\/views\/pre-login.kit": {

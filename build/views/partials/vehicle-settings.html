@@ -1,0 +1,303 @@
+<div class="modal fade vehicle-settings has-fixed-footer" id="vehicle-settings" tabindex="-1" role="dialog" aria-labelledby="add-card" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <span class="back" data-target="#vehicle-settings-slider" data-slide-to="0"></span>
+        <div id="vehicle-settings-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-vehicle-settings">
+                <form class="vehicle-settings-main" action="" method="post">
+                  <div class="vehicle-settings-main-header">
+                    <strong>2017 Niro</strong>
+                    <span class="print">
+                      <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                          <path fill="#C4172C" fill-rule="nonzero" d="M15.375 12H15V9H3v3H0V5c0-1 1.125-2 2.25-2H3v3h12V3h.75C16.875 3 18 4 18 5v7h-2.625zM4 12v-2h10v5H4v-3zm10-9v2H4V0h10v3z"/>
+                        </svg>
+                      </i>
+                      Print
+                    </span>
+                  </div><!-- /.modal-vehicle-settings-header -->
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <div class="vehicle-settings-main-meta">
+                        <div class="vehicle-settings-main-meta-item">
+                          <strong>
+                            Vin
+                          </strong>
+                          <em>
+                            12345678901234567
+                          </em>
+                        </div><!-- /.vehicle-settings-main-meta-item -->
+                        <div class="vehicle-settings-main-meta-item">
+                          <strong>
+                            My Car Zone PIN
+                          </strong>
+                          <em>
+                            1832
+                          </em>
+                        </div><!-- /.vehicle-settings-main-meta-item -->
+                        <div class="vehicle-settings-main-meta-item">
+                          <strong>
+                            UVO Expiration Date
+                          </strong>
+                          <em>
+                            01/12/17
+                          </em>
+                        </div><!-- /.vehicle-settings-main-meta-item -->
+                      </div><!-- /.vehicle-settings-main-meta -->
+                    </div><!-- /.col -->
+                    <div class="col-xs-7">
+                      <div class="vehicle-settings-main-image">
+                        <img src="/images/image_vehicle_settings_car.png" alt="My Niro" title="My Niro" />
+                        <div>
+                          <a href="" class="software-link">
+                            View Latest UVO Software
+                          </a>
+                        </div>
+                      </div><!-- /.vehicle-settings-main-image -->
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>Nickname</strong>
+                        <input type="text" name="" value="My Niro">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>License Plate</strong>
+                        <input type="text" name="" value="PE257H">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>Recommended PSI</strong>
+                        <input type="text" name="" value="32">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
+                        <span class="helper">
+                          Find your recommended PSI in your vehicles owners manual
+                        </span>
+                      </label>
+                    </li>
+                    <li class="extra-space no-input has-dealer-choice">
+                      <strong>Preferred Dealer</strong>
+                      <span class="link" data-target="#vehicle-settings-slider" data-slide-to="1">Change</span>
+                      <span class="preferred-dealer-choice">
+                        <strong>Kearny Pearson Kia</strong>
+                        <span class="address">
+                          <span>503 Fifth St.</span>
+                          <span>San Diego, CA 92101</span>
+                        </span>
+                        <a href="#">Get Directions</a>
+                        <span class="phone">
+                          <span>Phone Number</span>
+                        </span>
+                      </span>
+                    </li>
+                    <li class="no-input">
+                      <strong>Custom Field</strong>
+                      <span class="link" data-target="#vehicle-settings-slider" data-slide-to="2">Create a custom field</span>
+                    </li>
+                  </ul>
+                  <div class="form-actions">
+                    <span class="button" data-dismiss="modal">
+                      Save
+                    </span>
+                    <span class="button outline" data-dismiss="modal" data-toggle="modal" data-target="#delete">
+                      Delete
+                    </span>
+                  </div><!-- /.form-actions -->
+                </form>
+              </div><!-- /.modal-vehicle-settings -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+                <div class="modal-preferred-dealer">
+                  <strong class="modal-title">Choose a dealer</strong>
+                  <div class="map-wrap">
+                    <div class="map">
+
+                    </div><!-- /.map -->
+                    <div class="map-search">
+                      <input type="text" name="" value="" placeholder="Search by city, address or zipcode" />
+                    </div><!-- /.ma-search -->
+                  </div><!-- /.map-wrap -->
+                  <div class="category-selector special-dropdown">
+                    <em>Dealer Certification</em>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="active-filter">Any</span>
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li data-mix-filter=".all">
+                          Any
+                        </li>
+                        <li data-mix-filter=".option-1">
+                          Option 1
+                        </li>
+                        <li data-mix-filter=".option-2">
+                          Option 2
+                        </li>
+                        <li data-mix-filter=".option-3">
+                          Option 3
+                        </li>
+                      </ul>
+                    </div><!-- /.dropdown -->
+                  </div><!-- /.category-selector -->
+                  <ul class="radio-choices">
+                    <li>
+                      <label class="radio">
+                        <input type="radio"  name="preferred-dealer" value="">
+                        <em>
+                          <span class="address">
+                            <strong>1. Dealer Name</strong>
+                            <em>555 Street Name</em>
+                            <em>City Name, AB 99999</em>
+                            <em>(555) 555-5555</em>
+                          </span>
+                          <span class="distance">
+                            1.5mi
+                          </span>
+                        </em>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio"  name="preferred-dealer" value="">
+                        <em>
+                          <span class="address">
+                            <strong>2. Dealer Name</strong>
+                            <em>555 Street Name</em>
+                            <em>City Name, AB 99999</em>
+                            <em>(555) 555-5555</em>
+                          </span>
+                          <span class="distance">
+                            1.5mi
+                          </span>
+                        </em>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio"  name="preferred-dealer" value="">
+                        <em>
+                          <span class="address">
+                            <strong>3. Dealer Name</strong>
+                            <em>555 Street Name</em>
+                            <em>City Name, AB 99999</em>
+                            <em>(555) 555-5555</em>
+                          </span>
+                          <span class="distance">
+                            1.5mi
+                          </span>
+                        </em>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio"  name="preferred-dealer" value="">
+                        <em>
+                          <span class="address">
+                            <strong>4. Dealer Name</strong>
+                            <em>555 Street Name</em>
+                            <em>City Name, AB 99999</em>
+                            <em>(555) 555-5555</em>
+                          </span>
+                          <span class="distance">
+                            1.5mi
+                          </span>
+                        </em>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="radio">
+                        <input type="radio"  name="preferred-dealer" value="">
+                        <em>
+                          <span class="address">
+                            <strong>5. Dealer Name</strong>
+                            <em>555 Street Name</em>
+                            <em>City Name, AB 99999</em>
+                            <em>(555) 555-5555</em>
+                          </span>
+                          <span class="distance">
+                            1.5mi
+                          </span>
+                        </em>
+                      </label>
+                    </li>
+                  </ul><!-- /.radio-choices -->
+                  <div class="modal-footer">
+                  <span class="button disabled preferred-dealer-submit" data-target="#vehicle-settings-slider" data-slide-to="0">
+                    Use this dealer
+                  </span>
+                </div>
+              </div><!-- /.secondary-modal-option -->
+            </div><!-- /.item -->
+            <div class="item show-back">
+              <div class="modal-custom-field">
+                <strong class="modal-title">
+                  Create Custom Field
+                </strong>
+                <form action="" class="custom-meta-form">
+                  <span class="error-message error-message-main">
+                    <span class="error-message-inner show">Oops! Looks like you missed a few things. Please review the form below and see what you missed.</span>
+                  </span>
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>Field Label</strong>
+                        <input type="text" name="" value="" class="add-meta-field-input">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
+                        <span class="helper">
+                          Create a label for your custom field
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>Helper Text</strong>
+                        <input type="text" name="" value="">
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                              {{ error message }}
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                  </ul><!-- /.form-fields -->
+                  <div class="form-footer">
+                    <span class="button disabled add-meta-field-submit" data-target="#vehicle-settings-slider" data-slide-to="0">
+                      Create Field
+                    </span>
+                  </div><!-- /.form-footer -->
+                </form>
+              </div><!-- /.modal-custom-field -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

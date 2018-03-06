@@ -31,13 +31,18 @@
   to {
     transform: rotate(360deg); } }
 
+@media (max-width: 767px) {
+  .view-drivers-preferences {
+    background: #FFF; } }
+
 .view-drivers-preferences .page-view-header {
   padding-top: 42px;
   overflow: hidden;
   margin-bottom: 42px; }
   @media (max-width: 767px) {
     .view-drivers-preferences .page-view-header {
-      padding-top: 24px; } }
+      padding-top: 0;
+      margin-bottom: 30px; } }
   .view-drivers-preferences .page-view-header h2 {
     font: 100 32px "KIA", sans-serif;
     letter-spacing: 1.5px;
@@ -48,9 +53,18 @@
         font-size: 20px;
         letter-spacing: .5px; } }
 
-.view-drivers-preferences .contain {
+.view-drivers-preferences .page-view .contain {
   max-width: 852px;
   padding: 0 20px; }
+
+.view-drivers-preferences .selector-type {
+  font: bold 10px "KIA", sans-serif;
+  letter-spacing: .4px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 9px; }
+  .view-drivers-preferences .selector-type + .bootstrap-select {
+    margin-bottom: 37px; }
 
 .view-drivers-preferences .page-view-content .text-content {
   padding-top: 51px;
@@ -73,9 +87,24 @@
   background: #FFFFFF;
   box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
   border-radius: 2px;
-  padding: 36px 40px 80px;
   font: 14px/1.5em "Source Sans Pro", sans-serif;
   letter-spacing: .6px; }
+  @media (max-width: 767px) {
+    .view-drivers-preferences .content-area {
+      background: transparent;
+      box-shadow: none;
+      padding: 0 !important; } }
+  .view-drivers-preferences .content-area-scroll {
+    max-height: calc(100vh - 450px);
+    overflow: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+    padding: 36px 40px 0; }
+    @media (max-width: 767px) {
+      .view-drivers-preferences .content-area-scroll {
+        padding: 0;
+        max-height: none;
+        padding-bottom: 50px; } }
   .view-drivers-preferences .content-area .info {
     color: #628797;
     text-align: center;
@@ -95,6 +124,18 @@
       letter-spacing: normal;
       line-height: 18px;
       margin-right: 10px; }
+    @media (max-width: 767px) {
+      .view-drivers-preferences .content-area .info {
+        max-width: 240px;
+        text-align: left;
+        margin: 0 auto 40px;
+        padding-left: 30px;
+        position: relative; }
+        .view-drivers-preferences .content-area .info i {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%); } }
   .view-drivers-preferences .content-area .driver-preferences-setting + .driver-preferences-setting {
     margin-top: 28px;
     border-top: solid 2px #d4d4d4;
@@ -106,7 +147,8 @@
     .view-drivers-preferences .content-area .driver-preferences-setting.disabled p,
     .view-drivers-preferences .content-area .driver-preferences-setting.disabled .setting {
       pointer-events: none;
-      opacity: .4; }
+      opacity: .4;
+      user-select: none; }
   .view-drivers-preferences .content-area .driver-preferences-setting .toggle {
     margin-bottom: 16px; }
   .view-drivers-preferences .content-area .driver-preferences-setting p,
@@ -148,9 +190,16 @@
     font-weight: bold;
     text-decoration: underline;
     font-style: normal; }
-  .view-drivers-preferences .content-area .toggle label span {
-    display: inline-block !important;
-    vertical-align: middle; }
+  .view-drivers-preferences .content-area .toggle label {
+    position: relative;
+    padding-left: 30px; }
+    .view-drivers-preferences .content-area .toggle label span {
+      display: inline-block !important;
+      vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%); }
   .view-drivers-preferences .content-area .toggle em {
     display: inline-block;
     margin-left: 12px;
@@ -169,6 +218,23 @@
   @media (max-width: 767px) {
     .view-drivers-preferences .content-area {
       padding: 10px 10px 20px; } }
+
+.view-drivers-preferences .setting-actions {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .view-drivers-preferences .setting-actions .button {
+    width: 150px; }
+    .view-drivers-preferences .setting-actions .button:not(.outline) {
+      width: 207px; }
+  @media (max-width: 767px) {
+    .view-drivers-preferences .setting-actions {
+      position: fixed;
+      left: 0;
+      bottom: 30px;
+      padding: 20px 0 20px;
+      width: 100%;
+      background: #FFF; } }
 
 .sub-tabs > ul {
   margin: 0;

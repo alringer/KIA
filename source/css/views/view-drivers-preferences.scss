@@ -1,12 +1,16 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 .view-drivers-preferences {
+  @media (max-width: $screen-xs-max) {
+    background: $white;
+  }
   .page-view-header {
     padding-top: 42px;
     overflow: hidden;
     margin-bottom: 42px;
     @media (max-width: $screen-xs-max) {
-      padding-top: 24px;
+      padding-top: 0;
+      margin-bottom: 30px;
     }
     h2 {
       font: 100 32px $kia;
@@ -19,9 +23,21 @@
       }
     }
   }
-  .contain {
-    max-width: 852px;
-    padding: 0 20px;
+  .page-view {
+    .contain {
+      max-width: 852px;
+      padding: 0 20px;
+    }
+  }
+  .selector-type {
+    font: bold 10px $kia;
+    letter-spacing: .4px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    + .bootstrap-select {
+      margin-bottom: 37px;
+    }
   }
   .page-view-content {
     .text-content {
@@ -48,9 +64,25 @@
     background: #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
     border-radius: 2px;
-    padding: 36px 40px 80px;
     font: 14px/1.5em $sans;
     letter-spacing: .6px;
+    @media (max-width: $screen-xs-max) {
+      background: transparent;
+      box-shadow: none;
+      padding: 0 !important;
+    }
+    &-scroll {
+      max-height: calc(100vh - 450px);
+      overflow: auto;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      -webkit-overflow-scrolling: touch;
+      padding: 36px 40px 0;
+      @media (max-width: $screen-xs-max) {
+        padding: 0;
+        max-height: none;
+        padding-bottom: 50px;
+      }
+    }
     .info {
       color: #628797;
       text-align: center;
@@ -71,6 +103,19 @@
         line-height: 18px;
         margin-right: 10px;
       }
+      @media (max-width: $screen-xs-max) {
+        max-width: 240px;
+        text-align: left;
+        margin: 0 auto 40px;
+        padding-left: 30px;
+        position: relative;
+        i {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
     }
     .driver-preferences-setting {
       + .driver-preferences-setting {
@@ -87,6 +132,7 @@
         .setting {
           pointer-events: none;
           opacity: .4;
+          user-select: none;
         }
       }
       .toggle {
@@ -149,9 +195,15 @@
     }
     .toggle {
       label {
+        position: relative;
+        padding-left: 30px;
         span {
           display: inline-block !important;
           vertical-align: middle;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
         }
       }
       em {
@@ -175,6 +227,25 @@
     }
     @media (max-width: $screen-xs-max) {
       padding: 10px 10px 20px;
+    }
+  }
+  .setting-actions {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .button {
+      width: 150px;
+      &:not(.outline) {
+        width: 207px;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      position: fixed;
+      left: 0;
+      bottom: 30px;
+      padding: 20px 0 20px;
+      width: 100%;
+      background: $white;
     }
   }
 }

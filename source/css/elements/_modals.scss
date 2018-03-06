@@ -1488,6 +1488,59 @@ body.modal-open {
       }
     }
   }
+  .overflow {
+    overflow: visible !important;
+    &:after {
+      display: block;
+      content: "";
+      width: 100%;
+      clear: both;;
+    }
+  }
+  .charge-limit {
+    clear: both;
+    + .charge-limit {
+      padding-top: 20px;
+    }
+    em {
+      font: 12px $sans;
+    }
+    .slider-bar {
+      float: right;
+      margin: 10px 0 10px;
+      width: 230px;
+      position: relative;
+      margin-top: 20px;
+      em {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        font: bold 10px $kia;
+        letter-spacing: .4px;
+        color: #9ba1a9;
+        margin-bottom: 13px;
+      }
+      .slider-bar-js.ui-slider {
+        background: #2f2f2f;
+        span {
+          transform-origin: top center;
+          z-index: 11;
+          margin-left: -15px;
+          width: 19px;
+          height: 19px;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+          margin-top: -2px;
+          &:before {
+            width: 7px;
+            height: 7px;
+          }
+        }
+      }
+      &-js-blue {
+        background: #8ec439;
+      }
+    }
+  }
 }
 .modal.preferred-dealer {
   .modal-dialog {

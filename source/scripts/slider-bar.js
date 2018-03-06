@@ -19,6 +19,7 @@ $(document).ready(() => {
         $element.css({
           width : value + '%',
         });
+        $element.parents('.slider-bar').find('.slider-value').text((Math.floor(value / 10) * 10) + '%');
       },
       _button : function() {
         var $this = $(this),

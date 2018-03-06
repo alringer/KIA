@@ -92,7 +92,16 @@
         </div><!-- /.remote-meta -->
         <div class="remote-battery">
           <div class="battery percentage-32">
+            <div class="limit limit-dc" style="bottom: 80%">
+              DC
+            </div>
+            <div class="limit limit-ac" style="bottom: 40%">
+              AC
+            </div>
             <span class="percentage">32<sub>%</sub></span>
+          </div>
+          <div class="modal-footer-link">
+            <span data-toggle="modal" data-target="#vehicle-settings">Edit Charge Limits</span>
           </div>
         </div><!-- /.remote-battery -->
       </div><!-- /.remote-body -->
@@ -236,5 +245,6 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal#how-to-activate-uvo -->
+<!-- @import "partials/vehicle-settings.kit" -->
 <!-- @import "partials/modals/settings.kit" -->
 <!-- @import "partials/footer.kit" -->

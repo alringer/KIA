@@ -1395,6 +1395,50 @@ body.modal-open {
     .modal.vehicle-settings .modal-content .item.active {
       padding-bottom: 0px !important; } }
 
+.modal.vehicle-settings .overflow {
+  overflow: visible !important; }
+  .modal.vehicle-settings .overflow:after {
+    display: block;
+    content: "";
+    width: 100%;
+    clear: both; }
+
+.modal.vehicle-settings .charge-limit {
+  clear: both; }
+  .modal.vehicle-settings .charge-limit + .charge-limit {
+    padding-top: 20px; }
+  .modal.vehicle-settings .charge-limit em {
+    font: 12px "Source Sans Pro", sans-serif; }
+  .modal.vehicle-settings .charge-limit .slider-bar {
+    float: right;
+    margin: 10px 0 10px;
+    width: 230px;
+    position: relative;
+    margin-top: 20px; }
+    .modal.vehicle-settings .charge-limit .slider-bar em {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      font: bold 10px "KIA", sans-serif;
+      letter-spacing: .4px;
+      color: #9ba1a9;
+      margin-bottom: 13px; }
+    .modal.vehicle-settings .charge-limit .slider-bar .slider-bar-js.ui-slider {
+      background: #2f2f2f; }
+      .modal.vehicle-settings .charge-limit .slider-bar .slider-bar-js.ui-slider span {
+        transform-origin: top center;
+        z-index: 11;
+        margin-left: -15px;
+        width: 19px;
+        height: 19px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+        margin-top: -2px; }
+        .modal.vehicle-settings .charge-limit .slider-bar .slider-bar-js.ui-slider span:before {
+          width: 7px;
+          height: 7px; }
+    .modal.vehicle-settings .charge-limit .slider-bar-js-blue {
+      background: #8ec439; }
+
 .modal.preferred-dealer .modal-dialog {
   max-width: 455px; }
   .modal.preferred-dealer .modal-dialog .modal-preferred-dealer {
@@ -4112,7 +4156,7 @@ nav.nav-main {
       float: right;
       left: auto;
       right: 0;
-      width: 140px;
+      padding-right: 20px !important;
       min-width: 140px;
       padding: 5px 0 10px; }
       nav.nav-main .account-menu .dropdown .dropdown-menu li {

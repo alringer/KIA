@@ -294,6 +294,16 @@
                   </li>
                   <li>
                     <a href="#">
+                      <i class="icon-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                            <path fill="#A1A6AE" fill-rule="nonzero" d="M.01 15.059c-.258-3.826 3.465-3.847 6.066-5.476V7.842C3.03 5.552 4.506 0 8.04 0c3.446 0 4.95 5.562 1.873 7.842v1.74c2.819 1.682 7.371 1.58 7.074 5.477-.573.793-16.535.991-16.976 0z"/>
+                        </svg>
+                      </i>
+                      <span>Driver Preferences</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
                       <i class="icon-mycarzone">
                         <i class="icon-power">
                           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
@@ -708,6 +718,16 @@
               </li>
               <li>
                 <a href="#">
+                  <i class="icon-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                        <path fill="#A1A6AE" fill-rule="nonzero" d="M.01 15.059c-.258-3.826 3.465-3.847 6.066-5.476V7.842C3.03 5.552 4.506 0 8.04 0c3.446 0 4.95 5.562 1.873 7.842v1.74c2.819 1.682 7.371 1.58 7.074 5.477-.573.793-16.535.991-16.976 0z"/>
+                    </svg>
+                  </i>
+                  <span>Driver Preferences</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
                   <i class="icon-power">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                         <path fill="#9BA1A9" fill-rule="nonzero" d="M8.5 16.98c-4.687 0-8.5-3.771-8.5-8.406a8.267 8.267 0 0 1 1.76-5.12 1.207 1.207 0 0 1 1.679-.218 1.176 1.176 0 0 1 .22 1.661 5.935 5.935 0 0 0-1.264 3.676 6.105 6.105 0 1 0 12.21 0 5.935 5.935 0 0 0-1.264-3.676 1.176 1.176 0 0 1 .22-1.66 1.207 1.207 0 0 1 1.68.217A8.269 8.269 0 0 1 17 8.574c0 4.635-3.813 8.405-8.5 8.405zm-.233-6.848a1.19 1.19 0 0 1-1.19-1.19V1.169a1.194 1.194 0 1 1 2.388 0v7.778a1.19 1.19 0 0 1-1.198 1.185z"/>
@@ -780,7 +800,7 @@
                       </li>
                     </ul>
                     <div class="hidden-sm hidden-md hidden-lg">
-                      <strong>Category</strong>
+                      <strong class="selector-type">Category</strong>
                       <select class="selectpicker">
                         <option selected>Category 1</option>
                         <option>Category 2</option>
@@ -794,78 +814,82 @@
                 </div><!-- /.col -->
                 <div class="col-sm-8">
                   <div class="content-area">
-                    <div class="info">
-                      <i>i</i>
-                      These settings only will only be applied to compatible vehicles.
-                    </div><!-- /.info -->
-                    <div class="driver-preferences-setting disabled">
-                      <span class="toggle tiny">
-                        <label>
-                          <input type="checkbox" name="toggle" value="1">
-                          <span></span>
-                          <em>Auto-locking Doors and trunk</em>
-                        </label>
-                      </span><!-- /.toggle -->
-                      <p>When shift lever has been shifted out of <em>P (Park)</em>, the vehicle doors and trunk will automatically lock.</p>
-                      <div class="setting">
-                        <label>
-                          <input type="radio" name="setting_1" value="" checked>
-                          <span>
-                            <i>
-                              <img src="/images/driver-preferences/icon_pref_1-1.png" alt="Auto-Lock">
-                            </i>
-                            <strong>
-                              Auto-Lock when out of P (Park)
-                            </strong>
-                          </span>
-                        </label>
-                        <label>
-                          <input type="radio" name="setting_1" value="">
-                          <span>
-                            <i>
-                              <img src="/images/driver-preferences/icon_pref_1-2.png" alt="Auto-Lock">
-                            </i>
-                            <strong>
-                              Auto-Lock when vehicle exceeds 5mph
-                            </strong>
-                          </span>
-                        </label>
+                    <div class="content-area-scroll">
+
+                      <div class="info">
+                        <i>i</i>
+                        These settings only will only be applied to compatible vehicles.
+                      </div><!-- /.info -->
+                      <div class="driver-preferences-setting disabled">
+                        <span class="toggle tiny">
+                          <label>
+                            <input type="checkbox" name="toggle" value="1">
+                            <span></span>
+                            <em>Auto-locking Doors and trunk</em>
+                          </label>
+                        </span><!-- /.toggle -->
+                        <p>When shift lever has been shifted out of <em>P (Park)</em>, the vehicle doors and trunk will automatically lock.</p>
+                        <div class="setting">
+                          <label>
+                            <input type="radio" name="setting_1" value="" checked>
+                            <span>
+                              <i>
+                                <img src="/images/driver-preferences/icon_pref_1-1.png" alt="Auto-Lock">
+                              </i>
+                              <strong>
+                                Auto-Lock when out of P (Park)
+                              </strong>
+                            </span>
+                          </label>
+                          <label>
+                            <input type="radio" name="setting_1" value="">
+                            <span>
+                              <i>
+                                <img src="/images/driver-preferences/icon_pref_1-2.png" alt="Auto-Lock">
+                              </i>
+                              <strong>
+                                Auto-Lock when vehicle exceeds 5mph
+                              </strong>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="driver-preferences-setting disabled">
+                        <span class="toggle tiny">
+                          <label>
+                            <input type="checkbox" name="toggle" value="1">
+                            <span></span>
+                            <em>Steering wheel and seat positioning</em>
+                          </label>
+                        </span><!-- /.toggle -->
+                        <p>When the driver door opens, the driver seat and steering wheel automatically move <em>slightly</em> in the opposite direction allowing easier access.</p>
+                        <div class="setting">
+                          <label>
+                            <input type="radio" name="setting_2" value="" checked>
+                            <span>
+                              <i>
+                                <img src="/images/driver-preferences/icon_pref_2-1.png" alt="Access">
+                              </i>
+                              <strong>
+                                Easy Access
+                              </strong>
+                            </span>
+                          </label>
+                          <label>
+                            <input type="radio" name="setting_2" value="">
+                            <span>
+                              <i>
+                                <img src="/images/driver-preferences/icon_pref_2-2.png" alt="Access">
+                              </i>
+                              <strong>
+                                Tall Easy Access
+                              </strong>
+                            </span>
+                          </label>
+                        </div>
                       </div>
                     </div>
-                    <div class="driver-preferences-setting disabled">
-                      <span class="toggle tiny">
-                        <label>
-                          <input type="checkbox" name="toggle" value="1">
-                          <span></span>
-                          <em>Steering wheel and seat positioning</em>
-                        </label>
-                      </span><!-- /.toggle -->
-                      <p>When the driver door opens, the driver seat and steering wheel automatically move <em>slightly</em> in the opposite direction allowing easier access.</p>
-                      <div class="setting">
-                        <label>
-                          <input type="radio" name="setting_2" value="" checked>
-                          <span>
-                            <i>
-                              <img src="/images/driver-preferences/icon_pref_2-1.png" alt="Access">
-                            </i>
-                            <strong>
-                              Easy Access
-                            </strong>
-                          </span>
-                        </label>
-                        <label>
-                          <input type="radio" name="setting_2" value="">
-                          <span>
-                            <i>
-                              <img src="/images/driver-preferences/icon_pref_2-2.png" alt="Access">
-                            </i>
-                            <strong>
-                              Tall Easy Access
-                            </strong>
-                          </span>
-                        </label>
-                      </div>
-                    </div>
+
                     <div class="setting-actions">
                       <span class="button">
                         Save
