@@ -1,0 +1,968 @@
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-schedules.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+  <!-- @import "partials/head/vendors/dial-files.kit" -->
+  <!-- VIEW JS -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="/scripts/schedules.js"></script>
+  <script type="text/javascript" src="/scripts/heated-seats.js"></script>
+  <!-- @import "partials/head/vendors/select.kit" -->
+
+<!-- @import "partials/head/head-end.kit" -->
+<div class="view-schedules view-schedules-combined">
+  <div class="has-mobile-nav">
+    <!-- @import "partials/nav-dual.kit" -->
+    <!-- @import "partials/nav-mobile-schedules.kit" -->
+    <div class="page-view">
+      <div class="schedules-wrapper">
+        <div class="schedules-header">
+          <h2 class="pull-left">
+            Schedules
+          </h2>
+          <span class="button disabled save-schedules-button pull-right">
+            Save
+          </span>
+        </div><!-- /.schedules-header -->
+        <div class="schedules-combined">
+          <div class="schedules-timeline">
+            <div class="timeline-bar">
+              <div class="timeline-bar-legend">
+                <span class="charging">
+                  Charging
+                </span>
+                <span class="off-peak">
+                  Off-Peak Hours
+                </span>
+              </div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-base">
+                  <div class="timeline-bar-charging" style="width: 60%; left: 40%;">
+                  </div>
+                </div>
+                <div class="timeline-bar-offpeak" style="width: 20%; left: 70%;">
+                  <span>10:00 PM - 4:00 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-bar-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
+                <path fill="#FF6B4D" fill-rule="nonzero" d="M4.882 4.795h5.539L.6 14.615 3.985 18l9.82-9.82v5.538H18.6V0H4.882z"></path>
+              </svg>
+              <em>7:00 AM</em>
+            </div>
+            <em>Timeline assumes vehicle will be plugged in prior to charge schedule taking effect</em>
+          </div><!-- /.schedules-timeline -->
+          <div class="schedules-tabs">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="nav nav-tabs">
+
+                    <a href="#depature-times" class="active enabled" data-toggle="tab">
+                      <span class="nav-tab-inner">
+                        <span class="nav-tab-header">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
+                              <path fill="#FF6B4D" fill-rule="nonzero" d="M4.882 4.795h5.539L.6 14.615 3.985 18l9.82-9.82v5.538H18.6V0H4.882z"/>
+                          </svg>
+                          <em>Next Departure</em>
+                        </span>
+                        <span class="nav-tab-footer">
+                          <em>Friday November 11th</em>
+                          <strong>7:00 AM</strong>
+                        </span>
+                      </span>
+                    </a>
+
+                    <a href="#charge-settings" class="" data-toggle="tab">
+                      <span class="nav-tab-inner">
+                        <span class="nav-tab-header">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
+                              <path fill="#8EC439" fill-rule="evenodd" d="M2.768 27.166a2 2 0 0 1-2.002-2.002V6.386c0-1.105.905-2.002 2.002-2.002h11.185a2 2 0 0 1 2 2.002v18.778a2.007 2.007 0 0 1-2 2.002H2.768zm3.06-3.375h5.064c.938 0 1.687-.756 1.687-1.688 0-.938-.755-1.687-1.687-1.687H5.829c-.939 0-1.688.755-1.688 1.687 0 .939.756 1.688 1.688 1.688zm0-6.75h5.064c.938 0 1.687-.756 1.687-1.688 0-.938-.755-1.687-1.687-1.687H5.829c-.939 0-1.688.755-1.688 1.687 0 .939.756 1.688 1.688 1.688zm0-5.907h5.064c.938 0 1.687-.755 1.687-1.687 0-.939-.755-1.688-1.687-1.688H5.829c-.939 0-1.688.756-1.688 1.688 0 .938.756 1.687 1.688 1.687zm-.686-7.593a.995.995 0 0 1-1-.995V1.16c0-.55.453-.994 1-.994h6.436a.995.995 0 0 1 1 .994v1.386c0 .55-.453.995-1 .995H5.142z"/>
+                          </svg>
+                          <em>Charge Settings</em>
+                          <span class="toggle tiny stop-prop">
+                            <label>
+                              <input type="checkbox" name="toggle" value="1">
+                              <span></span>
+                            </label>
+                          </span>
+                        </span>
+                        <span class="nav-tab-footer">
+                          <em>My vehicle will charge:</em>
+                          <strong class="charge-label">When I plug it in</strong>
+                        </span>
+                      </span>
+                    </a>
+
+                    <a href="#climate-settings" class="" data-toggle="tab">
+                      <span class="nav-tab-inner">
+                        <span class="nav-tab-header">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                              <path fill="#4BBEF0" fill-rule="evenodd" d="M9.072 13.512l.01-.026a15.02 15.02 0 0 0-.301-.122c-5.03-1.62-7.702-4.59-7.736-7.475C1.01 2.973 4.445.221 8.097.523c2.183.18 3.229 1.082 2.61 3.515-.356 1.4-.965 2.749-.64 4.44.21-.063.598-.128 1.004-.585a.748.748 0 0 1 .054-.056c1.685-4.188 4.38-6.404 7.006-6.435 2.916-.035 5.667 3.4 5.366 7.053-.18 2.183-1.082 3.228-3.515 2.61-1.534-.39-3.008-1.085-4.938-.52l-.03.093c.117.069.237.13.357.183 4.939 2.135 7.34 5.407 7.069 8.31-.27 2.904-3.973 5.282-7.575 4.6-2.152-.407-3.098-1.413-2.228-3.768.588-1.592 1.516-3.078.936-5.294-.052.15-.103.302-.154.456-1.697 5.105-4.747 7.782-7.663 7.766C2.84 22.875.148 19.393.513 15.746c.219-2.18 1.139-3.21 3.56-2.549 1.611.44 2.997 1.102 5 .315zm1.25-4.136a.046.046 0 0 0-.007-.042l-.02-.028.026.07z"/>
+                          </svg>
+
+                          <em>Climate Settings</em>
+                          <span class="toggle tiny stop-prop">
+                            <label>
+                              <input type="checkbox" name="toggle" value="1">
+                              <span></span>
+                            </label>
+                          </span>
+                        </span>
+                        <span class="nav-tab-footer">
+                          <span>
+                            <strong>72<sup>°</sup></strong>
+                            <span>
+                              <em>Defrosters: OFF</em>
+                              <em>Heated Accessories: OFF</em>
+                              <em>Heated Seats: OFF </em>
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                    </a>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="tab-content schedules-tabs">
+                  <div class="tab-pane fade in active" id="depature-times">
+                    <div class="tab-inner">
+                      <strong class="tab-header">
+                        Depature Times
+                      </strong>
+                      <p>
+                        Scheduled charging and vehicle climate will be activated according to departure times.
+                      </p>
+                      <div class="depature-times">
+                        <div class="time-row">
+                          <strong>First Depature</strong>
+                          <div class="row">
+                            <div class="col-sm-5">
+                              <strong>Time</strong>
+                              <div class="timepicker">
+                                <select class="selectpicker small" id="select-1">
+                                  <option value="1">12:00</option>
+                                  <option value="1">1:00</option>
+                                  <option value="1">2:00</option>
+                                  <option value="1">3:00</option>
+                                  <option value="1">4:00</option>
+                                  <option value="1">5:00</option>
+                                  <option value="1">6:00</option>
+                                  <option value="1">7:00</option>
+                                  <option value="1">8:00</option>
+                                  <option value="1">9:00</option>
+                                  <option value="1">10:00</option>
+                                  <option value="1">11:00</option>
+                                </select>
+                                <div class="radio-choices">
+                                  <label class="radio">
+                                    <input type="radio"  name="time_1" value="" checked>
+                                    <em>
+                                      AM
+                                    </em>
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio"  name="time_1" value="">
+                                    <em>
+                                      PM
+                                    </em>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-7">
+                              <strong>Repeat On:</strong>
+                              <div class="checkbox-group">
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>Su</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked="">
+                                  <em>
+                                    <span>M</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked="">
+                                  <em>
+                                    <span>Tu</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked="">
+                                  <em>
+                                    <span>W</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked="">
+                                  <em>
+                                    <span>Th</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked="">
+                                  <em>
+                                    <span>F</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>Su</span>
+                                  </em>
+                                </label>
+                              </div>
+                            </div>
+                          </div><!-- /.row -->
+                        </div>
+                        <div class="time-row">
+                          <strong>Second Depature</strong>
+                          <div class="row">
+                            <div class="col-sm-5">
+                              <strong>Time</strong>
+                              <div class="timepicker">
+                                <select class="selectpicker small" id="select-1">
+                                  <option value="1">12:00</option>
+                                  <option value="1">1:00</option>
+                                  <option value="1">2:00</option>
+                                  <option value="1">3:00</option>
+                                  <option value="1">4:00</option>
+                                  <option value="1">5:00</option>
+                                  <option value="1">6:00</option>
+                                  <option value="1">7:00</option>
+                                  <option value="1">8:00</option>
+                                  <option value="1">9:00</option>
+                                  <option value="1">10:00</option>
+                                  <option value="1">11:00</option>
+                                </select>
+                                <div class="radio-choices">
+                                  <label class="radio">
+                                    <input type="radio"  name="time_2" value="" checked>
+                                    <em>
+                                      AM
+                                    </em>
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio"  name="time_2" value="">
+                                    <em>
+                                      PM
+                                    </em>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-7">
+                              <strong>Repeat On:</strong>
+                              <div class="checkbox-group">
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>
+                                    <span>Su</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>M</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>Tu</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>W</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>Th</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="">
+                                  <em>
+                                    <span>F</span>
+                                  </em>
+                                </label>
+                                <label class="checkbox checkbox-round">
+                                  <input type="checkbox" name="" value="" checked />
+                                  <em>
+                                    <span>Su</span>
+                                  </em>
+                                </label>
+                              </div>
+                            </div>
+                          </div><!-- /.row -->
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- /.depature-times -->
+                  <div class="tab-pane fade" id="charge-settings">
+                    <div class="tab-inner">
+                      <strong class="tab-header">Charge Settings</strong>
+                      <div class="charge-settings">
+                        <p>I want my vehicle to start charging:</p>
+                        <div class="charge-settings-options">
+                          <label>
+                            <input type="radio" name="change_setting" value="plug" checked>
+                            <span>
+                              <img src="/images/schedules/icon_plugin.png" alt="" />
+                              <strong>When I plug it in</strong>
+                            </span>
+                          </label>
+                          <label>
+                            <input class="off-peak-update" type="radio" name="change_setting" value="off-peak">
+                            <span>
+                              <img src="/images/schedules/peak-hours-icon.png" alt="" />
+                              <strong>During off-peak hours only</strong>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="off-peak-picker">
+                          <div class="timepicker">
+                            <strong>Off-Peak Start</strong>
+                            <select class="selectpicker small off-peak-start off-peak-update" id="off-1">
+                              <option value="12:00">12:00</option>
+                              <option value="1:00">1:00</option>
+                              <option value="2:00">2:00</option>
+                              <option value="3:00">3:00</option>
+                              <option value="4:00">4:00</option>
+                              <option value="5:00">5:00</option>
+                              <option value="6:00">6:00</option>
+                              <option value="7:00">7:00</option>
+                              <option value="8:00">8:00</option>
+                              <option value="9:00">9:00</option>
+                              <option value="10:00">10:00</option>
+                              <option value="11:00">11:00</option>
+                            </select>
+                            <div class="radio-choices">
+                              <label class="radio">
+                                <input class="off-peak-start-tod off-peak-update" type="radio" name="time_3" value="am" checked />
+                                <em>
+                                  AM
+                                </em>
+                              </label>
+                              <label class="radio">
+                                <input type="radio" class="off-peak-start-tod off-peak-update"  name="time_3" value="pm">
+                                <em>
+                                  PM
+                                </em>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="timepicker">
+                            <strong>Off-Peak Stop</strong>
+                            <select class="selectpicker small off-peak-stop off-peak-update" id="off-2">
+                              <option value="12:00">12:00</option>
+                              <option value="1:00">1:00</option>
+                              <option value="2:00">2:00</option>
+                              <option value="3:00">3:00</option>
+                              <option value="4:00">4:00</option>
+                              <option value="5:00">5:00</option>
+                              <option value="6:00">6:00</option>
+                              <option value="7:00">7:00</option>
+                              <option value="8:00">8:00</option>
+                              <option value="9:00">9:00</option>
+                              <option value="10:00">10:00</option>
+                              <option value="11:00">11:00</option>
+                            </select>
+                            <div class="radio-choices">
+                              <label class="radio">
+                                <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_4" value="am" checked>
+                                <em>
+                                  AM
+                                </em>
+                              </label>
+                              <label class="radio">
+                                <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_4" value="pm">
+                                <em>
+                                  PM
+                                </em>
+                              </label>
+                            </div>
+                          </div><!-- /.timepicker -->
+                        </div><!-- /.off-peak-timepicker -->
+                      </div><!-- /.charge-settingsinner -->
+                      <div class="tab-footer">
+                        <p><strong>DC Charge Limit:</strong> 80%, <strong>AC Charge Limit:</strong> 50% <a href="#" data-toggle="modal" data-target="#vehicle-settings">EDIT</a></p>
+                      </div>
+                    </div><!-- /.tab-inner -->
+                  </div><!-- /.charge-times -->
+                  <div class="tab-pane fade" id="climate-settings">
+                    <div class="tab-inner">
+                      <strong class="tab-header">Climate Settings</strong>
+                      <p>Your vehicle will be at this temperature by your next departure time.</p>
+                      <div class="climate-settings">
+                        <div class="ui-dial" data-min="50" data-max="90">
+                          <span class="ui-dial-temperateure">
+                            <span class="ui-dial-temperateure-text"></span>
+                            <span class="degree">°</span>
+                          </span>
+                          <span class="ui-dial-handle"></span>
+                          <input type="hidden" class="ui-dial-canvas" />
+                          <input type="hidden" class="ui-dial-value" value="63"  />
+                          <span class="ui-dial-controls">
+                            <span class="down"></span>
+                            <span class="up"></span>
+                          </span>
+                        </div><!-- /.ui-dial -->
+                        <div class="climate-footer">
+                          <div class="climate-footer-col">
+                            <em>Front Defrost</em>
+                            <i class="icon-defrost"></i>
+                            <div class="toggle-wrap">
+                              <span class="toggle">
+                                <label>
+                                  <input type="checkbox" name="toggle" value="1">
+                                  <span></span>
+                                </label>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="climate-footer-col">
+                            <em>Heated Accessories</em>
+                            <i class="icon-defrost-rear"></i>
+                            <i class="icon-defrost-mirror"></i>
+                            <i class="icon-defrost-steering"></i>
+                            <div class="toggle-wrap">
+                              <span class="toggle">
+                                <label>
+                                  <input type="checkbox" name="toggle" value="1">
+                                  <span></span>
+                                </label>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="climate-footer-col">
+                            <em>Heated And Cooled Seats</em>
+                            <i class="icon-heated-seats hot cold"></i>
+                            <a href="#" data-toggle="modal" data-target="#heated-seats">
+                              EDIT
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div><!-- /.climate-settingsinner -->
+                    </div><!-- /.tab-inner -->
+                  </div><!-- /.charge-times -->
+                </div><!-- /.tab-content -->
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.schedules-tabs -->
+          <div class="schedules-alert-area mobile-only">
+            <div class="schedules-alert-area-header">
+              <h3 class="pull-left">
+                <span class="nav-tab-header">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
+                      <path fill="#FF6B4D" fill-rule="nonzero" d="M4.882 4.795h5.539L.6 14.615 3.985 18l9.82-9.82v5.538H18.6V0H4.882z"/>
+                  </svg>
+                  NEXT DEPARTURE TIME
+                </span>
+              </h3>
+            </div><!-- /.schedules-alert-area-header -->
+            <div class="schedules-alert-area-cards">
+              <div class="row">
+                <div class="col-sm-5 col-md-4">
+                  <div class="alert-card alert-card-climate large" data-toggle="modal" data-target="#modal-depature-times">
+                    <span class="nav-tab-footer">
+                      <em>Friday November 11th</em>
+                      <strong>7:00 AM</strong>
+                    </span>
+                    <div class="mobile-arrow">
+                      <i class="icon-arrow-right"></i>
+                    </div><!-- /.mobile-arrow -->
+                  </div><!-- /.alert-card -->
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+            </div><!-- /.schedules-alert-area-cards -->
+          </div><!-- /.schedules-alert-area -->
+          <div class="schedules-alert-area mobile-only">
+            <div class="schedules-alert-area-header">
+              <h3 class="pull-left">
+                <span class="nav-tab-header">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
+                      <path fill="#8EC439" fill-rule="evenodd" d="M2.768 27.166a2 2 0 0 1-2.002-2.002V6.386c0-1.105.905-2.002 2.002-2.002h11.185a2 2 0 0 1 2 2.002v18.778a2.007 2.007 0 0 1-2 2.002H2.768zm3.06-3.375h5.064c.938 0 1.687-.756 1.687-1.688 0-.938-.755-1.687-1.687-1.687H5.829c-.939 0-1.688.755-1.688 1.687 0 .939.756 1.688 1.688 1.688zm0-6.75h5.064c.938 0 1.687-.756 1.687-1.688 0-.938-.755-1.687-1.687-1.687H5.829c-.939 0-1.688.755-1.688 1.687 0 .939.756 1.688 1.688 1.688zm0-5.907h5.064c.938 0 1.687-.755 1.687-1.687 0-.939-.755-1.688-1.687-1.688H5.829c-.939 0-1.688.756-1.688 1.688 0 .938.756 1.687 1.688 1.687zm-.686-7.593a.995.995 0 0 1-1-.995V1.16c0-.55.453-.994 1-.994h6.436a.995.995 0 0 1 1 .994v1.386c0 .55-.453.995-1 .995H5.142z"></path>
+                  </svg>
+                  Charge Settings
+                </span>
+              </h3>
+              <div class="schedules-alert-area-toggle pull-right">
+                <span class="toggle tiny">
+                  <label>
+                    <input type="checkbox" name="toggle" value="1" checked>
+                    <span></span>
+                  </label>
+                </span>
+              </div><!-- /.schedules-alert-area-toggle -->
+            </div><!-- /.schedules-alert-area-header -->
+            <div class="schedules-alert-area-cards">
+              <div class="row">
+                <div class="col-sm-5 col-md-4">
+                  <div class="alert-card alert-card-climate large" data-toggle="modal" data-target="#modal-charge-times">
+                    <span class="nav-tab-footer">
+                      <em>My vehicle will charge</em>
+                      <strong class="charge-label">10:00 PM - 4:00 AM</strong>
+                    </span>
+                    <div class="mobile-arrow">
+                      <i class="icon-arrow-right"></i>
+                    </div><!-- /.mobile-arrow -->
+                  </div><!-- /.alert-card -->
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+            </div><!-- /.schedules-alert-area-cards -->
+          </div><!-- /.schedules-alert-area -->
+          <div class="schedules-alert-area mobile-only">
+            <div class="schedules-alert-area-header">
+              <h3 class="pull-left">
+                <span class="nav-tab-header">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <path fill="#4BBEF0" fill-rule="evenodd" d="M9.072 13.512l.01-.026a15.02 15.02 0 0 0-.301-.122c-5.03-1.62-7.702-4.59-7.736-7.475C1.01 2.973 4.445.221 8.097.523c2.183.18 3.229 1.082 2.61 3.515-.356 1.4-.965 2.749-.64 4.44.21-.063.598-.128 1.004-.585a.748.748 0 0 1 .054-.056c1.685-4.188 4.38-6.404 7.006-6.435 2.916-.035 5.667 3.4 5.366 7.053-.18 2.183-1.082 3.228-3.515 2.61-1.534-.39-3.008-1.085-4.938-.52l-.03.093c.117.069.237.13.357.183 4.939 2.135 7.34 5.407 7.069 8.31-.27 2.904-3.973 5.282-7.575 4.6-2.152-.407-3.098-1.413-2.228-3.768.588-1.592 1.516-3.078.936-5.294-.052.15-.103.302-.154.456-1.697 5.105-4.747 7.782-7.663 7.766C2.84 22.875.148 19.393.513 15.746c.219-2.18 1.139-3.21 3.56-2.549 1.611.44 2.997 1.102 5 .315zm1.25-4.136a.046.046 0 0 0-.007-.042l-.02-.028.026.07z"></path>
+                  </svg>
+                  Climate Settings
+                </span>
+              </h3>
+              <div class="schedules-alert-area-toggle pull-right">
+                <span class="toggle tiny">
+                  <label>
+                    <input type="checkbox" name="toggle" value="1" checked>
+                    <span></span>
+                  </label>
+                </span>
+              </div><!-- /.schedules-alert-area-toggle -->
+            </div><!-- /.schedules-alert-area-header -->
+            <div class="schedules-alert-area-cards">
+              <div class="row">
+                <div class="col-sm-5 col-md-4">
+                  <div class="alert-card alert-card-climate large" data-toggle="modal" data-target="#edit-climate-schedule">
+                    <span class="nav-tab-footer">
+                      <span>
+                        <strong>72<sup>°</sup></strong>
+                        <span>
+                          <em>Defrosters: <em>OFF</em></em>
+                          <em>Heated Accessories: <em>OFF</em></em>
+                          <em>Heated And Cooled Seats: <em>OFF</em></em>
+                        </span>
+                      </span>
+                    </span>
+                    <div class="mobile-arrow">
+                      <i class="icon-arrow-right"></i>
+                    </div><!-- /.mobile-arrow -->
+                  </div><!-- /.alert-card -->
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+            </div><!-- /.schedules-alert-area-cards -->
+          </div><!-- /.schedules-alert-area -->
+        </div><!-- /.schedules-combined -->
+      </div><!-- /.schedules-wrapper -->
+    </div><!-- /.page-view -->
+  </div><!-- /.has-mobile-nav -->
+</div><!-- /.view-schedules -->
+<div class="modal fade heated-seats" id="heated-seats" tabindex="-1" role="dialog" aria-labelledby="warning" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-heated-seats">
+          <strong class="modal-title">Heated and Cooled Seats</strong>
+          <div class="heated-seats-wrap">
+            <div class="ui-dial top steps" data-min="1" data-max="7">
+              <span class="ui-dial-handle"></span>
+              <input type="text" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-value" value="4" />
+              <span class="seat-status">
+                <span class="seat-status-off"></span>
+                <span class="seat-status-on hot"></span>
+                <span class="seat-status-on cold"></span>
+              </span><!-- /.seat-status -->
+              <span class="ui-dial-controls">
+                <span class="down"></span>
+                <span class="up"></span>
+                <span class="button reset apply-seat-temp" data-action="seat" data-seat="1">Apply</span>
+              </span>
+            </div>
+            <div class="ui-dial top steps" data-min="1" data-max="7">
+              <span class="ui-dial-handle"></span>
+              <input type="hidden" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-value" value="4" />
+              <span class="seat-status">
+                <span class="seat-status-off"></span>
+                <span class="seat-status-on hot"></span>
+                <span class="seat-status-on cold"></span>
+              </span><!-- /.seat-status -->
+              <span class="ui-dial-controls">
+                <span class="down"></span>
+                <span class="up"></span>
+                <span class="button reset apply-seat-temp" data-action="seat" data-seat="2">Apply</span>
+              </span>
+            </div>
+            <div class="heated-seats-vehicle">
+              <img src="/images/image_heated_seats_base.png" alt="vehicle outline" />
+              <span class="heated-seat-1 off">
+                <img src="/images/heated_seat_1_off.png" alt="Driver's seat">
+              </span>
+              <span class="heated-seat-2 off">
+                <img src="/images/heated_seat_2_off.png" alt="Passenger's seat">
+              </span>
+              <span class="heated-seat-3 off">
+                <img src="/images/heated_seat_3_off.png" alt="Rear Passenger's seat">
+              </span>
+              <span class="heated-seat-4 off">
+                <img src="/images/heated_seat_4_off.png" alt="Rear Passenger's seat">
+              </span>
+              <em>Select a seat</em>
+            </div>
+            <div class="ui-dial steps bottom" data-min="1" data-max="7">
+              <span class="ui-dial-handle"></span>
+              <input type="hidden" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-value" value="4"  />
+              <span class="seat-status">
+                <span class="seat-status-off"></span>
+                <span class="seat-status-on hot"></span>
+                <span class="seat-status-on cold"></span>
+              </span><!-- /.seat-status -->
+              <span class="ui-dial-controls">
+                <span class="down"></span>
+                <span class="up"></span>
+                <span class="button reset apply-seat-temp"  data-action="seat" data-seat="3">Apply</span>
+              </span>
+            </div>
+            <div class="ui-dial steps bottom" data-min="1" data-max="7">
+              <span class="ui-dial-handle"></span>
+              <input type="hidden" class="ui-dial-canvas" />
+              <input type="hidden" class="ui-dial-value" value="4"  />
+              <span class="seat-status">
+                <span class="seat-status-off"></span>
+                <span class="seat-status-on hot"></span>
+                <span class="seat-status-on cold"></span>
+              </span><!-- /.seat-status -->
+              <span class="ui-dial-controls">
+                <span class="down"></span>
+                <span class="up"></span>
+                <span class="button reset apply-seat-temp"  data-action="seat" data-seat="4">Apply</span>
+              </span>
+            </div>
+          </div><!-- /.heated-steats-wrap -->
+        </div><!-- /.modal-heated-seats -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#heated-seats -->
+<div class="modal fade confirm-changes" id="confirm-changes">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <strong class="modal-title">Save your changes?</strong>
+        <p>Hey! It looks like you’ve made some changes here. Would you like to save them before you leave this page?</p>
+        <div class="modal-actions">
+          <span class="button" data-dismiss="modal">Save</span>
+          <span class="button outline less-padding" data-dismiss="modal">Don't Save</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-depature-times" id="modal-depature-times">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span data-dismiss="modal" class="back"></span>
+      <div class="modal-body">
+        <strong class="modal-title">Depature Times</strong>
+          <p>
+          Scheduled charging and vehicle climate will be activated according to departure times.
+        </p>
+        <div class="depature-times">
+          <div class="time-row">
+            <strong>First Depature</strong>
+            <div class="row">
+              <div class="col-sm-5">
+                <strong>Time</strong>
+                <div class="timepicker">
+                  <select class="selectpicker small" id="select-1">
+                    <option value="1">12:00</option>
+                    <option value="1">1:00</option>
+                    <option value="1">2:00</option>
+                    <option value="1">3:00</option>
+                    <option value="1">4:00</option>
+                    <option value="1">5:00</option>
+                    <option value="1">6:00</option>
+                    <option value="1">7:00</option>
+                    <option value="1">8:00</option>
+                    <option value="1">9:00</option>
+                    <option value="1">10:00</option>
+                    <option value="1">11:00</option>
+                  </select>
+                  <div class="radio-choices">
+                    <label class="radio">
+                      <input type="radio"  name="time_1" value="" checked>
+                      <em>
+                        AM
+                      </em>
+                    </label>
+                    <label class="radio">
+                      <input type="radio"  name="time_1" value="">
+                      <em>
+                        PM
+                      </em>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <strong>What days will this be active?</strong>
+                <div class="checkbox-group">
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>Su</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked="">
+                    <em>
+                      <span>M</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked="">
+                    <em>
+                      <span>Tu</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked="">
+                    <em>
+                      <span>W</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked="">
+                    <em>
+                      <span>Th</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked="">
+                    <em>
+                      <span>F</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>Su</span>
+                    </em>
+                  </label>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div>
+          <br>
+          <div class="time-row">
+            <strong>Second Depature</strong>
+            <div class="row">
+              <div class="col-sm-5">
+                <strong>Time</strong>
+                <div class="timepicker">
+                  <select class="selectpicker small" id="select-1">
+                    <option value="1">12:00</option>
+                    <option value="1">1:00</option>
+                    <option value="1">2:00</option>
+                    <option value="1">3:00</option>
+                    <option value="1">4:00</option>
+                    <option value="1">5:00</option>
+                    <option value="1">6:00</option>
+                    <option value="1">7:00</option>
+                    <option value="1">8:00</option>
+                    <option value="1">9:00</option>
+                    <option value="1">10:00</option>
+                    <option value="1">11:00</option>
+                  </select>
+                  <div class="radio-choices">
+                    <label class="radio">
+                      <input type="radio"  name="time_2" value="" checked>
+                      <em>
+                        AM
+                      </em>
+                    </label>
+                    <label class="radio">
+                      <input type="radio"  name="time_2" value="">
+                      <em>
+                        PM
+                      </em>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <strong>What days will this be active?</strong>
+                <div class="checkbox-group">
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked />
+                    <em>
+                      <span>Su</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>M</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>Tu</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>W</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>Th</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="">
+                    <em>
+                      <span>F</span>
+                    </em>
+                  </label>
+                  <label class="checkbox checkbox-round">
+                    <input type="checkbox" name="" value="" checked />
+                    <em>
+                      <span>Su</span>
+                    </em>
+                  </label>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div>
+        </div>
+      </div><!-- /.modal-body -->
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-charge-times" id="modal-charge-times">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <span data-dismiss="modal" class="back"></span>
+      <div class="modal-body">
+        <strong class="modal-title">Charge Times</strong>
+        <div class="charge-settings">
+          <p>I want my vehicle to start charging:</p>
+          <div class="charge-settings-options">
+            <label>
+              <input type="radio" name="change_setting" value="plug" checked>
+              <span>
+                <img src="/images/schedules/icon_plugin.png" alt="" />
+                <strong>When I plug it in</strong>
+              </span>
+            </label>
+            <label>
+              <input class="off-peak-update" type="radio" name="change_setting" value="off-peak">
+              <span>
+                <img src="/images/schedules/peak-hours-icon.png" alt="" />
+                <strong>During off-peak hours only</strong>
+              </span>
+            </label>
+          </div>
+          <div class="off-peak-picker">
+            <div class="timepicker">
+              <strong>Off-Peak Start</strong>
+              <select class="selectpicker small off-peak-start off-peak-update" id="off-1">
+                <option value="12:00">12:00</option>
+                <option value="1:00">1:00</option>
+                <option value="2:00">2:00</option>
+                <option value="3:00">3:00</option>
+                <option value="4:00">4:00</option>
+                <option value="5:00">5:00</option>
+                <option value="6:00">6:00</option>
+                <option value="7:00">7:00</option>
+                <option value="8:00">8:00</option>
+                <option value="9:00">9:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+              </select>
+              <div class="radio-choices">
+                <label class="radio">
+                  <input class="off-peak-start-tod off-peak-update" type="radio" name="time_3" value="am" checked />
+                  <em>
+                    AM
+                  </em>
+                </label>
+                <label class="radio">
+                  <input type="radio" class="off-peak-start-tod off-peak-update"  name="time_3" value="pm">
+                  <em>
+                    PM
+                  </em>
+                </label>
+              </div>
+            </div>
+            <div class="timepicker">
+              <strong>Off-Peak Stop</strong>
+              <select class="selectpicker small off-peak-stop off-peak-update" id="off-2">
+                <option value="12:00">12:00</option>
+                <option value="1:00">1:00</option>
+                <option value="2:00">2:00</option>
+                <option value="3:00">3:00</option>
+                <option value="4:00">4:00</option>
+                <option value="5:00">5:00</option>
+                <option value="6:00">6:00</option>
+                <option value="7:00">7:00</option>
+                <option value="8:00">8:00</option>
+                <option value="9:00">9:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+              </select>
+              <div class="radio-choices">
+                <label class="radio">
+                  <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_4" value="am" checked>
+                  <em>
+                    AM
+                  </em>
+                </label>
+                <label class="radio">
+                  <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_4" value="pm">
+                  <em>
+                    PM
+                  </em>
+                </label>
+              </div>
+            </div><!-- /.timepicker -->
+          </div><!-- /.off-peak-timepicker -->
+        </div><!-- /.charge-settingsinner -->
+        <div class="tab-footer">
+          <p><strong>DC Charge Limit:</strong> 80%, <strong>AC Charge Limit:</strong> 50% <a href="#" data-toggle="modal" data-target="#vehicle-settings">EDIT</a></p>
+        </div>
+        <div class="modal-footer">
+          <span class="button full" data-dismiss="modal">Done</span>
+        </div>
+      </div><!-- /.modal-body -->
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#modal-charge-times').modal('show');
+    });
+</script>
+<!-- @import "partials/vehicle-settings.kit" -->
+<!-- @import "partials/footer.kit" -->
