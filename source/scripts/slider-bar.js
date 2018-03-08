@@ -7,19 +7,39 @@ $(document).ready(() => {
     methods : {
       _init : () => {
         window.slider_bar.elements.slider_bar.each(function(){
-          var $this = $(this);
-          $this.slider({
-             slide: function( event, ui ) {
-               window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), ui.value);
-             }
-          });
+          var $this = $(this),
+              min = $this.data('min'),
+              max = $this.data('max'),
+              step = $this.data('step'),
+              value = $this.parents('.slider-bar').data('value'),
+              slider_options = {
+                 slide: function( event, ui ) {
+                   window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), ui.value);
+                 }
+              };
+          if(min) {
+            slider_options.min = min;
+          }
+          if(max) {
+            slider_options.max = max;
+          }
+          if(step) {
+            slider_options.step = step;
+          }
+          if(value) {
+            slider_options.value = value;
+          }
+          $this.slider(slider_options);
+          if(value) {
+            window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), value);
+          }
         });
       },
       _update_progress : ($element, value) => {
         $element.css({
           width : value + '%',
         });
-        $element.parents('.slider-bar').find('.slider-value').text((Math.floor(value / 10) * 10) + '%');
+        $element.parents('.slider-bar').find('.slider-value').text(value + '%');
       },
       _button : function() {
         var $this = $(this),

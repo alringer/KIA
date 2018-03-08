@@ -872,12 +872,31 @@
   .icon-heated-seats.hot.cold:after {
     margin-top: 8px; }
 
-.save-schedules-button {
+.save-text {
+  font: bold 11px "KIA", sans-serif;
+  letter-spacing: 1.4px;
+  color: #C4172C;
+  text-transform: uppercase;
+  transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  position: relative; }
+  .save-text.disabled {
+    color: #5f5f5f; }
+  .save-text.spinning {
+    opacity: .5;
+    color: transparent;
+    opacity: 1; }
+    .save-text.spinning .spinner {
+      opacity: 1; }
+
+.save-schedules-button:not(.save-text) {
   width: 202px;
   background: #8EC439; }
-  .save-schedules-button.disabled {
+  .save-schedules-button:not(.save-text):hover {
+    background: #719c2e; }
+  .save-schedules-button:not(.save-text).disabled {
     opacity: 1;
-    background: #c5c5c5; }
+    background: #c5c5c5 !important; }
 
 .modal.confirm-changes .modal-dialog {
   max-width: 340px;
@@ -1087,6 +1106,18 @@
       margin-left: 20px; }
     .charge-settings .timepicker .bootstrap-select {
       width: 117px !important; }
+  @media (max-width: 991px) {
+    .charge-settings .off-peak-picker {
+      margin-top: -10px; }
+      .charge-settings .off-peak-picker .bootstrap-select {
+        width: 150px !important; }
+      .charge-settings .off-peak-picker .radio-choices {
+        display: block;
+        padding-top: 10px; }
+        .charge-settings .off-peak-picker .radio-choices label {
+          display: inline-block; }
+          .charge-settings .off-peak-picker .radio-choices label + label {
+            margin-left: 20px; } }
 
 .modal-charge-times,
 .modal-depature-times {
@@ -1204,3 +1235,14 @@
 
 .modal.edit-climate-schedule.combined .footer-action {
   padding-top: 20px; }
+
+.icon-communicating {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: url("/images/icon_communicating.png") center/contain no-repeat;
+  animation: spin 1s infinite linear; }
+  .icon-communicating.white {
+    background-image: url("/images/icon_communicating_white.png");
+    width: 17px;
+    height: 17px; }

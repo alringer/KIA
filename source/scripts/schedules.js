@@ -13,7 +13,7 @@ $(document).ready(() => {
       off_peak_stop_time_tod : $('.off-peak-stop-tod'),
       off_peak_update : $('.off-peak-update'),
       climate_footer_toggle : $('.climate-footer .toggle input'),
-      inputs : $('.schedules-tabs input'),
+      inputs : $('.schedules-combined input'),
       save_button : $('.save-schedules-button'),
     },
     methods : {
@@ -71,6 +71,7 @@ $(document).ready(() => {
         }
       },
       _changes_made : () => {
+        console.log('changes made');
         window.schedules.elements.save_button.removeClass('disabled');
         window.schedules.methods._confirm_changes();
       },
@@ -79,6 +80,16 @@ $(document).ready(() => {
           e.preventDefault();
           $('#confirm-changes').modal('show');
         });
+      },
+      _save_settings : () => {
+        window.schedules.elements.save_button.addClass('spinning');
+        window.loading.methods._loading_start();
+        setTimeout(() => {
+          window.accountSettings.methods._enable();
+          window.loading.methods._loading_stop();
+          window.schedules.elements.save_button.removeClass('spinning');
+          window.alerts.methods.open._success();
+        }, 2000);
       },
     }
   };
@@ -90,4 +101,5 @@ $(document).ready(() => {
   window.schedules.elements.off_peak_update.on('change', window.schedules.methods._set_charge_label);
   window.schedules.elements.climate_footer_toggle.on('change', window.schedules.methods._climate_footer_toggle);
   window.schedules.elements.inputs.on('change', window.schedules.methods._changes_made);
+  window.schedules.elements.save_button.on('click', window.schedules.methods._save_settings);
 });

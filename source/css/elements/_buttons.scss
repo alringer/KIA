@@ -125,31 +125,32 @@
         opacity: 1;
       }
     }
-    .spinner {
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 100%;
-      max-height: 100%;
-      transition: all 250ms $easeOutQuint;
-      opacity: 0;
-      pointer-events: none;
-      .icon-communicating {
-        display: block;
-        animation: spin 1s infinite linear;
-        &.white {
-          background: url('/images/icon_communicating_white.png') center/contain no-repeat;
-          width: 17px;
-          height: 17px;
-        }
-      }
-    }
   }
 }
 
 .disabled {
   opacity: .5;
   pointer-events: none;
+}
+
+.spinner {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 250ms $easeOutQuint;
+  opacity: 0;
+  pointer-events: none;
+  .icon-communicating {
+    display: block;
+    animation: spin 1s infinite linear;
+    &.white {
+      background: url('/images/icon_communicating_white.png') center/contain no-repeat;
+      width: 17px;
+      height: 17px;
+    }
+  }
 }

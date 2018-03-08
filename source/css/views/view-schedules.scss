@@ -1078,12 +1078,36 @@
   }
 }
 
-.save-schedules-button {
+.save-text {
+  font: bold 11px $kia;
+  letter-spacing: 1.4px;
+  color: $red;
+  text-transform: uppercase;
+  transition: all 250ms $easeOutQuint;
+  cursor: pointer;
+  position: relative;
+  &.disabled {
+    color: darken(#c5c5c5, 40%);
+  }
+  &.spinning {
+    opacity: .5;
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    .spinner {
+      opacity: 1;
+    }
+  }
+}
+
+.save-schedules-button:not(.save-text) {
   width: 202px;
   background: $green;
+  &:hover {
+    background: darken($green, 10%);
+  }
   &.disabled {
     opacity: 1;
-    background: #c5c5c5;
+    background: #c5c5c5 !important;
   }
 }
 
@@ -1359,6 +1383,24 @@
       width: 117px !important;
     }
   }
+  @media (max-width: $screen-sm-max) {
+    .off-peak-picker {
+      margin-top: -10px;
+      .bootstrap-select {
+        width: 150px !important;
+      }
+      .radio-choices {
+        display: block;
+        padding-top: 10px;
+        label {
+          display: inline-block;
+          + label {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .modal-charge-times,
@@ -1490,5 +1532,20 @@
     .footer-action {
       padding-top: 20px;
     }
+  }
+}
+
+
+
+.icon-communicating {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: url('/images/icon_communicating.png') center/contain no-repeat;
+  animation: spin 1s infinite linear;
+  &.white {
+    background-image: url('/images/icon_communicating_white.png');
+    width: 17px;
+    height: 17px;
   }
 }

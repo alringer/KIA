@@ -13,18 +13,34 @@
   <!-- @import "partials/head/vendors/select.kit" -->
 
 <!-- @import "partials/head/head-end.kit" -->
+<!-- @import "partials/loading.kit" -->
+<!-- @import "partials/alerts.kit" -->
 <div class="view-schedules view-schedules-combined">
   <div class="has-mobile-nav">
     <!-- @import "partials/nav-dual.kit" -->
-    <!-- @import "partials/nav-mobile-schedules.kit" -->
+    <div class="nav-mobile">
+      <div class="contain">
+        <h1>Schedules</h1>
+        <ul class="mobile-nav-options">
+          <li>
+            <span class="save-text disabled save-schedules-button">
+              Save
+              <span class="spinner"><i class="icon-communicating"></i></span>
+            </span>
+          </li>
+        </ul><!-- /.mobile-nav-options -->
+      </div><!-- /.contain -->
+    </div><!-- /.nav-mobile -->
+
     <div class="page-view">
       <div class="schedules-wrapper">
         <div class="schedules-header">
           <h2 class="pull-left">
             Schedules
           </h2>
-          <span class="button disabled save-schedules-button pull-right">
+          <span class="button disabled save-schedules-button pull-right has-spinner">
             Save
+            <span class="spinner"><i class="icon-communicating white"></i></span>
           </span>
         </div><!-- /.schedules-header -->
         <div class="schedules-combined">
@@ -131,14 +147,14 @@
                   <div class="tab-pane fade in active" id="depature-times">
                     <div class="tab-inner">
                       <strong class="tab-header">
-                        Depature Times
+                        Departure Times
                       </strong>
                       <p>
                         Scheduled charging and vehicle climate will be activated according to departure times.
                       </p>
                       <div class="depature-times">
                         <div class="time-row">
-                          <strong>First Depature</strong>
+                          <strong>First Departure</strong>
                           <div class="row">
                             <div class="col-sm-5">
                               <strong>Time</strong>
@@ -223,7 +239,7 @@
                           </div><!-- /.row -->
                         </div>
                         <div class="time-row">
-                          <strong>Second Depature</strong>
+                          <strong>Second Departure</strong>
                           <div class="row">
                             <div class="col-sm-5">
                               <strong>Time</strong>
@@ -679,18 +695,18 @@
     <div class="modal-content">
       <span data-dismiss="modal" class="back"></span>
       <div class="modal-body">
-        <strong class="modal-title">Depature Times</strong>
+        <strong class="modal-title">Departure Times</strong>
           <p>
           Scheduled charging and vehicle climate will be activated according to departure times.
         </p>
         <div class="depature-times">
           <div class="time-row">
-            <strong>First Depature</strong>
+            <strong>First Departure</strong>
             <div class="row">
               <div class="col-sm-5">
                 <strong>Time</strong>
                 <div class="timepicker">
-                  <select class="selectpicker small" id="select-1">
+                  <select class="selectpicker small" id="select-10">
                     <option value="1">12:00</option>
                     <option value="1">1:00</option>
                     <option value="1">2:00</option>
@@ -706,13 +722,13 @@
                   </select>
                   <div class="radio-choices">
                     <label class="radio">
-                      <input type="radio"  name="time_1" value="" checked>
+                      <input type="radio"  name="time_10" value="" checked>
                       <em>
                         AM
                       </em>
                     </label>
                     <label class="radio">
-                      <input type="radio"  name="time_1" value="">
+                      <input type="radio"  name="time_10" value="">
                       <em>
                         PM
                       </em>
@@ -771,12 +787,12 @@
           </div>
           <br>
           <div class="time-row">
-            <strong>Second Depature</strong>
+            <strong>Second Departure</strong>
             <div class="row">
               <div class="col-sm-5">
                 <strong>Time</strong>
                 <div class="timepicker">
-                  <select class="selectpicker small" id="select-1">
+                  <select class="selectpicker small" id="select-20">
                     <option value="1">12:00</option>
                     <option value="1">1:00</option>
                     <option value="1">2:00</option>
@@ -792,13 +808,13 @@
                   </select>
                   <div class="radio-choices">
                     <label class="radio">
-                      <input type="radio"  name="time_2" value="" checked>
+                      <input type="radio"  name="time_20" value="" checked>
                       <em>
                         AM
                       </em>
                     </label>
                     <label class="radio">
-                      <input type="radio"  name="time_2" value="">
+                      <input type="radio"  name="time_20" value="">
                       <em>
                         PM
                       </em>
@@ -870,14 +886,14 @@
           <p>I want my vehicle to start charging:</p>
           <div class="charge-settings-options">
             <label>
-              <input type="radio" name="change_setting" value="plug" checked>
+              <input type="radio" name="change_setting1" value="plug" checked>
               <span>
                 <img src="/images/schedules/icon_plugin.png" alt="" />
                 <strong>When I plug it in</strong>
               </span>
             </label>
             <label>
-              <input class="off-peak-update" type="radio" name="change_setting" value="off-peak">
+              <input class="off-peak-update" type="radio" name="change_setting1" value="off-peak">
               <span>
                 <img src="/images/schedules/peak-hours-icon.png" alt="" />
                 <strong>During off-peak hours only</strong>
@@ -887,7 +903,7 @@
           <div class="off-peak-picker">
             <div class="timepicker">
               <strong>Off-Peak Start</strong>
-              <select class="selectpicker small off-peak-start off-peak-update" id="off-1">
+              <select class="selectpicker small off-peak-start off-peak-update" id="off-10">
                 <option value="12:00">12:00</option>
                 <option value="1:00">1:00</option>
                 <option value="2:00">2:00</option>
@@ -903,13 +919,13 @@
               </select>
               <div class="radio-choices">
                 <label class="radio">
-                  <input class="off-peak-start-tod off-peak-update" type="radio" name="time_3" value="am" checked />
+                  <input class="off-peak-start-tod off-peak-update" type="radio" name="time_30" value="am" checked />
                   <em>
                     AM
                   </em>
                 </label>
                 <label class="radio">
-                  <input type="radio" class="off-peak-start-tod off-peak-update"  name="time_3" value="pm">
+                  <input type="radio" class="off-peak-start-tod off-peak-update"  name="time_30" value="pm">
                   <em>
                     PM
                   </em>
@@ -918,7 +934,7 @@
             </div>
             <div class="timepicker">
               <strong>Off-Peak Stop</strong>
-              <select class="selectpicker small off-peak-stop off-peak-update" id="off-2">
+              <select class="selectpicker small off-peak-stop off-peak-update" id="off-20">
                 <option value="12:00">12:00</option>
                 <option value="1:00">1:00</option>
                 <option value="2:00">2:00</option>
@@ -934,13 +950,13 @@
               </select>
               <div class="radio-choices">
                 <label class="radio">
-                  <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_4" value="am" checked>
+                  <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_40" value="am" checked>
                   <em>
                     AM
                   </em>
                 </label>
                 <label class="radio">
-                  <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_4" value="pm">
+                  <input type="radio" class="off-peak-stop-tod off-peak-update"  name="time_40" value="pm">
                   <em>
                     PM
                   </em>
