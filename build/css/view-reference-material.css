@@ -31,6 +31,10 @@
   to {
     transform: rotate(360deg); } }
 
+.view-reference-material .page-view .contain {
+  max-width: 852px;
+  padding: 0 20px; }
+
 .view-reference-material .page-view-header {
   padding-top: 42px;
   overflow: hidden; }
@@ -46,10 +50,6 @@
       .view-reference-material .page-view-header h2 {
         font-size: 20px;
         letter-spacing: .5px; } }
-
-.view-reference-material .contain {
-  max-width: 852px;
-  padding: 0 20px; }
 
 .view-reference-material .page-view-content .text-content {
   padding-top: 51px;

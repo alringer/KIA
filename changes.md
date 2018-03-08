@@ -12,6 +12,11 @@
   }
 </style>
 
+# V - 8.0.1
+* KOPE-473 Locations tab scrollbar
+* KOPE-475 Header width changed in latest delivery
+* KOPE-460 Video Not covering full window width on IE and Edge
+===
 # V - 8.0.0
 * KK-338 As a user I need to see warranty info
 * KK-337 As a user I need to be able to see informational videos
@@ -24,7 +29,6 @@
 * KK-703 As a user, I want to be able to add Way Points to my POI
 * KOPE-437 Edit POI UX/UI Screen Missing
 ===
-</style>
 
 # V - 7.0.2
 * Modal Nav Fix
