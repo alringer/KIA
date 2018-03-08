@@ -959,10 +959,179 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-    $(window).on('load',function(){
-        $('#modal-charge-times').modal('show');
-    });
-</script>
+<div class="modal fade edit-climate-schedule heated-seats combined" id="edit-climate-schedule" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="back" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div id="edit-climate-schedule-modal-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="modal-climate-schedule">
+                <strong class="modal-title">
+                  Climate Settings
+                </strong>
+                <p>Your vehicle will be at this temperature by your next departure time.</p>
+                <form>
+                  <span class="error-message error-message-main" >
+                    <span class="error-message-inner">
+                      {{ ERROR MESSAGE}}
+                    </span>
+                  </span>
+                  <div class="ui-dial" data-min="50" data-max="90">
+                    <span class="ui-dial-temperateure">
+                      <span class="ui-dial-temperateure-text"></span>
+                      <span class="degree">°</span>
+                    </span>
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="63"  />
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                    </span>
+                  </div>
+                  <ul class="form-fields">
+                    <li class="less-margin">
+                      <span class="toggle">
+                        <label>
+                          <em>Defroster</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
+                      <span class="error-message" >
+                        <span class="error-message-inner">
+                          {{ ERROR MESSAGE }}
+                        </span>
+                      </span>
+                    </li>
+                    <li class="less-margin">
+                      <span class="toggle">
+                        <label>
+                          <em>Heated Accessories</em>
+                          <input type="checkbox" name="toggle" value="1">
+                          <span></span>
+                        </label>
+                      </span>
+                      <span class="error-message" >
+                        <span class="error-message-inner">
+                          {{ ERROR MESSAGE }}
+                        </span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="toggle is-slide" data-target="#edit-climate-schedule-modal-slider" data-slide-to="1">
+                        <label>
+                          <em>Heated and Cooled Seats</em>
+                          <i class="icon-heated-seats hot cold"></i>
+                          <i class="icon-arrow-right"></i>
+                        </label>
+                      </span>
+                      <span class="error-message" >
+                        <span class="error-message-inner">
+                          {{ ERROR MESSAGE }}
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                  <div class="footer-action">
+                    <span class="button main full" data-dismiss="modal">
+                      Done
+                    </span>
+                  </div><!-- /.footer-action -->
+                </form>
+              </div><!-- /.modal-climate-schedule -->
+            </div><!-- /.item -->
+            <div class="item show-back heated-seats-item">
+              <div class="modal-heated-seats">
+                <span class="back" data-target="#edit-climate-schedule-modal-slider" data-slide-to="0"></span>
+                <strong class="modal-title">Heated and Cooled Seats</strong>
+                <div class="heated-seats-wrap">
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="text" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="1">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial top steps" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4" />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp" data-action="seat" data-seat="2">Apply</span>
+                    </span>
+                  </div>
+                  <div class="heated-seats-vehicle">
+                    <img src="/images/image_heated_seats_base.png" alt="vehicle outline" />
+                    <span class="heated-seat-1 off">
+                      <img src="/images/heated_seat_1_off.png" alt="Driver's seat">
+                    </span>
+                    <span class="heated-seat-2 off">
+                      <img src="/images/heated_seat_2_off.png" alt="Passenger's seat">
+                    </span>
+                    <span class="heated-seat-3 off">
+                      <img src="/images/heated_seat_3_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <span class="heated-seat-4 off">
+                      <img src="/images/heated_seat_4_off.png" alt="Rear Passenger's seat">
+                    </span>
+                    <em>Select a seat</em>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="3">Apply</span>
+                    </span>
+                  </div>
+                  <div class="ui-dial steps bottom" data-min="1" data-max="7">
+                    <span class="ui-dial-handle"></span>
+                    <input type="hidden" class="ui-dial-canvas" />
+                    <input type="hidden" class="ui-dial-value" value="4"  />
+                    <span class="seat-status">
+                      <span class="seat-status-off"></span>
+                      <span class="seat-status-on hot"></span>
+                      <span class="seat-status-on cold"></span>
+                    </span><!-- /.seat-status -->
+                    <span class="ui-dial-controls">
+                      <span class="down"></span>
+                      <span class="up"></span>
+                      <span class="button reset apply-seat-temp"  data-action="seat" data-seat="4">Apply</span>
+                    </span>
+                  </div>
+                </div><!-- /.heated-steats-wrap -->
+              </div><!-- /.modal-heated-seats -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.carousel -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <!-- @import "partials/vehicle-settings.kit" -->
 <!-- @import "partials/footer.kit" -->

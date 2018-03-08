@@ -1471,3 +1471,24 @@
     margin-top: 20px;
   }
 }
+
+.modal.edit-climate-schedule {
+  &.combined {
+    .back {
+      opacity: 1 !important;
+      margin-top: 10px;
+      pointer-events: all;
+    }
+    .modal-title {
+      + p {
+        max-width: 243px;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 14px;
+      }
+    }
+    .footer-action {
+      padding-top: 20px;
+    }
+  }
+}
