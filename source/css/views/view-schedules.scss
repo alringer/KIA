@@ -623,14 +623,15 @@
       }
     }
     .timeline-bar {
-      max-width: calc(100% - 105px);
+      max-width: calc(100% - 75px);
       margin: 0 auto 42px;
       position: relative;
-      right: -10px;
+      // right: -10px;
       @media (max-width: $screen-xs-max) {
-        max-width: calc(100% - 50px);
-        right: 10px;
+        max-width: calc(100% - 75px);
+        right: -0px;
       }
+      &-start,
       &-end {
         position: absolute;
         right: 0;
@@ -652,6 +653,15 @@
           @media (max-width: $screen-xs-max) {
             display: none;
           }
+        }
+      }
+      &-start {
+        left: 0;
+        top: 25px;
+        @media (max-width: $screen-xs-max) {
+          transform: scale(.7);
+          transform-origin: center left;
+          left: 10px;
         }
       }
       &-legend {

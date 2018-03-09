@@ -522,24 +522,23 @@
         padding: 0 20px;
         padding-top: 10px; } }
   .schedules-combined .schedules-timeline .timeline-bar {
-    max-width: calc(100% - 105px);
+    max-width: calc(100% - 75px);
     margin: 0 auto 42px;
-    position: relative;
-    right: -10px; }
+    position: relative; }
     @media (max-width: 767px) {
       .schedules-combined .schedules-timeline .timeline-bar {
-        max-width: calc(100% - 50px);
-        right: 10px; } }
-    .schedules-combined .schedules-timeline .timeline-bar-end {
+        max-width: calc(100% - 75px);
+        right: -0px; } }
+    .schedules-combined .schedules-timeline .timeline-bar-start, .schedules-combined .schedules-timeline .timeline-bar-end {
       position: absolute;
       right: 0;
       top: 30px; }
       @media (max-width: 767px) {
-        .schedules-combined .schedules-timeline .timeline-bar-end {
+        .schedules-combined .schedules-timeline .timeline-bar-start, .schedules-combined .schedules-timeline .timeline-bar-end {
           transform: scale(0.7);
           transform-origin: center right;
           right: 10px; } }
-      .schedules-combined .schedules-timeline .timeline-bar-end em {
+      .schedules-combined .schedules-timeline .timeline-bar-start em, .schedules-combined .schedules-timeline .timeline-bar-end em {
         display: block;
         font: 600 12px "Source Sans Pro", sans-serif;
         letter-spacing: .5px;
@@ -549,8 +548,16 @@
         right: 0;
         white-space: nowrap; }
         @media (max-width: 767px) {
-          .schedules-combined .schedules-timeline .timeline-bar-end em {
+          .schedules-combined .schedules-timeline .timeline-bar-start em, .schedules-combined .schedules-timeline .timeline-bar-end em {
             display: none; } }
+    .schedules-combined .schedules-timeline .timeline-bar-start {
+      left: 0;
+      top: 25px; }
+      @media (max-width: 767px) {
+        .schedules-combined .schedules-timeline .timeline-bar-start {
+          transform: scale(0.7);
+          transform-origin: center left;
+          left: 10px; } }
     .schedules-combined .schedules-timeline .timeline-bar-legend {
       text-align: center;
       font: 600 10px/2.1 "Source Sans Pro", sans-serif;
