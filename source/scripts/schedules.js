@@ -76,7 +76,7 @@ $(document).ready(() => {
         window.schedules.methods._confirm_changes();
       },
       _confirm_changes : () => {
-        $('a:not([data-toggle])').on('click', function(e){
+        $('a:not([data-toggle])[href]').on('click', function(e){
           e.preventDefault();
           $('#confirm-changes').modal('show');
         });
