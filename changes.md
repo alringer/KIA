@@ -12,6 +12,19 @@
   }
 </style>
 
+# V - 9.0.0
+* KK-313 As a user I need to be able to check for software updates
+* KK-314 As a user I need to be able to check my software version
+* KK-315 As a user I need to be able to view and download the latest software
+* KK-572 As a user I need a Driver Preferences Page
+* KK-570 As a user I need to see my charge limits on the battery page
+* KK-573 As a user I need to be able to adjust my driver preferences
+* KK-568 As a user I need to be able to edit my vehicle Charge Limits from the Schedules page
+* KK-554 As a user I need a page that has charge and climate schedules combined
+* KK-565 As a user I need to adjust my Charge Settings
+* KK-567 As a user I need to adjust my Climate Settings
+* KK-556 As a user I need to know that I'm trying to leave a page without Saving
+===
 # V - 8.0.1
 * KOPE-473 Locations tab scrollbar
 * KOPE-475 Header width changed in latest delivery
