@@ -66,16 +66,22 @@
     border-radius: 2px;
     font: 14px/1.5em $sans;
     letter-spacing: .6px;
+    .tab-content {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 0 !important;
+    }
     @media (max-width: $screen-xs-max) {
       background: transparent;
       box-shadow: none;
       padding: 0 !important;
     }
     &-scroll {
-      max-height: calc(100vh - 450px);
-      overflow: auto;
-      -ms-overflow-style: -ms-autohiding-scrollbar;
-      -webkit-overflow-scrolling: touch;
+      // max-height: calc(100vh - 450px);
+      // overflow: auto;
+      // -ms-overflow-style: -ms-autohiding-scrollbar;
+      // -webkit-overflow-scrolling: touch;
       padding: 36px 40px 0;
       @media (max-width: $screen-xs-max) {
         padding: 0;

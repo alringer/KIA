@@ -1149,6 +1149,12 @@
 }
 
 .view-schedules-combined {
+  .schedules-header {
+    margin-bottom: 0;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
   @media (max-width: $screen-sm-max) {
     .schedules-wrapper {
       padding: 0 20px !important;
@@ -1558,4 +1564,10 @@
     width: 17px;
     height: 17px;
   }
+}
+
+.schedules-save {
+  max-width: 815px;
+  margin: 0 auto;
+  padding-top: 30px;
 }

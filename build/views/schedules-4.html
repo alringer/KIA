@@ -769,10 +769,6 @@
           <h2 class="pull-left">
             Schedules
           </h2>
-          <span class="button disabled save-schedules-button pull-right has-spinner">
-            Save
-            <span class="spinner"><i class="icon-communicating white"></i></span>
-          </span>
         </div><!-- /.schedules-header -->
         <div class="schedules-combined">
           <div class="schedules-timeline">
@@ -1217,6 +1213,12 @@
               </div><!-- /.col -->
             </div><!-- /.row -->
           </div><!-- /.schedules-tabs -->
+          <div class="schedules-save hidden-xs">
+            <span class="button disabled save-schedules-button pull-right has-spinner">
+              Save
+              <span class="spinner"><i class="icon-communicating white"></i></span>
+            </span>
+          </div>
           <div class="schedules-alert-area mobile-only">
             <div class="schedules-alert-area-header">
               <h3 class="pull-left">
@@ -1321,6 +1323,7 @@
             </div><!-- /.schedules-alert-area-cards -->
           </div><!-- /.schedules-alert-area -->
         </div><!-- /.schedules-combined -->
+        </div>
       </div><!-- /.schedules-wrapper -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
@@ -1994,7 +1997,7 @@
                         <em>DC Charger:</em>
                         <div class="slider-bar" data-value="90">
                           <em>Charge up to <span class="slider-value">90%</span></em>
-                          <div class="slider-bar-js" data-min="0" data-max="100" data-step="10"></div>
+                          <div class="slider-bar-js" data-min="10" data-max="100" data-step="10"></div>
                           <div class="slider-bar-js-blue"></div>
                         </div>
                       </div>
@@ -2002,7 +2005,7 @@
                         <em>AC Charger:</em>
                         <div class="slider-bar" data-value="50">
                           <em>Charge up to <span class="slider-value">50%</span></em>
-                          <div class="slider-bar-js" data-min="0" data-max="100" data-step="10"></div>
+                          <div class="slider-bar-js" data-min="10" data-max="100" data-step="10"></div>
                           <div class="slider-bar-js-blue"></div>
                         </div>
                       </div>

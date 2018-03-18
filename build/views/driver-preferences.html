@@ -828,11 +828,18 @@
                             <em>Auto-locking Doors and trunk</em>
                           </label>
                         </span><!-- /.toggle -->
-                        <p>When shift lever has been shifted out of <em>P (Park)</em>, the vehicle doors and trunk will automatically lock.</p>
+                        <div class="tab-content">
+                          <div class="tab-pane fade in active" id="pref-1-1">
+                            <p>When shift lever has been shifted out of <em>P (Park)</em>, the vehicle doors and trunk will automatically lock.</p>
+                          </div>
+                          <div class="tab-pane fade" id="pref-1-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
                         <div class="setting">
                           <label>
                             <input type="radio" name="setting_1" value="" checked>
-                            <span>
+                            <span data-toggle="tab" href="#pref-1-1">
                               <i>
                                 <img src="/images/driver-preferences/icon_pref_1-1.png" alt="Auto-Lock">
                               </i>
@@ -843,7 +850,7 @@
                           </label>
                           <label>
                             <input type="radio" name="setting_1" value="">
-                            <span>
+                            <span data-toggle="tab" href="#pref-1-2">
                               <i>
                                 <img src="/images/driver-preferences/icon_pref_1-2.png" alt="Auto-Lock">
                               </i>
@@ -862,11 +869,18 @@
                             <em>Steering wheel and seat positioning</em>
                           </label>
                         </span><!-- /.toggle -->
-                        <p>When the driver door opens, the driver seat and steering wheel automatically move <em>slightly</em> in the opposite direction allowing easier access.</p>
+                        <div class="tab-content">
+                          <div class="tab-pane fade in active" id="pref-2-1">
+                            <p><p>When the driver door opens, the driver seat and steering wheel automatically move <em>slightly</em> in the opposite direction allowing easier access.</p></p>
+                          </div>
+                          <div class="tab-pane fade" id="pref-2-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
                         <div class="setting">
                           <label>
                             <input type="radio" name="setting_2" value="" checked>
-                            <span>
+                            <span data-toggle="tab" href="#pref-2-1">
                               <i>
                                 <img src="/images/driver-preferences/icon_pref_2-1.png" alt="Access">
                               </i>
@@ -877,7 +891,7 @@
                           </label>
                           <label>
                             <input type="radio" name="setting_2" value="">
-                            <span>
+                            <span data-toggle="tab" href="#pref-2-2">
                               <i>
                                 <img src="/images/driver-preferences/icon_pref_2-2.png" alt="Access">
                               </i>
@@ -907,6 +921,11 @@
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-maintenance -->
+<script>
+$('.setting [data-toggle="tab"]').on('show.bs.tab', function (e) {
+  $(this).prev('input').prop('checked', true);
+});
+</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">

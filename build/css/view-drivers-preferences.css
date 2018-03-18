@@ -89,16 +89,16 @@
   border-radius: 2px;
   font: 14px/1.5em "Source Sans Pro", sans-serif;
   letter-spacing: .6px; }
+  .view-drivers-preferences .content-area .tab-content {
+    margin-bottom: 20px; }
+  .view-drivers-preferences .content-area p {
+    margin-bottom: 0 !important; }
   @media (max-width: 767px) {
     .view-drivers-preferences .content-area {
       background: transparent;
       box-shadow: none;
       padding: 0 !important; } }
   .view-drivers-preferences .content-area-scroll {
-    max-height: calc(100vh - 450px);
-    overflow: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    -webkit-overflow-scrolling: touch;
     padding: 36px 40px 0; }
     @media (max-width: 767px) {
       .view-drivers-preferences .content-area-scroll {

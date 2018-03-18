@@ -14,7 +14,7 @@ $(document).ready(() => {
               value = $this.parents('.slider-bar').data('value'),
               slider_options = {
                  slide: function( event, ui ) {
-                   window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), ui.value);
+                   window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), ui.value, min, max);
                  }
               };
           if(min) {
@@ -31,13 +31,14 @@ $(document).ready(() => {
           }
           $this.slider(slider_options);
           if(value) {
-            window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), value);
+            window.slider_bar.methods._update_progress($this.next('.slider-bar-js-blue'), value, min, max);
           }
         });
       },
-      _update_progress : ($element, value) => {
+      _update_progress : ($element, value, min, max) => {
+        var visual_value = value / (max - min) * 100 - min;
         $element.css({
-          width : value + '%',
+          width : visual_value + '%',
         });
         $element.parents('.slider-bar').find('.slider-value').text(value + '%');
       },

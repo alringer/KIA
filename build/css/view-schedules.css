@@ -921,6 +921,11 @@
       padding: 0;
       width: 100px; }
 
+.view-schedules-combined .schedules-header {
+  margin-bottom: 0; }
+  .view-schedules-combined .schedules-header h2 {
+    margin-bottom: 0; }
+
 @media (max-width: 991px) {
   .view-schedules-combined .schedules-wrapper {
     padding: 0 20px !important; } }
@@ -1253,3 +1258,8 @@
     background-image: url("/images/icon_communicating_white.png");
     width: 17px;
     height: 17px; }
+
+.schedules-save {
+  max-width: 815px;
+  margin: 0 auto;
+  padding-top: 30px; }
