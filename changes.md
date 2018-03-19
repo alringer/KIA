@@ -12,6 +12,13 @@
   }
 </style>
 
+# V - 9.0.1
+* KOPE-494 Icon accent colors do not show upon selection
+* KOPE-493 AC and DC charge limits go too low
+* KOPE-495 Viewable area is too small on laptops
+* KOPE-511 Add a Save button to bottom of schedule
+* KOPE-496 Description does not match user's selection
+===
 # V - 9.0.0
 * KK-313 As a user I need to be able to check for software updates
 * KK-314 As a user I need to be able to check my software version
