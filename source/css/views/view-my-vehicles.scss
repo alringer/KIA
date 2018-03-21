@@ -1351,7 +1351,6 @@
     }
   }
 }
-
 .editing {
   .my-vehicles-nav {
     &-tools {
@@ -1364,6 +1363,43 @@
         pointer-events: all;
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .my-vehicles-ulility-nav {
+    padding: 15px 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fix-start {
+    height: 70px;
+    .my-vehicles-ulility-nav {
+      transition: box-shadow 250ms $easeOutQuint;
+    }
+  }
+  .editing {
+    .fix-start.fixed {
+      .my-vehicles-ulility-nav {
+        box-shadow: 0px 1px 1px rgba($black, .15), inset 0px 1px 1px rgba($black, .15);
+        background: $white;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        &-tools {
+          transition: none;
+          > div, > span {
+            transition: none;
+          }
+        }
+        .my-vehicles-ulility-nav-edit {
+          transition: none;
+        }
       }
     }
   }
