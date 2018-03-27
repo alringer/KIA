@@ -6761,6 +6761,13 @@
 		"oAP": "\/build\/views\/partials\/nav-dual.html",
 		"oF": 0
 		},
+	"\/source\/views\/partials\/nav-mobile-finance.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/build\/views\/partials\/nav-mobile-finance.html",
+		"oF": 0
+		},
 	"\/source\/views\/partials\/nav-mobile-maintenance.kit": {
 		"cB": 0,
 		"ft": 2048,
