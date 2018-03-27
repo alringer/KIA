@@ -539,3 +539,16 @@
     }
   }
 }
+
+.view-faq {
+  .sub-tabs {
+    > ul {
+      max-width: 195px;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .menu-with-content {
+      padding-top: 20px;
+    }
+  }
+}

@@ -457,3 +457,10 @@
     @media (max-width: 767px) {
       .faq-detail .important {
         padding-top: 31px; } }
+
+.view-faq .sub-tabs > ul {
+  max-width: 195px; }
+
+@media (max-width: 767px) {
+  .view-faq .menu-with-content {
+    padding-top: 20px; } }

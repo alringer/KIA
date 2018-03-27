@@ -6418,6 +6418,13 @@
 		"oAP": "\/build\/views\/faq-detail.html",
 		"oF": 0
 		},
+	"\/source\/views\/finance-faq.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/finance-faq.html",
+		"oF": 0
+		},
 	"\/source\/views\/how-to-videos.kit": {
 		"cB": 0,
 		"ft": 2048,
