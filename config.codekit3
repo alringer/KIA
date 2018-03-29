@@ -481,6 +481,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-finance.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-finance.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/css\/views\/view-informational-videos.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4870,6 +4883,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/source\/scripts\/finance.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/finance.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/source\/scripts\/fixed.js": {
 		"ft": 64,
 		"ma": 0,
@@ -6423,6 +6446,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/finance-faq.html",
+		"oF": 0
+		},
+	"\/source\/views\/finance-history.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/finance-history.html",
 		"oF": 0
 		},
 	"\/source\/views\/how-to-videos.kit": {
