@@ -12,6 +12,9 @@
   }
 </style>
 
+# V - 10.0.0
+* KK-792 As a user, I need to be able to see FAQs related to my lease
+• KK-791 As a user, I need to see my lease payment history
 # V - 9.0.1
 * KOPE-494 Icon accent colors do not show upon selection
 * KOPE-493 AC and DC charge limits go too low
