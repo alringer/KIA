@@ -109,6 +109,12 @@
             margin-right: -5px;
           }
         }
+        @media (max-width: $screen-sm-max) {
+          &.auto-height-m {
+            height: auto;
+            padding-bottom: 30px;
+          }
+        }
         .icon-arrow-right {
           position: absolute;
           top: 50%;
@@ -295,6 +301,12 @@
           &-footer {
             text-align: center;
             padding-top: 20px;
+            &.has-p {
+              padding-top: 5px;
+              @media (max-width: $screen-sm-max) {
+                padding-top: 40px;
+              }
+            }
             @media (max-width: $screen-sm-max) {
               padding-top: 40px;
             }
@@ -304,6 +316,26 @@
               @media (max-width: $screen-sm-max) {
                 margin: 0 15px;
               }
+            }
+          }
+          p {
+            padding: 12px 0 0;
+            margin: 0;
+            text-align: center;
+            font: 14px/1.5em $sans;
+            letter-spacing: .6px;
+            color: #2f2f2f;
+            @media (max-width: $screen-sm-max) {
+              text-align: left;
+              padding-top: 16px;
+            }
+            a {
+              display: inline-block;
+              color: $red;
+              font: bold 11px/14px $kia;
+              letter-spacing: .7px;
+              text-transform: uppercase;
+              margin-left: 2px;
             }
           }
         }
