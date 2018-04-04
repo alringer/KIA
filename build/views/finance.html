@@ -15,7 +15,8 @@
   
   <!-- VIEW CSS -->
   <link rel="stylesheet" href="/css/view-reference-material.css">
-  <link rel="stylesheet" href="/css/view-bluetooth.css">
+  <link rel="stylesheet" href="/css/view-finance.css">
+  <link rel="stylesheet" href="/css/reference-cards.css">
 
   <!-- GLOBAL VENDOR JS -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -34,7 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
     
   <!-- VIEW JS -->
-
+  <script type="text/javascript" src="/scripts/finance.js"></script>
   <title>KIA</title>
   </head>
 <body ontouchstart="">
@@ -80,7 +81,7 @@
   </div><!-- /.alert -->
 </div><!-- /.alerts -->
 
-<div class="view-reference-material view-bluetooth">
+<div class="view-reference-material view-finance">
   <div class="has-mobile-nav">
     <nav class="nav-app">
       <div class="nav-app-main">
@@ -764,7 +765,7 @@
     
     <div class="nav-mobile">
           <div class="contain">
-            <h1>Reference Material</h1>
+            <h1>Finance</h1>
           </div><!-- /.contain -->
         </div><!-- /.nav-mobile -->
         
@@ -772,187 +773,211 @@
       <div class="page-view-subnav">
         <ul class="page-view-subnav-items">
           <li>
-            <a href="#">
-              Manuals
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Videos
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Warranty Info
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Your Documents
-            </a>
-          </li>
-          <li>
             <a href="#" class="active">
-              Bluetooth
+              Finance
             </a>
           </li>
           <li>
             <a href="#">
-              UVO
+              History
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              FAQS
             </a>
           </li>
         </ul><!-- /.page-view-subnav-items -->
       </div><!-- /.page-view-subnav -->
-      <div class="contain">
-        <div class="page-view-header hidden-xs">
-          <h2>
-            Bluetooth® Pairing Instructions
-          </h2>
-        </div><!-- /.page-view-header -->
-        <div class="page-view-content">
-          <div class="pairing-devices">
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="device">
-                  <img src="/images/reference/pairing-car.png" />
-                  <strong>2017 Niro</strong>
+      <div class="menu-with-content">
+        <div class="contain">
+          <div class="page-view-header">
+            <div class="finance-header-title">
+              <img src="/images/finance/finance-logo.png" alt="Kia Finance" class="pull-left" />
+              <div class="finance-account-info pull-right">
+                <strong>
+                  5993074112
+                </strong>
+                <em>
+                  Account Number
+                </em>
+              </div>
+            </div>
+            <div class="finance-header-intro">
+              <div class="hidden-sm hidden-xs">
+                <strong>Have you registered your Kia Finance account at KMFUSA.com?</strong>
+                <p>
+                  We’ve made it simple and convenient for you to manage your account so you can focus on more important things – like enjoying your vehicle.
+                  <a href="#">Register Now</a>
+                </p>
+              </div>
+              <div class="hidden-md hidden-lg">
+                <div class="collapse-header" data-toggle="collapse"href="#faq-1">
+                  <strong>Have you registered your Kia Finance account at KMFUSA.com?</strong>
+                  <i class="icon-arrow-right"></i>
                 </div>
-              </div><!-- /.col -->
-              <div class="col-sm-8 col-sm-offset-1">
-                <div class="instructions">
-                  <p>From Your <strong>NIRO</strong></p>
-                  <ol>
-                    <li>Press “Phone”</li>
-                    <li>Select “Connections</li>
-                    <li>Select “Add Device</li>
-                  </ol>
-                </div><!-- /.instructions -->
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="device">
-                  <img src="/images/reference/pairing-device.png" />
-                  <strong>
-                    iPhone 6S
-                    <a href="#">Change</a>
-                  </strong>
-                </div>
-              </div><!-- /.col -->
-              <div class="col-sm-8 col-sm-offset-1">
-                <div class="instructions">
-                  <p>From your <strong>iPhone 6S</strong></p>
-                  <ol>
-                    <li>From the main screen: Select SETTINGS icon</li>
-                    <li>Select BLUETOOTH</li>
-                    <li>Move BLUETOOTH switch to the ON position</li>
-                    <li>Phone will automatically begin searching</li>
-                    <li>Select Bluetooth device to connect</li>
-                    <li>Enter PIN provided by the vehicle</li>
-                    <li>Select PAIR</li>
-                  </ol>
-                </div><!-- /.instructions -->
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /.pairing-devices -->
-          <div class="pairing-compatibility">
-            <h2>Bluetooth® feature compatibility for</h2>
-            <select class="selectpicker small">
-              <option value="1" selected>iOS 9.3.5</option>
-              <option value="1">iOS 9.3.4</option>
-              <option value="1">iOS 9.3.1</option>
-            </select>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="pairing-compatibility-col">
-                  <strong>COMPATABLE</strong>
-                  <ul class="compatible">
-                    <li>Caller ID</li>
-                    <li>Auto Phonebook Download</li>
-                    <li>Streaming</li>
-                    <li>Indicator (Battery, Signal)</li>
-                    <li>Pairing</li>
-                    <li>Connection</li>
-                    <li>Handsfree Calling</li>
-                    <li>Hang up Call</li>
-                    <li>Transfer to Privacy</li>
-                  </ul>
+                <div id="faq-1" class="collapse">
+                  <div class="collapse-body">
+                    <p>
+                      We’ve made it simple and convenient for you to manage your account so you can focus on more important things – like enjoying your vehicle.
+                      <a href="#">Register Now</a>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="pairing-compatibility-col">
-                  <strong>NOT TESTED</strong>
-                  <ul class="incompatible">
-                    <li>SMS</li>
-                    <li>Redial</li>
-                  </ul>
+            </div><!-- /.finance-header-intro -->
+          </div><!-- /.page-view-header -->
+          <div class="finance-tiles">
+            <div class="row">
+              <div class="col-md-3 col-xs-6">
+                <div class="tile">
+                  <strong class="tile-title">Upcoming Payment</strong>
+                  <em class="large-number">$400</em>
+                  <em class="meta">Total Due</em>
+                  <em class="meta">March 30, 2018</em>
+                  <a href="#" class="tile-link">Make a Payment</a>
+                  <i class="icon-arrow-right"></i>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="pairing-compatibility-col">
-                  <strong>INCOMPATIBLE</strong>
-                  <ul class="incompatible">
-                    <li>Multiple Call Handling</li>
-                  </ul>
+              <div class="col-md-3 col-xs-6">
+                <div class="tile">
+                  <strong class="tile-title">Previous Payment</strong>
+                  <em class="large-number">$400</em>
+                  <em class="meta">Paid</em>
+                  <em class="meta">February 30, 2018</em>
+                  <a href="#" class="tile-link">View History</a>
+                  <i class="icon-arrow-right"></i>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="tile">
+                  <div class="uvo-inactive">
+                    <strong class="tile-title">Lease Mileage</strong>
+                    <p>Activate UVO in order to see your current lease milage and recommendation.</p>
+                    <a href="#" class="tile-link">Activate UVO</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                <div class="tile no-hover">
+                  <div class="lease-mileage">
+                    <strong class="pull-left tile-title">Lease Mileage</strong>
+                    <div class="lease-year pull-right">
+                      <i class="icon-arrow-right prev"></i>
+                      <strong class="tile-title">Current Year</strong>
+                      <i class="icon-arrow-right next"></i>
+                    </div><!-- /.lease-year -->
+                    <div class="progress-bar">
+                      <span class="marker" style="left: 30%"><em class="meta">Recommended</em></span>
+                      <span class="bar red" style="width:50%"></span>
+                      <em class="meta pull-left">0MI</em>
+                      <em class="meta pull-right">10,000MI</em>
+                    </div>
+                    <p>Drive at or below the recommended milage so you don’t exceed your lease terms.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12"></div>
+              <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                <div class="tile no-hover">
+                  <div class="lease-payments">
+                    <strong class="pull-left tile-title">Payments Made</strong>
+                    <div class="progress-bar">
+                      <span class="marker" style="left: 50%">
+                        <span class="large-number">20</span>
+                      </span>
+                      <span class="bar" style="width:50%"></span>
+                      <em class="meta pull-left">0</em>
+                      <em class="meta pull-right">36</em>
+                    </div>
+                    <p>You have <strong>16</strong> payments remaining to have fully paid off your vehicle.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="tile no-hover">
+                  <div class="lease-contract">
+                    <strong class="pull-left tile-title">Your contract</strong>
+                    <div class="progress-bar-wrapper">
+                      <div class="date">
+                        <strong>Jan 16, 2017</strong>
+                        <em class="meta">Lease Start Date</em>
+                      </div>
+                      <div class="progress-bar">
+                        <span class="bar" style="width:50%"></span>
+                      </div>
+                      <div class="date">
+                        <strong>Jan 16, 2020</strong>
+                        <em class="meta">Lease Maturity Date</em>
+                      </div>
+                      <div class="lease-contract-footer">
+                        <div class="date">
+                          <strong>120 Months</strong>
+                          <em class="meta">Contract Term</em>
+                        </div>
+                        <div class="date">
+                          <strong>$13,460</strong>
+                          <em class="meta"><sub>*</sub> Payoff Quote</em>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div><!-- /.finance-tiles -->
+          <div class="overview-references">
+            <div class="reference-card paperless">
+              <strong>
+                Go Paperless
+              </strong>
+              <p>
+                Do the planet and your mailbox a favor – go paperless and view your statements online.
+              </p>
+              <a href="#" class="button outline white transparent less-padding">
+                Enroll Now
+              </a>
+            </div><!-- /.reference-card -->
+            <div class="reference-card autopay">
+              <strong>
+                AutoPay
+              </strong>
+              <p>
+                Set up automatic, recurring monthly payments through our AutoPay program.
+              </p>
+              <a href="#" class="button outline white transparent less-padding">
+                Enroll Now
+              </a>
+            </div><!-- /.reference-card -->
+            <div class="reference-card account-alerts">
+              <strong>
+                Account Alerts
+              </strong>
+              <p>
+                Sign up to receive important account reminders, payment received alerts and other messages.
+              </p>
+              <a href="#" class="button outline white transparent less-padding">
+                Enroll Now
+              </a>
+            </div><!-- /.reference-card -->
+          </div><!-- /.overview-references -->
+          <div class="finance-contact">
+            <strong>Have Questions regarding your Kia Finance Account? Contact us at:</strong>
+            <span class="number">1-866-331-5632</span>
+            <p>Monday – Friday, 8 a.m. to 9:00 p.m. (Eastern)</p>
+            <p>Access information regarding your Kia Finance account, including account status, date of last payment received, date of next payment due, payoff quotes and much more.</p>
+            <p class="note">Note: Please have your account number or Social Security number available when you call.</p>
+          </div><!-- /.finance-contact -->
+          <div class="finance-payoff">
+            <p>
+              <span class="astrisk">*</span>
+              <strong>
+                Payoff Quote:
+              </strong>
+              Account balances, payments and other amounts due or paid appearing on this website assume that all payments posted to your account were made with good funds, were valid and were not applied to your account in error.  Account balances may not include amounts you may owe for expenses incurred but not yet billed to your account.</p>
           </div>
-        </div><!-- /.page-view-content -->
-        <div class="cta-boxes">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="box red">
-                <i>
-                  <svg width="16px" height="29px" viewBox="0 0 16 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Pairing-Instructions-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-197.000000, -1335.000000)">
-                          <g id="CONTENT" transform="translate(32.000000, 254.000000)" fill="#FFFFFF">
-                              <g id="How-To-videos-CTA" transform="translate(130.000000, 1026.000000)">
-                                  <g id="Group-6" transform="translate(6.000000, 43.000000)">
-                                      <polygon id="Triangle-2" transform="translate(37.113636, 26.840909) rotate(90.000000) translate(-37.113636, -26.840909) " points="37.1136364 19 51.2272727 34.6818182 23 34.6818182"></polygon>
-                                  </g>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
-                </i>
-                <div class="box-content">
-                  <strong>How-To Videos</strong>
-                  <p>Watch informational videos about your vehicle.</p>
-                </div><!-- /.box-content -->
-                <div class="box-button">
-                  <a href="#" class="button">Start Watching!</a>
-                </div>
-              </div><!-- /.box` -->
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-              <div class="box blue">
-                <i>
-                  <svg width="40px" height="54px" viewBox="0 0 40 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Pairing-Instructions-|-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-591.000000, -1323.000000)">
-                          <g id="CONTENT" transform="translate(32.000000, 254.000000)">
-                              <g id="Bluetooth-FAQ's-CTA" transform="translate(541.000000, 1026.000000)">
-                                  <g id="Group-4" transform="translate(18.000000, 43.000000)">
-                                      <rect id="Rectangle-3" fill="#FFFFFF" x="4.84848485" y="4.84848485" width="29.6969697" height="44.8484848" rx="7"></rect>
-                                      <path d="M22.0260984,13.3067179 L26.4566355,17.7422905 L22.0260984,22.1778631 L22.0260984,13.3067179 L22.0260984,13.3067179 Z M22.0260984,40.6171722 L26.4566355,36.1815996 L22.0260984,31.7460269 L22.0260984,40.6171722 L22.0260984,40.6171722 Z M17.2790945,26.9936277 L7.65849975,17.2987332 L10.4434087,14.510659 L18.1019085,22.1778631 L18.1019085,3.80191939 L32.0264535,17.7422905 L22.8489125,26.9936277 L32.0897469,36.2449649 L18.1652019,50.185336 L18.1652019,31.7460269 L10.4434087,39.413231 L7.65849975,36.6251568 L17.2790945,26.9936277 L17.2790945,26.9936277 Z M19.8741233,53.9238901 C31.6466932,53.9238901 39.7482466,48.3477416 39.7482466,26.9302624 C39.7482466,5.57614844 31.6466932,0 19.8741233,0 C8.10155345,0 0,5.57614844 0,26.9936277 C0,48.3477416 8.10155345,53.9238901 19.8741233,53.9238901 L19.8741233,53.9238901 Z" id="Bug" fill="#0082FC"></path>
-                                  </g>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
-                </i>
-                <div class="box-content">
-                  <strong>Bluetooth® FAQ’s</strong>
-                  <p>Learn how your Bluetooth® system can enhance your driving experience.</p>
-                </div><!-- /.box-content -->
-                <div class="box-button">
-                  <a href="#" class="button">Learn More</a>
-                </div>
-              </div><!-- /.box` -->
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-        </div><!-- /.row -->
-      </div><!-- /.contain -->
+        </div><!-- /.contain -->
+      </div><!-- /.menu-with-content -->
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-maintenance -->

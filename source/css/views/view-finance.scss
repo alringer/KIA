@@ -1,6 +1,370 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+.view-finance {
+  .contain {
+    @media (max-width: $screen-sm-max) {
+      padding: 0 10px !important;
+    }
+
+  }
+  .page-view {
+    &-header {
+      @media (max-width: $screen-sm-max) {
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 11px;
+        margin-bottom: 20px !important;
+      }
+      .collapse-header {
+        position: relative;
+        .icon-arrow-right {
+          position: absolute;
+          right: 5px;
+          top: 0;
+          transform: rotate(-90deg);
+          transition: all 250ms $easeOutBack;
+        }
+        &[aria-expanded="true"] {
+          .icon-arrow-right {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .finance-header {
+        &-title {
+          overflow: hidden;
+          margin-bottom: 30px;
+          @media (max-width: $screen-sm-max) {
+            padding: 0 10px;
+            img {
+              max-width: 114px;
+              margin-top: 5px;
+            }
+          }
+          .finance-account-info {
+            text-align: right;
+            strong {
+              display: block;
+              font: 500 17px/1.24em $kia;
+              letter-spacing: .2px;
+            }
+            em {
+              display: block;
+              font: bold 10px $kia;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              color: #969696;
+            }
+          }
+        }
+        &-intro {
+          max-width: 571px;
+          strong {
+            display: block;
+            font: bold 10px $kia;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+          }
+          p {
+            font: 14px/1.5em $sans;
+            letter-spacing: .6px;
+            color: #2f2f2f;
+            margin-bottom: 0;
+            a {
+              display: inline-block;
+              color: $red;
+              font: bold 11px/14px $kia;
+              letter-spacing: .7px;
+              text-transform: uppercase;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+    .finance-tiles {
+      overflow: visible;
+      .row {
+        margin-left: -5px;
+        margin-right: -5px;
+        > div {
+          padding: 0 5px;
+        }
+      }
+      .tile {
+        position: relative;
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+        height: 175px;
+        margin-bottom: 9px;
+        text-align: center;
+        padding-top: 20px;
+        &:not(.no-hover) {
+          cursor: pointer;
+        }
+        &:hover {
+          .icon-arrow-right {
+            margin-right: -5px;
+          }
+        }
+        .icon-arrow-right {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          transition: all 250ms $easeOutQuint;
+        }
+        &-title {
+          display: inline-block;
+          font: bold 10px $kia;
+          text-transform: uppercase;
+          letter-spacing: .4px;
+          color: #000;
+        }
+        .large-number {
+          display: block;
+          padding-top: 16px;
+          font: 100 32px $kia;
+          color: #000;
+          letter-spacing: 1.5px;
+          margin-bottom: 6px;
+        }
+        .meta {
+          display: block;
+          font: bold 10px $kia;
+          letter-spacing: 1px;
+          color: #969696;
+          text-transform: uppercase;
+        }
+        .tile-link {
+          display: block;
+          margin-top: 8px;
+          font: bold 11px $kia;
+          letter-spacing: .7px;
+          line-height: 2.09em;
+          color: $red;
+          text-transform: uppercase;
+        }
+        p {
+          text-align: center;
+          max-width: calc(100% - 80px);
+          margin: 0 auto;
+          font: 14px/1.5em $sans;
+          letter-spacing: .6px;
+          color: #2f2f2f;
+          margin-top: 16px;
+        }
+        .uvo-inactive {
+          padding-top: 15px;
+          p {
+            margin-bottom: 20px;
+          }
+        }
+        .lease-contract,
+        .lease-payments,
+        .lease-mileage {
+          text-align:  left;
+          padding-left: 20px;
+          padding-right: 20px;
+          cursor: default;
+          .lease-year {
+            margin-top: -7px;
+            .icon-arrow-right {
+              position: relative;
+              top: 0;
+              left: auto;
+              right: auto;
+              transform: translateY(25%);
+              display: inline-block;
+              margin: 0 !important;
+              cursor: pointer;
+              &.prev {
+                transform: translateY(25%) rotate(-180deg);
+              }
+            }
+            strong {
+              padding: 0 10px;
+            }
+          }
+          .progress-bar {
+            margin-top: 42px;
+            position: relative;
+            overflow: visible;
+            .bar {
+              &.red {
+                background: $red;
+              }
+            }
+            .marker {
+              position: absolute;
+              left: 0;
+              bottom: 100%;
+              margin-bottom: 10px;
+              transform: translateX(-50%);
+              &:after {
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 6px 3px 0 3px;
+                border-color: #969696 transparent transparent transparent;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+
+              }
+              .meta {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -14px;
+                right: auto;
+                text-align: center;
+              }
+            }
+          }
+          p {
+            clear: both;
+            max-width: 100%;
+            padding-top: 34px;
+            text-align: left;
+          }
+        }
+        .lease-payments {
+          .progress-bar {
+            margin-top: 46zpx;
+            .large-number {
+              font-size: 28px;
+            }
+          }
+        }
+        .lease-contract {
+          .progress-bar-wrapper {
+            clear: both;
+            width: 100%;
+            padding-top: 15px;
+            .date {
+              display: inline-block;
+              vertical-align: top;
+              width: 130px;
+              strong {
+                font: 500 20px $kia;
+                letter-spacing: .5px;
+                color: #2f2f2f;
+              }
+              &:last-child {
+                text-align: right;
+              }
+            }
+            .progress-bar {
+              display: inline-block;
+              max-width: calc(100% - 300px);
+              float: none;
+              vertical-align: top;
+              margin: 15px 15px 0;
+            }
+            @media (max-width: $screen-sm-max) {
+              position: relative;
+              .progress-bar {
+                max-width: 100%;
+                margin: 0;
+                + .date {
+                  left: auto;
+                  right: 0;
+                  text-align: right;
+                }
+              }
+              > .date {
+                opacity: .5;
+                position: absolute;
+                left: 0;
+                top: 20px;
+                strong {
+                  font: 13px/1.62em $sans;
+                }
+                .meta {
+                  font-size: 9px;
+                  letter-spacing: .6px;
+                }
+              }
+            }
+          }
+          &-footer {
+            text-align: center;
+            padding-top: 20px;
+            @media (max-width: $screen-sm-max) {
+              padding-top: 40px;
+            }
+            .date {
+              width: auto !important;
+              margin: 0 35px;
+              @media (max-width: $screen-sm-max) {
+                margin: 0 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .overview-references {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+    .finance-contact {
+      border-top: 1px solid #d8d8d8;
+      border-bottom: 1px solid #d8d8d8;
+      margin-top: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      strong {
+        display: block;
+        font: 600 14px $sans;
+        letter-spacing: 1.5px;
+        letter-spacing: .6px;
+        color: #2f2f2f;
+        margin-bottom: 4px;
+      }
+      .number {
+        display: block;
+        font: 500 18px $kia;
+        letter-spacing: 1.5px;
+        color: #000;
+        margin-bottom: 6px;
+      }
+      p {
+        margin-bottom: 10px;
+        font: 14px/1.5em $sans;
+        letter-spacing: .6px;
+        color: #2f2f2f;
+      }
+      .note {
+        font-size: 10px;
+        line-height: 2.1em;
+        margin-top: 3px;
+      }
+    }
+    .finance-payoff {
+      padding: 30px 15px 0;
+      font: 14px/1.5em $sans;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+      p {
+        position: relative;
+        .astrisk {
+          position: absolute;
+          right: 100%;
+          top: 2px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+
 .view-finance-history {
   .page-view {
     &-header {

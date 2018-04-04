@@ -1159,6 +1159,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/images\/finance\/finance-logo.png": {
+		"ft": 32768,
+		"iS": 9038,
+		"oA": 0,
+		"oAP": "\/build\/images\/finance\/finance-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/group.png": {
 		"ft": 32768,
 		"iS": 92374,
@@ -6453,6 +6464,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/finance-history.html",
+		"oF": 0
+		},
+	"\/source\/views\/finance.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/finance.html",
 		"oF": 0
 		},
 	"\/source\/views\/how-to-videos.kit": {

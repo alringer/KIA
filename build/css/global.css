@@ -4925,6 +4925,9 @@ footer {
   width: 100%;
   padding-bottom: 15px;
   height: 75px; }
+  @media (min-width: 991px) {
+    footer {
+      padding-left: 111px; } }
   footer .footer-menu-items {
     font-size: 0;
     text-align: center;

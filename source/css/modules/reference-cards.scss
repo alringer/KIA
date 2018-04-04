@@ -77,9 +77,12 @@
       max-width: 172px;
     }
   }
+  &.account-alerts,
+  &.paperless,
   &.maintenance {
     background-image: url('/images/image_reference_card_1.jpg');
   }
+  &.autopay,
   &.manuals {
     background-image: url('/images/image_reference_card_2.jpg');
   }

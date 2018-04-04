@@ -31,6 +31,315 @@
   to {
     transform: rotate(360deg); } }
 
+@media (max-width: 991px) {
+  .view-finance .contain {
+    padding: 0 10px !important; } }
+
+@media (max-width: 991px) {
+  .view-finance .page-view-header {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 11px;
+    margin-bottom: 20px !important; } }
+
+.view-finance .page-view-header .collapse-header {
+  position: relative; }
+  .view-finance .page-view-header .collapse-header .icon-arrow-right {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    transform: rotate(-90deg);
+    transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .view-finance .page-view-header .collapse-header[aria-expanded="true"] .icon-arrow-right {
+    transform: rotate(90deg); }
+
+.view-finance .page-view-header .finance-header-title {
+  overflow: hidden;
+  margin-bottom: 30px; }
+  @media (max-width: 991px) {
+    .view-finance .page-view-header .finance-header-title {
+      padding: 0 10px; }
+      .view-finance .page-view-header .finance-header-title img {
+        max-width: 114px;
+        margin-top: 5px; } }
+  .view-finance .page-view-header .finance-header-title .finance-account-info {
+    text-align: right; }
+    .view-finance .page-view-header .finance-header-title .finance-account-info strong {
+      display: block;
+      font: 500 17px/1.24em "KIA", sans-serif;
+      letter-spacing: .2px; }
+    .view-finance .page-view-header .finance-header-title .finance-account-info em {
+      display: block;
+      font: bold 10px "KIA", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #969696; }
+
+.view-finance .page-view-header .finance-header-intro {
+  max-width: 571px; }
+  .view-finance .page-view-header .finance-header-intro strong {
+    display: block;
+    font: bold 10px "KIA", sans-serif;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 14px; }
+  .view-finance .page-view-header .finance-header-intro p {
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    color: #2f2f2f;
+    margin-bottom: 0; }
+    .view-finance .page-view-header .finance-header-intro p a {
+      display: inline-block;
+      color: #C4172C;
+      font: bold 11px/14px "KIA", sans-serif;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+      margin-left: 5px; }
+
+.view-finance .page-view .finance-tiles {
+  overflow: visible; }
+  .view-finance .page-view .finance-tiles .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+    .view-finance .page-view .finance-tiles .row > div {
+      padding: 0 5px; }
+  .view-finance .page-view .finance-tiles .tile {
+    position: relative;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+    height: 175px;
+    margin-bottom: 9px;
+    text-align: center;
+    padding-top: 20px; }
+    .view-finance .page-view .finance-tiles .tile:not(.no-hover) {
+      cursor: pointer; }
+    .view-finance .page-view .finance-tiles .tile:hover .icon-arrow-right {
+      margin-right: -5px; }
+    .view-finance .page-view .finance-tiles .tile .icon-arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1); }
+    .view-finance .page-view .finance-tiles .tile-title {
+      display: inline-block;
+      font: bold 10px "KIA", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      color: #000; }
+    .view-finance .page-view .finance-tiles .tile .large-number {
+      display: block;
+      padding-top: 16px;
+      font: 100 32px "KIA", sans-serif;
+      color: #000;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px; }
+    .view-finance .page-view .finance-tiles .tile .meta {
+      display: block;
+      font: bold 10px "KIA", sans-serif;
+      letter-spacing: 1px;
+      color: #969696;
+      text-transform: uppercase; }
+    .view-finance .page-view .finance-tiles .tile .tile-link {
+      display: block;
+      margin-top: 8px;
+      font: bold 11px "KIA", sans-serif;
+      letter-spacing: .7px;
+      line-height: 2.09em;
+      color: #C4172C;
+      text-transform: uppercase; }
+    .view-finance .page-view .finance-tiles .tile p {
+      text-align: center;
+      max-width: calc(100% - 80px);
+      margin: 0 auto;
+      font: 14px/1.5em "Source Sans Pro", sans-serif;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+      margin-top: 16px; }
+    .view-finance .page-view .finance-tiles .tile .uvo-inactive {
+      padding-top: 15px; }
+      .view-finance .page-view .finance-tiles .tile .uvo-inactive p {
+        margin-bottom: 20px; }
+    .view-finance .page-view .finance-tiles .tile .lease-contract,
+    .view-finance .page-view .finance-tiles .tile .lease-payments,
+    .view-finance .page-view .finance-tiles .tile .lease-mileage {
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: default; }
+      .view-finance .page-view .finance-tiles .tile .lease-contract .lease-year,
+      .view-finance .page-view .finance-tiles .tile .lease-payments .lease-year,
+      .view-finance .page-view .finance-tiles .tile .lease-mileage .lease-year {
+        margin-top: -7px; }
+        .view-finance .page-view .finance-tiles .tile .lease-contract .lease-year .icon-arrow-right,
+        .view-finance .page-view .finance-tiles .tile .lease-payments .lease-year .icon-arrow-right,
+        .view-finance .page-view .finance-tiles .tile .lease-mileage .lease-year .icon-arrow-right {
+          position: relative;
+          top: 0;
+          left: auto;
+          right: auto;
+          transform: translateY(25%);
+          display: inline-block;
+          margin: 0 !important;
+          cursor: pointer; }
+          .view-finance .page-view .finance-tiles .tile .lease-contract .lease-year .icon-arrow-right.prev,
+          .view-finance .page-view .finance-tiles .tile .lease-payments .lease-year .icon-arrow-right.prev,
+          .view-finance .page-view .finance-tiles .tile .lease-mileage .lease-year .icon-arrow-right.prev {
+            transform: translateY(25%) rotate(-180deg); }
+        .view-finance .page-view .finance-tiles .tile .lease-contract .lease-year strong,
+        .view-finance .page-view .finance-tiles .tile .lease-payments .lease-year strong,
+        .view-finance .page-view .finance-tiles .tile .lease-mileage .lease-year strong {
+          padding: 0 10px; }
+      .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar,
+      .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar,
+      .view-finance .page-view .finance-tiles .tile .lease-mileage .progress-bar {
+        margin-top: 42px;
+        position: relative;
+        overflow: visible; }
+        .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar .bar.red,
+        .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar .bar.red,
+        .view-finance .page-view .finance-tiles .tile .lease-mileage .progress-bar .bar.red {
+          background: #C4172C; }
+        .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar .marker,
+        .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar .marker,
+        .view-finance .page-view .finance-tiles .tile .lease-mileage .progress-bar .marker {
+          position: absolute;
+          left: 0;
+          bottom: 100%;
+          margin-bottom: 10px;
+          transform: translateX(-50%); }
+          .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar .marker:after,
+          .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar .marker:after,
+          .view-finance .page-view .finance-tiles .tile .lease-mileage .progress-bar .marker:after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 3px 0 3px;
+            border-color: #969696 transparent transparent transparent;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); }
+          .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar .marker .meta,
+          .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar .marker .meta,
+          .view-finance .page-view .finance-tiles .tile .lease-mileage .progress-bar .marker .meta {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -14px;
+            right: auto;
+            text-align: center; }
+      .view-finance .page-view .finance-tiles .tile .lease-contract p,
+      .view-finance .page-view .finance-tiles .tile .lease-payments p,
+      .view-finance .page-view .finance-tiles .tile .lease-mileage p {
+        clear: both;
+        max-width: 100%;
+        padding-top: 34px;
+        text-align: left; }
+    .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar {
+      margin-top: 46zpx; }
+      .view-finance .page-view .finance-tiles .tile .lease-payments .progress-bar .large-number {
+        font-size: 28px; }
+    .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper {
+      clear: both;
+      width: 100%;
+      padding-top: 15px; }
+      .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper .date {
+        display: inline-block;
+        vertical-align: top;
+        width: 130px; }
+        .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper .date strong {
+          font: 500 20px "KIA", sans-serif;
+          letter-spacing: .5px;
+          color: #2f2f2f; }
+        .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper .date:last-child {
+          text-align: right; }
+      .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper .progress-bar {
+        display: inline-block;
+        max-width: calc(100% - 300px);
+        float: none;
+        vertical-align: top;
+        margin: 15px 15px 0; }
+      @media (max-width: 991px) {
+        .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper {
+          position: relative; }
+          .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper .progress-bar {
+            max-width: 100%;
+            margin: 0; }
+            .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper .progress-bar + .date {
+              left: auto;
+              right: 0;
+              text-align: right; }
+          .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper > .date {
+            opacity: .5;
+            position: absolute;
+            left: 0;
+            top: 20px; }
+            .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper > .date strong {
+              font: 13px/1.62em "Source Sans Pro", sans-serif; }
+            .view-finance .page-view .finance-tiles .tile .lease-contract .progress-bar-wrapper > .date .meta {
+              font-size: 9px;
+              letter-spacing: .6px; } }
+    .view-finance .page-view .finance-tiles .tile .lease-contract-footer {
+      text-align: center;
+      padding-top: 20px; }
+      @media (max-width: 991px) {
+        .view-finance .page-view .finance-tiles .tile .lease-contract-footer {
+          padding-top: 40px; } }
+      .view-finance .page-view .finance-tiles .tile .lease-contract-footer .date {
+        width: auto !important;
+        margin: 0 35px; }
+        @media (max-width: 991px) {
+          .view-finance .page-view .finance-tiles .tile .lease-contract-footer .date {
+            margin: 0 15px; } }
+
+.view-finance .page-view .overview-references {
+  margin-left: -5px;
+  margin-right: -5px; }
+
+.view-finance .page-view .finance-contact {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .view-finance .page-view .finance-contact strong {
+    display: block;
+    font: 600 14px "Source Sans Pro", sans-serif;
+    letter-spacing: 1.5px;
+    letter-spacing: .6px;
+    color: #2f2f2f;
+    margin-bottom: 4px; }
+  .view-finance .page-view .finance-contact .number {
+    display: block;
+    font: 500 18px "KIA", sans-serif;
+    letter-spacing: 1.5px;
+    color: #000;
+    margin-bottom: 6px; }
+  .view-finance .page-view .finance-contact p {
+    margin-bottom: 10px;
+    font: 14px/1.5em "Source Sans Pro", sans-serif;
+    letter-spacing: .6px;
+    color: #2f2f2f; }
+  .view-finance .page-view .finance-contact .note {
+    font-size: 10px;
+    line-height: 2.1em;
+    margin-top: 3px; }
+
+.view-finance .page-view .finance-payoff {
+  padding: 30px 15px 0;
+  font: 14px/1.5em "Source Sans Pro", sans-serif;
+  letter-spacing: .6px;
+  color: #2f2f2f; }
+  .view-finance .page-view .finance-payoff p {
+    position: relative; }
+    .view-finance .page-view .finance-payoff p .astrisk {
+      position: absolute;
+      right: 100%;
+      top: 2px;
+      margin-right: 5px; }
+
 .view-finance-history .page-view-header {
   padding-left: 30px; }
   @media (max-width: 767px) {
