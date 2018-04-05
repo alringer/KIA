@@ -21,12 +21,12 @@
           position: absolute;
           right: 5px;
           top: 0;
-          transform: rotate(-90deg);
+          transform: rotate(90deg);
           transition: all 250ms $easeOutBack;
         }
         &[aria-expanded="true"] {
           .icon-arrow-right {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
           }
         }
       }
@@ -59,6 +59,9 @@
         }
         &-intro {
           max-width: 571px;
+          @media (max-width: $screen-xs-max) {
+            max-width: 100%;
+          }
           strong {
             display: block;
             font: bold 10px $kia;
@@ -325,7 +328,7 @@
             font: 14px/1.5em $sans;
             letter-spacing: .6px;
             color: #2f2f2f;
-            @media (max-width: $screen-sm-max) {
+            @media (max-width: $screen-xs-max) {
               text-align: left;
               padding-top: 16px;
             }

@@ -47,10 +47,10 @@
     position: absolute;
     right: 5px;
     top: 0;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .view-finance .page-view-header .collapse-header[aria-expanded="true"] .icon-arrow-right {
-    transform: rotate(90deg); }
+    transform: rotate(-90deg); }
 
 .view-finance .page-view-header .finance-header-title {
   overflow: hidden;
@@ -76,6 +76,9 @@
 
 .view-finance .page-view-header .finance-header-intro {
   max-width: 571px; }
+  @media (max-width: 767px) {
+    .view-finance .page-view-header .finance-header-intro {
+      max-width: 100%; } }
   .view-finance .page-view-header .finance-header-intro strong {
     display: block;
     font: bold 10px "KIA", sans-serif;
@@ -309,7 +312,7 @@
       font: 14px/1.5em "Source Sans Pro", sans-serif;
       letter-spacing: .6px;
       color: #2f2f2f; }
-      @media (max-width: 991px) {
+      @media (max-width: 767px) {
         .view-finance .page-view .finance-tiles .tile .lease-contract p {
           text-align: left;
           padding-top: 16px; } }
