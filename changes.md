@@ -12,9 +12,17 @@
   }
 </style>
 
+# V - 10.0.1
+* KK-792 As a user, I need to be able to see FAQs related to my lease
+* KK-791 As a user, I need to see my lease payment history
+* KK-784 As a user, I need a Finance page
+* KK-787 As a user, I need to be able to view the Finance page
+* KK-788 As a user, I need to be able to see my lease milage tile when I am a Lease customer
+* KK-789 As a user, I need to be able to see my payments made tile if I am a retail customer
+* KK-790 As a user, I need to be able view my contract information
 # V - 10.0.0
 * KK-792 As a user, I need to be able to see FAQs related to my lease
-• KK-791 As a user, I need to see my lease payment history
+* KK-791 As a user, I need to see my lease payment history
 # V - 9.0.1
 * KOPE-494 Icon accent colors do not show upon selection
 * KOPE-493 AC and DC charge limits go too low
