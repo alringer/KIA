@@ -12,6 +12,10 @@
   }
 </style>
 
+# V - 11.0.0
+* KK-804 As a user, I need a view to choose my type of ownership
+* KK-805 As a user, I need to be able to view my warranty info
+* KK-807 As a developer, I need to implement the Print CSS on the Warranty Page
 # V - 10.0.1
 * KK-792 As a user, I need to be able to see FAQs related to my lease
 * KK-791 As a user, I need to see my lease payment history
