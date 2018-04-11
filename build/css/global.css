@@ -5220,3 +5220,79 @@ body {
     font: 12px/1.42em "Source Sans Pro", sans-serif;
     letter-spacing: .3px;
     background: #000; }
+
+@media print {
+  * {
+    font-family: TimesNewRoman, "Times New Roman", Times, serif !important; }
+  nav .nav-app .nav-app-menu {
+    display: none !important; }
+  nav .nav-app-mobile-menu-body-inner {
+    display: none; }
+  nav.nav-app .logo {
+    display: none; }
+  nav.nav-app .nav-app-main {
+    display: none; }
+  nav.nav-app + nav.nav-main {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 24px; }
+  nav.nav-main .nav-service-text {
+    display: none; }
+  nav.nav-main .vehicle-selector {
+    position: relative;
+    top: 0;
+    left: 23pt;
+    transform: none; }
+    nav.nav-main .vehicle-selector-current img {
+      display: none; }
+    nav.nav-main .vehicle-selector-current .title {
+      display: block !important;
+      font-size: 10pt;
+      margin-bottom: 1pt !important; }
+    nav.nav-main .vehicle-selector-current .caret {
+      display: none; }
+  nav.nav-main .notifications-menu,
+  nav.nav-main .account-menu,
+  nav.nav-main .nav-app-main {
+    display: none; }
+  nav.nav-main .dropdown button {
+    padding: 0;
+    height: auto;
+    padding-top: 48pt !important; }
+  .nav-mobile h1 {
+    display: none; }
+  .page-view-subnav {
+    display: none; }
+  .view-reference-material .page-view .contain {
+    max-width: none !important;
+    padding: 48pt 40pt !important; }
+  .view-reference-material .page-view-header {
+    padding: 0 !important; }
+    .view-reference-material .page-view-header h2 {
+      font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important; }
+      .view-reference-material .page-view-header h2 a {
+        display: none !important; }
+  .view-reference-material .page-view-content h2 {
+    font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important; }
+  .view-reference-material .page-view-content .text-content {
+    padding: 0 !important;
+    max-width: none !important; }
+    .view-reference-material .page-view-content .text-content strong {
+      font-size: 12pt;
+      margin-bottom: 4pt !important;
+      text-transform: capitalize; }
+    .view-reference-material .page-view-content .text-content p {
+      font-size: 12pt;
+      margin-bottom: 30pt !important; }
+    .view-reference-material .page-view-content .text-content span {
+      display: block;
+      font-style: italic;
+      margin-bottom: 5pt; }
+      .view-reference-material .page-view-content .text-content span.tooltip-i {
+        display: none; }
+  nav.nav-app + nav.nav-main + .nav-mobile + .page-view, nav.nav-app + nav.nav-main + .page-view {
+    padding: 0; }
+  footer {
+    display: none !important; } }
