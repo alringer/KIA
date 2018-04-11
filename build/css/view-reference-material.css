@@ -583,19 +583,42 @@
       letter-spacing: normal;
       color: #C4172C; }
 
-.view-warranty-info .page-view-content h2 {
-  font: 100 32px "KIA", sans-serif;
-  letter-spacing: 1.5px;
-  margin-bottom: 30px; }
-  @media (max-width: 767px) {
-    .view-warranty-info .page-view-content h2 {
-      font-size: 20px;
-      letter-spacing: .5px; } }
+.view-warranty-info .page-view-content {
+  overflow: hidden; }
+  .view-warranty-info .page-view-content h2 {
+    font: 100 32px "KIA", sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    float: left;
+    max-width: 588px; }
+    @media (max-width: 991px) {
+      .view-warranty-info .page-view-content h2 {
+        float: none;
+        max-width: 100%; } }
+    @media (max-width: 767px) {
+      .view-warranty-info .page-view-content h2 {
+        font-size: 20px;
+        letter-spacing: .5px; } }
+  .view-warranty-info .page-view-content .print {
+    position: relative;
+    top: 30px; }
+    @media (max-width: 991px) {
+      .view-warranty-info .page-view-content .print {
+        display: none; } }
 
 .view-warranty-info .page-view .text-content {
+  clear: both;
   padding-top: 0; }
   .view-warranty-info .page-view .text-content p {
     margin-bottom: 20px; }
+  .view-warranty-info .page-view .text-content > strong {
+    margin-bottom: 2px; }
+  .view-warranty-info .page-view .text-content strong + em {
+    display: block;
+    font: italic 14px "Source Sans Pro", sans-serif;
+    letter-spacing: .4px;
+    color: #9da0a4;
+    margin-bottom: 5px; }
 
 .tooltip-i {
   position: relative;
