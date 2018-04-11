@@ -1,0 +1,201 @@
+// Print media set up for Warranty
+@media print {
+    // Uses Web safe fonts
+    * {
+        font-family: TimesNewRoman, "Times New Roman", Times, serif !important;
+    }
+
+    nav {
+        .nav {
+            //nav .nav-app
+            &-app {
+                // nav .nav-app .nav
+                .nav {
+                    // nav .nav-app .nav-app
+                    &-app {
+                        // nav .nav-app .nav-app-menu
+                        &-menu {
+                            display: none !important;
+                        }
+                    }
+                }
+                // .nav-app-mobile
+                &-mobile {
+                    // .nav-app-mobile-menu
+                    &-menu {
+                         // .nav-app-mobile-menu-body
+                        &-body {
+                            // .nav-app-mobile-menu-body-inner
+                            &-inner {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        // nav.nav
+        &.nav {
+            // nav.nav-app
+            &-app {
+                 // nav.nav-app .logo
+                .logo {
+                    display: none;
+                }
+                 // nav.nav-app .nav
+                .nav {
+                    // nav.nav-app .nav-app
+                    &-app {
+                        // nav.nav-app .nav-app-main
+                        &-main {
+                            display: none;
+                        }
+                    }
+                    
+                }
+                // nav.nav-app + nav.nav-main
+                &+ nav.nav-main {
+                    display: block;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    height: 24px;
+                }
+            }
+            // nav.nav-main
+            &-main {
+                // nav.nav-main .nav
+                .nav {
+                    // nav.nav-main .nav-service
+                    &-service {
+                        // nav.nav-main .nav-service-text
+                        &-text {
+                            display: none;
+                        }
+                    }
+                }
+                // nav.nav-main .vehicle
+                .vehicle {
+                    // nav.nav-main .vehicle-selector
+                    &-selector {
+                        position: relative;
+                        top: 0;
+                        // aligns to content
+                        left: 23pt;
+                        transform: none;
+                        &-current {
+                            img {
+                                display: none;
+                            }
+                            .title {
+                                display: block !important;
+                                font-size: 10pt;
+                                margin-bottom: 1pt !important;
+                            }
+                            .caret {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                // nav.nav-main .notifications-menu, .account-menu, .nav-app-main
+                .notifications-menu,
+                .account-menu,
+                .nav-app-main {
+                    display: none;
+                }
+                // nav.nav-main .dropdown 
+                .dropdown  {
+                    button {
+                        padding: 0;
+                        height: auto;
+                        padding-top: 48pt !important;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .nav {
+        // .nav-mobile
+        &-mobile {
+            h1 {
+                display: none;
+            }
+        }
+    }
+
+    
+    .page {
+        &-view {
+            &-subnav {
+                display: none;
+            }
+        }
+    }
+
+    .view-reference-material {
+        .page {
+            &-view {
+                .contain {
+                    max-width: none !important;
+                    padding: 48pt 40pt !important;
+                }
+
+                &-header {
+                    padding: 0 !important;
+                    h2 {
+                        font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
+                        a {
+                            display: none !important;
+                        }
+                    }
+                }
+
+                &-content {
+                    h2 {
+                        font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
+                    }
+
+                    .text {
+                        &-content {
+                            padding: 0 !important;
+                            max-width: none !important;
+
+                            strong {
+                                font-size: 12pt;
+                                margin-bottom: 4pt !important;
+                                text-transform: capitalize;
+                            }
+                            p {
+                                font-size: 12pt;
+                                margin-bottom: 30pt !important;
+                            }
+                            span {
+                                display: block;
+                                font-style: italic;
+                                margin-bottom: 5pt;
+                                &.tooltip-i {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // nav long trace padding
+    nav.nav-app + nav.nav-main + .nav-mobile + .page-view, nav.nav-app + nav.nav-main + .page-view {
+        padding: 0;
+    }
+    
+
+    // footer 
+    footer {
+        display: none !important;
+    }
+}
