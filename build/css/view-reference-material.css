@@ -464,3 +464,178 @@
 @media (max-width: 767px) {
   .view-faq .menu-with-content {
     padding-top: 20px; } }
+
+.warranty-onboarding {
+  position: relative;
+  height: calc(100vh - 263px); }
+  .warranty-onboarding-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    max-width: 600px; }
+    .warranty-onboarding-cta > svg {
+      display: block;
+      margin: 0 auto 22px; }
+    .warranty-onboarding-cta h1 {
+      margin: 0;
+      font-size: 29px;
+      letter-spacing: 1.4px;
+      margin-bottom: 18px;
+      font-family: "KIA", sans-serif;
+      font-weight: 500; }
+    .warranty-onboarding-cta p {
+      font-size: 14px;
+      line-height: 1.5em;
+      letter-spacing: .6px;
+      color: #2f2f2f;
+      margin-bottom: 32px;
+      max-width: 435px;
+      margin: 0 auto 30px; }
+      @media (max-width: 767px) {
+        .warranty-onboarding-cta p {
+          max-width: 300px;
+          margin-bottom: 25px !important; } }
+    .warranty-onboarding-cta form {
+      width: 100%; }
+      @media (max-width: 767px) {
+        .warranty-onboarding-cta form {
+          max-width: 500px;
+          margin: 0 auto; } }
+      .warranty-onboarding-cta form .form-fields {
+        display: block;
+        width: 100%;
+        font-size: 0;
+        vertical-align: bottom;
+        text-align: center;
+        margin-bottom: 40px; }
+        @media (max-width: 767px) {
+          .warranty-onboarding-cta form .form-fields {
+            display: block;
+            width: calc(100%); } }
+        .warranty-onboarding-cta form .form-fields > li {
+          display: inline-block;
+          width: calc(33.3333% - 8px);
+          margin: 0 4px; }
+          @media (max-width: 767px) {
+            .warranty-onboarding-cta form .form-fields > li {
+              display: block;
+              width: 100%;
+              margin: 0 0 15px; } }
+          .warranty-onboarding-cta form .form-fields > li strong {
+            display: block;
+            font: bold 10px "KIA", sans-serif;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+            margin-bottom: 8px; }
+      .warranty-onboarding-cta form .form-action {
+        display: inline-block;
+        vertical-align: bottom; }
+        .warranty-onboarding-cta form .form-action .button {
+          padding: 0 24px; }
+        @media (max-width: 767px) {
+          .warranty-onboarding-cta form .form-action {
+            display: block; }
+            .warranty-onboarding-cta form .form-action .button {
+              margin: 0 auto; } }
+  @media (max-width: 991px) and (max-height: 700px) {
+    .warranty-onboarding {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      height: auto; }
+      .warranty-onboarding-cta {
+        max-width: calc(100% - 20px);
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+        padding-top: 40px; }
+        .warranty-onboarding-cta img {
+          max-width: 147px;
+          margin-bottom: 22px; }
+        .warranty-onboarding-cta h1 {
+          font-size: 24px;
+          margin-bottom: 14px;
+          line-height: normal; }
+        .warranty-onboarding-cta p {
+          margin-bottom: 35px; } }
+
+.view-warranty-info .page-view-header {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 20px; }
+  .view-warranty-info .page-view-header h2 {
+    font: 100 32px "KIA", sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .view-warranty-info .page-view-header h2 {
+        font-size: 20px;
+        letter-spacing: .5px; } }
+    .view-warranty-info .page-view-header h2 a {
+      display: inline-block;
+      font: bold 11px "KIA", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: normal;
+      color: #C4172C; }
+
+.view-warranty-info .page-view-content h2 {
+  font: 100 32px "KIA", sans-serif;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .view-warranty-info .page-view-content h2 {
+      font-size: 20px;
+      letter-spacing: .5px; } }
+
+.view-warranty-info .page-view .text-content {
+  padding-top: 0; }
+  .view-warranty-info .page-view .text-content p {
+    margin-bottom: 20px; }
+
+.tooltip-i {
+  position: relative;
+  display: inline-block; }
+  .tooltip-i i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: solid 1px #bb1a30;
+    font-size: 8px;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+    color: #C4172C;
+    line-height: 10px;
+    font-style: normal;
+    cursor: pointer; }
+    .tooltip-i i + .tooltip .tooltip-arrow {
+      border-bottom-color: #FFF; }
+    .tooltip-i i + .tooltip .tooltip-inner {
+      background: #FFF;
+      background-color: #ffffff;
+      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
+      padding: 25px 20px 10px;
+      width: 100%;
+      min-width: 750px; }
+      @media (max-width: 750px) {
+        .tooltip-i i + .tooltip .tooltip-inner {
+          min-width: 100vw; } }
+      .tooltip-i i + .tooltip .tooltip-inner strong {
+        display: block;
+        font: bold 10px "KIA", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #969696;
+        margin: 0 0 10px !important;
+        padding: 0; }
+      .tooltip-i i + .tooltip .tooltip-inner em {
+        font: 14px/1.5em "Source Sans Pro", sans-serif;
+        letter-spacing: .6px;
+        color: #2f2f2f;
+        display: block; }

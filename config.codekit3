@@ -7,7 +7,7 @@
 		"uuidString": "35F6608E-6DA5-45F2-87E1-7BF9B91317FF"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/build": {
 		"ft": 65536,
@@ -3203,6 +3203,7 @@
 	"\/source\/images\/image_car-no-vehicles.jpg": {
 		"ft": 16384,
 		"iS": 135347,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_car-no-vehicles.jpg",
 		"oF": 0,
@@ -3345,6 +3346,7 @@
 	"\/source\/images\/image_reference_card_1.jpg": {
 		"ft": 16384,
 		"iS": 258918,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_reference_card_1.jpg",
 		"oF": 0,
@@ -3366,6 +3368,7 @@
 	"\/source\/images\/image_reference_card_2.jpg": {
 		"ft": 16384,
 		"iS": 232986,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_reference_card_2.jpg",
 		"oF": 0,
@@ -3376,6 +3379,7 @@
 	"\/source\/images\/image_reference_card_3.jpg": {
 		"ft": 16384,
 		"iS": 240902,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_reference_card_3.jpg",
 		"oF": 0,
@@ -3386,6 +3390,7 @@
 	"\/source\/images\/image_reference_card_4.jpg": {
 		"ft": 16384,
 		"iS": 180064,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_reference_card_4.jpg",
 		"oF": 0,
@@ -3396,6 +3401,7 @@
 	"\/source\/images\/image_registration_step_dashboard.jpg": {
 		"ft": 16384,
 		"iS": 93167,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_dashboard.jpg",
 		"oF": 0,
@@ -3406,6 +3412,7 @@
 	"\/source\/images\/image_registration_step_dashboard_2.jpg": {
 		"ft": 16384,
 		"iS": 84674,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_dashboard_2.jpg",
 		"oF": 0,
@@ -3416,6 +3423,7 @@
 	"\/source\/images\/image_registration_step_phone.jpg": {
 		"ft": 16384,
 		"iS": 81090,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_phone.jpg",
 		"oF": 0,
@@ -3426,6 +3434,7 @@
 	"\/source\/images\/image_registration_step_phone_eservices.jpg": {
 		"ft": 16384,
 		"iS": 87969,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_phone_eservices.jpg",
 		"oF": 0,
@@ -3436,6 +3445,7 @@
 	"\/source\/images\/image_registration_step_phone_eservices_2.jpg": {
 		"ft": 16384,
 		"iS": 97229,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_phone_eservices_2.jpg",
 		"oF": 0,
@@ -3446,6 +3456,7 @@
 	"\/source\/images\/image_registration_step_start.jpg": {
 		"ft": 16384,
 		"iS": 92642,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_start.jpg",
 		"oF": 0,
@@ -3456,6 +3467,7 @@
 	"\/source\/images\/image_registration_step_uvo.jpg": {
 		"ft": 16384,
 		"iS": 68294,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_uvo.jpg",
 		"oF": 0,
@@ -3466,6 +3478,7 @@
 	"\/source\/images\/image_registration_step_uvo_eservices.jpg": {
 		"ft": 16384,
 		"iS": 67866,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/image_registration_step_uvo_eservices.jpg",
 		"oF": 0,
@@ -3553,6 +3566,7 @@
 	"\/source\/images\/img_diagnostic_issue.jpg": {
 		"ft": 16384,
 		"iS": 13041,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/img_diagnostic_issue.jpg",
 		"oF": 0,
@@ -3623,6 +3637,7 @@
 	"\/source\/images\/photo_vin_on_dashboard.jpg": {
 		"ft": 16384,
 		"iS": 46305,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/photo_vin_on_dashboard.jpg",
 		"oF": 0,
@@ -3633,6 +3648,7 @@
 	"\/source\/images\/photo_vin_on_document.jpg": {
 		"ft": 16384,
 		"iS": 37417,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/photo_vin_on_document.jpg",
 		"oF": 0,
@@ -3643,6 +3659,7 @@
 	"\/source\/images\/photo_vin_on_side_door.jpg": {
 		"ft": 16384,
 		"iS": 46660,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/photo_vin_on_side_door.jpg",
 		"oF": 0,
@@ -4001,6 +4018,7 @@
 	"\/source\/images\/pre-login\/niro-image.jpg": {
 		"ft": 16384,
 		"iS": 198581,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/images\/pre-login\/niro-image.jpg",
 		"oF": 0,
@@ -4654,7 +4672,7 @@
 		"oAP": "\/build\/images\/schedules\/peak-hours-icon.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -4819,6 +4837,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/warranty\/selection.png": {
+		"ft": 32768,
+		"iS": 4094,
+		"oA": 0,
+		"oAP": "\/build\/images\/warranty\/selection.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/index.kit": {
 		"cB": 0,
@@ -7054,11 +7083,25 @@
 		"oAP": "\/build\/views\/uvo-faq.html",
 		"oF": 0
 		},
+	"\/source\/views\/warranty-info-2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/warranty-info-2.html",
+		"oF": 0
+		},
 	"\/source\/views\/warranty-info.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/warranty-info.html",
+		"oF": 0
+		},
+	"\/source\/views\/warranty-selection.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/warranty-selection.html",
 		"oF": 0
 		}
 	},
@@ -7071,7 +7114,8 @@
 	"displayValue": "kia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
-	"lastBuiltDate": 540797816
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 545027196
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -8874,6 +8918,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
