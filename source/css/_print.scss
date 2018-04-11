@@ -1,0 +1,128 @@
+@media print {
+
+    * {
+        font-family: TimesNewRoman, "Times New Roman", Times, serif !important;
+    }
+
+    // Sub menu 
+    .page-view-subnav {
+        display: none;
+    }
+
+    // Mobile menu
+    .nav-mobile  {
+        h1 {
+            display: none;
+        }
+    }
+
+    .nav-app-mobile-menu-body-inner {
+        display: none;
+    }
+
+    nav {
+        &.nav-app {
+            // Desktop menu
+            .nav-app-menu {
+                display: none !important;
+            }
+            .logo {
+                display: none;
+            }
+        }
+
+        &.nav-main {
+            .nav-service-text {
+                display: none;
+            }
+            .vehicle-selector {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+
+                .dropdown {
+                    .dropdown-toggle {
+                        .vehicle-selector-current {
+                            
+                            img {
+                                display: none;
+                            }
+                            .title {
+                                display: block !important;
+                                font-size: 10pt;
+                                margin-bottom: 1pt !important;
+                            }
+                            .caret {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .notifications-menu,
+            .account-menu,
+            .nav-app-main {
+                display: none;
+            }
+        }
+    }
+
+    nav.nav-app + nav.nav-main + .nav-mobile + .page-view, nav.nav-app + nav.nav-main + .page-view {
+        padding: 0;
+    }
+    
+    nav.nav-app {
+        &+ nav.nav-main {
+            display: block;
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 24px;
+        }
+    }
+
+    nav.nav-main .dropdown button {
+        padding: 0;
+    }
+    // Footer 
+    footer {
+        display: none !important;
+    }
+
+    .view-reference-material {
+        .page-view-header {
+            padding: 0;
+            h2 {
+                font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
+                margin-bottom: 30pt !important;
+            }
+        }
+        .page-view {
+            .contain {
+                max-width: none;
+            }
+        }
+
+        .page-view-content {
+            .text-content {
+                padding: 0 !important;
+                max-width: none !important;
+                strong {
+                    font-size: 12pt;
+                    margin-bottom: 4pt !important;
+                }
+                p {
+                    font-size: 12pt;
+                    margin-bottom: 30pt !important;
+                }
+                span {
+                    display: block;
+                    font-style: italic;
+                    margin-bottom: 5pt;
+                }
+            }
+        }  
+    }
+}
