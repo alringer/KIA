@@ -620,44 +620,60 @@
     margin-bottom: 5px; }
 
 .tooltip-i {
-  position: relative;
   display: inline-block; }
   .tooltip-i i {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    border: solid 1px #bb1a30;
+    width: 20px;
+    height: 20px;
     font-size: 8px;
     font-family: "Source Sans Pro", sans-serif;
     letter-spacing: normal;
     text-align: center;
     color: #C4172C;
-    line-height: 10px;
+    line-height: 20px;
     font-style: normal;
-    cursor: pointer; }
-    .tooltip-i i + .tooltip .tooltip-arrow {
-      border-bottom-color: #FFF; }
-    .tooltip-i i + .tooltip .tooltip-inner {
-      background: #FFF;
-      background-color: #ffffff;
-      box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
-      padding: 25px 20px 10px;
-      width: 100%;
-      min-width: 750px; }
-      @media (max-width: 750px) {
-        .tooltip-i i + .tooltip .tooltip-inner {
-          min-width: 100vw; } }
-      .tooltip-i i + .tooltip .tooltip-inner strong {
-        display: block;
-        font: bold 10px "KIA", sans-serif;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #969696;
-        margin: 0 0 10px !important;
-        padding: 0; }
-      .tooltip-i i + .tooltip .tooltip-inner em {
-        font: 14px/1.5em "Source Sans Pro", sans-serif;
-        letter-spacing: .6px;
-        color: #2f2f2f;
-        display: block; }
+    cursor: pointer;
+    position: relative;
+    user-select: none; }
+    .tooltip-i i:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      border: solid 1px #bb1a30;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .tooltip-i i + .tooltip {
+      z-index: 100000; }
+      @media (max-width: 767px) {
+        .tooltip-i i + .tooltip {
+          left: 0 !important; } }
+      .tooltip-i i + .tooltip .tooltip-arrow {
+        border-bottom-color: #FFF; }
+      .tooltip-i i + .tooltip .tooltip-inner {
+        background: #FFF;
+        background-color: #ffffff;
+        box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
+        padding: 25px 20px 10px;
+        width: 100%;
+        min-width: 750px; }
+        @media (max-width: 750px) {
+          .tooltip-i i + .tooltip .tooltip-inner {
+            width: 100vw;
+            min-width: 100vw; } }
+        .tooltip-i i + .tooltip .tooltip-inner strong {
+          display: block;
+          font: bold 10px "KIA", sans-serif;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #969696;
+          margin: 0 0 10px !important;
+          padding: 0; }
+        .tooltip-i i + .tooltip .tooltip-inner em {
+          font: 14px/1.5em "Source Sans Pro", sans-serif;
+          letter-spacing: .6px;
+          color: #2f2f2f;
+          display: block; }

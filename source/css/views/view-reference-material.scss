@@ -736,23 +736,38 @@
 }
 
 .tooltip-i {
-  position: relative;
   display: inline-block;
   i {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    border: solid 1px #bb1a30;
+    width: 20px;
+    height: 20px;
     font-size: 8px;
     font-family: $sans;
     letter-spacing: normal;
     text-align: center;
     color: $red;
-    line-height: 10px;
+    line-height: 20px;
     font-style: normal;
     cursor: pointer;
+    position: relative;
+    user-select: none;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      border: solid 1px #bb1a30;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     + .tooltip {
+      z-index: 100000;
+      @media (max-width: $screen-xs-max) {
+        left: 0 !important;
+      }
       .tooltip-arrow {
         border-bottom-color: $white;
       }
@@ -764,6 +779,7 @@
         width: 100%;
         min-width: 750px;
         @media (max-width: 750px) {
+          width: 100vw;
           min-width: 100vw;
         }
         strong {
