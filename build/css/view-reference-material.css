@@ -664,6 +664,13 @@
           .tooltip-i i + .tooltip .tooltip-inner {
             width: 100vw;
             min-width: 100vw; } }
+        .tooltip-i i + .tooltip .tooltip-inner .tooltip-close {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+          display: block;
+          padding: 10px; }
         .tooltip-i i + .tooltip .tooltip-inner strong {
           display: block;
           font: bold 10px "KIA", sans-serif;

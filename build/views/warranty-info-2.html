@@ -34,6 +34,7 @@
     
   <!-- VIEW JS -->
   <script type="text/javascript" src="/scripts/maintenance.js"></script>
+  <script type="text/javascript" src="/scripts/tooltips.js"></script>
   <title>KIA</title>
   </head>
 <body ontouchstart="">
@@ -833,12 +834,33 @@
               Limited Powertrain Warranty Coverage
               <span class="tooltip-i">
                 <i
+                class="special"
                 data-toggle="tooltip"
                 data-placement="bottom"
-                data-title="
+                data-title='
+                <span class="tooltip-close">
+                  <svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g id="Warranty-(Info-popover)-|-Tablet" transform="translate(-719.000000, -509.000000)" stroke="#979797" stroke-width="2">
+                              <g id="My-Car" transform="translate(20.000000, 482.000000)">
+                                  <g id="Popover">
+                                      <g id="Components-/-POIs-/-Car-Location-Popover">
+                                          <g id="Close-Button">
+                                              <g transform="translate(701.000000, 28.000000)">
+                                                  <path d="M6.61111111,0.388888889 L0.197391249,6.80260875" id="Line"></path>
+                                                  <path d="M6.61111111,0.388888889 L0.197391249,6.80260875" id="Line-Copy" transform="translate(3.500000, 3.500000) scale(-1, 1) translate(-3.500000, -3.500000) "></path>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </span>
                 <strong>Limited Powertrain Warranty Coverage</strong>
                 <em>The Limited Powertrain Warranty applies to the original owner. The original owner is defined as the first retail purchaser or lessee of the Kia Vehicle who takes delivery of the Kia Vehicle on its Date of First Service. If the Kia Vehicle was first placed in service as a lease vehicle, and the lessee purchases the vehicle at the end of the lease, the 120 month or 100,000 mile Limited Powertrain Warranty remains in effect. The Limited Powertrain Warranty is not transferable to subsequent owners.</em>
-                "
+                '
                 >i</i>
               </span>
             </strong>
@@ -863,15 +885,6 @@
     </div><!-- /.page-view -->
   </div><!-- /.has-mobile-nav -->
 </div><!-- /.view-maintenance -->
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip({
-      html: true,
-      trigger: "click",
-      viewport: ".text-content",
-    });
-});
-</script>
   <footer>
     <div class="contain">
       <ul class="footer-menu-items">
