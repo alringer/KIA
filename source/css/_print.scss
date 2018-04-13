@@ -129,56 +129,70 @@
 
     
     .page {
+        // .page-view
         &-view {
+            // .page-view-subnav
             &-subnav {
                 display: none;
             }
         }
     }
 
-    .view-reference-material {
-        .page {
-            &-view {
-                .contain {
-                    max-width: none !important;
-                    padding: 48pt 40pt !important;
-                }
 
-                &-header {
-                    padding: 0 !important;
-                    h2 {
-                        font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
-                        a {
-                            display: none !important;
-                        }
-                    }
-                }
-
-                &-content {
-                    h2 {
-                        font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
-                    }
-
-                    .text {
-                        &-content {
-                            padding: 0 !important;
+    .view {
+        // .veiw-reference
+        &-reference {
+            // .veiw-reference-material
+            &-material {
+                // .veiw-reference-material .page
+                .page {
+                    // .veiw-reference-material .page-view
+                    &-view {
+                        // .veiw-reference-material .page-view .contain
+                        .contain {
                             max-width: none !important;
-
-                            strong {
-                                font-size: 12pt;
-                                margin-bottom: 4pt !important;
-                                text-transform: capitalize;
+                            padding: 48pt 40pt !important;
+                        }
+        
+                        // .veiw-reference-material .page-view-header
+                        &-header {
+                            padding: 0 !important;
+                            h2 {
+                                font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
+                                a {
+                                    display: none !important;
+                                }
                             }
-                            p {
-                                font-size: 12pt;
-                                margin-bottom: 30pt !important;
+                        }
+    
+                        // .veiw-reference-material .page-view-content
+                        &-content {
+                            h2 {
+                                font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
                             }
-                            span {
-                                display: block;
-                                font-style: italic;
-                                margin-bottom: 5pt;
-                                &.tooltip-i {
-                                    display: none;
+        
+                            .text {
+                                &-content {
+                                    padding: 0 !important;
+                                    max-width: none !important;
+        
+                                    strong {
+                                        font-size: 12pt;
+                                        margin-bottom: 4pt !important;
+                                        text-transform: capitalize;
+                                    }
+                                    p {
+                                        font-size: 12pt;
+                                        margin-bottom: 30pt !important;
+                                    }
+                                    span {
+                                        display: block;
+                                        font-style: italic;
+                                        margin-bottom: 5pt;
+                                        &.tooltip-i {
+                                            display: none;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -186,13 +200,75 @@
                 }
             }
         }
+        
+        // .view-maintenance
+        &-maintenance {
+            // .view-maintenance-history
+            &-history {
+                // .view-maintenance-history .page
+                .page {
+                    // .view-maintenance-history .page-view
+                    &-view {
+                        // .view-maintenance-history .page-view-header
+                        &-header {
+                            padding-top: 54px !important;
+                            display: block !important;
+    
+                            h2 {
+                                display: block !important;
+                                text-align: left;
+                                // aligns to content
+                                padding-left: 35px;
+                                font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important;
+                            }
+                        }
+                    }
+                }
+
+                // .view-maintenance-history .toggle-collapse
+                .toggle-collapse {
+                    display: none !important;
+                }
+            }
+
+            // .view-maintenance .maintenance-timeline
+            .maintenance-timeline {
+
+                li {
+                    margin-bottom: 3px !important;
+                }
+
+                .timeline-header {
+                    padding-left: 35px !important;
+                }
+
+                .timeline-content .milestone-detail {
+                    padding: 30px 0 0 !important;
+                }
+            }
+            
+        }
+    }
+
+    .milestone {
+        // .milestone-detail
+        &-detail {
+            // .milestone-detail-header
+            &-header {
+                padding: 0 35px;
+            }
+            // .milestone-detail-list 
+            &-list {
+                padding: 0 35px 0 !important;
+            }
+        }
+
     }
 
     // nav long trace padding
     nav.nav-app + nav.nav-main + .nav-mobile + .page-view, nav.nav-app + nav.nav-main + .page-view {
-        padding: 0;
+        padding: 0 !important;
     }
-    
 
     // footer 
     footer {
