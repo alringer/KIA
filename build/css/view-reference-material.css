@@ -648,7 +648,7 @@
       transform: translate(-50%, -50%); }
     .tooltip-i i + .tooltip {
       z-index: 100000; }
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         .tooltip-i i + .tooltip {
           left: 0 !important; } }
       .tooltip-i i + .tooltip .tooltip-arrow {
@@ -661,7 +661,7 @@
         width: 100%;
         min-width: 750px;
         position: relative; }
-        @media (max-width: 750px) {
+        @media (max-width: 991px) {
           .tooltip-i i + .tooltip .tooltip-inner {
             width: 100vw;
             min-width: 100vw; } }
