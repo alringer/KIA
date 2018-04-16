@@ -5292,7 +5292,27 @@ body {
       margin-bottom: 5pt; }
       .view-reference-material .page-view-content .text-content span.tooltip-i {
         display: none; }
+  .view-maintenance-history .page-view-header {
+    padding-top: 54px !important;
+    display: block !important; }
+    .view-maintenance-history .page-view-header h2 {
+      display: block !important;
+      text-align: left;
+      padding-left: 35px;
+      font: 16pt TimesNewRoman, "Times New Roman", Times, serif  !important; }
+  .view-maintenance-history .toggle-collapse {
+    display: none !important; }
+  .view-maintenance .maintenance-timeline li {
+    margin-bottom: 3px !important; }
+  .view-maintenance .maintenance-timeline .timeline-header {
+    padding-left: 35px !important; }
+  .view-maintenance .maintenance-timeline .timeline-content .milestone-detail {
+    padding: 30px 0 0 !important; }
+  .milestone-detail-header {
+    padding: 0 35px; }
+  .milestone-detail-list {
+    padding: 0 35px 0 !important; }
   nav.nav-app + nav.nav-main + .nav-mobile + .page-view, nav.nav-app + nav.nav-main + .page-view {
-    padding: 0; }
+    padding: 0 !important; }
   footer {
     display: none !important; } }
