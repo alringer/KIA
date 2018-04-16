@@ -778,6 +778,7 @@
         padding: 25px 20px 10px;
         width: 100%;
         min-width: 750px;
+        position: relative;
         @media (max-width: 750px) {
           width: 100vw;
           min-width: 100vw;

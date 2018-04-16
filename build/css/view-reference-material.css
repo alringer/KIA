@@ -659,7 +659,8 @@
         box-shadow: 1px 4px 15px 0 rgba(0, 0, 0, 0.23);
         padding: 25px 20px 10px;
         width: 100%;
-        min-width: 750px; }
+        min-width: 750px;
+        position: relative; }
         @media (max-width: 750px) {
           .tooltip-i i + .tooltip .tooltip-inner {
             width: 100vw;
