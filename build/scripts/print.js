@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){window.printRef={elements:{print:$(".print"),timeOffset:300},methods:{_show_all_panels_print:function n(){window.maintenance.methods._expand_all(),setTimeout(function(){window.print()},window.printRef.elements.timeOffset)}}},window.printRef.elements.print.on("click",window.printRef.methods._show_all_panels_print)});
