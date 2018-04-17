@@ -12,6 +12,9 @@
   }
 </style>
 
+# V - 11.0.1
+* KOPE-680 User cannot close warranty tooltip in an intuitive manner
+* KK-832 As a Developer, I need to Implement the Print CSS on the Maintenance History Page
 # V - 11.0.0
 * KK-804 As a user, I need a view to choose my type of ownership
 * KK-805 As a user, I need to be able to view my warranty info
