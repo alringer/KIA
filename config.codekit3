@@ -689,6 +689,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/css\/views\/view-stats.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/view-stats.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/images\/award-1.png": {
 		"ft": 32768,
 		"iS": 8176,
@@ -4841,6 +4854,39 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/source\/images\/stats\/car.png": {
+		"ft": 32768,
+		"iS": 2396,
+		"oA": 0,
+		"oAP": "\/build\/images\/stats\/car.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/stats\/dashes.png": {
+		"ft": 32768,
+		"iS": 9682,
+		"oA": 0,
+		"oAP": "\/build\/images\/stats\/dashes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/images\/stats\/icon_plant.png": {
+		"ft": 32768,
+		"iS": 2576,
+		"oA": 0,
+		"oAP": "\/build\/images\/stats\/icon_plant.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/images\/uvo-logo-black.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -4850,6 +4896,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/source\/images\/warranty\/dashes.png": {
+		"ft": 32768,
+		"iS": 9682,
+		"oA": 0,
+		"oAP": "\/build\/images\/warranty\/dashes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/images\/warranty\/selection.png": {
 		"ft": 32768,
@@ -5172,6 +5229,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/scripts\/software-update.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/source\/scripts\/stats.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/stats.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -7090,6 +7157,13 @@
 		"ft": 2048,
 		"oA": 0,
 		"oAP": "\/build\/views\/software-update-2.html",
+		"oF": 0
+		},
+	"\/source\/views\/stats.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/views\/stats.html",
 		"oF": 0
 		},
 	"\/source\/views\/uvo-availability.kit": {

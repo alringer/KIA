@@ -827,11 +827,13 @@ body.modal-open {
     }
   }
 }
+.modal-about-stats,
 .modal.about-security,
 .modal.about-battery {
   .modal-dialog {
     max-width: 420px;
   }
+  .modal-about-stats,
   .modal-about-security,
   .modal-about-battery {
     width: 100%;

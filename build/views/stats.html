@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html ontouchstart="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta name="format-detection" content="telephone=no">
+
+
+  <!-- GLOBAL VENDOR CSS -->
+  <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/css/global.css?v=3.1.0" />
+  <link rel="stylesheet" href="/css/alerts.css?v=3.1.0" />
+  
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/view-stats.css">
+
+  <!-- GLOBAL VENDOR JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- GLOBAL JS -->
+  <script type="text/javascript" src="/scripts/modals.js"></script>
+  <script type="text/javascript" src="/scripts/forms.js"></script>
+  <script type="text/javascript" src="/scripts/loading.js"></script>
+  <script type="text/javascript" src="/scripts/nav.js"></script>
+  <script type="text/javascript" src="/scripts/alerts.js"></script>
+  <script type="text/javascript" src="/scripts/account-settings.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/vendors/jquery-knob/jquery.knob.min.js"></script>
+  <script type="text/javascript" src="/scripts/stats.js"></script>
+  <title>KIA</title>
+  </head>
+<body ontouchstart="">
+
+<span class="loading-bar"></span>
+
+<div class="alerts">
+  <div class="alert alert-success alert-dismissible">
+    <p>&lt;A success message goes here, replace me!&gt;</p>
+    <div class="alert-actions">
+      <button type="button" class="close">
+        Close
+      </button>
+    </div><!-- /.alert-actions -->
+  </div><!-- /.alert -->
+  <div class="alert alert-failed alert-dismissible">
+    <p>&lt;An error message goes here, replace me!&gt;</p>
+    <div class="alert-actions double-actions">
+      <button type="button" class="close">
+        Retry
+      </button>
+      <button type="button" class="close">
+        Close
+      </button>
+    </div><!-- /.alert-actions -->
+  </div><!-- /.alert -->
+  <div class="alert alert-notification alert-dismissible">
+    <ul class="notification-list">
+      <li>
+        <i class="notification-geofence"></i>
+        <strong>
+          Geo Fence Alert
+        </strong>
+        <em>
+          <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
+        </em>
+        <span>
+          Just now
+        </span>
+      </li>
+    </ul>
+    <span type="button" class="close"></span>
+  </div><!-- /.alert -->
+</div><!-- /.alerts -->
+
+<div class="view-stats">
+  <div class="has-mobile-nav">
+    <nav class="nav-app">
+      <div class="nav-app-main">
+        <div class="nav-app-inner">
+          <a href="/" class="logo white">KIA</a>
+          <ul class="nav-app-menu">
+            <li>
+              <a href="#" class="active">
+                <i class="icon-dashboard">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="11" viewBox="0 0 28 11">
+                    <path fill="#FFF" fill-rule="evenodd" d="M21.248 9.15a2.609 2.609 0 1 1 0-5.218 2.609 2.609 0 0 1 0 5.217m-7.568 0a3.933 3.933 0 1 1 0-7.866 3.933 3.933 0 0 1 0 7.866m-7.611 0a2.608 2.608 0 1 1 .001-5.216 2.608 2.608 0 0 1-.001 5.216M13.68 0C9.422 0 4.132 2.1 1.35 4.882-1.43 7.665.67 10.39 2.43 10.39H24.93c1.76 0 3.86-2.724 1.078-5.507C23.228 2.1 17.94 0 13.68 0"/>
+                  </svg>
+                </i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-remote">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26">
+                      <g fill="#828282" fill-rule="evenodd">
+                          <path d="M14.829 22H8.172a3.012 3.012 0 0 0 2.837 2h.982a3.012 3.012 0 0 0 2.838-2zM6 11c0-1.105.9-2 1.992-2h7.016c1.1 0 1.992.89 1.992 2v13c0 1.105-.9 2-1.992 2H7.992C6.892 26 6 25.11 6 24V11zm2 1v2h7v-2H8zm0 3v2h7v-2H8z"/>
+                          <g fill-rule="nonzero">
+                              <path d="M3.243 6.301a13.957 13.957 0 0 1 8.403-2.796c3.24 0 6.223 1.099 8.597 2.944l-1.013.84a12.681 12.681 0 0 0-7.584-2.503c-2.759 0-5.313.877-7.399 2.368L3.243 6.3z"/>
+                              <path d="M.516 3.988A17.452 17.452 0 0 1 11.646 0c4.328 0 8.289 1.569 11.346 4.169l-1.022.847a16.151 16.151 0 0 0-10.324-3.71A16.15 16.15 0 0 0 1.53 4.848l-1.014-.86z"/>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+                <span>Remote</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-schedules">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19">
+                      <path fill="#828282" fill-rule="evenodd" d="M14 2.574h1c1.105 0 2 .9 2 1.997v11.904c0 1.103-.89 1.997-2 1.997H2c-1.105 0-2-.9-2-1.997V4.57c0-1.103.89-1.997 2-1.997h1v.421a2 2 0 1 0 4 0v-.42h3v.427C10 4.102 10.895 5 12 5c1.112 0 2-.894 2-1.998v-.428zM2 9v1.002c0 .556.447.999.999.999h1.002A.996.996 0 0 0 5 10.001V8.999A.996.996 0 0 0 4.001 8H2.999A.996.996 0 0 0 2 8.999zm5 0v1.002c0 .556.447.999.999.999h1.002a.996.996 0 0 0 .999-.999V8.999A.996.996 0 0 0 9.001 8H7.999A.996.996 0 0 0 7 8.999zm5 0v1.002c0 .556.447.999.999.999h1.002a.996.996 0 0 0 .999-.999V8.999A.996.996 0 0 0 14.001 8h-1.002a.996.996 0 0 0-.999.999zm-10 5v1.002c0 .556.447.999.999.999h1.002A.996.996 0 0 0 5 15.001v-1.002A.996.996 0 0 0 4.001 13H2.999a.996.996 0 0 0-.999.999zm5 0v1.002c0 .556.447.999.999.999h1.002a.996.996 0 0 0 .999-.999v-1.002A.996.996 0 0 0 9.001 13H7.999a.996.996 0 0 0-.999.999zm5 0v1.002c0 .556.447.999.999.999h1.002a.996.996 0 0 0 .999-.999v-1.002a.996.996 0 0 0-.999-.999h-1.002a.996.996 0 0 0-.999.999zM4 1.009a1 1 0 1 1 2 0v1.982a1 1 0 1 1-2 0V1.009zm7 0a1 1 0 1 1 2 0v1.982a1 1 0 1 1-2 0V1.009z"/>
+                  </svg>
+                </i>
+                <span>Schedules</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-locations">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25">
+                      <g fill="none" fill-rule="evenodd">
+                        <path class="transparent" fill="#5C5C5C" d="M15.714 18.776c-1.348 0-6.285-8.327-6.285-12.045C9.429 3.014 12.243 0 15.714 0 19.186 0 22 3.014 22 6.731c0 3.718-4.938 12.045-6.286 12.045zm0-8.502c1.736 0 3.143-1.428 3.143-3.189 0-1.76-1.407-3.188-3.143-3.188-1.735 0-3.143 1.427-3.143 3.188 0 1.761 1.408 3.189 3.143 3.189z"/>
+                        <path fill="#828282" d="M6.286 24.444C4.938 24.444 0 16.117 0 12.4c0-3.717 2.814-6.73 6.286-6.73 3.471 0 6.285 3.013 6.285 6.73 0 3.718-4.937 12.045-6.285 12.045zm0-8.502c1.735 0 3.143-1.427 3.143-3.188 0-1.761-1.408-3.189-3.143-3.189-1.736 0-3.143 1.428-3.143 3.189 0 1.76 1.407 3.188 3.143 3.188z"/>
+                      </g>
+                  </svg>
+                </i>
+                <span>Locations</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-maintence">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20">
+                    <path fill="#828282" fill-rule="nonzero" d="M0 5.585A7.002 7.002 0 0 1 2.552.162a.795.795 0 0 1 1.276.596v3.23c-.017.444.293.827.672 1.129a3.44 3.44 0 0 0 2.143.716h.746a3.44 3.44 0 0 0 2.144-.716c.378-.302.689-.685.672-1.13V.76A.795.795 0 0 1 11.48.164a7.017 7.017 0 0 1 .11 10.75c-.459.4-.837.884-1.112 1.426a5.65 5.65 0 0 0-.591 2.603v4.287H4.147v-4.287a5.648 5.648 0 0 0-.59-2.605 4.725 4.725 0 0 0-1.112-1.427A6.996 6.996 0 0 1 0 5.585z"/>
+                  </svg>
+                </i>
+                <span>Maintenance</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-mycarzone">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                      <path fill="#828282" fill-rule="nonzero" d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zM4 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2.46-3.95a1 1 0 1 0 0 1.414.981.981 0 0 0 0-1.414zM10 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2 10.983a1.93 1.93 0 0 0-.295-1.018L9.99 7.014l-1.72 6c-.156.26-.251.573-.26.907l-.02.071H8V14a2 2 0 1 0 4 0v-.017zm2.95-8.933a.996.996 0 0 0-1.41 0 .981.981 0 0 0 0 1.414 1 1 0 0 0 1.41-1.414zM16 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+                </i>
+                <span>My Car Zone</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-stats">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                      <g fill="none">
+                          <g transform="translate(10 -1)">
+                              <mask id="b" fill="#fff">
+                                  <path id="a" d="M0 0h11v11H0z"/>
+                              </mask>
+                              <path fill="#464646" d="M0 21c-5.523 0-10-4.477-10-10S-5.523 1 0 1s10 4.477 10 10S5.523 21 0 21zm0-3A7 7 0 1 0 0 4a7 7 0 0 0 0 14z" mask="url(#b)"/>
+                          </g>
+                          <path fill="#828282" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10h-3a7 7 0 1 1-7-7V0z"/>
+                      </g>
+                  </svg>
+                </i>
+                <span>Stats</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-reference">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23" viewBox="0 0 17 23">
+                      <path fill="#828282" fill-rule="nonzero" d="M17 21.75V5.286c0-.586-.542-1.06-.542-1.06L12.988.74l-.303-.304C12.211-.041 11.47 0 11.47 0H1.244C.557 0 0 .56 0 1.25V21.75C0 22.44.557 23 1.244 23h14.512c.687 0 1.244-.56 1.244-1.25zM3 14.6c0-.331.213-.6.476-.6h9.047c.264 0 .477.269.477.6v.8c0 .331-.213.6-.477.6H3.476C3.213 16 3 15.731 3 15.4v-.8zm0 3c0-.331.224-.6.501-.6h4.998c.277 0 .501.269.501.6v.8c0 .331-.224.6-.501.6H3.5C3.224 19 3 18.731 3 18.4v-.8zm0-6c0-.332.213-.6.476-.6h9.047c.264 0 .477.268.477.6v.8c0 .33-.213.6-.477.6H3.476C3.213 13 3 12.73 3 12.4v-.8zM15 5h-3V2l3 3z"/>
+                  </svg>
+                </i>
+                <span>Reference Material</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="icon-finance">
+                  <svg width="14px" height="28px" viewBox="0 0 14 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Navigation-/-Links-/-Finance-On" transform="translate(-29.000000, 0.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                              <g transform="translate(8.000000, 0.000000)" id="Shape">
+                                  <path d="M29.4,12.7381333 L29.4,4.4576 C31.0277333,5.04 32.2,6.57813333 32.2,8.4 L35,8.4 C35,5.0176 32.5882667,2.1952 29.4,1.53813333 L29.4,0 L26.6,0 L26.6,1.53813333 C23.4117333,2.18773333 21,5.0176 21,8.4 C21,11.7824 23.4117333,14.6048 26.6,15.2618667 L26.6,23.5424 C24.9722667,22.96 23.8,21.4218667 23.8,19.6 L21,19.6 C21,22.9824 23.4117333,25.8048 26.6,26.4618667 L26.6,28 L29.4,28 L29.4,26.4618667 C32.5882667,25.8122667 35,22.9824 35,19.6 C35,16.2176 32.5882667,13.3952 29.4,12.7381333 Z M23.8,8.4 C23.8,6.57813333 24.9722667,5.04 26.6,4.4576 L26.6,12.3424 C24.9722667,11.76 23.8,10.2218667 23.8,8.4 Z M29.4,23.5424 L29.4,15.6576 C31.0277333,16.24 32.2,17.7781333 32.2,19.6 C32.2,21.4218667 31.0202667,22.96 29.4,23.5424 Z"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+                <span>Finance</span>
+              </a>
+            </li>
+            <li class="more unread">
+              <a href="#" data-action="nav-toggle">
+                <i class="icon-reference">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg width="26px" height="6px" viewBox="0 0 26 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g id="Navigation-/-Secondary-/-Dashboard" transform="translate(-275.000000, -13.000000)" fill="#696969">
+                              <path d="M277.785714,18.5714286 C276.247207,18.5714286 275,17.3242218 275,15.7857143 C275,14.2472068 276.247207,13 277.785714,13 C279.324222,13 280.571429,14.2472068 280.571429,15.7857143 C280.571429,17.3242218 279.324222,18.5714286 277.785714,18.5714286 Z M288,18.5714286 C286.461492,18.5714286 285.214286,17.3242218 285.214286,15.7857143 C285.214286,14.2472068 286.461492,13 288,13 C289.538508,13 290.785714,14.2472068 290.785714,15.7857143 C290.785714,17.3242218 289.538508,18.5714286 288,18.5714286 Z M298.214286,18.5714286 C296.675778,18.5714286 295.428571,17.3242218 295.428571,15.7857143 C295.428571,14.2472068 296.675778,13 298.214286,13 C299.752793,13 301,14.2472068 301,15.7857143 C301,17.3242218 299.752793,18.5714286 298.214286,18.5714286 Z" id="Combined-Shape"></path>
+                          </g>
+                      </g>
+                  </svg>
+                </i>
+                <span>More</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- /.nav-app-main -->
+      <div class="nav-app-mobile-menu">
+        <div class="nav-app-mobile-menu-inner">
+          <div class="nav-app-mobile-menu-default">
+            <div class="nav-app-mobile-menu-header" data-action="vehicle-selector-next">
+              <span class="vehicle-selector-current">
+                <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                <span class="title">My Niro</span>
+                <span class="next"></span>
+              </span><!-- /.vehicle-selector-current -->
+            </div><!-- /.nav-app-mobile-menu-header -->
+            <div class="nav-app-mobile-menu-footer">
+              <i class="icon-notifications unread">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+                    <path fill="#9BA1A9" fill-rule="nonzero" d="M11.499 8.098L0 2.83V.479A.48.48 0 0 1 .48 0h22.04a.48.48 0 0 1 .48.48v2.315L11.499 8.098zm.201.961L23 3.852v11.002a.48.48 0 0 1-.48.48H.48a.479.479 0 0 1-.48-.48V3.885l11.3 5.176a.487.487 0 0 0 .4-.002z"/>
+                </svg>
+              </i>
+            </div><!-- /.nav-app-mobile-menu-footer -->
+            <div class="nav-app-mobile-menu-body">
+              <div class="nav-app-mobile-menu-body-inner">
+                <ul class="nav-list main-nav">
+                  <li>
+                    <a href="#">
+                      <i class="icon-maintenance">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" viewBox="0 0 15 20">
+                            <path fill="#828282" fill-rule="nonzero" d="M0 5.585A7.002 7.002 0 0 1 2.552.162a.795.795 0 0 1 1.276.596v3.23c-.017.444.293.827.672 1.129a3.44 3.44 0 0 0 2.143.716h.746a3.44 3.44 0 0 0 2.144-.716c.378-.302.689-.685.672-1.13V.76A.795.795 0 0 1 11.48.164a7.017 7.017 0 0 1 .11 10.75c-.459.4-.837.884-1.112 1.426a5.65 5.65 0 0 0-.591 2.603v4.287H4.147v-4.287a5.648 5.648 0 0 0-.59-2.605 4.725 4.725 0 0 0-1.112-1.427A6.996 6.996 0 0 1 0 5.585z"/>
+                        </svg>
+                      </i>
+                      <span>Maintenance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-mycarzone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="#828282" fill-rule="nonzero" d="M10 20C4.477 20 0 15.523 0 10S4.477 0 10 0s10 4.477 10 10-4.477 10-10 10zM4 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2.46-3.95a1 1 0 1 0 0 1.414.981.981 0 0 0 0-1.414zM10 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2 10.983a1.93 1.93 0 0 0-.295-1.018L9.99 7.014l-1.72 6c-.156.26-.251.573-.26.907l-.02.071H8V14a2 2 0 1 0 4 0v-.017zm2.95-8.933a.996.996 0 0 0-1.41 0 .981.981 0 0 0 0 1.414 1 1 0 0 0 1.41-1.414zM16 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                        </svg>
+                      </i>
+                      <span>My Car Zone</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-mycarzone">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                            <g fill="none">
+                                <g transform="translate(10 -1)">
+                                    <mask id="b" fill="#fff">
+                                        <path id="a" d="M0 0h11v11H0z"/>
+                                    </mask>
+                                    <path class="lighten" fill="#464646" d="M0 21c-5.523 0-10-4.477-10-10S-5.523 1 0 1s10 4.477 10 10S5.523 21 0 21zm0-3A7 7 0 1 0 0 4a7 7 0 0 0 0 14z" mask="url(#b)"/>
+                                </g>
+                                <path class="darken" fill="#828282" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10h-3a7 7 0 1 1-7-7V0z"/>
+                            </g>
+                        </svg>
+                      </i>
+                      <span>Stats</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-reference">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23" viewBox="0 0 17 23">
+                            <path fill="#828282" fill-rule="nonzero" d="M17 21.75V5.286c0-.586-.542-1.06-.542-1.06L12.988.74l-.303-.304C12.211-.041 11.47 0 11.47 0H1.244C.557 0 0 .56 0 1.25V21.75C0 22.44.557 23 1.244 23h14.512c.687 0 1.244-.56 1.244-1.25zM3 14.6c0-.331.213-.6.476-.6h9.047c.264 0 .477.269.477.6v.8c0 .331-.213.6-.477.6H3.476C3.213 16 3 15.731 3 15.4v-.8zm0 3c0-.331.224-.6.501-.6h4.998c.277 0 .501.269.501.6v.8c0 .331-.224.6-.501.6H3.5C3.224 19 3 18.731 3 18.4v-.8zm0-6c0-.332.213-.6.476-.6h9.047c.264 0 .477.268.477.6v.8c0 .33-.213.6-.477.6H3.476C3.213 13 3 12.73 3 12.4v-.8zM15 5h-3V2l3 3z"/>
+                        </svg>
+                      </i>
+                      <span>Reference Material</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav-list secondary-nav">
+                  <li>
+                    <a href="#">
+                      <i class="icon-awards">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill="#9BA1A9" fill-rule="nonzero" d="M15.972 1.292a.39.39 0 0 0-.035-.175.21.21 0 0 0-.14-.14.237.237 0 0 0-.174-.07H13.18V.315c0-.07-.035-.14-.105-.21A.335.335 0 0 0 12.83 0H3.124a.335.335 0 0 0-.244.105.375.375 0 0 0-.07.21v.593H.33a.237.237 0 0 0-.175.07c-.046.023-.081.07-.104.14a.39.39 0 0 0-.035.174S-.11 5.37.33 6.634c.292.84 1.42 2.025 2.653 2.374.489 1.164 1.804 2.083 3.946 2.758l.07 2.27-2.933.698c-.07 0-.128.035-.175.105a.339.339 0 0 0-.07.174v.908h8.345v-.908a.339.339 0 0 0-.07-.174c-.047-.07-.105-.105-.175-.105l-3.002-.698.07-2.27c2.01-.438 3.336-1.357 3.98-2.758 1.257-.35 2.36-1.533 2.653-2.374.44-1.264.35-5.342.35-5.342zM2.81 7.367c-.536-.186-1.03-.485-1.152-1.013-.17-.736-.1-2.658-.058-3.518a.448.448 0 0 1 .448-.427h.762v4.958zM14.33 6.354c-.134.536-.64.827-1.152 1.013V2.409h.764c.239 0 .436.186.448.424.047.86.124 2.788-.06 3.521z"/>
+                        </svg>
+                      </i>
+                      <span>Awards</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-cog">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                            <path fill="#9BA1A9" fill-rule="nonzero" d="M0 12.503l1.505-.869a7.98 7.98 0 0 1-.3-2.176c0-.741.1-1.458.29-2.138l-1.49-.86a9.48 9.48 0 0 1 1.949-3.327l1.448.836A7.742 7.742 0 0 1 7.06 1.822V.2a9.53 9.53 0 0 1 3.856-.006v1.635a7.744 7.744 0 0 1 3.653 2.158l1.477-.853a9.48 9.48 0 0 1 1.95 3.327l-1.53.883c.186.673.284 1.382.284 2.115 0 .747-.102 1.47-.294 2.154l1.544.891a9.48 9.48 0 0 1-1.944 3.33l-1.515-.874a7.743 7.743 0 0 1-3.625 2.129v1.696a9.531 9.531 0 0 1-3.856-.005v-1.686a7.741 7.741 0 0 1-3.63-2.118l-1.486.858A9.48 9.48 0 0 1 0 12.503zm8.998.139c1.712 0 3.1-1.407 3.1-3.143 0-1.735-1.388-3.142-3.1-3.142-1.713 0-3.101 1.407-3.101 3.142 0 1.736 1.388 3.143 3.1 3.143z"/>
+                        </svg>
+                      </i>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                            <path fill="#A1A6AE" fill-rule="nonzero" d="M.01 15.059c-.258-3.826 3.465-3.847 6.066-5.476V7.842C3.03 5.552 4.506 0 8.04 0c3.446 0 4.95 5.562 1.873 7.842v1.74c2.819 1.682 7.371 1.58 7.074 5.477-.573.793-16.535.991-16.976 0z"/>
+                        </svg>
+                      </i>
+                      <span>Driver Preferences</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-mycarzone">
+                        <i class="icon-power">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                              <path fill="#9BA1A9" fill-rule="nonzero" d="M8.5 16.98c-4.687 0-8.5-3.771-8.5-8.406a8.267 8.267 0 0 1 1.76-5.12 1.207 1.207 0 0 1 1.679-.218 1.176 1.176 0 0 1 .22 1.661 5.935 5.935 0 0 0-1.264 3.676 6.105 6.105 0 1 0 12.21 0 5.935 5.935 0 0 0-1.264-3.676 1.176 1.176 0 0 1 .22-1.66 1.207 1.207 0 0 1 1.68.217A8.269 8.269 0 0 1 17 8.574c0 4.635-3.813 8.405-8.5 8.405zm-.233-6.848a1.19 1.19 0 0 1-1.19-1.19V1.169a1.194 1.194 0 1 1 2.388 0v7.778a1.19 1.19 0 0 1-1.198 1.185z"/>
+                          </svg>
+                        </i>
+                      </i>
+                      <span>Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav-list text-nav">
+                  <li>
+                    <a href="#">
+                      <span>Privacy / Legal</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Contact Us</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Kia.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Other Kia Sites</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>MPG</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Global Disclaimer</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Terms of Service</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nav-list-footer">
+                  <p>
+                    2017® Kia Motors America, Inc
+                  </p>
+                  <ul class="social-icons">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-pinterest-p"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div><!-- /.nav-list-footer -->
+              </div><!-- /.nav-app-mobile-menu-body-inner -->
+            </div><!-- /.nav-app-mobile-menu-body -->
+          </div><!-- /.nav-app-mobile-menu-default -->
+          <div class="nav-app-mobile-menu-vehicle-selector">
+            <span class="back" data-action="vehicle-selector-back">Back</span>
+            <ul class="vehicle-selector-list">
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <!-- <a href="#" class="settings-icon">
+                  <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg>
+                </a> -->
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <!-- <a href="#" class="settings-icon">
+                  <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg>
+                </a> -->
+              </li>
+              <li>
+                <a href="#" class="last-link">
+                   View All Vehicles
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.nav-app-mobile-menu-vehicle-selector -->
+        </div><!-- /.nav-app-mobile-menu-inner -->
+      </div><!-- /.nav-app-mobile-menu -->
+      <div class="nav-app-mobile-menu-close" data-action="nav-toggle"></div>
+    </nav><!-- /.app-nav -->
+    
+    <nav class="nav-main">
+      <div class="contain">
+        <a href="/" class="nav-service-text">
+          <em>
+            Need to service your car?
+          </em>
+          <strong>
+            Make an appointment
+          </strong>
+        </a>
+        <a href="/" class="logo">
+          Kia
+        </a>
+        <div class="vehicle-selector">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="vehicle-selector-current">
+                <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                <span class="title">My Niro</span>
+                <span class="caret"></span>
+              </span><!-- /.vehicle-selector-current -->
+            </button>
+            <ul class="dropdown-menu vehicle-selector-list">
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <a href="#" class="settings-icon">
+                  <!-- <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg> -->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <!-- <a href="#" class="settings-icon">
+                  <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg>
+                </a> -->
+              </li>
+              <li>
+                <a href="#">
+                  <img src="/images/image_selector_1.png" width="65" height="27" title="My Niro" alt="My Niro" />
+                  <span class="car-meta">
+                    <span class="model">2017 K900</span>
+                    <span class="title">Andrews Car</span>
+                  </span><!-- /.car-meta -->
+                </a>
+                <!-- <a href="#" class="settings-icon">
+                  <svg id="6e2e1aa2-3972-48cc-a3d8-42bb0b6343c6" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1.84,8.26a5.34,5.34,0,0,0,.69,1.61l-.87.88c-.39.39-.39.63,0,1l.85.85c.35.35.59.34,1,0l.92-.92a5.34,5.34,0,0,0,1.39.56v1.12c0,.56.17.72.65.72H7.6c.49,0,.65-.17.65-.72V12.16a5.37,5.37,0,0,0,1.39-.56l.94.94c.39.39.62.39,1,0l.85-.85c.34-.34.35-.57,0-1l-.9-.9a5.29,5.29,0,0,0,.7-1.61h1.18c.49,0,.65-.17.65-.72V6.46c0-.53-.14-.72-.65-.72H12.16a5.37,5.37,0,0,0-.56-1.39l.85-.85c.38-.38.41-.61,0-1l-.85-.85c-.34-.34-.59-.34-1,0l-.81.81a5.38,5.38,0,0,0-1.61-.69V.72C8.26.19,8.12,0,7.6,0H6.4c-.49,0-.65.18-.65.72V1.84a5.38,5.38,0,0,0-1.61.69l-.81-.81c-.38-.38-.63-.39-1,0l-.85.86c-.36.36-.33.59,0,1l.85.85a5.5,5.5,0,0,0-.56,1.39H.65c-.48,0-.65.18-.65.72V7.54c0,.56.17.72.65.72ZM4.95,7A2.05,2.05,0,0,1,9.05,7h0A2.05,2.05,0,0,1,4.95,7Z" style="fill: #898989"/>
+                  </svg>
+                </a> -->
+              </li>
+              <li>
+                <a href="#" class="last-link">
+                   View All Vehicles
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.vehicle-selector -->
+        <div class="notifications-menu unread">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+              <i class="icon-notifications unread">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+                    <path fill="#9BA1A9" fill-rule="nonzero" d="M11.499 8.098L0 2.83V.479A.48.48 0 0 1 .48 0h22.04a.48.48 0 0 1 .48.48v2.315L11.499 8.098zm.201.961L23 3.852v11.002a.48.48 0 0 1-.48.48H.48a.479.479 0 0 1-.48-.48V3.885l11.3 5.176a.487.487 0 0 0 .4-.002z"/>
+                </svg>
+              </i>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="notification-list">
+                <li class="unread">
+                  <i class="notification-geofence"></i>
+                  <strong>
+                    Geo Fence Alert
+                  </strong>
+                  <em>
+                    <strong>My Optima</strong> exited <strong>Our Neighborhood</strong> geofence.
+                  </em>
+                  <span>
+                    2 minutes ago
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-maintenance"></i>
+                  <strong>
+                    Maintenance
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
+                  </em>
+                  <span>
+                    4 hours ago
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-unlocked"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> was <strong>unlocked</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-climate"></i>
+                  <strong>
+                    Climate
+                  </strong>
+                  <em>
+                    <strong>My Niro’s climate</strong> was set to <strong>71˚</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-valet"></i>
+                  <strong>
+                    Valet Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> driven outside allowed area. <strong>View Vehicles Location.</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-locked"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>OG Soul</strong> was <strong>locked</strong>
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-maintenance"></i>
+                  <strong>
+                    Maintenance
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> has a <strong>diagnostic issue</strong>: WU Battery Sensor Low RR.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-schedules-climate"></i>
+                  <strong>
+                    Schedules
+                  </strong>
+                  <em>
+                    A <strong>Climate Schedule</strong> will start in <strong>My Niro</strong> in 30 minutes.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-schedules-charge"></i>
+                  <strong>
+                    Schedules
+                  </strong>
+                  <em>
+                    <strong>My Niro’s charge schedule</strong> set to start in <strong>30 minutes</strong> has been <strong>canceled</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-remote"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> has been <strong>started remotely</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-security-panic"></i>
+                  <strong>
+                    Security
+                  </strong>
+                  <em>
+                    <strong>My Niro’s</strong> alarm has been <strong>activated</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:30am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-battery"></i>
+                  <strong>
+                    Battery
+                  </strong>
+                  <em>
+                    <strong>OG Soul’s</strong> battery <strong>started charging</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-curfew"></i>
+                  <strong>
+                    Curfew Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> is being driven past <strong>Tim’s Curfew</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+                <li>
+                  <i class="notification-speed"></i>
+                  <strong>
+                    Speed Alert
+                  </strong>
+                  <em>
+                    <strong>My Niro</strong> exceeded the <strong>speed threshold</strong>.
+                  </em>
+                  <span>
+                    Yesterday at 10:29am
+                  </span>
+                </li>
+              </ul>
+              <div class="menu-anchor">
+                <a href="#">See All Notifications</a>
+              </div><!-- /.menu-anchor -->
+            </div><!-- /.dropdown-menu -->
+          </div>
+        </div><!-- /.notifications-menu -->
+        <div class="account-menu">
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+              Account
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu account-menu-list">
+              <li>
+                <a href="#">
+                  <i class="icon-awards">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#9BA1A9" fill-rule="nonzero" d="M15.972 1.292a.39.39 0 0 0-.035-.175.21.21 0 0 0-.14-.14.237.237 0 0 0-.174-.07H13.18V.315c0-.07-.035-.14-.105-.21A.335.335 0 0 0 12.83 0H3.124a.335.335 0 0 0-.244.105.375.375 0 0 0-.07.21v.593H.33a.237.237 0 0 0-.175.07c-.046.023-.081.07-.104.14a.39.39 0 0 0-.035.174S-.11 5.37.33 6.634c.292.84 1.42 2.025 2.653 2.374.489 1.164 1.804 2.083 3.946 2.758l.07 2.27-2.933.698c-.07 0-.128.035-.175.105a.339.339 0 0 0-.07.174v.908h8.345v-.908a.339.339 0 0 0-.07-.174c-.047-.07-.105-.105-.175-.105l-3.002-.698.07-2.27c2.01-.438 3.336-1.357 3.98-2.758 1.257-.35 2.36-1.533 2.653-2.374.44-1.264.35-5.342.35-5.342zM2.81 7.367c-.536-.186-1.03-.485-1.152-1.013-.17-.736-.1-2.658-.058-3.518a.448.448 0 0 1 .448-.427h.762v4.958zM14.33 6.354c-.134.536-.64.827-1.152 1.013V2.409h.764c.239 0 .436.186.448.424.047.86.124 2.788-.06 3.521z"/>
+                    </svg>
+                  </i>
+                  <span>My Awards</span>
+                </a>
+              </li>
+              <li>
+                <a data-toggle="modal" data-target="#settings">
+                  <i class="icon-cog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                        <path fill="#9BA1A9" fill-rule="nonzero" d="M0 12.503l1.505-.869a7.98 7.98 0 0 1-.3-2.176c0-.741.1-1.458.29-2.138l-1.49-.86a9.48 9.48 0 0 1 1.949-3.327l1.448.836A7.742 7.742 0 0 1 7.06 1.822V.2a9.53 9.53 0 0 1 3.856-.006v1.635a7.744 7.744 0 0 1 3.653 2.158l1.477-.853a9.48 9.48 0 0 1 1.95 3.327l-1.53.883c.186.673.284 1.382.284 2.115 0 .747-.102 1.47-.294 2.154l1.544.891a9.48 9.48 0 0 1-1.944 3.33l-1.515-.874a7.743 7.743 0 0 1-3.625 2.129v1.696a9.531 9.531 0 0 1-3.856-.005v-1.686a7.741 7.741 0 0 1-3.63-2.118l-1.486.858A9.48 9.48 0 0 1 0 12.503zm8.998.139c1.712 0 3.1-1.407 3.1-3.143 0-1.735-1.388-3.142-3.1-3.142-1.713 0-3.101 1.407-3.101 3.142 0 1.736 1.388 3.143 3.1 3.143z"/>
+                    </svg>
+                  </i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                        <path fill="#A1A6AE" fill-rule="nonzero" d="M.01 15.059c-.258-3.826 3.465-3.847 6.066-5.476V7.842C3.03 5.552 4.506 0 8.04 0c3.446 0 4.95 5.562 1.873 7.842v1.74c2.819 1.682 7.371 1.58 7.074 5.477-.573.793-16.535.991-16.976 0z"/>
+                    </svg>
+                  </i>
+                  <span>Driver Preferences</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-power">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                        <path fill="#9BA1A9" fill-rule="nonzero" d="M8.5 16.98c-4.687 0-8.5-3.771-8.5-8.406a8.267 8.267 0 0 1 1.76-5.12 1.207 1.207 0 0 1 1.679-.218 1.176 1.176 0 0 1 .22 1.661 5.935 5.935 0 0 0-1.264 3.676 6.105 6.105 0 1 0 12.21 0 5.935 5.935 0 0 0-1.264-3.676 1.176 1.176 0 0 1 .22-1.66 1.207 1.207 0 0 1 1.68.217A8.269 8.269 0 0 1 17 8.574c0 4.635-3.813 8.405-8.5 8.405zm-.233-6.848a1.19 1.19 0 0 1-1.19-1.19V1.169a1.194 1.194 0 1 1 2.388 0v7.778a1.19 1.19 0 0 1-1.198 1.185z"/>
+                    </svg>
+                  </i>
+                  <span>Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.account-menu -->
+      </div><!-- /.contain -->
+    </nav>
+    
+    
+    <div class="nav-mobile">
+      <div class="contain">
+        <h1>Stats</h1>
+      </div><!-- /.contain -->
+    </div><!-- /.nav-mobile -->
+    <div class="page-view">
+      <div class="menu-with-content">
+        <div class="contain">
+          <div class="stats-header">
+            <select class="selectpicker large">
+               <option value="January">January</option>
+               <option value="February">February</option>
+               <option value="March">March</option>
+               <option value="April">April</option>
+               <option value="May">May</option>
+               <option value="June">June</option>
+               <option value="July">July</option>
+               <option value="August">August</option>
+               <option value="September">September</option>
+               <option value="October">October</option>
+               <option value="November">November</option>
+               <option value="December">December</option>
+            </select>
+            <select class="selectpicker large">
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2016</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1986">1986</option>
+              <option value="1985">1985</option>
+              <option value="1984">1984</option>
+              <option value="1983">1983</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+              <option value="1979">1979</option>
+              <option value="1978">1978</option>
+              <option value="1977">1977</option>
+              <option value="1976">1976</option>
+              <option value="1975">1975</option>
+              <option value="1974">1974</option>
+              <option value="1973">1973</option>
+              <option value="1972">1972</option>
+              <option value="1971">1971</option>
+              <option value="1970">1970</option>
+              <option value="1969">1969</option>
+              <option value="1968">1968</option>
+              <option value="1967">1967</option>
+              <option value="1966">1966</option>
+              <option value="1965">1965</option>
+              <option value="1964">1964</option>
+              <option value="1963">1963</option>
+              <option value="1962">1962</option>
+              <option value="1961">1961</option>
+              <option value="1960">1960</option>
+              <option value="1959">1959</option>
+              <option value="1958">1958</option>
+              <option value="1957">1957</option>
+              <option value="1956">1956</option>
+              <option value="1955">1955</option>
+              <option value="1954">1954</option>
+              <option value="1953">1953</option>
+              <option value="1952">1952</option>
+              <option value="1951">1951</option>
+              <option value="1950">1950</option>
+              <option value="1949">1949</option>
+              <option value="1948">1948</option>
+              <option value="1947">1947</option>
+              <option value="1946">1946</option>
+              <option value="1945">1945</option>
+              <option value="1944">1944</option>
+              <option value="1943">1943</option>
+              <option value="1942">1942</option>
+              <option value="1941">1941</option>
+              <option value="1940">1940</option>
+              <option value="1939">1939</option>
+              <option value="1938">1938</option>
+              <option value="1937">1937</option>
+              <option value="1936">1936</option>
+              <option value="1935">1935</option>
+              <option value="1934">1934</option>
+              <option value="1933">1933</option>
+              <option value="1932">1932</option>
+              <option value="1931">1931</option>
+              <option value="1930">1930</option>
+              <option value="1929">1929</option>
+              <option value="1928">1928</option>
+              <option value="1927">1927</option>
+              <option value="1926">1926</option>
+              <option value="1925">1925</option>
+              <option value="1924">1924</option>
+              <option value="1923">1923</option>
+              <option value="1922">1922</option>
+              <option value="1921">1921</option>
+              <option value="1920">1920</option>
+              <option value="1919">1919</option>
+              <option value="1918">1918</option>
+              <option value="1917">1917</option>
+              <option value="1916">1916</option>
+              <option value="1915">1915</option>
+              <option value="1914">1914</option>
+              <option value="1913">1913</option>
+              <option value="1912">1912</option>
+              <option value="1911">1911</option>
+              <option value="1910">1910</option>
+              <option value="1909">1909</option>
+              <option value="1908">1908</option>
+              <option value="1907">1907</option>
+              <option value="1906">1906</option>
+              <option value="1905">1905</option>
+              <option value="1904">1904</option>
+              <option value="1903">1903</option>
+              <option value="1902">1902</option>
+              <option value="1901">1901</option>
+              <option value="1900">1900</option>
+            </select>
+          </div><!-- /.stats-header -->
+          <div class="stats-box">
+            <i class="open-info" data-toggle="modal" data-target="#about-stats">i</i>
+            <div class="stats-main">
+              <div class="stats-knob">
+                <div class="stats-title">
+                  Driving Score
+                </div>
+                <div class="stats-value">
+                  0
+                </div>
+                <div class="stats-subtitle">
+                  of 100
+                </div>
+                <div class="ui-dial-handle">
+                  <div class="car">
+                    <div class="car-rotate">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="stats-canvas">
+                  <input type="hidden" class="stats" data-value="93" value="1" />
+                </div>
+              </div>
+            </div>
+            <div class="stats-icon">
+              <img src="/images/stats/icon_plant.png" alt="Stats Good">
+            </div>
+            <div class="stats-footer">
+              <div class="row">
+                <div class="col-xs-4">
+                  <div class="stats-meta">
+                    <strong>27,998</strong>
+                    <em>miles</em>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="stats-meta">
+                    <strong>45</strong>
+                    <em>avg mph</em>
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                  <div class="stats-meta">
+                    <strong>54:28</strong>
+                    <em>hours</em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.contain -->
+      </div><!-- /.menu-with-content -->
+    </div><!-- /.page-view -->
+  </div><!-- /.has-mobile-nav -->
+</div><!-- /.view-maintenance -->
+<div class="modal fade modal-about-stats" id="about-stats" tabindex="-1" role="dialog" aria-labelledby="about" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <span class="icon-close" data-dismiss="modal"></span>
+      <div class="modal-body">
+        <div class="modal-about-stats">
+          <strong>About Stats</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.:</h2>
+          <ol>
+            <li>Lorem ipsum dolor 1</li>
+            <li>Lorem ipsum dolor 2</li>
+            <li>Lorem ipsum dolor 3</li>
+            <li>Lorem ipsum dolor 4</li>
+            <li>Lorem ipsum dolor 5</li>
+          </ol>
+        </div><!-- /.modal-delete -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal#about-climate -->
+  <footer>
+    <div class="contain">
+      <ul class="footer-menu-items">
+        <li>
+          <a href="#">
+            Privacy / Legal
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Kia.com
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Other Kia Sites
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            MPG
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Global Disclaimer
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Terms of Service
+          </a>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2017 Kia Motors America, Inc.</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest-p"></i>
+            </a>
+          </li>
+        </ul><!-- /.social-icons -->
+      </div><!-- /.footer-bottom -->
+    </div><!-- /.contain -->
+  </footer>
+</body>
+</html>
+

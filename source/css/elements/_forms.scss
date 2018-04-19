@@ -406,6 +406,24 @@ form {
       line-height: 38px;
     }
   }
+  &.large {
+    height: 63px;
+    button {
+      border: none;
+      font: 100 18px/63px $kia;
+      letter-spacing: .8px;
+      height: 63px;
+      &:focus {
+        outline: none !important;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      button {
+        height: 47px;
+        font: 600 14px/47px $kia;
+      }
+    }
+  }
 }
 
 .checkbox-group {

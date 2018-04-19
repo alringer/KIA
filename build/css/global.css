@@ -852,12 +852,18 @@ body.modal-open {
             border: none;
             margin-top: 10px; } }
 
+.modal-about-stats .modal-dialog,
 .modal.about-security .modal-dialog,
 .modal.about-battery .modal-dialog {
   max-width: 420px; }
 
+.modal-about-stats .modal-about-stats,
+.modal-about-stats .modal-about-security,
+.modal-about-stats .modal-about-battery,
+.modal.about-security .modal-about-stats,
 .modal.about-security .modal-about-security,
 .modal.about-security .modal-about-battery,
+.modal.about-battery .modal-about-stats,
 .modal.about-battery .modal-about-security,
 .modal.about-battery .modal-about-battery {
   width: 100%;
@@ -865,8 +871,13 @@ body.modal-open {
   margin: 0 auto;
   padding: 28px 40px 40px;
   text-align: center; }
+  .modal-about-stats .modal-about-stats strong,
+  .modal-about-stats .modal-about-security strong,
+  .modal-about-stats .modal-about-battery strong,
+  .modal.about-security .modal-about-stats strong,
   .modal.about-security .modal-about-security strong,
   .modal.about-security .modal-about-battery strong,
+  .modal.about-battery .modal-about-stats strong,
   .modal.about-battery .modal-about-security strong,
   .modal.about-battery .modal-about-battery strong {
     font-size: 16px;
@@ -878,8 +889,13 @@ body.modal-open {
     font-family: "KIA", sans-serif;
     font-weight: 500;
     text-align: center; }
+  .modal-about-stats .modal-about-stats h2,
+  .modal-about-stats .modal-about-security h2,
+  .modal-about-stats .modal-about-battery h2,
+  .modal.about-security .modal-about-stats h2,
   .modal.about-security .modal-about-security h2,
   .modal.about-security .modal-about-battery h2,
+  .modal.about-battery .modal-about-stats h2,
   .modal.about-battery .modal-about-security h2,
   .modal.about-battery .modal-about-battery h2 {
     text-align: left;
@@ -887,28 +903,53 @@ body.modal-open {
     letter-spacing: .3px;
     text-transform: uppercase;
     margin-bottom: 10px; }
+  .modal-about-stats .modal-about-stats p,
+  .modal-about-stats .modal-about-security p,
+  .modal-about-stats .modal-about-battery p,
+  .modal.about-security .modal-about-stats p,
   .modal.about-security .modal-about-security p,
   .modal.about-security .modal-about-battery p,
+  .modal.about-battery .modal-about-stats p,
   .modal.about-battery .modal-about-security p,
   .modal.about-battery .modal-about-battery p {
     font: 14px/1.5em "Source Sans Pro", sans-serif;
     letter-spacing: .6px;
     margin-bottom: 30px;
     text-align: left; }
+  .modal-about-stats .modal-about-stats ol,
+  .modal-about-stats .modal-about-stats ul,
+  .modal-about-stats .modal-about-security ol,
+  .modal-about-stats .modal-about-security ul,
+  .modal-about-stats .modal-about-battery ol,
+  .modal-about-stats .modal-about-battery ul,
+  .modal.about-security .modal-about-stats ol,
+  .modal.about-security .modal-about-stats ul,
   .modal.about-security .modal-about-security ol,
   .modal.about-security .modal-about-security ul,
   .modal.about-security .modal-about-battery ol,
   .modal.about-security .modal-about-battery ul,
+  .modal.about-battery .modal-about-stats ol,
+  .modal.about-battery .modal-about-stats ul,
   .modal.about-battery .modal-about-security ol,
   .modal.about-battery .modal-about-security ul,
   .modal.about-battery .modal-about-battery ol,
   .modal.about-battery .modal-about-battery ul {
     text-align: left;
     margin-bottom: 30px; }
+    .modal-about-stats .modal-about-stats ol li,
+    .modal-about-stats .modal-about-stats ul li,
+    .modal-about-stats .modal-about-security ol li,
+    .modal-about-stats .modal-about-security ul li,
+    .modal-about-stats .modal-about-battery ol li,
+    .modal-about-stats .modal-about-battery ul li,
+    .modal.about-security .modal-about-stats ol li,
+    .modal.about-security .modal-about-stats ul li,
     .modal.about-security .modal-about-security ol li,
     .modal.about-security .modal-about-security ul li,
     .modal.about-security .modal-about-battery ol li,
     .modal.about-security .modal-about-battery ul li,
+    .modal.about-battery .modal-about-stats ol li,
+    .modal.about-battery .modal-about-stats ul li,
     .modal.about-battery .modal-about-security ol li,
     .modal.about-battery .modal-about-security ul li,
     .modal.about-battery .modal-about-battery ol li,
@@ -3560,6 +3601,19 @@ form .form-fields {
   .bootstrap-select.small button {
     height: 40px;
     line-height: 38px; }
+  .bootstrap-select.large {
+    height: 63px; }
+    .bootstrap-select.large button {
+      border: none;
+      font: 100 18px/63px "KIA", sans-serif;
+      letter-spacing: .8px;
+      height: 63px; }
+      .bootstrap-select.large button:focus {
+        outline: none !important; }
+    @media (max-width: 767px) {
+      .bootstrap-select.large button {
+        height: 47px;
+        font: 600 14px/47px "KIA", sans-serif; } }
 
 .checkbox-group .checkbox-round {
   margin: 0 4px; }
