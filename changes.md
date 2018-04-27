@@ -12,6 +12,8 @@
   }
 </style>
 
+# V - 12.0.0
+* KK-833 As a user, I need to view my Stats
 # V - 11.0.1
 * KOPE-680 User cannot close warranty tooltip in an intuitive manner
 * KK-832 As a Developer, I need to Implement the Print CSS on the Maintenance History Page
