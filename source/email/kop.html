@@ -11,10 +11,9 @@
 
     <style>
 
-        @import url(http://fonts.googleapis.com/css?family=Roboto:300); /*Calling our web font*/
-
         /* Some resets and issue fixes */
-            body{ width:100% !important; -ms-text-size-adjust:100%; margin:0; padding:0;}     
+            body{ width:100% !important; -ms-text-size-adjust:100%; margin:0; padding:0;}
+            a {color:#bb1a30;text-decoration:none;}     
             table td {border-collapse: collapse;}
             .Were-excited-to-tell {
                 font-size: 30px;
@@ -23,6 +22,7 @@
             }
             .Our-mission-is-to-co {
                 padding: 60px 0 103px 60px;
+                line-height: 1.64;
             }
             .Your-new-Kia-Owners {
                 padding: 45px 101px 0 60px;
@@ -33,20 +33,89 @@
             }
             .To-make-it-easy-cur {
                 padding: 6px 101px 0 60px;
+                line-height: 1.64;
             }
             .uvo_luxe_prestige-club_1--kia-1920x-jpg-copy {
                 padding: 60px 0 0 0;
             }
+            .Save-time-money-section-container {
+                padding: 55px 38px 55px 38px;
+            }
+            .No-stress-simplified-finances-images {
+                padding: 55px 0 0 0;
+            }
+            .Save-time-money-section-text {
+                padding: 10px 0 10px 0;
+                line-height: 1.64;
+            }
+            .Get-charged-up-section-rows {
+                padding: 50px 40px 0 40px;
+            }
+            .Red-spacer {
+                padding: 55px 0 20px 40px;
+            }
+            .And-of-course-row {
+                padding: 0 40px 0 40px;
+            }
+            .Learn-more-button {
+                padding: 30px 0 30px 0;
+            }
+            .Remote-features-text {
+                padding: 31px 0 0 0;
+            }
+            .Kia-Motors-text {
+                padding: 41px 0 55px 0;
+            }
         /* End reset */
+        
+        /* Outlook.com Targeting */
+            [owa] .desktop-hide {
+                display:none!important;
+                max-height:0px;
+                overflow:hidden;
+            }
 
-        @media screen and (min-width: 630px){
+        @media screen and (min-width: 629px) {
+            /* @supports (-webkit-overflow-scrolling:touch) and (color:#ffff) {
+                .wrapper {
+                    min-height: 3188px;
+                }
+            }
+            @supports (padding-left:constant(safe-area-inset-left)) {
+                .wrapper {
+                    min-height: 3188px;
+                }
+            }
+            @supports (padding-left:env(safe-area-inset-left)) {
+                .wrapper {
+                    min-height: 3188px;
+                }
+            } */
+
+             @media screen yahoo {     
+                .desktop-hide {
+                    display:none!important;
+                    max-height:0px;
+                    overflow:hidden;
+                }
+            }
+
             /* Hide stuff */
-            *[class="desktop-hide"] {display:none !important;}   
+            *[class="desktop-hide"] {
+                display:none!important;
+                max-height:0px;
+                overflow:hidden;
+            }           
+            .desktop-hide {
+                display:none!important;
+                max-height:0px;
+                overflow:hidden;
+            }
         }
    
    
         /* These are our tablet/medium screen media queries */
-        @media screen and (max-width: 630px){
+        @media screen and (max-width: 630px) {
 
             .Were-excited-to-tell {
                 font-size: 20px;
@@ -67,15 +136,54 @@
             .uvo_luxe_prestige-club_1--kia-1920x-jpg-copy {
                 padding: 49px 0 0 0;
             }
+            .Save-time-money-section-container {
+                padding: 35px 15px 35px 15px;
+            }
+            .Save-money-image {
+                padding: 35px 0 0 0;
+            }
+            .No-stress-simplified-finances-images {
+                padding: 35px 0 0 0;
+            }
+            .Get-charged-up-section-rows {
+                padding: 50px 30px 0 30px;
+            }
+            .Get-charged-up-section-images {
+                padding: 0 0 24px 0;
+            }
+            .Red-spacer {
+                padding: 55px 0 33px 30px;
+            }
+            .And-of-course-row {
+                padding: 0 30px 0 30px;
+            }
+            .Learn-more-button {
+                padding: 30px 0 65px 0;
+            }
+            .Remote-features-text {
+                padding: 31px 26px 0 26px;
+            }
+            .Kia-Motors-text {
+                padding: 28px 26px 37px 26px;
+            }
 
             /* Display block allows us to stack elements */                      
             *[class="mobile-column"] {display: block;} 
 
             /* Some more stacking elements */
-            *[class="mob-column"] {float: none !important;width: 100% !important;}     
+            *[class="mob-column"] {float: none !important;width: 100% !important;}   
 
             /* Hide stuff */
-            *[class="mobile-hide"] {display:none !important;}          
+             *[class="mobile-hide"] {
+                display:none!important;
+                max-height:0px;
+                overflow:hidden;             
+             }         
+            .mobile-hide {
+                display:none!important;
+                max-height:0px;
+                overflow:hidden;
+            } 
 
             /* This sets elements to 100% width and fixes the height issues too, a god send */
             *[class="100p"] {width:100% !important; height:auto !important;}                    
@@ -83,7 +191,7 @@
             /* For the 2x2 stack */         
             *[class="condensed"] {
                 /* padding-bottom:40px !important;  */
-                display: block;
+                display:block;
             }
 
             /* Centers content on mobile */
@@ -113,24 +221,26 @@
 <body style="padding:0; margin:0">
 
     <!-- 100% WRAPPER -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="wrapper">
         <tr>
             <td align="center">
 
                 <!-- LOGO HEADER -->
                 <table width="768" border="0" cellspacing="0" cellpadding="20" bgcolor="#FFFFFF" class="100p">
                     <tr>
-                        <td width="283" align="center" class="mobile-hide">
-                            <img src="images/kia-uvo-logos.jpg" border="0" style="display:block;" class="mobile-hide"/>
+                        <td width="202" height="58" align="center" class="mobile-hide" style="max-width: 202px; max-height: 58px;">
+                            <img width="202" height="58" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-uvo-logos%402x.png" border="0" style="display:block; max-width: 202px; max-height: 58px;" class="mobile-hide"/>
                         </td>
-                        <td align="center" class="desktop-hide">
-                            <img src="images/kia-logo@2x.png" border="0" style="display:block; width: 112px;"/>
+                        <!--[if !mso]><!-->
+                        <td width="112" height="57" align="center" class="desktop-hide">
+                            <img width="112" height="57" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-logo%402x.png" border="0" style="display:block; max-width: 112px; max-height: 57px;"/>
                         </td>
+                        <!--<![endif]-->
                     </tr>
                 </table>
 
                 <!-- LEARN MORE SECTION -->
-                <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p" bgcolor="#FFFFFF" style="background-image: linear-gradient(203deg, #fcfcfc, #eeeeee);">
+                <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p" bgcolor="#f7f7f7" style="background-image: url('https://s3-us-west-2.amazonaws.com/kia-email-templates/images/gradient-bg.png');">
                     <tr>
                         <td align="center" valign="top">
                             <table width="656" border="0" cellspacing="0" cellpadding="0" class="100p">
@@ -147,7 +257,7 @@
                             <table width="768" border="0" cellpadding="0" cellspacing="0" class="100p">
                                 <tr>
                                     <td align="left" class="condensed" valign="top">
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="384">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="380">
                                             <tr>
                                                 <td valign="top" align="center">
                                                     <table border="0" cellspacing="0" cellpadding="0">
@@ -164,12 +274,14 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="380">
                                             <tr>
                                                 <td valign="top" align="center" style="padding: 33px 0;">
                                                     <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="center" style="border: 1px solid black; width: 295px; height: 170px">Image Placeholder</td>
+                                                            <td width="295" height="170" align="center" style="max-width: 295px; max-height: 170px">
+                                                                <img width="295" height="170" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/header-img%402x.png" border="0" style="max-width: 295px; max-height: 170px"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -196,7 +308,7 @@
                 </table>
                 <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="100p">
                     <tr>
-                        <td align="center" style="font-size:18px; color:#000000; text-align: left;" class="Relax-there-is-no">
+                        <td align="center" style="font-size:18px; color:#000000; text-align: left; font-weight: bold;" class="Relax-there-is-no">
                             <font face="'Trebuchet MS', Arial, sans-serif">
                                 <span>
                                     Relax... There Is No Action Required
@@ -219,7 +331,7 @@
                 <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p">
                     <tr>
                         <td class="uvo_luxe_prestige-club_1--kia-1920x-jpg-copy">
-                            <img src="images/uvo-luxe-prestige-club-1-kia-1920-x-jpg-copy@3x.png" border="0" width="768" style="display:block;width:100%;max-width:768px"/>
+                            <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/uvo-luxe-prestige-club-1-kia-1920-x-jpg-copy%402x.png" border="0" width="768" style="display:block;width:100%;max-width:768px"/>
                         </td>
                     </tr>
                     <tr>
@@ -230,16 +342,18 @@
                 <!-- SAVE TIME, MONEY SECTION -->
                 <table width="700" border="0" cellspacing="0" cellpadding="0" class="100p" bgcolor="#f7f7f7">
                     <tr>
-                        <td align="center" valign="top">
+                        <td align="center" valign="top" class="Save-time-money-section-container">
                             <table border="0" cellpadding="10" cellspacing="0" class="100p" width="700">
                                 <tr>
                                     <td align="center" class="condensed" valign="top">
                                         <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
                                             <tr>
                                                 <td valign="top" align="center">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="center" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="82" height="64" align="center" style="max-width: 82px; max-height: 64px;">
+                                                                <img width="82" height="64" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/save-time-icon%402x.png" border="0" style="max-width: 82px; max-height: 64px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -254,7 +368,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;">
+                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Schedule your dealer maintenance appointments online with no callback necessary from participating dealers.
@@ -265,9 +379,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <span>
-                                                            LEARN MORE
-                                                        </span>
+                                                        <a href="#"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -275,9 +387,11 @@
                                         <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
                                             <tr>
                                                 <td valign="top" align="center">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="center" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="71" height="68" align="center" style="max-width: 71px; max-height: 68px;" class="Save-money-image">
+                                                                <img width="71" height="68" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/save-money-icon%402x.png" border="0" style="max-width: 71px; max-height: 68px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -292,7 +406,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;">
+                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Receive service and maintenance coupons from participating dealers.
@@ -303,9 +417,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <span>
-                                                            LEARN MORE
-                                                        </span>
+                                                        <a href="#"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -317,9 +429,11 @@
                                         <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
                                             <tr>
                                                 <td valign="top" align="center">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="center" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="68" height="85" align="center" style="max-width: 68px; max-height: 85px;" class="No-stress-simplified-finances-images">
+                                                                <img width="68" height="85" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/no-stress-icon%402x.png" border="0" style="max-width: 68px; max-height: 85px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -334,7 +448,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;">
+                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Retrieve your Kia manuals, warranty info, helpful videos and more, all in one place with just a few clicks. Spend less time searching and more time dong things you love.
@@ -345,9 +459,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <span>
-                                                            LEARN MORE
-                                                        </span>
+                                                        <a href="#"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -355,9 +467,11 @@
                                         <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
                                             <tr>
                                                 <td valign="top" align="center">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="center" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="90" height="75" align="center" style="max-width: 90px; max-height: 75px;" class="No-stress-simplified-finances-images">
+                                                                <img width="90" height="75" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/simplified-process-icon%402x.png" border="0" style="max-width: 90px; max-height: 75px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -372,7 +486,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;">
+                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Did you finance your Kia with Kia Motors Finance? Great! View your previous and upcoming payments, and more directly from your Kia Owner's Portal.
@@ -383,9 +497,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <span>
-                                                            LEARN MORE
-                                                        </span>
+                                                        <a href="#"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -401,26 +513,28 @@
                 <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p" bgcolor="#FFFFFF">
                     <tr>
                         <td align="center" valign="top">
-                            <table border="0" cellpadding="10" cellspacing="0" class="100p" width="600">
+                            <table border="0" cellpadding="0" cellspacing="0" class="100p" width="768">
                                 <tr>
-                                    <td align="center" class="condensed" valign="top">
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                    <td align="center" class="Get-charged-up-section-rows condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="151">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="151" height="117" align="left" style="max-width: 151px; max-height: 117px;" class="Get-charged-up-section-images">
+                                                                <img width="151" height="117" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/bitmap%402x+3.png" border="0" style="max-width: 151px; max-height: 117px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="510">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" style="font-size:18px; color:#000000;">
+                                                            <td align="left" style="font-size:18px; color:#000000; padding: 0 0 11px 0;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         Get Charged Up
@@ -429,7 +543,7 @@
                                                             </td>                                                        
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="font-size:14px; color:#444444;">
+                                                            <td align="left" style="font-size:14px; color:#444444; line-height: 1.64;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         We've made it easier to find charging stations near the places you love to visit. You'll also be able to save charging stations in your My POIs list. This lets you send charge stations to your navigation system for turn-by-turn directions.
@@ -441,23 +555,29 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="Get-charged-up-section-rows condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="151">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="157" height="121" align="left" style="max-width: 157px; max-height: 121px;" class="Get-charged-up-section-images">
+                                                                <img width="157" height="121" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/bitmap_2%402x.png" border="0" style="max-width: 157px; max-height: 121px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="510">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" style="font-size:18px; color:#000000;">
+                                                            <td align="left" style="font-size:18px; color:#000000; padding: 0 0 11px 0;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         Set and Forget
@@ -466,7 +586,7 @@
                                                             </td>                                                        
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="font-size:14px; color:#444444;">
+                                                            <td align="left" style="font-size:14px; color:#444444; line-height: 1.64;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         We made it easier to create and manage your charge and climate schedules by putting the controls all in one place. Enjoy the perfect cabin temperature and a charged up battery for what's ahead!
@@ -478,23 +598,29 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="Get-charged-up-section-rows condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="151">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="157" height="121" align="left" style="max-width: 157px; max-height: 121px;" class="Get-charged-up-section-images">
+                                                                <img width="157" height="121" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/bitmap%402x.png" border="0" style="max-width: 157px; max-height: 121px"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="510">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" style="font-size:18px; color:#000000;">
+                                                            <td align="left" style="font-size:18px; color:#000000; padding: 0 0 11px 0;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         Stay in the Know
@@ -503,7 +629,7 @@
                                                             </td>                                                        
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="font-size:14px; color:#444444;">
+                                                            <td align="left" style="font-size:14px; color:#444444; line-height: 1.64;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         We've made it easier to find notifications by conveniently storing them all in one place.
@@ -515,23 +641,29 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="Get-charged-up-section-rows condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="151">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="157" height="121" align="left" style="max-width: 157px; max-height: 121px;" class="Get-charged-up-section-images">
+                                                                <img width="157" height="121" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/bitmap_3%402x.png" border="0" style="max-width: 157px; max-height: 121px;"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="510">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" style="font-size:18px; color:#000000;">
+                                                            <td align="left" style="font-size:18px; color:#000000; padding: 0 0 11px 0;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         Simplified Parental Controls
@@ -540,7 +672,7 @@
                                                             </td>                                                        
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="font-size:14px; color:#444444;">
+                                                            <td align="left" style="font-size:14px; color:#444444; line-height: 1.64;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         We've streamlined curfews, speed limits, and geo fences (for navigation-equipped vehicles only) in My Car Zone. No more excuses from your teenage drivers.
@@ -552,23 +684,29 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="Get-charged-up-section-rows condensed" valign="top">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="151">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" height="10" style="text-align: left;">Image Placeholder</td>
+                                                            <td width="157" height="141" align="left" style="max-width: 157px; max-height: 141px;" class="Get-charged-up-section-images">
+                                                                <img width="157" height="141" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/bitmap%402x+2.png" border="0" style="max-width: 157px; max-height: 141px"/>
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="290">
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="510">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" style="font-size:18px; color:#000000;">
+                                                            <td align="left" style="font-size:18px; color:#000000; padding: 0 0 11px 0;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         Export Your Trip Data
@@ -577,7 +715,7 @@
                                                             </td>                                                        
                                                         </tr>
                                                         <tr>
-                                                            <td align="left" style="font-size:14px; color:#444444;">
+                                                            <td align="left" style="font-size:14px; color:#444444; line-height: 1.64;">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
                                                                     <span>
                                                                         Do you drive for work and get reimbursed by your employer? if so, we made it easy for you to export your trip data including trip miles and start and finish points.
@@ -589,102 +727,134 @@
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="768">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="left" valign="top" class="Red-spacer">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="70">
                                             <tr>
                                                 <td valign="top" align="left">
-                                                    <table border="0" cellspacing="0" cellpadding="15">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="left" style="font-size:18px; color:#000000;">
-                                                                <font face="'Trebuchet MS', Arial, sans-serif">
-                                                                    <span>
-                                                                        And Of Course There's More
-                                                                    </span>
-                                                                </font>
-                                                            </td>                                                        
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="left" style="font-size:14px; color:#444444;">
-                                                                <font face="'Trebuchet MS', Arial, sans-serif">
-                                                                    <span>
-                                                                        There are more benefits that you're going to love when the new Kia Owner's Portal is ready, but you'll just have to hang tight. If it's any help, we've got that night-before-a-big-vacation feeling, too!
-                                                                    </span>
-                                                                </font>
-                                                            </td>                                                        
+                                                            <td width="70" height="2" align="left" style="background-color: #c4172c; max-width: 70px; max-height: 2px;"></td>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="209" height="40">
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td valign="top" align="left" class="And-of-course-row">
+                                        <table border="0" cellspacing="0" cellpadding="0">
                                             <tr>
-                                                <td align="center" style="font-size:11px; background-color:#c4172c; color: #FFFFFF">
+                                                <td align="left" style="font-size:18px; color:#000000; padding: 0 0 11px 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <div>
-                                                            <span>
-                                                                Learn More
-                                                            </span>
-                                                        </div>
+                                                        <span>
+                                                            And Of Course There's More
+                                                        </span>
+                                                    </font>
+                                                </td>                                                        
+                                            </tr>
+                                            <tr>
+                                                <td align="left" style="font-size:14px; color:#444444; line-height: 1.64;">
+                                                    <font face="'Trebuchet MS', Arial, sans-serif">
+                                                        <span>
+                                                            There are more benefits that you're going to love when the new Kia Owner's Portal is ready, but you'll just have to hang tight. If it's any help, we've got that night-before-a-big-vacation feeling, too!
+                                                        </span>
                                                     </font>
                                                 </td>                                                        
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td valign="top" align="center" class="Learn-more-button">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" style="font-size:11px; background-color:#c4172c; color: #FFFFFF" width="209" height="40" style="min-width: 209px; min-height: 40px;">
+                                                    <font face="'Trebuchet MS', Arial, sans-serif">
+                                                        <a href="#" style="background-color:#c4172c;color:#ffffff;display:inline-block;font-size:11px;line-height:40px;text-align:center;text-decoration:none;min-width:209px;min-height:40px;-webkit-text-size-adjust:none;">LEARN MORE</a>
+                                                    </font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>                                                        
+                                </tr>
                             </table>
-                        </td>                 
+                        </td>
                     </tr>
                 </table>
 
                 <!-- FOOTER -->
-                <table width="768" border="0" cellspacing="0" cellpadding="20" bgcolor="#2f2f2f" class="100p">
+                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
                     <tr>
-                        <td align="center" height="35.8" style="color: #FFFFFF;">Image Placeholder</td>
-                    </tr>
-                    <tr>
-                        <td align="center" style="font-size:10px; color:#FFFFFF;">
-                            <font face="'Trebuchet MS', Arial, sans-serif">
-                                <span style="display:inline;">
-                                    FOLLOW US ONLINE
-                                </span>
-                                <div style="display:inline;">
-                                    fb icon
-                                </div>
-                                <div style="display:inline;">
-                                    tw icon
-                                </div>
-                                <div style="display:inline;">
-                                    ig icon
-                                </div>
-                                <div style="display:inline;">
-                                    yt icon
-                                </div>
-                                <div style="display:inline;">
-                                    pin icon
-                                </div>
-                            </font>
+                        <td width="70" height="36" align="center" style="max-width: 70px; max-height: 36px; padding: 31px 0 0 0;">
+                            <img width="70" height="36" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-logo-white%402x.png" border="0" style="max-width: 70px; max-height: 36px;"/>
                         </td>
                     </tr>
+                </table>
+                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
                     <tr>
-                        <td align="center" style="font-size:12px; color:#797979;">
+                        <td align="center" style="padding: 28px 0 0 0;">
+                            <table width="265" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f">
+                                <tr>
+                                    <td align="center" style="font-size:10px; color:#FFFFFF; width: 97px; height: 21px;">
+                                        <font face="'Trebuchet MS', Arial, sans-serif">
+                                            <span>
+                                                FOLLOW US ONLINE
+                                            </span>
+                                        </font>
+                                    </td>
+                                    <td width="15" height="15" align="center" style="max-width: 15px; max-height: 15px;">
+                                        <a href="#"><img width="15" height="15" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/facebook%402x.png" border="0" style="max-width: 15px; max-height: 15px;"/></a>
+                                    </td>
+                                    <td width="16" height="13" align="center" style="max-width: 16px; max-height: 13px;">
+                                        <a href="#"><img width="16" height="13" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/twitter%402x.png" border="0" style="max-width: 16px; max-height: 13px;"/></a>
+                                    </td>
+                                    <td width="15" height="15" align="center" style="max-width: 15px; max-height: 15px;">
+                                        <a href="#"><img width="15" height="15" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/instagram%402x.png" border="0" style="max-width: 15px; max-height: 15px;"/></a>
+                                    </td>
+                                    <td width="15" height="14.7" align="center" style="max-width: 15px; max-height: 14.7px;">
+                                        <a href="#"><img width="15" height="14.7" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/combined-shape%402x.png" border="0" style="max-width: 15px; max-height: 14.7px;"/></a>
+                                    </td>
+                                    <td width="12" height="15.5" align="center" style="max-width: 12px; max-height: 15.5px;">
+                                        <a href="#"><img width="12" height="15.5" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/pinterest%402x.png" border="0" style="max-width: 12px; max-height: 15.5px;"/></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
+                    <tr>
+                        <td align="center" style="font-size:11px; color:#797979;" class="Remote-features-text">
                             <font face="'Trebuchet MS', Arial, sans-serif">
                                 <span>
                                     Remote features require a wireless signal with good coverage to function, and normal cellular service rates may apply.
                                 </span>
-                                <br/>
-                                <br/>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="font-size:11px; color:#797979;" class="Kia-Motors-text">
+                            <font face="'Trebuchet MS', Arial, sans-serif">
                                 <span>
-                                    Kia Motors America Inc. is committed to maintaining our privacy. Click here to learn more about our privacy policy.
+                                    Kia Motors America Inc. is committed to maintaining our privacy. <a href="#" style="text-decoration: underline; color:#797979;">Click here</a> to learn more about our privacy policy.
                                 </span>
-                                <br/>
-                                <br/>
+                                </br>
+                                </br>
                                 <span>
-                                    2018 Kia Motors America, Inc. 111 Peters Canyon Road, Irvine, CA 92606
+                                    &#169 2018 Kia Motors America, Inc. 111 Peters Canyon Road, Irvine, CA 92606
                                 </span>
                             </font>
                         </td>
                     </tr>
                 </table>
-
             </td>
         </tr>
     </table>
