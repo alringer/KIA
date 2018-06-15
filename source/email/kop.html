@@ -18,10 +18,10 @@
                 margin:0; 
                 padding:0;
             }
-            a {
-            	color:#bb1a30;
-                text-decoration:none;
-            }     
+             a {
+            	color:#2f2f2f;
+                text-decoration:none!important;
+            }   
             table td {
             	border-collapse: collapse;
             }
@@ -76,12 +76,27 @@
             .Kia-Motors-text {
                 padding: 41px 0 55px 0;
             }
-        
+            .iOS-link a {
+                color:#797979!important;
+                text-decoration:none!important;
+            }
+            .Windows-10-link a {
+                color:#2f2f2f;
+                text-decoration:none!important;
+            }
+
         /* Outlook.com Targeting */
-            [owa] .desktop-hide {
+            [owa] *[class="outlook-hide"] {
                 display:none!important;
                 max-height:0px;
                 overflow:hidden;
+                mso-hide:all;
+            }           
+            [owa] .outlook-hide {
+                display:none!important;
+                max-height:0px;
+                overflow:hidden;
+                mso-hide:all;
             }
 
         @media screen and (min-width: 629px) {
@@ -100,11 +115,13 @@
                 display:none!important;
                 max-height:0px;
                 overflow:hidden;
+                mso-hide:all;
             }           
             .desktop-hide {
                 display:none!important;
                 max-height:0px;
                 overflow:hidden;
+                mso-hide:all;
             }
         }
    
@@ -161,6 +178,9 @@
             .Kia-Motors-text {
                 padding: 28px 26px 37px 26px;
             }
+            .Follow-us-online {
+                padding: 0 20px 0 0;
+            }
 
             /* Some more stacking elements */
             *[class="mob-column"] {
@@ -172,12 +192,14 @@
              *[class="mobile-hide"] {
                 display:none!important;
                 max-height:0px;
-                overflow:hidden;             
+                overflow:hidden;
+                mso-hide:all;    
              }         
             .mobile-hide {
                 display:none!important;
                 max-height:0px;
                 overflow:hidden;
+                mso-hide:all;
             } 
 
             /* This sets elements to 100% width and fixes the height issues too, a god send */
@@ -216,7 +238,7 @@
                             <img width="202" height="58" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-uvo-logos.png" border="0" style="display:block; max-width: 202px; max-height: 58px;" class="mobile-hide"/>
                         </td>
                         <!--[if !mso]><!--> <!-- Bug fix to hide image on Outlook desktop breakpoint -->
-                        <td width="112" height="57" align="center" class="desktop-hide">
+                        <td width="112" height="57" align="center" class="desktop-hide outlook-hide">
                             <img width="112" height="57" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-logo.png" border="0" style="display:block; max-width: 112px; max-height: 57px;"/>
                         </td>
                         <!--<![endif]-->
@@ -243,14 +265,14 @@
                             <table width="768" border="0" cellpadding="0" cellspacing="0" class="100p">
                                 <tr>
                                     <td align="left" class="condensed" valign="top">
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="380">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="400">
                                             <tr>
                                                 <td valign="top" align="center">
                                                     <table border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td align="center" style="font-size:14px; color:#2f2f2f; text-align: left;" class="Our-mission-is-to-co">
+                                                            <td align="center" style="font-size:14px; color:#2f2f2f; text-align: left;text-decoration:none!important;" class="Our-mission-is-to-co">
                                                                 <font face="'Trebuchet MS', Arial, sans-serif">
-                                                                    <span>
+                                                                    <span class="Windows-10-link">
                                                                         Our mission is to combine all the benefits of the current Kia Owner’s Portal and MyUVO.com into a one-stop shop! Our goal is that you will not only find it helpful, but fun, easy to use, and convenient.
                                                                     </span>
                                                                 </font>
@@ -262,7 +284,7 @@
                                         </table>
 
                                         <!-- DEVICES IMAGE TABLE/ROW -->
-                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="380">
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="360">
                                             <tr>
                                                 <td valign="top" align="center" style="padding: 33px 0;">
                                                     <table border="0" cellspacing="0" cellpadding="0">
@@ -370,7 +392,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30; padding: 15px 0 0 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;"><span>LEARN MORE</span></a>
+                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold; text-decoration: none;"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -406,9 +428,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:11px; color:#bb1a30; padding: 15px 0 0 0;">
+                                                <td align="center" style="font-size:11px; color:#bb1a30; padding: 33px 0 0 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;"><span>LEARN MORE</span></a>
+                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;text-decoration: none;"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -452,7 +474,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30; padding: 15px 0 0 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;"><span>LEARN MORE</span></a>
+                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;text-decoration: none;"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -490,7 +512,7 @@
                                             <tr>
                                                 <td align="center" style="font-size:11px; color:#bb1a30; padding: 15px 0 0 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
-                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;"><span>LEARN MORE</span></a>
+                                                        <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;text-decoration: none;"><span>LEARN MORE</span></a>
                                                     </font>
                                                 </td>
                                             </tr>
@@ -798,69 +820,77 @@
                 <!-- FOOTER SECTION -->
                 <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
                     <tr>
-                        <td width="768" height="36" align="center" style="max-width: 768px; max-height: 36px; padding: 31px 0 0 0;">
-                            <img width="70" height="36" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-logo-white.png" border="0" style="max-width: 70px; max-height: 36px;"/>
-                        </td>
-                    </tr>
-                </table>
+                        <td>
 
-                <!-- SOCIAL MEADIA LINKS ROW -->
-                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
-                    <tr>
-                        <td width="768" align="center" style="padding: 28px 0 0 0;">
-                            <table width="265" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" style="min-width: 265px;">
+                            <!-- KIA IMAGE ROW -->
+                            <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
                                 <tr>
-                                    <td width="97" height="21" align="center" style="font-size:10px; color:#FFFFFF; min-width: 97px; min-height: 21px;">
-                                        <font face="'Trebuchet MS', Arial, sans-serif">
-                                            <span>
-                                                FOLLOW US ONLINE
-                                            </span>
-                                        </font>
-                                    </td>
-                                    <td width="15" height="15" align="center" style="max-width: 15px; max-height: 15px; padding: 0 10px 0 0;">
-                                        <a href="#"><img width="15" height="15" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/facebook.png" border="0" style="max-width: 15px; max-height: 15px;"/></a>
-                                    </td>
-                                    <td width="16" height="13" align="center" style="max-width: 16px; max-height: 13px; padding: 0 10px 0 0;">
-                                        <a href="#"><img width="16" height="13" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/twitter.png" border="0" style="max-width: 16px; max-height: 13px;"/></a>
-                                    </td>
-                                    <td width="15" height="15" align="center" style="max-width: 15px; max-height: 15px; padding: 0 10px 0 0;">
-                                        <a href="#"><img width="15" height="15" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/instagram.png" border="0" style="max-width: 15px; max-height: 15px;"/></a>
-                                    </td>
-                                    <td width="15" height="14.7" align="center" style="max-width: 15px; max-height: 14.7px; padding: 0 10px 0 0;">
-                                        <a href="#"><img width="15" height="14.7" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/youtube.png" border="0" style="max-width: 15px; max-height: 14.7px;"/></a>
-                                    </td>
-                                    <td width="12" height="15.5" align="center" style="max-width: 12px; max-height: 15.5px;">
-                                        <a href="#"><img width="12" height="15.5" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/pinterest.png" border="0" style="max-width: 12px; max-height: 15.5px;"/></a>
+                                    <td width="768" height="36" align="center" style="max-width: 768px; max-height: 36px; padding: 31px 0 0 0;">
+                                        <img width="70" height="36" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-logo-white.png" border="0" style="max-width: 70px; max-height: 36px;"/>
                                     </td>
                                 </tr>
                             </table>
-                        </td>
-                    </tr>
-                </table>
 
-                <!-- DISCLAIMER/PRIVACY POLICY TABLE/ROW -->
-                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
-                    <tr>
-                        <td align="center" style="font-size:11px; color:#797979;" class="Remote-features-text">
-                            <font face="'Trebuchet MS', Arial, sans-serif">
-                                <span>
-                                    Remote features require a wireless signal with good coverage to function, and normal cellular service rates may apply.
-                                </span>
-                            </font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" style="font-size:11px; color:#797979;" class="Kia-Motors-text">
-                            <font face="'Trebuchet MS', Arial, sans-serif">
-                                <span>
-                                    Kia Motors America, Inc. is committed to maintaining our privacy. <a href="#" style="text-decoration: underline; color:#797979;">Click here</a> to learn more about our privacy policy.
-                                </span>
-                                </br>
-                                </br>
-                                <span>
-                                    &#169 2018 Kia Motors America, Inc. 111 Peters Canyon Road, Irvine, CA 92606
-                                </span>
-                            </font>
+                            <!-- SOCIAL MEADIA LINKS ROW -->
+                            <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
+                                <tr>
+                                    <td width="768" align="center" style="padding: 28px 0 0 0;font-size:0px;">
+                                        <table width="320" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" style="min-width: 320px;">
+                                            <tr>
+                                                <td width="130" height="21" align="right" style="font-size:10px; color:#FFFFFF; max-width: 130px; min-height: 21px; padding: 0 20px 0 0;">
+                                                    <font face="'Trebuchet MS', Arial, sans-serif">
+                                                        <span>
+                                                            FOLLOW US ONLINE
+                                                        </span>
+                                                    </font>
+                                                </td>
+                                                <td width="15" height="15" align="left" style="max-width: 15px; max-height: 15px; padding: 0 10px 0 0;">
+                                                    <a href="#"><img width="15" height="15" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/facebook.png" border="0" style="max-width: 15px; max-height: 15px;"/></a>
+                                                </td>
+                                                <td width="16" height="13" align="left" style="max-width: 16px; max-height: 13px; padding: 0 10px 0 0;">
+                                                    <a href="#"><img width="16" height="13" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/twitter.png" border="0" style="max-width: 16px; max-height: 13px;"/></a>
+                                                </td>
+                                                <td width="15" height="15" align="left" style="max-width: 15px; max-height: 15px; padding: 0 10px 0 0;">
+                                                    <a href="#"><img width="15" height="15" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/instagram.png" border="0" style="max-width: 15px; max-height: 15px;"/></a>
+                                                </td>
+                                                <td width="15" height="14.7" align="left" style="max-width: 15px; max-height: 14.7px; padding: 0 10px 0 0;">
+                                                    <a href="#"><img width="15" height="14.7" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/youtube.png" border="0" style="max-width: 15px; max-height: 14.7px;"/></a>
+                                                </td>
+                                                <td width="12" height="15.5" align="left" style="max-width: 12px; max-height: 15.5px; padding: 0 30px 0 0;">
+                                                    <a href="#"><img width="12" height="15.5" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/pinterest.png" border="0" style="max-width: 12px; max-height: 15.5px;"/></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- DISCLAIMER/PRIVACY POLICY TABLE/ROW -->
+                            <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#2f2f2f" class="100p">
+                                <tr>
+                                    <td align="center" style="font-size:11px; color:#797979;" class="Remote-features-text">
+                                        <font face="'Trebuchet MS', Arial, sans-serif">
+                                            <span>
+                                                Remote features require a wireless signal with good coverage to function, and normal cellular service rates may apply.
+                                            </span>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-size:11px; color:#797979;" class="Kia-Motors-text">
+                                        <font face="'Trebuchet MS', Arial, sans-serif">
+                                            <span>
+                                                Kia Motors America, Inc. is committed to maintaining our privacy. <a href="#" style="text-decoration: underline; color:#797979;">Click here</a> to learn more about our privacy policy.
+                                            </span>
+                                            </br>
+                                            </br>
+                                            <span class="iOS-link">
+                                                &#169 2018 Kia Motors America, Inc. 111 Peters Canyon Road, Irvine, CA 92606
+                                            </span>
+                                        </font>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
