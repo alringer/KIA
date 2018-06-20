@@ -47,8 +47,13 @@
             .To-make-it-easy-cur a {
                 text-decoration:none!important;
             }
-            .We-put-a-lot-image {
-                padding: 60px 0 0 0;
+            .We-put-a-lot-text {
+                font-size:20px;
+                color:#FFFFFF;
+                text-align: center;
+                max-width:275px;
+                letter-spacing: 1px;
+                padding: 75px 37px 0 60px;
             }
             .Save-time-money-section-container {
                 padding: 55px 38px 55px 38px;
@@ -89,8 +94,23 @@
                 color:#2f2f2f;
                 text-decoration:none!important;
             }
+
+        @media screen and (min-width: 629px) {
+            *[class="hide-desktop"] {
+                display:none!important;
+            } 
+            .hide-desktop {
+                display:none!important;
+            }
+
+            *[class="hide-mobile"] {
+                display:block!important;
+            } 
+            .hide-mobile {
+                display:block!important;
+            }
+        }
    
-        /* These are our tablet/medium screen media queries */
         @media screen and (max-width: 630px) {
 
             .Were-excited-to-tell {
@@ -109,8 +129,10 @@
             .To-make-it-easy-cur {
                 padding: 12px 30px 0 30px;
             }
-            .We-put-a-lot-image {
-                padding: 49px 0 0 0;
+            .We-put-a-lot-text {
+                font-size:12px;
+                letter-spacing: 0.6px;
+                padding: 36.5px 30px 0 18.5px;
             }
             .Save-time-money-section-container {
                 padding: 35px 15px 35px 15px;
@@ -144,6 +166,20 @@
             }
             .Follow-us-online {
                 padding: 0 20px 0 0;
+            }
+
+            *[class="hide-desktop"] {
+                display:block!important;
+            } 
+            .hide-desktop {
+                display:block!important;
+            }
+
+            *[class="hide-mobile"] {
+                display:none!important;
+            } 
+            .hide-mobile {
+                display:none!important;
             }
 
             /* Some more stacking elements */
@@ -280,18 +316,30 @@
                             </font>
                         </td>
                     </tr>
+                    <tr>
+                        <td height="55"></td>
+                    </tr>
                 </table>
 
                 <!-- WE PUT A LOT IMAGE -->
-                <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p">
+                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#c4172c" class="100p" style="background-image: url('https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-gradient-bg.png');">
                     <tr>
-                        <td class="We-put-a-lot-image">
-                            <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-img-eco%402x.png" border="0" width="768" style="width:100%;max-width:768px"/>
+                        <td width="275" align="left" class="hide-mobile We-put-a-lot-text">
+                            <font face="'Trebuchet MS', Arial, sans-serif">
+                                <span>We put a lot in it, so you could get a lot out of it</span>
+                            </font>
                         </td>
-                    </tr>
-                    <!-- SPACER ROW -->
-                    <tr>
-                        <td height="30"></td>
+                        <td width="150" align="left" class="hide-desktop We-put-a-lot-text">
+                            <font face="'Trebuchet MS', Arial, sans-serif">
+                                <span>We put a lot in it, so you could get a lot out of it</span>
+                            </font>
+                        </td>
+                        <td align="right" class="hide-mobile">
+                            <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-img-migration%402x.png" border="0" width="263" style="width:100%;max-width:263px;padding:30px 0 0 0;"/>
+                        </td>
+                        <td align="right" class="hide-desktop">
+                            <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-img-migration%402x.png" border="0" width="129" style="width:100%;max-width:129px;padding:15px 0 0 0;"/>
+                        </td>
                     </tr>
                 </table>
 
