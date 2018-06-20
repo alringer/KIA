@@ -123,6 +123,13 @@
                 overflow:hidden;
                 mso-hide:all;
             }
+
+            .middle-image-desktop {
+                display:block!important;
+            }
+            .middle-image-mobile {
+                display:none!important;
+            }
         }
    
    
@@ -200,7 +207,14 @@
                 max-height:0px;
                 overflow:hidden;
                 mso-hide:all;
-            } 
+            }
+
+            .middle-image-desktop {
+                display:none!important;
+            }
+            .middle-image-mobile {
+                display:block!important;
+            }
 
             /* This sets elements to 100% width and fixes the height issues too, a god send */
             *[class="100p"] {
@@ -341,7 +355,8 @@
                 <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p">
                     <tr>
                         <td class="uvo_luxe_prestige-club_1--kia-1920x-jpg-copy">
-                            <img src="images/KOP-Migration-Eco/middle-img-eco@2x.png" border="0" width="768" style="display:block;width:100%;max-width:768px"/>
+                            <img class="middle-image-desktop" src="images/KOP-Migration-Eco/middle-img-eco@2x.png" border="0" width="768" style="width:100%;max-width:768px"/>
+                            <img class="middle-image-mobile" src="images/KOP-Migration-Eco/middle-img-eco.png" border="0" width="768" style="width:100%;max-width:768px"/>
                         </td>
                     </tr>
                     <!-- SPACER ROW -->
