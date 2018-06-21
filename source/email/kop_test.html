@@ -23,6 +23,8 @@
             }   
             table td {
             	border-collapse: collapse;
+                mso-table-lspace:0pt;
+                mso-table-rspace:0pt;
             }
             .Were-excited-to-tell {
                 font-size: 30px;
@@ -47,8 +49,13 @@
             .To-make-it-easy-cur a {
                 text-decoration:none!important;
             }
-            .uvo_luxe_prestige-club_1--kia-1920x-jpg-copy {
-                padding: 60px 0 0 0;
+            .We-put-a-lot-text {
+                font-size:20px;
+                color:#FFFFFF;
+                text-align: center;
+                max-width:275px;
+                letter-spacing: 1px;
+                padding: 75px 37px 0 60px;
             }
             .Save-time-money-section-container {
                 padding: 55px 38px 55px 38px;
@@ -57,7 +64,7 @@
                 padding: 55px 0 0 0;
             }
             .Save-time-money-section-text {
-                padding: 10px 0 10px 0;
+                /* padding: 10px 0 10px 0; */
                 line-height: 1.64;
             }
             .Get-charged-up-section-rows {
@@ -90,48 +97,36 @@
                 text-decoration:none!important;
             }
 
-        /* Outlook.com Targeting */
-            [owa] *[class="outlook-hide"] {
-                display:none!important;
-                max-height:0px;
-                overflow:hidden;
-                mso-hide:all;
-            }           
-            [owa] .outlook-hide {
-                display:none!important;
-                max-height:0px;
-                overflow:hidden;
-                mso-hide:all;
+            [office365] *[class="hide-desktop"] {
+                display: none !important;
+            } 
+            [office365] .hide-desktop {
+                display: none !important;
+            }
+
+            [office365] *[class="hide-mobile"] {
+                display: block !important;
+            } 
+            [office365] .hide-mobile {
+                display: block !important;
             }
 
         @media screen and (min-width: 629px) {
-
-        /* Yahoo Mail Targeting */
-             @media screen yahoo {     
-                .desktop-hide {
-                    display:none!important;
-                    max-height:0px;
-                    overflow:hidden;
-                }
+            *[class="hide-desktop"] {
+                display:none!important;
+            } 
+            .hide-desktop {
+                display:none!important;
             }
 
-            /* Hide stuff */
-            *[class="desktop-hide"] {
-                display:none!important;
-                max-height:0px;
-                overflow:hidden;
-                mso-hide:all;
-            }           
-            .desktop-hide {
-                display:none!important;
-                max-height:0px;
-                overflow:hidden;
-                mso-hide:all;
+            *[class="hide-mobile"] {
+                display:block!important;
+            } 
+            .hide-mobile {
+                display:block!important;
             }
         }
    
-   
-        /* These are our tablet/medium screen media queries */
         @media screen and (max-width: 630px) {
 
             .Were-excited-to-tell {
@@ -150,8 +145,10 @@
             .To-make-it-easy-cur {
                 padding: 12px 30px 0 30px;
             }
-            .uvo_luxe_prestige-club_1--kia-1920x-jpg-copy {
-                padding: 49px 0 0 0;
+            .We-put-a-lot-text {
+                font-size:12px;
+                letter-spacing: 0.6px;
+                padding: 36.5px 0 0 18.5px;
             }
             .Save-time-money-section-container {
                 padding: 35px 15px 35px 15px;
@@ -187,24 +184,24 @@
                 padding: 0 20px 0 0;
             }
 
+            *[class="hide-desktop"] {
+                display:block!important;
+            } 
+            .hide-desktop {
+                display:block!important;
+            }
+
+            *[class="hide-mobile"] {
+                display:none!important;
+            } 
+            .hide-mobile {
+                display:none!important;
+            }
+
             /* Some more stacking elements */
             *[class="mob-column"] {
             	float: none !important;
                 width: 100% !important;
-            }   
-
-            /* Hide stuff */
-             *[class="mobile-hide"] {
-                display:none!important;
-                max-height:0px;
-                overflow:hidden;
-                mso-hide:all;    
-             }         
-            .mobile-hide {
-                display:none!important;
-                max-height:0px;
-                overflow:hidden;
-                mso-hide:all;
             } 
 
             /* This sets elements to 100% width and fixes the height issues too, a god send */
@@ -239,14 +236,9 @@
                 <!-- LOGO HEADER -->
                 <table width="768" border="0" cellspacing="0" cellpadding="20" bgcolor="#FFFFFF" class="100p">
                     <tr>
-                        <td width="202" height="58" align="center" class="mobile-hide" style="max-width: 202px; max-height: 58px;">
-                            <img width="202" height="58" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-uvo-logos.png" border="0" style="display:block; max-width: 202px; max-height: 58px;" class="mobile-hide"/>
+                        <td width="202" height="45" align="center" style="max-width: 202px; max-height: 45px;">
+                            <img width="202" height="45" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-uvo-logos.png" border="0" style="display:block; max-width: 202px; max-height: 45px;"/>
                         </td>
-                        <!--[if !mso]><!--> <!-- Bug fix to hide image on Outlook desktop breakpoint -->
-                        <td width="112" height="57" align="center" class="desktop-hide outlook-hide">
-                            <img width="112" height="57" src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/kia-logo.png" border="0" style="display:block; max-width: 112px; max-height: 57px;"/>
-                        </td>
-                        <!--<![endif]-->
                     </tr>
                 </table>
 
@@ -340,18 +332,111 @@
                             </font>
                         </td>
                     </tr>
+                    <tr>
+                        <td height="55"></td>
+                    </tr>
                 </table>
 
                 <!-- WE PUT A LOT IMAGE -->
-                <table width="768" border="0" cellspacing="0" cellpadding="0" class="100p">
+                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#c4172c" class="100p" style="background-image: url('https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-gradient-bg.png');">
                     <tr>
-                        <td class="uvo_luxe_prestige-club_1--kia-1920x-jpg-copy">
-                            <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-devices.png" border="0" width="768" style="display:block;width:100%;max-width:768px"/>
+                        <td align="center" valign="top">
+
+                            <table width="768" border="0" cellpadding="0" cellspacing="0" bgcolor="#c4172c" class="100p" style="min-width:100%">
+                                <tr>
+                                    <td width="768" align="center" style="min-width:100%"></td>
+                                </tr>
+                            </table>
+
+
+                            <table width="768" border="0" cellpadding="0" cellspacing="0" bgcolor="#c4172c" class="100p">
+                                <tr>
+                                    <td width="768" align="center" style="min-width:100%"></td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="condensed" valign="top">
+
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="hide-mobile mob-column" width="290" style="padding: 74px 0 0 60px;">
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td align="center" style="font-size:20px; color:#FFFFFF; text-align: center;">
+                                                                <font face="'Trebuchet MS', Arial, sans-serif">
+                                                                    <span>We put a lot in it, so you could get a lot out of it</span>
+                                                                </font>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!--[if !mso]><!-->
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="hide-desktop mob-column" width="150" style="max-width:150px;padding: 35.5px 8.5px 0 30px;">
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td align="center" style="font-size:12px; color:#FFFFFF; text-align: center;">
+                                                                <font face="'Trebuchet MS', Arial, sans-serif">
+                                                                    <span>We put a lot in it, so you could get a lot out of it</span>
+                                                                </font>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--<![endif]-->
+
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="hide-mobile mob-column" width="263">
+                                            <tr>
+                                                <td height="30"></td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td align="right">
+                                                                <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-img-migration%402x.png" border="0" width="263" style="width:100%;max-width:263px;"/>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!--[if !mso]><!-->
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="hide-desktop mob-column" width="129">
+                                            <tr>
+                                                <td height="15"></td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" align="center">
+                                                    <table border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td align="right">
+                                                                <img src="https://s3-us-west-2.amazonaws.com/kia-email-templates/images/middle-img-migration%402x.png" border="0" width="129" style="width:100%;max-width:129px;"/>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--<![endif]-->
+
+                                    </td>
+                                </tr>
+                            </table>
+
                         </td>
                     </tr>
-                    <!-- SPACER ROW -->
+                </table>
+
+                <table width="768" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" class="100p">
                     <tr>
-                        <td height="30"></td>
+                        <td height="36"></td>
                     </tr>
                 </table>
 
@@ -386,7 +471,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
+                                                <td align="center" style="font-size:14px; color:#444444;padding: 10px 0 10px 0;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Schedule your dealer maintenance appointments online with no callback necessary from participating dealers.
@@ -415,7 +500,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:18px; color:#000000; padding: 20px 0 0 0;">
+                                                <td align="center" style="font-size:18px; color:#000000; padding: 16px 0 0 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Save Money
@@ -424,7 +509,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
+                                                <td align="center" style="font-size:14px; color:#444444;padding: 10px 0 10px 0;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Receive service and maintenance coupons from participating dealers. 
@@ -433,7 +518,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:11px; color:#bb1a30; padding: 33px 0 0 0;">
+                                                <td align="center" style="font-size:11px; color:#bb1a30; padding: 36px 0 0 0;">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <a href="#" style="font-size:11px; color:#bb1a30; font-weight: bold;text-decoration: none;"><span>LEARN MORE</span></a>
                                                     </font>
@@ -468,7 +553,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
+                                                <td align="center" style="font-size:14px; color:#444444;padding: 10px 0 10px 0;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Retrieve your Kia manuals, warranty info, helpful videos and more, all in one place with just a few clicks. Spend less time searching and more time doing things you love. 
@@ -506,7 +591,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="font-size:14px; color:#444444;" class="Save-time-money-section-text">
+                                                <td align="center" style="font-size:14px; color:#444444;padding: 10px 0 10px 0;" class="Save-time-money-section-text">
                                                     <font face="'Trebuchet MS', Arial, sans-serif">
                                                         <span>
                                                             Did you finance your Kia with Kia Motors Finance? Great! View your previous and upcoming payments, and more directly from your Kia Owner's Portal.
