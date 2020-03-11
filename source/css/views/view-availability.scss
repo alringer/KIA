@@ -19,6 +19,18 @@
             text-align: center;
             width: 203px;
             margin: 30px auto;
+            position: relative;
+            z-index: 0;
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0
+            }
             @media (max-width: $screen-xs) {
                 margin: 50px auto;
             }
@@ -29,7 +41,6 @@
                 }
             }
             p {
-                // margin-top:10px;
                 @media (min-width: $screen-sm) {
                     margin-top: 20px;
                 }
@@ -37,9 +48,8 @@
             .active-rectangle {
                 width: 62px;
                 height: 4px;
-                // border: solid black 1px;
                 background: $red !important;
-                    transition: ease-in-out .3s;
+                transition: ease-in-out .3s;
                 margin: auto;
                 opacity: 0;
             }
@@ -47,9 +57,11 @@
                 .active-rectangle {
                     opacity: 1;
                 }
-                .js-vehicle-wrapper {
-                    opacity: 0.3
-                }
+                opacity: 1
+            }
+            &.inactive {
+                transition: ease-in-out .3s;
+                opacity: 0.3
             }
         }
     }   
