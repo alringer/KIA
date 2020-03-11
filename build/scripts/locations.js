@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.locations = {
@@ -41,6 +41,7 @@ $(document).ready(function () {
         },
         _toggle: function _toggle() {
           var $this = $(this);
+
           if (!$this.hasClass('flip')) {
             window.locations.methods.collapse._close();
           } else {
@@ -54,10 +55,8 @@ $(document).ready(function () {
               $items = $carousel_inner.children('.item'),
               $target = $(data.relatedTarget),
               $active_item = $items.filter('.active');
+          $carousel_inner.removeClass('overflow-visible'); // Use CSS to animate the height of the slider while transitioning
 
-          $carousel_inner.removeClass('overflow-visible');
-
-          // Use CSS to animate the height of the slider while transitioning
           $carousel_inner.css('height', parseInt($items.filter('.active').innerHeight(), 10));
           setTimeout(function () {
             // Then remove the height
@@ -105,9 +104,11 @@ $(document).ready(function () {
               $edit_title = $this.parents('.poi-edit-title');
           $edit_title.removeClass('editing');
           var val = $this.val();
+
           if (val) {
             $edit_title.find('.poi-edit-title-text').text(val);
           }
+
           $this.blur();
         },
         _keyup: function _keyup(e) {
@@ -117,10 +118,14 @@ $(document).ready(function () {
         },
         _save: function _save() {
           window.locations.elements.save_poi_btn.addClass('spinning');
+
           window.locations.methods.poi._close(null, $('.poi-edit-title.editing input'));
+
           window.loading.methods._loading_start();
+
           setTimeout(function () {
             window.loading.methods._loading_stop();
+
             window.locations.elements.save_poi_btn.removeClass('spinning');
             window.locations.elements.location_carousel.carousel(4);
           }, 2000);
@@ -130,6 +135,7 @@ $(document).ready(function () {
             var $this = $(this),
                 $parent = $this.parents('li'),
                 $search_results = $parent.find('.locations-search-results-list');
+
             if (e.keyCode === 27) {
               $search_results.removeClass('show');
             } else {
@@ -167,7 +173,7 @@ $(document).ready(function () {
             window.locations.elements.waypoints.find('.waypoint').each(function () {
               var $this = $(this),
                   $title = $this.find('.waypoint-title');
-              $title.text('Waypoint ' + c);
+              $title.text("Waypoint ".concat(c));
               c++;
             });
           },
@@ -178,6 +184,7 @@ $(document).ready(function () {
               delay: 0,
               stop: function stop() {
                 window.locations.methods.poi.waypoints._recount();
+
                 window.locations.elements.location_carousel.find('.carousel-inner').removeAttr('style');
               },
               start: function start() {
@@ -195,7 +202,9 @@ $(document).ready(function () {
             var $waypoint = window.locations.elements.waypoint.filter('.hide').first();
             $waypoint.removeClass('hide');
             $waypoint.addClass('selected');
+
             window.locations.methods.poi.waypoints._is_addable();
+
             $('#waypoint-add').modal('hide');
           },
           _is_addable: function _is_addable() {
@@ -204,6 +213,7 @@ $(document).ready(function () {
             } else {
               window.locations.elements.waypoints.removeClass('addable');
             }
+
             if (window.locations.elements.waypoint.not('.hide').length > 1) {
               window.locations.elements.waypoints.addClass('can-drag');
             } else {
@@ -217,14 +227,18 @@ $(document).ready(function () {
             $waypoint.appendTo($parent);
             $waypoint.removeClass('selected');
             $waypoint.find('input').val('');
+
             window.locations.methods.poi.waypoints._recount();
+
             $waypoint.addClass('hide');
+
             window.locations.methods.poi.waypoints._is_addable();
           },
           _select: function _select() {
             var $this = $(this),
                 $waypoint = $this.parents('.waypoint');
             $waypoint.addClass('selected');
+
             window.locations.methods.poi.waypoints._is_addable();
           }
         }
@@ -237,6 +251,7 @@ $(document).ready(function () {
 
           if (is_active) {
             $this.addClass('active');
+
             window.locations.methods.collapse._open();
           } else {
             window.locations.methods.collapse._close();
@@ -247,20 +262,24 @@ $(document).ready(function () {
         _keyup: function _keyup(e) {
           window.locations.elements.location_carousel.carousel(0);
           window.locations.elements.location_utility_tools.removeClass('active');
+
           if (e.keyCode === 27) {
             window.locations.methods.collapse._close();
           } else {
             if (window.locations.elements.location_search_input.val().length) {
               window.locations.methods.collapse._open();
+
               window.locations.elements.location_search_input.addClass('has-text');
             } else {
               window.locations.methods.collapse._close();
+
               window.locations.elements.location_search_input.removeClass('has-text');
             }
           }
         },
         _clear: function _clear() {
           window.locations.methods.collapse._close();
+
           window.locations.elements.location_search_input.val('').removeClass('has-text');
         }
       },
@@ -270,6 +289,7 @@ $(document).ready(function () {
       filters: {
         _remove: function _remove() {
           $(this).parents('.badge').remove();
+
           if (!$('.filter-list .badge').length) {
             window.locations.methods.filters._close();
           }
@@ -287,15 +307,20 @@ $(document).ready(function () {
           var $this = $(this),
               is_active = $this.hasClass('active');
           window.locations.elements.nav_toggle_search.removeClass('active');
+
           if (is_active) {
             window.locations.elements.location_utility.removeClass('open');
+
             window.locations.methods.collapse._close();
+
             $('body').removeClass('hide-subnav');
             return;
           }
+
           $('body').addClass('hide-subnav');
           window.locations.elements.location_utility.addClass('open');
           $this.addClass('active');
+
           if ($this.is('.icon-settings') || $this.is('.icon-poi')) {
             window.locations.methods.collapse._open();
           }
@@ -305,17 +330,20 @@ $(document).ready(function () {
         _refresh: function _refresh() {
           var $pin = $(this).parents('.pin');
           $pin.addClass('pin-refreshing');
+
           window.loading.methods._loading_start();
+
           setTimeout(function () {
             window.loading.methods._loading_stop();
+
             $pin.removeClass('pin-refreshing');
             $pin.find('.timestamp').text('Last updated just now');
           }, 1500);
         }
       }
     }
-  };
-  // EVENTS
+  }; // EVENTS
+
   window.locations.elements.location_carousel.carousel({
     interval: false
   });
@@ -343,3 +371,5 @@ $(document).ready(function () {
 
   window.locations.methods.poi.waypoints._drag();
 });
+
+//# sourceMappingURL=locations.js.map

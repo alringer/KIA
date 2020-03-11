@@ -1,0 +1,1 @@
+"use strict";$(document).ready((function(){$(".js-vehicle-wrapper").click((function(){$(".js-vehicle-wrapper").removeClass("active"),$(this).addClass("active")}))}));

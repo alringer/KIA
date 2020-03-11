@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.alerts = {
@@ -9,14 +9,18 @@ $(document).ready(function () {
     methods: {
       _reset: function _reset() {
         window.alerts.methods.close._error();
+
         window.alerts.methods.close._sccuess();
+
         window.alerts.methods.close._notification();
+
         clearTimeout(window.closeAlertError);
         clearTimeout(window.closeAlertSuccess);
       },
       open: {
         _error: function _error() {
           window.alerts.methods._reset();
+
           window.alerts.elements.alerts.filter('.alert-failed').addClass('in');
           window.closeAlertError = setTimeout(function () {
             window.alerts.methods.close._error();
@@ -24,6 +28,7 @@ $(document).ready(function () {
         },
         _success: function _success() {
           window.alerts.methods._reset();
+
           window.alerts.elements.alerts.filter('.alert-success').addClass('in');
           window.closeAlertSuccess = setTimeout(function () {
             window.alerts.methods.close._sccuess();
@@ -31,6 +36,7 @@ $(document).ready(function () {
         },
         _notification: function _notification() {
           window.alerts.methods._reset();
+
           window.alerts.elements.alerts.filter('.alert-notification').addClass('in');
           window.closeAlertSuccess = setTimeout(function () {
             window.alerts.methods.close._notification();
@@ -52,7 +58,9 @@ $(document).ready(function () {
         }
       }
     }
-  };
-  // EVENTS
+  }; // EVENTS
+
   window.alerts.elements.alerts_close.on('click', window.alerts.methods.close._all);
 });
+
+//# sourceMappingURL=alerts.js.map

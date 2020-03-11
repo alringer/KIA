@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.nav = {
@@ -32,12 +32,15 @@ $(document).ready(function () {
         if ($(e.target).is('[data-toggle="modal"]') || $(e.target).parents('[data-toggle="modal"]').length) {
           return;
         }
+
         if (!window.nav.elements.nav_menu.hasClass('open')) {
           return;
         }
+
         window.nav.elements.nav_menu_icons.removeClass('active');
         window.nav.elements.nav_menu_icons.filter('.save-active').addClass('active').removeClass('save-active');
         window.nav.elements.nav_menu.removeClass('open');
+
         window.nav.methods._vehicle_selector_close();
       },
       _stop_propagation: function _stop_propagation(e) {
@@ -53,8 +56,8 @@ $(document).ready(function () {
         window.nav.elements.nav_menu_inner.removeClass('selector');
       }
     }
-  };
-  // EVENTS
+  }; // EVENTS
+
   window.nav.elements.nav_toggle.on('click', window.nav.methods._toggle);
   window.nav.elements.nav_open.on('click', window.nav.methods._open);
   window.nav.elements.body.on('click touchstart', window.nav.methods._close);
@@ -65,3 +68,5 @@ $(document).ready(function () {
   window.nav.elements.nav_vehicle_selector_open.on('click', window.nav.methods._vehicle_selector_open);
   window.nav.elements.nav_vehicle_selector_close.on('click', window.nav.methods._vehicle_selector_close);
 });
+
+//# sourceMappingURL=nav.js.map

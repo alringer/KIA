@@ -1880,6 +1880,12 @@
         background: #fff !important;
       }
     }
+    &-100-p {
+      width: 155px;
+      @media (max-width: $screen-xs-max) {
+        width: calc(100% - 5px);
+      }
+    }
   }
   .model-select {
     display: inline-block;
@@ -1890,6 +1896,40 @@
       button {
         background: #fff !important;
       }
+    }
+    &-100-p {
+      @media (max-width: $screen-xs-max) {
+        width: calc(100% - 5px);
+      }
+    }
+  }
+  .vin-lookup-textfield-0 {
+    display: inline-block;
+    width: 277px;
+    margin-left: 5px;
+    @media (max-width: $screen-xs-max) {
+      width: calc(100% - 5px);
+      button {
+        background: #fff !important;
+      }
+    }
+  }
+  .select-vehicle-container {
+    width: 100%;
+    margin:auto;
+    max-width: 609px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .vehicle-image {
+      margin: 30px 0px;
+      width: 100%;
+      opacity: 0.3;
+    }
+    > h1 {
+      margin-bottom: 30px;
     }
   }
   .row-table {

@@ -1,0 +1,84 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.vehicle-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .custom-col {
+        width: 33.3%;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        @media (min-width: $screen-sm) {
+            padding-left: 40px;
+        }
+        .js-vehicle-wrapper {
+            text-align: center;
+            width: 203px;
+            margin: 30px auto;
+            @media (max-width: $screen-xs) {
+                margin: 50px auto;
+            }
+            div {
+                height: 90px;
+                .vehicle-image {
+                    width: 100%;
+                }
+            }
+            p {
+                // margin-top:10px;
+                @media (min-width: $screen-sm) {
+                    margin-top: 20px;
+                }
+            }
+            .active-rectangle {
+                width: 62px;
+                height: 4px;
+                // border: solid black 1px;
+                background: $red !important;
+                    transition: ease-in-out .3s;
+                margin: auto;
+                opacity: 0;
+            }
+            &.active {
+                .active-rectangle {
+                    opacity: 1;
+                }
+                .js-vehicle-wrapper {
+                    opacity: 0.3
+                }
+            }
+        }
+    }   
+}
+
+.head-unit-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    // width: 90%;
+    margin: auto;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            text-align: center;
+            margin: 60px auto;
+            padding: 0px 40px;
+            @media (min-width: $screen-md) {         
+                    width: 33.3%
+            }
+            .head-unit-image {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            button {
+                width:100%;
+            }
+        }
+    }
+}

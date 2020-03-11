@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.registration = {
@@ -30,24 +30,24 @@ $(document).ready(function () {
       },
       // Toggle the disabled state for form buttons based on required critera when the form is interactied with
       _toggle_disable: function _toggle_disable() {
-        var $this = $(this);
-        // For the vehicle lookup form
+        var $this = $(this); // For the vehicle lookup form
+
         if (window.registration.elements.registration_form.is('.vehicle-lookup-form')) {
           // Make sure all fields have a value and the extra fields have been selected
           if (window.registration.elements.registration_year.val().length && window.registration.elements.registration_model.val().length && window.registration.elements.registration_extra.filter(':checked').val()) {
             window.registration.elements.registration_submit_button.removeClass('disabled');
           } else {
             window.registration.elements.registration_submit_button.addClass('disabled');
-          }
-          // For the VIN lookup form
+          } // For the VIN lookup form
+
         } else if (window.registration.elements.registration_form.is('.vehicle-vin-form')) {
           // VIN must be 17 chars
           if (window.registration.elements.registration_vin.val().length === 17) {
             window.registration.elements.registration_submit_button.removeClass('disabled');
           } else {
             window.registration.elements.registration_submit_button.addClass('disabled');
-          }
-          // For the vehicle activation form
+          } // For the vehicle activation form
+
         } else if (window.registration.elements.registration_form.is('.vehicle-activate-form')) {
           // Make sure the dual inputs have been set and have a value
           if ($this.is(':checked') && $this.parents('.dual-inputs').find('input').not('[type="radio"]').val()) {
@@ -68,6 +68,7 @@ $(document).ready(function () {
         if (!window.registration.elements.registration_slider.length) {
           return;
         }
+
         window.registration.elements.registration_slider.slick({
           arrows: false,
           infinite: false,
@@ -85,8 +86,8 @@ $(document).ready(function () {
         });
       },
       _password_validation: function _password_validation(e) {
-        var $this = $(e.currentTarget);
-        // If there is a value, add the "show" class to transition in the validation elemenbt
+        var $this = $(e.currentTarget); // If there is a value, add the "show" class to transition in the validation elemenbt
+
         if ($this.val()) {
           window.registration.elements.create_password_validator.addClass('show');
         } else {
@@ -102,27 +103,24 @@ $(document).ready(function () {
         _vin_submit: function _vin_submit(e) {
           if (window.registration.elements.registration_form.is('.vehicle-vin-form')) {
             e.preventDefault();
+
             window.forms.methods._error($('.vehicle-vin-form li:first-child'));
           }
         }
       }
     }
-  };
+  }; // EVENTS
 
-  // EVENTS
   window.registration.elements.registration_year.on('change', window.registration.methods._reveal_exta);
   window.registration.elements.registration_model.on('change', window.registration.methods._reveal_exta);
-
   window.registration.elements.registration_model.on('change', window.registration.methods._toggle_disable);
   window.registration.elements.registration_year.on('change', window.registration.methods._toggle_disable);
   window.registration.elements.registration_extra.on('change', window.registration.methods._toggle_disable);
   window.registration.elements.registration_send_code_to.on('change', window.registration.methods._toggle_disable);
   window.registration.elements.registration_vin.on('keyup', window.registration.methods._toggle_disable);
   window.registration.elements.registration_form.on('submit', window.registration.methods._toggle_disable);
-
   window.registration.elements.registration_form.on('submit', window.registration.methods.error._vin_submit);
   window.registration.elements.registration_submit_button.on('click', window.registration.methods.error._vin_submit);
-
   window.registration.elements.create_password.on('change', window.registration.methods._password_validation);
   window.registration.elements.create_password.on('keyup', window.registration.methods._password_validation);
   window.registration.elements.create_password.on('blur', window.registration.methods._password_validation_close);
@@ -130,3 +128,5 @@ $(document).ready(function () {
 
   window.registration.methods._slick();
 });
+
+//# sourceMappingURL=registration.js.map

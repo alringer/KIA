@@ -1,0 +1,93 @@
+@media (min-width: 992px) {
+  .mobile,
+  .tablet {
+    display: none !important; } }
+
+@media (max-width: 991px) and (min-width: 767px) {
+  .mobile,
+  .desktop {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .desktop,
+  .tablet {
+    display: none !important; } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.vehicle-container {
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .vehicle-container .custom-col {
+    width: 33.3%; }
+  .vehicle-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    @media (min-width: 768px) {
+      .vehicle-container ul {
+        padding-left: 40px; } }
+    .vehicle-container ul .js-vehicle-wrapper {
+      text-align: center;
+      width: 203px;
+      margin: 30px auto; }
+      @media (max-width: 480px) {
+        .vehicle-container ul .js-vehicle-wrapper {
+          margin: 50px auto; } }
+      .vehicle-container ul .js-vehicle-wrapper div {
+        height: 90px; }
+        .vehicle-container ul .js-vehicle-wrapper div .vehicle-image {
+          width: 100%; }
+      @media (min-width: 768px) {
+        .vehicle-container ul .js-vehicle-wrapper p {
+          margin-top: 20px; } }
+      .vehicle-container ul .js-vehicle-wrapper .active-rectangle {
+        width: 62px;
+        height: 4px;
+        background: #C4172C !important;
+        transition: ease-in-out .3s;
+        margin: auto;
+        opacity: 0; }
+      .vehicle-container ul .js-vehicle-wrapper.active .active-rectangle {
+        opacity: 1; }
+      .vehicle-container ul .js-vehicle-wrapper.active .js-vehicle-wrapper {
+        opacity: 0.3; }
+
+.head-unit-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+  .head-unit-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .head-unit-container ul li {
+      text-align: center;
+      margin: 60px auto;
+      padding: 0px 40px; }
+      @media (min-width: 992px) {
+        .head-unit-container ul li {
+          width: 33.3%; } }
+      .head-unit-container ul li .head-unit-image {
+        width: 100%;
+        margin-bottom: 20px; }
+      .head-unit-container ul li button {
+        width: 100%; }

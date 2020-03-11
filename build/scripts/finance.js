@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.finance = {
@@ -24,17 +24,21 @@ $(document).ready(function () {
           var $this = $(this),
               sortby = $this.data('mixsort');
           $this.toggleClass('asc');
-          var order = $this.hasClass('asc') ? 'asc' : 'desc';
-          // run the mixitup sort function
-          window.financeHistory.sort(sortby + ':' + order);
-          // Set header classes
+          var order = $this.hasClass('asc') ? 'asc' : 'desc'; // run the mixitup sort function
+
+          window.financeHistory.sort("".concat(sortby, ":").concat(order)); // Set header classes
+
           window.finance.elements.mixitup_sortby.removeClass('active');
           $this.addClass('active');
         }
       }
     }
   };
-  window.finance.methods.sorting._setup();
-  // EVENTS
+
+  window.finance.methods.sorting._setup(); // EVENTS
+
+
   window.finance.elements.mixitup_sortby.on('click.fire', window.finance.methods.sorting._sort);
 });
+
+//# sourceMappingURL=finance.js.map
