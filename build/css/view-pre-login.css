@@ -1634,7 +1634,9 @@
     width: 100%;
     opacity: 0.3; }
   .view-uvo-availability .select-vehicle-container > h1 {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 29px;
+    font-family: "KIA", sans-serif; }
 
 .view-uvo-availability .row-table .row {
   clear: both;

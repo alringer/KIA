@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="/css/login.css">
   <link rel="stylesheet" href="/css/view-pre-login.css">
   <link rel="stylesheet" href="/css/view-availability.css">
+  <link rel="stylesheet" href="/css/view-bluetooth.css">
+
   <!-- @import "partials/head/global-js.kit" -->
 
 
@@ -79,83 +81,173 @@
       <div class="contain">
         <div class="page-header">
           <h1>UVO availability</h1>
-          <p>Browse through the various models and years of our vehicles to see which UVO services are available. When you sign up a Kia owner, you’ll have access to many of these features right from your desktop or on the go.</p>
         </div><!-- /.page-header -->
-        <form action="">
-          <ul class="form-fields form-fields-responsive">
-            <li class="year-select year-select-100-p">
-              <label>
-                <strong>Year</strong>
-                <select class="selectpicker small">
-                  <option value="1">2018</option>
-                  <option value="1">2018</option>
-                  <option value="1">2017</option>
-                  <option value="1">2016</option>
-                  <option value="1">2015</option>
-                  <option value="1">2014</option>
-                  <option value="1">2013</option>
-                  <option value="1">2012</option>
-                  <option value="1">2011</option>
-                  <option value="1">2010</option>
-                </select>
-              </label>
+        <div class="page-view-content">
+          <div class="selection">
+
+            <div class="selection-row"> 
+              <div class="selection-container">
+                <div class="vehicle-container">
+                  <div class="image-container">
+                    <img src="/images/image_car_grid_1.png" alt="Niro">
+                  </div>
+                  <p><b>Niro</b></p>
+                </div>
+                <div class="vehicle-container">
+                  <div class="image-container">
+                    <img src="/images/temporary-head-unit-1.png" alt="Head Unit">
+                  </div>
+                  <p><b>UVO eServices with Nav</b></p>
+                </div>
+              </div>
+              <div class="button-container">
+                <a href="#" class="black">CHANGE SELECTION</a>
+              </div>
+            </div>
+
+
+              <div class="uvo-services-container">
+                <div class="list-features-container">
+                  <p>UVO eServices is a Kia telematics service that provides the following features:</p>
+                  <ul class="col-sm-6">
+                    <li>* Vehicle Diagnostics</li>
+                    <li>* My POIs</li>
+                    <li>* Parking Minder</li>
+                    <li>* Roadside Assist</li>
+                  </ul>
+                  <ul class="col-sm-6">
+                    <li>* My Car Zone</li>
+                    <li>* Trip Info</li>
+                    <li>* Dealer Appointments</li>
+                    <li>* Awards</li>
+                  </ul>
+                </div>
+                <div class="button-container button-container-desktop">
+                  <a href="#" class="black">CHECK OUT OUR SERVICE PERIOD</a>
+                </div>
+                <div class="create-account-container">
+                  <p>Are you an owner? Start enjoying these features now.</p>
+                  <a href="#" class="button large" data-toggle="modal" data-target="#login" data-go-to-slide="1">
+                    Create Account
+                  </a>
+                </div>
+              </div>
+            
+        
+          </div>
+          <div class="line"></div>
+
+          <!-- Explore UVO eServices heading section -->
+          <div class="explore-uvo-eservices-container">
+            <div class="heading-container">
+              <h1>Expore UVO eServices</h1>
+              <div class="subheading-container">
+                <p>These exciting features are for the 2018 Niro with UVO eServices with Nav</p>
+                <div class="button-container">
+                  <a href="#" class="black">CHANGE SELECTION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eservices-middle-container">
+            <!-- Category dropdown menu for mobile and list selector for tablet and desktop. -->
+            <div class="category-dropdown-container">
+              <form action="">
+                <ul class="form-fields form-fields-responsive">
+                  <li class="year-select year-select-100-p">
+                    <label>
+                      <strong>category</strong>
+                      <select class="selectpicker small">
+                        <option value="1">Emergency Assistance</option>
+                        <option value="1">Convenience</option>
+                        <option value="1">Apps</option>
+                        <option value="1">Voice Assistant</option>
+                        <option value="1">Multimedia</option>
+                        <option value="1">Navigation</option>
+                        <option value="1">Connectivity</option>
+                        <option value="1">Maintenance</option>
+                        <option value="1">My Car Zone</option>
+                      </select>
+                    </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            
+            <div class="category-tablet-desktop-container">
+              <ul>
+                <li class="active"><div class="active-indicator"></div>Emergency Assistance</li>
+                <li><div class="active-indicator"></div>Convenience</li>
+                <li><div class="active-indicator"></div>Apps</li>
+                <li><div class="active-indicator"></div>Voice Assistant</li>
+                <li><div class="active-indicator"></div>Multimedia</li>
+                <li><div class="active-indicator"></div>Navigation</li>
+                <li><div class="active-indicator"></div>Connectivity</li>
+                <li><div class="active-indicator"></div>Maintenance</li>
+                <li><div class="active-indicator"></div>My Car Zone</li>
+              </ul>
+            </div>
+            <div class="eservices-list-container">
+              <ul>
+                <li>
+                  <div class="bg-card">
+                    <h1>911</h1>
+                    <h5>EMERGENCY</h5>
+                  </div>
+                  <div class="card-text-container">
+                    <p><b>911 Connect</b></p>
+                    <p>Automatically call emergency services</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="bg-card">
+                    <img src="/images/diagnostic-issue-copy-2.png" alt="Diagnostic Issue Icon">
+                  </div>
+                  <div class="card-text-container">
+                    <p><b>Roadside Assistance</b></p>
+                    <p>Call the Roadside Assistance help center</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="create-account-container">
+            <p>Ready to get started?</p>
+            <a href="#" class="button large" data-toggle="modal" data-target="#login" data-go-to-slide="1">
+              Create Account
+            </a>
+          </div>
+        </div>
+
+        <!-- Available Apps bottom container -->
+        <div class="available-apps-container">
+          <h1>Available Apps</h1>
+          <ul>
+            <li>
+              <div>
+                <img src="/images/placeholder@3x.png">
+              </div>
+              <p><b>Download Kia Owner's App</b></p>
+              <div class="app-store-container">
+                  <img src="/images/app-store@3x.png">
+                  <img src="/images/google-play@3x.png">
+              </div>
+              <p class="small-text-apps">Available on most Android and iPhones</p>
             </li>
-            <li class="model-select model-select-100-p">
-              <label>
-                <strong>Model</strong>
-                <select class="selectpicker small">
-                  <option value="1">Niro</option>
-                  <option value="1">Cadenza</option>
-                  <option value="1">Forte</option>
-                  <option value="1">Forte5</option>
-                  <option value="1">Forte Koup</option>
-                  <option value="1">k900</option>
-                </select>
-              </label>
-            </li>
-            <li class="vin-lookup-textfield-0">
-              <label>
-                <strong>Vin Look-Up</strong>
-                <input type="text" placeholder="Enter VIN" class="selectpicker small"></input>
-              </label>
+            <li>
+              <div>
+                <img src="/images/placeholder@3x.png">
+              </div>
+              <p><b>Download UVO eServices App</b></p>
+              <div class="app-store-container">
+                  <img src="/images/app-store@3x.png">
+                  <img src="/images/google-play@3x.png">
+              </div>
+              <p class="small-text-apps">Available on most Android and iPhones</p>
             </li>
           </ul>
-        </form>
-        <div class="head-unit-container">
-          <div class="container">
-            <ul class="row">
-              <li class="col-sm-6">
-                  <p><b>UVO eServices with Nav</b></p>
-                  <img class="head-unit-image" src="/images/temporary-head-unit-1.png">
-                  <button class="button outline">SELECT UNIT</button>
-              </li>
-              <li class="col-sm-6">
-                  <p><b>UVO eServices</b></p>
-                  <img class="head-unit-image" src="/images/temporary-head-unit-2.png">
-                  <button class="button outline">SELECT UNIT</button>
-              </li>
-              <li class="col-sm-6">
-                  <p><b>UVO eServices</b></p>
-                  <img class="head-unit-image" src="/images/temporary-head-unit-3.png">
-                  <button class="button outline">SELECT UNIT</button>
-              </li>
-              <li class="col-sm-6">
-                  <p><b>UVO eServices</b></p>
-                  <img class="head-unit-image" src="/images/temporary-head-unit-4.png">
-                  <button class="button outline">SELECT UNIT</button>
-              </li>
-              <li class="col-sm-6">
-                  <p><b>UVO eServices</b></p>
-                  <img class="head-unit-image" src="/images/temporary-head-unit-5.png">
-                  <button class="button outline">SELECT UNIT</button>
-              </li>
-              <li class="col-sm-6">
-                  <p><b>UVO eServices</b></p>
-                  <img class="head-unit-image" src="/images/temporary-head-unit-6.png">
-                  <button class="button outline">SELECT UNIT</button>
-              </li>
-            </ul>
-          </div>
         </div>
       </div><!-- /.contain -->
     </div><!-- /.page-content -->

@@ -726,6 +726,17 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/source/images/app-store@3x.png": {
+		"ft": 32768,
+		"iS": 5158,
+		"oA": 0,
+		"oAP": "/build/images/app-store@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/award-1.png": {
 		"ft": 32768,
 		"iS": 8176,
@@ -1090,6 +1101,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/source/images/diagnostic-issue-copy-2.png": {
+		"ft": 32768,
+		"iS": 4263,
+		"oA": 0,
+		"oAP": "/build/images/diagnostic-issue-copy-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/dial.png": {
 		"ft": 32768,
 		"iS": 31506,
@@ -1215,6 +1237,17 @@
 		"oA": 0,
 		"oAP": "/build/images/finance/finance-logo.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/google-play@3x.png": {
+		"ft": 32768,
+		"iS": 6170,
+		"oA": 0,
+		"oAP": "/build/images/google-play@3x.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -3723,6 +3756,17 @@
 		"oA": 0,
 		"oAP": "/build/images/pin_car.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/placeholder@3x.png": {
+		"ft": 32768,
+		"iS": 164724,
+		"oA": 0,
+		"oAP": "/build/images/placeholder@3x.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -7428,12 +7472,12 @@
 		"oAP": "/build/views/uvo-availability-2.html",
 		"oF": 0
 		},
-	"/source/views/uvo-availability-3.kit": {
+	"/source/views/uvo-availability-3-emergency-assist.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/views/uvo-availability-3.html",
+		"oAP": "/build/views/uvo-availability-3-emergency-assist.html",
 		"oF": 0
 		},
 	"/source/views/uvo-availability.kit": {

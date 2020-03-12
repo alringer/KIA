@@ -93,15 +93,261 @@
     padding: 0;
     margin: 0;
     list-style-type: none; }
-    .head-unit-container ul li {
+    .head-unit-container ul li .head-unit-image {
+      width: 100%;
+      margin-bottom: 20px; }
+    .head-unit-container ul li button {
+      width: 100%; }
+
+.page-view-content {
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+  border-radius: 2px;
+  padding: 55px 45px 60px;
+  margin-top: 45px; }
+  @media (max-width: 767px) {
+    .page-view-content {
+      padding: 20px 20px 60px;
+      margin-top: 10px; } }
+  .page-view-content .selection {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .page-view-content .selection {
+        flex-direction: row; } }
+    .page-view-content .selection .selection-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      @media (min-width: 768px) {
+        .page-view-content .selection .selection-container {
+          flex-direction: column;
+          align-items: center; } }
+      .page-view-content .selection .selection-container .vehicle-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+        align-items: center; }
+        .page-view-content .selection .selection-container .vehicle-container .image-container {
+          height: 130px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70%; }
+        .page-view-content .selection .selection-container .vehicle-container img {
+          width: 100%; }
+        .page-view-content .selection .selection-container .vehicle-container p {
+          font-family: "KIA", sans-serif; }
+    .page-view-content .selection .button-container {
+      cursor: pointer;
+      margin-top: 50px;
       text-align: center;
-      margin: 60px auto;
-      padding: 0px 40px; }
-      @media (min-width: 992px) {
-        .head-unit-container ul li {
-          width: 33.3%; } }
-      .head-unit-container ul li .head-unit-image {
-        width: 100%;
+      font-family: "KIA", sans-serif; }
+      .page-view-content .selection .button-container a {
+        font-weight: bold;
+        color: #C4172C;
+        letter-spacing: 0.74px;
+        font-size: 14px; }
+      @media (min-width: 768px) {
+        .page-view-content .selection .button-container-desktop {
+          text-align: start; } }
+    .page-view-content .selection .uvo-services-container {
+      margin-top: 35px;
+      font: "Source Sans Pro", sans-serif;
+      line-height: 1.5;
+      letter-spacing: 0.6px;
+      color: #2f2f2f; }
+      @media (min-width: 768px) {
+        .page-view-content .selection .uvo-services-container {
+          margin: 0; } }
+      .page-view-content .selection .uvo-services-container .list-features-container {
+        margin: 25px; }
+        @media (min-width: 768px) {
+          .page-view-content .selection .uvo-services-container .list-features-container {
+            margin: 25px 0px; } }
+        .page-view-content .selection .uvo-services-container .list-features-container ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0; }
+          @media (min-width: 768px) {
+            .page-view-content .selection .uvo-services-container .list-features-container ul {
+              margin: 20px 0px; } }
+  .page-view-content .line {
+    width: 78px;
+    height: 2px;
+    border: solid 1px #d4d4d4;
+    margin: 50px auto; }
+    @media (min-width: 768px) {
+      .page-view-content .line {
+        width: 100%; } }
+  .page-view-content .explore-uvo-eservices-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .page-view-content .explore-uvo-eservices-container {
+        text-align: start; } }
+    .page-view-content .explore-uvo-eservices-container .heading-container > h1 {
+      margin-top: 0; }
+    .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px; }
+      @media (min-width: 768px) {
+        .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container {
+          flex-direction: row; } }
+      .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container > p {
         margin-bottom: 20px; }
-      .head-unit-container ul li button {
+      .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container a {
+        cursor: pointer;
+        font-family: "KIA", sans-serif;
+        font-weight: bold;
+        color: #C4172C;
+        letter-spacing: 0.74px;
+        font-size: 12px; }
+        @media (min-width: 768px) {
+          .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container a {
+            margin-left: 20px; } }
+  .page-view-content .eservices-middle-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .page-view-content .eservices-middle-container {
+        flex-direction: row; } }
+    .page-view-content .eservices-middle-container .category-dropdown-container {
+      display: block; }
+      @media (min-width: 768px) {
+        .page-view-content .eservices-middle-container .category-dropdown-container {
+          display: none; } }
+    .page-view-content .eservices-middle-container .category-tablet-desktop-container {
+      margin-right: 40px;
+      display: none; }
+      @media (min-width: 768px) {
+        .page-view-content .eservices-middle-container .category-tablet-desktop-container {
+          display: flex; } }
+      .page-view-content .eservices-middle-container .category-tablet-desktop-container > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-family: "KIA", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #8E8E8E;
+        font-size: 12px; }
+        .page-view-content .eservices-middle-container .category-tablet-desktop-container > ul > li {
+          margin-bottom: 15px;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .page-view-content .eservices-middle-container .category-tablet-desktop-container > ul > li .active-indicator {
+            width: 4px;
+            margin-right: 10px;
+            height: 12px;
+            background-color: #C4172C;
+            opacity: 0; }
+          .page-view-content .eservices-middle-container .category-tablet-desktop-container > ul > li.active {
+            color: #000; }
+            .page-view-content .eservices-middle-container .category-tablet-desktop-container > ul > li.active .active-indicator {
+              opacity: 1; }
+    .page-view-content .eservices-middle-container .eservices-list-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .page-view-content .eservices-middle-container .eservices-list-container {
+          margin-left: 100px; } }
+      .page-view-content .eservices-middle-container .eservices-list-container ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; }
+        .page-view-content .eservices-middle-container .eservices-list-container ul > li {
+          display: flex;
+          flex-direction: column; }
+          @media (min-width: 768px) {
+            .page-view-content .eservices-middle-container .eservices-list-container ul > li {
+              flex-direction: row; } }
+        .page-view-content .eservices-middle-container .eservices-list-container ul .bg-card {
+          margin: auto;
+          width: 126px;
+          height: 100px;
+          border-radius: 2px;
+          box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
+          background-color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-family: "KIA", sans-serif;
+          color: #C4172C; }
+          @media (min-width: 768px) {
+            .page-view-content .eservices-middle-container .eservices-list-container ul .bg-card {
+              margin: 0; } }
+          .page-view-content .eservices-middle-container .eservices-list-container ul .bg-card > h1 {
+            margin: 0; }
+          .page-view-content .eservices-middle-container .eservices-list-container ul .bg-card > h5 {
+            margin: 0; }
+        .page-view-content .eservices-middle-container .eservices-list-container ul .card-text-container {
+          margin: 30px 0px;
+          line-height: 1.5;
+          letter-spacing: 0.6px;
+          text-align: center; }
+          @media (min-width: 768px) {
+            .page-view-content .eservices-middle-container .eservices-list-container ul .card-text-container {
+              text-align: start;
+              margin-left: 15px; } }
+
+.create-account-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #d8d8d8; }
+  @media (min-width: 768px) {
+    .create-account-container > p {
+      padding: 15px 0px; } }
+
+.available-apps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto; }
+  @media (min-width: 768px) {
+    .available-apps-container {
+      align-items: start;
+      margin: 40px; } }
+  .available-apps-container h1 {
+    font-family: "KIA", sans-serif; }
+  .available-apps-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .available-apps-container ul {
+        flex-direction: row; } }
+    .available-apps-container ul > li {
+      margin: 40px 0;
+      width: 200px; }
+      @media (min-width: 768px) {
+        .available-apps-container ul > li {
+          margin: 40px 40px; } }
+      .available-apps-container ul > li img {
         width: 100%; }
+      .available-apps-container ul > li > p {
+        margin-top: 24px;
+        text-align: center; }
+      .available-apps-container ul > li .app-store-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%; }
+        .available-apps-container ul > li .app-store-container > img {
+          width: 49%; }
+      .available-apps-container ul > li .small-text-apps {
+        font-size: 13px; }
