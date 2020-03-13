@@ -62,9 +62,9 @@
       @media (max-width: 480px) {
         .vehicle-container ul .js-vehicle-wrapper {
           margin: 50px auto; } }
-      .vehicle-container ul .js-vehicle-wrapper div {
+      .vehicle-container ul .js-vehicle-wrapper > figure {
         height: 90px; }
-        .vehicle-container ul .js-vehicle-wrapper div .vehicle-image {
+        .vehicle-container ul .js-vehicle-wrapper > figure .vehicle-image {
           width: 100%; }
       @media (min-width: 768px) {
         .vehicle-container ul .js-vehicle-wrapper p {
@@ -83,7 +83,7 @@
           opacity: 1; }
       .vehicle-container ul .js-vehicle-wrapper.inactive {
         transition: ease-in-out .3s;
-        opacity: 0.3; }
+        opacity: 0.4; }
 
 .head-unit-container {
   text-align: center;
@@ -144,10 +144,13 @@
       .page-view-content .selection .selection-container .vehicle-container {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 80%;
         text-align: center;
         justify-content: center;
         align-items: center; }
+        @media (min-width: 768px) {
+          .page-view-content .selection .selection-container .vehicle-container {
+            width: 100%; } }
         .page-view-content .selection .selection-container .vehicle-container .image-container {
           height: 130px;
           display: flex;

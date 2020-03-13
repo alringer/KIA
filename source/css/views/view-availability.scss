@@ -34,7 +34,7 @@
             @media (max-width: $screen-xs) {
                 margin: 50px auto;
             }
-            div {
+            > figure {
                 height: 90px;
                 .vehicle-image {
                     width: 100%;
@@ -63,7 +63,7 @@
             }
             &.inactive {
                 transition: ease-in-out .3s;
-                opacity: 0.3
+                opacity: 0.4
             }
         }
     }   
@@ -137,11 +137,14 @@
             .vehicle-container {
                 display: flex;
                 flex-direction: column;
-                width: 50%;
+                width: 80%;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                
+                @media (min-width: $screen-sm) {
+                    width: 100%;
+
+                }
                 .image-container {
                     height: 130px;
                     display: flex;
