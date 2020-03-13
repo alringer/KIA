@@ -726,11 +726,55 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/source/images/911-icon.png": {
+		"ft": 32768,
+		"iS": 8891,
+		"oA": 0,
+		"oAP": "/build/images/911-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/amazon-alexa-logo.png": {
+		"ft": 32768,
+		"iS": 4373,
+		"oA": 0,
+		"oAP": "/build/images/amazon-alexa-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/android-robot@3x.png": {
+		"ft": 32768,
+		"iS": 8499,
+		"oA": 0,
+		"oAP": "/build/images/android-robot@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/app-store@3x.png": {
 		"ft": 32768,
 		"iS": 5158,
 		"oA": 0,
 		"oAP": "/build/images/app-store@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/apple-carplay.png": {
+		"ft": 32768,
+		"iS": 12374,
+		"oA": 0,
+		"oAP": "/build/images/apple-carplay.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1057,6 +1101,358 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/source/images/bluetooth@3x.png": {
+		"ft": 32768,
+		"iS": 7506,
+		"oA": 0,
+		"oAP": "/build/images/bluetooth@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-FORTE.png": {
+		"ft": 32768,
+		"iS": 80540,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-FORTE.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-K900.png": {
+		"ft": 32768,
+		"iS": 73741,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-K900.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-NIRO.png": {
+		"ft": 32768,
+		"iS": 87916,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-NIRO.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-NIRO_EV.png": {
+		"ft": 32768,
+		"iS": 87774,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-NIRO_EV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-NIRO_PHEV.png": {
+		"ft": 32768,
+		"iS": 87774,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-NIRO_PHEV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-OPTIMA.png": {
+		"ft": 32768,
+		"iS": 80627,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-OPTIMA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-OPTIMA_HEV.png": {
+		"ft": 32768,
+		"iS": 79348,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-OPTIMA_HEV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-OPTIMA_HYBRID.png": {
+		"ft": 32768,
+		"iS": 79348,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-OPTIMA_HYBRID.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-OPTIMA_PHEV.png": {
+		"ft": 32768,
+		"iS": 80356,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-OPTIMA_PHEV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-RIO.png": {
+		"ft": 32768,
+		"iS": 89655,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-RIO.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-SEDONA.png": {
+		"ft": 32768,
+		"iS": 90293,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-SEDONA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-SORENTO.png": {
+		"ft": 32768,
+		"iS": 98437,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-SORENTO.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-SOUL.png": {
+		"ft": 32768,
+		"iS": 95805,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-SOUL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-SOUL_EV.png": {
+		"ft": 32768,
+		"iS": 91982,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-SOUL_EV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-SPORTAGE.png": {
+		"ft": 32768,
+		"iS": 97905,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-SPORTAGE.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2019/2019-STINGER.png": {
+		"ft": 32768,
+		"iS": 81426,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2019/2019-STINGER.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-FORTE.png": {
+		"ft": 32768,
+		"iS": 62895,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-FORTE.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-K900.png": {
+		"ft": 32768,
+		"iS": 73485,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-K900.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-NIRO.png": {
+		"ft": 32768,
+		"iS": 84311,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-NIRO.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-NIRO_EV.png": {
+		"ft": 32768,
+		"iS": 83828,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-NIRO_EV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-NIRO_PHEV.png": {
+		"ft": 32768,
+		"iS": 83904,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-NIRO_PHEV.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-OPTIMA.png": {
+		"ft": 32768,
+		"iS": 69972,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-OPTIMA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-OPTIMA_HYBRID.png": {
+		"ft": 32768,
+		"iS": 76461,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-OPTIMA_HYBRID.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-RIO.png": {
+		"ft": 32768,
+		"iS": 86297,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-RIO.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-RIO_5_DOOR.png": {
+		"ft": 32768,
+		"iS": 61091,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-RIO_5_DOOR.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-SEDONA.png": {
+		"ft": 32768,
+		"iS": 82572,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-SEDONA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-SORENTO.png": {
+		"ft": 32768,
+		"iS": 81621,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-SORENTO.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-SOUL.png": {
+		"ft": 32768,
+		"iS": 90882,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-SOUL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-SPORTAGE.png": {
+		"ft": 32768,
+		"iS": 93658,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-SPORTAGE.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2020/2020-STINGER.png": {
+		"ft": 32768,
+		"iS": 68720,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2020/2020-STINGER.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/car-images-availability/2021/2021-SELTOS.png": {
+		"ft": 32768,
+		"iS": 76692,
+		"oA": 0,
+		"oAP": "/build/images/car-images-availability/2021/2021-SELTOS.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/climate_dial_communicating.png": {
 		"ft": 32768,
 		"iS": 20492,
@@ -1101,11 +1497,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/source/images/combined-shape@3x.png": {
+		"ft": 32768,
+		"iS": 2741,
+		"oA": 0,
+		"oAP": "/build/images/combined-shape@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/diagnostic-issue-copy-2.png": {
 		"ft": 32768,
 		"iS": 4263,
 		"oA": 0,
 		"oAP": "/build/images/diagnostic-issue-copy-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/diagnostic-logo.png": {
+		"ft": 32768,
+		"iS": 4263,
+		"oA": 0,
+		"oAP": "/build/images/diagnostic-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1231,12 +1649,34 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/source/images/engine-outline-copy@3x.png": {
+		"ft": 32768,
+		"iS": 2172,
+		"oA": 0,
+		"oAP": "/build/images/engine-outline-copy@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/finance/finance-logo.png": {
 		"ft": 32768,
 		"iS": 9038,
 		"oA": 0,
 		"oAP": "/build/images/finance/finance-logo.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/google-assistant-logo.png": {
+		"ft": 32768,
+		"iS": 41894,
+		"oA": 0,
+		"oAP": "/build/images/google-assistant-logo.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -1259,6 +1699,215 @@
 		"oA": 0,
 		"oAP": "/build/images/group.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/group@3x.png": {
+		"ft": 32768,
+		"iS": 9573,
+		"oA": 0,
+		"oAP": "/build/images/group@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn30_headunit.png": {
+		"ft": 32768,
+		"iS": 957275,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn30_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn30rc_headunit.png": {
+		"ft": 32768,
+		"iS": 194373,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn30rc_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn40ev_headunit.png": {
+		"ft": 32768,
+		"iS": 2093195,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn40ev_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn40phev_headunit.png": {
+		"ft": 32768,
+		"iS": 2090110,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn40phev_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn40plus_headunit.png": {
+		"ft": 32768,
+		"iS": 485567,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn40plus_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn5_headunit.png": {
+		"ft": 32768,
+		"iS": 2090560,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn5_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn5em_headunit.png": {
+		"ft": 32768,
+		"iS": 488431,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn5em_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn5phev_headunit.png": {
+		"ft": 32768,
+		"iS": 2093935,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn5phev_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/avn5wide_headunit.png": {
+		"ft": 32768,
+		"iS": 452767,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/avn5wide_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/daudio1_headunit.png": {
+		"ft": 32768,
+		"iS": 483771,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/daudio1_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/daudio_headunit.png": {
+		"ft": 32768,
+		"iS": 452752,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/daudio_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/premium10_headunit.png": {
+		"ft": 32768,
+		"iS": 2093195,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/premium10_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/premium20_headunit.png": {
+		"ft": 32768,
+		"iS": 2093195,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/premium20_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/premium5_headunit.png": {
+		"ft": 32768,
+		"iS": 2093195,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/premium5_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/uvo2_headunit.png": {
+		"ft": 32768,
+		"iS": 2093195,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/uvo2_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/uvo2rc_headunit.png": {
+		"ft": 32768,
+		"iS": 197913,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/uvo2rc_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/uvo3_headunit.png": {
+		"ft": 32768,
+		"iS": 2093475,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/uvo3_headunit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/head-units-availability/uvo3phev_headunit.png": {
+		"ft": 32768,
+		"iS": 2093935,
+		"oA": 0,
+		"oAP": "/build/images/head-units-availability/uvo3phev_headunit.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -3657,6 +4306,28 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/source/images/invalid-name@3x.png": {
+		"ft": 32768,
+		"iS": 3352,
+		"oA": 0,
+		"oAP": "/build/images/invalid-name@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/locations-white-copy@3x.png": {
+		"ft": 32768,
+		"iS": 6314,
+		"oA": 0,
+		"oAP": "/build/images/locations-white-copy@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/logo_google_play.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3697,6 +4368,50 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/source/images/make-appt-icon@3x.png": {
+		"ft": 32768,
+		"iS": 4590,
+		"oA": 0,
+		"oAP": "/build/images/make-appt-icon@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/map@3x.png": {
+		"ft": 32768,
+		"iS": 5220,
+		"oA": 0,
+		"oAP": "/build/images/map@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/mic.png": {
+		"ft": 32768,
+		"iS": 4599,
+		"oA": 0,
+		"oAP": "/build/images/mic.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/mileage-red@3x.png": {
+		"ft": 32768,
+		"iS": 4637,
+		"oA": 0,
+		"oAP": "/build/images/mileage-red@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/more-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3707,6 +4422,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/source/images/mycarzone-selected-desktop@3x.png": {
+		"ft": 32768,
+		"iS": 4807,
+		"oA": 0,
+		"oAP": "/build/images/mycarzone-selected-desktop@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/notifications_climate.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -3716,6 +4442,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/source/images/pandora-logo-rgb-thumbnail-new-large@3x.png": {
+		"ft": 32768,
+		"iS": 37211,
+		"oA": 0,
+		"oAP": "/build/images/pandora-logo-rgb-thumbnail-new-large@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/source/images/photo_vin_on_dashboard.jpg": {
 		"ft": 16384,
@@ -4511,6 +5248,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/source/images/remote-selected-desktop@3x.png": {
+		"ft": 32768,
+		"iS": 5312,
+		"oA": 0,
+		"oAP": "/build/images/remote-selected-desktop@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/remote-vehicle/img_optima_base.png": {
 		"ft": 32768,
 		"iS": 444843,
@@ -4803,12 +5551,67 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/source/images/siri-logo-zeplin.png": {
+		"ft": 32768,
+		"iS": 39582,
+		"oA": 0,
+		"oAP": "/build/images/siri-logo-zeplin.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/siri-logo.jpg": {
+		"ft": 16384,
+		"iS": 15239,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/images/siri-logo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/source/images/sirius-xm-logo@3x.png": {
+		"ft": 32768,
+		"iS": 13861,
+		"oA": 0,
+		"oAP": "/build/images/sirius-xm-logo@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/siriusxmtravellink.png": {
 		"ft": 32768,
 		"iS": 2746,
 		"oA": 0,
 		"oAP": "/build/images/siriusxmtravellink.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/sirusxm-travellink.png": {
+		"ft": 32768,
+		"iS": 19078,
+		"oA": 0,
+		"oAP": "/build/images/sirusxm-travellink.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/smaller-circle-bolt@3x.png": {
+		"ft": 32768,
+		"iS": 5785,
+		"oA": 0,
+		"oAP": "/build/images/smaller-circle-bolt@3x.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -5048,6 +5851,28 @@
 		"oA": 0,
 		"oAP": "/build/images/warranty/selection.png",
 		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/yelp-fullcolor@3x.png": {
+		"ft": 32768,
+		"iS": 18949,
+		"oA": 0,
+		"oAP": "/build/images/yelp-fullcolor@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/yelp-logo-2.png": {
+		"ft": 32768,
+		"iS": 37196,
+		"oA": 0,
+		"oAP": "/build/images/yelp-logo-2.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -7456,12 +8281,28 @@
 		"oAP": "/build/views/uvo-availability-0.html",
 		"oF": 0
 		},
-	"/source/views/uvo-availability-1.kit": {
+	"/source/views/uvo-availability-1-2019-car-models.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/views/uvo-availability-1.html",
+		"oAP": "/build/views/uvo-availability-1-2019-car-models.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-1-2020-car-models.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-1-2020-car-models.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-1-2021-car-models.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-1-2021-car-models.html",
 		"oF": 0
 		},
 	"/source/views/uvo-availability-2.kit": {
@@ -7472,12 +8313,76 @@
 		"oAP": "/build/views/uvo-availability-2.html",
 		"oF": 0
 		},
+	"/source/views/uvo-availability-3-apps.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-apps.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-connectivity.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-connectivity.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-convenience.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-convenience.html",
+		"oF": 0
+		},
 	"/source/views/uvo-availability-3-emergency-assist.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/views/uvo-availability-3-emergency-assist.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-maintenance.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-maintenance.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-multimedia.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-multimedia.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-my-car-zone.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-my-car-zone.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-navigation.html",
+		"oF": 0
+		},
+	"/source/views/uvo-availability-3-voice-assistant.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/views/uvo-availability-3-voice-assistant.html",
 		"oF": 0
 		},
 	"/source/views/uvo-availability.kit": {

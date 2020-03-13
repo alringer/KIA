@@ -1,12 +1,36 @@
 
-<!-- @import "partials/head/head-start.kit" -->
+<!DOCTYPE html>
+<html ontouchstart="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta name="format-detection" content="telephone=no">
 
-  <!-- @import "partials/head/global-css.kit" -->
+
+  <!-- GLOBAL VENDOR CSS -->
+  <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/css/global.css?v=3.1.0" />
+  <link rel="stylesheet" href="/css/alerts.css?v=3.1.0" />
+  
   <!-- VIEW CSS -->
   <link rel="stylesheet" href="/css/login.css">
   <link rel="stylesheet" href="/css/view-pre-login.css">
   <link rel="stylesheet" href="/css/view-availability.css">
-  <!-- @import "partials/head/global-js.kit" -->
+  <!-- GLOBAL VENDOR JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- GLOBAL JS -->
+  <script type="text/javascript" src="/scripts/modals.js"></script>
+  <script type="text/javascript" src="/scripts/forms.js"></script>
+  <script type="text/javascript" src="/scripts/loading.js"></script>
+  <script type="text/javascript" src="/scripts/nav.js"></script>
+  <script type="text/javascript" src="/scripts/alerts.js"></script>
+  <script type="text/javascript" src="/scripts/account-settings.js"></script>
+  
 
 
 
@@ -16,9 +40,14 @@
   <script type="text/javascript" src="/scripts/pre-login.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
-  <!-- @import "partials/head/vendors/select.kit" -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+  
 
-<!-- @import "partials/head/head-end.kit" -->
+  <title>KIA</title>
+  </head>
+<body ontouchstart="">
+
 <div class="view-pre-login view-uvo-availability">
   <header>
     <nav class="forced-scroll">
@@ -85,19 +114,21 @@
         <ul class="form-fields form-fields-responsive">
           <li class="year-select year-select-100-p">
             <label>
-              <strong>Year</strong>
-              <select class="selectpicker small">
-                <option value="1">Select a year</option>
-                <option value="1">2018</option>
-                <option value="1">2017</option>
-                <option value="1">2016</option>
-                <option value="1">2015</option>
-                <option value="1">2014</option>
-                <option value="1">2013</option>
-                <option value="1">2012</option>
-                <option value="1">2011</option>
-                <option value="1">2010</option>
-              </select>
+                <strong>Year</strong>
+                <select class="selectpicker small">
+                    <option value="1">2021</option>
+                    <option value="1">2019</option>
+                    <option value="1">2020</option>
+                    <option value="1">2018</option>
+                    <option value="1">2017</option>
+                    <option value="1">2016</option>
+                    <option value="1">2015</option>
+                    <option value="1">2014</option>
+                    <option value="1">2013</option>
+                    <option value="1">2012</option>
+                    <option value="1">2011</option>
+                    <option value="1">2010</option>
+                </select>
             </label>
           </li>
           <li class="model-select model-select-100-p">
@@ -126,128 +157,9 @@
           <ul class="row">
             <li class="col-sm-3 js-vehicle-wrapper">
               <div>
-                <img class="vehicle-image" src="/images/image_car_grid_1.png" alt="Cadenza">
-              </div>
-              <p><b>Cadenza</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_2.png" alt="Cadenza">
+                <img class="vehicle-image" src="/images/car-images-availability/2021/2021-SELTOS.png" alt="Seltos">
               </div>              
-              <p><b>Forte</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_3.png" alt="Cadenza">
-              </div>              
-              <p><b>Forte5</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_4.png" alt="Cadenza">
-              </div>
-              <p><b>Forte Koup</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_niro.png" alt="Cadenza">
-              </div>              
-              <p><b>K900</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_3.png" alt="Cadenza">
-              </div>              
-              <p><b>Niro</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_1.png" alt="Cadenza">
-              </div>
-              <p><b>Niro Plug-in Hybrid</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_2.png" alt="Cadenza">
-              </div>              
-              <p><b>Optima</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_3.png" alt="Cadenza">
-              </div>              
-              <p><b>Optima Hybrid</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_4.png" alt="Cadenza">
-              </div>
-              <p><b>Optima Plug-in Hybrid</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_niro.png" alt="Cadenza">
-              </div>              
-              <p><b>Rio</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_3.png" alt="Cadenza">
-              </div>              
-              <p><b>Rio 5-door</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_1.png" alt="Cadenza">
-              </div>
-              <p><b>Sedona</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_2.png" alt="Cadenza">
-              </div>              
-              <p><b>Sorento</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_3.png" alt="Cadenza">
-              </div>              
-              <p><b>Soul</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_4.png" alt="Cadenza">
-              </div>
-              <p><b>Soul EV</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_niro.png" alt="Cadenza">
-              </div>              
-              <p><b>Sportage</b></p>
-              <div class="active-rectangle"></div>
-            </li>
-            <li class="col-sm-3 js-vehicle-wrapper">
-              <div>
-                <img class="vehicle-image" src="/images/image_car_grid_3.png" alt="Cadenza">
-              </div>              
-              <p><b>Stinger</b></p>
+              <p><b>Seltos</b></p>
               <div class="active-rectangle"></div>
             </li>
           </ul>
@@ -544,4 +456,77 @@
     </div>
   </div>
 </div>
-<!-- @import "partials/footer.kit" -->
+  <footer>
+    <div class="contain">
+      <ul class="footer-menu-items">
+        <li>
+          <a href="#">
+            Privacy / Legal
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Kia.com
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Other Kia Sites
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            MPG
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Global Disclaimer
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Terms of Service
+          </a>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2017 Kia Motors America, Inc.</p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest-p"></i>
+            </a>
+          </li>
+        </ul><!-- /.social-icons -->
+      </div><!-- /.footer-bottom -->
+    </div><!-- /.contain -->
+  </footer>
+</body>
+</html>
+

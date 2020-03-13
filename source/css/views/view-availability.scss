@@ -42,7 +42,9 @@
             }
             p {
                 @media (min-width: $screen-sm) {
-                    margin-top: 20px;
+                    // margin-top: 20px;
+                    font-family: $kia;
+                    font-size: 14px;
                 }
             }
             .active-rectangle {
@@ -75,15 +77,21 @@
     margin: auto;
     ul {
         padding: 0;
-        margin: 0;
+        margin: 30px 0 0 0;
         list-style-type: none;
-        li {
-            // text-align: center;
-            // margin: 60px auto;
-            // padding: 0px 40px;
-            // @media (min-width: $screen-md) {         
-            //         width: 33.3%
-            // }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        > li {
+            margin: 25px 0px;
+            padding: 0px 50px;
+            width: 100%;
+            @media (min-width: $screen-sm) {
+                width: 50%;
+            }
+            @media (min-width: $screen-md) {
+                width: 33.3%;
+            }
             .head-unit-image {
                 width: 100%;
                 margin-bottom: 20px;
@@ -95,15 +103,22 @@
     }
 }
 
+#uvo-availability-heading {
+    margin: 0;
+    @media (min-width: $screen-md) {
+        margin: 15px 0;
+    }
+}
+
 .page-view-content {
     background: #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(39,48,59,0.24);
     border-radius: 2px;
     padding: 55px 45px 60px;
-    margin-top: 45px;
+    // margin-top: 45px;
     @media (max-width: $screen-xs-max) {
-      padding: 20px 20px 60px;
-      margin-top: 10px;
+      padding: 20px 20px 25px;
+    //   margin-top: 10px;
     }
     .selection {
         display: flex;
@@ -126,31 +141,45 @@
                 text-align: center;
                 justify-content: center;
                 align-items: center;
+                
                 .image-container {
                     height: 130px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 70%
+                    width: 50%;
+                    max-width: 128px;
+                    @media (min-width: $screen-sm) {
+                        width: 100%;
+
+                    }
+                    @media (min-width: $screen-md) {
+                        width: 90%;
+
+                    }
                 }
                 img {
                     width: 100%;
                 }
-                p {
-                    font-family: $kia;
+                .vehicle-text {
+                    margin-top: none;
+                    b {
+
+                        font-family: $kia;
+                    }
                 }
             }
         }
         .button-container {
             cursor: pointer;
-            margin-top: 50px;
+            margin-top: 30px;
             text-align: center;
             font-family: $kia;
             a {
                 font-weight: bold;
                 color: $red;
                 letter-spacing: 0.74px;
-                font-size: 14px;
+                font-size: 12px;
 
             }
             &-desktop {
@@ -166,6 +195,9 @@
             line-height: 1.5;
             letter-spacing: 0.6px;
             color: #2f2f2f;
+            p {
+                font-size: 14px;
+            }
             @media (min-width: $screen-sm) {
                 margin: 0;
             }
@@ -179,7 +211,10 @@
                     padding: 0;
                     margin: 0;
                     @media (min-width: $screen-sm) {
-                        margin: 20px 0px;
+                        margin: 25px 0px;
+                    }
+                    li {
+                        font-size: 14px;
                     }
                 }
             }
@@ -238,10 +273,58 @@
             flex-direction: row;
         }
         .category-dropdown-container {
-           display: block;
-           @media (min-width: $screen-sm) {
-               display: none;
+            display: block;
+            @media (min-width: $screen-sm) {
+                display: none;
             }
+            form {
+                white-space: nowrap;
+                width: 100%;
+                @media (max-width: $screen-xs-max) {
+                  max-width: 500px;
+                  margin: 0 auto;
+                }
+                .form-fields {
+                  display: inline-block;
+                  width: calc(100% - 100px);
+                  font-size: 0;
+                  vertical-align: bottom;
+                  @media (max-width: $screen-xs-max) {
+                    display: block;
+                    width: calc(100%);
+                    margin: 0 auto 5px;
+                  }
+                  > li {
+                    display: inline-block;
+                    width: calc(33.3333% - 8px);
+                    margin: 0 4px;
+                    @media (max-width: $screen-xs-max) {
+                      display: block;
+                      width: 100%;
+                      margin: 0 0 28px;
+                    }
+                    strong {
+                      display: block;
+                      font: bold 10px $kia;
+                      letter-spacing: .4px;
+                      text-transform: uppercase;
+                      margin-bottom: 8px;
+                    }
+                  }
+                }
+                .form-action {
+                  display: inline-block;
+                  vertical-align: bottom;
+                  @media (max-width: $screen-xs-max) {
+                    display: block;
+                    .button {
+                      width: calc(100%);
+                      margin: 0 auto;
+                    }
+                  }
+                }
+              }
+
         }
         .category-tablet-desktop-container {
             margin-right: 40px;
@@ -263,12 +346,21 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    letter-spacing: 0.74px;
+                    a {
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: $grey;
+                        &.active {
+                            color: $black
+                        }
+                    }
                     .active-indicator {
                         width: 4px;
                         margin-right: 10px;
                         height: 12px;
                         background-color: $red;
-                        opacity: 0
+                        opacity: 0;
                     }
                     &.active {
                         color: $black;
@@ -288,6 +380,8 @@
             text-align: center;
             @media (min-width: $screen-sm) {
                 margin-left: 100px;
+                margin-top: 0px;
+                justify-content: start;
             }
             ul {
                 list-style-type: none;
@@ -298,11 +392,13 @@
                     flex-direction: column;
                     @media (min-width: $screen-sm) {
                         flex-direction: row;
+                        margin-bottom: 20px;
                     }
                 }
                 .bg-card {
                     margin: auto;
                     width: 126px;
+                    min-width: 126px;
                     height: 100px;
                     border-radius: 2px;
                     box-shadow: 0 1px 3px 0 rgba(39, 48, 59, 0.24);
@@ -328,9 +424,13 @@
                     line-height: 1.5;
                     letter-spacing: 0.6px;
                     text-align: center;
+                    font-size: 14px;
                     @media (min-width: $screen-sm) {
                         text-align: start;
-                        margin-left: 15px;
+                        margin: 0 0 0 15px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
                     }
                 }
             }
@@ -364,7 +464,7 @@
     }
     ul {
         padding: 0;
-        margin:0;
+        margin: 20px 0 0 0;
         list-style-type: none;
         display: flex;
         flex-direction: column;
@@ -372,7 +472,7 @@
             flex-direction: row;
         }
         > li {
-            margin: 40px 0;
+            margin: 25px 0;
             width: 200px;
             @media (min-width: $screen-sm) {
                 margin: 40px 40px;
@@ -383,11 +483,10 @@
             > p {
                 margin-top: 24px;
                 text-align: center;
+                font-size: 15px;
             }
             .app-store-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+       
                 width:100%;
                 > img {
                     width: 49%;
