@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.template = {
@@ -8,7 +8,9 @@ $(document).ready(function () {
     methods: {
       _method: function _method() {}
     }
-  };
-  // EVENTS
+  }; // EVENTS
+
   window.template.elements.element.on('click', window.template.methods._method);
 });
+
+//# sourceMappingURL=template.js.map

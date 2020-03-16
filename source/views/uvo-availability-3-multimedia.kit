@@ -1,0 +1,552 @@
+
+<!-- @import "partials/head/head-start.kit" -->
+
+  <!-- @import "partials/head/global-css.kit" -->
+  <!-- VIEW CSS -->
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/view-pre-login.css">
+  <link rel="stylesheet" href="/css/view-availability.css">
+  <link rel="stylesheet" href="/css/view-bluetooth.css">
+
+  <!-- @import "partials/head/global-js.kit" -->
+
+
+
+  <!-- VIEW JS -->
+  <script type="text/javascript" src="/scripts/login.js"></script>
+  <script type="text/javascript" src="/scripts/uvo-availability.js"></script>
+  <script type="text/javascript" src="/scripts/pre-login.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <!-- @import "partials/head/vendors/select.kit" -->
+
+<!-- @import "partials/head/head-end.kit" -->
+<div class="view-pre-login view-uvo-availability">
+    <header>
+      <nav class="forced-scroll">
+        <div class="contain">
+          <div class="pull-left">
+            <div class="hidden-sm hidden-md hidden-lg icon-bars" data-action="nav-toggle">
+              <svg width="25px" height="18px" viewBox="0 0 25 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Pre_Login-|-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-14.000000, -23.000000)" stroke-linecap="square">
+                      <g id="HERO-IMAGE" transform="translate(-217.000000, -3.000000)" stroke="#FFFFFF" stroke-width="2">
+                          <g id="Icons-/-Mobile-Menu-Icon" transform="translate(232.000000, 27.000000)">
+                              <path d="M1.5,2 L0.5,2 L0.5,0 L1.5,0 L21.8960781,0 L22.8960781,0 L22.8960781,2 L21.8960781,2 L1.5,2 Z M1.5,9 L0.5,9 L0.5,7 L1.5,7 L21.8960781,7 L22.8960781,7 L22.8960781,9 L21.8960781,9 L1.5,9 Z M1.5,16 L0.5,16 L0.5,14 L1.5,14 L21.8960781,14 L22.8960781,14 L22.8960781,16 L21.8960781,16 L1.5,16 Z"></path>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </div>
+            <a href="/" class="logo">KIA</a>
+          </div>
+          <div class="pull-right">
+            <ul class="nav-items">
+              <li>
+                <a href="#">
+                  UVO Availability
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#login">
+                  Sign In
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button less-padding" data-toggle="modal" data-target="#login">
+                  Create Account
+                </a>
+              </li>
+            </ul>
+            <span class="hidden-sm hidden-md hidden-lg">
+              <span data-toggle="modal" data-target="#login">
+                SIGN IN / CREATE ACCOUNT
+              </span>
+            </span>
+          </div><!-- /.float-right -->
+        </div><!-- /.contain  -->
+      </nav>
+    </header>
+    <span class="trigger-nav-scroll"></span>
+    <div class="page-content">
+      <div class="contain">
+        <div class="page-header">
+          <h1 id="uvo-availability-heading">UVO availability</h1>
+        </div><!-- /.page-header -->
+        <div class="page-view-content">
+          <div class="selection">
+
+            <div class="selection-row col-sm-5"> 
+              <div class="selection-container">
+                <div class="vehicle-container">
+                  <div class="image-container">
+                    <img src="/images/car-images-availability/2020/2020-NIRO.png" alt="Niro">
+                  </div>
+                  <p><b>Niro</b></p>
+                </div>
+                <div class="vehicle-container">
+                  <div class="image-container">
+                    <img src="/images/head-units-availability/avn5_headunit.png" alt="Head Unit">
+                  </div>
+                  <p><b>UVO eServices with Nav</b></p>
+                </div>
+              </div>
+              <div class="button-container">
+                <a href="#" class="black">CHANGE SELECTION</a>
+              </div>
+            </div>
+
+
+              <div class="uvo-services-container">
+                <div class="list-features-container">
+                  <p>UVO eServices is a Kia telematics service that provides the following features:</p>
+                  <ul class="col-sm-6">
+                    <li>* Vehicle Diagnostics</li>
+                    <li>* My POIs</li>
+                    <li>* Parking Minder</li>
+                    <li>* Roadside Assist</li>
+                  </ul>
+                  <ul class="col-sm-6">
+                    <li>* My Car Zone</li>
+                    <li>* Trip Info</li>
+                    <li>* Dealer Appointments</li>
+                    <li>* Awards</li>
+                  </ul>
+                </div>
+                <div class="button-container button-container-desktop">
+                  <a href="#" class="black">CHECK OUT OUR SERVICE PERIOD</a>
+                </div>
+                <div class="create-account-container">
+                  <p>Are you an owner? Start enjoying these features now.</p>
+                  <a href="#" class="button large" data-toggle="modal" data-target="#login" data-go-to-slide="1">
+                    Create Account
+                  </a>
+                </div>
+              </div>
+            
+        
+          </div>
+          <div class="line"></div>
+
+          <!-- Explore UVO eServices heading section -->
+          <div class="explore-uvo-eservices-container">
+            <div class="heading-container">
+              <h1>Expore UVO eServices</h1>
+              <div class="subheading-container">
+                <p>These exciting features are for the 2018 Niro with UVO eServices with Nav</p>
+                <div class="button-container">
+                  <a href="#" class="black">CHANGE SELECTION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eservices-middle-container">
+            <!-- Category dropdown menu for mobile and list selector for tablet and desktop. -->
+            <div class="category-dropdown-container">
+
+                <form>
+                  <ul class="form-fields form-fields-responsive">
+                    <li class="model-select">
+                      <label>
+                        <strong>Category</strong>
+                        <select class="selectpicker small">
+                            <option value="1">Multimedia</option>
+                            <option value="1">Apps</option>
+                            <option value="1">Voice Assistant</option>
+                            <option value="1">Convenience</option>
+                            <option value="1">Emergency Assistance</option>
+                            <option value="1">Navigation</option>
+                            <option value="1">Connectivity</option>
+                            <option value="1">Maintenance</option>
+                            <option value="1">My Car Zone</option>
+                        </select>
+                      </label>
+                    </li>
+                  </ul>
+              </form>
+            </div>
+            
+            <div class="category-tablet-desktop-container">
+              <ul>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-emergency-assist.html">Emergency Assistance</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-convenience.html">Convenience</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-apps.html">Apps</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-voice-assistant.html">Voice Assistant</a></li>
+                <li class="active"><div class="active-indicator"></div><a href="uvo-availability-3-multimedia.html" class="active">Multimedia</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-navigation.html">Navigation</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-connectivity.html">Connectivity</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-maintenance.html">Maintenance</a></li>
+                <li><div class="active-indicator"></div><a href="uvo-availability-3-my-car-zone.html">My Car Zone</a></li>
+              </ul>
+            </div>
+            <div class="eservices-list-container">
+              <ul>
+                <li>
+                    <div class="bg-card">
+                        <img width="70%" src="/images/sirius-xm-logo@3x.png">
+                    </div>
+                    <div class="card-text-container">
+                        <p><b>SiriusXM Satellite Radio</b></p>
+                        <p>Over 165 available channels of music, sports, entertainment, and news</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg-card">
+                        <img width="30%" src="/images/bluetooth@3x.png">
+                    </div>
+                    <div class="card-text-container">
+                        <p><b>Bluetooth Audio Streaming</b></p>
+                        <p>From your phone to your speakers without any wires or worries about having to plug in</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="bg-card">
+                        <img width="30%" src="/images/invalid-name@3x.png">
+                    </div>
+                    <div class="card-text-container">
+                        <p><b>USB Music</b></p>
+                        <p>Play music right from your USB thumb drive</p>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="create-account-container">
+            <p>Ready to get started?</p>
+            <a href="#" class="button large" data-toggle="modal" data-target="#login" data-go-to-slide="1">
+              Create Account
+            </a>
+          </div>
+        </div>
+
+        <!-- Available Apps bottom container -->
+        <div class="available-apps-container">
+          <h1>Available Apps</h1>
+          <ul>
+            <li>
+              <div>
+                <img src="/images/placeholder@3x.png">
+              </div>
+              <p><b>Download Kia Owner's App</b></p>
+              <div class="app-store-container">
+                  <img src="/images/app-store@3x.png">
+                  <img src="/images/google-play@3x.png">
+              </div>
+              <p class="small-text-apps">Available on most Android and iPhones</p>
+            </li>
+            <li>
+              <div>
+                <img src="/images/placeholder@3x.png">
+              </div>
+              <p><b>Download UVO eServices App</b></p>
+              <div class="app-store-container">
+                  <img src="/images/app-store@3x.png">
+                  <img src="/images/google-play@3x.png">
+              </div>
+              <p class="small-text-apps">Available on most Android and iPhones</p>
+            </li>
+          </ul>
+        </div>
+      </div><!-- /.contain -->
+    </div><!-- /.page-content -->
+    <nav class="nav-app">
+      <div class="nav-app-mobile-menu">
+        <div class="nav-app-mobile-menu-inner">
+          <div class="nav-app-mobile-menu-default">
+            <div class="nav-app-mobile-menu-body">
+              <div class="nav-app-mobile-menu-body-inner">
+                <ul class="nav-list main-nav">
+                  <li>
+                    <a href="#">
+                      <span>UVO Availability</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Explore</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="sign-in-link" data-toggle="modal" data-target="#login">
+                      <span>Sign In</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="button less-padding" data-toggle="modal" data-target="#login">
+                      Create Account
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav-list text-nav">
+                  <li>
+                    <a href="#">
+                      <span>Privacy / Legal</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Contact Us</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Kia.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Other Kia Sites</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>MPG</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Global Disclaimer</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Terms of Service</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nav-list-footer">
+                  <p>
+                    2017® Kia Motors America, Inc
+                  </p>
+                  <ul class="social-icons">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-pinterest-p"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div><!-- /.nav-list-footer -->
+              </div><!-- /.nav-app-mobile-menu-body-inner -->
+            </div><!-- /.nav-app-mobile-menu-body -->
+          </div><!-- /.nav-app-mobile-menu-default -->
+        </div><!-- /.nav-app-mobile-menu-inner -->
+      </div><!-- /.nav-app-mobile-menu -->
+      <div class="nav-app-mobile-menu-close" data-action="nav-toggle"></div>
+    </nav><!-- /.app-nav -->
+  </div><!-- /.view-pre-login -->
+  <div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <span class="icon-close" data-dismiss="modal"></span>
+        <div class="modal-body">
+          <ul class="nav-tabs modal-nav">
+            <li class="active" data-target="#login-slider" data-slide-to="0">Sign In</li>
+            <li data-target="#login-slider" data-slide-to="1">Create Account</li>
+          </ul>
+          <span class="back" data-target="#login-slider" data-slide-to="0"></span>
+          <div id="login-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+              <div class="item active remember-back">
+                <form class="login-form" autocomplete="off">
+                  <input type="text" style="display:none" />
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>
+                          Email or Phone Number
+                        </strong>
+                        <input type="text" class="login-email" />
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            There is no account with this email. Click
+                              <em data-target="#login-slider" data-slide-to="1" class="use-email-to-craete">
+                                HERE
+                              </em>
+                            to create an account using this email
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          Password
+                        </strong>
+                        <input type="password" />
+                        <span class="toggle-show-password"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="">
+                        <em>
+                          Remember Me
+                        </em>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="form-footer">
+                    <input type="submit" value="Sign In" class="button full main" data-action="login.demo.error" />
+                    <a class="secondary" data-target="#login-slider" data-slide-to="2">
+                      Forgot Password
+                    </a>
+                  </div><!-- /.footer-action -->
+                </form>
+              </div><!-- /.item -->
+              <div class="item remember-back">
+                <form class="create-form" autocomplete="off">
+                  <input type="text" style="display:none" />
+                  <span class="error-message error-message-main">
+                    <span class="error-message-inner">Oops! Looks like you missed a few things. Please review the form below and see what you missed.</span>
+                  </span><!-- /.error-message -->
+                  <ul class="form-fields">
+                    <li>
+                      <label>
+                        <strong>
+                          Email or Phone Number
+                        </strong>
+                        <input type="text" class="create-email" />
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            This email address is already linked to an account. Did you
+                              <em data-target="#login-slider" data-slide-to="2" class="use-email-to-recover">
+                                 Forget Your Password?
+                              </em>
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <strong>
+                          Choose a password
+                        </strong>
+                        <input type="password" class="create-password" autocomplete="off" />
+                        <span class="toggle-show-password"></span>
+                        <span class="toggle-show-password-rules"></span>
+                        <span class="inline-validator create-password-validator">
+                          <span class="inline-validator-rule">
+                            Have at least 8 characters
+                          </span>
+                          <span class="inline-validator-rule">
+                            Have at least one number
+                          </span>
+                          <span class="inline-validator-rule passed">
+                            Have at least one uppercase letter
+                          </span>
+                          <span class="inline-validator-rule passed">
+                            No special charasters ˆ &amp; * (
+                          </span>
+                        </span><!-- /.inline-validator -->
+                      </label>
+                    </li>
+                    <li>
+                      <div class="g-recaptcha" data-sitekey="6LdmFTQUAAAAAJGKzEG-S4t0OrfT3HIjQjN5BRGp"></div>
+                      <span class="error-message">
+                        <span class="error-message-inner">
+                            You must verify that you are not a robot.
+                        </span>
+                      </span>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" name="" value="" checked>
+                        <em class="smaller">
+                          I have read and agree to the <a href="#" target="_blank">Terms of Service</a>
+                          and the <a href="#" target="_blank">Privacy Policy</a>
+                        </em>
+                        <span class="error-message">
+                          <span class="error-message-inner">
+                            You must agree to the Terms of Service and Privacy Policy to create your account.
+                          </span>
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="form-footer">
+                    <input type="submit" value="Create Account" class="button full main" data-action="login.demo.error_create" />
+                  </div><!-- /.footer-action -->
+                </form>
+              </div><!-- /.item -->
+              <div class="item hide-nav show-back">
+                <div class="reset-password-flow">
+                  <div class="reset-password-first">
+                    <strong>
+                      Forgot Password
+                    </strong>
+                    <p>
+                      Enter the email address or phone number you used to set up your account.
+                    </p>
+                    <form class="recover-form" autocomplete="off">
+                      <ul class="form-fields">
+                        <li>
+                          <label>
+                            <strong>
+                              Email or Phone Number
+                            </strong>
+                            <input type="text" class="reset-email" />
+                            <span class="helper">
+                              Standard SMS rates apply
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="form-footer">
+                        <input type="submit" value="Send Password Reset Link" class="button full main" data-target="#login-slider" data-slide-to="3" />
+                      </div><!-- /.footer-action -->
+                    </form>
+                  </div><!-- /.reset-password-first -->
+                </div><!-- /.reset-password-flow -->
+              </div><!-- /.item -->
+              <div class="item hide-nav hide-close">
+                <div class="reset-password-last">
+                  <span class="completed-icon"></span>
+                  <p>
+                    Success! A password reset link has been sent to <strong>andrewdavis@kiausa.com</strong>
+                  </p>
+                  <a class="button full" data-target="#login-slider" data-slide-to="0" >Back To Sign In</a>
+                </div><!-- /.reset-password-last -->
+              </div><!-- /.item -->
+            </div><!-- /.carousel-inner -->
+          </div><!-- /.carousel -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- @import "partials/footer.kit" -->

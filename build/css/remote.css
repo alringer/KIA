@@ -254,19 +254,19 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
       .remote-footer .overview-remote-command.state-2-communicating .action-buttons .state-2:hover, .remote-footer .overview-remote-command.state-1 .action-buttons .state-2:hover {
         background: #ee1010 !important; }
     .remote-footer .overview-remote-command.state-2-communicating .action-buttons .action-button.state-2 {
-      color: transparent; }
+      color: rgba(0, 0, 0, 0); }
       .remote-footer .overview-remote-command.state-2-communicating .action-buttons .action-button.state-2 > i {
         opacity: 0; }
       .remote-footer .overview-remote-command.state-2-communicating .action-buttons .action-button.state-2 .spinner {
         opacity: 1; }
     .remote-footer .overview-remote-command.state-1-communicating .action-buttons .action-button.state-1 {
-      color: transparent; }
+      color: rgba(0, 0, 0, 0); }
       .remote-footer .overview-remote-command.state-1-communicating .action-buttons .action-button.state-1 > i {
         opacity: 0; }
       .remote-footer .overview-remote-command.state-1-communicating .action-buttons .action-button.state-1 .spinner {
         opacity: 1; }
     .remote-footer .overview-remote-command.state-3-communicating .action-buttons .action-button.state-3 {
-      color: transparent; }
+      color: rgba(0, 0, 0, 0); }
       .remote-footer .overview-remote-command.state-3-communicating .action-buttons .action-button.state-3 > i {
         opacity: 0; }
       .remote-footer .overview-remote-command.state-3-communicating .action-buttons .action-button.state-3 .spinner {
@@ -328,7 +328,7 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
             position: relative;
             top: -7px; }
         .remote-footer .overview-remote-command-actions .action-buttons .action-button:hover {
-          background: #0e0d0d; }
+          background: #0e0e0e; }
         .remote-footer .overview-remote-command-actions .action-buttons .action-button:after {
           display: none !important; }
 
@@ -1839,7 +1839,7 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
   .overview-remote-command.remote-command-security.state-2-communicating .action-buttons .state-3:hover,
   .overview-remote-command.remote-command-security.state-2-communicating .action-buttons .state-1:hover, .overview-remote-command.remote-command-security.state-1 .action-buttons .state-3:hover,
   .overview-remote-command.remote-command-security.state-1 .action-buttons .state-1:hover {
-    background: #0e0d0d !important; }
+    background: #0e0e0e !important; }
 
 .overview-remote-command.remote-command-security.state-1-communicating .action-buttons .state-1, .overview-remote-command.remote-command-security.state-2 .action-buttons .state-1 {
   background: #8ec439 !important; }
@@ -1853,7 +1853,7 @@ body.refreshing .view-remote .overview-remote-command .action-buttons .action-bu
   .overview-remote-command.remote-command-security.state-1-communicating .action-buttons .state-3:hover,
   .overview-remote-command.remote-command-security.state-1-communicating .action-buttons .state-2:hover, .overview-remote-command.remote-command-security.state-2 .action-buttons .state-3:hover,
   .overview-remote-command.remote-command-security.state-2 .action-buttons .state-2:hover {
-    background: #0e0d0d !important; }
+    background: #0e0e0e !important; }
 
 .overview-remote-command.remote-command-security .action-buttons .state-3 {
   padding: 0;

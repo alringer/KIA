@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.loading = {
@@ -15,3 +15,5 @@ $(document).ready(function () {
     }
   };
 });
+
+//# sourceMappingURL=loading.js.map

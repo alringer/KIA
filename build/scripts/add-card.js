@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.addCards = {
@@ -13,7 +13,7 @@ $(document).ready(function () {
     methods: {
       _add_card: function _add_card() {
         var $this = $(this),
-            $relationships = $('[data-dynamic-card="' + $this.data('dynamic-card') + '"]'),
+            $relationships = $("[data-dynamic-card=\"".concat($this.data('dynamic-card'), "\"]")),
             $cards = $relationships.filter('.dynamic-card'),
             $buttons = $relationships.filter('.button');
         $cards.addClass('active');
@@ -22,7 +22,7 @@ $(document).ready(function () {
       },
       _remove_card: function _remove_card() {
         var $this = $(this),
-            $relationships = $('[data-dynamic-card="' + $this.data('dynamic-card') + '"]'),
+            $relationships = $("[data-dynamic-card=\"".concat($this.data('dynamic-card'), "\"]")),
             $cards = $relationships.filter('.dynamic-card'),
             $buttons = $relationships.filter('.button');
         $cards.removeClass('active');
@@ -56,13 +56,15 @@ $(document).ready(function () {
         }
       }
     }
-  };
-  // EVENTS
+  }; // EVENTS
+
   window.addCards.elements.category_selector_options.on('click', window.addCards.methods.sorting._sort);
   window.addCards.elements.add_card.on('click', window.addCards.methods._add_card);
-  window.addCards.elements.remove_card.on('click', window.addCards.methods._remove_card);
+  window.addCards.elements.remove_card.on('click', window.addCards.methods._remove_card); // METHODS
 
-  // METHODS
   window.addCards.methods.sorting._setup();
+
   window.addCards.methods._drag_cards();
 });
+
+//# sourceMappingURL=add-card.js.map

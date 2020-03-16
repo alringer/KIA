@@ -67,6 +67,15 @@ form {
     margin: 0;
     list-style: none;
     text-align: left;
+    &-responsive {
+      @media (max-width: $screen-xs-max) {
+        flex-direction: column;
+      }
+      @media (max-width: $screen-sm-max) {
+        display: flex;
+        justify-content: center;
+      }
+    }
     > li {
       margin-bottom: 15px;
       &.error {

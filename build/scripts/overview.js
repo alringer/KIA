@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.overview = {
@@ -12,6 +12,7 @@ $(document).ready(function () {
     methods: {
       _meta_form_validation: function _meta_form_validation() {
         var $this = $(this);
+
         if ($this.val().length) {
           window.overview.elements.add_meta_submit.removeClass('disabled');
         } else {
@@ -35,10 +36,12 @@ $(document).ready(function () {
         }, 400);
       }
     }
-  };
-  // EVENTS
+  }; // EVENTS
+
   window.overview.elements.add_meta_input.on('keyup', window.overview.methods._meta_form_validation);
   window.overview.elements.set_dealer_radio.on('change', window.overview.methods._dealer_validation);
   window.overview.elements.add_meta_submit.on('click', window.overview.methods._meta_form_error);
   window.overview.elements.close_popup_open_modal.on('click', window.overview.methods._close_popup_open_modal);
 });
+
+//# sourceMappingURL=overview.js.map

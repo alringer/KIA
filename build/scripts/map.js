@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.map = {
@@ -24,26 +24,28 @@ $(document).ready(function () {
             },
             zoom: 15
           });
-          function setBaseLayer(map, platform) {
 
+          function setBaseLayer(map, platform) {
             var mapTileService = platform.getMapTileService({
               type: 'base'
             });
-
             var parameters = {};
-
             var tileLayer = mapTileService.createTileLayer('maptile', 'normal.day', 512, 'png8', //this is img type
             parameters);
             map.setBaseLayer(tileLayer);
           }
-          setBaseLayer(map, platform);
 
+          setBaseLayer(map, platform);
           var behavior = new window.H.mapevents.Behavior(new window.H.mapevents.MapEvents(map));
           /* behavior.disable(H.mapevents.Behavior.WHEELZOOM);*/
+
           var ui = window.H.ui.UI.createDefault(map, defaultLayers);
         });
       }
     }
   };
+
   window.map.methods._build();
 });
+
+//# sourceMappingURL=map.js.map

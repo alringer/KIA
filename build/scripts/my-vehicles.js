@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   window.myVehicles = {
@@ -28,23 +28,23 @@ $(document).ready(function () {
       _switch_views: function _switch_views(e) {
         e.preventDefault();
         var $this = $(this),
-
-        // Auto detect the requested view based on indexs
+            // Auto detect the requested view based on indexs
         requested_view_index = window.myVehicles.elements.switch_view.index($this),
-            $requested_view = window.myVehicles.elements.vehicle_listings_views.eq(requested_view_index);
-        // Remove active class from all nav items
-        window.myVehicles.elements.switch_view.removeClass('active');
-        // Set the active class on this nav item
+            $requested_view = window.myVehicles.elements.vehicle_listings_views.eq(requested_view_index); // Remove active class from all nav items
+
+        window.myVehicles.elements.switch_view.removeClass('active'); // Set the active class on this nav item
+
         $this.addClass('active');
 
         if ($this) {
           return;
-        }
-        // Remove the active class from all views
-        window.myVehicles.elements.vehicle_listings_views.removeClass('active');
-        // Add the active class to the requested view
-        $requested_view.addClass('active');
-        // Resizes the view (this functionality relies upon absolute positioning)
+        } // Remove the active class from all views
+
+
+        window.myVehicles.elements.vehicle_listings_views.removeClass('active'); // Add the active class to the requested view
+
+        $requested_view.addClass('active'); // Resizes the view (this functionality relies upon absolute positioning)
+
         window.myVehicles.methods._resize_view();
       },
       // Adjusts the view based on the height of the current active view
@@ -56,26 +56,29 @@ $(document).ready(function () {
       editing: {
         // Starts editing
         _start: function _start() {
-          window.myVehicles.elements.view.addClass('editing');
-          // Auto detect available options
+          window.myVehicles.elements.view.addClass('editing'); // Auto detect available options
+
           window.myVehicles.methods.editing._enable_options();
         },
         _stop: function _stop() {
           // Reset view out of editing mode
-          window.myVehicles.elements.view.removeClass('editing');
-          // Deselect all checkboxes
-          window.myVehicles.methods.editing._deselect_all();
-          // Reset the available options
+          window.myVehicles.elements.view.removeClass('editing'); // Deselect all checkboxes
+
+          window.myVehicles.methods.editing._deselect_all(); // Reset the available options
+
+
           window.myVehicles.methods.editing._enable_options();
         },
         // Select all checkboxes
         _select_all: function _select_all() {
           window.myVehicles.elements.edit_checkbox.prop('checked', true);
+
           window.myVehicles.methods.editing._enable_options();
         },
         // Deselect all checkboxes
         _deselect_all: function _deselect_all() {
           window.myVehicles.elements.edit_checkbox.prop('checked', false);
+
           window.myVehicles.methods.editing._enable_options();
         },
         // Auto detect which options are available
@@ -83,16 +86,17 @@ $(document).ready(function () {
           // If any checkboxes are checked
           if (window.myVehicles.elements.edit_checkbox.filter(':checked').length) {
             // Allow user to use "deselect all"
-            window.myVehicles.elements.edit_deselect_all.removeClass('disabled');
-            // Allow user to "delete"
+            window.myVehicles.elements.edit_deselect_all.removeClass('disabled'); // Allow user to "delete"
+
             window.myVehicles.elements.edit_delete.removeClass('disabled');
           } else {
             // Block user from using "deselect all"
-            window.myVehicles.elements.edit_deselect_all.addClass('disabled');
-            // Block user from using "delete"
+            window.myVehicles.elements.edit_deselect_all.addClass('disabled'); // Block user from using "delete"
+
             window.myVehicles.elements.edit_delete.addClass('disabled');
-          }
-          // If all checkboxes are checked
+          } // If all checkboxes are checked
+
+
           if (window.myVehicles.elements.edit_checkbox.filter(':checked').length === window.myVehicles.elements.edit_checkbox.length) {
             window.myVehicles.elements.edit_select_all.addClass('disabled');
           } else {
@@ -102,21 +106,24 @@ $(document).ready(function () {
         // Toggles all checkboxes
         _toggle_select_all: function _toggle_select_all() {
           var $this = $(this);
+
           if ($this.is(':checked')) {
             window.myVehicles.methods.editing._select_all();
           } else {
             window.myVehicles.methods.editing._deselect_all();
           }
+
           window.myVehicles.methods.editing._enable_options();
         },
         // Fired on checkbox change
         _checkbox_change: function _checkbox_change(e) {
-          var $this = $(e.target);
-          // If a checbox is checked, start editing mode
+          var $this = $(e.target); // If a checbox is checked, start editing mode
+
           if ($this.is(':checked')) {
             window.myVehicles.methods.editing._start();
-          }
-          // Auto-detect options
+          } // Auto-detect options
+
+
           window.myVehicles.methods.editing._enable_options();
         }
       },
@@ -138,10 +145,10 @@ $(document).ready(function () {
           var $this = $(this),
               sortby = $this.data('mixsort');
           $this.toggleClass('asc');
-          var order = $this.hasClass('asc') ? 'asc' : 'desc';
-          // run the mixitup sort function
-          window.myVehiclesList.sort(sortby + ':' + order);
-          // Set header classes
+          var order = $this.hasClass('asc') ? 'asc' : 'desc'; // run the mixitup sort function
+
+          window.myVehiclesList.sort("".concat(sortby, ":").concat(order)); // Set header classes
+
           window.myVehicles.elements.mixitup_sortby.removeClass('active');
           $this.addClass('active');
         }
@@ -150,40 +157,33 @@ $(document).ready(function () {
       _text_search: function _text_search() {
         var $this = $(this),
             value = $this.val(),
+            // determine if ANY results are found
+        item_found = false; // Get the value
 
-        // determine if ANY results are found
-        item_found = false;
-        // Get the value
-        window.myVehicles.elements.search_boxes.val(value);
-        // Remove any unwanted fucntions (note to backend team: this requirement should be defined further)
+        window.myVehicles.elements.search_boxes.val(value); // Remove any unwanted fucntions (note to backend team: this requirement should be defined further)
         // Currently stripping out apostrophes due to expected user data / behavior
-        value = value.toLowerCase().replace("'", '');
 
-        // Loop through the search items to filter
+        value = value.toLowerCase().replace("'", ''); // Loop through the search items to filter
+
         window.myVehicles.elements.search_items.each(function () {
           var $item = $(this),
-
-          // Hide unless criteria below is met
+              // Hide unless criteria below is met
           hide = true,
-
-          // get data to search with
+              // get data to search with
           nickname = $item.data('nickname').toString().toLowerCase(),
               model = $item.data('model').toString().toLowerCase(),
               year = $item.data('year').toString().toLowerCase();
-          if (
-          // Does nickname match
-          nickname.indexOf(value) >= 0
-          // Does model match
-          || model.indexOf(value) >= 0
-          // Does year match
-          || year.indexOf(value) >= 0
-          // Does "Year Model" Match (removes spaces to check)
-          || ('' + year + model).indexOf(value.replace(' ', '')) >= 0
-          // Does "Model Year" match (removes spaces to check)
-          || ('' + model + year).indexOf(value.replace(' ', '')) >= 0) {
+
+          if ( // Does nickname match
+          nickname.indexOf(value) >= 0 // Does model match
+          || model.indexOf(value) >= 0 // Does year match
+          || year.indexOf(value) >= 0 // Does "Year Model" Match (removes spaces to check)
+          || "".concat(year).concat(model).indexOf(value.replace(' ', '')) >= 0 // Does "Model Year" match (removes spaces to check)
+          || "".concat(model).concat(year).indexOf(value.replace(' ', '')) >= 0) {
             hide = false;
-          }
-          // If criteria isn't met, "hide" will be true
+          } // If criteria isn't met, "hide" will be true
+
+
           if (hide) {
             $item.addClass('hide');
           } else {
@@ -191,14 +191,15 @@ $(document).ready(function () {
             item_found = true;
             $item.removeClass('hide');
           }
-        });
-        // If no items were found, adjust the UI
+        }); // If no items were found, adjust the UI
+
         if (!item_found) {
           window.myVehicles.elements.no_results_found.addClass('show');
         } else {
           window.myVehicles.elements.no_results_found.removeClass('show');
-        }
-        // Items will be moving in and out of field, adjust the view height as needed
+        } // Items will be moving in and out of field, adjust the view height as needed
+
+
         window.myVehicles.methods._resize_view();
       },
       // Toggles the list view item on mobile
@@ -211,19 +212,18 @@ $(document).ready(function () {
             $list_view = window.myVehicles.elements.vehicle_listings_views_wrap,
             view_height = parseInt($view.css('height'), 10),
             list_view_height = parseInt($list_view.css('height'), 10),
-            meta_height = $meta_data_inner.outerHeight();
-        // Toggle the arrow
-        $this.toggleClass('flip');
+            meta_height = $meta_data_inner.outerHeight(); // Toggle the arrow
 
-        // Toggle between showing and hiding the meta data
+        $this.toggleClass('flip'); // Toggle between showing and hiding the meta data
+
         if (!$meta_data.hasClass('show')) {
-          $meta_data.addClass('show').css('height', meta_height);
-          // Adjust the view and list item heights as needed ( this makes for a really smooth css transtion )
+          $meta_data.addClass('show').css('height', meta_height); // Adjust the view and list item heights as needed ( this makes for a really smooth css transtion )
+
           $view.css('height', view_height + meta_height);
           $list_view.css('height', list_view_height + meta_height);
         } else {
-          $meta_data.removeClass('show').css('height', 0);
-          // Adjust the view and list item heights as needed ( this makes for a really smooth css transtion )
+          $meta_data.removeClass('show').css('height', 0); // Adjust the view and list item heights as needed ( this makes for a really smooth css transtion )
+
           $view.css('height', view_height - meta_height);
           $list_view.css('height', list_view_height - meta_height);
         }
@@ -239,7 +239,9 @@ $(document).ready(function () {
       demo: {
         _add_vehicle_error: function _add_vehicle_error(e) {
           e.preventDefault();
+
           window.forms.methods._error($('.add-vehicle-form'));
+
           window.forms.methods._error($('.add-vehicle-form .form-fields li'));
         }
       }
@@ -247,9 +249,10 @@ $(document).ready(function () {
   };
 
   window.myVehicles.methods.sorting._setup();
-  window.myVehicles.methods._resize_view();
 
-  // EVENTS
+  window.myVehicles.methods._resize_view(); // EVENTS
+
+
   window.myVehicles.elements.edit_checkbox.on('change.edit', window.myVehicles.methods.editing._checkbox_change);
   window.myVehicles.elements.edit_select_all.on('click', window.myVehicles.methods.editing._select_all);
   window.myVehicles.elements.edit_deselect_all.on('click', window.myVehicles.methods.editing._deselect_all);
@@ -262,7 +265,6 @@ $(document).ready(function () {
   window.myVehicles.elements.list_item_toggle.on('click', window.myVehicles.methods._list_item_toggle);
   window.myVehicles.elements.add_vin.on('keyup', window.myVehicles.methods._toggle_disable);
   window.myVehicles.elements.add_vehicle_button.on('click', window.myVehicles.methods.demo._add_vehicle_error);
-
   $(window).on('resize', function () {
     clearTimeout(window.myVehicles_tab_size);
     window.myVehicles_tab_size = setTimeout(function () {
@@ -271,3 +273,5 @@ $(document).ready(function () {
     }, 500);
   });
 });
+
+//# sourceMappingURL=my-vehicles.js.map

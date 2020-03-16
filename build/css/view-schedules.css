@@ -891,7 +891,7 @@
     color: #5f5f5f; }
   .save-text.spinning {
     opacity: .5;
-    color: transparent;
+    color: rgba(0, 0, 0, 0);
     opacity: 1; }
     .save-text.spinning .spinner {
       opacity: 1; }

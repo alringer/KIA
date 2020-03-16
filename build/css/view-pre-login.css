@@ -1591,6 +1591,11 @@
       width: calc(50% - 5px); }
       .view-uvo-availability .year-select button {
         background: #fff !important; } }
+  .view-uvo-availability .year-select-100-p {
+    width: 155px; }
+    @media (max-width: 767px) {
+      .view-uvo-availability .year-select-100-p {
+        width: calc(100% - 5px); } }
 
 .view-uvo-availability .model-select {
   display: inline-block;
@@ -1601,6 +1606,41 @@
       width: calc(50% - 5px); }
       .view-uvo-availability .model-select button {
         background: #fff !important; } }
+  @media (max-width: 767px) {
+    .view-uvo-availability .model-select-100-p {
+      width: calc(100% - 5px); } }
+
+.view-uvo-availability .vin-lookup-textfield-0 {
+  display: inline-block;
+  width: 277px;
+  margin-left: 5px; }
+  @media (max-width: 767px) {
+    .view-uvo-availability .vin-lookup-textfield-0 {
+      width: calc(100% - 5px); }
+      .view-uvo-availability .vin-lookup-textfield-0 button {
+        background: #fff !important; } }
+
+.view-uvo-availability .select-vehicle-container {
+  width: 100%;
+  margin: auto;
+  max-width: 609px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .view-uvo-availability .select-vehicle-container .vehicle-image {
+    margin: 30px 0px;
+    width: 100%;
+    opacity: 0.2; }
+  .view-uvo-availability .select-vehicle-container > h1 {
+    margin-bottom: 30px;
+    font-size: 29px;
+    font-family: "KIA", sans-serif; }
+  .view-uvo-availability .select-vehicle-container > p {
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.6px; }
 
 .view-uvo-availability .row-table .row {
   clear: both;
