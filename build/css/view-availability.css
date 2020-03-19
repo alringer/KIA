@@ -34,22 +34,22 @@
 .vehicle-container {
   text-align: center;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 60px; }
   .vehicle-container .custom-col {
     width: 33.3%; }
   .vehicle-container ul {
     padding: 0;
     margin: 0;
     list-style-type: none; }
-    @media (min-width: 768px) {
-      .vehicle-container ul {
-        padding-left: 40px; } }
     .vehicle-container ul .js-vehicle-wrapper {
       text-align: center;
-      width: 203px;
+      width: 213px;
       margin: 30px auto;
       position: relative;
-      z-index: 0; }
+      z-index: 0;
+      cursor: pointer;
+      padding: 0px 25px; }
       .vehicle-container ul .js-vehicle-wrapper:after {
         content: '';
         display: inline-block;
@@ -96,7 +96,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    font-size: 13px; }
     .head-unit-container ul > li {
       margin: 25px 0px;
       padding: 0px 50px;
@@ -112,6 +113,9 @@
         margin-bottom: 20px; }
       .head-unit-container ul > li button {
         width: 100%; }
+        .head-unit-container ul > li button:hover {
+          opacity: 0.7;
+          background: #000 !important; }
 
 #uvo-availability-heading {
   margin: 0; }
@@ -150,7 +154,8 @@
         align-items: center; }
         @media (min-width: 768px) {
           .page-view-content .selection .selection-container .vehicle-container {
-            width: 100%; } }
+            width: 100%;
+            margin-top: 0; } }
         .page-view-content .selection .selection-container .vehicle-container .image-container {
           height: 130px;
           display: flex;
@@ -164,25 +169,32 @@
           @media (min-width: 992px) {
             .page-view-content .selection .selection-container .vehicle-container .image-container {
               width: 90%; } }
-        .page-view-content .selection .selection-container .vehicle-container img {
-          width: 100%; }
+          .page-view-content .selection .selection-container .vehicle-container .image-container .vehicle-image-tag {
+            width: 150%; }
+            @media (min-width: 768px) {
+              .page-view-content .selection .selection-container .vehicle-container .image-container .vehicle-image-tag {
+                width: 100%; } }
         .page-view-content .selection .selection-container .vehicle-container .vehicle-text {
-          margin-top: none; }
-          .page-view-content .selection .selection-container .vehicle-container .vehicle-text b {
-            font-family: "KIA", sans-serif; }
+          margin-top: none;
+          font-size: 13px;
+          font-family: "KIA", sans-serif; }
     .page-view-content .selection .button-container {
       cursor: pointer;
       margin-top: 30px;
       text-align: center;
       font-family: "KIA", sans-serif; }
+      .page-view-content .selection .button-container.center {
+        text-align: center; }
+      .page-view-content .selection .button-container .change-selection {
+        font-size: 11px !important; }
       .page-view-content .selection .button-container a {
         font-weight: bold;
         color: #C4172C;
         letter-spacing: 0.74px;
-        font-size: 12px; }
+        font-size: 11px; }
       @media (min-width: 768px) {
         .page-view-content .selection .button-container-desktop {
-          text-align: start; } }
+          text-align: left; } }
     .page-view-content .selection .uvo-services-container {
       margin-top: 35px;
       font: "Source Sans Pro", sans-serif;
@@ -193,7 +205,8 @@
         font-size: 14px; }
       @media (min-width: 768px) {
         .page-view-content .selection .uvo-services-container {
-          margin: 0; } }
+          margin: 0px 0px 0px 65px;
+          width: 500px; } }
       .page-view-content .selection .uvo-services-container .list-features-container {
         margin: 25px; }
         @media (min-width: 768px) {
@@ -222,13 +235,16 @@
     text-align: center; }
     @media (min-width: 768px) {
       .page-view-content .explore-uvo-eservices-container {
-        text-align: start; } }
+        text-align: left;
+        padding: 0px 25px; } }
     .page-view-content .explore-uvo-eservices-container .heading-container > h1 {
+      font-size: 29px;
       margin-top: 0; }
     .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container {
       display: flex;
       flex-direction: column;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-size: 14px; }
       @media (min-width: 768px) {
         .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container {
           flex-direction: row; } }
@@ -240,7 +256,7 @@
         font-weight: bold;
         color: #C4172C;
         letter-spacing: 0.74px;
-        font-size: 12px; }
+        font-size: 11px; }
         @media (min-width: 768px) {
           .page-view-content .explore-uvo-eservices-container .heading-container .subheading-container a {
             margin-left: 20px; } }
@@ -250,7 +266,8 @@
     flex-direction: column; }
     @media (min-width: 768px) {
       .page-view-content .eservices-middle-container {
-        flex-direction: row; } }
+        flex-direction: row;
+        padding: 0px 15px; } }
     .page-view-content .eservices-middle-container .category-dropdown-container {
       display: block; }
       @media (min-width: 768px) {
@@ -264,17 +281,17 @@
             max-width: 500px;
             margin: 0 auto; } }
         .page-view-content .eservices-middle-container .category-dropdown-container form .form-fields {
-          display: inline-block;
+          display: flex !important;
           width: calc(100% - 100px);
           font-size: 0;
           vertical-align: bottom; }
           @media (max-width: 767px) {
             .page-view-content .eservices-middle-container .category-dropdown-container form .form-fields {
-              display: block;
+              display: flex !important;
               width: calc(100%);
               margin: 0 auto 5px; } }
           .page-view-content .eservices-middle-container .category-dropdown-container form .form-fields > li {
-            display: inline-block;
+            display: flex;
             width: calc(33.3333% - 8px);
             margin: 0 4px; }
             @media (max-width: 767px) {
@@ -311,9 +328,10 @@
         text-transform: uppercase;
         font-weight: bold;
         color: #8E8E8E;
-        font-size: 12px; }
+        font-size: 12px;
+        width: 185px; }
         .page-view-content .eservices-middle-container .category-tablet-desktop-container > ul > li {
-          margin-bottom: 15px;
+          margin-bottom: 19px;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -345,11 +363,13 @@
         .page-view-content .eservices-middle-container .eservices-list-container {
           margin-left: 100px;
           margin-top: 0px;
-          justify-content: start; } }
+          justify-content: flex-start;
+          width: 500px; } }
       .page-view-content .eservices-middle-container .eservices-list-container ul {
         list-style-type: none;
         padding: 0;
-        margin: 0; }
+        margin: 0;
+        width: 100%; }
         .page-view-content .eservices-middle-container .eservices-list-container ul > li {
           display: flex;
           flex-direction: column; }
@@ -383,10 +403,11 @@
           line-height: 1.5;
           letter-spacing: 0.6px;
           text-align: center;
-          font-size: 14px; }
+          font-size: 14px;
+          width: 100%; }
           @media (min-width: 768px) {
             .page-view-content .eservices-middle-container .eservices-list-container ul .card-text-container {
-              text-align: start;
+              text-align: left;
               margin: 0 0 0 15px;
               display: flex;
               justify-content: center;
@@ -396,7 +417,8 @@
   text-align: center;
   margin-top: 50px;
   padding: 20px;
-  background-color: #d8d8d8; }
+  background-color: #f4f4f4;
+  font-size: 14px; }
   @media (min-width: 768px) {
     .create-account-container > p {
       padding: 15px 0px; } }
@@ -408,10 +430,11 @@
   margin: 40px auto; }
   @media (min-width: 768px) {
     .available-apps-container {
-      align-items: start;
+      align-items: flex-start;
       margin: 40px; } }
   .available-apps-container h1 {
-    font-family: "KIA", sans-serif; }
+    font-family: "KIA", sans-serif;
+    font-size: 29px; }
   .available-apps-container ul {
     padding: 0;
     margin: 20px 0 0 0;
@@ -427,15 +450,19 @@
       @media (min-width: 768px) {
         .available-apps-container ul > li {
           margin: 40px 40px; } }
-      .available-apps-container ul > li img {
-        width: 100%; }
+      .available-apps-container ul > li .available-apps-image-container {
+        width: 194px;
+        height: 110px; }
+        .available-apps-container ul > li .available-apps-image-container img {
+          width: 100%; }
       .available-apps-container ul > li > p {
         margin-top: 24px;
         text-align: center;
         font-size: 15px; }
+        .available-apps-container ul > li > p b {
+          font-size: 13px; }
       .available-apps-container ul > li .app-store-container {
         width: 100%; }
-        .available-apps-container ul > li .app-store-container > img {
-          width: 49%; }
       .available-apps-container ul > li .small-text-apps {
-        font-size: 13px; }
+        font-size: 12px;
+        line-height: 21px; }

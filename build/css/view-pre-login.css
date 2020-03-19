@@ -1586,6 +1586,8 @@
 .view-uvo-availability .year-select {
   display: inline-block;
   width: 109px; }
+  .view-uvo-availability .year-select .selectpicker > span {
+    font-weight: 100; }
   @media (max-width: 767px) {
     .view-uvo-availability .year-select {
       width: calc(50% - 5px); }
@@ -1611,7 +1613,7 @@
       width: calc(100% - 5px); } }
 
 .view-uvo-availability .vin-lookup-textfield-0 {
-  display: inline-block;
+  display: flex;
   width: 277px;
   margin-left: 5px; }
   @media (max-width: 767px) {
@@ -1630,9 +1632,12 @@
   align-items: center;
   text-align: center; }
   .view-uvo-availability .select-vehicle-container .vehicle-image {
-    margin: 30px 0px;
     width: 100%;
-    opacity: 0.2; }
+    height: 100%;
+    margin: 60px 0px 0px 0px; }
+    @media (min-width: 768px) {
+      .view-uvo-availability .select-vehicle-container .vehicle-image {
+        margin: 100px 0px 30px 0px; } }
   .view-uvo-availability .select-vehicle-container > h1 {
     margin-bottom: 30px;
     font-size: 29px;
@@ -1640,7 +1645,8 @@
   .view-uvo-availability .select-vehicle-container > p {
     font-family: "Source Sans Pro", sans-serif;
     line-height: 1.5;
-    letter-spacing: 0.6px; }
+    letter-spacing: 0.6px;
+    font-size: 14px; }
 
 .view-uvo-availability .row-table .row {
   clear: both;

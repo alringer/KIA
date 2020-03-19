@@ -5824,6 +5824,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/source/images/us-2019-optima@3x.png": {
+		"ft": 32768,
+		"iS": 252337,
+		"oA": 0,
+		"oAP": "/build/images/us-2019-optima@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/source/images/usb-logo.png": {
+		"ft": 32768,
+		"iS": 3352,
+		"oA": 0,
+		"oAP": "/build/images/usb-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/source/images/uvo-logo-black.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -5833,6 +5855,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/source/images/voice-command-icon.png": {
+		"ft": 32768,
+		"iS": 4599,
+		"oA": 0,
+		"oAP": "/build/images/voice-command-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/source/images/warranty/dashes.png": {
 		"ft": 32768,

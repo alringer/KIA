@@ -5,6 +5,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 60px;
     .custom-col {
         width: 33.3%;
     }
@@ -12,15 +13,15 @@
         padding: 0;
         margin: 0;
         list-style-type: none;
-        @media (min-width: $screen-sm) {
-            padding-left: 40px;
-        }
         .js-vehicle-wrapper {
             text-align: center;
-            width: 203px;
+            width: 213px;
             margin: 30px auto;
             position: relative;
             z-index: 0;
+            cursor: pointer;
+            padding: 0px 25px;
+            // margin: 0px 20px
             &:after {
                 content: '';
                 display: inline-block;
@@ -82,6 +83,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        font-size: 13px;
         > li {
             margin: 25px 0px;
             padding: 0px 50px;
@@ -98,6 +100,11 @@
             }
             button {
                 width:100%;
+                // transition: $ease-in-out;
+                &:hover {
+                    opacity: 0.7;
+                    background: $black !important;
+                }
             }
         }
     }
@@ -126,103 +133,119 @@
         @media (min-width: $screen-sm) {
             flex-direction: row;
         }
-        .selection-container {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            @media (min-width: $screen-sm) {
-                flex-direction: column;
-                align-items: center;
-            }
-            .vehicle-container {
+        // .selection-row {
+        //     @media (min-width: $screen-sm) {
+        //         margin-right: 70px;
+        //     }
+            .selection-container {
+                width: 100%;
                 display: flex;
-                flex-direction: column;
-                width: 80%;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
+                flex-direction: row;
                 @media (min-width: $screen-sm) {
-                    width: 100%;
-
-                }
-                .image-container {
-                    height: 130px;
-                    display: flex;
+                    flex-direction: column;
                     align-items: center;
+                }
+                .vehicle-container {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    text-align: center;
                     justify-content: center;
-                    width: 50%;
-                    max-width: 128px;
+                    align-items: center;
                     @media (min-width: $screen-sm) {
                         width: 100%;
-
+                        margin-top: 0;
                     }
-                    @media (min-width: $screen-md) {
-                        width: 90%;
+                    .image-container {
+                        height: 130px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50%;
+                        max-width: 128px;
+                        @media (min-width: $screen-sm) {
+                            width: 100%;
 
+                        }
+                        @media (min-width: $screen-md) {
+                            width: 90%;
+                            
+                        }
+                        .vehicle-image-tag {
+                            width: 150%;
+                            @media (min-width: $screen-sm) {
+                                width: 100%;
+                            }
+
+                        }
                     }
-                }
-                img {
-                    width: 100%;
-                }
-                .vehicle-text {
-                    margin-top: none;
-                    b {
-
+                 
+                    .vehicle-text {
+                        margin-top: none;
+                        font-size: 13px; 
                         font-family: $kia;
                     }
                 }
             }
-        }
-        .button-container {
-            cursor: pointer;
-            margin-top: 30px;
-            text-align: center;
-            font-family: $kia;
-            a {
-                font-weight: bold;
-                color: $red;
-                letter-spacing: 0.74px;
-                font-size: 12px;
+            .button-container {
+                cursor: pointer;
+                margin-top: 30px;
+                text-align: center;
+                font-family: $kia;
+                &.center {
+                    text-align: center;
+                }  
 
-            }
-            &-desktop {
-                @media (min-width: $screen-sm) {
-                    text-align: start;
-                }            
-            }
-        }
-    
-        .uvo-services-container {
-            margin-top: 35px;
-            font:$sans; 
-            line-height: 1.5;
-            letter-spacing: 0.6px;
-            color: #2f2f2f;
-            p {
-                font-size: 14px;
-            }
-            @media (min-width: $screen-sm) {
-                margin: 0;
-            }
-            .list-features-container {
-                margin: 25px;
-                @media (min-width: $screen-sm) {
-                    margin: 25px 0px;
+                .change-selection {
+
+                    font-size: 11px !important;
                 }
-                ul {
-                    list-style-type: none;
-                    padding: 0;
-                    margin: 0;
+                a {
+                    font-weight: bold;
+                    color: $red;
+                    letter-spacing: 0.74px;
+                    font-size: 11px;
+                }
+                &-desktop {
+                    @media (min-width: $screen-sm) {
+                        text-align: left;
+                    }            
+                }
+            }
+        
+            .uvo-services-container {
+                margin-top: 35px;
+                font:$sans; 
+                line-height: 1.5;
+                letter-spacing: 0.6px;
+                color: #2f2f2f;
+                p {
+                    font-size: 14px;
+                }
+                @media (min-width: $screen-sm) {
+                    margin: 0px 0px 0px 65px;
+                    width:500px;
+                }
+                .list-features-container {
+                    margin: 25px;
                     @media (min-width: $screen-sm) {
                         margin: 25px 0px;
                     }
-                    li {
-                        font-size: 14px;
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        @media (min-width: $screen-sm) {
+                            margin: 25px 0px;
+                        }
+                        li {
+                            font-size: 14px;
+                        }
                     }
                 }
-            }
 
-        }
+            }
+        // }
     }
     .line {
         width: 78px;
@@ -238,16 +261,19 @@
         flex-direction: column;
         text-align: center;
         @media (min-width: $screen-sm) {
-            text-align: start;
+            text-align: left;
+            padding: 0px 25px;
         }
         .heading-container {
             > h1 {
+                font-size: 29px;
                 margin-top:0;
             }
             .subheading-container {
                 display: flex;
                 flex-direction: column;
                 margin-top: 20px;
+                font-size: 14px;
                 @media (min-width: $screen-sm) {
                     flex-direction: row;
                 }
@@ -260,7 +286,7 @@
                     font-weight: bold;
                     color: $red;
                     letter-spacing: 0.74px;
-                    font-size: 12px;
+                    font-size: 11px;
                     @media (min-width: $screen-sm) {
                         margin-left: 20px;
                     }
@@ -274,6 +300,7 @@
         flex-direction: column;
         @media (min-width: $screen-sm) {
             flex-direction: row;
+            padding: 0px 15px;
         }
         .category-dropdown-container {
             display: block;
@@ -288,17 +315,17 @@
                   margin: 0 auto;
                 }
                 .form-fields {
-                  display: inline-block;
+                  display: flex !important;
                   width: calc(100% - 100px);
                   font-size: 0;
                   vertical-align: bottom;
                   @media (max-width: $screen-xs-max) {
-                    display: block;
+                    display: flex!important;
                     width: calc(100%);
                     margin: 0 auto 5px;
                   }
                   > li {
-                    display: inline-block;
+                    display: flex;
                     width: calc(33.3333% - 8px);
                     margin: 0 4px;
                     @media (max-width: $screen-xs-max) {
@@ -344,8 +371,9 @@
                 font-weight: bold;
                 color: $grey;
                 font-size: 12px;
+                width: 185px;
                 > li {
-                    margin-bottom: 15px;
+                    margin-bottom: 19px;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -384,15 +412,18 @@
             @media (min-width: $screen-sm) {
                 margin-left: 100px;
                 margin-top: 0px;
-                justify-content: start;
+                justify-content: flex-start;
+                width: 500px;
             }
             ul {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+                width: 100%;
                 > li {
                     display: flex;
                     flex-direction: column;
+                    // width:100%;
                     @media (min-width: $screen-sm) {
                         flex-direction: row;
                         margin-bottom: 20px;
@@ -428,8 +459,9 @@
                     letter-spacing: 0.6px;
                     text-align: center;
                     font-size: 14px;
+                    width: 100%;
                     @media (min-width: $screen-sm) {
-                        text-align: start;
+                        text-align: left;
                         margin: 0 0 0 15px;
                         display: flex;
                         justify-content: center;
@@ -445,7 +477,8 @@
     text-align: center;
     margin-top: 50px;
     padding: 20px;
-    background-color: #d8d8d8;
+    background-color: #f4f4f4;
+    font-size: 14px;
     > p {
         @media (min-width: $screen-sm) {
             padding: 15px 0px;
@@ -459,11 +492,12 @@
     align-items: center;
     margin: 40px auto;
     @media (min-width: $screen-sm) {
-        align-items: start;
+        align-items: flex-start;
         margin: 40px;
     }
     h1 {
         font-family: $kia;
+        font-size: 29px
     }
     ul {
         padding: 0;
@@ -480,23 +514,28 @@
             @media (min-width: $screen-sm) {
                 margin: 40px 40px;
             }
-            img {
-                width: 100%;
+            .available-apps-image-container {
+                width: 194px;
+                height: 110px;
+                img {
+                    width: 100%;
+                }
             }
             > p {
                 margin-top: 24px;
                 text-align: center;
                 font-size: 15px;
+                b {
+                    font-size: 13px;
+                }
             }
             .app-store-container {
        
                 width:100%;
-                > img {
-                    width: 49%;
-                }
             }
             .small-text-apps {
-                font-size: 13px;
+                font-size: 12px;
+                line-height: 21px;
             }
         }
     }

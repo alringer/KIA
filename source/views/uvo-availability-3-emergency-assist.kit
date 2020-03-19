@@ -80,27 +80,27 @@
     <div class="page-content">
       <div class="contain">
         <div class="page-header">
-          <h1 id="uvo-availability-heading">UVO availability</h1>
+          <h1 id="uvo-availability-heading">UVO Availability</h1>
         </div><!-- /.page-header -->
         <div class="page-view-content">
           <div class="selection">
 
-            <div class="selection-row col-sm-5"> 
+            <div class="selection-row col-sm-3"> 
               <div class="selection-container">
                 <div class="vehicle-container">
                   <div class="image-container">
-                    <img src="/images/car-images-availability/2020/2020-NIRO.png" alt="Niro">
+                    <img class="vehicle-image-tag" src="/images/car-images-availability/2020/2020-NIRO.png" alt="Niro">
                   </div>
-                  <p><b>Niro</b></p>
+                  <p><b class="vehicle-text">Niro</b></p>
                 </div>
                 <div class="vehicle-container">
                   <div class="image-container">
-                    <img src="/images/head-units-availability/avn5_headunit.png" alt="Head Unit">
+                    <img width="128px" height="104px" src="/images/head-units-availability/avn5_headunit.png" alt="Head Unit">
                   </div>
-                  <p><b>UVO eServices with Nav</b></p>
+                  <p><b class="vehicle-text">UVO eServices with Nav</b></p>
                 </div>
               </div>
-              <div class="button-container">
+              <div class="button-container center">
                 <a href="#" class="black">CHANGE SELECTION</a>
               </div>
             </div>
@@ -140,7 +140,7 @@
           <!-- Explore UVO eServices heading section -->
           <div class="explore-uvo-eservices-container">
             <div class="heading-container">
-              <h1>Expore UVO eServices</h1>
+              <h1>Explore UVO eServices</h1>
               <div class="subheading-container">
                 <p>These exciting features are for the 2018 Niro with UVO eServices with Nav</p>
                 <div class="button-container">
@@ -154,20 +154,21 @@
             <!-- Category dropdown menu for mobile and list selector for tablet and desktop. -->
             <div class="category-dropdown-container">
 
-                <form>
+                <form action="">
                   <ul class="form-fields form-fields-responsive">
                     <li class="model-select">
                       <label>
                         <strong>Category</strong>
-                        <select class="selectpicker small">
-                          <option value="1">Emergency Assistance</option>
-                            <option value="1">Maintenance</option>
-                            <option value="1">Connectivity</option>
-                            <option value="1">Navigation</option>
-                            <option value="1">Voice Assistant</option>
-                            <option value="1">Convenience</option>
-                            <option value="1">Multimedia</option>
-                            <option value="1">My Car Zone</option>
+                        <select onchange="javascript:location.href = this.value;" class="selectpicker small">
+                            <option value="uvo-availability-3-emergency-assist.html">Emergency Assistance</option>
+                            <option value="uvo-availability-3-navigation.html">Navigation</option>
+                            <option value="uvo-availability-3-voice-assistant.html">Voice Assistant</option>
+                            <option value="uvo-availability-3-convenience.html">Convenience</option>
+                            <option value="uvo-availability-3-apps.html">Apps</option>
+                            <option value="uvo-availability-3-multimedia.html">Multimedia</option>
+                            <option value="uvo-availability-3-connectivity.html">Connectivity</option>
+                            <option value="uvo-availability-3-maintenance.html">Maintenance</option>
+                            <option value="uvo-availability-3-my-car-zone.html">My Car Zone</option>
                         </select>
                       </label>
                     </li>
@@ -192,7 +193,7 @@
               <ul>
                 <li>
                     <div class="bg-card">
-                        <img width="40%" src="/images/911-icon.png">
+                        <img width="89px" height="56px" src="/images/911-icon.png">
                     </div>
                     <div class="card-text-container">
                         <p><b>911 Connect</b></p>
@@ -201,7 +202,7 @@
                 </li>
                 <li>
                     <div class="bg-card">
-                        <img width="30%" src="/images/diagnostic-logo.png">
+                        <img width="51px" src="/images/diagnostic-logo.png">
                     </div>
                     <div class="card-text-container">
                         <p><b>Roadside Assistance</b></p>
@@ -222,29 +223,29 @@
 
         <!-- Available Apps bottom container -->
         <div class="available-apps-container">
-          <h1>Available Apps</h1>
+          <h1 class="available-apps-title">Available Apps</h1>
           <ul>
             <li>
-              <div>
+              <div class="available-apps-image-container">
                 <img src="/images/placeholder@3x.png">
               </div>
               <p><b>Download Kia Owner's App</b></p>
               <div class="app-store-container">
-                  <img src="/images/app-store@3x.png">
-                  <img src="/images/google-play@3x.png">
+                  <img width="92px" height="36px" src="/images/app-store@3x.png">
+                  <img width="104px" height="36px" src="/images/google-play@3x.png">
               </div>
-              <p class="small-text-apps">Available on most Android and iPhones</p>
+              <p class="small-text-apps">Available on most Android and <br>iPhones</p>
             </li>
             <li>
-              <div>
+              <div class="available-apps-image-container">
                 <img src="/images/placeholder@3x.png">
               </div>
               <p><b>Download UVO eServices App</b></p>
               <div class="app-store-container">
-                  <img src="/images/app-store@3x.png">
-                  <img src="/images/google-play@3x.png">
+                  <img width="92px" height="36px" src="/images/app-store@3x.png">
+                  <img width="104px" height="36px" src="/images/google-play@3x.png">
               </div>
-              <p class="small-text-apps">Available on most Android and iPhones</p>
+              <p class="small-text-apps">Available on most Android and <br>iPhones</p>
             </li>
           </ul>
         </div>

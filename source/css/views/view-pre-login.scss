@@ -1874,6 +1874,12 @@
   .year-select {
     display: inline-block;
     width: 109px;
+    .selectpicker {
+      > span {
+        font-weight: 100;
+
+      }
+    }
     @media (max-width: $screen-xs-max) {
       width: calc(50% - 5px);
       button {
@@ -1904,7 +1910,7 @@
     }
   }
   .vin-lookup-textfield-0 {
-    display: inline-block;
+    display: flex;
     width: 277px;
     margin-left: 5px;
     @media (max-width: $screen-xs-max) {
@@ -1924,9 +1930,12 @@
     align-items: center;
     text-align: center;
     .vehicle-image {
-      margin: 30px 0px;
       width: 100%;
-      opacity: 0.2;
+      height: 100%;
+      margin: 60px 0px 0px 0px ;
+      @media (min-width: $screen-sm-min) {
+        margin: 100px 0px 30px 0px;
+      }
     }
     > h1 {
       margin-bottom: 30px;
@@ -1937,6 +1946,7 @@
       font-family: $sans;
       line-height: 1.5;
       letter-spacing: 0.6px;
+      font-size: 14px;
     }
   }
   .row-table {
